@@ -1,8 +1,11 @@
 module.exports = function (eleventyConfig) {
   // markdown-it
   const markdownIt = require("markdown-it");
-  const markdownLib = markdownIt({
+  const markdownLib = markdownIt("commonmark", {
     html: true,
+    linkify: true,
+    typographer: true,
+    quotes: "“”‘’",
   });
   markdownLib.use(require("markdown-it-anchor"));
   markdownLib.use(require("markdown-it-classy"));
@@ -11,6 +14,7 @@ module.exports = function (eleventyConfig) {
 
   // file copy operations
   eleventyConfig.addPassthroughCopy("vendor");
+  eleventyConfig.addPassthroughCopy("src/entry.js");
   eleventyConfig.addPassthroughCopy("content/**/*.png");
   eleventyConfig.addPassthroughCopy("content/**/*.jpg");
   eleventyConfig.addPassthroughCopy("content/**/*.svg");
@@ -21,9 +25,14 @@ module.exports = function (eleventyConfig) {
     return "short code returned this";
   });
 
-  eleventyConfig.addPairedShortcode("slides", function (content) {
-    return content;
-  });
+  // eleventyConfig.addPairedShortcode("slides", function (content) {
+  //   return content;
+  // });
+
+  eleventyConfig.addPairedShortcode(
+    "slides",
+    require("./builders/slides_builder.js")
+  );
 
   // syntax highlight
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));

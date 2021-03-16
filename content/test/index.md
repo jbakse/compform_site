@@ -15,7 +15,28 @@ next_url: false
 
 ---
 
-# Markdown-it Plugins
+# Markdown-it
+
+## linkify: true
+Auto convert links like: http://google.com
+
+## quotes: "“”‘’"
+
+Automatically add "smart quotes."
+
+
+## typographer: true,
+(c) (tm) (r) +-  (p) ... ????? -- ---
+
+## inline html
+
+<div class="callout">
+
+### Callout
+
+You can wrap markdown in a `<div></div>`. Include a blank line at the top and bottom to enable markdown processing.
+
+</div>
 
 ## markdown-it-anchor
 `markdown-it-anchor` automatically adds id's to headers. The h1 above ("Markdown-it Plugins") will have `id="markdown-it-plugins"`
@@ -54,6 +75,17 @@ This is a callout.{callout}
 
 
 # Spoilers
+
+<div class="spoiler" >
+
+### Spoiler
+
+This is a spoiler.
+
+This is a spoiler.
+
+</div>
+
 
 # Javascript
 
