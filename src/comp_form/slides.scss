@@ -1,0 +1,187 @@
+.comp-form-copy {
+
+    .slides-wrap {
+        @include full-width;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    @include media-breakpoint-up(md) {
+        .slides {
+            height: 500px;
+        }
+
+        .short .slides {
+            height: 300px;
+        }
+
+        .tall .slides {
+            height: 700px;
+        }
+    }
+
+
+
+    .slides .carousel-item {
+        height: 100%;
+    }
+
+    .slides .slide {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        background: $light-grey;
+    }
+
+    .slide-image {
+        width: calc(100%/12 * 8);
+
+
+        padding: 15px;
+        .debug & {
+            border: 1px dotted $debug-blue;
+        }
+    }
+
+    .slide-info {
+        width: calc(100%/12 * 4);
+
+
+        padding: 15px;
+        .debug & {
+            border: 1px dotted $debug-blue;
+        }
+    }
+
+
+    .contain .slide-image>img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+        object-position: 0 0
+    }
+
+
+
+
+    @include media-breakpoint-down(sm) {
+        .slides .slide {
+            flex-direction: column;
+        }
+
+        .slide-image {
+            width: 100%;
+            height: 400px;
+        }
+
+        .slide-info {
+            min-height: 250px;
+            width: 100%;
+        }
+
+        .slide-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+
+
+    .slide-image img {
+        display: block;
+        margin: 0;
+
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .cover .slide-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+    .slide-info-middle,
+    .slide-info-bottom {
+
+        border-top: 1px solid $middle-grey;
+        padding-top: 10px;
+    }
+
+    .slide-info-middle {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+
+    .slide-info .artist {
+
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 1em;
+    }
+
+    .slide-info .title {
+        font-family: 'Miriam Libre';
+        font-size: 20px;
+        letter-spacing: 0.31px;
+        line-height: 25px;
+        font-weight: 200;
+        color: lighten($dark-grey, 40);
+    }
+
+    .slide-info .comments {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    .slide-info-bottom a {
+        display: block;
+        width: max-content;
+        margin-bottom: 15px;
+        font-size: .9em;
+        padding-bottom: 0;
+        line-height: 1;
+    }
+
+    .slide-info-top {
+        // border: 1px solid red;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        height: 40px;
+        left: calc(100%/12*8);
+    }
+
+    .carousel-control-prev {
+        left: 0px;
+    }
+    .carousel-control-next {
+        left: 40px;
+    }
+
+    .slide-info-top {
+        polygon {
+            fill: $dark-grey;
+        }
+    }
+
+
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        background: none;
+        border-bottom: none;
+        width: 50px;
+    }
+}
+
+.out {}

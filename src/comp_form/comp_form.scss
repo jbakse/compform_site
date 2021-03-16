@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto:300,500|Overpass+Mono:300');
+
+$debug-blue: #0af;
+$debug-red: #f55;
+$debug-red-transparent: rgba($debug-red, .1);
+
+
+$black: #000;
+$light-grey: #F4F3F1;
+$middle-grey: #CCC;
+$dark-grey: #505050;
+$red: #cc9999;
+$light-red: #ffeeee;
+
+$green: #99cc99;
+
+// $light-grey: #F0F2F6;
+$dark-grey: #000;
+
+
+$theme-colors: map-merge( ( dark-grey: $dark-grey),
+$theme-colors);
+
+$theme-colors: map-merge(( light-grey: $light-grey),
+$theme-colors);
+
+
+
+
+
+
+@import './layout';
+@import './toc';
+@import './copy';
+@import './copy_extras';
+@import './slides';
+
+
+canvas.mess {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    pointer-events: none;
+
+    transition: opacity .25s;
+    /* mix-blend-mode: multiply; */
+    /* border: 1px solid red; */
+}
+
+canvas.hide {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.comp-form-copy {
+    div.js-lab {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

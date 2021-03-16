@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+    head
+        title= title + " | Comp Form"
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1")
+
+    body.comp-form
+        each value in collections.all
+            a(href=value.url) #{value.data.title}
+
+
+

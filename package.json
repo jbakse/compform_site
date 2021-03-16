@@ -1,0 +1,21 @@
+{
+  "name": "eleventy_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/style.scss _site/style.css",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "markdown-it-anchor": "^7.1.0",
+    "markdown-it-classy": "^0.2.0",
+    "markdown-it-deflist": "^2.1.0",
+    "sass": "^1.32.8"
+  }
+}
