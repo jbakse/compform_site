@@ -12,30 +12,29 @@ previous: false
 previous_url: false
 next: false
 next_url: false
-
 ---
 
-
 # Includes
+
 You can include Markdown files from Markdown files. Markdown files that start with `_` won't be processed as top level pages.
 
 You can use relative paths for include files and included files can include files.
 
 {% include ./_include_me.md %}
 
-
 # Markdown-it
 
 ### linkify: true
-Auto convert links like: http://google.com
+
+Auto convert links like: https://google.com
 
 ### quotes: "“”‘’"
 
 Automatically add "smart quotes."
 
-
 ### typographer: true,
-(c) (tm) (r) +-  (p) ... ????? -- ---
+
+(c) (tm) (r) +- (p) ... ????? -- ---
 
 ### inline html
 
@@ -48,7 +47,9 @@ You can wrap markdown in a `<div></div>`. Include a blank line at the top and bo
 </div>
 
 # Markdown-it Plugins
+
 ### markdown-it-anchor
+
 `markdown-it-anchor` automatically adds id's to headers. The h1 above ("Markdown-it Plugins") will have `id="markdown-it-plugins"`
 
 ### markdown-it-classy
@@ -70,6 +71,7 @@ Term 2
 # Content Classes
 
 ## callout
+
 This is a callout.{callout}
 
 This is a error callout.{callout error}
@@ -77,18 +79,21 @@ This is a error callout.{callout error}
 This is a warn callout.{callout warn}
 
 ## full-width
+
 This is a full width callout.{callout full-width}
 
-
 ## bigger and biggest
+
 This is some bigger text.{bigger}
 
 This is some biggest text.{biggest}
 
 ## center
+
 center{center}
 
 ## caption
+
 This is some caption text.{caption}
 
 # Boxed Links
@@ -99,7 +104,6 @@ This is some caption text.{caption}
 
 [boxed right](google.com){boxed right}
 
-
 # Links sidebar
 
 <div class="links-sidebar">
@@ -109,8 +113,6 @@ This is some caption text.{caption}
 </div>
 
 You can stick links in a sidebar.
-
-
 
 # Columns
 
@@ -130,7 +132,6 @@ You can stick links in a sidebar.
 
 </div>
 </div>
-
 
 # Activities, Assignments, Discussions
 
@@ -154,7 +155,6 @@ This is an example.
 
 </div>
 
-
 <div class="discussion">
 
 ## Example Discussion
@@ -165,12 +165,13 @@ This is an example.
 
 </div>
 
-
 # Images
+
 `.jpg`, `.png`, and `.svg` files are copied over
 ![Make Things that Make Things](./figures/make_things.png)
 
 ### two-up
+
 <div class="two-up">
 
 ![Make Things that Make Things](./figures/make_things.png)
@@ -194,7 +195,6 @@ This is an example.
 {% include ./test_slides.yaml %}
 {% endslides %}
 
-
 # Spoilers
 
 <div class="spoiler" >
@@ -207,15 +207,14 @@ This is a spoiler.
 
 </div>
 
-
 # Javascript
 
 ## Syntax Highlighting
 
 ```javascript
 function map(v, min1, max1, min2, max2) {
-    let n = (v - min1) / (max1 - min1);
-    return v * (max2 + min2) + min2;
+  let n = (v - min1) / (max1 - min1);
+  return v * (max2 + min2) + min2;
 }
 ```
 
@@ -225,18 +224,8 @@ Code can be included. `.js` files are copied over
 {% include ./sketches/example.js %}
 ```
 
-
-
 ## JSLab
 
 {% js-lab "./sketches/donkey.js" %}
 
-
-
 ## JSShow
-
-
-
-
-
-

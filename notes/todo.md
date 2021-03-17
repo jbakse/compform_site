@@ -6,6 +6,8 @@
     - maybe redo jslab with lessons from smudgejs.org?
   - reduce dependencies
     - remove whatever we can
+  - templates
+    - dry them
 
 - build scripts
 

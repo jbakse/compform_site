@@ -4,12 +4,12 @@
   comments: Desmond Paul Henry modified WW2 analogue computers to create drawing machines.
   links:
     - label: Artist's Site
-      href: http://www.desmondhenry.com/
+      href: https://www.desmondhenry.com/
 
 - artist: Desmond Paul Henry
   title: Untitled, 1962
   image: https://farm9.staticflickr.com/8243/8560060448_27d951d0ac_k.jpg
-  comments: 
+  comments:
   links:
     - label: Artist's Site
       href: http://www.desmondhenry.com/
@@ -47,7 +47,6 @@
 #     - label: Transmutation on Artist's Site
 #       href: http://www.novastructura.net/wp/works/transmutation01/
 
-
 - artist: Yoko Ono
   title: Voice Piece for Soprano, 1961
   image: https://pbs.twimg.com/media/C4SFfrJUoAMKt1R.jpg
@@ -82,7 +81,6 @@
 #     - label: Project Site
 #       href: http://www.digital-grotesque.com/
 
-
 - artist: Markus "Notch" Persson
   title: Minecraft, 2009
   image: https://static.planetminecraft.com/files/resource_media/screenshot/1245/Minecraft-2_4091491_lrg.jpg
@@ -106,6 +104,3 @@
   links:
     - label: Infinite Worlds Trailer
       href: https://www.youtube.com/watch?v=iKcumrtWzDk
-
-
-
