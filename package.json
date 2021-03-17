@@ -1,11 +1,16 @@
 {
-  "name": "eleventy_test",
-  "version": "1.0.0",
-  "description": "",
+  "name": "compform_site",
+  "version": "2.0.0",
+  "description": "This is the content for compform.net.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/style.scss _site/style.css",
-    "start": "npx @11ty/eleventy --serve"
+    "build:clean": "rm -rf _site",
+    "build:mkdir": "mkdir _site",
+    "build:sass": "sass css/main.scss _site/css/main.css",
+    "build:11ty": "npx @11ty/eleventy",
+    "build": "npm run build:clean && npm run build:mkdir && npm run build:sass && npm run build:11ty",
+    "serve": "npx @11ty/eleventy --serve",
+    "start": "npm run build && npm run serve"
   },
   "keywords": [],
   "author": "",

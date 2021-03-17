@@ -14,7 +14,8 @@ module.exports = function (eleventyConfig) {
 
   // file copy operations
   eleventyConfig.addPassthroughCopy("vendor");
-  eleventyConfig.addPassthroughCopy("src/entry.js");
+  eleventyConfig.addPassthroughCopy("components/js_lab");
+  eleventyConfig.addPassthroughCopy("js/main.js");
   eleventyConfig.addPassthroughCopy("content/**/*.png");
   eleventyConfig.addPassthroughCopy("content/**/*.jpg");
   eleventyConfig.addPassthroughCopy("content/**/*.svg");
@@ -25,13 +26,14 @@ module.exports = function (eleventyConfig) {
     return "short code returned this";
   });
 
-  // eleventyConfig.addPairedShortcode("slides", function (content) {
-  //   return content;
-  // });
+  eleventyConfig.addShortcode(
+    "js-lab",
+    require("./components/jslab_builder.js")
+  );
 
   eleventyConfig.addPairedShortcode(
     "slides",
-    require("./builders/slides_builder.js")
+    require("./components/slides_builder.js")
   );
 
   // syntax highlight

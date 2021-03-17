@@ -42,9 +42,12 @@ include('./compform_slides.yaml')
 /:: -->
 
 
-::: slides .contain
+
+
+
+<!-- ::: slides .contain
 @@include('../procedures/compform_slides.yaml')
-/::
+/:: -->
 
 
 ### What Computational Form is Not
@@ -129,11 +132,8 @@ Your goal **each day** should be to explore a different aspect of the weekly the
 > So I have to post something **every single day**?
 The spirit of the assignment is daily practice + flexibility. ~~Five~~ Four posts a week that explore the weekly theme in a variety of ways is considered `A` work.
 
-::: .callout
-Normally I require 5 skeches each week. I'm reducing 
-this to four because I'm going to be assigning a weekly 
-advanced reading and coding challenge to fit the online class format.
-/::
+
+Normally I require 5 skeches each week. I'm reducing this to four because I'm going to be assigning a weekly advanced reading and coding challenge to fit the online class format.{callout}
 
 
 <br>
@@ -259,6 +259,8 @@ All the work you submit for this class should be your own. For the most part you
 
 I am Justin Bakse. I am an assistant professor of interaction design at Parsons. I am personally very interested in computational form and have used computational methods in a great deal of my work. You can see some of my work below or [on my website](http://justinbakse.com/).
 
-::: slides .scale
-@@include('./justin_slides.yaml')
-/::
+
+
+{% slides %}
+{% include ./justin_slides.yaml %}
+{% endslides %}

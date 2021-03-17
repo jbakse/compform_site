@@ -15,20 +15,29 @@ next_url: false
 
 ---
 
+
+# Includes
+You can include Markdown files from Markdown files. Markdown files that start with `_` won't be processed as top level pages.
+
+You can use relative paths for include files and included files can include files.
+
+{% include ./_include_me.md %}
+
+
 # Markdown-it
 
-## linkify: true
+### linkify: true
 Auto convert links like: http://google.com
 
-## quotes: "“”‘’"
+### quotes: "“”‘’"
 
 Automatically add "smart quotes."
 
 
-## typographer: true,
+### typographer: true,
 (c) (tm) (r) +-  (p) ... ????? -- ---
 
-## inline html
+### inline html
 
 <div class="callout">
 
@@ -38,10 +47,11 @@ You can wrap markdown in a `<div></div>`. Include a blank line at the top and bo
 
 </div>
 
-## markdown-it-anchor
+# Markdown-it Plugins
+### markdown-it-anchor
 `markdown-it-anchor` automatically adds id's to headers. The h1 above ("Markdown-it Plugins") will have `id="markdown-it-plugins"`
 
-## markdown-it-classy
+### markdown-it-classy
 
 This paragraph has the blue class.{blue}
 
@@ -49,7 +59,7 @@ This paragraph has the blue class.{blue}
 .blue { color: blue }
 </style>
 
-## markdown-it-deflist
+### markdown-it-deflist
 
 Term 1
 : Definition One
@@ -59,17 +69,128 @@ Term 2
 
 # Content Classes
 
-## Callout
+## callout
 This is a callout.{callout}
+
+This is a error callout.{callout error}
+
+This is a warn callout.{callout warn}
+
+## full-width
+This is a full width callout.{callout full-width}
+
+
+## bigger and biggest
+This is some bigger text.{bigger}
+
+This is some biggest text.{biggest}
+
+## center
+center{center}
+
+## caption
+This is some caption text.{caption}
+
+# Boxed Links
+
+[boxed](google.com){boxed}
+
+[boxed down](google.com){boxed down}
+
+[boxed right](google.com){boxed right}
+
+
+# Links sidebar
+
+<div class="links-sidebar">
+
+[google](google.com)
+
+</div>
+
+You can stick links in a sidebar.
+
+
+
+# Columns
+
+<div class="columns">
+<div class="half">
+
+- one
+- two
+- three
+
+</div>
+<div class="half">
+
+- one
+- two
+- three
+
+</div>
+</div>
+
+
+# Activities, Assignments, Discussions
+
+<div class="activity">
+
+## Example Activity
+
+This is an example.
+
+This is an example.
+
+</div>
+
+<div class="assignment">
+
+## Example Assignment
+
+This is an example.
+
+This is an example.
+
+</div>
+
+
+<div class="discussion">
+
+## Example Discussion
+
+This is an example.
+
+This is an example.
+
+</div>
 
 
 # Images
 `.jpg`, `.png`, and `.svg` files are copied over
 ![Make Things that Make Things](./figures/make_things.png)
 
+### two-up
+<div class="two-up">
+
+![Make Things that Make Things](./figures/make_things.png)
+![Make Things that Make Things](./figures/make_things.png)
+
+</div>
+
+### three-up + full-width
+
+<div class="three-up full-width">
+
+![Make Things that Make Things](./figures/make_things.png)
+![Make Things that Make Things](./figures/make_things.png)
+![Make Things that Make Things](./figures/make_things.png)
+
+</div>
+
 # Slides
 
-{% slides asdf %}
+{% slides %}
 {% include ./test_slides.yaml %}
 {% endslides %}
 
@@ -104,17 +225,18 @@ Code can be included. `.js` files are copied over
 {% include ./sketches/example.js %}
 ```
 
-Might be nice to make a shortcode for this.{callout}
+
 
 ## JSLab
+
+{% js-lab "./sketches/donkey.js" %}
+
+
 
 ## JSShow
 
 
 
-# Includes
-You can include Markdown files from Markdown files. Markdown files that start with `_` won't be processed as top level pages.
 
-You can use relative paths for include files and included files can include files.
 
-{% include ./_include_me.md %}
+
