@@ -96,17 +96,13 @@ This is a fairly simple program. It is mostly a series of `fill`, `rect`, and `t
 
 At first, this indirect way of working can feel cumbersome. It would be easier to create and alter this drawing in a program like Adobe Illustrator. But even a slightly more sophisticated program begins to show the power afforded by working with procedures.
 
-
 {% js-lab "./sketches/houses.js" %}
-
 
 This example is only little more complex but instead of drawing one specific house, can generate many, many variations. The procedure used here introduces a few new concepts like making decisions based on random numbers and mixing colors, but the flow of the program is still straight down from top to bottom.
 
 As procedures begin to include `looping` and `conditional branching` they become much more powerful and even a short program can produce complex, detailed form. The following program draws a Sierpinski triangle using a completely different procedure from the one above.
 
-
 {% js-lab "./sketches/donkey.js" %}
-
 
 <div class="callout">
 
@@ -203,4 +199,3 @@ If you want to play Spelunky—which I highly recommend—the original version (
 [PCG Book](http://pcgbook.com/)
 
 [Procedures and Algorithms](http://web.uvic.ca/~ling48x/ling484/notes/procedures.html)
-

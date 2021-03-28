@@ -1,19 +1,22 @@
 - clean things up
 
-  - builders
-  - css
-  - jslab
-    - maybe redo jslab with lessons from smudgejs.org?
-  - reduce dependencies
-    - remove whatever we can
-  - templates
-    - dry them
+phase 0
+
+- !builders
+- templates - dry them
+  phase 1
+- jslab - maybe redo jslab with lessons from smudgejs.org?
+  phase 2
+- css
+- reduce dependencies
+
+  - remove whatever we can
 
 - build scripts
 
-  - need single build command
-
 - content
+
+  - port all the chapters
 
   - related publications page
 
@@ -24,8 +27,8 @@
       - pearls
       - shiffman
     - print books
-      - shiffman
-      - that generative book
+      - shiffman Natures of Code
+      - Generative Design
 
   - sidebar links
   - end links
@@ -59,3 +62,4 @@
     - make messes more performant
     - make messes optional somehow?
     - link to mess code/lab
+    - add more messes to other chapters
