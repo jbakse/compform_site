@@ -30,7 +30,11 @@ Consider the works below:
 - Which aspects of each work were influenced by chance?
 - Which aspects were controlled by the artist?
 
-{% slides './slides.yaml' %}
+
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
+
 
 ## The Methodical Application of Chance
 
@@ -282,11 +286,11 @@ A **deck of cards** works differently. When you pull cards from a deck, you don'
 
 #### Dice Visualizer
 
-{% js-lab /random/sketches/dice.js %}
+{% js-lab "sketches/dice.js" %}
 
 #### Deck Visualizer
 
-{% js-lab /random/sketches/cards.js %}=
+{% js-lab "sketches/cards.js" %}
 
 ### Modeling a Deck with an Array
 
@@ -444,7 +448,7 @@ A common method to create pseudorandom values is a [Linear Congruential Generato
 
 LCGs begin with an initial value called the **seed**, then use multiplication, addition, and modulus (remainder after division) to derive a new, seemingly random value. Below is a very basic implementation of an LCG so you can see how they work.
 
-{% js-lab /random/sketches/random_lcg.js %}
+{% js-lab "sketches/random_lcg.js" %}
 
 For our purposes, it is not important to understand exactly how the generator works.
 
@@ -460,7 +464,7 @@ For our purposes, it is not important to understand exactly how the generator wo
 
 P5 provides `randomSeed()` to set the **seed** used by `random()`. Once you have set the seed, the sequence of values produced by random will always be the same.
 
-{% js-lab /random/sketches/seed.js %}
+{% js-lab "sketches/seed.js" %}
 
 By setting a seed you can use random values in your code, but get the same results each time you run your program. This can be a useful feature in many programs and can help with debugging problems.
 
@@ -498,25 +502,25 @@ The following study examples demonstrate different ways to bias and map random v
 
 ### Skyline
 
-{% js-lab /random/sketches/skyline.js %}
+{% js-lab "sketches/skyline.js" %}
 
 ### Small Multiples
 
-{% js-lab /random/sketches/small_mult.js %}
+{% js-lab "sketches/small_mult.js" %}
 
 ### Grass
 
-{% js-lab /random/sketches/grass.js %}
+{% js-lab "sketches/grass.js" %}
 
 ### Brownian Motion
 
-{% js-lab /random/sketches/brownian.js %}
+{% js-lab "sketches/brownian.js" %}
 
 [Wikipedia: Brownian Motion](https://en.wikipedia.org/wiki/Brownian_motion)
 
 ### Horizon
 
-{% js-lab /random/sketches/horizon.js %}
+{% js-lab "sketches/horizon.js" %}
 
 <div class='activity'>
 

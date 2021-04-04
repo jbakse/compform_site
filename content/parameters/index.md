@@ -175,7 +175,9 @@ Notably, this code doesn't do _exactly_ the same thing as the original version. 
 
 ## Parameters & Interface Design
 
-{% slides ./slides.yaml %}
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
 
 ### Interfaces
 
@@ -252,9 +254,9 @@ I sometimes find it helpful to consider wether my parameters should be method-or
 
 Loosely, method-oriented parameters correspond with the imperative programming paradigms and goal-oriented parameters correspond with declarative programming paradigm.
 
-{% js-lab /parameters/sketches/stipple_rect.js %}
+{% js-lab "sketches/stipple_rect.js" %}
 
-{% js-lab /parameters/sketches/stipple_rect_2.js %}
+{% js-lab "sketches/stipple_rect_2.js" %}
 
 [Wikipedia: Constraint Programming](https://en.wikipedia.org/wiki/Constraint_programming)
 
@@ -306,7 +308,7 @@ A quick-and-dirty way to make your comp form sketches “tweakable” is to use 
 - Use comments to explain the parameter in more detail, document legal value ranges, and suggest good values.
 - Keep in mind that [global variables are evil](https://stackoverflow.com/questions/19158339/why-are-global-variables-evil). Use constants instead of variables, if your language supports them. If your language doesn't support true constants use a naming convention, such as all caps, to indicate that a value shouldn't be changed.
 
-{% js-lab /parameters/sketches/square.js %}
+{% js-lab "sketches/square.js" %}
 
 
 ### HTML Interfaces with p5.dom.js
@@ -320,14 +322,14 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 - Use `select()` in p5 if you want to make your controls in HTML.
 - Consider styling your interface with CSS.
 
-{% js-lab /parameters/sketches/square_slider.js %}
+{% js-lab "sketches/square_slider.js" %}
 
 ### HTML Interfaces with Tweakpane
 
 [Tweakpane](https://cocopon.github.io/tweakpane/) is a javascript library that lets you quickly setup and display a interactive pane for adjusting parameters.
 
 
-{% js-lab /parameters/sketches/square_tweakpane.js %}
+{% js-lab "sketches/square_tweakpane.js" %}
 
 
 
