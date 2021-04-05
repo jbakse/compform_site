@@ -162,6 +162,7 @@ ellipse(x, 100, 10, 10);
 
 The modulo operator—`%`—is great for breaking time into repeated chunks or measures. The example below uses `%` and `map()` together to add a red blinking light to the metronome.
 
+<!-- should be js-show -->
 {% js-lab "sketches/metronome_modulo.js" %}
 
 The new work is done on line 20:
@@ -300,6 +301,7 @@ Complete the following challenges to deepen your understanding of the examples a
 ### Challenging Challenge 
 7. Recreate this:
 
+<!-- should be js-show -->
 {% js-lab "challenges/bounce_02.js" %}
 
 ### Modify the Fuzz Example
@@ -323,6 +325,7 @@ Complete the following challenges to deepen your understanding of the examples a
 ### Challenging Challenge
 1. Recreate This
 
+<!-- should be js-show -->
 {% js-lab "challenges/fuzzy_02.js" %}
 
 

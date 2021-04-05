@@ -215,6 +215,7 @@ HTML is text, so Tracery can generate HTML!
 
 Explore using Javascript Template literals by completing the following challenges.
 
+
 {% js-lab "sketches/challenge.js" %}
 
 ### Modify the Example Above
