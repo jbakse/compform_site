@@ -1,6 +1,6 @@
 ---
 title: Hello, p5!
-layout: layouts/compform_chapter.pug
+layout: compform_chapter.pug
 debug: false
 
 header_title: "Hello, p5!"
@@ -15,7 +15,7 @@ software: p5.js + p5.dom
 ---
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
 <script src="../mess/flakes_mess.js"></script>
 
 ## Processing and p5.js
@@ -24,7 +24,8 @@ There are many live, working code examples throught this site. Many of these exa
 
 ### Processing
 
-::: .links-sidebar
+<div class="links-sidebar">
+
 [Processing](https://processing.org/)
 
 [Casey Reas](http://reas.com/)
@@ -32,7 +33,8 @@ There are many live, working code examples throught this site. Many of these exa
 [Benjamin Fry](http://benfry.com/)
 
 [Daniel Shiffman](http://shiffman.net/)
-/::
+
+</div>
 
 
 
@@ -43,11 +45,13 @@ Processing combines a simple programming environment and a programming language 
 
 ### p5.js
 
-::: .links-sidebar
+<div class="links-sidebar">
+
 [p5.js](https://p5js.org/)
 
 [Lauren McCarthy](http://lauren-mccarthy.com/)
-/::
+
+</div>
 
 
 [p5.js](https://p5js.org/) was created by artist [Lauren McCarthy](http://lauren-mccarthy.com/) to brings the Processing API and spirit to Javascript and the web. Working in p5.js is very similar to working in Processing, with the benefit that p5.js sketches work in any modern browser.
@@ -73,10 +77,7 @@ Site  | Description
 
 This sketch draws a very simple house. You can try changing or adding to the house by editing the code below. You'll need to hit cmd/ctrl-s to update the code after you make changes.
 
-::: js-lab
-/p5/sketches/house.js
-/::
-
+{% js-lab "sketches/house.js" %}
 
 ## Sketching Locally
 
@@ -110,9 +111,11 @@ To create a p5.js Project from scratch you need to do a few things.
 4. Write a sketch in Javascript. The script will be included either in `<script>` tags with your `.html` file or in a seperate `.js` file.
 5. Load the `.html` file in a browser to see it run.
 
-::: .links-sidebar
+<div class="links-sidebar">
+
 [p5.js:<br/> Get Started](https://p5js.org/get-started/)
-/::
+
+</div>
 
 This process is detailed in the [p5.js Get Started guide](https://p5js.org/get-started/). 
 
