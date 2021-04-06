@@ -312,9 +312,9 @@ It doesn't have to be good. It doesn't have to use code.
 
 [Melody in Songwriting](https://www.amazon.com/Melody-Songwriting-Techniques-Writing-Berklee/dp/063400638X)
 :Melody in Songwriting is an excellent book for developing melody-writing skills.
-
+<!-- Broken Link
 [C-sharp vs D-flat](http://blog.eumlab.com/c-and-db-whats-the-difference/)
-:Music theory article addressing note naming within different keys.
+:Music theory article addressing note naming within different keys. -->
 
 [Kahn Academy: Music Basics](https://www.khanacademy.org/humanities/music/music-basics2)
 :Khan Academy offers interactive tutorials on basic music theory, including rhythm and musical notation.
