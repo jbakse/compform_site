@@ -260,8 +260,7 @@ It might help to have the documentation for [Paper.js Path](http://paperjs.org/r
 12. Create the drawing below.
     {continue}
 
-<!-- should be js-show -->
-{% js-lab "sketches/challenge.js" %}
+{% js-show "sketches/challenge.js" %}
 
 </div>
 

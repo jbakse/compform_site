@@ -1,6 +1,6 @@
 ---
 title: Sound
-layout: layouts/compform_chapter.pug
+layout: compform_chapter.pug
 debug: false
 
 header_title: Sound

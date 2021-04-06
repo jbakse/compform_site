@@ -111,8 +111,7 @@ This demo populates a template with the words you provide to generate a new cons
 
 <!-- [[issue with page resizing/cutting off beginning of lines]] -->
 
-<!-- should be js-show-->
-{% js-lab "sketches/first_amendment.js" %}
+{% js-show "sketches/first_amendment.js" %}
 
 
 </div>

@@ -1,6 +1,6 @@
 ---
 title: Sound
-layout: layouts/compform_plain.pug
+layout: compform_plain.pug
 debug: false
 ---
 

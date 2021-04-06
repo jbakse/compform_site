@@ -325,8 +325,7 @@ Complete the following challenges to deepen your understanding of the examples a
 ### Challenging Challenge
 1. Recreate This
 
-<!-- should be js-show -->
-{% js-lab "challenges/fuzzy_02.js" %}
+{% js-show "challenges/fuzzy_02.js" %}
 
 
 

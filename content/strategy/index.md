@@ -481,8 +481,7 @@ Then keep sketching! For the remaining three posts, I encourage you to build a s
 
 `Challenge Goal`
 
-<!-- should be js-show -->
-{% js-lab "sketches/dot_challenge/sketch.js" %}
+{% js-show "sketches/dot_challenge/sketch.js" %}
 
 `Challenge Start Code`
 
@@ -494,8 +493,7 @@ Same as above: Analyze, Strategize, Study, Recreate, Extend, Post
 
 `Challenge Goal`
 
-<!-- should be js-show // also potentially clean this up-->
-{% js-lab "sketches/line_challenge/sketch.js" %}
+{% js-show "sketches/line_challenge/sketch.js" %}
 
 <br/>
 
