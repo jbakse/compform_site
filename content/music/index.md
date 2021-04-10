@@ -216,9 +216,12 @@ In musical notation, note lengths are usually provided in relation to the tempo 
 
 Notes have two values: Pitch and Length. We could use an object `{pitch: 60, length: .25}` or an array `[60, .25]` to represent our note. The object is more _correct_ but the array is more _compact_. For a short demo like this, I think a melody will look better with arrays: let's use them.
 
-```.callout .warn
+<div class='callout warn'>
+
+```
 Choosing to represent pitch and length in an array `[60, .25]` is semantically incorrect. The array implies a list of values with a similar nature. An object is better for a collection of values with different natures. With and array the code that accesses pitch will be unclear: `note[0]; note[1];`. With an object it would be much clearer: `note.pitch; note.length;`
 ```
+</div>
 
 #### Rests
 
