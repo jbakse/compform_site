@@ -1,25 +1,24 @@
-- clean things up
+- review jason's ports and 11ty extensions
 
-phase 0
+### phase 0
 
-- !builders
 - templates - dry them
-  phase 1
+
+### phase 1
+
 - jslab - maybe redo jslab with lessons from smudgejs.org?
-  phase 2
+
+### phase 2
 - css
 - reduce dependencies
-
   - remove whatever we can
 
 - build scripts
 
-- content
-
+### content
   - port all the chapters
 
   - related publications page
-
     - websites
       - redblob
     - online books

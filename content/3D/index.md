@@ -60,7 +60,7 @@ At first glance OpenSCAD syntax looks similar to C or JavaScript, with braces, b
 
 Look at the example below, which creates a ring by subtracting one cylinder from another.
 
-```openscad
+```
 difference() {
     cylinder (h=1, r=4, center = true);
     cylinder (h=1, r=3, center = true);
@@ -97,7 +97,7 @@ Classifying programming languages by paradigm is tricky in practice. The boundar
 
 The most noticeable effect of OpenSCAD being functional is that data in OpenSCAD is immutable: the value of every variable is constant. In fact, variables are not even assigned values at runtime. A variable's value is determined and assigned at compile time, before the script is run. The variable's value will be the _last_ assigned value.
 
-```openscad
+```
 a = 1;
 echo(a); // -> 2
 a = 2;
@@ -180,7 +180,7 @@ These examples will build up to a simplified parametric Lego brick, introducing 
 
 ### Generating Primitives
 
-```openscad
+```
 $fn = 20;
 % cube([8,8,9.6], true);
 cylinder(h=1.8, r=2.4, center=true);
@@ -204,7 +204,7 @@ OpenSCAD has an [echo()](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Othe
 
 ### Transformations
 
-```openscad
+```
 $fn = 20;
 
 color("SlateBlue") {
@@ -224,7 +224,7 @@ The example also demonstrates using `color` to change the color used to render t
 
 ### Boolean Operations
 
-```openscad
+```
 $fn = 20;
 
 difference() {
@@ -248,7 +248,7 @@ OpenSCAD may not preview this shape very cleanly. Render the shape with `Main Me
 
 ### Variables + Modules
 
-```openscad
+```
 $fn = 20;
 brick_width = 8;
 brick_height = 9.6;
@@ -276,7 +276,7 @@ This example produces the same shape as the example above, but uses variables an
 
 ### For Loops
 
-```openscad
+```
 $fn = 20;
 brick_width = 8;
 brick_height = 9.6;
