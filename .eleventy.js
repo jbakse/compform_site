@@ -31,6 +31,21 @@ module.exports = function (eleventyConfig) {
     require("./components/jslab_builder.js")
   );
 
+  eleventyConfig.addShortcode(
+    "js-show",
+    require("./components/jsshow_builder.js")
+  );
+
+  // eleventyConfig.addPairedShortcode(
+  //   "assignment",
+  //   require("./components/assignment_builder.js")
+  // );
+
+  // eleventyConfig.addPairedShortcode(
+  //   "links-sidebar",
+  //   require("./components/links-sidebar_builder.js")
+  // );
+
   eleventyConfig.addPairedShortcode(
     "slides",
     require("./components/slides_builder.js")
