@@ -1,6 +1,5 @@
 - review jason's ports and 11ty extensions
 
-
 - make sure tables work in the new build system
 - combine lab and show builder
 - compform_plain.pug needs update
@@ -14,52 +13,64 @@
 - jslab - maybe redo jslab with lessons from smudgejs.org?
 
 ### phase 2
+
 - css
 - reduce dependencies
+
   - remove whatever we can
 
 - build scripts
 
 ### content
-  - port all the chapters
 
-  - related publications page
-    - websites
-      - redblob
-    - online books
-      - pcg book
-      - pearls
-      - shiffman
-    - print books
-      - shiffman Natures of Code
-      - Generative Design
+- add Vera Molnar slide
 
-  - per chapter
-    - sidebar links
-    - end links
+- port all the chapters
 
-  - galleries
-    - fix broken links
-    - recurate existing galleries
-    - add galleires when possible
+- related publications page
 
-  - in-class coding challenges
-    - change name to just "coding challenges"
+  - websites
+    - redblob
+  - online books
+    - pcg book
+    - pearls
+    - shiffman
+  - print books
+    - shiffman Natures of Code
+    - Generative Design
 
-  - make sure all chapters have study examples and challenges
+- per chapter
 
-  - sketch challenges (rename to prompts?)
-    - review all single/pair
+  - sidebar links
+  - end links
 
-  - spoilers
-    - mark spoilers for things done in class
+- galleries
 
-  - code examples
-    - update to use latest p5 version
-    - update to use integrated dom library
+  - fix broken links
+  - recurate existing galleries
+  - add galleires when possible
 
-  - messes
-    - make messes more performant
-    - make messes optional somehow?
-    - link to mess code/lab
-    - add more messes to other chapters
+- in-class coding challenges
+
+  - change name to just "coding challenges"
+
+- make sure all chapters have study examples and challenges
+
+- sketch challenges (rename to prompts?)
+
+  - review all single/pair
+
+- spoilers
+
+  - mark spoilers for things done in class
+
+- code examples
+
+  - update to use latest p5 version
+  - update to use integrated dom library
+
+- messes
+  - make messes more performant
+  - make messes optional somehow?
+  - link to mess code/lab
+  - add more messes to other chapters
