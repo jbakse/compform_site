@@ -34,7 +34,7 @@ There are many reasons artists and designers employ algorithmic methods. Some im
 - enhancing variety
 - creating dynamic, responsive content
 
-This class will focus on exploration, experimentation, and skill bilding.
+This class will focus on exploration, experimentation, and skill building.
 
 <!-- ::: slides .contain
 // needs @@ before inclue

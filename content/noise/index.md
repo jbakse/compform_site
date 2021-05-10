@@ -250,19 +250,21 @@ The following study examples demonstrate different methods of using noise to get
 
 {% js-lab "sketches/skyline.js" %}
 
-</div>
+
+
+
 
 <div class='activity'>
 
 ## In-class Challenge
 
 Explore using noise by completing the following challenges in order. <br/> Don't skip any.
-
+<!-- 
 | Time                | Comment                                                                              |
 | ------------------- | ------------------------------------------------------------------------------------ |
 | < 7 in 20 Minutes   | You need to put in some extra work to strengthen your understanding of these topics. |
 | 7 in 20 Minutes     | Good.                                                                                |
-| All 9 in 20 Minutes | Great.                                                                               |
+| All 9 in 20 Minutes | Great.                                                                               | -->
 
 ### Modify the Mapping Noise Example
 
@@ -291,6 +293,8 @@ Explore using noise by completing the following challenges in order. <br/> Don't
 </div>
 
 <div class='assignment'>
+
+
 
 ## Keep Sketching!
 

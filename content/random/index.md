@@ -40,7 +40,7 @@ Consider the works below:
 
 Using random values in your procedural system doesn't mean your results must be haphazard, uncontrolled, or unorganized. While individual random values are unpredictable, you can use these values to create a coherent cumulative effect.
 
-<div class ="spoiler">
+<div class ="activity">
 
 ## 2d6 vs 1d12 Chart
 

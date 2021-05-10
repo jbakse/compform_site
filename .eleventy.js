@@ -22,10 +22,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("content/**/*.js");
 
   // shortcodes
-  eleventyConfig.addShortcode("myShortcode", function (firstName, lastName) {
-    return "short code returned this";
-  });
-
   eleventyConfig.addShortcode(
     "js-lab",
     require("./components/jslab_builder.js")
