@@ -247,7 +247,7 @@ Restores the turtle’s state to the top recorded state on the stack.
 
 <div class="activity">
 
-## In-class Challenge
+## Coding Challenges
 
 Explore turtle graphics by modifying the examples above. Work through the following challenges in order. Don't skip any.
 

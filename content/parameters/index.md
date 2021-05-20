@@ -329,7 +329,7 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 <div class='activity'>
 
-## In-class Challenge
+## Coding Challenges
 
 Explore using parameters by completing the following challenges in order. <br/> Don't skip any.
 

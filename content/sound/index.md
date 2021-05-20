@@ -125,7 +125,6 @@ This example uses `frameCount` to keep time and play a beat with drum samples. T
 
 {% js-lab "sketches/hello_drum.js" %}
 
-
 ### Bounce
 
 This example doesn't have any sound in it... yet.
@@ -147,7 +146,7 @@ function record(length) {
   var soundRecorder = new p5.SoundRecorder();
   var soundFile = new p5.SoundFile();
   soundRecorder.record(soundFile);
-  setTimeout(function() {
+  setTimeout(function () {
     console.log("Recording Complete");
     soundRecorder.stop();
     save(soundFile, "output.wav");
@@ -157,7 +156,7 @@ function record(length) {
 
 <div class="activity">
 
-## In-class Challenge
+## Coding Challenges
 
 - In the Drum Kit example, switch the samples used to play the beat.
 - Change the timing to create a more complex beat.
