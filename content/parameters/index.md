@@ -11,7 +11,7 @@ next_url: ../noise
 
 hero_title: Parameters
 description: Expose parameters to make your procedural systems easier to control, explore, and use.
-software: p5.js + p5.dom
+software: p5.js
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
@@ -310,10 +310,7 @@ A quick-and-dirty way to make your comp form sketches “tweakable” is to use 
 
 {% js-lab "sketches/square.js" %}
 
-
 ### HTML Interfaces with p5.dom.js
-
-
 
 The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions that allow you create HTML elements and user interface controls. This is more complicated to set up, but still pretty quick. It is a much better choice if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload your sketch.
 
@@ -328,16 +325,9 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 [Tweakpane](https://cocopon.github.io/tweakpane/) is a javascript library that lets you quickly setup and display a interactive pane for adjusting parameters.
 
-
 {% js-lab "sketches/square_tweakpane.js" %}
 
-
-
 <div class='activity'>
-
-
-
-
 
 ## In-class Challenge
 
