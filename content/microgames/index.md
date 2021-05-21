@@ -28,7 +28,8 @@ Minigames are small videogames included within larger videogames. They are often
 
 Some games are made up almost entirely of minigames. Party games like Mario Party, Rayman: Raving Rabbids, and 1-2-Switch allow players to compete in a series of minigame events. Evoland I + II are RPGs that mix many videogame styles and mechanics both by including many minigames and by evolving the presentation of the main game itself.
 
-::: .three-up
+<div class="three-up">
+
 ![Bioshock](figures/bioshock.jpg)
 BioShock Hacking{figure}
 
@@ -37,7 +38,8 @@ Final Fantasy VII Chocobo Racing{figure}
 
 ![Animal Crossing](figures/animalcrossing.jpg)
 Animal Crossing NES Collection{figure}
-/::
+
+</div>
 
 Minigames provide many benefits in game design. They offer a change of pace from the main game, reducing fatigue. They are usually low stakes, reducing stress. A well-placed minigame can improve the pacing of the main game significantly. Offering a break before a spike in the action will increase the apparent contrast in the intensity.
 
@@ -45,16 +47,17 @@ Minigames don't have to carry the weight of a full game. They don't have advance
 
 The [WarioWare](<https://en.wikipedia.org/wiki/Wario_(franchise)>) series, which debuted in 2003 on the Game Boy Advance, pushed the single-minded focus of minigames as far as possible. WarioWare presents the player with a rapid-fire sequence of microgames that demand only a single action from the player and take just seconds to play. As soon as the player completes one challenge, another begins.
 
-::: .three-up
+<div class="three-up">
+
 ![WarioWare](figures/ww-stop.png)
 ![WarioWare](figures/ww-car.png)
 ![WarioWare](figures/ww-catch.png)
-/::
+
+</div>
 
 Designing and building Microgames is a great way to explore game design. Their small scope allows even a single person to conceive, build, and test a game idea in a short amount of time. Each microgame is stripped to its essential element, allowing no distractions to cover up weak central mechanic. When building a microgame is left with a little to worry about as possible beyond the essentials of game design.
 
-::: .spoiler
-::: .activity
+<div class="activity">
 
 ## What is a Game?
 
@@ -86,8 +89,7 @@ Compare group lists.
 
 Compare features to each of the artifacts in the list above. Do these features support the way each artifact was grouped?
 
-/::
-/::
+</div>
 
 ## p5.play
 
@@ -102,11 +104,11 @@ Since p5.play builds on p5.js it should feel pretty familiar. One key difference
 - [p5.play examples](http://p5play.molleindustria.org/examples/index.html)
 - [p5.play api reference](http://p5play.molleindustria.org/docs/index.html)
 
-::: .callout
+<div class="callout">
 
 **NOTE:** p5.play hasn't been updated in a while, and produces some console errors in newer browsers. The examples seem to work fine still.
 
-/::
+</div>
 
 ## Study Examples
 
@@ -118,7 +120,7 @@ Since p5.play builds on p5.js it should feel pretty familiar. One key difference
 
 {% js-lab "sketches/interaction.js" %}
 
-::: .activity
+<div class="activity">
 
 ## Coding Challenges
 
@@ -144,9 +146,10 @@ Explore p5.play by completing these challenges.
 2. With Example 2: Remove The King from the scene when he is clicked. Start the scene with 10 kings.
 3. With Example 1: Make The King and The Kid in Green “bounce” when they collide. Tip: Look at the “bouncing” p5play example.
 4. Start making microgames!
-   /::
 
-::: .assignment
+</div>
+
+<div class="assignment">
 
 ## Keep Sketching!
 
@@ -162,14 +165,15 @@ Couch co-op games are local multiplayer videogames, where two people play togeth
 
 Create a couch co-op microgame!
 
-/::
+</div>
 
 ## Reference Links
 
 [Game Maker's Toolkit: What Makes a Good Puzzle?](https://www.youtube.com/watch?v=zsjC6fa_YBg)
 : Game Maker's Toolkit is an excellent Youtube series about game design. This video addresses how to design a good micro challenge, and [The Secret Of Mario's Jump](https://www.youtube.com/watch?v=7daTGyVZ60I) analyzes player input.
 
-[Piskel](https://www.piskelapp.com/): A tool for building animated sprites.
+[Piskel](https://www.piskelapp.com/)
+: A tool for building animated sprites.
 
 <style>
   .spoiler h3 {
@@ -200,5 +204,4 @@ for (var i = 0; i < els.length; i++) {
     let el = els[i];
     els[i].addEventListener('click', ()=>el.classList.remove("spoiler"));
 }
-
 </script>
