@@ -405,7 +405,7 @@ if (random(100) < 20) {
 
 </div>
 
-<div class='activity spoiler'>
+<div class='activity'>
 
 ## Skyline Tactic Match
 
@@ -477,7 +477,7 @@ Javascript does not provide any way for you to set the seed used by `Math.random
 
 </div>
 
-<div class='activity spoiler'>
+<div class='activity'>
 
 ## Pencil + Paper LCG
 
@@ -491,6 +491,8 @@ Explore how an Linear Congruential Generator works by generating pseudo-random v
 <p class="boxed download">
     <a href="../handouts/lcg_random.svg" download>lcg_random.svg</a>
 </p>
+
+</div>
 
 ## Study Examples
 
