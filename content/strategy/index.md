@@ -30,25 +30,24 @@ canvas {
 }
 </style>
 
-So far we've been looking at low-level topics like how to use `random()` and `noise()`. This week we are changing focus to high-level planning. To create more complex systems you must develop a clear understanding of your goal, create a plan to achieve that goal, divide that plan into sub-problems ([decomposition](https://en.wikipedia.org/wiki/Decomposition_(computer_science))) and create code to solve those sub-problems ([implementation](https://en.wikipedia.org/wiki/Implementation)). 
+So far we've been looking at low-level topics like how to use `random()` and `noise()`. This week we are changing focus to high-level planning. To create more complex systems you must develop a clear understanding of your goal, create a plan to achieve that goal, divide that plan into sub-problems ([decomposition](<https://en.wikipedia.org/wiki/Decomposition_(computer_science)>)) and create code to solve those sub-problems ([implementation](https://en.wikipedia.org/wiki/Implementation)).
 
-When planning and coding a project, I tend to think in terms of *strategies* and *tactics*.
+When planning and coding a project, I tend to think in terms of _strategies_ and _tactics_.
 
 Strategies
-: Strategies are high-level plans for achieving particular goals. Strategies are specific to their goals, and not highly reusable. 
+: Strategies are high-level plans for achieving particular goals. Strategies are specific to their goals, and not highly reusable.
 
 _Strategies are composed of tactics._
 
 Tactics
-: Tactics are low- to mid-level concrete approaches to solving common problems. Tactics can include specific [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms), [data structures](https://en.wikipedia.org/wiki/List_of_data_structures), [design patterns](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), and other reusable components that can be applied to a variety of problems. 
+: Tactics are low- to mid-level concrete approaches to solving common problems. Tactics can include specific [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms), [data structures](https://en.wikipedia.org/wiki/List_of_data_structures), [design patterns](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), and other reusable components that can be applied to a variety of problems.
 
 _Tactics are composed of smaller tactics and primitives._
 
 Primitives
-: Primitives are the programming building blocks provided by your [language]((https://en.wikipedia.org/wiki/Language_primitive)) and libraries. These include control structures like loops and functions and built-in data types like variables, objects, and arrays. They may also include more complex tasks like `rect()` and `random()` when the complexity is hidden from your program's frame of reference. 
+: Primitives are the programming building blocks provided by your [language](<(https://en.wikipedia.org/wiki/Language_primitive)>) and libraries. These include control structures like loops and functions and built-in data types like variables, objects, and arrays. They may also include more complex tasks like `rect()` and `random()` when the complexity is hidden from your program's frame of reference.
 
 _Primitives are atomic: they are the smallest units of composition and are not further broken down._
-
 
 <div class="callout">
 If you are already familiar with the idea of _design patterns_, my use of the term _tactics_ will sound familiar. I am using _tactics_ to talk of a broader category which includes individual design patterns but also other specific reusable ideas that wouldn't count as design patterns.
@@ -58,7 +57,7 @@ If you are already familiar with the idea of _design patterns_, my use of the te
 
 Becoming familiar with common tactics and being able to recognize the problems they solve is critical to creating more complex code. Tactics are powerful and useful because they are **reusable** and **composable**: the problems they solve appear over and over in a variety of contexts and you can combine tactics in different ways to solve different problems.
 
-*The trick is recognizing the abstract similarities between problems.*
+_The trick is recognizing the abstract similarities between problems._
 
 For example, compare this code that animates a bouncing ball:
 
@@ -71,7 +70,7 @@ to this code that "bounces" the color of a ball:
 These two programs produce different effects, but structurally they are almost identical. The two problems have a similar "shape" and we can use a common tactic to solve them both. We could call this common tactic "bounce". Bounce is fairly simple, but we can break it down further as a composition of smaller common tactics:
 
 Line 20
-: A variable increment to provide motion. 
+: A variable increment to provide motion.
 
 _If you want to dig deeper, this is a very simple [explicit numerical integration](https://gafferongames.com/post/integration_basics/) of motion. It is the [Euler method](https://en.wikipedia.org/wiki/Euler_method) simplified by assuming no acceleration and a constant time step._
 
@@ -90,9 +89,7 @@ Tactics can range from very simple—like using the average of two `random()` ca
 
 This week we'll look at some tactics for a very common problem in procedural generation: arranging points on a square.
 
-
-
-<!-- 
+<!--
 [[Compostion]]
 [[Factoring]]
 
@@ -124,14 +121,11 @@ This week we'll look at some tactics for a very common problem in procedural gen
 [[http://www.gameprogrammingpatterns.com/]]
  -->
 
- 
-
 <!-- [[above section feels awkwardly positioned, especially after the preceding aside. Maybe this should talk more about "design patterns", composition? -->
 
 <!-- [[I agree. The following discussion section feels awkward too. Knowing that these named strategies are actually tools for solving specific problems is important--I hadn't though of them like that before. But the language in the first paragraph here is pretty vague. Discussing design patterns and composition might clarify it.]]-->
 
- 
-<!-- 
+<!--
 <div class="callout">
 **Tackling Complexity**
 
@@ -154,7 +148,6 @@ Working this way will let you discover the details of how your ball—an importa
 
 </div> -->
 
-
 <div class="discussion">
 
 ## Points on a Square
@@ -162,6 +155,7 @@ Working this way will let you discover the details of how your ball—an importa
 Consider the image below. How might you make something like this?
 
 ![tighten_relax](figures/strategies/tighten_relax.png){scale}
+
 </div>
 
 ## Where Should I Put Things?
@@ -171,8 +165,6 @@ Many procedural systems have to answer a fundamental question: _Where should I p
 This problem shows up all the time: putting trees on an island, putting beads of water on glass, putting scratches on a spaceship. In these situations, it is important to control the placement carefully to achieve an appropriate look. Trees tend to grow in groups and in certain areas where the conditions are right. They don't tend to grow at high altitudes, in the water, or where there is no rain. Beads of water shouldn't overlap because when beads of water touch, they join into a bigger bead. Scratches are more likely on raised, exposed parts of the ship that might collide with debris. Each situation has different requirements, and depending on your approach, you can determine how planned, chaotic, random, natural, or mechanical the placement feels.
 
 The problems above are all specific instances of the general problem of arranging points. Below we'll look at several tactics for placing and moving points on a square. These tactics can be combined in different ways to generate a wide variety of arrangements. These tactics can help with planting trees, beading water, or banging up a spaceship. They could be adapted to arranging points on lines or in cubes or arranging events in time. You can find applications for these tactics in all areas of procedural generation any time you have things that need to be arranged.
-
-
 
 {% slides %}
 {% include slides.yaml %}
@@ -184,9 +176,9 @@ The problems above are all specific instances of the general problem of arrangin
 
 Analyze each of the examples below. Carefully consider their similarities and differences.
 
-* How does each example compare to the others?
-* What characteristics could be used to group similar examples?
-* What applications might each placement pattern have?
+- How does each example compare to the others?
+- What characteristics could be used to group similar examples?
+- What applications might each placement pattern have?
 
 Group the examples as you see fit.
 
@@ -198,7 +190,7 @@ Group the examples as you see fit.
 
 </div>
 
-## Placement Tactics 
+## Placement Tactics
 
 ### Placing the Points
 
@@ -216,7 +208,6 @@ y = random() * height;
 This is a quick, effective, and straightforward way to lay points down. In theory, since the placement is random, all of the points might be placed in a clump or on one half of the square. In practice, the points are mostly evenly distributed over the plane, with some areas a little more or less dense.
 
 ![random placement](figures/random.png){three-up no-margin}
-
 
 #### Grid Placement
 
@@ -238,16 +229,15 @@ for (row = 0; row < grid_rows; row++) {
 
 Place each point at a location determined by a noise lookup.
 
-* Because noise is center-biased, the results will be center-biased.
-* Each dot will be placed near the last as the values change in the noise cloud.
-* This technique allows you some control over the proximity of successive points.
+- Because noise is center-biased, the results will be center-biased.
+- Each dot will be placed near the last as the values change in the noise cloud.
+- This technique allows you some control over the proximity of successive points.
 
 ```javascript
 // loop with _i_
 x = noise(i * frequency, 0) * w;
 y = noise(i * frequency, 1000) * h;
 ```
-
 
 ![noise placement](figures/noise_low.png)
 ![noise placement](figures/noise_high.png){three-up no-margin}
@@ -297,23 +287,23 @@ y = y + random() * height;
 
 Displace each point by an amount determined by a noise lookup.
 
-* This technique allows for nice control over displacement.
-* Can be used to create wave-like effects.
+- This technique allows for nice control over displacement.
+- Can be used to create wave-like effects.
 
 ```javascript
 x = x + noise(i * frequency, 0) * amount;
 y = x + noise(i * frequency, 1000) * amount;
 ```
-![noise placement](figures/noise_displacement.png){three-up no-margin}
 
+![noise placement](figures/noise_displacement.png){three-up no-margin}
 
 #### Relaxation Displacement
 
 Find pairs of points that are near each other. Move them towards or away from each other by a small amount. This technique is often applied several times in a row with small movements, which avoids the problem of pushing a point away from one point, but into another.
 
-* This technique can be used to push points apart to some minimum distance.
-* This technique can also be used to pull points together if they are near each other.
-* This technique simulates attractive or repulsive forces acting on the points and can be used to loosely simulate natural phenomena.
+- This technique can be used to push points apart to some minimum distance.
+- This technique can also be used to pull points together if they are near each other.
+- This technique simulates attractive or repulsive forces acting on the points and can be used to loosely simulate natural phenomena.
 
 ![relax displacement 1](figures/relax_1.svg)
 ![relax displacement 2](figures/relax_2.svg)
@@ -363,7 +353,6 @@ What tactics might have been used to get each result below?
 
 {% js-lab "sketches/grid_basic.js" %}
 
-
 ### Basic Random Placement
 
 {% js-lab "sketches/random_basic.js" %}
@@ -374,7 +363,7 @@ What tactics might have been used to get each result below?
 
 <div class="activity">
 
-## In-class Challenge
+## Coding Challenges
 
 Explore the code examples above by completing the following challenges in order. <br/> Don't skip any.
 
@@ -423,40 +412,38 @@ When designing a procedural generation system there are several properties to co
 
 ### Speed
 
-* How fast does your program need to run?
-* Is it okay if it takes a very long time to complete?
-* Many times a faster-running program is harder to code and understand.
-* A frame of VR content needs to be rendered in under 10ms, and a short pre-rendered animation may take days to render.
+- How fast does your program need to run?
+- Is it okay if it takes a very long time to complete?
+- Many times a faster-running program is harder to code and understand.
+- A frame of VR content needs to be rendered in under 10ms, and a short pre-rendered animation may take days to render.
 
 ### Reliability
 
-* Does your program need to produce a good result every time?
-* Are results shown directly to your audience, or will you have the opportunity to edit?
+- Does your program need to produce a good result every time?
+- Are results shown directly to your audience, or will you have the opportunity to edit?
 
 ### Controllability
 
-* Does your program expose any user parameters?
-* Do you want explore the parameter space manually?
-* Do you want to have tight control over the results or should everything work automatically?
+- Does your program expose any user parameters?
+- Do you want explore the parameter space manually?
+- Do you want to have tight control over the results or should everything work automatically?
 
 ### Expressivity and Diversity
 
-* How much apparent range does your system have?
-* Does everything look same-y?
-* Is it okay for your output to be completely wild or does it need to satisfy some constraints?
-* If you are exposing parameters, do they allow for meaningful control?
+- How much apparent range does your system have?
+- Does everything look same-y?
+- Is it okay for your output to be completely wild or does it need to satisfy some constraints?
+- If you are exposing parameters, do they allow for meaningful control?
 
 ### Creativity and Believability
 
-* Do you want your results to look natural or hand-made?
-* Is it okay for them to look "computer-y"?
-* If your system is generating variations on something that already exists, how closely do you want to copy the original?
+- Do you want your results to look natural or hand-made?
+- Is it okay for them to look "computer-y"?
+- If your system is generating variations on something that already exists, how closely do you want to copy the original?
 
 ### Repeatability
 
-* Do you need the ability to generate the same result more than once?
-
-
+- Do you need the ability to generate the same result more than once?
 
 <div class="assignment">
 
@@ -472,12 +459,12 @@ Then keep sketching! For the remaining three posts, I encourage you to build a s
 
 ### Required Challenge 1: Dots A -> B -> X
 
-* **Analyze** the challenge: clearly describe what the sketch does.
-* **Strategize** how you would achieve the same effect.
-* **Study** the provided starting code.
-* **Recreate** the challenge as closely as you can. You may use the starting code, or start from scratch.
-* **Extend** the example to create a unique sketch. Try to make something no one else will.
-* **Post** your finished sketch.
+- **Analyze** the challenge: clearly describe what the sketch does.
+- **Strategize** how you would achieve the same effect.
+- **Study** the provided starting code.
+- **Recreate** the challenge as closely as you can. You may use the starting code, or start from scratch.
+- **Extend** the example to create a unique sketch. Try to make something no one else will.
+- **Post** your finished sketch.
 
 `Challenge Goal`
 
@@ -503,7 +490,6 @@ Same as above: Analyze, Strategize, Study, Recreate, Extend, Post
 
 </div>
 
-
 <div class="assignment">
 
 ## Special Assignments
@@ -514,8 +500,8 @@ Same as above: Analyze, Strategize, Study, Recreate, Extend, Post
 
 [PCG Book, Chapter 1](http://pcgbook.com/wp-content/uploads/chapter01.pdf){boxed right}
 
-
 ### Prepare
+
 Later in this class I will ask you to create special sketches using equipment available to you through The New School. If you haven’t used the following equipment before, you should sign up for orientations. Be ready to use the following equipment by week 8.
 
 - Laser Cutters
@@ -525,8 +511,7 @@ Later in this class I will ask you to create special sketches using equipment av
 
 </div>
 
-
-<!-- 
+<!--
 <div class="assignment">
 
 ## Read + Watch + Play
@@ -553,7 +538,8 @@ If you want to play Spelunky—optional but highly recommended—original versio
 </div> -->
 
 ## Reference Links
-<!-- 
+
+<!--
 [Game Maker's Toolkit: How (and Why) Spelunky Makes its Own Levels](https://www.youtube.com/watch?v=Uqk5Zf0tw3o)
 : Overview of the Spelunky level generator from a technical and critical perspective.
 

@@ -30,7 +30,7 @@ Last week, we worked directly with **pixels**, the fundamental unit of raster gr
 </svg>
 ```
 
-<div class="no-margin"> 
+<div class="no-margin">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 144">
 <rect fill="#092" y="89.43" width="360" height="54.57"/>
@@ -44,8 +44,7 @@ Vector graphics must be converted to raster graphics—a process called [rasteri
 
 <!-- [[ recipe vs finished dish? you can go one way, not the other. you can easily remove salt from a recipe, you can't easily remove salt from a dish]] -->
 
-<div class="activity"> 
-
+<div class="activity">
 
 ## Felt Board
 
@@ -89,7 +88,7 @@ Consider the image below. What would the image look like if the black circle wer
 
 ![inference-01](figures/inference-01.png)
 
-<div class="three-up"> 
+<div class="three-up">
 
 ![inference-02](figures/inference-02.png)
 We might infer that a red circle lies behind the black one.{figure}
@@ -99,11 +98,12 @@ The red shape might be a crescent instead. Or it could be something else entirel
 
 ![inference-04](figures/inference-04.png)
 We don't know if the blue background should continue either.{figure}
+
 </div>
 
 When we look at the image, we quickly infer that it represents two overlapping circles on a blue rectangle, but the raster image doesn't contain information about shapes at all. It contains only blue, red, and black pixels. Humans are very, very good at inferring meaning from visual forms. We fill in meaning without conscious thought. When we look at the image above we see the circles automatically.
 
-<div class="callout"> 
+<div class="callout">
 
 Humans are so good at inferring visual meaning that it can be difficult for us to separate our inferences from our direct observations. In _Stranger in a Strange Land_ (1961), Robert A. Heinlein explores this idea. One of the book's characters is a _fair witness_, a person who has trained themselves to carefully observe and report what they see without drawing inferences.
 
@@ -119,8 +119,7 @@ Because we are so good at inferring meaning, meaning is always there. We don't a
 
 This is the key advantage of vector graphics over raster graphics: **vector graphics contain high-level _meaning_** about the image that they represent. They are built from semantic units like rectangles and ellipses instead of nonsemantic pixels. This meaning allows us to make high-level changes: we can scale the vector image up and perfectly fill in the needed additional detail; we can change the fonts used to render text; we can remove a shape and reveal what is behind it.
 
-<div class="callout"> 
-
+<div class="callout">
 
 Actually, computers _can_ infer meaning from images, they just need to be programmed to do so. This is an extremely active area of research, and the rate of progress in recent years is staggering. This research is already making its way to consumer tools—Photoshop introduced [Content-Aware Fill](https://helpx.adobe.com/photoshop/using/content-aware-fill.html) in 2010—and current approaches are actually **better than humans** at specific tasks.
 
@@ -137,11 +136,12 @@ The [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg
 
 Using a vector-based graphics library allows us to computationally generate images, export them in a way that preserves their shape information, and further manipulate them in vector editing software.
 
-<div class="callout"> 
+<div class="callout">
 
 ![figures/post.svg](figures/post.svg)
 
 Top: Vector Output<br/>Middle: Illustrator » Effect » Stylize » Round Corners...<br/>Bottom: Illustrator » Custom Pattern Brush{figure}
+
 </div>
 
 ## Paper.js
@@ -218,10 +218,9 @@ A super-useful feature of Paper.js is the ability to combine shapes with boolean
 
 {% js-lab "sketches/example_boolean.js" %}
 
-<div class="activity"> 
+<div class="activity">
 
-
-## In-class Challenge
+## Coding Challenges
 
 Explore Paper.js by modifying the examples above. Work through the following challenges in order. Don't skip any.
 
@@ -272,7 +271,7 @@ Paper Garden is a program written in about 300 lines of PaperScript using [Paper
 
 ![paper_garden](./paper_garden/images/1500.png)
 
-<div class="assignment"> 
+<div class="assignment">
 
 ## Keep Sketching!
 

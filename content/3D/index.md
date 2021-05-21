@@ -43,7 +43,7 @@ On screen, 3D graphics exist in between painting and sculpture. You can rotate c
 [OpenSCAD.net](http://openscad.net/)
 : A web-based OpenSCAD editor and renderer. Does not implement every feature of OpenSCAD.
 
-<div class="activity"> 
+<div class="activity">
 
 ## Hello, OpenSCAD!
 
@@ -73,11 +73,12 @@ These differences reflect the fundamentally different approach to programming in
 
 ### Functional vs. Procedural
 
-<div class="links-sidebar"> 
+<div class="links-sidebar">
 
 [Wikipeda:<br/>Programming Paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
 
 [Talk:<br/>4 Paradigms in 40 Minutes](https://www.youtube.com/watch?v=cgVVZMfLjEI)
+
 </div>
 
 The [OpenSCAD Manual](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language) describes OpenSCAD as a [functional](https://en.wikipedia.org/wiki/Functional_programming) programming language. One could also more generally refer to OpenSCAD as a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) language. In contrast to JavaScript, C, and Processing, it is not an [imperative](https://en.wikipedia.org/wiki/Imperative_programming) or [procedural](https://en.wikipedia.org/wiki/Procedural_programming) language.
@@ -317,9 +318,9 @@ The `for` loop creates a union of multiple instances of the following group. Eac
 
 The OpenSCAD `for` syntax allows "iterating" over multiple variables at once. This example will create a unit brick for every combination of x and y. In JavaScript you would use a nested pair of loops to achieve a similar effect.
 
-<div class="activity"> 
+<div class="activity">
 
-## In-class Challenge
+## Coding Challenges
 
 Try creating OpenSCAD scripts for each of these shapes.
 
@@ -348,9 +349,10 @@ Machining is a subtractive manufacturing technique in which an object is carved 
 
 3D printing refers to a range of additive fabrication techniques. In additive fabrication an object is built up, usually in layers. Because subtractive methods can only create shapes that allow the cutting tool to reach all the material that must be removed, additive fabrication can achieve shapes that subtractive manufacturing cannot. There are many types of 3D printing in use.
 
-<div class="links-sidebar"> 
+<div class="links-sidebar">
 
 [Wikipedia: <br/> 3D Printing Processes](https://en.wikipedia.org/wiki/3D_printing_processes)
+
 </div>
 
 Fused Deposition Modeling (FDM) + Fused Filament Fabrication (FFF)
@@ -414,7 +416,7 @@ Available for free with an [educational license](https://www.allegorithmic.com/b
 
 Rhino 6 includes Grasshopper (Windows only) and has a reduced cost [educational license](https://www.rhino3d.com/edu).
 
-<div class="assignment"> 
+<div class="assignment">
 
 ## Keep Sketching!
 

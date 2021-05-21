@@ -11,7 +11,7 @@ previous_url: ../pixels
 
 hero_title: Turtle Graphics
 description: Introduced as a feature of Logo programming language in 1969, turtle graphics connect computer drawing to how we move our bodies through space, and encourage approaching computational form with a new mindset.
-software: p5.js
+software: p5.js + custom library
 ---
 
 ## Logo and Turtle Graphics
@@ -20,22 +20,24 @@ The Logo computer programming language was [created in 1967](http://el.media.mit
 
 > In many schools today, the phrase "computer-aided instruction" means making the computer teach the child. One might say _the computer is being used to program the child_. In my vision, _the child programs the computer_ and, in doing so, both acquires a sense of mastery over a piece of the most modern and powerful technology and establishes an intimate contact with some of the deepest ideas from science, from mathematics, and from the art of intellectual model building.
 
-<div class="links-sidebar"> 
+<div class="links-sidebar">
 
 [Wikipedia:<br/> Turtle Graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
 
 [MIT: Scratch + Turtles](https://scratch.mit.edu/projects/196503540/)
+
 </div>
 
 One of the key ideas introduced in Logo was _turtle graphics_. The turtle was originally a small programmable physical robot that carried a pen and could trace its path as it moved. Logo could control this turtle with simple commands: `left` and `right` to turn and `forward` to move. This idea was extended to drawing on-screen using a virtual turtle.
 
-<div class="two-up"> 
+<div class="two-up">
 
 ![Papert w/ turtle](http://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)
 Seymour Papert with a physical turtle robot, photo by Cynthia Solomon{figure}
 
 ![turtle screenshot](images/turtle.png)
 A virtual turtle in action!{figure}
+
 </div>
 
 Logo's use of turtles allows students to make a strong association between what happens in the program and how they move their own bodies in the real world. Papert called this _body-syntonic_ learning. Body-syntonic learning supports understanding of abstract ideas through sensory experience. Papert often discussed these ideas in writing and videos.
@@ -45,7 +47,7 @@ Logo's use of turtles allows students to make a strong association between what 
 - [Seymour Papert on Logo: Teaching (1986) 4:25 - 6:40](https://youtu.be/ZG9cYhekB8A?t=4m25s)
 - [Learning with Toys (1986)](https://www.youtube.com/watch?v=IhEovwWiniY)
 
-<div class="activity"> 
+<div class="activity">
 
 ## Be the Turtle
 
@@ -93,7 +95,7 @@ The second shift becomes apparent if we ask where the line in the second example
 
 This shift in priorities makes some things easier to express and some things harder:
 
-<div class="columns"> 
+<div class="columns">
 
 <div class="half"> 
 **Cartesian: Drawing a Square**
@@ -120,7 +122,7 @@ for (side = 0; side < 4; side++) {
 
 </div>
 
-<div class="columns"> 
+<div class="columns">
 
 <div class="half"> 
 **Cartesian: Drawing a Star**
@@ -153,7 +155,7 @@ for (side = 0; side < 5; side++) {
 
 In the examples above, the Cartesian system works well for drawing a square, but the Cartesian code for the star is awkward and unclear. Changing the star's position or size would take a lot of work. Work should be done by computers, not programmers. With turtle graphics, the code that draws the star mirrors how we might describe the figure. It is a more natural expression of the idea and will be easier to modify.
 
-<!-- <div class="s-lab"> 
+<!-- <div class="s-lab">
 
 /turtles/sketches/turtle_star.js
 </div> -->
@@ -172,7 +174,7 @@ To explore using turtle graphics with p5.js, I've created a basic turtle class f
 
 Grab [the code here](turtle/turtle.html).
 
-<!-- <div class="s-lab"> 
+<!-- <div class="s-lab">
 
 /turtles/sketches/turtle_house.js
 </div> -->
@@ -243,10 +245,9 @@ Restores the turtle’s state to the top recorded state on the stack.
 
 {% js-lab "sketches/turtle_triangles.js" %}
 
+<div class="activity">
 
-<div class="activity"> 
-
-## In-class Challenge
+## Coding Challenges
 
 Explore turtle graphics by modifying the examples above. Work through the following challenges in order. Don't skip any.
 
@@ -310,7 +311,7 @@ Turtles make it possible to change how you think about drawing and give you a ne
 
 Turtles are just one example of a drawing machine. Inventing your own drawing machine is a rewarding exercise. It leads to new ways of approaching problems, a deeper understanding of programming, and new aesthetics to explore.
 
-<div class="assignment"> 
+<div class="assignment">
 
 ## Keep Sketching!
 
