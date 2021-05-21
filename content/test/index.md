@@ -46,6 +46,12 @@ You can wrap markdown in a `<div></div>`. Include a blank line at the top and bo
 
 </div>
 
+### Tables
+
+| A   | B   | C   |
+| --- | --- | --- |
+| 1   | 2   | 3   |
+
 # Markdown-it Plugins
 
 ### markdown-it-anchor

@@ -242,11 +242,34 @@
   }
 
   /* tables */
-  .table {
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+  }
+
+  table th,
+  table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #e9ecef;
+  }
+
+  table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e9ecef;
+  }
+
+  table tbody + tbody {
+    border-top: 2px solid #e9ecef;
+  }
+
+  table {
     font-size: 0.85em;
   }
 
-  .table th {
+  table th {
     border-top: none;
   }
 
