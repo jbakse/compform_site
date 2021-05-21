@@ -11,7 +11,7 @@ next_url: ../p5
 
 hero_title: Tile Maps
 description: Tile mapping—creating images by arranging small graphic tiles—is a widely used technique with a range of technical and artistic benefits.
-software: p5.js + p5.dom
+software: pencil + paper
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
@@ -22,7 +22,6 @@ software: p5.js + p5.dom
 Artists and designers have worked with modular motifs arranged on grids throughout history. This approach affords a variety of aesthetic and practical benefits. Repetition on a grid leads to patterns with natural visual rhythm and concord while allowing for variety and complexity. Practically, this method allows templates and molds to facilitate mass production of the individual units, which can be arranged contextually on-site. This approach also allows the creative work to be split up: a single designer creates the system, and local craftsmen apply it.
 
 You will find examples of this approach in media including masonry and tile, textiles, fonts. In digital media, tile maps and sets are commonly associated with the 8-bit and 16-bit video game era. Hardware limitation imposed strict limits on designers who took advantage of hardware tile support to push the media forward. Today's games do not face the same hardware restrictions, but modular graphic systems are still an important tool for artists. Support for tile maps is built into many contemporary game engines, including [Unity](https://docs.unity3d.com/Manual/class-Tilemap.html).
-
 
 {% slides %}
 {% include slides.yaml %}

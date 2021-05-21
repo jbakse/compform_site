@@ -20,9 +20,10 @@ software: p5.js
 
 Procedural generation can be used to create form in almost any media: image, video, animation, sound, sculpture. This chapter introduces some tactics for procedurally generating text, which may be the media most often computationally generated. Web pages are built out of text, and most of the time this text is computationally generated at least to some degree.
 
-<div class="links-sidebar"> 
+<div class="links-sidebar">
 
 [Google:<br/>How search works.](https://www.google.com/search/howsearchworks/)
+
 </div>
 
 <!-- <img src="./images/google.png" style = "border: 1px solid #AAA; width: 320px; position: absolute; left: -340px;" /> -->
@@ -32,7 +33,7 @@ Google uses programs to crawl the web, collecting a database of information abou
 
 Social media sites like Facebook and Twitter are software systems for collecting and sharing user-created content, largely text. Even websites primarily concerned with other media, like YouTube and Instagram, must generate HTML text to showcase their videos and images.
 
-<div class="callout"> 
+<div class="callout">
 
 **The Imitation Game**
 
@@ -43,6 +44,7 @@ Search engines and social media sites are certainly procedurally generating text
 Geoffrey Jefferson{attrib}
 
 In 1950, [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) directly addressed this argument and several others in [Computing Machinery and Intelligence](https://www.csee.umbc.edu/courses/471/papers/turing.pdf), in which he considered the question "Can machines think?" Rather than answering the question directly, Turing proposes an _imitation game_, often referred to as the Turing Test, which challenges a machine to imitate a human over "a teleprinter communicating between two rooms". Turing asks whether a machine could do well enough that a human interrogator would be unable to tell such a machine from an actual human. He argues that such a test would actually be **harder** than needed to prove the machine was thinking—after all, a human can certainly think, but could not convincingly imitate a computer.
+
 </div>
 
 ### Generating Language
@@ -103,7 +105,7 @@ Associated Press
 
 String templating is a basic but powerful tool for building text procedurally. If you have ever completed a [Mad Lib](http://www.madlibs.com/) fill-in-the-blank story, you've worked with string templates.
 
-<div class="activity"> 
+<div class="activity">
 
 ## Make an Amendment!
 
@@ -112,7 +114,6 @@ This demo populates a template with the words you provide to generate a new cons
 <!-- [[issue with page resizing/cutting off beginning of lines]] -->
 
 {% js-show "sketches/first_amendment.js" %}
-
 
 </div>
 <br/>
@@ -148,8 +149,7 @@ The examples below demonstrate using JavaScript template literals.
 [Markov chains](https://en.wikipedia.org/wiki/Markov_chain)
 produce sequences by choosing each item based on the previous item and a table of weighted options. This table can be trained on examples, allowing Markov chains to mimic different text styles. Markov chains are a useful tool for procedurally generating anything that can be represented as a sequence, including text, music, or events.
 
-<div class="activity"> 
-
+<div class="activity">
 
 ## Markov Chain
 
@@ -180,8 +180,7 @@ Choose a random word from the keys. Write it down. Choose a word at random from 
 
 Consider this html excerpt:
 
-<div class="bad"> 
-
+<div class="bad">
 
 ```html
 <div><b>Hello, World!</div></b>
@@ -207,13 +206,11 @@ HTML is text, so Tracery can generate HTML!
 
 {% js-lab "sketches/tracery_html.js" %}
 
-<div class="activity"> 
+<div class="activity">
 
-
-## In-class Challenge
+## Coding Challenges
 
 Explore using Javascript Template literals by completing the following challenges.
-
 
 {% js-lab "sketches/challenge.js" %}
 
@@ -239,8 +236,7 @@ Explore using Javascript Template literals by completing the following challenge
 
 </div>
 
-<div class="assignment"> 
-
+<div class="assignment">
 
 ## Keep Sketching!
 
@@ -270,9 +266,10 @@ Ideally, your story should:
 </div>
 
 ## Reference Links
+
 <!-- Currently broken
 [RiTa](https://rednoise.org/rita/index.php)
-: Software toolkit for computational literature. 
+: Software toolkit for computational literature.
 -->
 
 [Twine](http://twinery.org/)

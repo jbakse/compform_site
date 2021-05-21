@@ -46,6 +46,7 @@ Value Noise{figure}
 Noise functions provide a "cloud" of random values that can be used in a wide variety of ways. Noise functions are very frequently used in procedural texture generation and terrain generation. More generally, noise functions can be thought of as a lookup table of pre-generated random values that can be used in place of `random()` in many cases.
 
 <!-- short and cover class  not included-->
+
 {% slides %}
 {% include slides.yaml %}
 {% endslides %}
@@ -63,6 +64,7 @@ Noise functions provide a "cloud" of random values that can be used in a wide va
 <div class='callout'>
 
 ![blue square](figures/grid.svg){scale}
+
 </div>
 
 Consider the code you would write to draw the blue squares above. You would need to provide several values for each square: horizontal position, vertical position, width, height, and color.
@@ -250,16 +252,13 @@ The following study examples demonstrate different methods of using noise to get
 
 {% js-lab "sketches/skyline.js" %}
 
-
-
-
-
 <div class='activity'>
 
-## In-class Challenge
+## Coding Challenges
 
 Explore using noise by completing the following challenges in order. <br/> Don't skip any.
-<!-- 
+
+<!--
 | Time                | Comment                                                                              |
 | ------------------- | ------------------------------------------------------------------------------------ |
 | < 7 in 20 Minutes   | You need to put in some extra work to strengthen your understanding of these topics. |
@@ -293,8 +292,6 @@ Explore using noise by completing the following challenges in order. <br/> Don't
 </div>
 
 <div class='assignment'>
-
-
 
 ## Keep Sketching!
 

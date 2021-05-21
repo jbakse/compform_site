@@ -30,11 +30,9 @@ Consider the works below:
 - Which aspects of each work were influenced by chance?
 - Which aspects were controlled by the artist?
 
-
 {% slides %}
 {% include slides.yaml %}
 {% endslides %}
-
 
 ## The Methodical Application of Chance
 
@@ -211,7 +209,6 @@ max(random(10), random(10));
 
 {bigger}
 
-
 <div class='callout'>
 
 ![even distribution](./figures/high_bias.svg){scale}
@@ -227,7 +224,6 @@ Averaging two or more random numbers will bias the result toward the middle.
 ```
 
 {bigger}
-
 
 <div class='callout'>
 
@@ -266,6 +262,7 @@ If you generate several random numbers and average them, the results get close t
 <div class='callout'>
 
 **Note:** P5 also provides the `randomGaussian()` function for generating numbers with a true normal distribution. With `randomGaussian()` the possible values are not clamped to a range; extreme outliers are just really rare.
+
 </div>
 
 #### More Info
@@ -495,7 +492,6 @@ Explore how an Linear Congruential Generator works by generating pseudo-random v
     <a href="../handouts/lcg_random.svg" download>lcg_random.svg</a>
 </p>
 
-
 ## Study Examples
 
 The following study examples demonstrate different ways to bias and map random values to get different looks and effects. Carefully study each example to understand how it works. Several of the examples offer varied approaches which can be commented in and out to compare their results.
@@ -524,7 +520,7 @@ The following study examples demonstrate different ways to bias and map random v
 
 <div class='activity'>
 
-## In-class Challenge
+## Coding Challenges
 
 Explore the study examples above by completing the following challenges in order. <br/> Don't skip any.
 
