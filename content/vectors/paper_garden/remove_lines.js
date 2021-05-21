@@ -69,6 +69,6 @@ function subtract(a, b) {
   // return which segments were kept and removed (so the visualizer can put the removed ones back on the page)
   return {
     kept: kept,
-    removed: removed
+    removed: removed,
   };
 }

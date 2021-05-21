@@ -5,18 +5,20 @@ const currentLocation = {
   y: 50,
 };
 
-
-const corners = [{
-  x: 250,
-  y: 50,
-}, {
-  x: 50,
-  y: 450,
-}, {
-  x: 450,
-  y: 450,
-}];
-
+const corners = [
+  {
+    x: 250,
+    y: 50,
+  },
+  {
+    x: 50,
+    y: 450,
+  },
+  {
+    x: 450,
+    y: 450,
+  },
+];
 
 function setup() {
   createCanvas(500, 500);

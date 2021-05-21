@@ -1,6 +1,5 @@
 // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
 
-
 function setup() {
   createCanvas(600, 600);
   frameRate(3);
@@ -28,7 +27,7 @@ function draw() {
     color(255, 255, 255),
   ]);
 
-  const roofColor = lerpColor(houseColor, color('black'), 0.5);
+  const roofColor = lerpColor(houseColor, color("black"), 0.5);
 
   fill(skyColor);
   rect(0, 0, 800, 600);
@@ -47,7 +46,6 @@ function draw() {
   // draw the roof
   fill(roofColor);
   triangle(150, 250, 300, 100, 450, 250);
-
 }
 
 function sample(a) {

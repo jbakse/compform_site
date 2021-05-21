@@ -4,29 +4,29 @@ layout: compform_plain.pug
 debug: false
 ---
 
-
 ## Approaching Libraries
 
 The tools of creative technology change continuously. Computer hardware gets smaller, cheaper, and faster. New software is created and old software is updated. Those who work closely with technology need to continuously learn to use new tools to make new projects and maintain old ones.
 
 Because being adept at learning new tools is a skill that supports many others, it is one of the most valuable skills to cultivate.
 
-
-
 ::: .activity
+
 ## Getting Started with New Tools
 
 In this class, we have explored a number of libraries, languages, mediums, and tools. Reflect on your process for learning new tools.
 
 ### Groups, 5 minutes
+
 Brainstorm at least 8 tactics for initially learning about a new tool.
 
 ### Groups, 10 minutes
+
 Look at your list of tactics, group those that are similar, and write out a list of the 5 most important tactics. State each tactic clearly using fewer than 10 words.
 
 ### Class, 10 minutes
-Compare group lists.
 
+Compare group lists.
 
 /::
 

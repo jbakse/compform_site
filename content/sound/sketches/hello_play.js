@@ -5,13 +5,13 @@
 let mySound;
 
 function preload() {
-  mySound = loadSound('/sound/sketches/hack-comp.wav');
+  mySound = loadSound("/sound/sketches/hack-comp.wav");
 }
 
 function setup() {
   createCanvas(400, 200);
   background(50);
-  const startButton = createButton('play');
+  const startButton = createButton("play");
   startButton.mousePressed(start);
 }
 

@@ -11,12 +11,12 @@ var a = 5;
 var seed = 1;
 
 function setup() {
-    for (i = 0; i < 20; i++) {
-        console.log(makeRandom());
-    }
+  for (i = 0; i < 20; i++) {
+    console.log(makeRandom());
+  }
 }
 
 function makeRandom() {
-    seed = (seed * a + c) % m;
-    return seed / m;
+  seed = (seed * a + c) % m;
+  return seed / m;
 }

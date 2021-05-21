@@ -7,26 +7,24 @@
 var sprite1;
 
 function setup() {
-    createCanvas(600, 300);
+  createCanvas(600, 300);
 
-    var kingImage = loadImage("/microgames/sketches/king.png");
+  var kingImage = loadImage("/microgames/sketches/king.png");
 
-    sprite1 = createSprite(200, 150, 100, 100);
-    sprite1.addImage("main", kingImage);
-    sprite1.scale = 4;
-    sprite1.mouseActive = true;
+  sprite1 = createSprite(200, 150, 100, 100);
+  sprite1.addImage("main", kingImage);
+  sprite1.scale = 4;
+  sprite1.mouseActive = true;
 }
 
-
 function draw() {
-    background(50, 50, 80);
+  background(50, 50, 80);
 
-    if (sprite1.mouseIsOver)
-        sprite1.rotation = -20;
-    else {
-        sprite1.rotation = 0;
-    }
+  if (sprite1.mouseIsOver) sprite1.rotation = -20;
+  else {
+    sprite1.rotation = 0;
+  }
 
-    noSmooth();
-    drawSprites();
+  noSmooth();
+  drawSprites();
 }

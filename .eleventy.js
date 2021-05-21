@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
     typographer: true,
     quotes: "“”‘’",
   });
+  markdownLib.enable("table");
   markdownLib.use(require("markdown-it-anchor"));
   markdownLib.use(require("markdown-it-classy"));
   markdownLib.use(require("markdown-it-deflist"));

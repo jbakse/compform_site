@@ -8,7 +8,6 @@
     - label: "IMDB: Tron (1982)"
       href: http://www.imdb.com/title/tt0084827/
 
-
 - artist: Jaume Sanchez Elias
   title: Fireball Tutorial
   image: https://www.clicktorelease.com/blog/vertex-displacement-webgl-glsl-perlin-noise-three-js/add-some-colour-movement.jpg
@@ -16,7 +15,6 @@
   links:
     - label: Fireball Tutorial
       href: https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js
-
 
 - artist: Shiny Dynamics
   title: Wood Tutorial
@@ -26,7 +24,6 @@
     - label: Wood Tutorial
       href: http://shiny-dynamics.blogspot.com/2012/04/blender-wood-texture-part-2.html
 
-
 - artist: Thinkbox Software
   title: Cloud Tutorial
   image: http://www.thinkboxsoftware.com/storage/krakatoa-support-images/krakatoa15_cloudsmodeling_kcm_density1_render.png
@@ -35,7 +32,6 @@
     - label: Cloud Tutorial
       href: http://www.thinkboxsoftware.com/krak-clouds-modelling/
 
-    
 - artist: Redbox Games
   title: Displacement Terrain
   image: http://www.redblobgames.com/maps/terrain-from-noise/images/topdemo-3d.png

@@ -4,7 +4,6 @@ layout: compform_plain.pug
 debug: false
 ---
 
-
 # Turtle.js
 
 The following is a basic implementation of a graphics turtle. This implementation is written in Javascript and uses the p5.js library.
@@ -102,7 +101,7 @@ Turtle.prototype.pushState = function () {
     x: this.x,
     y: this.y,
     bearingRadians: this.bearingRadians,
-    isPenDown: this.isPenDown
+    isPenDown: this.isPenDown,
   });
 };
 

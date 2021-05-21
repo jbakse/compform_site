@@ -1,4 +1,18 @@
-var roster = [ "Sachi", "Amber", "Talia", "Dorothy", "Sanie", "Enayet", "Jonathan", "Kim", "Jennifer", "Jane", "Gabriel", "Bateel", "Danielle" ];
+var roster = [
+  "Sachi",
+  "Amber",
+  "Talia",
+  "Dorothy",
+  "Sanie",
+  "Enayet",
+  "Jonathan",
+  "Kim",
+  "Jennifer",
+  "Jane",
+  "Gabriel",
+  "Bateel",
+  "Danielle",
+];
 
 roster = _.shuffle(roster);
 roster.push("Justin");
@@ -8,8 +22,8 @@ var output = "";
 
 // walk the array stepping 2 at a time
 for (var i = 0; i < roster.length; i += 2) {
-    // append a line of output
-    output += roster[i] + " and " + roster[i+1] + "</br>";
+  // append a line of output
+  output += roster[i] + " and " + roster[i + 1] + "</br>";
 }
 
 // create a "div" to hold the output.

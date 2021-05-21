@@ -6,16 +6,16 @@ const synth = new Tone.Synth().toMaster();
 Tone.Transport.bpm.value = 200;
 
 const melody = [
-  ['E4', '4n.'],
-  ['D4', '8n'],
-  ['C4', '4n'],
-  ['D4', '4n'],
+  ["E4", "4n."],
+  ["D4", "8n"],
+  ["C4", "4n"],
+  ["D4", "4n"],
 
-  ['E4', '4n'],
-  ['E4', '4n'],
-  ['E4', '4n'],
+  ["E4", "4n"],
+  ["E4", "4n"],
+  ["E4", "4n"],
 
-  ['rest', '1m'],
+  ["rest", "1m"],
 ];
 
 window.onmousedown = (e) => {
@@ -25,7 +25,7 @@ window.onmousedown = (e) => {
 
   for (const note of melody) {
     console.log(note);
-    if (note[0] !== 'rest') {
+    if (note[0] !== "rest") {
       // synth.triggerAttackRelease(note[0], note[1]), t);
       synth.triggerAttackRelease(note[0], Tone.Time(note[1]) - 0.1, t);
     }
@@ -33,4 +33,4 @@ window.onmousedown = (e) => {
   }
 };
 
-console.log('click for music!');
+console.log("click for music!");

@@ -6,37 +6,36 @@ let mySound;
 let analyzer;
 
 function preload() {
-    mySound = loadSound('/sound/sketches/hack-comp.wav');
-
+  mySound = loadSound("/sound/sketches/hack-comp.wav");
 }
 
 function setup() {
-    createCanvas(500, 200);
+  createCanvas(500, 200);
 
-    analyzer = new p5.Amplitude();
-    analyzer.setInput(mySound);
+  analyzer = new p5.Amplitude();
+  analyzer.setInput(mySound);
 
-    startButton = createButton('start');
-    startButton.mousePressed(start);
+  startButton = createButton("start");
+  startButton.mousePressed(start);
 
-    stopButton = createButton('stop');
-    stopButton.mousePressed(stop);
+  stopButton = createButton("stop");
+  stopButton.mousePressed(stop);
 }
 
 function start() {
-    mySound.loop(0, 1, 1, 0, 4);
+  mySound.loop(0, 1, 1, 0, 4);
 }
 
 function stop() {
-    mySound.stop();
+  mySound.stop();
 }
 
 function draw() {
-    background(50);
-    fill(255);
-    noStroke();
+  background(50);
+  fill(255);
+  noStroke();
 
-    const volume = analyzer.getLevel();
-    const x = volume * 500;
-    ellipse(x, 100, 50, 50);
+  const volume = analyzer.getLevel();
+  const x = volume * 500;
+  ellipse(x, 100, 50, 50);
 }

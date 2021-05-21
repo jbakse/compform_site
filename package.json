@@ -13,8 +13,8 @@
     "start": "npm run build && npm run serve"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Justin Bakse",
+  "license": "unlicensed",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",

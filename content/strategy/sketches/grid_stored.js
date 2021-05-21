@@ -10,7 +10,7 @@ function setup() {
     for (let x = 0; x < 10; x++) {
       points.push({
         x: x * 50 + 25,
-        y: y * 50 + 25
+        y: y * 50 + 25,
       });
     }
   }

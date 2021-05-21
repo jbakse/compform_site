@@ -1,47 +1,46 @@
 injectInterface();
 const submitButton = document.getElementById("submit");
-submitButton.addEventListener('click', buildTemplate);
+submitButton.addEventListener("click", buildTemplate);
 const resetButton = document.getElementById("reset");
-resetButton.addEventListener('click', reset);
-
+resetButton.addEventListener("click", reset);
 
 function buildTemplate() {
-    const noun1 = document.getElementById("noun1").value || "magic";
-    const noun2 = document.getElementById("noun2").value || "spells";
-    const noun3 = document.getElementById("noun3").value || "coven";
-    const adverb1 = document.getElementById("adverb1").value || "wickedly";
-    const verb1 = document.getElementById("verb1").value || "plot";
-    const noun4 = document.getElementById("noun4").value || "cauldron";
+  const noun1 = document.getElementById("noun1").value || "magic";
+  const noun2 = document.getElementById("noun2").value || "spells";
+  const noun3 = document.getElementById("noun3").value || "coven";
+  const adverb1 = document.getElementById("adverb1").value || "wickedly";
+  const verb1 = document.getElementById("verb1").value || "plot";
+  const noun4 = document.getElementById("noun4").value || "cauldron";
 
-    const amendment = `Congress shall make no law respecting
+  const amendment = `Congress shall make no law respecting
     an establishment of ${noun1}, or prohibiting
     the free exercise thereof; or abridging the
     freedom of ${noun2}, or of the ${noun3}; or the
     right of the people ${adverb1} to ${verb1}, and
-    to petition the government for a ${noun4}.`
+    to petition the government for a ${noun4}.`;
 
-    const outputDiv = document.getElementById('output');
-    const inputDiv = document.getElementById('input');
+  const outputDiv = document.getElementById("output");
+  const inputDiv = document.getElementById("input");
 
-    inputDiv.classList.add("hidden");
-    outputDiv.classList.remove("hidden");
+  inputDiv.classList.add("hidden");
+  outputDiv.classList.remove("hidden");
 
-    const messageDiv = document.getElementById('message');
-    messageDiv.innerText = amendment;
+  const messageDiv = document.getElementById("message");
+  messageDiv.innerText = amendment;
 }
 
 function reset() {
-    const outputDiv = document.getElementById('output');
-    const inputDiv = document.getElementById('input');
+  const outputDiv = document.getElementById("output");
+  const inputDiv = document.getElementById("input");
 
-    inputDiv.classList.remove("hidden");
-    outputDiv.classList.add("hidden");
+  inputDiv.classList.remove("hidden");
+  outputDiv.classList.add("hidden");
 }
 
-
 function injectInterface() {
-
-    document.body.insertAdjacentHTML('beforeend', `
+  document.body.insertAdjacentHTML(
+    "beforeend",
+    `
 <style>
 body {
     font-family: "Overpass Mono", sans-serif;
@@ -88,9 +87,12 @@ button {
    display: none;
 }
 </style>
-`);
+`
+  );
 
-    document.body.insertAdjacentHTML('beforeend', `
+  document.body.insertAdjacentHTML(
+    "beforeend",
+    `
 <div id="input">
     <div><label>abstract noun</label><input id="noun1"></div>
     <div><label>abstract noun</label><input id="noun2"></div>
@@ -104,5 +106,6 @@ button {
     <div id="message"></div>
     <button id="reset">reset</button>
 </div>
-`);
+`
+  );
 }

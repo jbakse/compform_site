@@ -43,6 +43,7 @@ Generative Music
 
 [Happy Songs in Sad Versions](https://www.youtube.com/watch?v=En1BApnx3Co)
 : Popular songs in Minor Keys.
+
 <!-- Broken
 [Neural Network Music](http://yoavz.com/music_rnn/)
 : Academic paper (with examples) on "Music Language Modeling with Recurrent Neural Networks". -->
@@ -55,9 +56,10 @@ We'll look at how to plan this project, the pieces that need to be built, and ho
 
 Our result will be a simplified version of [this demo](http://psam3060-d-s16.github.io/class_notes/week_9/sketch_music/).
 
-<div class="callout"> 
+<div class="callout">
 
 The examples in the chapter originally used the p5.sound library. You can find information about building a synth with p5.sound [here](./p5_sound.html).
+
 </div>
 
 ## Synthesizing a Note
@@ -66,8 +68,7 @@ Generating a melody isn't much use if we can't hear it. We could export our melo
 
 [Wikipedia: Synthesizer](https://en.wikipedia.org/wiki/Synthesizer)
 
-<div class="discussion"> 
-
+<div class="discussion">
 
 ## Designing the Synth
 
@@ -150,12 +151,12 @@ Using `Tone.Synth()` requires only a few lines of code.
 
 Now that we can play individual musical notes, we need to create some code to play a series of notes—a melody.
 
-<div class="discussion"> 
-
+<div class="discussion">
 
 ## What does a Melody Look Like?
 
 A melody is a series of notes. What information is necessary to describe a melody? How would you represent that information in code?
+
 </div>
 
 The `triggerAttackRelease()` method lets us specify frequencies using musical notes, schedule notes to start a specific time, and last a specific duration. We can program a song like this:
@@ -221,6 +222,7 @@ Notes have two values: Pitch and Length. We could use an object `{pitch: 60, len
 ```
 Choosing to represent pitch and length in an array `[60, .25]` is semantically incorrect. The array implies a list of values with a similar nature. An object is better for a collection of values with different natures. With and array the code that accesses pitch will be unclear: `note[0]; note[1];`. With an object it would be much clearer: `note.pitch; note.length;`
 ```
+
 </div>
 
 #### Rests
@@ -245,7 +247,7 @@ const melody = [
   ["E4", "4n"],
   ["E4", "4n"],
 
-  ["rest", "1m"]
+  ["rest", "1m"],
 ];
 ```
 
@@ -263,12 +265,12 @@ Now we have a format to represent a melody and a function to play it. Our final 
 
 One approach we might consider is picking random notes and random lengths and placing them in a sequence. But that would be like generating images by randomly assigning colors to pixels: the result would be noise—in many senses. We don't want noise, we want to make _music_.
 
-<div class="discussion"> 
-
+<div class="discussion">
 
 ## What Kind of Melody do We Want?
 
 A melody is an _organized_ series of notes, but how do we want _our_ melody organized? What qualities do we want to ensure? What qualities do we want to leave to chance?
+
 </div>
 
 ### Our Target Characteristics
@@ -288,16 +290,15 @@ A melody is an _organized_ series of notes, but how do we want _our_ melody orga
 
 {% js-lab "tone_sketches/melody.js" %}
 
-<div class="discussion"> 
-
+<div class="discussion">
 
 ## Compare the Code to Spec
 
 Codebases often diverge from their initial specifications. Compare the target characteristics with the melody generator above. How are they different?
+
 </div>
 
-<div class="assignment"> 
-
+<div class="assignment">
 
 ## Keep Sketching!
 
@@ -315,6 +316,7 @@ It doesn't have to be good. It doesn't have to use code.
 
 [Melody in Songwriting](https://www.amazon.com/Melody-Songwriting-Techniques-Writing-Berklee/dp/063400638X)
 :Melody in Songwriting is an excellent book for developing melody-writing skills.
+
 <!-- Broken Link
 [C-sharp vs D-flat](http://blog.eumlab.com/c-and-db-whats-the-difference/)
 :Music theory article addressing note naming within different keys. -->

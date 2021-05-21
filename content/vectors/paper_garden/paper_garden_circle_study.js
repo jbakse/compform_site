@@ -31,7 +31,7 @@ function drawCircle(center, radius) {
     fillColor: COLOR_GAPS ? "red" : "white",
     shadowColor: new Color(1, 1, 1, 1),
     shadowBlur: SHADOW_BLUR,
-    shadowOffset: 0
+    shadowOffset: 0,
   };
 
   // create stroke circle
@@ -40,7 +40,7 @@ function drawCircle(center, radius) {
   path.style = {
     fillColor: new Color(1, 1, 1, 1),
     strokeColor: new Color(0.3, 0.3, 0.3),
-    strokeWidth: STROKE
+    strokeWidth: STROKE,
   };
 
   for (var s = 0; s < path.segments.length; s++) {
@@ -56,7 +56,7 @@ function drawCircle(center, radius) {
     strokeWidth: STROKE * 1.3,
     strokeCap: "round",
     fillColor: undefined,
-    strokeScaling: true
+    strokeScaling: true,
   };
 
   return new Group([back_path, path, dash_path]);
@@ -78,7 +78,7 @@ var settings = {
   SHADOW_BLUR: SHADOW_BLUR,
   ROUGH: ROUGH,
   STROKE: STROKE,
-  COLOR_GAPS: COLOR_GAPS
+  COLOR_GAPS: COLOR_GAPS,
 };
 
 var gui = new dat.GUI();

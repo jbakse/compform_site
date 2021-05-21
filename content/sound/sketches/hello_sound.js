@@ -7,14 +7,14 @@ let myOscillator;
 function setup() {
   createCanvas(400, 200);
 
-  myOscillator = new p5.Oscillator('sine');
+  myOscillator = new p5.Oscillator("sine");
   myOscillator.amp(1); // set amplitude
   myOscillator.freq(440); // set frequency
 
-  const startButton = createButton('start');
+  const startButton = createButton("start");
   startButton.mousePressed(start);
 
-  const stopButton = createButton('stop');
+  const stopButton = createButton("stop");
   stopButton.mousePressed(stop);
 }
 

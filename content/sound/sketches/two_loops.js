@@ -6,30 +6,30 @@ let mySound;
 let mySound2;
 
 function preload() {
-    mySound = loadSound('/sound/sketches/hack-comp.wav');
-    mySound2 = loadSound('/sound/sketches/hack-comp.wav');
+  mySound = loadSound("/sound/sketches/hack-comp.wav");
+  mySound2 = loadSound("/sound/sketches/hack-comp.wav");
 }
 
 function setup() {
-    createCanvas(400, 200);
+  createCanvas(400, 200);
 
-    let startButton = createButton('start');
-    startButton.mousePressed(start);
+  let startButton = createButton("start");
+  startButton.mousePressed(start);
 
-    let stopButton = createButton('stop');
-    stopButton.mousePressed(stop);
+  let stopButton = createButton("stop");
+  stopButton.mousePressed(stop);
 }
 
 function start() {
-    mySound.loop(0, 1, 1, 0, 4);
-    mySound2.loop(0, 1, 1, 0, 3.9);
+  mySound.loop(0, 1, 1, 0, 4);
+  mySound2.loop(0, 1, 1, 0, 3.9);
 }
 
 function stop() {
-    mySound.pause();
-    mySound2.pause();
+  mySound.pause();
+  mySound2.pause();
 }
 
 function draw() {
-    background(50);
+  background(50);
 }

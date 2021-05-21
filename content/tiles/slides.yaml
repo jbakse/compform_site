@@ -10,10 +10,9 @@
     - label: "MoMA: Josef Albers"
       href: http://www.moma.org/collection/artists/97?locale=en
 
-
 - artist: Josef Albers
   title: Bauhaus Lettering Set, 1926-31
-  image:  http://www.moma.org/media/W1siZiIsIjY2NzIwIl0sWyJwIiwiY29udmVydCIsIi1yZXNpemUgMTI4MHgxMjgwXHUwMDNFIl1d.jpg?sha=73f0e9c465058815
+  image: http://www.moma.org/media/W1siZiIsIjY2NzIwIl0sWyJwIiwiY29udmVydCIsIi1yZXNpemUgMTI4MHgxMjgwXHUwMDNFIl1d.jpg?sha=73f0e9c465058815
   comments: Alber's Bauhaus Lettering Set is a modularly constructed alphabet composed from 10 pieces (top row).
   links:
     - label: The Josef & Anni Albers Foundation
@@ -23,9 +22,8 @@
     - label: "MoMA: Josef Albers"
       href: http://www.moma.org/collection/artists/97?locale=en
 
-
 - artist: Anni Albers
-  title: 
+  title:
   image: http://www.moma.org/media/W1siZiIsIjIyMTY4MSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MjAwMFx1MDAzRSJdXQ.jpg?sha=00147c0b3abde9d0
   comments: Anni Albers was a prominent and influential textile artist and educator.
   links:
@@ -33,7 +31,6 @@
       href: http://www.albersfoundation.org/
     - label: "MoMA: Anni Albers"
       href: http://www.moma.org/collection/artists/96?=undefined&page=1
-
 
 - artist: Mahan, Iran
   title: Shrine of Shah Nematollah Vali
@@ -47,8 +44,6 @@
     - label: Shah Nematollah Vali Shrine
       href: https://en.wikipedia.org/wiki/Shah_Nematollah_Vali_Shrine
 
-
-
 # - artist: Jessica Svendsen - Yale Architecture Lecture Series Poster - 2015
 #   title:
 #   image: https://jessicasvendsen.imgix.net/yaleschoolarchitecture_fall2015_jessicasvendsen_1.png?w=992&fm=jpg&q=75&sharp=20&fit=max&dpr=2
@@ -59,12 +54,11 @@
 #     - label: "100 Days with Josef Müller-Brockmann"
 #       href: http://jessicasvendsen.com/100-Days-with-Josef-Muller-Brockmann
 
-
 - artist: Sunsoft
   title: Batman (NES)
   image: ./slides/batman.png
   comments: Batman exhibits some of the best visuals found on the NES. Every tile uses just 4 colors chosen from the NES's 64-color palette.
-  links:    
+  links:
     - label: Batman Tile Maps
       href: http://www.vgmaps.com/Atlas/NES/index.htm#B
     - label: "Wikipedia: Batman"
@@ -72,11 +66,10 @@
     - label: "Pixel Art Discussion"
       href: https://pixelation.org/index.php?topic=9173.0
 
-
 - artist: Nintendo
   title: Advanced Wars
   image: http://flyingkirbypub.net/Weekly/Zeron/Maps/Machiavellianism.png
-  comments: This GBA and DS series features tactical battle on an overtly grid-based map. More than an aesthetic choice, the grid is key to the rules of the game. 
+  comments: This GBA and DS series features tactical battle on an overtly grid-based map. More than an aesthetic choice, the grid is key to the rules of the game.
   links:
 
 - artist: Yacht Club Games
@@ -87,13 +80,10 @@
     - label: Shovel Knight
       href: http://yachtclubgames.com/shovel-knight/
 
-
-
 # - artist: Pauline Gorelov
 #   title:
 #   image: http://www.paulinegorelov.com/media/filter/l/img/hyperstructurewhite_modulartile_paulinegorelov_02.jpg
 #   comments: >
- 
 
 # - artist: Pauline Gorelov
 #   title:
@@ -103,7 +93,6 @@
 #     - label: Artist's Site
 #       href: http://www.paulinegorelov.com/
 
-
 # - artist: Chris Clark
 #   title:
 #   image: https://farm3.staticflickr.com/2649/4138406110_f5c0df1e2a_z.jpg?zz=1
@@ -111,9 +100,6 @@
 #   links:
 #     - label: Artist's Site
 #       href: http://www.chris-clarke.co.uk/
-
-
-
 
 # - artist: We Are Plural
 #   title:
@@ -129,8 +115,6 @@
 #   comments: >
 #   links:
 
-
-
 # - artist: Darryl Brown
 #   title:
 #   image: http://1.bp.blogspot.com/-6j9iTMENSbA/TwveinllLkI/AAAAAAAABcs/rbmhK3YoRNk/s1600/ThankYouCards2.jpg
@@ -138,7 +122,6 @@
 #   links:
 #     - label: Artist's Site
 #       href: http://darryldesigns.blogspot.com/2012/01/handmade-modular-type.html
-
 
 # - artist: Unknown
 #   title:
@@ -181,4 +164,3 @@
   links:
     - label: Artist's Website
       href: http://taliacotton.com/
-
