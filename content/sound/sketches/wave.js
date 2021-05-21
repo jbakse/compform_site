@@ -6,42 +6,40 @@ let mySound;
 let fft;
 
 function preload() {
-    mySound = loadSound('/sound/sketches/hack-comp.wav');
-
+  mySound = loadSound("/sound/sketches/hack-comp.wav");
 }
 
 function setup() {
-    createCanvas(500, 200);
+  createCanvas(500, 200);
 
-    fft = new p5.FFT(0, 128);
-    fft.setInput(mySound);
+  fft = new p5.FFT(0, 128);
+  fft.setInput(mySound);
 
+  startButton = createButton("start");
+  startButton.mousePressed(start);
 
-    startButton = createButton('start');
-    startButton.mousePressed(start);
-
-    stopButton = createButton('stop');
-    stopButton.mousePressed(stop);
+  stopButton = createButton("stop");
+  stopButton.mousePressed(stop);
 }
 
 function start() {
-    mySound.loop(0, 1, 1, 0, 4);
+  mySound.loop(0, 1, 1, 0, 4);
 }
 
 function stop() {
-    mySound.pause();
+  mySound.pause();
 }
 
 function draw() {
-    background(50);
-    fill(255);
-    noStroke();
+  background(50);
+  fill(255);
+  noStroke();
 
-    const data = fft.waveform();
+  const data = fft.waveform();
 
-    for (let i = 0; i < 128; i++) {
-        const x = map(i, 0, 128, 0, 500);
-        const y = map(data[i], -1, 1, 190, 10);
-        ellipse(x, y, 2, 2);
-    }
+  for (let i = 0; i < 128; i++) {
+    const x = map(i, 0, 128, 0, 500);
+    const y = map(data[i], -1, 1, 190, 10);
+    ellipse(x, y, 2, 2);
+  }
 }

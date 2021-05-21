@@ -21,7 +21,7 @@ software: p5.js + p5.dom
 > A: Probably, in some special cases, but usually the computer is an aid to the Designer.
 > {bigger}
 
-Charles Eames, Design Q&A [Transcript](http://www.markwunsch.com/eames.html) [Video](https://www.youtube.com/watch?v=bmgxDCujTUw&feature=emb_logo){attrib} 
+Charles Eames, Design Q&A [Transcript](http://www.markwunsch.com/eames.html) [Video](https://www.youtube.com/watch?v=bmgxDCujTUw&feature=emb_logo){attrib}
 
 This is a class about computational form, algorithmic images, generative art, parametric design, and procedural generation. In this class, we will explore a creative process in which form is made indirectly, by creating and then following a defined processes. We will write instructions that a computer will follow to create images, animations, sounds, and sculptures.
 
@@ -41,20 +41,13 @@ This class will focus on exploration, experimentation, and skill building.
 include('./compform_slides.yaml')
 /:: -->
 
-
-
-
-
 <!-- ::: slides .contain
 @@include('../procedures/compform_slides.yaml')
 /:: -->
 
-
 ### What Computational Form is Not
 
 While we use computer programming throughout this class, it is important to understand that procedural generation doesn't require a computer. Procedural generation is about defining instructions and processes that create form. Computers are very useful tools for carrying out these instructions, but artists have also built systems that rely on humans or purpose-built machines instead. Many of the works included in the slideshow above embody principles of computation and instruction without using computers.
-
-
 
 <!-- ::: .activity
 
@@ -101,7 +94,7 @@ We will also explore interesting programming topics including:
 
 This class is designed to support beginning, intermediate, and advanced students. That said, to be comfortable in this class, it is best if you have had an introduction to a procedural programming language such as Javascript or Processing.
 
-We will be exploring and creating projects in a variety of programming tools and languages. It is very likely that some of them will be completely new to you, no matter your current level of experience. 
+We will be exploring and creating projects in a variety of programming tools and languages. It is very likely that some of them will be completely new to you, no matter your current level of experience.
 
 Coming into this class, you should:
 
@@ -111,7 +104,9 @@ Coming into this class, you should:
 - be comfortable capturing digital images with a camera and scanner.
 
 That said, this class offers a good deal of flexibility. If you are not sure if you are ready for this class, please speak with me to make a plan.
+
 ### Class Format + Homework
+
 This semester the class will be held online. We will meet every week for the full class time, and each class will be packed. Zoom lectures are boring and tiring. To maximize our time together, most class time will be used for hands-on activities, group breakouts, and interactive Q+A and livecoding.
 
 Each class introduces a new topic or tool. You will prepare with an advanced reading and coding challenge. In class we will review sketches, discuss the reading and challenges, and complete hands-on activities in groups. After each meeting you will create daily sketches exploring the weeks themes.
@@ -122,7 +117,6 @@ This sketching process is central to the approach of the class. There are NO lon
 
 ![This not That](figures/this_not_that.png){full-width}
 
-
 ### Notes on Daily Sketching
 
 Your goal **each day** should be to explore a different aspect of the weekly theme. Ideally, you will spend **1 to 2 hours on an idea**, resulting in an image or other artifact. Each day you will work on **a new idea**, possibly informed by something you did earlier in the week or class.
@@ -130,11 +124,9 @@ Your goal **each day** should be to explore a different aspect of the weekly the
 <br>
 
 > So I have to post something **every single day**?
-The spirit of the assignment is daily practice + flexibility. ~~Five~~ Four posts a week that explore the weekly theme in a variety of ways is considered `A` work.
-
+> The spirit of the assignment is daily practice + flexibility. ~~Five~~ Four posts a week that explore the weekly theme in a variety of ways is considered `A` work.
 
 Normally I require 5 skeches each week. I'm reducing this to four because I'm going to be assigning a weekly advanced reading and coding challenge to fit the online class format.{callout}
-
 
 <br>
 
@@ -172,7 +164,7 @@ Post it. Then stop working. Try something different tomorrow.
 
 Two hours should be a daily maximum.
 
-If after two hours you still feel excited about what you are doing, make an in-progress post, take a break, and build on it the next day. 
+If after two hours you still feel excited about what you are doing, make an in-progress post, take a break, and build on it the next day.
 
 If you are frustrated, just post what you've got and move on. Don't ever put more than 2 hours into a frustrating sketch. Just post what you've got and start fresh on something else the next day.
 
@@ -214,7 +206,7 @@ Absolutely. **I highly recommend that you do!** The more variety between your po
 
 > I'm a data vis major. I'm a game design major. I like making websites. I'm interested in dance. Can I make data visualizations/games/websites/dances in this class?
 
-Yes! I encourage you to think about how each weekly theme relates to your own interests and practice. It is a great idea to make a sketches that explore those relationships. 
+Yes! I encourage you to think about how each weekly theme relates to your own interests and practice. It is a great idea to make a sketches that explore those relationships.
 
 <br>
 
@@ -232,8 +224,7 @@ Don't put more than 2 hours in on a sketch. If your sketch takes that long it is
 
 Don't put in less than 45 minutes. Sometimes, you'll make a really nice sketch pretty quickly. If that happens, post it! But keep exploring variations on your idea. If you often get done very quickly, you probably need to work on more challenging sketches.
 
-Four sketches at 90 minutes each is 6 hours. The weekly advanced reading and coding challenge will take about one to two hours. Expect to spend about 7 to 8 hours each week on homework for this class. 
-
+Four sketches at 90 minutes each is 6 hours. The weekly advanced reading and coding challenge will take about one to two hours. Expect to spend about 7 to 8 hours each week on homework for this class.
 
 ### Syllabus Notes
 
@@ -258,8 +249,6 @@ All the work you submit for this class should be your own. For the most part you
 ### Who I am
 
 I am Justin Bakse. I am an assistant professor of interaction design at Parsons. I am personally very interested in computational form and have used computational methods in a great deal of my work. You can see some of my work below or [on my website](http://justinbakse.com/).
-
-
 
 {% slides %}
 {% include ./justin_slides.yaml %}

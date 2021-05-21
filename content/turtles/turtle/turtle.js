@@ -7,7 +7,6 @@
 // The turtle's coordinate system uses pixels for distance and degrees for rotations
 // 0 degrees is straight right (east); positive degrees are clockwise
 
-
 // Turtle constructor
 // takes optional x, y starting coordinates (default is center of sketch)
 function Turtle(x, y) {
@@ -77,7 +76,7 @@ Turtle.prototype.pushState = function () {
     x: this.x,
     y: this.y,
     bearingRadians: this.bearingRadians,
-    isPenDown: this.isPenDown
+    isPenDown: this.isPenDown,
   });
 };
 

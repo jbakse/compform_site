@@ -8,7 +8,6 @@
     - label: "Huge Gallery on Flickr"
       href: https://www.flickr.com/photos/97510924@N04/
 
-
 - artist: Michael Bromley
   title: Chromata
   image: slides/chromata.png
@@ -16,7 +15,6 @@
   links:
     - label: "Chromata"
       href: https://www.michaelbromley.co.uk/experiments/chromata/
-
 
 - artist: Greg Schomburg
   title: Sketching 2014 Identity
@@ -49,9 +47,6 @@
   links:
     - label: "Greg Schomburg"
       href: https://www.gregschomburg.com
-  
-
-
 
 - artist: Derek Yu
   title: Pixel Art Tutorial

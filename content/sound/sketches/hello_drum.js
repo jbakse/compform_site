@@ -10,19 +10,19 @@ let clap;
 let playing = false;
 
 function preload() {
-  hat = loadSound('/sound/sketches/hat.wav');
-  kick = loadSound('/sound/sketches/kick.wav');
-  snare = loadSound('/sound/sketches/snare.wav');
-  clap = loadSound('/sound/sketches/clap.wav');
+  hat = loadSound("/sound/sketches/hat.wav");
+  kick = loadSound("/sound/sketches/kick.wav");
+  snare = loadSound("/sound/sketches/snare.wav");
+  clap = loadSound("/sound/sketches/clap.wav");
 }
 
 function setup() {
   createCanvas(400, 200);
   background(50);
-  const startButton = createButton('play');
+  const startButton = createButton("play");
   startButton.mousePressed(start);
 
-  const stopButton = createButton('stop');
+  const stopButton = createButton("stop");
   stopButton.mousePressed(stop);
 }
 

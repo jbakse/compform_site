@@ -33,6 +33,7 @@ Creatively, animation differs from still images by introducing another dimension
 Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of images as just that: a series of images. Above 10, we can begin to perceive a series of images as motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are necessary for virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second.
 
 <!-- .aspect-4-1 and .no-margin not carried over -->
+
 {% js-lab "sketches/metronome_fps.js" %}
 
 Metronomes animated at 5, 15, 30, and 60 frames per second.{caption}
@@ -74,9 +75,10 @@ The heart of a real-time animation system is the draw loop. Most real-time draw 
 
 In a 60fps animation, each frame should be shown for 16.6 milliseconds. If drawing the frame takes only 10 milliseconds, the loop will _wait_ for the remaining 6.6. This prevents the animation from running too fast.
 
-<div class=".links-sidebar"> 
+<div class=".links-sidebar">
 
 [p5.js<br/> draw loop code](https://github.com/processing/p5.js/blob/ed94431045900c61cb1f78942a64e0f2a623df69/src/core/core.js#L341)
+
 </div>
 
 On the other hand, consider what happens if drawing a frame takes too long: 20 milliseconds. The draw loop might show the frame as soon as possible, but it will still be a few milliseconds late. Alternatively, the draw loop might wait an additional 13.2 milliseconds, a longer delay but in sync with the global framerate. In either case, the frame count is now behind the actual elapsed time. These delays are cumulative: slow frames set things back but fast frames don't recover the lost time. Over time, the frame count will lag more and more.
@@ -109,7 +111,7 @@ The example below swings the pendulum once per second using `frameCount` as the 
 
 Imagine you want something to happen in your animation 10.2 seconds after it starts. It is pretty likely that your event will happen between frames, so a simple equality check won't work.
 
-<div class="bad"> 
+<div class="bad">
 
 ```javascript
 // this will probably fail
@@ -163,6 +165,7 @@ ellipse(x, 100, 10, 10);
 The modulo operator—`%`—is great for breaking time into repeated chunks or measures. The example below uses `%` and `map()` together to add a red blinking light to the metronome.
 
 <!-- should be js-show -->
+
 {% js-lab "sketches/metronome_modulo.js" %}
 
 The new work is done on line 20:
@@ -243,28 +246,32 @@ You can even stitch images in [Photoshop](https://www.adobe.com/products/photosh
 
 {% js-lab "sketches/save_frames.js" %}
 
-<div class="full-width"> 
+<div class="full-width">
 
 <video src="videos/render.mp4" poster="videos/render_0030.jpg" controls></video>
+
 </div>
 
 You can even apply Photoshop effects in the bargain.
 
-<div class="full-width"> 
+<div class="full-width">
 
 <video src="videos/render_color.mp4" poster="videos/render_color_0030.jpg" controls></video>
-</div>
 
+</div>
 
 ## Study Examples
 
 ### Example 1: Bounce
+
 {% js-lab "challenges/bounce_01.js" %}
 
 ### Example 2: Fuzz
+
 In this sketch `fuzz_ellipse(x,y,w,h,fuzz)` takes parameters like ellipse but instead of drawing one ellipse, it draws many in random positions near `x,y`. It can be used to create a textured ellipse with a fuzzy edge.
 
 Take some time to study `fuzzy_ellipse()` in detail. Try to build an understanding of every line.
+
 - How many parameters does it take? Are they all required?
 - What does `if (dist(0, 0, xx, yy) > fuzz) continue;` do?
 - What happens without this line?
@@ -274,17 +281,18 @@ Take some time to study `fuzzy_ellipse()` in detail. Try to build an understandi
 {% js-lab "challenges/fuzzy_01.js" %}
 
 ### Looking a little deeper.
+
 The Fuzz example also defines a function called `fuzzy_ellipse_2()`. It is a drop-in replacement for `fuzzy_ellipse()`. Change line 31 to call `fuzzy_ellipse_2()` to see it in action..
+
 1. Do the functions produce the same outcome?
 2. Do the functions produce the exact same outcome?
 3. Look at the frame_rate display. Is one more performant than then the other?
 4. How does `fuzzy_ellipse_2()` approach the problem differently?
 5. Which is better `fuzzy_ellipse` or `fuzzy_ellipse_2`?
 
-For lots of discussion on these two approaches, and others, and their merits take a look at this [stackoverflow question](http://stackoverflow.com/questions/5837572/generate-a-random-point-within-a-circle-uniformly
-).
+For lots of discussion on these two approaches, and others, and their merits take a look at this [stackoverflow question](http://stackoverflow.com/questions/5837572/generate-a-random-point-within-a-circle-uniformly).
 
-<div class="activity"> 
+<div class="activity">
 
 ## Coding Challenges
 
@@ -293,45 +301,45 @@ Complete the following challenges to deepen your understanding of the examples a
 ### Modify the Bounce Example
 
 1. Imagine what would happen if you commented in line 22.
-2. Comment in line 22. 
+2. Comment in line 22.
 3. Make the ball bounce higher
 4. Make the ball bounce slower
 5. Make the ball bounce faster
 6. Make the ball bounce exactly 1 time per second
-### Challenging Challenge 
+
+### Challenging Challenge
+
 7. Recreate this:
 
 <!-- should be js-show -->
+
 {% js-lab "challenges/bounce_02.js" %}
 
 ### Modify the Fuzz Example
 
 1. Drawing a lot of transparent ellipses can be processor intensive.\
-  What framerate does the fuzz example run at on your computer?
+   What framerate does the fuzz example run at on your computer?
 
 2. Increase the the loop count from 100 to 1000.\
-  How does that impact the drawing?\
-  How does that impact the framerate?
+   How does that impact the drawing?\
+   How does that impact the framerate?
 
 3. Increase the the loop count (again) from 1000 to 10000.\
-  How does that impact the drawing?\
-  How does that impact the framerate?
+   How does that impact the drawing?\
+   How does that impact the framerate?
 
 4. Export 60 frames of this animation and turn them into a 30 fps video.\
-  How long (in seconds) did it take to render 60 frames?\
-  How long (in seconds) is your resulting video?\
-  Does it matter what the frameRate() is set to in setup?
+   How long (in seconds) did it take to render 60 frames?\
+   How long (in seconds) is your resulting video?\
+   Does it matter what the frameRate() is set to in setup?
 
 ### Challenging Challenge
+
 1. Recreate This
 
 {% js-show "challenges/fuzzy_02.js" %}
 
-
-
-
 </div>
-
 
 <style>
 .center {
@@ -347,9 +355,7 @@ margin: 0;
 }
 </style>
 
-
-
-<div class="assignment"> 
+<div class="assignment">
 
 ## Keep Sketching!
 

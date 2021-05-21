@@ -9,13 +9,10 @@ debug: false
 [Animation Chapter](./index.html){boxed right}
 
 ### Learning Objectives
+
 Students will be able to:
 
-
-
 ### Materials
-
-
 
 ### Schedule
 
@@ -36,52 +33,44 @@ Students will be able to:
 | 20  | 6:10 | Activate | Coding     | In-class Challenges                                |
 -->
 
-
-
 ::: .activity
+
 ## Homework Review
 
-
-
 ### Plan
-*indvidually, 5 minutes*
+
+_indvidually, 5 minutes_
 
 Scroll through this weeks homework and tag posts as you like.
 
-*groups, 5 minutes*
+_groups, 5 minutes_
 
 In your assigned team, choose 1 or 2 sketches from the past week and use them to illustrate your answer to your team's question.
 
-*class, 6x3 minutes*
+_class, 6x3 minutes_
 
 Share your chosen sketch, comment on it and summarize your discussion.
-
 
 ### Groups
 
 ::: .headless
-| Group | Question                                                                                                                                                                     |
+| Group | Question |
 | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1     | Xia, Patricia, Dahee <br/>How does working within constraints support creativity?                                                                                            |
-| 2     | Bella, Leah, Carla <br/>Considering the tile set as a tool, how do tools impact authorship?                                                                                  |
-| 3     | Aakanksha, Julian, Xu <br/>Choose a sketch you feel should be tagged 🤓. Explain why.                                                                                        |
-| 4     | Alyssa, Ting, Jack <br/>Choose a sketch you feel should be tagged 😂. Explain why.                                                                                           |
-| 5     | Madison, Earl, Patrick <br/>Choose a "outlier" project that explores an aspect of tile-sets not well covered by other projects. What is different about your chosen project? |
-| 6     | Rik, Kirsten, Mario <br>Choose a sketch you feel should be tagged 😍. Explain why.                                                                                           |
+| 1 | Xia, Patricia, Dahee <br/>How does working within constraints support creativity? |
+| 2 | Bella, Leah, Carla <br/>Considering the tile set as a tool, how do tools impact authorship? |
+| 3 | Aakanksha, Julian, Xu <br/>Choose a sketch you feel should be tagged 🤓. Explain why. |
+| 4 | Alyssa, Ting, Jack <br/>Choose a sketch you feel should be tagged 😂. Explain why. |
+| 5 | Madison, Earl, Patrick <br/>Choose a "outlier" project that explores an aspect of tile-sets not well covered by other projects. What is different about your chosen project? |
+| 6 | Rik, Kirsten, Mario <br>Choose a sketch you feel should be tagged 😍. Explain why. |
 /::
 
 /::
-
-
-
 
 ### Announcements
 
 1. Did you cite your classmates tiles?
-2. You can now tag sketches with 🤓😂😍. 
+2. You can now tag sketches with 🤓😂😍.
 3. You can format your sketch comments with markdown.
-
-
 
 <style> 
     .headless thead {

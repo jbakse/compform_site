@@ -12,8 +12,8 @@ window.onmousedown = () => {
   play(melody);
 };
 
-const cmajor = ['C3', 'D3', 'E3', 'F3', 'G3', 'A3', 'B3'];
-const cminor = ['C3', 'D3', 'Eb3', 'F3', 'G3', 'Ab3', 'B3'];
+const cmajor = ["C3", "D3", "E3", "F3", "G3", "A3", "B3"];
+const cminor = ["C3", "D3", "Eb3", "F3", "G3", "Ab3", "B3"];
 const notes = cmajor;
 
 let degree = 0;
@@ -37,7 +37,7 @@ function generate() {
 function generateMeasure() {
   const m = [];
 
-  let timeLeft = Tone.Time('1m');
+  let timeLeft = Tone.Time("1m");
 
   while (timeLeft.toSeconds() > 0) {
     // choose note
@@ -46,9 +46,9 @@ function generateMeasure() {
     const note = notes[degree];
 
     // choose length
-    let length = Tone.Time('4n');
+    let length = Tone.Time("4n");
     if (Math.random() < 0.5) {
-      length = Tone.Time('2n');
+      length = Tone.Time("2n");
     }
     if (length.toMilliseconds() > timeLeft.toMilliseconds()) {
       length = timeLeft;
@@ -68,7 +68,7 @@ function play(melody) {
   let t = Tone.now();
   for (const note of melody) {
     console.log(note[0], note[1].toNotation());
-    if (note[0] !== 'rest') {
+    if (note[0] !== "rest") {
       // synth.triggerAttackRelease(note[0], note[1]), t);
       synth.triggerAttackRelease(note[0], Tone.Time(note[1]) - 0.1, t);
     }
@@ -76,7 +76,7 @@ function play(melody) {
   }
 }
 
-console.log('click for music!');
+console.log("click for music!");
 
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);

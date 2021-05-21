@@ -5,31 +5,31 @@
 var myTurtle;
 
 function setup() {
-    createCanvas(500, 500);
-    myTurtle = new Turtle();
+  createCanvas(500, 500);
+  myTurtle = new Turtle();
 }
 
 function draw() {
-    background(50);
+  background(50);
 
-    noFill();
-    stroke(255);
-    strokeWeight(3);
+  noFill();
+  stroke(255);
+  strokeWeight(3);
 
-    // move to starting position (without drawing)
-    myTurtle.penUp();
-    myTurtle.moveTo(100, 100);
+  // move to starting position (without drawing)
+  myTurtle.penUp();
+  myTurtle.moveTo(100, 100);
 
-    // put the pen down to draw
-    myTurtle.penDown();
+  // put the pen down to draw
+  myTurtle.penDown();
 
-    // draw the triangle
-    for (var i = 0; i < 5; i++) {
-        console.log(myTurtle.x, myTurtle.y);
-        myTurtle.moveForward(100);
-        myTurtle.turnRight(144);
-        console.log(myTurtle.x, myTurtle.y);
-    }
+  // draw the triangle
+  for (var i = 0; i < 5; i++) {
+    console.log(myTurtle.x, myTurtle.y);
+    myTurtle.moveForward(100);
+    myTurtle.turnRight(144);
+    console.log(myTurtle.x, myTurtle.y);
+  }
 
-    noLoop();
+  noLoop();
 }

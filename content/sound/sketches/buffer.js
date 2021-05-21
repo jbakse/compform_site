@@ -49,7 +49,7 @@ function setup() {
   mySound = new p5.SoundFile();
   mySound.setBuffer([buffer]);
 
-  const startButton = createButton('play');
+  const startButton = createButton("play");
   startButton.mousePressed(start);
 }
 

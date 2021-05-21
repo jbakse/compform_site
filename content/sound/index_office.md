@@ -4,16 +4,15 @@ layout: compform_chapter.pug
 debug: false
 
 header_title: Sound
-previous: 
+previous:
 previous_url:
-next: 
-next_url: 
+next:
+next_url:
 
 hero_title: Sound
 description: Make some noise
 software: p5.js + p5.sound
 ---
-
 
 ## Warm Up
 
@@ -35,20 +34,19 @@ software: p5.js + p5.sound
 - Our brain's visual and auditory data processing is powerful and valuable.
 - We can take advantage of this power by creating visual and auditory form.
 
-
 ## Drawing Sounds
 
 ### Hello, p5.js!
 
 ```javascript
 function setup() {
-    createCanvas(500, 500);
+  createCanvas(500, 500);
 }
 
 function draw() {
-    fill(255, 0, 0);
-    noStroke();
-    ellipse(250, 250, 100, 100);
+  fill(255, 0, 0);
+  noStroke();
+  ellipse(250, 250, 100, 100);
 }
 ```
 
@@ -56,10 +54,10 @@ function draw() {
 
 ```javascript
 function setup() {
-    myOscillator = new p5.Oscillator('sine');
-    myOscillator.amp(1); // set amplitude
-    myOscillator.freq(440); // set frequency
-    myOscillator.start(); // start oscillating
+  myOscillator = new p5.Oscillator("sine");
+  myOscillator.amp(1); // set amplitude
+  myOscillator.freq(440); // set frequency
+  myOscillator.start(); // start oscillating
 }
 ```
 
@@ -67,18 +65,18 @@ function setup() {
 
 [Carefully Arranged Sand and Lightning](https://docs.google.com/presentation/d/1JhBhWI8IHTgY59WDwSWg-M0PJtsKe5YRz21G61lI1E4/present)
 
-
 ## Light
 
 ### Emissive Color
+
 - Sunlight contains electromagnetic radiation in many wavelengths.
 - An LED provides electromagnetic radiation in a very specific wavelength range.
 - An LED computer display has LEDs of three colors. It can vary the intensity of those three colors, but can’t provide electromagnetic radiation in the wavelengths between them.
 - We perceive the mix of the three colors as a single color.
-- Red, green, and blue are used because they correspond with our biology. 
-
+- Red, green, and blue are used because they correspond with our biology.
 
 ### Reflective/Absorptive Color
+
 - A reflective object doesn’t reflect color of single wavelength. Instead it reflects/absorbs all wavelengths at different amounts.
 - We perceive the reflections as a single color.
 - We can’t determine what combination of stimulating frequencies contribute to that color.
@@ -89,10 +87,8 @@ function setup() {
 
 ![Cones](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cone-fundamentals-with-srgb-spectrum.svg/540px-Cone-fundamentals-with-srgb-spectrum.svg.png)
 
-
 - Color wheel?
 - No such thing as purple light. But the color purple exists.
-
 
 ### Vision
 
@@ -101,7 +97,6 @@ function setup() {
 [How the Sun Sees You: UV Imaging](https://www.youtube.com/watch?v=o9BqrSAHbTc)
 
 [Feynman on Light](https://www.youtube.com/watch?v=FjHJ7FmV0M4)
-
 
 ### Our Eyes
 
@@ -122,13 +117,11 @@ function setup() {
 - Estimation of “True” Color, or Color Under Different Lighting[The Dress](https://en.wikipedia.org/wiki/The_dress)
 - Pattern Recognition
 
-
 ### Thoughts
 
 - Our understanding of color/color theory is informed from the anatomy of our eye and the way our mind processes vision.
 - We talk about what color something is a single thing: dark blue, pink, vivid green. We don’t think about the color of something as a little bit green, a little bit blue, and a lot red. We definitely don’t think of color as the sum of the many in between wavelengths.
 - We talk about primary colors and color wheels. These are properties of **vision** not **light**.
-
 
 ## Sound
 
@@ -148,7 +141,7 @@ Pressure waves propagated in the air.
 
 ### Our Auditory Cortex
 
-- 3D location of sound. We have two sound sensors, and we can detect differences in the amplitude, phase, and timing of signals that reach them. 
+- 3D location of sound. We have two sound sensors, and we can detect differences in the amplitude, phase, and timing of signals that reach them.
 - We can turn our head to hear sounds from a different "view point".
 - We can infer information from acoustic context including echoes and spectral attenuation.
 - Source differentiation. Listen to one person in noisy room, or to a specific instrument in a symphony.
@@ -159,53 +152,47 @@ Pressure waves propagated in the air.
 
 [Sensitivity of Human Ear](http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/earsens.html)
 
-
 ## Hearing vs Sight
 
 [McGurk Effect](https://www.youtube.com/watch?v=G-lN8vWm3m0)
 
-| Eyes  | Ears |
-| -- | -- |
-| Lens | No Lens |
+| Eyes                               | Ears                                       |
+| ---------------------------------- | ------------------------------------------ |
+| Lens                               | No Lens                                    |
 | Sensitive to four frequency ranges | Sensitive to thousands of frequency ranges |
-| Spacial Priority | Frequency Priority |
-| 1,000,000:1 | 10,000,000,000:1 |
-| 170° FOV | 360° FOV |
-
+| Spacial Priority                   | Frequency Priority                         |
+| 1,000,000:1                        | 10,000,000,000:1                           |
+| 170° FOV                           | 360° FOV                                   |
 
 - Our vision prioritizes spacial information over spectral information.
 - Our hearing prioritizes spectral information over spacial informational.
 - We are pretty good at telling where a sound originates, but much better at telling where a light originates.
 - We can reduce color to a single value, but we can understand the spectrum of a sound much better.
 
-
 ## Examples
 
 ### Hello again, p5.sound!
+
 ::: js-lab
 /sound/sketches/hello_sound.js
 /::
 
-
 ### Oscillator
+
 ::: js-lab
 /sound/sketches/oscillator.js
 /::
 
-
-
 ### Modulator
+
 ::: js-lab
 /sound/sketches/modulator.js
 /::
 
-
-
 ::: .activity
+
 ## In-class Challenge
 
 [Play a little melody.](https://www.youtube.com/watch?v=DGCvo3RsLkU)
 
 /::
-
-

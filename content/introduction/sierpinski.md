@@ -5,11 +5,7 @@ debug: false
 hide_logo: true
 ---
 
-
-
-
 ### Instructions
-
 
 1. Draw an up-pointing equilateral triangle that fills most of the page.
 2. Lightly mark the midpoint of each line of that triangle.
@@ -18,6 +14,4 @@ hide_logo: true
 4. Choose any empty, up-pointing triangle on the page.
 5. Go to instruction 2.
 
-
 Yes, these instructions will go on forever. I'll interrupt you in a minute.
-

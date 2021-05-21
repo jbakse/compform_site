@@ -1,13 +1,11 @@
 // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
 
-
 function setup() {
   createCanvas(600, 600);
   noLoop();
 }
 
 function draw() {
-
   // draw the sky
   noStroke();
   fill(0, 0, 255);
@@ -24,5 +22,4 @@ function draw() {
   // draw the roof
   fill(255, 0, 0);
   triangle(150, 250, 300, 100, 450, 250);
-
 }

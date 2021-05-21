@@ -14,9 +14,9 @@ let synth;
 function setup() {
   createCanvas(400, 200);
 
-  synth = new SimpleSynth('triangle');
+  synth = new SimpleSynth("triangle");
 
-  const majorButton = createButton('start');
+  const majorButton = createButton("start");
   majorButton.mousePressed(start);
 }
 

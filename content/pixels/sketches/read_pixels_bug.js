@@ -7,28 +7,27 @@
 // p5.js v0.5.6
 
 function setup() {
-	createCanvas(500, 500);
+  createCanvas(500, 500);
 }
 
 function draw() {
-	background(0);
+  background(0);
 
-	img = createImage(10, 10);
-	for (var y = 0; y < img.height; y++) {
-		for (var x = 0; x < img.width; x++) {
-			img.get(x, y);
-			var out_color = color(255, 0, 0, 255);
-			img.set(x, y, out_color);
+  img = createImage(10, 10);
+  for (var y = 0; y < img.height; y++) {
+    for (var x = 0; x < img.width; x++) {
+      img.get(x, y);
+      var out_color = color(255, 0, 0, 255);
+      img.set(x, y, out_color);
 
-			// img.updatePixels();
+      // img.updatePixels();
+    }
+  }
 
-			}
-	}
+  img.updatePixels();
 
-	img.updatePixels();
+  noSmooth();
+  image(img, 0, 0, width, height);
 
-	noSmooth();
-	image(img, 0, 0, width, height);
-
-	noLoop();
+  noLoop();
 }

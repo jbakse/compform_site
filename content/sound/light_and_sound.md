@@ -4,35 +4,31 @@ layout: compform_plain.pug
 debug: false
 ---
 
-
 ### Preamble
 
 - [Kraftwerk: Pocket Calculator](https://www.youtube.com/watch?v=DGCvo3RsLkU)
 - [ElectroBOOM: ESD Safety](https://www.youtube.com/watch?v=RtlYi1yLTVQ)
 - [Human Benchmark](https://www.humanbenchmark.com/tests/reactiontime/)
-- [Mystery Melody](https://www.youtube.com/watch?v=mN4FNmoLIrw&feature=youtu.be) 
+- [Mystery Melody](https://www.youtube.com/watch?v=mN4FNmoLIrw&feature=youtu.be)
 - [An Audio Illusion](https://www.youtube.com/watch?v=tG9HSvNPVKQ&feature=youtu.be)
-
 
 ## Carefully Arranged Sand and Lightning
 
 [Presentation Deck](https://docs.google.com/presentation/d/1JhBhWI8IHTgY59WDwSWg-M0PJtsKe5YRz21G61lI1E4/present?slide=id.g25052fa3b5_2_293)
 
-
 ## Light
 
-We see by detecting electromagnetic radiation that reaches our eyes. The information we gather by sight is only a small amount of the information present in the EM field. 
+We see by detecting electromagnetic radiation that reaches our eyes. The information we gather by sight is only a small amount of the information present in the EM field.
 
-**We can only see the EM radiation with wavelengths from around 390nm to 700nm that happens enter our pupils.** We have limited ability to discern frequencies even in the visible range, and we [can't*](https://www.polarization.com/haidinger/haidinger.html) detect light polarization.
+**We can only see the EM radiation with wavelengths from around 390nm to 700nm that happens enter our pupils.** We have limited ability to discern frequencies even in the visible range, and we [can't\*](https://www.polarization.com/haidinger/haidinger.html) detect light polarization.
 
- Even with these constraints, we are able to glean a highly detailed understanding of our surroundings. Vision is perhaps our most powerful sense. We are especially good at building a **spacial** understanding of our environment based based on light.
+Even with these constraints, we are able to glean a highly detailed understanding of our surroundings. Vision is perhaps our most powerful sense. We are especially good at building a **spacial** understanding of our environment based based on light.
 
 ### Videos
 
 - [UV Imaging: How the Sun Sees You](https://www.youtube.com/watch?v=o9BqrSAHbTc)
 - [IR Imaging: Thermal Imaging and It's Applications](https://youtu.be/1DiqL8iFD8g?t=21s)
 - [Richard Feynman on Light](https://www.youtube.com/watch?v=FjHJ7FmV0M4)
-
 
 ### Emissive Color
 
@@ -43,7 +39,6 @@ We see by detecting electromagnetic radiation that reaches our eyes. The informa
 - Red, green, and blue LEDs are used because they correspond with our biology.
 - Our eyes have color trichromatic vision with sensors for red, green, and blue wavelengths. We can percieve colors between these wavelengths, but **we can’t determine what combination of stimulating frequencies contribute to that perception**.
 
-
 ### Reflective/Absorptive Color
 
 - A reflective object reflects and absorbs all light wavelengths at different amounts.
@@ -51,13 +46,11 @@ We see by detecting electromagnetic radiation that reaches our eyes. The informa
 - A reflective color cannot be brighter than the lighting in any wavelength.
 - We adjust our perceived color of an image based on our understanding of the lighting. [The Dress](https://en.wikipedia.org/wiki/The_dress)
 
-
 ### Visible EM Range
 
 ![EM Radiation](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/675px-EM_Spectrum_Properties_edit.svg.png)
 
-
-<!-- 
+<!--
 [Wikipedia: EM Spectrum](https://en.wikipedia.org/wiki/Electromagnetic_spectrum)
 
 
@@ -73,10 +66,9 @@ We see by detecting electromagnetic radiation that reaches our eyes. The informa
 
 -->
 
-
 ![Cone Response](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cone-fundamentals-with-srgb-spectrum.svg/540px-Cone-fundamentals-with-srgb-spectrum.svg.png)
 
-<!-- 
+<!--
 [Wikipedia: Color Vision](https://en.wikipedia.org/wiki/Color_vision)
 
 | Cones             | Wavelength |
@@ -85,10 +77,6 @@ We see by detecting electromagnetic radiation that reaches our eyes. The informa
 | Visible Green (M) | ~545nm     |
 | Visible Red (L)   | ~570nm     |
 -->
-
-
-
-
 
 ### Our Eyes
 
@@ -101,9 +89,10 @@ We see by detecting electromagnetic radiation that reaches our eyes. The informa
 
 **Angular resolution**
 : Our eyes focus light through a lens, providing directional information at a resolution of about 1 arcminute or .02°. Thats about 250 dpi at one foot away, 3 pixels/mm at 1 meter, or something 6 inches wide about a mile away. We can see things much smaller than this, when they are bright, we just can’t understand their shape. For example a bright led would be easily visible a mile away in a dark environment.
+
 - Our eyes have ~120 million rods that detect brightness.
 - Our eyes have ~6.5 million cones that detect color.
-- For comparison, an HD Display has 1920x1080x3 (6.2 million) LEDs. A High-end DSLR has about 45 million light sensors. 
+- For comparison, an HD Display has 1920x1080x3 (6.2 million) LEDs. A High-end DSLR has about 45 million light sensors.
 
 **Field of View**
 : ~ 160° x 175° But resolution is very center biased. [Foviated rendering](https://en.wikipedia.org/wiki/Foveated_rendering)
@@ -112,20 +101,18 @@ We see by detecting electromagnetic radiation that reaches our eyes. The informa
 : Our eyes don't have a frame rate like a camera in which all the photo-sensors refresh in unison at a set rate. We can generally differentiate a solid light from a flickering one, up to 60+ hz.
 
 **Vision Impairment**
+
 - In the US more than 3% of of those 40 years and older are either legally blind (20/200 vision or worse, with corrective lenses) or visually impaired (20/40 or worse, with corrective lenses).
 - In the US more 7% of males and .4% of females have some form of color-blindness.
 
 ### Our Visual Cortex
 
-Our [Visual Cortex](https://en.wikipedia.org/wiki/Visual_cortex) processes the data collected by our eyes to provide information about our environment. 
+Our [Visual Cortex](https://en.wikipedia.org/wiki/Visual_cortex) processes the data collected by our eyes to provide information about our environment.
 
 - Depth perception (binocular and not)
 - Persistent spacial understanding
 - Pattern recognition
 - Estimation of true color, accounting for lighting
-
-
-
 
 ### Thoughts
 
@@ -133,22 +120,19 @@ Our understanding of color and color theory—primary colors and color wheels—
 
 We consider a color as a single value: dark blue, pink, vivid green. We don’t think about the color of something as a little bit green, a little bit blue, and a lot red. We definitely don’t think of color as the sum of the many in-between wavelengths.
 
-
 ## Sound
 
 Sound is an audible wave of pressure that propagates through the air. Sound begins when something in contact with the air vibrates. As that thing pushes forward, it pushes the particles of air in front of it forward into the the particles of air in front of them. Making an area of higher pressure. This high pressure area pushes out in all directions, and a wave of pressure begins to propagate though the air.
 
 This pressure wave can push on other things like microphones and our ears. Our ears are able to detect very rapid and subtle changes in this pressure. And we are then able to understand the amplitude, frequency, and even "shape" of these changes. Because we have two ears, spaced a few inches apart, we can compare what each ear hears to gain spacial information as well.
 
-
 ### Videos
 
 [How Hearing Works](https://www.youtube.com/watch?v=flIAxGsV1q0)
 
-
 ### Our Ears
 
-**Pitch Sensitivity** 
+**Pitch Sensitivity**
 : We can hear pitches from 20hz to 20,000hz, and can differentiate frequencies as close as 5 cents (.15hz at Middle C). Pitches are detected by 16,000-20,000 hairs in a curled up tube, the cochlea. The hairs in the cochlea are each “tuned” to different frequencies. For reference, an 88 Key Piano ranges from A0 (27.5 hz) to C8 (4186.01 hz).
 
 **Loudness Sensitivity**
@@ -162,10 +146,9 @@ This pressure wave can push on other things like microphones and our ears. Our e
 
 [Sensitivity of Human Ear](http://hyperphysics.phy-astr.gsu.edu/hbase/Sound/earsens.html)
 
-
 ### Our Auditory Cortex
 
-Our [Auditory Cortex](https://en.wikipedia.org/wiki/Auditory_cortex) processes the data collected by our ears to provide information about our environment. 
+Our [Auditory Cortex](https://en.wikipedia.org/wiki/Auditory_cortex) processes the data collected by our ears to provide information about our environment.
 
 - By comparing the amplitude, timing, and phase of audio information from each ear we can perceive the spatial source of sounds.
 - Our spacial information about sound is less reliable than that of sight.
@@ -178,11 +161,9 @@ Our [Auditory Cortex](https://en.wikipedia.org/wiki/Auditory_cortex) processes t
 
 [Auditory Illusions](https://soundphysics.ius.edu/?page_id=1005)
 
-
-
 ## Vision vs. Hearing
 
-Our visual and auditory sensory systems prioritize different types of information. 
+Our visual and auditory sensory systems prioritize different types of information.
 
 | Vision                             | Hearing                             |
 | ---------------------------------- | ----------------------------------- |
@@ -190,7 +171,7 @@ Our visual and auditory sensory systems prioritize different types of informatio
 | EM                                 | Air Pressure                        |
 | 120 million sensors each           | ~18k sensors each                   |
 | 1 + 3 frequency responses          | thousands of frequency responses    |
-| Lens  + spatially arranged         | No Lens + not spatially arranged    |
+| Lens + spatially arranged          | No Lens + not spatially arranged    |
 | 160° FOV                           | 360° FOV                            |
 | Contrast 1:1,000,000               | Contrast 1:10,000,000,000           |
 | great at **spatial** understanding | great at **spectral** understanding |
@@ -203,8 +184,6 @@ We hear chords from a general direction.
 Our visual and auditory sensory systems support one another.
 
 [McGurk Effect](https://www.youtube.com/watch?v=G-lN8vWm3m0)
-
-
 
 ## Key Takeaways
 
