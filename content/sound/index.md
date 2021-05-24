@@ -12,7 +12,7 @@ previous_url: ../text
 hero_title: Comp Sound
 
 description: Make some noise using the p5 sound library.
-software: p5.js
+software: p5.js + p5.sound
 ---
 
 ## Sound
