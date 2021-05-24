@@ -11,7 +11,7 @@ next_url:
 
 hero_title: Text
 description: Explore generating strings with templates, Markov chains, and context-free grammars.
-software: p5.js
+software: javascript + html
 ---
 
 <!-- [[ leah, want to take a crack at the hero desc? again? ]] -->
