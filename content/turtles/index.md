@@ -158,7 +158,11 @@ Both frameworks can be used to draw a square or star. We are not [_forced_](http
 
 Two of the forms that turtles tend to encourage are spirograph-like figures and recursive trees.
 
+### Spirograph Example
+
 {% js-lab "sketches/turtle_spirograph.js" %}
+
+### Recursive Tree Example
 
 {% js-lab "sketches/turtle_tree.js" %}
 
