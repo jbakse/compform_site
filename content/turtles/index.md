@@ -91,7 +91,8 @@ This shift in priorities makes some things easier to express and some things har
 
 <div class="columns">
 
-<div class="half"> 
+<div class="half">
+
 **Cartesian: Drawing a Square**
 
 ```javascript
@@ -100,7 +101,8 @@ rect(100, 100, 100, 100);
 
 </div>
 
-<div class="half"> 
+<div class="half">
+
 **Turtle Graphics: Drawing a Square**
 
 ```javascript
@@ -118,7 +120,8 @@ for (side = 0; side < 4; side++) {
 
 <div class="columns">
 
-<div class="half"> 
+<div class="half">
+
 **Cartesian: Drawing a Star**
 
 ```javascript
@@ -131,7 +134,8 @@ line(180.9, 158.77, 100.0, 100.0);
 
 </div>
 
-<div class="half"> 
+<div class="half">
+
 **Turtle Graphics: Drawing a Star**
 
 ```javascript
