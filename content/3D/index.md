@@ -3,12 +3,6 @@ title: 3D Forms
 layout: compform_chapter.pug
 debug: false
 
-header_title: "3D Forms"
-previous:
-previous_url:
-next:
-next_url:
-
 hero_title: 3D Forms
 description: Explore building three-dimensional forms with OpenSCAD, a functional programming language for constructive solid geometry modeling.
 software: OpenSCAD

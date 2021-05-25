@@ -3,12 +3,6 @@ title: Procedures
 layout: compform_chapter.pug
 debug: false
 
-header_title: Procedures
-previous: TBA
-previous_url: ../introduction
-next: TBA
-next_url: ../parameters
-
 hero_title: Procedures
 description: Procedures are powerful creative tools. Defining procedures for creating form allows artists to focus on creative intent, reduce tedium, build higher scales of complexity, and explore otherwise impossible ideas.
 

@@ -3,12 +3,6 @@ title: Hello, p5!
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Hello, p5!"
-next: Pixels
-next_url: ../pixels
-previous: Tile Maps
-previous_url: ../tiles
-
 hero_title: Hello, p5!
 description: Many of the examples on this site use p5.js, a Javascript creative coding based on Processing.
 software: p5.js + github

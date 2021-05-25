@@ -3,12 +3,6 @@ title: Turtle Graphics
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Turtle Graphics"
-next: Strategy
-next_url: ../strategy
-previous: Pixel Data
-previous_url: ../pixels
-
 hero_title: Turtle Graphics
 description: Introduced as a feature of Logo programming language in 1969, turtle graphics connect computer drawing to how we move our bodies through space, and encourage approaching computational form with a new mindset.
 software: p5.js + custom library

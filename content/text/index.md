@@ -3,12 +3,6 @@ title: Text
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Text"
-previous: Animation
-previous_url: ../animation
-next:
-next_url:
-
 hero_title: Text
 description: Explore generating strings with templates, Markov chains, and context-free grammars.
 software: javascript + html

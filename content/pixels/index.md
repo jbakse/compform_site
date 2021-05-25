@@ -3,12 +3,6 @@ title: Pixel Data
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Pixel Data"
-next: Turtle Graphics
-next_url: ../turtles
-previous: Strategies
-previous_url: ../strategy
-
 hero_title: Pixel Data
 old_description: Internally, computers often represent images as a array of pixel values. Accessing, processing, and generating pixel data directly allows you to explore a variety of low-level techniques.
 

@@ -3,12 +3,6 @@ title: Tile Maps
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Tile Maps"
-previous: false
-previous_url: false
-next: Hello, p5!
-next_url: ../p5
-
 hero_title: Tile Maps
 description: Tile mapping—creating images by arranging small graphic tiles—is a widely used technique with a range of technical and artistic benefits.
 software: pencil + paper

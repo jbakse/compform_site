@@ -3,12 +3,6 @@ title: Music
 layout: compform_chapter.pug
 debug: false
 
-header_title: Music
-previous: Sound
-previous_url: ../sound
-next:
-next_url:
-
 hero_title: Music
 description: Music is organized sound. This chapter covers some specific tactics for generating a short piece of music.
 software: Tone.js

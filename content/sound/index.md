@@ -3,12 +3,6 @@ title: Sound
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Comp Sound"
-next:
-next_url:
-previous: Generating Text
-previous_url: ../text
-
 hero_title: Comp Sound
 
 description: Make some noise using the p5 sound library.
