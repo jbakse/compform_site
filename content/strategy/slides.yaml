@@ -16,7 +16,7 @@
 
 - artist: Evil Mad Scientist Laboratories
   title: StippleGen
-  image: http://evilmadscience.s3.amazonaws.com/wiki/eggbot/stipplegen/v2docs/graceegg-640.jpg
+  image: https://evilmadscience.s3.amazonaws.com/wiki/eggbot/stipplegen/v2docs/graceegg-640.jpg
   comments: StippleGen was created in Processing to turn photographs into pen-plottable drawings.
   links:
     - label: "Stipple Gen"

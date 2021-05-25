@@ -32,7 +32,7 @@ One of the key ideas introduced in Logo was _turtle graphics_. The turtle was or
 
 <div class="two-up">
 
-![Papert w/ turtle](http://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)
+![Papert w/ turtle](https://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)
 Seymour Papert with a physical turtle robot, photo by Cynthia Solomon{figure}
 
 ![turtle screenshot](images/turtle.png)

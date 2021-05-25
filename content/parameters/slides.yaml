@@ -1,6 +1,6 @@
 - artist: Zaha Hadid
   title: Galaxy SOHO
-  image: http://images.adsttc.com/media/images/5285/1f2b/e8e4/4e52/4b00/01ab/slideshow/HAC_photo_by_Iwan_Baan_(2).jpg?1384455904
+  image: https://images.adsttc.com/media/images/5285/1f2b/e8e4/4e52/4b00/01ab/slideshow/HAC_photo_by_Iwan_Baan_(2).jpg?1384455904
   comments: >
   links:
     - label: Zaha Hadid Studio
@@ -18,7 +18,7 @@
 
 - artist: MakeHuman Community
   title: MakeHuman
-  image: http://upload.wikimedia.org/wikipedia/commons/c/c7/Makehuman_1_0_alpha8_rc_screenshot.png
+  image: https://upload.wikimedia.org/wikipedia/commons/c/c7/Makehuman_1_0_alpha8_rc_screenshot.png
   links:
     - label: "Makehuman"
       href: http://www.makehumancommunity.org/

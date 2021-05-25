@@ -18,7 +18,7 @@
 
 - artist: Shiny Dynamics
   title: Wood Tutorial
-  image: http://3.bp.blogspot.com/-aROavndlrvw/T5JZl_-fMwI/AAAAAAAAAgQ/AdJp5pJP5dI/s320/rend6.png
+  image: https://3.bp.blogspot.com/-aROavndlrvw/T5JZl_-fMwI/AAAAAAAAAgQ/AdJp5pJP5dI/s320/rend6.png
   comments: >
   links:
     - label: Wood Tutorial
@@ -34,7 +34,7 @@
 
 - artist: Redbox Games
   title: Displacement Terrain
-  image: http://www.redblobgames.com/maps/terrain-from-noise/images/topdemo-3d.png
+  image: https://www.redblobgames.com/maps/terrain-from-noise/images/topdemo-3d.png
   comments: >
   links:
     - label: Terrain Tutorial
