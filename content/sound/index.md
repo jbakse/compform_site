@@ -175,9 +175,9 @@ function record(length) {
 
 ### FFT
 
-The Fast Fourier Transform transform a signal from the time domain to the frequency domain. For audio analysis that means the FFT can tell the strenght of different frequencies in an audio buffer.
+The Fast Fourier Transform transforms a signal from the time domain to the frequency domain. For audio analysis that means the FFT can tell the strength of different frequencies in an audio buffer.
 
-For a visual exploration of FFT, see this excelent video by 3Blue1Brown [https://www.youtube.com/watch?v=spUNpyF58BY](But what is the Fourier Transform? A visual introduction.)
+For a visual exploration of FFT, see this excellent video by 3Blue1Brown [https://www.youtube.com/watch?v=spUNpyF58BY](But what is the Fourier Transform? A visual introduction.)
 
 {% js-lab "sketches/fft.js" %}
 
