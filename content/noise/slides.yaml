@@ -24,14 +24,6 @@
     - label: Wood Tutorial
       href: http://shiny-dynamics.blogspot.com/2012/04/blender-wood-texture-part-2.html
 
-- artist: Thinkbox Software
-  title: Cloud Tutorial
-  image: http://www.thinkboxsoftware.com/storage/krakatoa-support-images/krakatoa15_cloudsmodeling_kcm_density1_render.png
-  comments: >
-  links:
-    - label: Cloud Tutorial
-      href: http://www.thinkboxsoftware.com/krak-clouds-modelling/
-
 - artist: Redbox Games
   title: Displacement Terrain
   image: https://www.redblobgames.com/maps/terrain-from-noise/images/topdemo-3d.png
