@@ -54,22 +54,6 @@ html(lang="en")
 			a(href="/")
 				include ./_logo.svg
 
-		if header_title
-			header#top-nav.container
-				.row.justify-content-md-center
-					.col-md-8
-						span.title
-							!= header_title
-						.buttons
-							if previous
-								a.previous(href=previous_url)
-									i.fa.fa-caret-left.fa-lg
-									!= previous
-
-							if next
-								a.next(href=next_url)
-									!= next
-									i.fa.fa-caret-right.fa-lg
 		#content
 			if hero_title
 				#hero.container
@@ -87,21 +71,3 @@ html(lang="en")
 						!=content
 
 			#scroll-out.container
-
-
-
-		//-
-		//- .container
-		//- 	.row.header
-		//- 		//- header
-		//- 	.row
-		//- 		.col-0.col-lg-2.d-none.d-lg-flex.left
-		//- 			//- place-holder-left
-		//- 		.col-12.col-lg-7.content
-		//- 			article.comp-form-copy
-		//- 				!= contents
-		//-
-		//- 		.col-0.col-lg-3.d-none.d-lg-flex.right
-		//- 			//- place-holder-right
-		//-
-		//- 	.row.scroll-out
