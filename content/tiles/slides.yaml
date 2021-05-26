@@ -12,7 +12,7 @@
 
 - artist: Josef Albers
   title: Bauhaus Lettering Set, 1926-31
-  image: http://www.moma.org/media/W1siZiIsIjY2NzIwIl0sWyJwIiwiY29udmVydCIsIi1yZXNpemUgMTI4MHgxMjgwXHUwMDNFIl1d.jpg?sha=73f0e9c465058815
+  image: https://www.moma.org/media/W1siZiIsIjY2NzIwIl0sWyJwIiwiY29udmVydCIsIi1yZXNpemUgMTI4MHgxMjgwXHUwMDNFIl1d.jpg?sha=73f0e9c465058815
   comments: Alber's Bauhaus Lettering Set is a modularly constructed alphabet composed from 10 pieces (top row).
   links:
     - label: The Josef & Anni Albers Foundation
@@ -24,7 +24,7 @@
 
 - artist: Anni Albers
   title:
-  image: http://www.moma.org/media/W1siZiIsIjIyMTY4MSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MjAwMFx1MDAzRSJdXQ.jpg?sha=00147c0b3abde9d0
+  image: https://www.moma.org/media/W1siZiIsIjIyMTY4MSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MjAwMFx1MDAzRSJdXQ.jpg?sha=00147c0b3abde9d0
   comments: Anni Albers was a prominent and influential textile artist and educator.
   links:
     - label: The Josef & Anni Albers Founation
@@ -68,13 +68,13 @@
 
 - artist: Nintendo
   title: Advanced Wars
-  image: http://flyingkirbypub.net/Weekly/Zeron/Maps/Machiavellianism.png
+  image: https://flyingkirbypub.net/Weekly/Zeron/Maps/Machiavellianism.png
   comments: This GBA and DS series features tactical battle on an overtly grid-based map. More than an aesthetic choice, the grid is key to the rules of the game.
   links:
 
 - artist: Yacht Club Games
   title: Shovel Knight
-  image: http://yachtclubgames.com/wp-content/uploads/2014/06/screen_07.png
+  image: https://yachtclubgames.com/wp-content/uploads/2014/06/screen_07.png
   comments: Shovel Knight is an excellent retro platformer with an art style that carefully embraces the hardware limitations of the 8-bit era.
   links:
     - label: Shovel Knight

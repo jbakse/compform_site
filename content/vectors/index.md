@@ -3,12 +3,6 @@ title: Vector Drawing
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Vector Drawing"
-next:
-next_url:
-previous: Turtle Graphics
-previous_url: ../turtles
-
 hero_title: Vector Drawing
 
 description: Vector graphics encode high-level meaning about the shapes that make up a drawing allowing you to manipulate them in higher-level ways.

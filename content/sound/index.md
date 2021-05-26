@@ -3,16 +3,10 @@ title: Sound
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Comp Sound"
-next:
-next_url:
-previous: Generating Text
-previous_url: ../text
-
 hero_title: Comp Sound
 
 description: Make some noise using the p5 sound library.
-software: p5.js
+software: p5.js + p5.sound
 ---
 
 ## Sound
@@ -181,9 +175,9 @@ function record(length) {
 
 ### FFT
 
-The Fast Fourier Transform transform a signal from the time domain to the frequency domain. For audio analysis that means the FFT can tell the strenght of different frequencies in an audio buffer.
+The Fast Fourier Transform transforms a signal from the time domain to the frequency domain. For audio analysis that means the FFT can tell the strength of different frequencies in an audio buffer.
 
-For a visual exploration of FFT, see this excelent video by 3Blue1Brown [https://www.youtube.com/watch?v=spUNpyF58BY](But what is the Fourier Transform? A visual introduction.)
+For a visual exploration of FFT, see this excellent video by 3Blue1Brown [But what is the Fourier Transform? A visual introduction](https://www.youtube.com/watch?v=spUNpyF58BY).
 
 {% js-lab "sketches/fft.js" %}
 

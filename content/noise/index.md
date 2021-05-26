@@ -3,12 +3,6 @@ title: Noise
 layout: compform_chapter.pug
 debug: false
 
-header_title: Noise
-previous: Parameters
-previous_url: ../parameters
-next: Strategies
-next_url: ../strategy
-
 hero_title: Noise
 description: Noise provides a flexible, powerful, and aesthetic source of variation that often works better than using a plain random number generator.
 software: p5.js

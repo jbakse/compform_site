@@ -3,12 +3,6 @@ title: Animation
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Animation"
-previous: Vector Data
-previous_url: ../vectors
-next:
-next_url:
-
 hero_title: Animation
 description: Procedural generation can be used to describe motion in animations. In both pre-rendered and real-time animations, an understanding of frame rate and timing are crucial for generating satisfying motion graphics.
 software: p5.js

@@ -3,12 +3,6 @@ title: Microgames
 layout: compform_chapter.pug
 debug: false
 
-header_title: Microgames
-previous:
-previous_url:
-next:
-next_url:
-
 hero_title: Microgames
 description: Microgames are tiny games, stripped to their essential elements, often playable in a few seconds.
 software: p5.js + p5.play

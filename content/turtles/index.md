@@ -3,12 +3,6 @@ title: Turtle Graphics
 layout: compform_chapter.pug
 debug: false
 
-header_title: "Turtle Graphics"
-next: Strategy
-next_url: ../strategy
-previous: Pixel Data
-previous_url: ../pixels
-
 hero_title: Turtle Graphics
 description: Introduced as a feature of Logo programming language in 1969, turtle graphics connect computer drawing to how we move our bodies through space, and encourage approaching computational form with a new mindset.
 software: p5.js + custom library
@@ -32,7 +26,7 @@ One of the key ideas introduced in Logo was _turtle graphics_. The turtle was or
 
 <div class="two-up">
 
-![Papert w/ turtle](http://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)
+![Papert w/ turtle](https://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)
 Seymour Papert with a physical turtle robot, photo by Cynthia Solomon{figure}
 
 ![turtle screenshot](images/turtle.png)
@@ -97,7 +91,8 @@ This shift in priorities makes some things easier to express and some things har
 
 <div class="columns">
 
-<div class="half"> 
+<div class="half">
+
 **Cartesian: Drawing a Square**
 
 ```javascript
@@ -106,7 +101,8 @@ rect(100, 100, 100, 100);
 
 </div>
 
-<div class="half"> 
+<div class="half">
+
 **Turtle Graphics: Drawing a Square**
 
 ```javascript
@@ -124,7 +120,8 @@ for (side = 0; side < 4; side++) {
 
 <div class="columns">
 
-<div class="half"> 
+<div class="half">
+
 **Cartesian: Drawing a Star**
 
 ```javascript
@@ -137,7 +134,8 @@ line(180.9, 158.77, 100.0, 100.0);
 
 </div>
 
-<div class="half"> 
+<div class="half">
+
 **Turtle Graphics: Drawing a Star**
 
 ```javascript
@@ -164,7 +162,11 @@ Both frameworks can be used to draw a square or star. We are not [_forced_](http
 
 Two of the forms that turtles tend to encourage are spirograph-like figures and recursive trees.
 
+### Spirograph Example
+
 {% js-lab "sketches/turtle_spirograph.js" %}
+
+### Recursive Tree Example
 
 {% js-lab "sketches/turtle_tree.js" %}
 

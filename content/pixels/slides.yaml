@@ -50,7 +50,7 @@
 
 - artist: Derek Yu
   title: Pixel Art Tutorial
-  image: http://www.derekyu.com/images/extras/pixel-tools.jpg
+  image: https://www.derekyu.com/images/extras/pixel-tools.jpg
   comments: This is not about computation, but is about making pixels look good. This is a short and useful tutorial on handcrafting pixel art written by Derek Yu, the designer of Spelunky.
   links:
     - label: "Pixel Art Tutorial"
