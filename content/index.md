@@ -198,165 +198,44 @@ Vuo
 
 ## Class Resources
 
-<!-- Outer -->
-<div class="row">
+<div class="row class-resources">
 
 <div class="col-8 col-md-3 overview">
 Syllabi, schedules, and lesson plans for the Computational Form class.
 </div>
 
-<!-- Inner -->
 <div class="col-12 col-md-6">
 <div class="row">
-
-<!-- <a class="col-6 col-md-6" data-ready="true" href="./introduction">
-
-&nbsp;
-
-</a> -->
-
-<a class="col-6 col-md-6" data-ready="true" href="https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4">
-
-### Class Notes Spring 2021
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2021spring.compform.net/">
-
-### Sketch Book Spring 2021
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="./2020fall">
-
-### Class Notes Fall 2020
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2020fall.compform.net">
-
-### Sketch Book Fall 2020
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="./2020">
-
-### Class Notes Spring 2020
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2020.compform.net">
-
-### Sketch Book Spring 2020
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="./2019">
-
-### Class Notes 2019
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2019.compform.net">
-
-### Sketch Book 2019
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="./2018">
-
-### Class Notes 2018
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2018.compform.net">
-
-### Sketch Book 2018
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://2017.compform.net/">
-
-### Class Notes 2017
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches.compform.net">
-
-### Sketch Book 2017
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://psam3060-d-s16.github.io/class_notes/">
-
-### Class Notes 2016
-
-</a>
-
-<a class="col-6 col-md-6" data-ready="true" href="http://compform.tumblr.com/">
-
-### Sketch Book 2016
-
-</a>
-
-<!-- <a class="col-6 col-md-6" data-ready="true" href="./experimental_shaders/">
-
-### Exp. Shaders 2020
-
-</a> -->
-
+<a class="col-6 col-md-6" data-ready="true" href="https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4">Spring 2021 Class Notes</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://sketches2021spring.compform.net/">Sketch Book</a>
+<a class="col-6 col-md-6" data-ready="true" href="./2020fall">Fall 2020 Class Notes</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://sketches2020fall.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" data-ready="true" href="./2020">Spring 2020 Class Notes</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://sketches2020.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" data-ready="true" href="./2019">Spring 2019 Class Notes</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://sketches2019.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" data-ready="true" href="./2018">Spring 2018 Class Notes</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://sketches2018.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://2017.compform.net/">Spring 2017 Class Notes</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://sketches.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://psam3060-d-s16.github.io/class_notes/">Spring 2016 Class Notes</a>
+<a class="col-6 col-md-6" data-ready="true" href="http://compform.tumblr.com/">Sketch Book</a>
 </div>
 </div>
-<!-- /Inner -->
+
 </div>
-<!-- /Outer -->
-
-<!--
-
-
-# Comp Form Spring 2018
-
-
-<a class="col-6 col-md-4" data-ready="true" href="./introduction">
-
-### Introduction
-p5.js
-
-</a>
-
-
-### [Syllabus](./syllabus.html) | [Sketch Blog](http://sketches2018.compform.net/) | [Case Study Assignment](http://localhost:3000/turtles/plan.html#comp-form-case-study)
-
-<br/>
-
-| Lesson Plan                                   | Topics                                               |
-| --------------------------------------------- | ---------------------------------------------------- |
-| **Foundation**                                | &nbsp;                                               |
-| [Week 1, January 26](introduction/plan.html)  | [Introduction](introduction), [Tile Graphics](tiles) |
-| [Week 2, February 2](random/plan.html)        | [Random Values](random)                              |
-| [Week 3, February 9](parameters/plan.html)    | [Parameters](parameters)                             |
-| [Week 4, February 16](noise/plan.html)        | [Noise](noise)                                       |
-| [Week 5, February 23](strategy/plan.html)     | [Strategy](strategy)                                 |
-| **Exploration**                               | &nbsp;                                               |
-| [Week 6, March 2](pixels/plan.html)           | [Pixel Data](pixels)                                 |
-| [Week 7, March 9](turtles/plan.html)          | [Turtle Graphics](turtles)                           |
-| [Week 8, March 16](vectors/plan.html)         | [Vector Data](vectors)                               |
-| Week 9, March 23{gray}                        | Spring Break{gray}                                   |
-| [Week 10, March 30](#)                        | [Animation](animation)                               |
-| [Week 11, April 6](text/plan.html)            | [Generating Text](text)                              |
-| [Week 12, April 13](sound/plan.html)          | [Generating Sound](sound)                            |
-| [Week 13, April 20](music/plan.html)          | [Music](music)                                       |
-| [Week 14, April 27](3D/plan.html)             | [3D Forms](3D)                                       |
-| [Week 15, May 4](microgames/plan.html)        | [Microgames](microgames)                             |
-| [Week 16, May 11](postmortem_party/plan.html) | Postmortem Party                                     |
-
-
--->
 
 <style>
     
 
-
+.class-resources .row > a,
+.class-resources .row > a:hover {
+    margin-bottom: .75em;
+    font-weight: normal;
+}
+.class-resources .row > a:hover {
+    text-decoration: underline;
+}
 .top {
     /* border: 1px solid red; */
     padding: 0;
