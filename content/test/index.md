@@ -195,10 +195,16 @@ This is an example.
 
 </div>
 
-# Slides
+# Slides 1
 
 {% slides %}
 {% include ./test_slides.yaml %}
+{% endslides %}
+
+# Slides 2
+
+{% slides %}
+{% include ./test_slides_2.yaml %}
 {% endslides %}
 
 # Spoilers

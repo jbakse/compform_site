@@ -1,0 +1,23 @@
+- artist: Harm van den Dorpel
+  title: Mutant Garden, 2020
+  image: https://harm.work/api/image/e4ac2c6005c4dff45d16ef85149c7659de8fdf2b.jpg
+  comments: Artwork that uses an algorithm called 'Cartesian genetic programming'.
+  links:
+    - label: Project Page
+      href: https://harm.work/series/mutant-garden
+
+- artist: Matthias Dörfelt
+  title: Weird Faces, 2012-2013
+  image: https://www.mokafolio.de/thumbs/works/Weird-Faces/01-1200x763.jpg
+  comments: An attempt to combine illustration with programming.
+  links:
+    - label: Project Page
+      href: https://www.mokafolio.de/works/Weird-Faces
+
+- artist: Zhenzhen Qi and Yang Wang
+  title: LENNA, 2018
+  image: https://www.zzyw.org/wp-content/uploads/2020/04/yw_tcm_bj_1-650x384.png
+  comments: A computing system that produces graphic design on its own.
+  links:
+    - label: Project Page
+      href: https://www.zzyw.org/lenna/
