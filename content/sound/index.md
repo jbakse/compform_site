@@ -91,7 +91,7 @@ Light and sound flow through our environment as electromagnetic and air pressure
 
 ### Playing Recorded Sounds
 
-p5.js makes it pretty easy to play sound assets, like this audio clip from [Hackers(1995)](http://www.imdb.com/title/tt0113243/).
+p5.js makes it pretty easy to play sound assets, like this audio clip from [Hackers (1995)](http://www.imdb.com/title/tt0113243/).
 
 {% js-lab "challenges/hello_play.js" %}
 
