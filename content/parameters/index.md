@@ -67,6 +67,7 @@ Imagine a program that draws squares like the one below. What parameters might s
 ### Parameter Space
 
 <div class="links-sidebar">
+
 [Wikipedia:<br/>Parameter Space](https://en.wikipedia.org/wiki/Parameter_space)
 
 [Wikipedia:<br/>Combinatorial Explosion](https://en.wikipedia.org/wiki/Combinatorial_explosion)
