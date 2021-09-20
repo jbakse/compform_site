@@ -13,24 +13,42 @@ software: p5.js
 
 ## Random Values
 
-We use the word _random_ to mean an hodgepodge of related ideas. Depending on context we might mean unplanned, unexpected, unpatterned, uncontrolled, or unpredictable. Random values are a staple of procedural generation systems, often used as the main source of variety.
+We use the word _random_ to mean an hodgepodge of related ideas. Depending on context, we might mean unplanned, unexpected, unpatterned, uncontrolled, or unpredictable. Each of these are important characteristics in many procedural systems. Randomness is a staple of procedural generation systems, and careful control of randomness is important to balancing chance and control.
 
-Artists began working with randomness and chance long before the invention of computers. Then, as now, artists had to decide what aspects to control within a piece, and what aspects to leave to chance.
+<div class='links-sidebar'>
 
-The 18th-century composition _Instructions for the composition of as many waltzes as one desires with two dice, without understanding anything about music or composition_, [which may have been written](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) by Mozart, uses chance to select and sequence pre-composed musical phrases. By placing rules on selection and ordering of the phrases, the system ensures that each variation makes musical sense.
+[_Instructions_ demo](http://www.buschs.de/Mozart/Mozart.html)
 
-Consider the works below:
+[_Instructions_ score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
 
-- Which aspects of each work were influenced by chance?
-- Which aspects were controlled by the artist?
+[Wikipedia: Musikalisches Würfelspiel](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel)
+
+</div>
+
+As an example consider the 18th-century composition _[Instructions for the composition of as many waltzes as one desires with two dice, without understanding anything about music or composition](https://www.ensembleresonanz.com/task/mozarts-musikalisches-wuerfelspiel/)_, which [may](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) have been written by Mozart. Rather than a fixed score, _Instructions_ is a collection of pre-composed musical phrases a set of rules for using dice to select and order the phrases to create a unique composition. By leaving some aspects to chance while controlling others, the system ensures that each variation makes musical sense.
+
+Using random values in your procedural system doesn't mean your results must be haphazard, uncontrolled, or unorganized. While individual random values are unpredictable, with planning you can use these values to create a coherent cumulative effect.
+
+## Selected Works
 
 {% slides %}
 {% include slides.yaml %}
 {% endslides %}
 
+<div class ="discussion">
+
+## Control vs Chance
+
+Consider the selected works above.
+
+- Which aspects of each work were influenced by chance?
+- Which aspects were controlled by the artist?
+
+</div>
+
 ## The Methodical Application of Chance
 
-Using random values in your procedural system doesn't mean your results must be haphazard, uncontrolled, or unorganized. While individual random values are unpredictable, you can use these values to create a coherent cumulative effect.
+Most programming languages provide a function for generating random numbers. Usually the values provided are evenly distributed over the range 0 to 1. Mapping these values to new ranges and baising their distribution are key to achieving specfic aesthetic effects.
 
 <div class ="activity">
 
@@ -81,7 +99,7 @@ random() * 5 + 10;
 
 ### Random Integers
 
-The `Math.random()` function returns floating point values, but sometimes you want _integers_. The `Math.floor()` function will round a number down, chopping off the decimal part.
+The `Math.random()` function returns floating point values, but sometimes you just want integers. The `Math.floor()` function will round a number down.
 
 ```javascript
 // roll a standard die
@@ -107,7 +125,7 @@ Math.round(Math.random() * 6) + 1;
 
 ### p5 `random()`
 
-Processing provides the `random()` function for generating random numbers. Without any parameters, `random()` works very much like `Math.random()` producing numbers between [0 and 1).
+Processing provides the `random()` function for generating random numbers. Without any parameters, `random()` works very much like `Math.random()` producing numbers in the range [0, 1).
 
 ```javascript
 console.log("random()"); // random()
@@ -163,8 +181,11 @@ random(1, 11);
 {bigger}
 
 <div class='callout'>
+
 ![even distribution](./figures/even_bias.svg){scale}
+
 </div>
+
 #### Low Bias Distribution
 
 Taking the lowest of two or more random numbers will bias the result toward the low end.
@@ -193,6 +214,7 @@ min(random(10), random(10), random(10), random(10));
 ![even distribution](./figures/low_bias2.svg){scale}
 
 </div>
+
 #### High Bias Distribution
 
 Taking the highest of two or more random numbers will bias the result toward the high end.
@@ -223,17 +245,11 @@ Averaging two or more random numbers will bias the result toward the middle.
 
 ![even distribution](./figures/middle_bias.svg){scale}
 
-</div
+</div>
 
 #### Normal Distribution
 
-<div class="links-sidebar">
-
-[Wikipedia:<br/> Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
-
-</div>
-
-If you generate several random numbers and average them, the results get close to **normal distribution**. Normal distribution, or Gaussian distribution, is the "bell curve" distribution which is often found in natural systems.
+If you generate several random numbers and average them, the results get close to [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution). Normal distribution, or Gaussian distribution, is the "bell curve" distribution which is often found in natural systems.
 
 ```javascript
 (random(1, 11) + random(1, 11) + random(1, 11)) / 3;
@@ -506,9 +522,9 @@ The following study examples demonstrate different ways to bias and map random v
 
 ### Brownian Motion
 
-{% js-lab "sketches/brownian.js" %}
+This example simulates [brownian motion](https://en.wikipedia.org/wiki/Brownian_motion), which describes the random paths of particles in a liquid or gas. Brownian motion is a [common](https://www.youtube.com/watch?v=XUA8UREROYE) [theme](https://pbat.ch/proj/monolith/wiki/fbm/) in creative coding.
 
-[Wikipedia: Brownian Motion](https://en.wikipedia.org/wiki/Brownian_motion)
+{% js-lab "sketches/brownian.js" %}
 
 ### Horizon
 
@@ -555,7 +571,7 @@ Explore the study examples above by completing the following challenges in order
 
 ### Base
 
-Experiment with procedurally generating images using `random()`. Explore each of the tactics discussed above. Post your results to the Sketchblog.
+Experiment with procedurally generating images using `random()`. Explore each of the tactics discussed above.
 
 ### Individual Challenge: Master Study
 
@@ -563,14 +579,11 @@ Kasimir Malevich, Mark Rothko, Piet Modrian, and Anni Albers all worked with bas
 
 ### Pair Challenge: Deck
 
-Working with a partner from the class, create a sketch that generates random images. All randomly chosen values should use the deck tactic discussed above. Work together in the same place and time. Both you and your partner should post output from your sketch.
+Working with a partner, create a sketch that generates random images. ALL randomly values should chosen using the deck tactic discussed above. Work together in the same (real or virtual) place and time.
 
 </div>
 
 ## Reference Links
-
-[Wikipedia: Musikalisches Würfelspiel](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel)
-: More info on musical dice games.
 
 [Chance vs. Randomness](https://plato.stanford.edu/entries/chance-randomness/)
 : Stanford Encyclopedia of Philosophy on the subtle distinction between chance and randomness.
@@ -580,3 +593,6 @@ Working with a partner from the class, create a sketch that generates random ima
 
 [LavaRand by Cloudflare](https://blog.cloudflare.com/lavarand-in-production-the-nitty-gritty-technical-details/)
 : Cloudflare uses lava lamps as a source of randomness for encryption.
+
+[GMTK: Two Types of Random in Game Design](https://www.youtube.com/watch?v=dwI5b-wRLic)
+: Mark Brown discusses how game designers use randomness.
