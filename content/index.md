@@ -26,14 +26,14 @@ General principles, practices, and building blocks useful for all procedural gen
 <div class="col-12 col-md-9">
 <div class="row">
 
-<!-- <a class="col-6 col-md-4" data-ready="true" href="./introduction">
+<!-- <a class="col-6 col-md-4" href="./introduction">
 
 ### Class Introduction
 p5.js
 
 </a> -->
 
-<a class="col-6 col-md-4" data-ready="true" href="./procedures">
+<a class="col-6 col-md-4" href="./procedures">
 
 ### Procedures
 
@@ -41,7 +41,7 @@ p5.js
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./random">
+<a class="col-6 col-md-4" href="./random">
 
 ### Random Values
 
@@ -57,7 +57,7 @@ p5.js
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./noise">
+<a class="col-6 col-md-4" href="./noise">
 
 ### Noise
 
@@ -65,7 +65,7 @@ p5.js
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./strategy">
+<a class="col-6 col-md-4" href="./strategy">
 
 ### Strategies
 
@@ -92,7 +92,7 @@ Independent chapters exploring specific procedural generation tools, languages, 
 <div class="col-12 col-md-9">
 <div class="row">
 
-<a class="col-6 col-md-4" data-ready="true" href="./tiles">
+<a class="col-6 col-md-4" href="./tiles">
 
 ### Tile Maps
 
@@ -100,7 +100,7 @@ pencil + paper
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./p5">
+<a class="col-6 col-md-4" href="./p5">
 
 ### Hello, p5!
 
@@ -108,7 +108,7 @@ p5.js + github
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./pixels">
+<a class="col-6 col-md-4" href="./pixels">
 
 ### Pixel Data
 
@@ -116,7 +116,7 @@ p5.js
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./turtles">
+<a class="col-6 col-md-4" href="./turtles">
 
 ### Turtle Graphics
 
@@ -124,7 +124,7 @@ p5.js + custom library
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./vectors">
+<a class="col-6 col-md-4" href="./vectors">
 
 ### Vector Drawing
 
@@ -132,7 +132,7 @@ paper.js
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./animation">
+<a class="col-6 col-md-4" href="./animation">
 
 ### Animation
 
@@ -140,7 +140,7 @@ p5.js
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./text">
+<a class="col-6 col-md-4" href="./text">
 
 ### Generating Text
 
@@ -148,7 +148,7 @@ javascript + html
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./sound">
+<a class="col-6 col-md-4" href="./sound">
 
 ### Comp Sound
 
@@ -156,7 +156,7 @@ p5.js + p5.sound
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./music">
+<a class="col-6 col-md-4" href="./music">
 
 ### Comp Music
 
@@ -164,7 +164,7 @@ tone.js
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="true" href="./3D">
+<a class="col-6 col-md-4" href="./3D">
 
 ### 3D Forms
 
@@ -172,7 +172,7 @@ OpenSCAD
 
 </a>
 
-<a class="col-6 col-md-4" data-ready="ture" href="./microgames">
+<a class="col-6 col-md-4" href="./microgames">
 
 ### Microgames
 
@@ -182,7 +182,7 @@ p5.js + p5.play
 
 <!--
 
-<a class="col-6 col-md-4" data-ready="false" href="./#">
+<a class="col-6 col-md-4" href="./#">
 
 ### Realtime Video
 Vuo
@@ -206,20 +206,20 @@ Syllabi, schedules, and lesson plans for the Computational Form class.
 
 <div class="col-12 col-md-6">
 <div class="row">
-<a class="col-6 col-md-6" data-ready="true" href="https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4">Spring 2021 Class Notes</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2021spring.compform.net/">Sketch Book</a>
-<a class="col-6 col-md-6" data-ready="true" href="./2020fall">Fall 2020 Class Notes</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2020fall.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" data-ready="true" href="./2020">Spring 2020 Class Notes</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2020.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" data-ready="true" href="./2019">Spring 2019 Class Notes</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2019.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" data-ready="true" href="./2018">Spring 2018 Class Notes</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches2018.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://2017.compform.net/">Spring 2017 Class Notes</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://sketches.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://psam3060-d-s16.github.io/class_notes/">Spring 2016 Class Notes</a>
-<a class="col-6 col-md-6" data-ready="true" href="http://compform.tumblr.com/">Sketch Book</a>
+<a class="col-6 col-md-6" href="https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4">Spring 2021 Class Notes</a>
+<a class="col-6 col-md-6" href="http://sketches2021spring.compform.net/">Sketch Book</a>
+<a class="col-6 col-md-6" href="./2020fall">Fall 2020 Class Notes</a>
+<a class="col-6 col-md-6" href="http://sketches2020fall.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" href="./2020">Spring 2020 Class Notes</a>
+<a class="col-6 col-md-6" href="http://sketches2020.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" href="./2019">Spring 2019 Class Notes</a>
+<a class="col-6 col-md-6" href="http://sketches2019.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" href="./2018">Spring 2018 Class Notes</a>
+<a class="col-6 col-md-6" href="http://sketches2018.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" href="http://2017.compform.net/">Spring 2017 Class Notes</a>
+<a class="col-6 col-md-6" href="http://sketches.compform.net">Sketch Book</a>
+<a class="col-6 col-md-6" href="http://psam3060-d-s16.github.io/class_notes/">Spring 2016 Class Notes</a>
+<a class="col-6 col-md-6" href="http://compform.tumblr.com/">Sketch Book</a>
 </div>
 </div>
 
