@@ -1,7 +1,6 @@
 ---
 title: Random
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 2, Random Values {plain}

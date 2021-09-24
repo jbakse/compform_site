@@ -1,7 +1,6 @@
 ---
 title: Random Values
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Random Values
 description: Procedural generation systems often employ random values as their main source of variety. Understanding how to generate, bias, map, and control random values is key to controlling the aesthetics of these systems.
@@ -31,9 +30,9 @@ Using random values in your procedural system doesn't mean your results must be 
 
 ## Selected Works
 
-{% slides %}
+<!-- {% slides %}
 {% include slides.yaml %}
-{% endslides %}
+{% endslides %} -->
 
 <div class ="discussion">
 

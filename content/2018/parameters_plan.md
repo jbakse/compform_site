@@ -1,7 +1,6 @@
 ---
 title: Parameters
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 2, Parameters {plain}

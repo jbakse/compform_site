@@ -1,8 +1,6 @@
 ---
 title: Comp Form Syllabus
 layout: compform_plain.pug
-
-debug: false
 ---
 
 # Computational Form Fall 2020 Course Syllabus

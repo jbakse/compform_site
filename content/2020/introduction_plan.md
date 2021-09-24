@@ -1,7 +1,6 @@
 ---
 title: Introduction
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 1, Introduction + Tiles {plain}

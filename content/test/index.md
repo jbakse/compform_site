@@ -1,6 +1,5 @@
 ---
 layout: compform_chapter.pug
-debug: false
 
 title: Test
 header_title: Test

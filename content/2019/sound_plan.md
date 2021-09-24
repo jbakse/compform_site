@@ -1,7 +1,6 @@
 ---
 title: Sound
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 12, Sound {plain}

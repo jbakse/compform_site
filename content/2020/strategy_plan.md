@@ -1,7 +1,6 @@
 ---
 title: Strategies
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 5, Strategies {plain}

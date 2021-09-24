@@ -1,7 +1,6 @@
 ---
 title: Turtle Library
 layout: compform_plain.pug
-debug: false
 ---
 
 # Turtle.js

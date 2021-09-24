@@ -1,7 +1,6 @@
 ---
 title: Vector Drawing
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 6, Pixel Data {plain}

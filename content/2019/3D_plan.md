@@ -1,7 +1,6 @@
 ---
 title: 3D Forms
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 14, 3D Forms {plain}

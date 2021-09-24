@@ -1,7 +1,6 @@
 ---
 title: Vectors
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 8, Vector Data {plain}

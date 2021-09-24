@@ -1,7 +1,6 @@
 ---
 title: Sound
 layout: compform_chapter.pug
-debug: false
 
 header_title: Sound
 previous:

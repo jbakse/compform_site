@@ -1,7 +1,6 @@
 ---
 title: Paper Garden
 layout: compform_chapter.pug
-debug: false
 
 header_title: "Paper Garden"
 next:

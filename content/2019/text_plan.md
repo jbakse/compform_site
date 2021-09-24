@@ -1,7 +1,6 @@
 ---
 title: Text
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 10, Generating Text {plain}

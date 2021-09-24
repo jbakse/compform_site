@@ -1,7 +1,6 @@
 ---
 title: Vector Drawing
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Vector Drawing
 

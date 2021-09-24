@@ -1,7 +1,6 @@
 ---
 title: Strategies
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Point Placing Strategies
 description: Building a complex procedural generation system requires analyzing your problem and creating a strategy for solving it. Explore tactics and strategies for placing points on a square.

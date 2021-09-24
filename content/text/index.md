@@ -1,7 +1,6 @@
 ---
 title: Text
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Text
 description: Explore generating strings with templates, Markov chains, and context-free grammars.

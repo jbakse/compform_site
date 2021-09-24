@@ -1,7 +1,6 @@
 ---
 title: Animation
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week #10, Animation {plain}

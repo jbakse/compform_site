@@ -1,7 +1,6 @@
 ---
 title: Hello, Comp Form!
 layout: compform_toc.pug
-debug: false
 ---
 
 <!-- # Welcome Letter 2020 -->

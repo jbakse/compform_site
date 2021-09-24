@@ -1,7 +1,6 @@
 ---
 title: Introduction
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 1, Introduction + Tiles {plain}
@@ -99,7 +98,6 @@ _class, 15 minutes_
 
 title: Introduction
 layout: compform_plain.pug
-debug: false
 
 ---
 
@@ -198,7 +196,6 @@ _class, 15 minutes_
 
 title: Introduction
 layout: compform_plain.pug
-debug: false
 
 ---
 

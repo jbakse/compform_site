@@ -1,7 +1,6 @@
 ---
 title: Turtles
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 7, Turtle Graphics {plain}

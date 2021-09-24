@@ -1,7 +1,7 @@
 ---
 title: Sierpinski
 layout: compform_chapter.pug
-debug: false
+
 hide_logo: true
 ---
 

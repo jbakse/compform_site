@@ -1,7 +1,6 @@
 ---
 title: Animation Challenges
 layout: compform_plain.pug
-debug: false
 ---
 
 # Challenges

@@ -1,7 +1,6 @@
 ---
 title: Noise
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 15, Postmortem Party {plain}

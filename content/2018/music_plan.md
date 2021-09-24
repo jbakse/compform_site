@@ -1,7 +1,6 @@
 ---
 title: Noise
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Week 13, Music {plain}
