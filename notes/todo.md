@@ -74,3 +74,7 @@
   - make messes optional somehow?
   - link to mess code/lab
   - add more messes to other chapters
+
+# Maybe
+
+- switch build system to use https://github.com/Sonaryr/eleventy-plugin-sass
