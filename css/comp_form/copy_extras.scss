@@ -1,28 +1,4 @@
 .comp-form-copy {
-  /* util */
-  .no-margin {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
-  .full-width {
-    @include full-width;
-  }
-
-  .underline {
-    border-bottom: 1px solid $middle-grey;
-  }
-
-  .bigger {
-    font-family: "Miriam Libre";
-    font-size: 1.2em;
-  }
-
-  .biggest {
-    font-family: "Miriam Libre";
-    font-size: 1.5em;
-  }
-
   .caption {
     font-size: 0.8em;
     font-style: italic;
@@ -34,32 +10,35 @@
   }
 
   /* half */
+  //todo new layout
   .columns {
-    @include clearfix;
+    // @include clearfix;
   }
 
   .clear {
     clear: both;
   }
 
-  @include media-breakpoint-up(sm) {
-    .half {
-      box-sizing: border-box;
-      width: calc((100% - 30px) / 2);
+  //todo new layout
 
-      display: block;
-      float: left;
-      margin-right: 30px;
-    }
+  // @include media-breakpoint-up(sm) {
+  //   .half {
+  //     box-sizing: border-box;
+  //     width: calc((100% - 30px) / 2);
 
-    .half + .half {
-      margin-right: 0;
-    }
+  //     display: block;
+  //     float: left;
+  //     margin-right: 30px;
+  //   }
 
-    .half + .half + * {
-      clear: both;
-    }
-  }
+  //   .half + .half {
+  //     margin-right: 0;
+  //   }
+
+  //   .half + .half + * {
+  //     clear: both;
+  //   }
+  // }
 
   /* links */
   // .links>p>a,
@@ -91,10 +70,11 @@
   }
 
   /* links-sidebar */
+  //todo new layout
   .links-sidebar {
     box-sizing: border-box;
     margin-bottom: 15px;
-    @include clearfix;
+    // @include clearfix;
   }
   .links-sidebar > p {
     float: left;
@@ -119,17 +99,19 @@
     margin-bottom: 0;
   }
 
-  @include media-breakpoint-up(md) {
-    .links-sidebar {
-      position: absolute;
-      left: calc(100% + 15px);
-      width: calc(100% / 8 * 2 - 15px);
-    }
-    .links-sidebar > p {
-      float: none;
-      margin-right: 0;
-    }
-  }
+  //todo new layout
+
+  // @include media-breakpoint-up(md) {
+  //   .links-sidebar {
+  //     position: absolute;
+  //     left: calc(100% + 15px);
+  //     width: calc(100% / 8 * 2 - 15px);
+  //   }
+  //   .links-sidebar > p {
+  //     float: none;
+  //     margin-right: 0;
+  //   }
+  // }
 
   /* callout */
   .callout {
@@ -277,5 +259,62 @@
   .embed {
     width: 100%;
     height: 500px;
+  }
+
+  /* spoilers */
+
+  .spoiler h3 {
+    margin-top: 0;
+  }
+  .spoiler {
+    position: relative;
+  }
+
+  div.spoiler::after {
+    content: "Spoiler!\A Click to reveal in-class activty.";
+    font-family: "Roboto";
+    white-space: pre;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: white;
+    opacity: 100;
+    // display: block;
+    transition: opacity 0.5s;
+  }
+
+  div.spoiler.reveal::after {
+    opacity: 0;
+    // display: none;
+    color: white;
+  }
+
+  /* util modifiers */
+  .no-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .full-width {
+    @include full-width;
+  }
+
+  .underline {
+    border-bottom: 1px solid $middle-grey;
+  }
+
+  .bigger {
+    font-family: "Miriam Libre";
+    font-size: 1.2em;
+  }
+
+  .biggest {
+    font-family: "Miriam Libre";
+    font-size: 1.5em;
   }
 }

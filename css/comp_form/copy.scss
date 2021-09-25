@@ -324,8 +324,9 @@
     image-rendering: pixelated;
   }
 
+  //todo new layout
   .two-up {
-    @include clearfix;
+    // @include clearfix;
   }
   .two-up img {
     width: calc(50% - 5px);
@@ -335,9 +336,10 @@
     margin-right: 10px;
   }
 
+  //todo new layout
   .three-up {
     margin-top: 1em;
-    @include clearfix;
+    // @include clearfix;
   }
   .three-up img {
     width: calc((100% - 20px) / 3);

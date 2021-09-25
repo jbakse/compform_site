@@ -1,56 +1,11 @@
-// bootstrap utilities
-@import "./bootstrap_breakpoints";
-@import "./bootstrap_colors";
-
-// custom utilities
-@import "./layout_utilities";
-
-@mixin full-width {
-  @include media-breakpoint-up(md) {
-    @include margin-left-out(8, 2, 15px);
-    @include margin-right-out(8, 2, 15px);
-  }
-}
-
-@import "./comp_form/comp_form";
-
-@import "./comp_form/js_lab";
-
 body {
   margin: 0;
 }
 
-table.table-responsive {
-  display: table;
+//todo new layout
+@mixin full-width {
+  width: 1140px;
 }
 
-.spoiler h3 {
-  margin-top: 0;
-}
-.spoiler {
-  position: relative;
-}
-
-.comp-form-copy div.spoiler::after {
-  content: "Spoiler!\A Click to reveal in-class activty.";
-  font-family: "Roboto";
-  white-space: pre;
-  font-size: 10px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding: 30px;
-  background: black;
-  color: white;
-  opacity: 100;
-  // display: block;
-  transition: opacity 0.5s;
-}
-
-.comp-form-copy div.spoiler.reveal::after {
-  opacity: 0;
-  // display: none;
-  color: white;
-}
+@import "./comp_form/comp_form";
+@import "./comp_form/js_lab";
