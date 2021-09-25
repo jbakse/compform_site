@@ -32,7 +32,9 @@ $theme-colors: map-merge(
 
 @import "./layout";
 @import "./toc";
+@import "./chapter";
 @import "./copy";
+@import "./syntax_highlight";
 @import "./copy_extras";
 @import "./slides";
 

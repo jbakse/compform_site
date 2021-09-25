@@ -78,3 +78,5 @@
 # Maybe
 
 - switch build system to use https://github.com/Sonaryr/eleventy-plugin-sass
+
+- switch classy for https://github.com/arve0/markdown-it-attrs (so fenced codeblocks can be classed up)

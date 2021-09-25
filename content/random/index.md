@@ -7,8 +7,8 @@ description: Procedural generation systems often employ random values as their m
 software: p5.js
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
-<script src="../mess/faces_mess.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
+<script src="../mess/faces_mess.js"></script> -->
 
 ## Random Values
 
@@ -135,16 +135,16 @@ console.log(random()); // 0.37...
 
 P5's `random()` function accepts optional parameters to control the range of the number, so you don't have to do it yourself.
 
-```
-console.log("random(10)");      // random(10) -> range [0, 10)
-console.log(random(10));        // 4.89...
-console.log(random(10));        // 1.20...
-console.log(random(10));        // 6.99...
+```javascript
+console.log("random(10)"); // random(10) -> range [0, 10)
+console.log(random(10)); // 4.89...
+console.log(random(10)); // 1.20...
+console.log(random(10)); // 6.99...
 
-console.log("random(20, 30)");  // random(20, 30) -> range [20, 30)
-console.log(random(20, 30));    // 21.96...
-console.log(random(20, 30));    // 20.56...
-console.log(random(20, 30));    // 22.36...
+console.log("random(20, 30)"); // random(20, 30) -> range [20, 30)
+console.log(random(20, 30)); // 21.96...
+console.log(random(20, 30)); // 20.56...
+console.log(random(20, 30)); // 22.36...
 ```
 
 P5 provides `floor()` which you can use to generate random integers.
@@ -165,7 +165,7 @@ floor(random(1, 6));
 
 </div>
 
-### Biased Distribution
+### Biasing Distribution
 
 The examples above will produce results evenly distributed across their range.
 
@@ -177,13 +177,7 @@ Often even distribution isn’t what you really want. Often you want to **bias**
 random(1, 11);
 ```
 
-{bigger}
-
-<div class='callout'>
-
-![even distribution](./figures/even_bias.svg){scale}
-
-</div>
+![even distribution](./figures/even_bias.svg){callout scale}
 
 #### Low Bias Distribution
 
@@ -193,26 +187,15 @@ Taking the lowest of two or more random numbers will bias the result toward the 
 min(random(10), random(10));
 ```
 
-{bigger}
+![low bias distribution](./figures/low_bias.svg){callout scale}
 
-<div class='callout'>
-
-![even distribution](./figures/low_bias.svg){scale}
-
-</div>
 The more random numbers you use, the stronger the bias.
 
 ```javascript
 min(random(10), random(10), random(10), random(10));
 ```
 
-{bigger}
-
-<div class='callout'>
-
-![even distribution](./figures/low_bias2.svg){scale}
-
-</div>
+![strong low bias distribution](./figures/low_bias2.svg){callout scale}
 
 #### High Bias Distribution
 
@@ -222,13 +205,7 @@ Taking the highest of two or more random numbers will bias the result toward the
 max(random(10), random(10));
 ```
 
-{bigger}
-
-<div class='callout'>
-
-![even distribution](./figures/high_bias.svg){scale}
-
-</div>
+![even distribution](./figures/high_bias.svg){callout scale}
 
 #### Middle Bias Distribution
 
@@ -238,13 +215,7 @@ Averaging two or more random numbers will bias the result toward the middle.
 (random(1, 11) + random(1, 11)) / 2;
 ```
 
-{bigger}
-
-<div class='callout'>
-
-![even distribution](./figures/middle_bias.svg){scale}
-
-</div>
+![even distribution](./figures/middle_bias.svg){callout scale}
 
 #### Normal Distribution
 
@@ -254,13 +225,7 @@ If you generate several random numbers and average them, the results get close t
 (random(1, 11) + random(1, 11) + random(1, 11)) / 3;
 ```
 
-{bigger}
-
-<div class='callout'>
-
-![even distribution](./figures/normal_bias.svg){scale}
-
-</div>
+![even distribution](./figures/normal_bias.svg){callout scale}
 
 <div class='links-sidebar'>
 

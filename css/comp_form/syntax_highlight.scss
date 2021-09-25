@@ -1,0 +1,85 @@
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+
+$comment-color: #866;
+$black-color: #000;
+$number-color: #06a;
+$string-color: #0a6;
+$symbol-color: #a80;
+$symbol-color-2: #c40;
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  font-style: italic;
+  color: $comment-color;
+}
+
+.token.punctuation {
+  color: $black-color;
+}
+
+// .token.namespace {
+//   opacity: 0.7;
+// }
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: $number-color;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: $string-color;
+}
+
+.token.entity {
+  color: #657b83;
+  background: #eee8d5;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: $string-color;
+}
+
+.token.function,
+.token.class-name {
+  color: $symbol-color;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: $symbol-color-2;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}

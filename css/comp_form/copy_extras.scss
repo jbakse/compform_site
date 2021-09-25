@@ -1,291 +1,281 @@
 .comp-form-copy {
+  /* util */
+  .no-margin {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 
-    /* util */
-    .no-margin {
-        margin-left: -15px;
-        margin-right: -15px;
+  .full-width {
+    @include full-width;
+  }
+
+  .underline {
+    border-bottom: 1px solid $middle-grey;
+  }
+
+  .bigger {
+    font-family: "Miriam Libre";
+    font-size: 1.2em;
+  }
+
+  .biggest {
+    font-family: "Miriam Libre";
+    font-size: 1.5em;
+  }
+
+  .caption {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 0.5em;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  /* half */
+  .columns {
+    @include clearfix;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .half {
+      box-sizing: border-box;
+      width: calc((100% - 30px) / 2);
+
+      display: block;
+      float: left;
+      margin-right: 30px;
     }
 
-    .full-width {
-        @include full-width;
+    .half + .half {
+      margin-right: 0;
     }
 
-    .underline {
-        border-bottom: 1px solid $middle-grey;
+    .half + .half + * {
+      clear: both;
     }
+  }
 
-    .bigger {
-        font-family: "Miriam Libre";
-        font-size: 1.2em;
+  /* links */
+  // .links>p>a,
+  // {
+  //     border: 1px solid $middle-grey;
+  //     padding: 5px 10px;
+  //     display: block;
+  //     width: max-content;
+  // }
+  .boxed a {
+    border: 1px solid $middle-grey;
+    padding: 5px 10px;
+    display: block;
+    width: max-content;
+    margin-bottom: 10px;
+  }
+
+  .boxed.download a:before,
+  .boxed.down a:before {
+    content: "\f063";
+    font-family: FontAwesome;
+    margin-right: 0.5em;
+  }
+
+  .boxed.right a:before {
+    content: "\f061";
+    font-family: FontAwesome;
+    margin-right: 0.5em;
+  }
+
+  /* links-sidebar */
+  .links-sidebar {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    @include clearfix;
+  }
+  .links-sidebar > p {
+    float: left;
+    margin-right: 15px;
+
+    &:hover {
+      background-color: $light-grey;
     }
+  }
 
-    .biggest {
-        font-family: "Miriam Libre";
-        font-size: 1.5em;
-    }
+  .links-sidebar > p > a {
+    border: 1px solid $middle-grey;
+    padding: 5px 10px;
+    display: block;
 
-    .caption {
-        font-size: .8em;
-        font-style: italic;
-        margin-top: .5em;
-    }
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
 
+  .links-sidebar > *:last-child {
+    margin-bottom: 0;
+  }
 
-
-    .center {
-        text-align: center;
-    }
-
-    /* half */
-    .columns {
-        @include clearfix;
-    }
-
-    .clear {
-        clear: both;
-    }
-
-
-    @include media-breakpoint-up(sm) {
-
-        .half {
-            box-sizing: border-box;
-            width: calc((100% - 30px)/2);
-
-            display: block;
-            float: left;
-            margin-right: 30px;
-        }
-
-        .half+.half {
-            margin-right: 0;
-        }
-
-        .half+.half+* {
-            clear: both;
-        }
-    }
-
-
-    /* links */
-    // .links>p>a,
-    // {
-    //     border: 1px solid $middle-grey;
-    //     padding: 5px 10px;
-    //     display: block;
-    //     width: max-content;
-    // }
-    .boxed a {
-        border: 1px solid $middle-grey;
-        padding: 5px 10px;
-        display: block;
-        width: max-content;
-        margin-bottom: 10px;
-    }
-
-    .boxed.download a:before,
-    .boxed.down a:before {
-        content: "\f063";
-        font-family: FontAwesome;
-        margin-right: .5em;
-    }
-
-    .boxed.right a:before {
-        content: "\f061";
-        font-family: FontAwesome;
-        margin-right: .5em;
-    }
-
-
-
-
-
-
-
-
-
-
-    /* links-sidebar */
+  @include media-breakpoint-up(md) {
     .links-sidebar {
-        box-sizing: border-box;
-        margin-bottom: 15px;
-        @include clearfix;
+      position: absolute;
+      left: calc(100% + 15px);
+      width: calc(100% / 8 * 2 - 15px);
     }
-    .links-sidebar>p,
-        {
-
-        float: left;
-        margin-right: 15px;
-
-        &:hover {
-            background-color: $light-grey;
-        }
+    .links-sidebar > p {
+      float: none;
+      margin-right: 0;
     }
+  }
 
-    .links-sidebar>p>a,
-        {
+  /* callout */
+  .callout {
+    padding: 15px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    &:before {
+      content: "";
 
-        border: 1px solid $middle-grey;
-        padding: 5px 10px;
-        display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
 
-
-        text-overflow: ellipsis;
-        word-wrap: break-word;
-        hyphens: auto;
+      background-color: $light-grey;
+      z-index: -100;
     }
+  }
 
-    .links-sidebar>*:last-child {
-        margin-bottom: 0;
-    }
+  .callout {
+    //todo new layout
+    width: 730px + 15px + 15px;
+  }
+  // .callout:not(.full-width) {
+  //   margin-left: -15px;
+  //   margin-right: -15px;
+  // }
 
-    @include media-breakpoint-up(md) {
-        .links-sidebar {
+  .callout *:last-child {
+    margin-bottom: 0;
+  }
 
-            position: absolute;
-            left: calc(100% + 15px);
-            width: calc(100% / 8 * 2 - 15px);
-        }
-        .links-sidebar>p {
-            float: none;
-            margin-right: 0;
-        }
-    }
+  .callout h3 {
+    margin-top: 0;
+  }
 
+  .callout.error {
+    border-left: 3px solid red;
+    background-color: #fee;
+  }
+  .callout.warn {
+    border-left: 3px solid #fa0;
+    background-color: #fed;
+  }
 
-    /* callout */
-    .callout {
-        padding: 15px;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        position: relative;
-        &:before {
-            content: "";
+  /* activity */
+  .activity,
+  .assignment,
+  .discussion {
+    background-color: $light-grey;
+    border-top: 1px solid $middle-grey;
+    border-bottom: 1px solid $middle-grey;
 
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
+    margin-top: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
-            background-color: $light-grey;
-            z-index: -100;
-        }
-    }
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
 
-    .callout:not(.full-width) {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-
-    .callout *:last-child {
-        margin-bottom: 0;
-    }
-
-    .callout h3 {
-        margin-top: 0;
-
-    }
-
-    .callout.error {
-        border-left: 3px solid red;
-        background-color: #FEE;
-
-    }
-    .callout.warn {
-        border-left: 3px solid #FA0;
-        background-color: #FED;
-
+    //todo new layout
+    // content item
+    > * {
+      width: 730px;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
     }
 
+    > h2:first-child {
+      margin-top: 0;
+      text-align: center;
+      color: $dark-grey;
 
-    /* activity */
-    .activity, .assignment, .discussion {
-        @include color-band($light-grey, $middle-grey);
-        @include clearfix;
+      font-family: "Miriam Libre";
+      font-weight: bold;
+      font-size: 26px;
+      letter-spacing: 0.37px;
 
-        margin-top: 90px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-
-        >h2:first-child {
-            margin-top: 0;
-            text-align: center;
-            color: $dark-grey;
-
-            font-family: "Miriam Libre";
-            font-weight: bold;
-            font-size: 26px;
-            letter-spacing: 0.37px;
-
-            text-transform: none;
-        }
-
-        >h2:first-child::before {
-            content: "activity";
-            display: block;
-            margin-bottom: 25px;
-
-            font-size: 10px;
-            letter-spacing: 2.41px;
-
-            text-transform: uppercase;
-        }
-
-        >h2:first-child+p {
-            text-align: center;
-            width: 300px;
-            margin: 35px auto 65px auto;
-
-
-            font-family: "Roboto";
-            font-weight: 300;
-            font-size: 14px;
-            letter-spacing: 0.31px;
-            line-height: 20px;
-        }
-
-        code {
-            // background-color: rgba(0, 0, 0, .1);
-        }
-
-
-        >h3 {
-            font-family: "Miriam Libre";
-            font-weight: bold;
-            font-size: 10px;
-            letter-spacing: 0.04px;
-
-            color: $dark-grey;
-
-            padding-bottom: 3px;
-            margin-top: 65px;
-            margin-bottom: 18px;
-
-            border-bottom: 0.5px solid $middle-grey;
-        }
-        .js-lab {
-            background: #CCC;
-            padding: 10px; // border: 10px solid #CCC;
-        }
+      text-transform: none;
     }
 
-    .assignment {
-        >h2:first-child::before {
-            content: "assignment";
-        }
+    > h2:first-child::before {
+      content: "activity";
+      display: block;
+      margin-bottom: 25px;
+
+      font-size: 10px;
+      letter-spacing: 2.41px;
+
+      text-transform: uppercase;
     }
 
-    .discussion {
-        >h2:first-child::before {
-            content: "discussion";
-        }
+    > h2:first-child + p {
+      text-align: center;
+      width: 300px;
+      margin: 35px auto 65px auto;
+
+      font-family: "Roboto";
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0.31px;
+      line-height: 20px;
     }
 
-
-
-    .embed {
-        width: 100%;
-        height: 500px;
+    code {
+      // background-color: rgba(0, 0, 0, .1);
     }
+
+    > h3 {
+      font-family: "Miriam Libre";
+      font-weight: bold;
+      font-size: 10px;
+      letter-spacing: 0.04px;
+
+      color: $dark-grey;
+
+      padding-bottom: 3px;
+      margin-top: 65px;
+      margin-bottom: 18px;
+
+      border-bottom: 0.5px solid $middle-grey;
+    }
+    .js-lab {
+      background: #ccc;
+      padding: 10px; // border: 10px solid #CCC;
+    }
+  }
+
+  .assignment {
+    > h2:first-child::before {
+      content: "assignment";
+    }
+  }
+
+  .discussion {
+    > h2:first-child::before {
+      content: "discussion";
+    }
+  }
+
+  .embed {
+    width: 100%;
+    height: 500px;
+  }
 }

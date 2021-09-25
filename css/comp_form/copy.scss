@@ -1,4 +1,4 @@
-.comp-form-copy {
+.comp-form .comp-form-copy {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 18px;
@@ -6,6 +6,12 @@
   line-height: 25px;
 
   /* headers */
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 500;
+  }
   > h1 {
     font-family: "Miriam Libre";
     font-weight: bold;
@@ -88,9 +94,10 @@
     font-size: 16px;
     letter-spacing: 0.31px;
     line-height: 25px;
-    margin-left: 15px;
+    // margin-left: 15px;
     position: relative;
   }
+
   blockquote::before {
     content: "";
     background: $middle-grey;
@@ -110,6 +117,7 @@
   }
 
   /* code */
+
   code {
     font-family: "Overpass Mono", monospace;
     color: $black;
@@ -117,44 +125,51 @@
     border-radius: 0;
   }
 
-  p code {
-    // display: inline-block;
-    // margin-bottom: 4px;
+  :not(pre) > code {
+    padding: 1px 6px;
+    border-radius: 4px;
   }
-  .bad > pre {
+  pre {
+    // margin-left: -15px;
+    // margin-right: -15px;
+    /* border: 1px solid $middle-grey; */
+    // padding: 15px;
+
+    // margin-top: 15px;
+    // margin-bottom: 15px;
+  }
+
+  pre code {
+    display: block;
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow-x: visible;
+    overflow-x: auto;
+
+    background-color: $light-grey;
+    border-radius: 4px;
+
+    line-height: 1.8;
+  }
+
+  .bad code {
     border: 1px solid $red;
     background: $light-red;
   }
 
-  .bad > pre code {
-    background-color: transparent;
-  }
-
-  .good > pre {
+  .good code {
     border: 1px solid $green;
   }
 
-  pre {
-    margin-left: -15px;
-    margin-right: -15px;
-    /* border: 1px solid $middle-grey; */
-    background-color: $light-grey;
-    padding: 15px;
-    overflow-x: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
+  // .bad > pre code {
+  //   background-color: transparent;
+  // }
 
-  pre code {
-    line-height: 1.5;
-    padding: 0;
-    overflow-x: visible;
-  }
-
-  .half pre {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  // .half pre {
+  //   margin-left: 0;
+  //   margin-right: 0;
+  // }
 
   /* ul, ol */
   ul,
@@ -218,10 +233,12 @@
   }
   dl > dt {
     // font-size: 14px;
+    margin-bottom: 0.5em;
     font-weight: 400;
   }
   dl > dd {
     margin-bottom: 15px;
+    margin-left: 0;
   }
 
   /* hr */
@@ -243,27 +260,34 @@
 
   /* tables */
   table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    background-color: transparent;
+    border-collapse: collapse;
+    margin-bottom: 1em;
   }
 
-  table th,
+  table th {
+    font-family: "Miriam Libre";
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 0.04px;
+    text-align: left;
+    padding-left: 0.75rem;
+  }
+
   table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #e9ecef;
+
+    border-top: 1px solid $middle-grey;
   }
 
-  table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #e9ecef;
-  }
+  // table thead th {
+  //   vertical-align: bottom;
+  //   border-bottom: 2px solid #e9ecef;
+  // }
 
-  table tbody + tbody {
-    border-top: 2px solid #e9ecef;
-  }
+  // table tbody + tbody {
+  //   border-top: 2px solid #e9ecef;
+  // }
 
   table {
     font-size: 0.85em;
@@ -271,6 +295,13 @@
 
   table th {
     border-top: none;
+  }
+
+  /* inline */
+
+  strong,
+  b {
+    font-weight: 400;
   }
 
   /* images */
