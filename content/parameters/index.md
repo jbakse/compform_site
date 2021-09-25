@@ -271,7 +271,7 @@ Begin designing a user interface for a fictional machine by considering which pa
 8. For each parameter carefully choose a name, data type, and possible values if applicable.
 9. Present your machine, user, and parameters to the class. You will have 2 minutes to present.
 
-#### Machine Types {underline}
+### Machine Types
 
 - A self-driving car
 - Planet terraformer
@@ -280,7 +280,7 @@ Begin designing a user interface for a fictional machine by considering which pa
 - Genetic pet builder
 - Love potion mixer
 
-#### Users {underline}
+### Users
 
 - Daily user
 - One-time user

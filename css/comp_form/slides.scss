@@ -36,18 +36,12 @@
     width: calc(100% / 12 * 8);
 
     padding: 15px;
-    .debug & {
-      border: 1px dotted $debug-blue;
-    }
   }
 
   .slide-info {
     width: calc(100% / 12 * 4);
 
     padding: 15px;
-    .debug & {
-      border: 1px dotted $debug-blue;
-    }
   }
 
   .contain .slide-image > img {
@@ -165,7 +159,4 @@
     border-bottom: none;
     width: 50px;
   }
-}
-
-.out {
 }

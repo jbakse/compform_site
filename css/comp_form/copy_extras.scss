@@ -11,13 +11,13 @@
 
   /* half */
   //todo new layout
-  .columns {
-    // @include clearfix;
-  }
+  // .columns {
+  //    @include clearfix;
+  // }
 
-  .clear {
-    clear: both;
-  }
+  // .clear {
+  //   clear: both;
+  // }
 
   //todo new layout
 
@@ -220,10 +220,6 @@
       line-height: 20px;
     }
 
-    code {
-      // background-color: rgba(0, 0, 0, .1);
-    }
-
     > h3 {
       font-family: "Miriam Libre";
       font-weight: bold;
@@ -295,17 +291,15 @@
   }
 
   /* util modifiers */
-  .no-margin {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
+
+  //todo new layout
+  // .no-margin {
+  //   margin-left: -15px;
+  //   margin-right: -15px;
+  // }
 
   .full-width {
     @include full-width;
-  }
-
-  .underline {
-    border-bottom: 1px solid $middle-grey;
   }
 
   .bigger {

@@ -27,7 +27,7 @@ You can use relative paths for include files and included files can include file
 
 Auto convert links like: https://google.com
 
-### quotes: "“”‘’"
+### quotes: “”‘’
 
 Automatically add "smart quotes."
 
@@ -72,6 +72,36 @@ Term 1
 
 Term 2
 : Definition Two
+
+# Basic Copy
+
+## h2
+
+## h2 plain{plain}
+
+### h3
+
+#### h4
+
+Paragraphs with _italic_, **bold**, `code`, and [links](#links).
+
+> Blockquotes.
+> nobody{attrib}
+
+- lists
+- of
+- items
+
+1. ordered
+1. lists
+
+...can be intereupted...
+
+1. and
+1. continue
+   {continue}
+
+---
 
 # Content Classes
 
@@ -146,6 +176,8 @@ You can stick links in a sidebar.
 
 This is an example.
 
+### This is an example.
+
 This is an example.
 
 </div>
@@ -175,6 +207,18 @@ This is an example.
 `.jpg`, `.png`, and `.svg` files are copied over
 ![Make Things that Make Things](./figures/make_things.png)
 
+### 100%
+
+![cross](./figures/cross.png)
+
+### scale up
+
+![cross](./figures/cross.png){scale}
+
+### show pixels
+
+![cross](./figures/cross.png){scale pixel}
+
 ### two-up
 
 <div class="two-up">
@@ -191,6 +235,18 @@ This is an example.
 ![Make Things that Make Things](./figures/make_things.png)
 ![Make Things that Make Things](./figures/make_things.png)
 ![Make Things that Make Things](./figures/make_things.png)
+
+</div>
+
+### three-up + figure
+
+<div class="three-up">
+
+![Make Things that Make Things](./figures/make_things.png)Make{figure}
+
+![Make Things that Make Things](./figures/make_things.png)Things{figure}
+
+![Make Things that Make Things](./figures/make_things.png)!!!!{figure}
 
 </div>
 
@@ -214,7 +270,7 @@ This is a spoiler.
 
 # Javascript
 
-## Syntax Highlighting
+## Code Blocks w/ Syntax Highlight
 
 ```javascript
 function map(v, min1, max1, min2, max2) {
@@ -223,7 +279,23 @@ function map(v, min1, max1, min2, max2) {
 }
 ```
 
-Code can be included. `.js` files are copied over
+<div class="good">
+
+```javascript
+true === true;
+```
+
+</div>
+
+<div class="bad">
+
+```javascript
+true === false;
+```
+
+</div>
+
+You can `% include` code.
 
 ```javascript
 {% include ./sketches/example.js %}
