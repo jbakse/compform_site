@@ -1,13 +1,23 @@
-.comp-form {
-  // overflow-x: hidden;
+@mixin block-base() {
+  width: 730px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  //todo new layout
-  // content item
+@mixin block-base-pad() {
+  @include block-base;
+  width: 1140px+15px+15px; //extra padding so text lines up rather than box
+}
+
+@mixin block-wide() {
+  @include block-base;
+  width: 1140px;
+}
+
+.comp-form {
   .container > * {
-    width: 730px;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    @include block-base;
   }
 
   #logo {

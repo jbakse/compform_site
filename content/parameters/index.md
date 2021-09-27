@@ -59,7 +59,7 @@ Procedural generators can provide enormous creative leverage, allowing expressiv
 
 Imagine a program that draws squares like the one below. What parameters might such a program accept?
 
-![A Blue Square](./figures/blue-square.png "A Blue Square"){scale full-width}
+![A Blue Square](./figures/blue-square.png "A Blue Square"){scale wide}
 
 </div>
 

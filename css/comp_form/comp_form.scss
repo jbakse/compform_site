@@ -3,17 +3,15 @@
 $black: #000;
 $light-grey: #f4f3f1;
 $middle-grey: #ccc;
-$dark-grey: #505050;
-$red: #cc9999;
-$light-red: #ffeeee;
-$green: #99cc99;
-$dark-grey: #000;
+$dark-grey: #111;
 
 @import "./layout";
+@import "./copy";
+@import "./copy_extras";
+@import "./syntax_highlight";
+
 @import "./toc";
 @import "./chapter";
-@import "./copy";
-@import "./syntax_highlight";
-@import "./copy_extras";
 @import "./slides";
+
 @import "./mess";

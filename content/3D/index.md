@@ -180,7 +180,7 @@ $fn = 20;
 cylinder(h=1.8, r=2.4, center=true);
 ```
 
-![example_1](images/example_1.png){full-width}
+![example_1](images/example_1.png){wide}
 
 #### $fn, $fa, \$fs
 
@@ -210,7 +210,7 @@ translate([0, 0, 9.6 * .5 + 1.8 * .5]) {
 }
 ```
 
-![example_2](images/example_2.png){full-width}
+![example_2](images/example_2.png){wide}
 
 `Translate()` moves the shapes passed to it. Here translate moves the cylinder up. Notice that the braces are used to group parameters to translate. You can also scale, resize, rotate, and mirror shapes
 
@@ -234,7 +234,7 @@ difference() {
 }
 ```
 
-![example_3](images/example_3.png){full-width}
+![example_3](images/example_3.png){wide}
 
 This example uses `difference()` and `union()` to combine shapes. A cylinder and cube are combined with `union()` and a recess is cut out of the resulting shape using `difference()`. OpenSCAD also has an `intersect()` operator.
 
@@ -303,7 +303,7 @@ for (x = [0:columns-1], y = [0:rows-1]) {
 
 ```
 
-![example_4](images/example_4.png){full-width}
+![example_4](images/example_4.png){wide}
 
 This example uses `for` to create several instances of our basic shape. OpenSCAD's `for()` looks a lot like the imperative flow control structure, but [works differently](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Conditional_and_Iterator_Functions#For_Loop) because OpenSCAD is functional.
 

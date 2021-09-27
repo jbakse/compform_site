@@ -25,8 +25,6 @@ Creatively, animation differs from still images by introducing another dimension
 
 Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of images as just that: a series of images. Above 10, we can begin to perceive a series of images as motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are necessary for virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second.
 
-<!-- .aspect-4-1 and .no-margin not carried over -->
-
 {% js-lab "sketches/metronome_fps.js" %}
 
 Metronomes animated at 5, 15, 30, and 60 frames per second.{caption}
@@ -239,7 +237,7 @@ You can even stitch images in [Photoshop](https://www.adobe.com/products/photosh
 
 {% js-lab "sketches/save_frames.js" %}
 
-<div class="full-width">
+<div class="wide">
 
 <video src="videos/render.mp4" poster="videos/render_0030.jpg" controls></video>
 
@@ -247,7 +245,7 @@ You can even stitch images in [Photoshop](https://www.adobe.com/products/photosh
 
 You can even apply Photoshop effects in the bargain.
 
-<div class="full-width">
+<div class="wide">
 
 <video src="videos/render_color.mp4" poster="videos/render_color_0030.jpg" controls></video>
 

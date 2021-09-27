@@ -144,6 +144,10 @@
     line-height: 1.8;
   }
 
+  $red: #cc9999;
+  $light-red: #ffeeee;
+  $green: #99cc99;
+
   .bad code {
     border: 1px solid $red;
     background: $light-red;
@@ -306,7 +310,7 @@
     image-rendering: pixelated;
   }
 
-  //todo new layout
+  //todo new layout //up
   // .two-up {
   //    @include clearfix;
   // }
@@ -318,7 +322,7 @@
     margin-right: 10px;
   }
 
-  //todo new layout
+  //todo new layout //up
   .three-up {
     margin-top: 1em;
     // @include clearfix;

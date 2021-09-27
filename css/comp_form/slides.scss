@@ -1,6 +1,6 @@
 .comp-form-copy {
   .slides-wrap {
-    @include full-width;
+    @include block-wide;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -52,7 +52,7 @@
     object-position: 0 0;
   }
 
-  //todo new layout
+  //todo new layout //breakpoint
   // @include media-breakpoint-down(sm) {
   //     .slides .slide {
   //         flex-direction: column;

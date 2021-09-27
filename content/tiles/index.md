@@ -68,7 +68,7 @@ With a set of tiles, you can start creating forms.
 
 A wide variety of looks can be created.
 
-![multi_comp_form](./figures/multi_comp_form.png){scale full-width pixel}
+![multi_comp_form](./figures/multi_comp_form.png){scale wide pixel}
 
 Examples above were generated with [this tile mapping tool from cr31](http://www.cr31.co.uk/stagecast/wang/stage.html).
 
@@ -78,7 +78,7 @@ You can also create a set by considering the corners to be empty or occupied. Co
 
 ![corner_16](./figures/corner_16.png){scale}
 
-![corner_form](./figures/corner_form.png){scale full-width}
+![corner_form](./figures/corner_form.png){scale wide}
 
 <div class="discussion">
 

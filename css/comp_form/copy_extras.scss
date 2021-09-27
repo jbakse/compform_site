@@ -1,4 +1,4 @@
-.comp-form-copy {
+.comp-form .comp-form-copy {
   .caption {
     font-size: 0.8em;
     font-style: italic;
@@ -10,7 +10,7 @@
   }
 
   /* half */
-  //todo new layout
+  //todo new layout //columns
   // .columns {
   //    @include clearfix;
   // }
@@ -19,7 +19,7 @@
   //   clear: both;
   // }
 
-  //todo new layout
+  //todo new layout //breakpoints
 
   // @include media-breakpoint-up(sm) {
   //   .half {
@@ -70,7 +70,7 @@
   }
 
   /* links-sidebar */
-  //todo new layout
+  //todo new layout //links sidebar
   .links-sidebar {
     box-sizing: border-box;
     margin-bottom: 15px;
@@ -99,7 +99,7 @@
     margin-bottom: 0;
   }
 
-  //todo new layout
+  //todo new layout //breakpoints
 
   // @include media-breakpoint-up(md) {
   //   .links-sidebar {
@@ -134,13 +134,8 @@
   }
 
   .callout {
-    //todo new layout
-    width: 730px + 15px + 15px;
+    @include block-base-pad;
   }
-  // .callout:not(.full-width) {
-  //   margin-left: -15px;
-  //   margin-right: -15px;
-  // }
 
   .callout *:last-child {
     margin-bottom: 0;
@@ -175,13 +170,9 @@
     margin-right: 0;
     width: auto;
 
-    //todo new layout
     // content item
     > * {
-      width: 730px;
-      box-sizing: border-box;
-      margin-left: auto;
-      margin-right: auto;
+      @include block-base;
     }
 
     > h2:first-child {
@@ -291,15 +282,8 @@
   }
 
   /* util modifiers */
-
-  //todo new layout
-  // .no-margin {
-  //   margin-left: -15px;
-  //   margin-right: -15px;
-  // }
-
-  .full-width {
-    @include full-width;
+  .wide {
+    @include block-wide;
   }
 
   .bigger {

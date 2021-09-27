@@ -113,9 +113,9 @@ This is a error callout.{callout error}
 
 This is a warn callout.{callout warn}
 
-## full-width
+## wide
 
-This is a full width callout.{callout full-width}
+This is a full width callout.{callout wide}
 
 ## bigger and biggest
 
@@ -228,9 +228,9 @@ This is an example.
 
 </div>
 
-### three-up + full-width
+### three-up + wide
 
-<div class="three-up full-width">
+<div class="three-up wide">
 
 ![Make Things that Make Things](./figures/make_things.png)
 ![Make Things that Make Things](./figures/make_things.png)

@@ -28,7 +28,7 @@ This example was inspired by the [r/proceduralgeneration](https://www.reddit.com
 
 The image above was drawn by the Paper Garden script. For this image, the script was configured to generate, compose, and draw 255 plants. The script allows you to configure the number and spacing of plants; the number, spacing, and sorting of leaves on each plant; and how rough, sloppy, and thick the strokes are. This allows the script to squeeze out a range of different looks.
 
-::: .three-up .full-width
+::: .three-up .wide
 ![close](./variations/close.png)
 ![coloring_book](./variations/coloring_book.png)
 ![gappy](./variations/gappy.png)
@@ -157,7 +157,7 @@ This script shows how I removed the lines.
 
 And here are some of the plots.
 
-::: .two-up .full-width
+::: .two-up .wide
 ![purple](./plots/purple.jpg)
 ![yellow](./plots/yellow.jpg)
 ![green](./plots/green.jpg)

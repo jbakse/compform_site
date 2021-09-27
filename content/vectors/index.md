@@ -23,7 +23,7 @@ Last week, we worked directly with **pixels**, the fundamental unit of raster gr
 </svg>
 ```
 
-<div class="no-margin">
+<div class="">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 144">
 <rect fill="#092" y="89.43" width="360" height="54.57"/>

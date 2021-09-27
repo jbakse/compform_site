@@ -1,3 +1,12 @@
+# CSS Clean up
+
+- responsive breakpoints
+- links sidebar
+- column support
+- fix 2up 3up
+- jslab
+- i took out `no-margin` which strat used to slightly outpad 3up images. maybe support that design with another class?
+
 - review jason's ports and 11ty extensions
 
 - make sure tables work in the new build system
