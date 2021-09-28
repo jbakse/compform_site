@@ -9,37 +9,6 @@
     text-align: center;
   }
 
-  /* half */
-  //todo new layout //columns
-  // .columns {
-  //    @include clearfix;
-  // }
-
-  // .clear {
-  //   clear: both;
-  // }
-
-  //todo new layout //breakpoints
-
-  // @include media-breakpoint-up(sm) {
-  //   .half {
-  //     box-sizing: border-box;
-  //     width: calc((100% - 30px) / 2);
-
-  //     display: block;
-  //     float: left;
-  //     margin-right: 30px;
-  //   }
-
-  //   .half + .half {
-  //     margin-right: 0;
-  //   }
-
-  //   .half + .half + * {
-  //     clear: both;
-  //   }
-  // }
-
   /* links */
   // .links>p>a,
   // {
@@ -70,51 +39,32 @@
   }
 
   /* links-sidebar */
-  //todo new layout //links sidebar
-  .links-sidebar {
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    // @include clearfix;
-  }
-  .links-sidebar > p {
-    float: left;
-    margin-right: 15px;
 
-    &:hover {
-      background-color: $light-grey;
-    }
+  .links-sidebar {
+    @include sidebar;
   }
 
   .links-sidebar > p > a {
-    border: 1px solid $middle-grey;
-    padding: 5px 10px;
     display: block;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 1px solid $middle-grey;
 
     text-overflow: ellipsis;
     word-wrap: break-word;
     hyphens: auto;
   }
 
+  .links-sidebar > *:first-child {
+    margin-top: 0;
+  }
   .links-sidebar > *:last-child {
     margin-bottom: 0;
   }
 
-  //todo new layout //breakpoints
-
-  // @include media-breakpoint-up(md) {
-  //   .links-sidebar {
-  //     position: absolute;
-  //     left: calc(100% + 15px);
-  //     width: calc(100% / 8 * 2 - 15px);
-  //   }
-  //   .links-sidebar > p {
-  //     float: none;
-  //     margin-right: 0;
-  //   }
-  // }
-
   /* callout */
   .callout {
+    @include block-pad;
     padding: 15px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -133,16 +83,11 @@
     }
   }
 
-  .callout {
-    @include block-pad;
-  }
-
-  .callout *:last-child {
+  .callout *:first-child {
     margin-bottom: 0;
   }
-
-  .callout h3 {
-    margin-top: 0;
+  .callout *:last-child {
+    margin-bottom: 0;
   }
 
   .callout.error {
@@ -281,12 +226,19 @@
   }
 
   /* util modifiers */
+  .tint {
+    background-color: $light-grey;
+  }
   .pad {
     @include block-pad;
   }
 
   .wide {
     @include block-wide;
+  }
+
+  .full {
+    @include block-full;
   }
 
   .bigger {

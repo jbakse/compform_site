@@ -13,15 +13,58 @@ next: false
 next_url: false
 ---
 
-# Layout
+# Core Layout
 
-block-base {}
+block-base {tint}
 
-block-pad {pad}
+block-pad {tint pad}
 
-callout {callout}
+block-wide {tint wide}
 
-block-wide {wide}
+block-full {tint full}
+
+# Columns
+
+<div class="columns">
+<div>
+
+### Column 1
+
+I'm just some ordinary content. Just taking up some space for the demo.
+
+</div>
+<div>
+
+### Column 2
+
+I'm just some ordinary content. Just taking up some space for the demo.
+
+</div>
+</div>
+
+<div class="columns">
+<div>
+
+- one
+- two
+- three
+
+</div>
+<div>
+
+- one
+- two
+- three
+
+</div>
+<div>
+
+- one
+- two
+- three
+
+</div>
+</div>
 
 # Includes
 
@@ -39,7 +82,7 @@ Auto convert links like: https://google.com
 
 ### quotes: “”‘’
 
-Automatically add "smart quotes."
+Automatically add "smart" 'quotes'.
 
 ### typographer: true,
 
@@ -49,7 +92,7 @@ Automatically add "smart quotes."
 
 <div class="callout">
 
-### Callout
+### Wrapped Markdown
 
 You can wrap markdown in a `<div></div>`. Include a blank line at the top and bottom to enable markdown processing.
 
@@ -93,7 +136,7 @@ Term 2
 
 #### h4
 
-Paragraphs with _italic_, **bold**, `code`, and [links](#links).
+Paragraphs with ~~strike~~, _italic_, **bold**, `code`, and [links](#links).
 
 > Blockquotes.
 > nobody{attrib}
@@ -115,7 +158,7 @@ Paragraphs with _italic_, **bold**, `code`, and [links](#links).
 
 # Content Classes
 
-## callout
+### callouts
 
 This is a callout.{callout}
 
@@ -123,25 +166,9 @@ This is a error callout.{callout error}
 
 This is a warn callout.{callout warn}
 
-## wide
-
 This is a wide callout.{callout wide}
 
-## bigger and biggest
-
-This is some bigger text.{bigger}
-
-This is some biggest text.{biggest}
-
-## center
-
-center{center}
-
-## caption
-
-This is some caption text.{caption}
-
-# Boxed Links
+### Boxed Links
 
 [boxed](google.com){boxed}
 
@@ -149,7 +176,7 @@ This is some caption text.{caption}
 
 [boxed right](google.com){boxed right}
 
-# Links sidebar
+### Links sidebar
 
 <div class="links-sidebar">
 
@@ -159,24 +186,23 @@ This is some caption text.{caption}
 
 You can stick links in a sidebar.
 
-# Columns
+# Modifier Classes
 
-<div class="columns">
-<div class="half">
+### bigger and biggest
 
-- one
-- two
-- three
+This is some text.
 
-</div>
-<div class="half">
+This is some bigger text.{bigger}
 
-- one
-- two
-- three
+This is some biggest text.{biggest}
 
-</div>
-</div>
+### center
+
+This is some centered text.{center}
+
+### caption
+
+This is some caption text.{caption}
 
 # Activities, Assignments, Discussions
 

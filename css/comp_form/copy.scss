@@ -12,7 +12,7 @@
   h3 {
     font-weight: 500;
   }
-  > h1 {
+  h1 {
     font-family: "Miriam Libre";
     font-weight: bold;
     font-size: 25px;
@@ -22,7 +22,7 @@
     margin-top: 100px;
     margin-bottom: 24px;
   }
-  > h2 {
+  h2 {
     font-family: "Miriam Libre";
     font-weight: bold;
     font-size: 25px;
@@ -35,17 +35,17 @@
   }
 
   counter-reset: h2s;
-  > h2::before {
+  h2::before {
     counter-increment: h2s;
     content: counter(h2s, decimal-leading-zero);
     position: absolute;
     margin-left: -3em;
   }
 
-  > h2.plain {
+  h2.plain {
     padding-left: 0;
   }
-  > h2.plain::before {
+  h2.plain::before {
     content: none;
   }
 

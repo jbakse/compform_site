@@ -1,16 +1,19 @@
 # CSS Clean up
 
-- responsive breakpoints
-- do i need breakpoints here, or is max calc gonna do
-- looks like pad block in test is getting @base and @pad applied
+[x] responsive breakpoints for main layout
+
 - links sidebar
+  - responsive
 - column support
+  - responsive
 - fix 2up 3up
+  - responsive
 - jslab
 - i took out `no-margin` which strat used to slightly outpad 3up images. maybe support that design with another class?
-
+- code in a column is weird
+- pre/code is kind of weird anyway. negative margin hack?
 - review jason's ports and 11ty extensions
-
+- simplify the h1, h2 css, also consider how margins should work in columns, etc.
 - make sure tables work in the new build system
 - combine lab and show builder
 - compform_plain.pug needs update

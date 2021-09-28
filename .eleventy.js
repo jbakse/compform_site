@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
   markdownLib.enable("table");
   markdownLib.enable("replacements");
   markdownLib.enable("smartquotes");
+  markdownLib.enable("strikethrough");
   markdownLib.use(require("markdown-it-anchor"));
   markdownLib.use(require("markdown-it-classy"));
   markdownLib.use(require("markdown-it-deflist"));
