@@ -265,7 +265,7 @@ This is an example.
 
 ### two-up
 
-<div class="two-up">
+<div class="two-up pad">
 
 ![Make Things that Make Things](./figures/make_things.png)
 ![Make Things that Make Things](./figures/make_things.png)
@@ -344,6 +344,20 @@ You can `% include` code.
 ```javascript
 {% include ./sketches/example.js %}
 ```
+
+Or show code side by side with columns
+
+<div class="columns pad">
+
+```javascript
+code();
+```
+
+```javascript
+code();
+```
+
+</div>
 
 ## JSLab
 

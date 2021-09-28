@@ -144,6 +144,10 @@
     line-height: 1.8;
   }
 
+  .columns pre code {
+    margin: 0;
+  }
+
   $red: #cc9999;
   $light-red: #ffeeee;
   $green: #99cc99;

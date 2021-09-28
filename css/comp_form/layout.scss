@@ -47,20 +47,20 @@
     margin-top: 2em;
   }
 
-  .columns > div {
+  .columns > * {
     flex: 1;
     margin: 0 15px 0 0;
     overflow-x: hidden;
   }
 
-  .columns > div:last-child {
+  .columns > *:last-child {
     margin-right: 0;
   }
 
-  .columns > div > *:first-child {
+  .columns > * > *:first-child {
     margin-top: 0;
   }
-  .columns > div > *:last-child {
+  .columns > * > *:last-child {
     margin-bottom: 0;
   }
 

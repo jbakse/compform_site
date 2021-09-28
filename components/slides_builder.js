@@ -1,20 +1,8 @@
-let yaml = require("js-yaml");
-
-trimLines = function (text) {
-  let lines = text.split("\n");
-  for (let i = 0; i < lines.length; i++) {
-    lines[i] = lines[i].trim();
-  }
-  text = lines.join("\n");
-  return text;
-};
+const yaml = require("js-yaml");
+const util = require("./util.js");
 
 // slides counter used to provide unique id to each carousel
 let slidesCounter = 0;
-
-// function init() {
-//   slidesCounter = 0;
-// }
 
 function slidesBuilder(content) {
   slidesCounter++;
@@ -22,14 +10,12 @@ function slidesBuilder(content) {
   // parse data
   let data = yaml.load(content);
 
-  // console.log("Data", data);
-
   // build slides markup
   let slides = "";
   data.forEach((slide, i) => {
-    slide.artist = slide.artist || "";
-    slide.title = slide.title || "";
-    slide.comments = slide.comments || "";
+    slide.artist ||= "";
+    slide.title ||= "";
+    slide.comments ||= "";
 
     let links = "";
     if (slide.links && slide.links.length) {
@@ -38,7 +24,7 @@ function slidesBuilder(content) {
       });
     }
 
-    slides += trimLines(`
+    slides += util.trimLines(`
           <div class="carousel-item ${i == 0 ? "active" : ""}">
             <div class="slide">
               <div class="slide-image">
@@ -60,7 +46,7 @@ function slidesBuilder(content) {
           </div>`);
   });
 
-  content = trimLines(`
+  content = util.trimLines(`
         <div class="slides-wrap">
       <div id="carousel-${slidesCounter}" class="carousel slide" data-ride="carousel">
 
@@ -98,8 +84,6 @@ function slidesBuilder(content) {
       </div>
       `);
 
-  //   classes.push("slides-wrap");
-  //   classes.push("slideInfos");
   return content;
 }
 
