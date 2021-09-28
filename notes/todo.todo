@@ -25,10 +25,13 @@
 .- make sure tables work in the new build system
 .- combine lab and show builder
   - nah
-- compform_plain.pug needs update
-- cover is borked!
+.- compform_plain.pug needs update
+- cover is kinda borked.
+  - cover needs new column layout approach
 - class notes pages are borked!
-- do non index.md pages work? like sound_and_light in sound
+.- do non index.md pages work? like sound_and_light in sound
+- remove jquery from templat?
+- scrub ":::" still being used on plan pages, etc
 
 
 ### phase 0

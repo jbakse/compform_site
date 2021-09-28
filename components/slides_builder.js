@@ -13,9 +13,9 @@ function slidesBuilder(content) {
   // build slides markup
   let slides = "";
   data.forEach((slide, i) => {
-    slide.artist ||= "";
-    slide.title ||= "";
-    slide.comments ||= "";
+    slide.artist = slide.artist || "";
+    slide.title = slide.title || "";
+    slide.comments = slide.comments || "";
 
     let links = "";
     if (slide.links && slide.links.length) {
