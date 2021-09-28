@@ -350,3 +350,5 @@ You can `% include` code.
 {% js-lab "./sketches/donkey.js" %}
 
 ## JSShow
+
+{% js-show "./sketches/donkey.js" %}

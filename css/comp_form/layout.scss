@@ -40,16 +40,16 @@
     @include block-base;
   }
 
+  /////// columns
+
   .columns {
-    // border: 1px solid red;
     display: flex;
     margin-top: 2em;
   }
 
   .columns > div {
     flex: 1;
-    margin-right: 15px;
-    // border: 1px solid green;
+    margin: 0 15px 0 0;
     overflow-x: hidden;
   }
 
@@ -63,6 +63,17 @@
   .columns > div > *:last-child {
     margin-bottom: 0;
   }
+
+  @media screen and (max-width: 790px) {
+    .columns {
+      flex-direction: column;
+    }
+    .columns > div {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  ///
 
   #logo {
     position: fixed;

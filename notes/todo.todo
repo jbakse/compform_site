@@ -1,14 +1,18 @@
 # CSS Clean up
 
-[x] responsive breakpoints for main layout
+.- responsive breakpoints for main layout
 
-- links sidebar
-  - responsive
-- column support
-  - responsive
-- fix 2up 3up
-  - responsive
-- jslab
+.- links sidebar
+  .- responsive
+.- column support
+  .- responsive
+.- fix 2up 3up
+  .- responsive
+- jslab/show
+  .- page layout
+  - internal layout responsive
+  - look at jsshow in context, should it center?
+
 - use variables for column and sidebar widths and breakpoints
 - i took out `no-margin` which strat used to slightly outpad 3up images. maybe support that design with another class?
 - code in a column is weird
