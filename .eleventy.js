@@ -7,7 +7,10 @@ module.exports = function (eleventyConfig) {
     typographer: true,
     quotes: "“”‘’",
   });
+  markdownLib.enable("linkify");
   markdownLib.enable("table");
+  markdownLib.enable("replacements");
+  markdownLib.enable("smartquotes");
   markdownLib.use(require("markdown-it-anchor"));
   markdownLib.use(require("markdown-it-classy"));
   markdownLib.use(require("markdown-it-deflist"));
@@ -32,16 +35,6 @@ module.exports = function (eleventyConfig) {
     "js-show",
     require("./components/jsshow_builder.js")
   );
-
-  // eleventyConfig.addPairedShortcode(
-  //   "assignment",
-  //   require("./components/assignment_builder.js")
-  // );
-
-  // eleventyConfig.addPairedShortcode(
-  //   "links-sidebar",
-  //   require("./components/links-sidebar_builder.js")
-  // );
 
   eleventyConfig.addPairedShortcode(
     "slides",
