@@ -1,18 +1,31 @@
 @mixin block-base() {
-  width: 730px;
+  border: 1px solid red;
   box-sizing: border-box;
+  width: calc(100% - 30px);
+  max-width: 730px;
   margin-left: auto;
   margin-right: auto;
+
+  // @media screen and (min-width: 830px) {
+  //   outline: 1px solid blue;
+  //   width: 730px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 }
 
-@mixin block-base-pad() {
-  @include block-base;
-  width: 1140px+15px+15px; //extra padding so text lines up rather than box
+@mixin block-pad() {
+  width: 100%;
+  max-width: 730px + 15px + 15px;
 }
 
 @mixin block-wide() {
-  @include block-base;
-  width: 1140px;
+  max-width: 1140px;
+}
+
+@mixin block-full() {
+  width: 100%;
+  max-width: 100%;
 }
 
 .comp-form {

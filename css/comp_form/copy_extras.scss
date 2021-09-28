@@ -134,7 +134,7 @@
   }
 
   .callout {
-    @include block-base-pad;
+    @include block-pad;
   }
 
   .callout *:last-child {
@@ -158,17 +158,15 @@
   .activity,
   .assignment,
   .discussion {
-    background-color: $light-grey;
-    border-top: 1px solid $middle-grey;
-    border-bottom: 1px solid $middle-grey;
+    @include block-full;
 
     margin-top: 90px;
     padding-top: 50px;
     padding-bottom: 50px;
 
-    margin-left: 0;
-    margin-right: 0;
-    width: auto;
+    background-color: $light-grey;
+    border-top: 1px solid $middle-grey;
+    border-bottom: 1px solid $middle-grey;
 
     // content item
     > * {
@@ -258,30 +256,35 @@
   }
 
   div.spoiler::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    box-sizing: border-box;
+
+    background: $middle-grey;
+    color: black;
+    opacity: 100;
+    transition: opacity 0.5s;
+
+    padding: 30px;
+    text-align: center;
     content: "Spoiler!\A Click to reveal in-class activty.";
     font-family: "Roboto";
     white-space: pre;
     font-size: 10px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding: 30px;
-    background: black;
-    color: white;
-    opacity: 100;
-    // display: block;
-    transition: opacity 0.5s;
   }
 
   div.spoiler.reveal::after {
     opacity: 0;
-    // display: none;
-    color: white;
   }
 
   /* util modifiers */
+  .pad {
+    @include block-pad;
+  }
+
   .wide {
     @include block-wide;
   }

@@ -1,6 +1,8 @@
 # CSS Clean up
 
 - responsive breakpoints
+- do i need breakpoints here, or is max calc gonna do
+- looks like pad block in test is getting @base and @pad applied
 - links sidebar
 - column support
 - fix 2up 3up

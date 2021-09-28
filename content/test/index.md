@@ -13,6 +13,16 @@ next: false
 next_url: false
 ---
 
+# Layout
+
+block-base {}
+
+block-pad {pad}
+
+callout {callout}
+
+block-wide {wide}
+
 # Includes
 
 You can include Markdown files from Markdown files. Markdown files that start with `_` won't be processed as top level pages.
@@ -115,7 +125,7 @@ This is a warn callout.{callout warn}
 
 ## wide
 
-This is a full width callout.{callout wide}
+This is a wide callout.{callout wide}
 
 ## bigger and biggest
 
