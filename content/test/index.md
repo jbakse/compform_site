@@ -45,12 +45,7 @@ I'm just some ordinary content. Just taking up some space for the demo.
 <div class="columns">
 <div>
 
-- one
-- two
-- three
-
-</div>
-<div>
+### Three Columns
 
 - one
 - two
@@ -58,6 +53,17 @@ I'm just some ordinary content. Just taking up some space for the demo.
 
 </div>
 <div>
+
+### Three Columns
+
+- one
+- two
+- three
+
+</div>
+<div>
+
+### Three Columns
 
 - one
 - two
@@ -180,11 +186,13 @@ This is a wide callout.{callout wide}
 
 <div class="links-sidebar">
 
-[google](google.com)
+[sidebar link 1](#)
+
+[sidebar link 2](#)
 
 </div>
 
-You can stick links in a sidebar.
+You can stick links in a sidebar. They appear in the column on narrow screens.
 
 # Modifier Classes
 

@@ -27,6 +27,12 @@
   width: 200px;
   position: absolute;
   left: calc(50% + 730px / 2 + 15px);
+
+  @media screen and (max-width: 1200px) {
+    width: 730px;
+    position: relative;
+    left: auto;
+  }
 }
 
 .comp-form {
@@ -37,6 +43,7 @@
   .columns {
     // border: 1px solid red;
     display: flex;
+    margin-top: 2em;
   }
 
   .columns > div {
@@ -48,6 +55,13 @@
 
   .columns > div:last-child {
     margin-right: 0;
+  }
+
+  .columns > div > *:first-child {
+    margin-top: 0;
+  }
+  .columns > div > *:last-child {
+    margin-bottom: 0;
   }
 
   #logo {

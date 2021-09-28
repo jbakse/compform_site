@@ -9,6 +9,7 @@
 - fix 2up 3up
   - responsive
 - jslab
+- use variables for column and sidebar widths and breakpoints
 - i took out `no-margin` which strat used to slightly outpad 3up images. maybe support that design with another class?
 - code in a column is weird
 - pre/code is kind of weird anyway. negative margin hack?
