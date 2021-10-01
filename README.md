@@ -25,4 +25,4 @@ npm run start
 ### Staging
 
 Staging on Netlify
-[newcompform.netlify.app](https://newcompform.netlify.app/random/)
+[newcompform.netlify.app](https://newcompform.netlify.app/)

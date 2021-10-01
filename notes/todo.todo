@@ -1,7 +1,8 @@
 # CSS Clean up
 
 .- responsive breakpoints for main layout
-
+- open graph images https://www.opengraph.xyz/
+- simplify the h1, h2 css, also consider how margins should work in columns, etc.
 .- links sidebar
   .- responsive
 .- column support
@@ -21,7 +22,6 @@
     - its seems to be working. low priority
 
 .- review jason's ports and 11ty extensions
-- simplify the h1, h2 css, also consider how margins should work in columns, etc.
 .- make sure tables work in the new build system
 .- combine lab and show builder
   - nah
@@ -30,9 +30,9 @@
   - cover needs new column layout approach
 - class notes pages are borked!
 .- do non index.md pages work? like sound_and_light in sound
-- remove jquery from templat?
+.- remove jquery from template?
 - scrub ":::" still being used on plan pages, etc
-
+- maybe move the 20xx folders into a `course` or `plan` subfolder. just break the urls! probably not referenced much
 
 ### phase 0
 

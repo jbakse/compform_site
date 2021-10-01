@@ -35,13 +35,16 @@
   }
 }
 
+body {
+  margin: 0;
+}
+
 .comp-form {
   .container > * {
     @include block-base;
   }
 
   /////// columns
-
   .columns {
     display: flex;
     margin-top: 2em;

@@ -62,23 +62,23 @@
     border-bottom: 1px soild black;
   }
 
+  .row > a:hover h3 {
+    border-bottom: 1px solid;
+  }
+
   a:hover {
     text-decoration: none;
   }
 
-  .table a {
-    color: black;
-    border-bottom: 1px solid black;
-  }
+  // .table a {
+  //   color: black;
+  //   border-bottom: 1px solid black;
+  // }
 
-  .table a[href="#"] {
-    color: black;
-    border-bottom: none;
-  }
-
-  .row > a:hover h3 {
-    border-bottom: 1px solid;
-  }
+  // .table a[href="#"] {
+  //   color: black;
+  //   border-bottom: none;
+  // }
 
   .overview {
     margin-bottom: 10px;
@@ -94,17 +94,18 @@
     margin-bottom: 3em;
   }
 
-  .intro {
-    margin-bottom: 10px;
+  // .intro {
+  //   border: 10px solid red;
+  //   margin-bottom: 10px;
 
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 0.31px;
-    line-height: calc(25 / 16);
+  //   font-family: "Roboto";
+  //   font-weight: 300;
+  //   font-size: 18px;
+  //   letter-spacing: 0.31px;
+  //   line-height: calc(25 / 16);
 
-    padding-right: 30px;
+  //   padding-right: 30px;
 
-    margin-bottom: 3em;
-  }
+  //   margin-bottom: 3em;
+  // }
 }
