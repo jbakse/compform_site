@@ -1,13 +1,15 @@
-.comp-form.toc {
-  background-color: $light-grey;
-}
-
 .comp-form-toc {
+  background-color: $light-grey;
+  padding-top: 1px;
+
+  &.container > * {
+    @include block-wide;
+  }
+
   h1 {
     font-family: "Miriam Libre";
     font-weight: bold;
     font-size: 25px;
-    line-height: 1.5;
     color: $dark-grey;
     letter-spacing: 0.31px;
     margin-top: 100px;
@@ -19,93 +21,100 @@
     font-family: "Miriam Libre";
     font-weight: bold;
     font-size: 10px;
+    color: $dark-grey;
     letter-spacing: 0.04px;
 
-    color: inherit;
-
-    padding-bottom: 3px;
     margin-top: 65px;
-    margin-bottom: 8px;
-
+    padding-bottom: 3px;
     border-bottom: 0.5px solid $middle-grey;
-  }
-
-  h3 {
-    font-family: "Miriam Libre";
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    // color: inherit;
-    letter-spacing: 0.31px;
-
-    border-bottom: 1px solid transparent;
-  }
-
-  a h3 {
-    color: #04b;
-    display: inline-block;
+    margin-bottom: 12px;
   }
 
   a {
-    color: #04b;
+    color: $accent-color;
   }
 
-  .row > a,
-  .row > a:hover {
-    color: $dark-grey;
-    text-decoration: none;
-    font-size: 12px;
-    margin-bottom: 25px;
+  .intro p {
+    max-width: 35em;
   }
 
-  h3 a:hover {
-    border-bottom: 1px soild black;
-  }
-
-  .row > a:hover h3 {
-    border-bottom: 1px solid;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  // .table a {
-  //   color: black;
-  //   border-bottom: 1px solid black;
-  // }
-
-  // .table a[href="#"] {
-  //   color: black;
-  //   border-bottom: none;
-  // }
-
-  .overview {
-    margin-bottom: 10px;
-
+  .intro p,
+  .nav-wrap > p {
     font-family: "Roboto";
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 0.31px;
-    line-height: calc(25 / 16);
+    line-height: 1.5;
 
-    padding-right: 30px;
-
-    margin-bottom: 3em;
+    margin-top: 0;
   }
 
-  // .intro {
-  //   border: 10px solid red;
-  //   margin-bottom: 10px;
+  .nav-wrap {
+    display: flex;
+    flex-wrap: wrap;
 
-  //   font-family: "Roboto";
-  //   font-weight: 300;
-  //   font-size: 18px;
-  //   letter-spacing: 0.31px;
-  //   line-height: calc(25 / 16);
+    > p {
+      box-sizing: border-box;
+      flex: 0 0 25%;
+      max-width: 30em;
+      padding-right: 50px;
+      margin-bottom: 2em;
+    }
 
-  //   padding-right: 30px;
+    nav {
+      flex: 0 1 75%;
 
-  //   margin-bottom: 3em;
-  // }
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav p {
+      margin-top: 0;
+      width: calc(100% / 3);
+      margin-bottom: 2em;
+    }
+
+    nav a {
+      font-family: "Miriam Libre";
+      text-decoration: none;
+      color: black;
+      font-size: 11px;
+    }
+
+    nav a:hover strong {
+      border-bottom: 1px solid $accent-color;
+    }
+
+    nav strong {
+      position: relative;
+      top: -2px;
+      line-height: 25px;
+      font-size: 19px;
+      font-weight: bold;
+      color: $accent-color;
+    }
+
+    nav strong::after {
+      content: "\a";
+      white-space: pre-wrap;
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      nav p {
+        width: 50%;
+      }
+    }
+  }
+
+  dl {
+    font-family: "Miriam Libre";
+  }
+
+  dl dd {
+    float: left;
+    margin-left: 0;
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
 }

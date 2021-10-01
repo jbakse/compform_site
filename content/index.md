@@ -8,11 +8,19 @@ layout: compform_toc.pug
 
 # Comp Form
 
-This site introduces tools, methods, and concepts related to creating computational form, algorithmic images, generative art, procedurally generated content, and parametric designs. It introduces computational form in many mediums, primarily as a method of aesthetic experimentation. This site is a companion to the Computational Form elective taught by <a href="http://justinbakse.com">Justin Bakse</a> in the <a href="parsons.edu">Parsons</a> Design and Technology program.
+<div class="intro">
+
+This site introduces tools, methods, and concepts related to creating computational form, algorithmic images, generative art, procedurally generated content, and parametric designs. It introduces computational form in many mediums, primarily as a method of aesthetic experimentation. This site is a companion to the Computational Form elective taught by [Justin Bakse](http://justinbakse.com) in the [Parsons](parsons.edu) Design and Technology program.
+
+</div>
 
 ## Foundation
 
+<div class="nav-wrap">
+
 General principles, practices, and building blocks useful for all procedural generation endeavors.
+
+<nav>
 
 [**Procedures** p5.js](./procedures)
 
@@ -24,9 +32,17 @@ General principles, practices, and building blocks useful for all procedural gen
 
 [**Strategies** p5.js](./strategy)
 
+</nav>
+
+</div class="nav-wrap">
+
 ## Exploration
 
+<div class="nav-wrap">
+
 Independent chapters exploring specific procedural generation tools, languages, media, and themes.
+
+<nav>
 
 [**Tile Maps** pencil + paper](./tiles)
 
@@ -50,9 +66,17 @@ Independent chapters exploring specific procedural generation tools, languages, 
 
 [**Microgames** p5.js + p5.play](./microgames)
 
+</nav>
+
+</div>
+
 ## Class Resources
 
+<div class="nav-wrap">
+
 Syllabi, schedules, and lesson plans for the Computational Form class.
+
+<nav>
 
 Spring 2021
 : [Class Notes](https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4)
@@ -81,3 +105,6 @@ Spring 2017
 Spring 2016
 : [Class Notes](http://psam3060-d-s16.github.io/class_notes/)
 : [Sketch Book](http://compform.tumblr.com/)
+
+</nav>
+</div>

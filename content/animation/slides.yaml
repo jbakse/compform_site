@@ -20,7 +20,7 @@
 
 - artist: Craig Reynolds
   title: Boids Simulation, 1986
-  image: http://www.red3d.com/cwr/boids/images/flocking_around_19.gif
+  image: https://www.red3d.com/cwr/boids/images/flocking_around_19.gif
   comments: Craig Reynolds' <i>Boids</i> paper was presented at SIGGRAPH in 1986. In this program animation <b>emerges</b> from the application of basic rules.
   links:
     - label: "Video"
@@ -36,7 +36,7 @@
 
 - artist: Pixar
   title: Brave
-  image: http://sciencebehindpixar.org/sites/science-behind-pixar/files/simulation_challenge_preview.jpg
+  image: https://sciencebehindpixar.org/sites/science-behind-pixar/files/simulation_challenge_preview.jpg
   comments: Pixar has been a pioneer in digital animation, producing feature-length films with compelling stories, memorable characters, and iconic art.
   links:
     - label: The Science Behind Pixar

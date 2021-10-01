@@ -33,7 +33,8 @@
 .- remove jquery from template?
 - scrub ":::" still being used on plan pages, etc
 - maybe move the 20xx folders into a `course` or `plan` subfolder. just break the urls! probably not referenced much
-
+  - https://docs.netlify.com/routing/redirects/
+- classy seems to be eating space after last link in paragraph on intro toc
 ### phase 0
 
 - templates - dry them
