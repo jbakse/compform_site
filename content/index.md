@@ -8,239 +8,76 @@ layout: compform_toc.pug
 
 # Comp Form
 
-<div class="col-6 col-md-6 overview top">
 This site introduces tools, methods, and concepts related to creating computational form, algorithmic images, generative art, procedurally generated content, and parametric designs. It introduces computational form in many mediums, primarily as a method of aesthetic experimentation. This site is a companion to the Computational Form elective taught by <a href="http://justinbakse.com">Justin Bakse</a> in the <a href="parsons.edu">Parsons</a> Design and Technology program.
-</div>
 
 ## Foundation
 
-<!-- Outer -->
-<div class="row">
-
-<div class="col-8 col-md-3 overview">
 General principles, practices, and building blocks useful for all procedural generation endeavors.
-</div>
 
-<!-- Inner -->
-<div class="col-12 col-md-9">
-<div class="row">
+[**Procedures** p5.js](./procedures)
 
-<!-- <a class="col-6 col-md-4" href="./introduction">
+[**Random Values** p5.js](./random)
 
-### Class Introduction
-p5.js
+[**Parameters** p5.js](./parameters)
 
-</a> -->
+[**Noise** p5.js](./noise)
 
-<a class="col-6 col-md-4" href="./procedures">
-
-### Procedures
-
-p5.js
-
-</a>
-
-<a class="col-6 col-md-4" href="./random">
-
-### Random Values
-
-p5.js
-
-</a>
-
-<a class="col-6 col-md-4" href="./parameters">
-
-### Parameters
-
-p5.js
-
-</a>
-
-<a class="col-6 col-md-4" href="./noise">
-
-### Noise
-
-p5.js
-
-</a>
-
-<a class="col-6 col-md-4" href="./strategy">
-
-### Strategies
-
-p5.js
-
-</a>
-
-</div>
-</div>
-<!-- /Inner -->
-</div>
-<!-- /Outer -->
+[**Strategies** p5.js](./strategy)
 
 ## Exploration
 
-<!-- Outer -->
-<div class="row">
-
-<div class="col-8 col-md-3 overview">
 Independent chapters exploring specific procedural generation tools, languages, media, and themes.
-</div>
 
-<!-- Inner -->
-<div class="col-12 col-md-9">
-<div class="row">
+[**Tile Maps** pencil + paper](./tiles)
 
-<a class="col-6 col-md-4" href="./tiles">
+[**Hello, p5** p5.js + github](./p5)
 
-### Tile Maps
+[**Pixel Data** p5.js](./pixels)
 
-pencil + paper
+[**Turtle Graphics** p5.js + custom library](./turtles)
 
-</a>
+[**Vector Drawing** paper.js](./vectors)
 
-<a class="col-6 col-md-4" href="./p5">
+[**Animation** p5.js](./animation)
 
-### Hello, p5!
+[**Generating Text** javascript + html](./text)
 
-p5.js + github
+[**Comp Sound** p5.js + p5.sound](./sound)
 
-</a>
+[**Comp Music** tone.js](./music)
 
-<a class="col-6 col-md-4" href="./pixels">
+[**3D Forms** OpenSCAD](./3D)
 
-### Pixel Data
-
-p5.js
-
-</a>
-
-<a class="col-6 col-md-4" href="./turtles">
-
-### Turtle Graphics
-
-p5.js + custom library
-
-</a>
-
-<a class="col-6 col-md-4" href="./vectors">
-
-### Vector Drawing
-
-paper.js
-
-</a>
-
-<a class="col-6 col-md-4" href="./animation">
-
-### Animation
-
-p5.js
-
-</a>
-
-<a class="col-6 col-md-4" href="./text">
-
-### Generating Text
-
-javascript + html
-
-</a>
-
-<a class="col-6 col-md-4" href="./sound">
-
-### Comp Sound
-
-p5.js + p5.sound
-
-</a>
-
-<a class="col-6 col-md-4" href="./music">
-
-### Comp Music
-
-tone.js
-
-</a>
-
-<a class="col-6 col-md-4" href="./3D">
-
-### 3D Forms
-
-OpenSCAD
-
-</a>
-
-<a class="col-6 col-md-4" href="./microgames">
-
-### Microgames
-
-p5.js + p5.play
-
-</a>
-
-<!--
-
-<a class="col-6 col-md-4" href="./#">
-
-### Realtime Video
-Vuo
-
-</a>
- -->
-
-</div>
-</div>
-<!-- /Inner -->
-</div>
-<!-- /Outer -->
+[**Microgames** p5.js + p5.play](./microgames)
 
 ## Class Resources
 
-<div class="row class-resources">
-
-<div class="col-8 col-md-3 overview">
 Syllabi, schedules, and lesson plans for the Computational Form class.
-</div>
 
-<div class="col-12 col-md-6">
-<div class="row">
-<a class="col-6 col-md-6" href="https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4">Spring 2021 Class Notes</a>
-<a class="col-6 col-md-6" href="http://sketches2021spring.compform.net/">Sketch Book</a>
-<a class="col-6 col-md-6" href="./2020fall">Fall 2020 Class Notes</a>
-<a class="col-6 col-md-6" href="http://sketches2020fall.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" href="./2020">Spring 2020 Class Notes</a>
-<a class="col-6 col-md-6" href="http://sketches2020.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" href="./2019">Spring 2019 Class Notes</a>
-<a class="col-6 col-md-6" href="http://sketches2019.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" href="./2018">Spring 2018 Class Notes</a>
-<a class="col-6 col-md-6" href="http://sketches2018.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" href="http://2017.compform.net/">Spring 2017 Class Notes</a>
-<a class="col-6 col-md-6" href="http://sketches.compform.net">Sketch Book</a>
-<a class="col-6 col-md-6" href="http://psam3060-d-s16.github.io/class_notes/">Spring 2016 Class Notes</a>
-<a class="col-6 col-md-6" href="http://compform.tumblr.com/">Sketch Book</a>
-</div>
-</div>
+Spring 2021
+: [Class Notes](https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4)
+: [Sketch Book](http://sketches2021spring.compform.net/)
 
-</div>
+Fall 2020
+: [Class Notes](./2020fall)
+: [Sketch Book](http://sketches2020fall.compform.net)
 
-<style>
-    
+Spring 2020
+: [Class Notes](./2020)
+: [Sketch Book](http://sketches2020.compform.net)
 
-.class-resources .row > a,
-.class-resources .row > a:hover {
-    margin-bottom: .75em;
-    font-weight: normal;
-}
-.class-resources .row > a:hover {
-    text-decoration: underline;
-}
-.top {
-    /* border: 1px solid red; */
-    padding: 0;
-    font-size: 14px;
-}
+Spring 2019
+: [Class Notes](./2019)
+: [Sketch Book](http://sketches2019.compform.net)
 
+Spring 2018
+: [Class Notes](./2018)
+: [Sketch Book](http://sketches2018.compform.net)
 
+Spring 2017
+: [Class Notes](http://2017.compform.net/)
+: [Sketch Book](http://sketches.compform.net)
 
-</style>
+Spring 2016
+: [Class Notes](http://psam3060-d-s16.github.io/class_notes/)
+: [Sketch Book](http://compform.tumblr.com/)
