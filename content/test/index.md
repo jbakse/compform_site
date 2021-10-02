@@ -13,7 +13,7 @@ next: false
 next_url: false
 ---
 
-# Core Layout
+## Core Layout
 
 block-base {tint}
 
@@ -23,7 +23,7 @@ block-wide {tint wide}
 
 block-full {tint full}
 
-# Columns
+## Columns
 
 <div class="columns">
 <div>
@@ -72,7 +72,7 @@ I'm just some ordinary content. Just taking up some space for the demo.
 </div>
 </div>
 
-# Includes
+## Includes
 
 You can include Markdown files from Markdown files. Markdown files that start with `_` won't be processed as top level pages.
 
@@ -80,7 +80,7 @@ You can use relative paths for include files and included files can include file
 
 {% include ./_include_me.md %}
 
-# Markdown-it
+## Markdown-it
 
 ### linkify: true
 
@@ -109,8 +109,9 @@ You can wrap markdown in a `<div></div>`. Include a blank line at the top and bo
 | A   | B   | C   |
 | --- | --- | --- |
 | 1   | 2   | 3   |
+| x   | y   | z   |
 
-# Markdown-it Plugins
+## Markdown-it Plugins
 
 ### markdown-it-anchor
 
@@ -132,19 +133,14 @@ Term 1
 Term 2
 : Definition Two
 
-# Basic Copy
+## Basic Copy
 
-## h2
+He could see the tall, peeling yellow building at the periphery of his range of vision. But something about it struck him as strange. A shimmer, an unsteadiness, as if the building faded forward into stability and then retreated into insubstantial uncertainty. An oscillation, each phase lasting a few seconds and then blurring off into its opposite, a fairly regular variability as if an organic pulsation underlay the structure. As if, he thought, it's alive.
 
-## h2 plain{plain}
-
-### h3
-
-#### h4
-
-Paragraphs with ~~strike~~, _italic_, **bold**, `code`, and [links](#links).
+~~strike~~, _italic_, **bold**, `code`, [links](#links).
 
 > Blockquotes.
+>
 > nobody{attrib}
 
 - lists
@@ -160,9 +156,25 @@ Paragraphs with ~~strike~~, _italic_, **bold**, `code`, and [links](#links).
 1. continue
    {continue}
 
----
+Definition Lists
+: are
+: supported
 
-# Content Classes
+## Headers
+
+Don't use H1s. There should only be one h1 per page. Its in the masthead.
+
+Use h2 (like above) for the major sections. They will be numbered. You can hide the number with `{plain}`.
+
+### h3 for sub sections
+
+Use h3 to devide larger sections.
+
+#### h4 for details
+
+Use h4s sparingly. Two levels (h2 and h3) is usually detailed enough for sectioning.
+
+## Content Classes
 
 ### callouts
 
@@ -194,15 +206,7 @@ This is a wide callout.{callout wide}
 
 You can stick links in a sidebar. They appear in the column on narrow screens.
 
-# Modifier Classes
-
-### bigger and biggest
-
-This is some text.
-
-This is some bigger text.{bigger}
-
-This is some biggest text.{biggest}
+## Modifier Classes
 
 ### center
 
@@ -212,13 +216,15 @@ This is some centered text.{center}
 
 This is some caption text.{caption}
 
-# Activities, Assignments, Discussions
+## Activities, Assignments, Discussions
 
 <div class="activity">
 
 ## Example Activity
 
-This is an example.
+This is an example activity provided as an example of what activities look like.
+
+This is an example activity provided as an example of what activities look like on the page. This is an example activity provided as an example of what activities look like.
 
 ### This is an example.
 
@@ -246,29 +252,24 @@ This is an example.
 
 </div>
 
-# Images
+## Images
 
 `.jpg`, `.png`, and `.svg` files are copied over
 ![Make Things that Make Things](./figures/make_things.png)
 
-### 100%
+### Basic Image
+
+Basic images are centered and shown 100%
 
 ![cross](./figures/cross.png)
-
-### scale up
-
-![cross](./figures/cross.png){scale}
-
-### show pixels
-
-![cross](./figures/cross.png){scale pixel}
 
 ### two-up
 
 <div class="two-up pad">
 
-![Make Things that Make Things](./figures/make_things.png)
-![Make Things that Make Things](./figures/make_things.png)
+![cross](./figures/cross.png)This is a caption.{scale}
+
+![cross](./figures/cross.png)scale+pixel{scale pixel}
 
 </div>
 
@@ -276,31 +277,21 @@ This is an example.
 
 <div class="three-up wide">
 
+![Make Things that Make Things](./figures/make_things.png)captions work in two-up and three-up
+
 ![Make Things that Make Things](./figures/make_things.png)
-![Make Things that Make Things](./figures/make_things.png)
+
 ![Make Things that Make Things](./figures/make_things.png)
 
 </div>
 
-### three-up + figure
-
-<div class="three-up">
-
-![Make Things that Make Things](./figures/make_things.png)Make{figure}
-
-![Make Things that Make Things](./figures/make_things.png)Things{figure}
-
-![Make Things that Make Things](./figures/make_things.png)!!!!{figure}
-
-</div>
-
-# Slides
+## Slides
 
 {% slides %}
 {% include ./test_slides.yaml %}
 {% endslides %}
 
-# Spoilers
+## Spoilers
 
 <div class="spoiler" >
 
@@ -312,7 +303,7 @@ This is a spoiler.
 
 </div>
 
-# Javascript
+## Javascript
 
 ## Code Blocks w/ Syntax Highlight
 

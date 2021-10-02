@@ -1,22 +1,4 @@
 .comp-form .comp-form-copy {
-  .caption {
-    font-size: 0.8em;
-    font-style: italic;
-    margin-top: 0.5em;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  /* links */
-  // .links>p>a,
-  // {
-  //     border: 1px solid $middle-grey;
-  //     padding: 5px 10px;
-  //     display: block;
-  //     width: max-content;
-  // }
   .boxed a {
     border: 1px solid $middle-grey;
     padding: 5px 10px;
@@ -70,13 +52,6 @@
       margin: 0 15px 0 0;
     }
   }
-
-  // .links-sidebar > *:first-child {
-  //   margin-top: 0;
-  // }
-  // .links-sidebar > *:last-child {
-  //   margin-bottom: 0;
-  // }
 
   /* callout */
   .callout {
@@ -136,6 +111,7 @@
 
     > h2:first-child {
       margin-top: 0;
+      padding: 0;
       text-align: center;
       color: $dark-grey;
 
@@ -145,13 +121,19 @@
       letter-spacing: 0.37px;
 
       text-transform: none;
+      position: relative;
     }
 
     > h2:first-child::before {
       content: "activity";
       display: block;
-      margin-bottom: 25px;
 
+      width: 100%;
+      margin: 0;
+      position: relative;
+      top: -10px;
+
+      text-align: center;
       font-size: 10px;
       letter-spacing: 2.41px;
 
@@ -245,6 +227,7 @@
   .tint {
     background-color: $light-grey;
   }
+
   .pad {
     @include block-pad;
   }
@@ -260,10 +243,16 @@
   .bigger {
     font-family: "Miriam Libre";
     font-size: 1.2em;
+    background: red;
   }
 
   .biggest {
     font-family: "Miriam Libre";
     font-size: 1.5em;
+    background: red;
+  }
+
+  .center {
+    text-align: center;
   }
 }
