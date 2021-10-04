@@ -3,43 +3,39 @@
 @nikki- open graph images https://www.opengraph.xyz/
 
 
-
-.- responsive breakpoints for main layout
-- simplify the h1, h2 css, also consider how margins should work in columns, etc.
-.- links sidebar
-  .- responsive
-.- column support
-  .- responsive
-.- fix 2up 3up
-  .- responsive
 - jslab/show
-  .- page layout
   - internal layout responsive
   - look at jsshow in context, should it center?
 
-- use variables for column and sidebar widths and breakpoints
-.- i took out `no-margin` which strat used to slightly outpad 3up images. maybe support that design with another class?
-- pre/code
-  .- code in a column is weird
-  - pre/code is kind of weird anyway. negative margin hack?
-    - its seems to be working. low priority
+- js
+  - audit and fix
 
-.- review jason's ports and 11ty extensions
-.- make sure tables work in the new build system
-.- combine lab and show builder
-  - nah
-.- compform_plain.pug needs update
-.- cover is kinda borked.
-  .- cover needs new column layout approach
-- cover needs new design for course material
-- class notes pages are borked!
-.- do non index.md pages work? like sound_and_light in sound
-.- remove jquery from template?
-- scrub ":::" still being used on plan pages, etc
-- maybe move the 20xx folders into a `course` or `plan` subfolder. just break the urls! probably not referenced much
-  - https://docs.netlify.com/routing/redirects/
+- css new
+  - figma
+    - new carousel
+    - update coding challenges
+    - new sidebar links
+    - spoiler
+    
+  - cover needs new design for course material
+  - class notes pages css are borked!
 
-  - lets get rid of {bigger} and {biggest}
+- css improve
+
+  - use variables for column and sidebar widths and breakpoints
+  - pre/code
+    - pre/code is kind of weird anyway. negative margin hack?
+      - its seems to be working. low priority
+
+
+- eleventy
+  - maybe move the 20xx folders into a `course` or `plan` subfolder. just break the urls! probably not referenced much
+    - https://docs.netlify.com/routing/redirects/
+
+
+- markdown
+  - scrub ":::" still being used on plan pages, etc
+  - scrub {bigger} and {biggest} from md
 
 # bugs
 

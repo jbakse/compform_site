@@ -1,41 +1,29 @@
 #hero {
   h1 {
-    font-family: "Miriam Libre";
-    font-weight: bold;
+    @include font-title;
     font-size: 36px;
-    color: $dark-grey;
-    letter-spacing: 0.56px;
     text-transform: uppercase;
   }
 
   h6 {
-    font-family: "Miriam Libre";
-    font-weight: bold;
+    @include font-title;
     font-size: 10px;
-    color: $dark-grey;
-    letter-spacing: 0.04px;
     margin-top: 50px;
     padding-bottom: 3px;
-    border-bottom: 1px solid $middle-grey; //rgba($dark-grey, .5);
+    border-bottom: 1px solid $middle-grey;
   }
 
   .overview {
-    font-family: "Miriam Libre";
-    font-weight: bold;
+    @include font-title;
     font-size: 30px;
-    color: $dark-grey;
-    letter-spacing: 0.31px;
-    line-height: 54px;
+    line-height: 1.8;
     margin-top: 32px;
     margin-bottom: 80px;
   }
 
   .tools {
-    font-family: "Miriam Libre";
-    font-weight: light;
+    @include font-title;
+    font-weight: normal;
     font-size: 24px;
-    color: $dark-grey;
-    letter-spacing: 0.31px;
-    line-height: 54px;
   }
 }

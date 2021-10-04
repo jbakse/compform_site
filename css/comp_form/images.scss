@@ -47,4 +47,13 @@
   .figure {
     background-color: red;
   }
+
+  @media screen and (max-width: $breakpoint-1) {
+    .two-up {
+      grid-template-columns: 1fr;
+    }
+    .three-up {
+      grid-template-columns: 1fr;
+    }
+  }
 }
