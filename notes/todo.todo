@@ -9,14 +9,17 @@
 
 - js
   - audit and fix
+  - bring glider in to project off cdn
 
 - css new
   - figma
-    - new carousel
+    .- new carousel
     .- spoiler
-    
+
   - cover needs new design for course material
   - class notes pages css are borked!
+
+- get rid of {caption} modifier?
 
 - css improve
   - the spoiler is a little lame, but i don't want to put markup for the spoiler box in the md. maybe an 11ty component, maybe web component.
