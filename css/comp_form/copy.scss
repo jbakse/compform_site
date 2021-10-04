@@ -159,7 +159,7 @@
   ul,
   ol {
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 40px;
     margin-bottom: 1.5em;
   }
 
@@ -172,10 +172,10 @@
   ul > li:before,
   ol > li:before {
     position: absolute;
-    margin-left: -50px;
+    margin-left: -40px;
     margin-right: 30px;
     width: 30px;
-    text-align: right;
+    // text-align: right;
   }
 
   ul > li:before {

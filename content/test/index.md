@@ -198,9 +198,9 @@ This is a wide callout.{callout wide}
 
 <div class="links-sidebar">
 
-[sidebar link 1](#)
+[**Programming Paradigms** Wikipedia](#)
 
-[sidebar link 2](#)
+[**4 Talks in 40 Minutes** Coding Tech](#)
 
 </div>
 
@@ -236,9 +236,13 @@ This is an example.
 
 ## Example Assignment
 
-This is an example.
+Practice coding by modifying the examples above as described.
 
-This is an example.
+### Modify the Triangle Example{difficulty}
+
+1. Draw a pentagon{easy}
+1. Draw an octogon{medium}
+1. Draw a circle{hard}
 
 </div>
 
@@ -295,11 +299,11 @@ Basic images are centered and shown 100%
 
 <div class="spoiler" >
 
-### Spoiler
+### I'm a secret!
 
-This is a spoiler.
+Shh. Don't tell any students.
 
-This is a spoiler.
+Keep it secret.
 
 </div>
 

@@ -13,15 +13,14 @@
 - css new
   - figma
     - new carousel
-    - update coding challenges
-    - new sidebar links
-    - spoiler
+    .- spoiler
     
   - cover needs new design for course material
   - class notes pages css are borked!
 
 - css improve
-
+  - the spoiler is a little lame, but i don't want to put markup for the spoiler box in the md. maybe an 11ty component, maybe web component.
+  - update coding challenges difficulty bullets don't have the gray ghosts
   - use variables for column and sidebar widths and breakpoints
   - pre/code
     - pre/code is kind of weird anyway. negative margin hack?

@@ -1,5 +1,23 @@
 console.log("Hello, Comp Form!");
 
+function ready(cb) {
+  if (document.readyState != "loading") {
+    cb();
+  } else {
+    document.addEventListener("DOMContentLoaded", cb);
+  }
+}
+
+ready(main);
+
+function main() {
+  var spoilers = document.getElementsByClassName("spoiler");
+  console.log(spoilers);
+  for (const spoiler of spoilers) {
+    spoiler.addEventListener("click", () => spoiler.classList.add("reveal"));
+  }
+}
+
 // $(main);
 
 // function main() {
