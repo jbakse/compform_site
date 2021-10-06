@@ -1,4 +1,4 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
 
 console.log("hello, grass");
 
@@ -28,14 +28,14 @@ function draw() {
 
 function drawGrass(left, top, width, height) {
   // loop from the left to the right, one pixel per step
-  for (var x = left; x < left + width; x++) {
+  for (let x = left; x < left + width; x++) {
     // x and y are the base of the blade of grass
-    var y = top + height;
+    let y = top + height;
 
     // height of the grass
     // pick lowest of three "rolls" to bias strongly towards short blades
     // with occasional long ones
-    var bladeHeight = min(
+    let bladeHeight = min(
       random(0, height),
       random(0, height),
       random(0, height)
@@ -44,7 +44,7 @@ function drawGrass(left, top, width, height) {
 
     // horizontal offset of top of blade relative to base
     // average two "rolls" to bias towards middle
-    var bladeLean = (random(-1, 1) + random(-1, 1)) * 0.5;
+    let bladeLean = (random(-1, 1) + random(-1, 1)) * 0.5;
 
     // scale lean by height so that shorter blades aren't more leany
     bladeLean = bladeLean * bladeHeight;

@@ -1,4 +1,4 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -11,18 +11,12 @@ function setup() {
 function draw() {
   background(50, 50, 70);
 
-  // fill(150, 150, 150);
-  // drawRow(height * 0.5 - 30);
-
-  // fill(200, 200, 200);
-  // drawRow(height * 0.5 - 15);
-
   fill(250, 250, 250);
   drawRow(height * 0.5);
 }
 
 function drawRow(y) {
-  var x = 0;
+  let x = 0;
   while (x < width) {
     drawObject(x, y);
     x += 15;
@@ -30,7 +24,7 @@ function drawRow(y) {
 }
 
 function drawObject(x, y) {
-  var r = random(100);
+  let r = random(100);
   if (r < 10) {
     drawGrass(x, y);
   } else if (r < 70) {
@@ -62,7 +56,7 @@ function drawTree(x, y) {
 
 function drawSpruceTree(x, y) {
   drawGrass(x, y);
-  var height = floor(min(random(1, 4), random(1, 4)));
+  let height = floor(min(random(1, 4), random(1, 4)));
 
   height = height * 5;
 

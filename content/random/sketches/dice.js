@@ -1,7 +1,7 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
 
-var generatedNumber = null;
-var buckets = [];
+let generatedNumber = null;
+const buckets = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 function generateNumber() {
   // even distribution
@@ -33,16 +33,6 @@ function generateNumber() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textSize(16);
-  buckets[0] = 0;
-  buckets[1] = 0;
-  buckets[2] = 0;
-  buckets[3] = 0;
-  buckets[4] = 0;
-  buckets[5] = 0;
-  buckets[6] = 0;
-  buckets[7] = 0;
-  buckets[8] = 0;
-  buckets[9] = 0;
 }
 
 function draw() {
@@ -61,9 +51,9 @@ function drawBuckets() {
   for (i = 0; i < buckets.length; i++) {
     text(i, 10 + 20 * i, height - 10);
 
-    var barLeft = 10 + 20 * i;
-    var barBottom = height - 30;
-    var barHeight = buckets[i] * 15;
+    let barLeft = 10 + 20 * i;
+    let barBottom = height - 30;
+    let barHeight = buckets[i] * 15;
 
     rect(barLeft, barBottom, 15, -barHeight);
   }
@@ -72,7 +62,6 @@ function drawBuckets() {
 function mouseReleased() {
   // pick a number
   generatedNumber = generateNumber();
-  // console.log("Generated: ", generatedNumber);
 
   // increment the bucket that number falls into
   buckets[floor(generatedNumber)] += 1;

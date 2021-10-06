@@ -1,5 +1,5 @@
 function makeBarChart(_id, _labels, _values) {
-  var myChart = new Chart(_id, {
+  let myChart = new Chart(_id, {
     type: "bar",
     data: {
       labels: _labels,

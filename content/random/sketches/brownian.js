@@ -1,28 +1,26 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  noLoop();
 
+  noLoop();
   noStroke();
-  fill(255, 255, 255);
+  noFill();
 }
 
 function draw() {
-  background(40, 40, 40);
+  background(40);
 
-  fill(220, 220, 220);
-
-  stroke(220, 220, 220);
+  stroke("white");
   drawBrownianPath(width * 0.5, height * 0.5, 10, 1000);
 
-  stroke(255, 0, 0);
+  stroke("red");
   drawBrownianPath1D(0, height * 0.5, 3, 5, 1000);
 }
 
 function drawBrownianPath(x, y, segmentLength, steps) {
-  for (var step = 0; step < steps; step++) {
-    var nextX, nextY;
+  for (let step = 0; step < steps; step++) {
+    let nextX, nextY;
 
     ////////////////////////////////////////////////////////////////////
     // even distribution
@@ -47,7 +45,7 @@ function drawBrownianPath(x, y, segmentLength, steps) {
 
     ////////////////////////////////////////////////////////////////////
     // 9 ways grid
-    // var rX = random();
+    // let rX = random();
     // if (rX < 0.33) {
     // 	nextX = x - segmentLength;
     // } else if (rX < 0.66) {
@@ -56,7 +54,7 @@ function drawBrownianPath(x, y, segmentLength, steps) {
     // 	nextX = x;
     // }
 
-    // var rY = random();
+    // let rY = random();
     // if (rY < 0.33) {
     // 	nextY = y - segmentLength;
     // } else if (rY < 0.66) {
@@ -79,8 +77,8 @@ function drawBrownianPath(x, y, segmentLength, steps) {
 }
 
 function drawBrownianPath1D(x, y, stepX, stepY, steps) {
-  for (var step = 0; step < steps; step++) {
-    var nextX, nextY;
+  for (let step = 0; step < steps; step++) {
+    let nextX, nextY;
 
     ////////////////////////////////////////////////////////////////////
     // even distribution
