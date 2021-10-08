@@ -43,7 +43,9 @@ Primitives
 _Primitives are atomic: they are the smallest units of composition and are not further broken down._
 
 <div class="callout">
+
 If you are already familiar with the idea of _design patterns_, my use of the term _tactics_ will sound familiar. I am using _tactics_ to talk of a broader category which includes individual design patterns but also other specific reusable ideas that wouldn't count as design patterns.
+
 </div>
 
 ### Building a Toolbox
