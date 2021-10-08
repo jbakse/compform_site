@@ -59,6 +59,10 @@ Most programming languages are themselves text-based. Programs that generate pro
 
 ## Examples of Computational Text
 
+{% slides %}
+{% include ./slides.yaml %}
+{% endslides %}
+
 ### Content Generators
 
 [Subreddit Simulator](https://www.reddit.com/r/SubredditSimulator/), [Explanation](https://www.reddit.com/r/SubredditSimulator/comments/3g9ioz/what_is_rsubredditsimulator/)

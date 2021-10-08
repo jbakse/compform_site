@@ -1,0 +1,37 @@
+- artist: Alison Knowles
+  title: The House of Dust
+  image: https://zkm.de/sites/default/files/styles/r17_1280/public/bild/MNK_01135_01134_knowles_house-of-dust_001.jpg
+  comments: One of the earliest examples of a computerized poem.
+  links:
+    - label: Artist's Site
+      href: https://www.aknowles.com/
+    - label: Recreated Poem by Nick Montfort
+      href: https://nickm.com/memslam/a_house_of_dust.html
+
+- artist: Allison Parrish
+  title: A Reflection
+  image: ./slides/allison_parrish_01.png
+  comments: A computer-generated prose poem created from stitched-together scraps of text from every English Wikipedia page that was linked from the page for <i>Mirror</i>.
+  links:
+    - label: A Reflection
+      href: https://empathyloading.com/content/4-reading-room/1-a-reflection-2020/allisonparrish_areflection_2020.pdf
+    - label: Artist's Site
+      href: https://www.decontextualize.com/
+
+- artist: Allison Parrish
+  title: Nonsense Laboratory
+  image: https://storage.googleapis.com/gweb-experiments.appspot.com/2207-nonsense%20lab%20menu%20169.png
+  comments: A series of playful tools for manipulating the way words sound and are spelled with machine learning.
+  links:
+    - label: Nonsense Laboratory
+      href: https://artsexperiments.withgoogle.com/nonsense-laboratory/
+    - label: Artist's Site
+      href: https://www.decontextualize.com/
+
+- artist: Arwa Mboya
+  title: Someone Tell the Boyz
+  image: https://pbs.twimg.com/media/E-twTvJX0A4CPba.png
+  comments: Using AI to generate strings of text from works by bell hooks, Simone de Beauvoir, Betty Friedan, and Audre Lorde.
+  links:
+    - label: Someone Tell the Boyz
+      href: https://generative-unfoldings.mit.edu/works/someonetellboys/view.html

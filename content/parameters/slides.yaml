@@ -50,3 +50,13 @@
   links:
     - label: elsy
       href: http://www.plastaq.com/elsy/
+
+- artist: Peter Biľak
+  title: The Q Project
+  image: ./slides/peter_bilak.png
+  comments: A game-like type system that enables users to create a nearly infinite number of variations.
+  links:
+    - label: The Q Project
+      href: https://www.typotheque.com/fonts/q
+    - label: Artist's Site
+      href: https://peterbilak.com/
