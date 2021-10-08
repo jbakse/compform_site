@@ -1,7 +1,6 @@
 ---
 title: Light and Sound
 layout: compform_plain.pug
-debug: false
 ---
 
 ### Preamble

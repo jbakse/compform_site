@@ -1,291 +1,330 @@
-.comp-form-copy {
+.comp-form .comp-form-copy {
+  /* boxed-links */
 
-    /* util */
-    .no-margin {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
+  .boxed a {
+    border: 1px solid $middle-grey;
+    padding: 5px 10px;
+    display: block;
+    width: max-content;
+    margin-bottom: 10px;
+  }
 
-    .full-width {
-        @include full-width;
-    }
+  .boxed.download a:before,
+  .boxed.down a:before {
+    content: "\f063";
+    font-family: FontAwesome;
+    margin-right: 0.5em;
+  }
 
-    .underline {
-        border-bottom: 1px solid $middle-grey;
-    }
+  .boxed.right a:before {
+    content: "\f061";
+    font-family: FontAwesome;
+    margin-right: 0.5em;
+  }
 
-    .bigger {
-        font-family: "Miriam Libre";
-        font-size: 1.2em;
-    }
+  /* links-sidebar */
 
-    .biggest {
-        font-family: "Miriam Libre";
-        font-size: 1.5em;
-    }
+  // layout
+  .links-sidebar {
+    @include sidebar;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .caption {
-        font-size: .8em;
-        font-style: italic;
-        margin-top: .5em;
-    }
+  .links-sidebar > * {
+    margin: 0 0 30px 0;
+    position: relative;
+  }
 
-
-
-    .center {
-        text-align: center;
-    }
-
-    /* half */
-    .columns {
-        @include clearfix;
-    }
-
-    .clear {
-        clear: both;
-    }
-
-
-    @include media-breakpoint-up(sm) {
-
-        .half {
-            box-sizing: border-box;
-            width: calc((100% - 30px)/2);
-
-            display: block;
-            float: left;
-            margin-right: 30px;
-        }
-
-        .half+.half {
-            margin-right: 0;
-        }
-
-        .half+.half+* {
-            clear: both;
-        }
-    }
-
-
-    /* links */
-    // .links>p>a,
-    // {
-    //     border: 1px solid $middle-grey;
-    //     padding: 5px 10px;
-    //     display: block;
-    //     width: max-content;
-    // }
-    .boxed a {
-        border: 1px solid $middle-grey;
-        padding: 5px 10px;
-        display: block;
-        width: max-content;
-        margin-bottom: 10px;
-    }
-
-    .boxed.download a:before,
-    .boxed.down a:before {
-        content: "\f063";
-        font-family: FontAwesome;
-        margin-right: .5em;
-    }
-
-    .boxed.right a:before {
-        content: "\f061";
-        font-family: FontAwesome;
-        margin-right: .5em;
-    }
-
-
-
-
-
-
-
-
-
-
-    /* links-sidebar */
+  @media screen and (max-width: $breakpoint-2) {
     .links-sidebar {
-        box-sizing: border-box;
-        margin-bottom: 15px;
-        @include clearfix;
+      flex-direction: row;
+      margin-top: 2em;
     }
-    .links-sidebar>p,
-        {
-
-        float: left;
-        margin-right: 15px;
-
-        &:hover {
-            background-color: $light-grey;
-        }
+    .links-sidebar > * {
+      margin: 0 45px 0 0;
     }
+  }
 
-    .links-sidebar>p>a,
-        {
+  .links-sidebar > * {
+    padding-left: 20px;
+  }
 
-        border: 1px solid $middle-grey;
-        padding: 5px 10px;
-        display: block;
+  // left line
+  .links-sidebar > *::before {
+    content: "";
+    position: absolute;
+    inset: 3px auto 3px 0px;
+    border: 2px solid
+      adjust-color($accent-color, $saturation: -50%, $lightness: 30%);
+    border-radius: 3px;
+  }
 
+  // font styling
+  .links-sidebar a {
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+  }
 
-        text-overflow: ellipsis;
-        word-wrap: break-word;
-        hyphens: auto;
+  .links-sidebar a strong {
+    display: block;
+    line-height: 1.3;
+
+    // white-space: nowrap;
+    // overflow-x: hidden;
+    // text-overflow: ellipsis;
+
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  // add line break
+  .links-sidebar a strong::after {
+    content: "\a";
+    white-space: pre-wrap;
+  }
+
+  // hover state
+  .links-sidebar a:hover {
+    background: none;
+  }
+  .links-sidebar a:hover strong {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+  }
+
+  /* callout */
+  .callout {
+    @include block-pad;
+    padding: 15px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    &:before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+      background-color: $light-grey;
+      z-index: -100;
     }
+  }
 
-    .links-sidebar>*:last-child {
-        margin-bottom: 0;
-    }
+  .callout > *:first-child {
+    margin-top: 0;
+  }
+  .callout > *:last-child {
+    margin-bottom: 0;
+  }
 
-    @include media-breakpoint-up(md) {
-        .links-sidebar {
+  .callout.error {
+    border-left: 3px solid red;
+    background-color: #fee;
+  }
+  .callout.warn {
+    border-left: 3px solid #fa0;
+    background-color: #fed;
+  }
 
-            position: absolute;
-            left: calc(100% + 15px);
-            width: calc(100% / 8 * 2 - 15px);
-        }
-        .links-sidebar>p {
-            float: none;
-            margin-right: 0;
-        }
-    }
+  /* activity assignment discussion*/
+  .activity,
+  .assignment,
+  .discussion {
+    @include block-full;
 
+    margin-top: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 
-    /* callout */
-    .callout {
-        padding: 15px;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        position: relative;
-        &:before {
-            content: "";
+    background-color: $light-grey;
+    border-top: 1px solid $middle-grey;
+    border-bottom: 1px solid $middle-grey;
 
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-
-            background-color: $light-grey;
-            z-index: -100;
-        }
-    }
-
-    .callout:not(.full-width) {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-
-    .callout *:last-child {
-        margin-bottom: 0;
-    }
-
-    .callout h3 {
-        margin-top: 0;
-
-    }
-
-    .callout.error {
-        border-left: 3px solid red;
-        background-color: #FEE;
-
-    }
-    .callout.warn {
-        border-left: 3px solid #FA0;
-        background-color: #FED;
-
-    }
-
-
-    /* activity */
-    .activity, .assignment, .discussion {
-        @include color-band($light-grey, $middle-grey);
-        @include clearfix;
-
-        margin-top: 90px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-
-        >h2:first-child {
-            margin-top: 0;
-            text-align: center;
-            color: $dark-grey;
-
-            font-family: "Miriam Libre";
-            font-weight: bold;
-            font-size: 26px;
-            letter-spacing: 0.37px;
-
-            text-transform: none;
-        }
-
-        >h2:first-child::before {
-            content: "activity";
-            display: block;
-            margin-bottom: 25px;
-
-            font-size: 10px;
-            letter-spacing: 2.41px;
-
-            text-transform: uppercase;
-        }
-
-        >h2:first-child+p {
-            text-align: center;
-            width: 300px;
-            margin: 35px auto 65px auto;
-
-
-            font-family: "Roboto";
-            font-weight: 300;
-            font-size: 14px;
-            letter-spacing: 0.31px;
-            line-height: 20px;
-        }
-
-        code {
-            // background-color: rgba(0, 0, 0, .1);
-        }
-
-
-        >h3 {
-            font-family: "Miriam Libre";
-            font-weight: bold;
-            font-size: 10px;
-            letter-spacing: 0.04px;
-
-            color: $dark-grey;
-
-            padding-bottom: 3px;
-            margin-top: 65px;
-            margin-bottom: 18px;
-
-            border-bottom: 0.5px solid $middle-grey;
-        }
-        .js-lab {
-            background: #CCC;
-            padding: 10px; // border: 10px solid #CCC;
-        }
+    // content item
+    > * {
+      @include block-base;
     }
 
-    .assignment {
-        >h2:first-child::before {
-            content: "assignment";
-        }
+    > h2:first-child {
+      margin-top: 0;
+      padding: 0;
+      text-align: center;
+      color: $dark-grey;
+
+      font-family: "Miriam Libre";
+      font-weight: bold;
+      font-size: 26px;
+      letter-spacing: 0.37px;
+
+      text-transform: none;
+      position: relative;
     }
 
-    .discussion {
-        >h2:first-child::before {
-            content: "discussion";
-        }
+    > h2:first-child::before {
+      content: "activity";
+      display: block;
+
+      width: 100%;
+      margin: 0;
+      position: relative;
+      top: -10px;
+
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 2.41px;
+
+      text-transform: uppercase;
     }
 
+    > h2:first-child + p {
+      text-align: center;
+      width: 300px;
+      margin: 35px auto 65px auto;
 
-
-    .embed {
-        width: 100%;
-        height: 500px;
+      font-family: "Roboto";
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0.31px;
+      line-height: 20px;
     }
+
+    > h3 {
+      font-family: "Miriam Libre";
+      font-weight: bold;
+      font-size: 10px;
+      letter-spacing: 0.04px;
+
+      color: $dark-grey;
+
+      padding-bottom: 3px;
+      margin-top: 65px;
+      margin-bottom: 18px;
+
+      border-bottom: 0.5px solid $middle-grey;
+    }
+    .js-lab {
+      background: #ccc;
+      padding: 10px; // border: 10px solid #CCC;
+    }
+
+    .difficulty {
+      position: relative;
+    }
+    .difficulty::after {
+      content: "Difficulty Level";
+      position: absolute;
+      right: 0;
+    }
+
+    .easy,
+    .medium,
+    .hard {
+      position: relative;
+      margin-bottom: 0.5em;
+      line-height: 36px;
+    }
+
+    .easy::after,
+    .medium::after,
+    .hard::after {
+      font-family: "Courier New", Courier, monospace;
+      letter-spacing: -0.15em;
+      position: absolute;
+      right: 0;
+      font-size: 30px;
+      line-height: 36px;
+
+      // width: 40px;
+    }
+    .easy::after {
+      content: "•" / "easy";
+    }
+    .medium::after {
+      content: "••" / "medium";
+    }
+    .hard::after {
+      content: "•••" / "hard";
+    }
+  }
+
+  .assignment {
+    > h2:first-child::before {
+      content: "assignment";
+    }
+  }
+
+  .discussion {
+    > h2:first-child::before {
+      content: "discussion";
+    }
+  }
+
+  /* spoilers */
+
+  div.spoiler {
+    position: relative;
+  }
+
+  div.spoiler::after {
+    position: absolute;
+    inset: 0;
+
+    box-sizing: border-box;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    @include font-copy;
+    color: white;
+    text-align: center;
+
+    content: "Spoiler!\AThis content is hidden for students in the Comp Form course.\A \A Click to reveal.";
+    white-space: pre-wrap;
+    font-size: 14px;
+
+    transition: opacity 0.5s;
+  }
+
+  div.spoiler.reveal::after {
+    opacity: 0;
+  }
+
+  /* util modifiers */
+  .tint {
+    background-color: $light-grey;
+  }
+
+  .pad {
+    @include block-pad;
+  }
+
+  .wide {
+    @include block-wide;
+  }
+
+  .full {
+    @include block-full;
+  }
+
+  .bigger {
+    font-family: "Miriam Libre";
+    font-size: 1.2em;
+    background: red;
+  }
+
+  .biggest {
+    font-family: "Miriam Libre";
+    font-size: 1.5em;
+    background: red;
+  }
+
+  .center {
+    text-align: center;
+  }
 }

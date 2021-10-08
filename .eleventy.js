@@ -7,7 +7,11 @@ module.exports = function (eleventyConfig) {
     typographer: true,
     quotes: "“”‘’",
   });
+  markdownLib.enable("linkify");
   markdownLib.enable("table");
+  markdownLib.enable("replacements");
+  markdownLib.enable("smartquotes");
+  markdownLib.enable("strikethrough");
   markdownLib.use(require("markdown-it-anchor"));
   markdownLib.use(require("markdown-it-classy"));
   markdownLib.use(require("markdown-it-deflist"));
@@ -33,16 +37,6 @@ module.exports = function (eleventyConfig) {
     require("./components/jsshow_builder.js")
   );
 
-  // eleventyConfig.addPairedShortcode(
-  //   "assignment",
-  //   require("./components/assignment_builder.js")
-  // );
-
-  // eleventyConfig.addPairedShortcode(
-  //   "links-sidebar",
-  //   require("./components/links-sidebar_builder.js")
-  // );
-
   eleventyConfig.addPairedShortcode(
     "slides",
     require("./components/slides_builder.js")
@@ -50,6 +44,12 @@ module.exports = function (eleventyConfig) {
 
   // syntax highlight
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
+
+  // have --serve watch for sass -> css recompile
+  // see: https://jkc.codes/blog/using-sass-with-eleventy/
+  eleventyConfig.setBrowserSyncConfig({
+    files: "./_site/css/**/*.css",
+  });
 
   // settings
   return {

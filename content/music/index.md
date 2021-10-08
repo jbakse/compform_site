@@ -1,7 +1,6 @@
 ---
 title: Music
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Music
 description: Music is organized sound. This chapter covers some specific tactics for generating a short piece of music.

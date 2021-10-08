@@ -1,7 +1,7 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
 
-var values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var position = 0;
+let values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+let position = 0;
 
 function setup() {
   createCanvas(1200, 200);
@@ -10,7 +10,7 @@ function setup() {
   noStroke();
   fill(255, 255, 255);
 
-  values = shuffle(values);
+  deck = shuffle(deck);
 
   noLoop();
 }
@@ -63,14 +63,14 @@ function pickHeight() {
 
 function valueFromDeck() {
   // find the value at the current position in the deck
-  var v = values[position];
+  let v = deck[position];
 
   // change the position for next time
   position++;
 
   // if we run out of "cards", shuffle and start over from the top
   if (position > 9) {
-    values = shuffle(values);
+    deck = shuffle(deck);
     position = 0;
   }
 

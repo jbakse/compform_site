@@ -1,0 +1,59 @@
+.comp-form .comp-form-copy {
+  img,
+  svg,
+  video {
+    display: block; // margin-bottom: 15px;
+    max-width: 100%; // border: 10px solid $dark-grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .scale img {
+    width: 100%;
+  }
+
+  .pixel img {
+    image-rendering: pixelated;
+  }
+
+  .two-up,
+  .three-up {
+    font-size: 0.8em;
+    font-style: italic;
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    p,
+    img {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
+  .two-up {
+    grid-template-columns: 1fr 1fr;
+  }
+  .three-up {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .figure {
+    background-color: red;
+  }
+
+  @media screen and (max-width: $breakpoint-1) {
+    .two-up {
+      grid-template-columns: 1fr;
+    }
+    .three-up {
+      grid-template-columns: 1fr;
+    }
+  }
+}

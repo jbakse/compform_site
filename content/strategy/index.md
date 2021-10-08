@@ -1,7 +1,6 @@
 ---
 title: Strategies
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Point Placing Strategies
 description: Building a complex procedural generation system requires analyzing your problem and creating a strategy for solving it. Explore tactics and strategies for placing points on a square.
@@ -203,7 +202,7 @@ y = random() * height;
 
 This is a quick, effective, and straightforward way to lay points down. In theory, since the placement is random, all of the points might be placed in a clump or on one half of the square. In practice, the points are mostly evenly distributed over the plane, with some areas a little more or less dense.
 
-![random placement](figures/random.png){three-up no-margin}
+![random placement](figures/random.png){three-up}
 
 #### Grid Placement
 
@@ -219,7 +218,7 @@ for (row = 0; row < grid_rows; row++) {
 }
 ```
 
-![grid placement](figures/grid.png){three-up no-margin}
+![grid placement](figures/grid.png){three-up}
 
 #### Noise Placement
 
@@ -236,7 +235,7 @@ y = noise(i * frequency, 1000) * h;
 ```
 
 ![noise placement](figures/noise_low.png)
-![noise placement](figures/noise_high.png){three-up no-margin}
+![noise placement](figures/noise_high.png){three-up}
 
 #### Proximity Cull Placement
 
@@ -244,7 +243,7 @@ Place points randomly, but reject a point if it is too close to an existing poin
 
 ![cull placement 1](figures/cull_placement_1.svg)
 ![cull placement 2](figures/cull_placement_2.svg)
-![cull placement 3](figures/cull_placement_3.svg){three-up no-margin}
+![cull placement 3](figures/cull_placement_3.svg){three-up}
 
 <div class="links-sidebar">
 
@@ -262,7 +261,7 @@ This technique allows mixing of handmade and procedural design.
 
 ![stamp placement 1](figures/tile_1.svg)
 ![stamp placement 2](figures/tile_2.svg)
-![stamp placement 3](figures/tile_3.svg){three-up no-margin}
+![stamp placement 3](figures/tile_3.svg){three-up}
 
 ### Moving the Points
 
@@ -277,7 +276,7 @@ x = x + random() * width;
 y = y + random() * height;
 ```
 
-![noise placement](figures/random_displacement.png){three-up no-margin}
+![noise placement](figures/random_displacement.png){three-up}
 
 #### Noise Displacement
 
@@ -291,7 +290,7 @@ x = x + noise(i * frequency, 0) * amount;
 y = x + noise(i * frequency, 1000) * amount;
 ```
 
-![noise placement](figures/noise_displacement.png){three-up no-margin}
+![noise placement](figures/noise_displacement.png){three-up}
 
 #### Relaxation Displacement
 
@@ -303,7 +302,7 @@ Find pairs of points that are near each other. Move them towards or away from ea
 
 ![relax displacement 1](figures/relax_1.svg)
 ![relax displacement 2](figures/relax_2.svg)
-![relax displacement 3](figures/relax_3.svg){three-up no-margin}
+![relax displacement 3](figures/relax_3.svg){three-up}
 
 #### Noise Culling
 
@@ -311,7 +310,7 @@ Sample noise based on the location of the point. Use the sampled value to determ
 
 ![noise cull 1](figures/noise_cull_1.svg)
 ![noise cull 2](figures/noise_cull_2.svg)
-![noise cull 3](figures/noise_cull_3.svg){three-up no-margin}
+![noise cull 3](figures/noise_cull_3.svg){three-up}
 
 In the example above, points are removed if the corresponding noise value is too low (dark). This results in patches or islands of dots.
 

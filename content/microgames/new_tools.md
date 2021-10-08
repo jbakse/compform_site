@@ -1,7 +1,6 @@
 ---
 title: Approaching Libraries
 layout: compform_plain.pug
-debug: false
 ---
 
 ## Approaching Libraries

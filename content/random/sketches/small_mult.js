@@ -1,4 +1,4 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -13,8 +13,8 @@ function draw() {
 
   fill(90, 50, 80);
 
-  var rows = height / 50;
-  var cols = width / 50;
+  let rows = height / 50;
+  let cols = width / 50;
 
   for (row = 0; row < rows; row++) {
     for (col = 0; col < rows; col++) {
@@ -23,10 +23,10 @@ function draw() {
   }
 }
 
-var brownianRadius = 25;
+let brownianRadius = 25;
 
 function drawThing(x, y) {
-  var radius;
+  let radius;
 
   // even
   radius = random(0, 50);
@@ -42,7 +42,7 @@ function drawThing(x, y) {
 
   ////////////////////////////////////////////////////////////////////
   // curated sizes
-  // var r = random(100);
+  // let r = random(100);
   // if (r < 10) {
   // 	radius = 10;
   // } else if (r < 95) {

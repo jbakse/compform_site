@@ -1,7 +1,6 @@
 ---
 title: Introduction
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Introduction
 description: Using a computer to explore aesthetics is a powerful creative process. This class explores a variety of tools and techniques for creating algorithmic images, generative art, parametric designs, and procedurally generated content.
@@ -71,7 +70,7 @@ Yes, these instructions will go on forever. I'll interrupt you in a minute.
 
 In this class, we will make things that make things. We will **explore** a variety of programming languages, tools, and methods. We will **create** a variety of forms: graphics, sounds, videos, animations, even 3D-printed objects. The primary goals of this class are to introduce **new ways of making** and to encourage **aesthetic investigation**.
 
-![Make Things that Make Things](./figures/make_things.png){full-width}
+![Make Things that Make Things](./figures/make_things.png){wide}
 
 We'll work in Javascript most weeks, using a variety of libraries including p5.js, paper.js, and tone.js. We'll also look at some other languages and tools, like OpenSCAD. As we go we'll examine the differences between these tools and how these tools influence what we make.
 
@@ -109,7 +108,7 @@ This sketching process is central to the approach of the class. There are NO lon
 
 **The emphasis in this class will be on personal exploration, learning to learn, and skill building—not on outcomes.**
 
-![This not That](figures/this_not_that.png){full-width}
+![This not That](figures/this_not_that.png){wide}
 
 ### Notes on Daily Sketching
 

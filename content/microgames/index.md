@@ -1,7 +1,6 @@
 ---
 title: Microgames
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Microgames
 description: Microgames are tiny games, stripped to their essential elements, often playable in a few seconds.

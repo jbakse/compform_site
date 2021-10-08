@@ -1,6 +1,5 @@
 ---
 layout: compform_chapter.pug
-debug: false
 
 title: Test
 header_title: Test
@@ -14,7 +13,66 @@ next: false
 next_url: false
 ---
 
-# Includes
+## Core Layout
+
+block-base {tint}
+
+block-pad {tint pad}
+
+block-wide {tint wide}
+
+block-full {tint full}
+
+## Columns
+
+<div class="columns">
+<div>
+
+### Column 1
+
+I'm just some ordinary content. Just taking up some space for the demo.
+
+</div>
+<div>
+
+### Column 2
+
+I'm just some ordinary content. Just taking up some space for the demo.
+
+</div>
+</div>
+
+<div class="columns">
+<div>
+
+### Three Columns
+
+- one
+- two
+- three
+
+</div>
+<div>
+
+### Three Columns
+
+- one
+- two
+- three
+
+</div>
+<div>
+
+### Three Columns
+
+- one
+- two
+- three
+
+</div>
+</div>
+
+## Includes
 
 You can include Markdown files from Markdown files. Markdown files that start with `_` won't be processed as top level pages.
 
@@ -22,15 +80,15 @@ You can use relative paths for include files and included files can include file
 
 {% include ./_include_me.md %}
 
-# Markdown-it
+## Markdown-it
 
 ### linkify: true
 
 Auto convert links like: https://google.com
 
-### quotes: "“”‘’"
+### quotes: “”‘’
 
-Automatically add "smart quotes."
+Automatically add "smart" 'quotes'.
 
 ### typographer: true,
 
@@ -40,7 +98,7 @@ Automatically add "smart quotes."
 
 <div class="callout">
 
-### Callout
+### Wrapped Markdown
 
 You can wrap markdown in a `<div></div>`. Include a blank line at the top and bottom to enable markdown processing.
 
@@ -51,8 +109,9 @@ You can wrap markdown in a `<div></div>`. Include a blank line at the top and bo
 | A   | B   | C   |
 | --- | --- | --- |
 | 1   | 2   | 3   |
+| x   | y   | z   |
 
-# Markdown-it Plugins
+## Markdown-it Plugins
 
 ### markdown-it-anchor
 
@@ -74,9 +133,50 @@ Term 1
 Term 2
 : Definition Two
 
-# Content Classes
+## Basic Copy
 
-## callout
+He could see the tall, peeling yellow building at the periphery of his range of vision. But something about it struck him as strange. A shimmer, an unsteadiness, as if the building faded forward into stability and then retreated into insubstantial uncertainty. An oscillation, each phase lasting a few seconds and then blurring off into its opposite, a fairly regular variability as if an organic pulsation underlay the structure. As if, he thought, it's alive.
+
+~~strike~~, _italic_, **bold**, `code`, [links](#links).
+
+> Blockquotes.
+>
+> nobody{attrib}
+
+- lists
+- of
+- items
+
+1. ordered
+1. lists
+
+...can be intereupted...
+
+1. and
+1. continue
+   {continue}
+
+Definition Lists
+: are
+: supported
+
+## Headers
+
+Don't use H1s. There should only be one h1 per page. Its in the masthead.
+
+Use h2 (like above) for the major sections. They will be numbered. You can hide the number with `{plain}`.
+
+### h3 for sub sections
+
+Use h3 to devide larger sections.
+
+#### h4 for details
+
+Use h4s sparingly. Two levels (h2 and h3) is usually detailed enough for sectioning.
+
+## Content Classes
+
+### callouts
 
 This is a callout.{callout}
 
@@ -84,25 +184,9 @@ This is a error callout.{callout error}
 
 This is a warn callout.{callout warn}
 
-## full-width
+This is a wide callout.{callout wide}
 
-This is a full width callout.{callout full-width}
-
-## bigger and biggest
-
-This is some bigger text.{bigger}
-
-This is some biggest text.{biggest}
-
-## center
-
-center{center}
-
-## caption
-
-This is some caption text.{caption}
-
-# Boxed Links
+### Boxed Links
 
 [boxed](google.com){boxed}
 
@@ -110,42 +194,39 @@ This is some caption text.{caption}
 
 [boxed right](google.com){boxed right}
 
-# Links sidebar
+### Links sidebar
 
 <div class="links-sidebar">
 
-[google](google.com)
+[**Programming Paradigms** Wikipedia](#)
+
+[**4 Talks in 40 Minutes** Coding Tech](#)
 
 </div>
 
-You can stick links in a sidebar.
+You can stick links in a sidebar. They appear in the column on narrow screens.
 
-# Columns
+## Modifier Classes
 
-<div class="columns">
-<div class="half">
+### center
 
-- one
-- two
-- three
+This is some centered text.{center}
 
-</div>
-<div class="half">
+### caption
 
-- one
-- two
-- three
+This is some caption text.{caption}
 
-</div>
-</div>
-
-# Activities, Assignments, Discussions
+## Activities, Assignments, Discussions
 
 <div class="activity">
 
 ## Example Activity
 
-This is an example.
+This is an example activity provided as an example of what activities look like.
+
+This is an example activity provided as an example of what activities look like on the page. This is an example activity provided as an example of what activities look like.
+
+### This is an example.
 
 This is an example.
 
@@ -155,9 +236,13 @@ This is an example.
 
 ## Example Assignment
 
-This is an example.
+Practice coding by modifying the examples above as described.
 
-This is an example.
+### Modify the Triangle Example{difficulty}
+
+1. Draw a pentagon{easy}
+1. Draw an octogon{medium}
+1. Draw a circle{hard}
 
 </div>
 
@@ -171,31 +256,40 @@ This is an example.
 
 </div>
 
-# Images
+## Images
 
 `.jpg`, `.png`, and `.svg` files are copied over
 ![Make Things that Make Things](./figures/make_things.png)
 
+### Basic Image
+
+Basic images are centered and shown 100%
+
+![cross](./figures/cross.png)
+
 ### two-up
 
-<div class="two-up">
+<div class="two-up pad">
+
+![cross](./figures/cross.png)This is a caption.{scale}
+
+![cross](./figures/cross.png)scale+pixel{scale pixel}
+
+</div>
+
+### three-up + wide
+
+<div class="three-up wide">
+
+![Make Things that Make Things](./figures/make_things.png)captions work in two-up and three-up
 
 ![Make Things that Make Things](./figures/make_things.png)
+
 ![Make Things that Make Things](./figures/make_things.png)
 
 </div>
 
-### three-up + full-width
-
-<div class="three-up full-width">
-
-![Make Things that Make Things](./figures/make_things.png)
-![Make Things that Make Things](./figures/make_things.png)
-![Make Things that Make Things](./figures/make_things.png)
-
-</div>
-
-# Slides 1
+## Slides
 
 {% slides %}
 {% include ./test_slides.yaml %}
@@ -211,17 +305,17 @@ This is an example.
 
 <div class="spoiler" >
 
-### Spoiler
+### I'm a secret!
 
-This is a spoiler.
+Shh. Don't tell any students.
 
-This is a spoiler.
+Keep it secret.
 
 </div>
 
-# Javascript
+## Javascript
 
-## Syntax Highlighting
+## Code Blocks w/ Syntax Highlight
 
 ```javascript
 function map(v, min1, max1, min2, max2) {
@@ -230,14 +324,46 @@ function map(v, min1, max1, min2, max2) {
 }
 ```
 
-Code can be included. `.js` files are copied over
+<div class="good">
+
+```javascript
+true === true;
+```
+
+</div>
+
+<div class="bad">
+
+```javascript
+true === false;
+```
+
+</div>
+
+You can `% include` code.
 
 ```javascript
 {% include ./sketches/example.js %}
 ```
+
+Or show code side by side with columns
+
+<div class="columns pad">
+
+```javascript
+code();
+```
+
+```javascript
+code();
+```
+
+</div>
 
 ## JSLab
 
 {% js-lab "./sketches/donkey.js" %}
 
 ## JSShow
+
+{% js-show "./sketches/donkey.js" %}

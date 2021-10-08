@@ -1,136 +1,120 @@
-.comp-form.toc {
-    background-color: $light-grey;
-}
-
-
 .comp-form-toc {
+  background-color: $light-grey;
+  padding-top: 1px;
 
-    h1 {
-        font-family: "Miriam Libre";
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 1.5;
-        color: $dark-grey;
-        letter-spacing: 0.31px;
-        margin-top: 100px;
-        margin-bottom: 24px;
-        text-transform: uppercase;
+  &.container > * {
+    @include block-wide;
+  }
+
+  h1 {
+    font-family: "Miriam Libre";
+    font-weight: bold;
+    font-size: 25px;
+    color: $dark-grey;
+    letter-spacing: 0.31px;
+    margin-top: 100px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: "Miriam Libre";
+    font-weight: bold;
+    font-size: 10px;
+    color: $dark-grey;
+    letter-spacing: 0.04px;
+
+    margin-top: 65px;
+    padding-bottom: 3px;
+    border-bottom: 0.5px solid $middle-grey;
+    margin-bottom: 12px;
+  }
+
+  a {
+    color: $accent-color;
+  }
+
+  .intro p {
+    max-width: 35em;
+  }
+
+  .intro p,
+  .nav-wrap > p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.31px;
+    line-height: 1.5;
+
+    margin-top: 0;
+  }
+
+  .nav-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    > p {
+      box-sizing: border-box;
+      flex: 0 0 25%;
+      max-width: 30em;
+      padding-right: 50px;
+      margin-bottom: 2em;
     }
 
-    h2 {
-        font-family: "Miriam Libre";
-        font-weight: bold;
-        font-size: 10px;
-        letter-spacing: 0.04px;
+    nav {
+      flex: 0 1 75%;
 
-        color: inherit;
-
-        padding-bottom: 3px;
-        margin-top: 65px;
-        margin-bottom: 8px;
-
-        border-bottom: 0.5px solid $middle-grey;
+      display: flex;
+      flex-wrap: wrap;
     }
 
-    h3 {
-        font-family: "Miriam Libre";
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.2;
-        // color: inherit;
-        letter-spacing: 0.31px;
-        
-        border-bottom: 1px solid transparent;
+    nav p {
+      margin-top: 0;
+      width: calc(100% / 3);
+      margin-bottom: 2em;
     }
 
-    a h3 {
-        color: #04B;
-        display: inline-block;
-        
+    nav a {
+      font-family: "Miriam Libre";
+      text-decoration: none;
+      color: black;
+      font-size: 11px;
     }
 
-    a {
-        color: #04B;
+    nav a:hover strong {
+      border-bottom: 1px solid $accent-color;
     }
 
-   
-
-    .row>a,
-    .row>a:hover {
-        color: $dark-grey;
-        text-decoration: none;
-        font-size: 12px;
-        margin-bottom: 25px;
+    nav strong {
+      position: relative;
+      top: -2px;
+      line-height: 25px;
+      font-size: 19px;
+      font-weight: bold;
+      color: $accent-color;
     }
 
-
-   
-
-    h3 a:hover {
-        border-bottom: 1px soild black;
+    nav strong::after {
+      content: "\a";
+      white-space: pre-wrap;
     }
 
-    a:hover {
-        text-decoration: none;
+    @media screen and (max-width: $breakpoint-1) {
+      flex-direction: column;
+      nav p {
+        width: 50%;
+      }
     }
+  }
 
-    .table a {
+  dl {
+    font-family: "Miriam Libre";
+  }
 
-        color: black;
-        border-bottom: 1px solid black;
-    }
-
-    .table a[href="#"] {
-
-        color: black;
-        border-bottom: none;
-    }
-
-
-
-    .row>a[data-ready="false"],
-    .row>a[data-ready="false"]:hover {
-        color: #888;
-        text-decoration: none;
-        font-size: 12px;
-        margin-bottom: 25px;
-    }
-
-
-    .row>a:hover h3 {
-        border-bottom: 1px solid;
-    }
-
-
-
-
-    .overview {
-
-        margin-bottom: 10px;
-
-        font-family: "Roboto";
-        font-weight: 300;
-        font-size: 14px;
-        letter-spacing: 0.31px;
-        line-height: calc(25 / 16);
-
-        padding-right: 30px;
-
-        margin-bottom: 3em;
-    }
-
-    .intro {
-
-        margin-bottom: 10px;
-
-        font-family: "Roboto";
-        font-weight: 300;
-        font-size: 18px;
-        letter-spacing: 0.31px;
-        line-height: calc(25 / 16);
-
-        padding-right: 30px;
-
-        margin-bottom: 3em;
-    }
+  dl dd {
+    float: left;
+    margin-left: 0;
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
 }

@@ -1,0 +1,23 @@
+canvas.mess {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  pointer-events: none;
+
+  transition: opacity 0.25s;
+  /* mix-blend-mode: multiply; */
+  /* border: 1px solid red; */
+}
+
+canvas.hide {
+  opacity: 0;
+  transition: opacity 1s;
+}

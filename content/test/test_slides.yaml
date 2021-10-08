@@ -10,4 +10,11 @@
   comments: Excerpt from Edgar Allen Poe's <i>The Raven</i> plotted on scroll motif by home-made drawing machine.
   links:
     - label: Project Page
-    - href: https://justinbakse.com/preview_2/new_york/raven/
+      href: https://justinbakse.com/preview_2/new_york/raven/
+
+- artist: Justin Bakse
+  title: Untitled, 2015
+  image: https://justinbakse.com/v2/new_york/misc/images/bsp_2.png
+  comments: Procedurally-generated painting.
+  fit: contain
+  links:

@@ -1,29 +1,85 @@
-@mixin color-band($c: $light-grey, $b: false) {
-  position: relative;
-  &::before {
-    position: absolute;
-    background: $c;
-    top: 0;
-    bottom: 0;
-    left: -50vw;
-    right: -50vw;
-    z-index: -100;
-    content: "";
-    @if $b {
-      border-top: 1px solid $b;
-      border-bottom: 1px solid $b;
-    }
-  }
-  @include media-breakpoint-down(xs) {
-    &::before {
-      left: -30px;
-      right: -30px;
-    }
+$breakpoint-1: 790px;
+$breakpoint-2: 1200px;
+
+@mixin block-base() {
+  // border: 1px solid red;
+  box-sizing: border-box;
+  width: calc(100% - 30px);
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin block-pad() {
+  width: 100%;
+  max-width: 730px + 15px + 15px;
+}
+
+@mixin block-wide() {
+  width: calc(100% - 30px);
+  max-width: 1140px;
+}
+
+@mixin block-full() {
+  width: 100%;
+  max-width: 100%;
+}
+
+@mixin sidebar() {
+  box-sizing: border-box;
+  width: 200px;
+  position: absolute;
+  left: calc(50% + 730px / 2 + 15px);
+
+  @media screen and (max-width: $breakpoint-2) {
+    width: 730px;
+    position: relative;
+    left: auto;
   }
 }
 
+body {
+  margin: 0;
+}
+
 .comp-form {
-  overflow-x: hidden;
+  .container > * {
+    @include block-base;
+  }
+
+  /////// columns
+  .columns {
+    display: flex;
+    margin-top: 2em;
+  }
+
+  .columns > * {
+    flex: 1;
+    margin: 0 15px 0 0;
+    overflow-x: hidden;
+  }
+
+  .columns > *:last-child {
+    margin-right: 0;
+  }
+
+  .columns > * > *:first-child {
+    margin-top: 0;
+  }
+  .columns > * > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $breakpoint-1) {
+    .columns {
+      flex-direction: column;
+    }
+    .columns > div {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  ///
 
   #logo {
     position: fixed;
@@ -33,136 +89,16 @@
     cursor: pointer;
   }
 
-  #top-nav {
-    @include color-band($light-grey);
-
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 12px;
-    color: $dark-grey;
-    letter-spacing: 0.23px;
-    padding-top: 20px;
-
-    .title {
-    }
-    .buttons {
-      float: right;
-    }
-    .previous {
-      margin-right: 5em;
-    }
-    .previous i {
-      margin-right: 7px;
-    }
-    .next i {
-      margin-left: 7px;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    @include media-breakpoint-down(xs) {
-      display: none;
-    }
-  }
-
   #hero {
-    @include color-band($light-grey, $middle-grey);
-    &::before {
-      border-top: none;
-    }
+    // @include color-band($light-grey, $middle-grey);
+    background-color: $light-grey;
+    border-bottom: 1px solid $middle-grey;
 
+    padding-top: 140px;
     padding-bottom: 133px;
-
-    h1 {
-      font-family: "Miriam Libre";
-      font-weight: bold;
-      font-size: 36px;
-      color: $dark-grey;
-      letter-spacing: 0.56px;
-      text-transform: uppercase;
-      margin-top: 140px;
-      @include media-breakpoint-down(xs) {
-        margin-top: 90px;
-      }
-    }
-
-    h6 {
-      font-family: "Miriam Libre";
-      font-weight: bold;
-      font-size: 10px;
-      color: $dark-grey;
-      letter-spacing: 0.04px;
-      margin-top: 50px;
-      padding-bottom: 3px;
-      border-bottom: 1px solid $middle-grey; //rgba($dark-grey, .5);
-    }
-    .description {
-      font-family: "Miriam Libre";
-      font-weight: bold;
-      font-size: 30px;
-      color: $dark-grey;
-      letter-spacing: 0.31px;
-      line-height: 54px;
-      margin-top: 32px;
-      margin-bottom: 80px;
-    }
-    .software {
-      font-family: "Miriam Libre";
-      font-weight: light;
-      font-size: 24px;
-      color: $dark-grey;
-      letter-spacing: 0.31px;
-      line-height: 54px;
-    }
   }
 
   #scroll-out {
     height: 80vh;
-  }
-}
-
-.debug {
-  .container {
-    outline: 1px dotted $debug-blue;
-  }
-  div[class^="col-"] {
-    outline: 1px dotted $debug-red;
-  }
-
-  &:before {
-    z-index: 1000;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: $debug-blue;
-    color: white;
-    padding: 3px;
-    font-size: 8px;
-
-    // @media (min-width: breakpoint-min('xs')) {
-    //     content: "xs";
-    // }
-
-    // @media (min-width: breakpoint-min('sm')) {
-    //     content: "sm";
-    // }
-
-    // @media (min-width: breakpoint-min('md')) {
-    //     content: "md";
-    // }
-
-    // @media (min-width: breakpoint-min('lg')) {
-    //     content: "lg";
-    // }
-
-    // @media (min-width: breakpoint-min('xl')) {
-    //     content: "xl";
-    // }
-  }
-
-  #scroll-out {
-    background: rgba($debug-blue, 0.1);
   }
 }

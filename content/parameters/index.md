@@ -1,7 +1,6 @@
 ---
 title: Parameters
 layout: compform_chapter.pug
-debug: false
 
 hero_title: Parameters
 description: Expose parameters to make your procedural systems easier to control, explore, and use.
@@ -60,7 +59,7 @@ Procedural generators can provide enormous creative leverage, allowing expressiv
 
 Imagine a program that draws squares like the one below. What parameters might such a program accept?
 
-![A Blue Square](./figures/blue-square.png "A Blue Square"){scale full-width}
+![A Blue Square](./figures/blue-square.png "A Blue Square"){scale wide}
 
 </div>
 
@@ -273,7 +272,7 @@ Begin designing a user interface for a fictional machine by considering which pa
 8. For each parameter carefully choose a name, data type, and possible values if applicable.
 9. Present your machine, user, and parameters to the class. You will have 2 minutes to present.
 
-#### Machine Types {underline}
+### Machine Types
 
 - A self-driving car
 - Planet terraformer
@@ -282,7 +281,7 @@ Begin designing a user interface for a fictional machine by considering which pa
 - Genetic pet builder
 - Love potion mixer
 
-#### Users {underline}
+### Users
 
 - Daily user
 - One-time user

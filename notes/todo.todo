@@ -1,0 +1,79 @@
+# CSS Clean up
+
+@nikki- open graph images https://www.opengraph.xyz/
+
+
+- jslab/show
+  - internal layout responsive
+  - look at jsshow in context, should it center?
+
+- js
+  .- audit and fix
+  - bring glider in to project off cdn
+
+- css new
+  - figma
+    .- new carousel
+    .- spoiler
+
+  - cover needs new design for course material
+  - class notes pages css are borked!
+
+- get rid of {caption} modifier?
+
+- css improve
+  - new look for the boxed linkes
+  - the spoiler is a little lame, but i don't want to put markup for the spoiler box in the md. maybe an 11ty component, maybe web component.
+  - update coding challenges difficulty bullets don't have the gray ghosts
+  - use variables for column and sidebar widths and breakpoints
+  - pre/code
+    - pre/code is kind of weird anyway. negative margin hack?
+      - its seems to be working. low priority
+
+
+- eleventy
+  - maybe move the 20xx folders into a `course` or `plan` subfolder. just break the urls! probably not referenced much
+    - https://docs.netlify.com/routing/redirects/
+
+  - maybe switch classy for https://github.com/arve0/markdown-it-attrs (so fenced codeblocks can be classed up)
+
+
+- markdown
+  - scrub ":::" still being used on plan pages, etc
+  - scrub {bigger} and {biggest} from md
+
+# bugs
+- classy seems to be eating space after last link in paragraph on intro toc
+
+
+### phase 1
+
+- jslab - maybe redo jslab with lessons from smudgejs.org?
+
+
+### content
+
+
+
+### related publications page
+
+  - websites
+    - redblob
+  - online books
+    - pcg book
+    - pearls
+    - shiffman
+  - print books
+    - shiffman Natures of Code
+    - Generative Design
+
+
+
+
+###  messes
+  - make messes more performant
+  - make messes optional somehow?
+  - link to mess code/lab
+  - add more messes to other chapters
+
+
