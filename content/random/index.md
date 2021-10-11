@@ -54,7 +54,7 @@ Plain Javascript provides `Math.random()` to generate a random number.
 
 > The Math.random() function returns a floating-point, pseudo-random number in the range [0, 1); that is, from 0 (inclusive) up to but not including 1 (exclusive), which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 >
-> [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+> [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random){attrib}
 
 ### Specifying a Range
 
@@ -157,11 +157,11 @@ floor(random(1, 6));
 
 </div>
 
-### Biasing Distribution
+### Biasing the Distribution
 
-The `random()` function produces results that are appoximately [uniformly distributed](https://en.wikipedia.org/wiki/Continuous_uniform_distribution), all values are equally likely.
+The `random()` function produces results that are appoximately [uniformly distributed](https://en.wikipedia.org/wiki/Continuous_uniform_distribution): all values are equally likely.
 
-Sometimes, uniform distribution is exactly what you want. If you are randomly choosing who should go first in a game, all the players should have an equal chance.
+Sometimes, uniform distribution is exactly what you want. If you are randomly choosing who gets go first in a game, all the players should have an equal chance.
 
 Other times, uniform distribution isn’t what you really want. If you are drawing a forest scene, you might want mostly short trees, some middle-height trees, and only a few very tall trees.
 
@@ -171,7 +171,7 @@ Other times, uniform distribution isn’t what you really want. If you are drawi
 
 </div>
 
-With some math you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results towards the low end, high end, or middle is often enough to achieve appealing effects. Creating these types of distributions is easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in table top rollplaying games without the need for a computer.
+With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results towards the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions is easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in table top rollplaying games without the need for a computer.
 
 <div class ="activity">
 
@@ -191,7 +191,7 @@ Compare the outcomes of rolling 2 6-sided dice to rolling 1 12-sided die.
 
 <div class="link-box">
 
-[**dice_chart.svg**worksheet](dice_chart.svg)
+[**dice_chart.svg**worksheet](../handouts/dice_chart.svg)
 
 </div>
 
@@ -289,18 +289,6 @@ If you roll a normal die six times, it is unlikely—_about a 1.5% chance_—tha
 
 A deck of cards works differently. When you pull cards from a deck, you don't get _random values_ you get _values in a random order_. You avoid duplicates, and you know you will have toured all the values when you reach the end of the deck.
 
-### Dice Visualizer
-
-This visualizer simulates rolling a 10-sided die. It chooses a random value every time you click and plots a histogram of the results. The expected distribution is uniform. In practice if you roll a few dozen times, you are likely to see some numbers come up much more often than other numbers. After hundreds or thousands of rolls the results should even out.
-
-{% js-lab "sketches/dice.js" %}
-
-### Deck Visualizer
-
-This visualizer simulates choosing numbers from a deck with 10 cards. It pulls the top card every time you click. When the deck runs out, it is shuffled. Using a deck ensures that the numbers come up very evenly, though the order is random.
-
-{% js-lab "sketches/cards.js" %}
-
 ### Modeling a Deck with an Array
 
 p5 provides the [shuffle()](https://p5js.org/reference/#/p5/shuffle) function to randomly reorder the elements in an array. By using `shuffle()` we can simulate shuffling a deck, pulling values from it, and reshuffling when we run out.
@@ -339,6 +327,18 @@ function valueFromDeck() {
   return v;
 }
 ```
+
+### Dice Visualizer
+
+This visualizer simulates rolling a 10-sided die. It chooses a random value every time you click and plots a histogram of the results. The expected distribution is uniform. In practice if you roll a few dozen times, you are likely to see some numbers come up much more often than other numbers. After hundreds or thousands of rolls the results should even out.
+
+{% js-lab "sketches/dice.js" %}
+
+### Deck Visualizer
+
+This visualizer simulates choosing numbers from a deck with 10 cards. It pulls the top card every time you click. When the deck runs out, it is shuffled. Using a deck ensures that the numbers come up very evenly, though the order is random.
+
+{% js-lab "sketches/cards.js" %}
 
 <div class='activity'>
 
@@ -472,7 +472,7 @@ The Linear Congruential Generator Algorithm is simple enough that you can execut
 
 ### Toy Linear Congruential Generator
 
-Below is a very basic implementation of an LCG, using small numbers that are easier to reason about. This code follows the same process as the pencil + paper activity above.
+Below is a very basic implementation of an LCG, using small numbers that are easier to reason about. This code follows the same algorithm as the pencil + paper activity above.
 
 {% js-lab "sketches/random_lcg.js" %}
 
