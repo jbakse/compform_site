@@ -17,11 +17,11 @@ We use the word _random_ to mean an hodgepodge of related ideas. Depending on co
 
 <div class='links-sidebar'>
 
-[**_Instructions..._** demo](http://www.buschs.de/Mozart/Mozart.html)
+[**_Instructions..._** interactive demo](http://www.buschs.de/Mozart/Mozart.html)
 
-[**_Instructions..._** score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
+[**_Instructions..._** original score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
 
-[**_Musikalisches Würfelspiel_** Wikipedia](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel)
+[**_Musikalisches Würfelspiel_** wikipedia.org](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel)
 
 </div>
 
@@ -272,14 +272,16 @@ P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5
 ## Random Orders and Decks
 
 The `random()` function works a lot like rolling a die.
-When you roll a die, you get random values. Each value should be equally probable and each roll should be [independant](<https://en.wikipedia.org/wiki/Independence_(probability_theory)>).
+When you roll a die, you get random values. Each value should be equally probable and each roll should be [independent](<https://en.wikipedia.org/wiki/Independence_(probability_theory)>).
 If you roll the die multiple times, you **might get the same value more than once**, and it **might take a long time to get a particular value**.
 
 <div class='links-sidebar'>
-[**Birthday Paradox** wikipdedia.org](https://en.wikipedia.org/wiki/Birthday_problem)
+
+[**Birthday Paradox** wikipedia.org](https://en.wikipedia.org/wiki/Birthday_problem)
+
 </div>
 
-These types of effects can sometime be counter-intuitive, and maybe aesthetcially undesireable.
+These types of effects can be counter-intuitive and sometimes aesthetcially undesireable.
 
 If you roll a normal die six times, it is unlikely—_about a 1.5% chance_—that you’ll get all six values without repeats. You have a pretty good chance—_about 33%_–of not rolling any 1s. You can be pretty sure—_98.5% sure_—that at least one number won’t have appeared after six rolls.
 

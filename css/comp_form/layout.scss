@@ -27,9 +27,9 @@ $breakpoint-2: 1200px;
 
 @mixin sidebar() {
   box-sizing: border-box;
-  width: 200px;
+  width: 180px;
   position: absolute;
-  left: calc(50% + 730px / 2 + 15px);
+  left: calc(50% + 730px / 2 + 35px);
 
   @media screen and (max-width: $breakpoint-2) {
     width: 730px;
