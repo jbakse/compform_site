@@ -90,24 +90,43 @@
   }
 
   /* blockquote */
+  // blockquote {
+  //   margin-bottom: 1.5em;
+
+  //   position: relative;
+  // }
+
+  // blockquote::before {
+  //   content: "";
+  //   background: $middle-grey;
+  //   width: 4px;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: -15px;
+  //   border-radius: 3px;
+  // }
+  // .attrib {
+  //   font-style: italic;
+  // }
+  // .attrib::before {
+  //   content: "—";
+  // }
+
   blockquote {
-    margin-bottom: 1.5em;
-
-    position: relative;
+    background: $light-grey;
+    padding: 15px;
+  }
+  blockquote :first-child {
+    margin-top: 0;
+  }
+  blockquote :last-child {
+    margin-bottom: 0;
   }
 
-  blockquote::before {
-    content: "";
-    background: $middle-grey;
-    width: 4px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -15px;
-    border-radius: 3px;
-  }
   .attrib {
     font-style: italic;
+    text-align: right;
   }
   .attrib::before {
     content: "—";

@@ -15,7 +15,7 @@ software: p5.js
 
 We use the word _random_ to mean an hodgepodge of related ideas. Depending on context, we might mean unplanned, unexpected, unpatterned, uncontrolled, unbiased, or unpredictable. Each of these are important characteristics in many procedural systems. Randomness is a staple of procedural generation systems, and careful control of randomness is important to balancing chance and control.
 
-<div class='links-sidebar'>
+<div class='sidebar link-box'>
 
 [**_Instructions..._** interactive demo](http://www.buschs.de/Mozart/Mozart.html)
 
@@ -25,7 +25,7 @@ We use the word _random_ to mean an hodgepodge of related ideas. Depending on co
 
 </div>
 
-As an example consider the 18th-century composition _[Instructions for the composition of as many waltzes as one desires with two dice, without understanding anything about music or composition](https://www.ensembleresonanz.com/task/mozarts-musikalisches-wuerfelspiel/)_, which [may](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) have been written by Mozart. Rather than a fixed score, _Instructions_ is a collection of pre-composed musical phrases a set of rules for using dice to select and order the phrases to create a unique composition. By leaving some aspects to chance while controlling others, the system ensures that each variation makes musical sense.
+As an example consider the 18th-century composition _Instructions for the composition of as many waltzes as one desires with two dice, without understanding anything about music or composition_, which [may](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) have been written by Mozart. Rather than a fixed score, _Instructions_ is a collection of pre-composed musical phrases a set of rules for using dice to select and order the phrases to create a unique composition. By leaving some aspects to chance while controlling others, the system ensures that each variation makes musical sense.
 
 Using random values in your procedural system doesn't mean your results must be haphazard, uncontrolled, or unorganized. While individual random values are unpredictable, with planning you can use these values to create a coherent cumulative effect.
 
@@ -165,7 +165,7 @@ Sometimes, uniform distribution is exactly what you want. If you are randomly ch
 
 Other times, uniform distribution isn’t what you really want. If you are drawing a forest scene, you might want mostly short trees, some middle-height trees, and only a few very tall trees.
 
-<div class="links-sidebar">
+<div class="sidebar link-box">
 
 [**Dice Calculator** anydice.com](http://anydice.com/)
 
@@ -189,9 +189,11 @@ Compare the outcomes of rolling 2 6-sided dice to rolling 1 12-sided die.
 1. Roll a twelve-sided die 50 times.
 1. Plot the values.
 
-<p class="boxed download">
-    <a href="../handouts/dice_chart.svg" download>dice_chart.svg</a>
-</p>
+<div class="link-box">
+
+[**dice_chart.svg**worksheet](dice_chart.svg)
+
+</div>
 
 </div>
 
@@ -275,7 +277,7 @@ The `random()` function works a lot like rolling a die.
 When you roll a die, you get random values. Each value should be equally probable and each roll should be [independent](<https://en.wikipedia.org/wiki/Independence_(probability_theory)>).
 If you roll the die multiple times, you **might get the same value more than once**, and it **might take a long time to get a particular value**.
 
-<div class='links-sidebar'>
+<div class='sidebar link-box'>
 
 [**Birthday Paradox** wikipedia.org](https://en.wikipedia.org/wiki/Birthday_problem)
 
@@ -460,9 +462,11 @@ The Linear Congruential Generator Algorithm is simple enough that you can execut
 1. Enter your assigned seed in the top box.
 2. Follow the arrows, perform the indicated operations, and put each result in the following box.
 
-<p class="boxed download">
-    <a href="../handouts/lcg_random.svg" download>lcg_random.svg</a>
-</p>
+<div class="link-box">
+
+[**lcg_random.svg**worksheet](../handouts/lcg_random.svg)
+
+</div>
 
 </div>
 
@@ -578,25 +582,29 @@ Working with a partner, create a sketch that generates random images. ALL random
 
 </div>
 
-## Reference Links
+## Explore
+
+<div class="link-box">
 
 [**Random.org** True RNG](https://www.random.org/)
-: A true random number generator that uses atmospheric noise as a source of randomness.
+A true random number generator that uses atmospheric noise as a source of randomness.
 
 [**LavaRand** Cloudflare](https://blog.cloudflare.com/lavarand-in-production-the-nitty-gritty-technical-details/)
-: Cloudflare uses lava lamps as a source of randomness for encryption.
+Cloudflare uses lava lamps as a source of randomness for encryption.
 
 [**Two Types of Random in Game Design** Game Maker's Toolkit](https://www.youtube.com/watch?v=dwI5b-wRLic)
-: Mark Brown discusses how game designers use randomness.
+Mark Brown discusses how game designers use randomness.
 
 [**Multiple Articles** anydice.com](https://anydice.com/articles/)
-: Series of articles on dice mechanics and probability.
+Series of articles on dice mechanics and probability.
 
 [**Damage Rolls** Redblob Games](https://www.redblobgames.com/articles/probability/damage-rolls.html)
-: Interactive article on shaping distributions.
+Interactive article on shaping distributions.
 
 [**Gallery of Distributions** Engineering Statistics Handbook](https://www.itl.nist.gov/div898/handbook/eda/section3/eda366.htm)
-: A great entry point if you want a technical deep dive on distributions.
+A great entry point if you want a technical deep dive on distributions.
 
 [**Chance vs. Randomness** Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/chance-randomness/)
-: Essay on the subtle distinction between chance and randomness.
+Essay on the subtle distinction between chance and randomness.
+
+</div>
