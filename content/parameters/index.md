@@ -2,6 +2,7 @@
 title: Parameters
 layout: compform_chapter.pug
 
+image: /parameters/images/og_image.png
 hero_title: Parameters
 description: Expose parameters to make your procedural systems easier to control, explore, and use.
 software: p5.js
