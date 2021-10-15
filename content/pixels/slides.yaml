@@ -3,7 +3,7 @@
   image: https://www.sergioalbiac.com/images/star01.jpg
   comments: One of more than 15,000 portraits created by a project by Sergio Albiac
   links:
-    - label: "Artist's Site"
+    - label: "Artist Site"
       href: https://www.sergioalbiac.com/wall/stardust.html
     - label: "Huge Gallery on Flickr"
       href: https://www.flickr.com/photos/97510924@N04/
@@ -17,7 +17,7 @@
       href: https://amf.fyi/Edward-Snowden-s-Long-Strange-Journey-to-Hollywood
     - label: "New York Times Article"
       href: https://www.nytimes.com/2016/09/04/magazine/edward-snowdens-long-strange-journey-to-hollywood.html
-    - label: "Artist's Site"
+    - label: "Artist Site"
       href: https://amf.fyi/
 
 - artist: Michael Bromley

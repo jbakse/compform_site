@@ -30,7 +30,7 @@
   links:
     - label: "Symphosizer"
       href: https://symphosizer.wearecollins.com/
-    - label: "Artist's Site"
+    - label: "Artist Site"
       href: https://www.wearecollins.com/
 
 - artist: Droftarts
@@ -54,7 +54,7 @@
   links:
     - label: Computational Weaving Tools
       href: https://artfordorks.com/generative-overshot-weave/
-    - label: Artist's Site
+    - label: Artist Site
       href: http://artfordorks.com/
 
 - artist: Greg Schomburg
@@ -78,5 +78,5 @@
   links:
     - label: The Q Project
       href: https://www.typotheque.com/fonts/q
-    - label: Artist's Site
+    - label: Artist Site
       href: https://peterbilak.com/

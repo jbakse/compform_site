@@ -41,7 +41,7 @@
       href: https://aarati.me/project.html?project=project-kolam
     - label: "Wikipedia: Kolam"
       href: https://en.wikipedia.org/wiki/Kolam
-    - label: Artist's Site
+    - label: Artist Site
       href: https://aarati.me/
 
 - artist: Mahan, Iran
@@ -158,7 +158,7 @@
   image: ./slides/adomas-bruzga-16.jpg
   comments: Adomas Bruzga used edge-matched tiles, themselves made on grids, to create this poster for Comp Form '16. Adomas also used a tile-based approach to design the *Virtue* speculative identity.
   links:
-    - label: Artist's Website
+    - label: Artist Website
       href: http://www.adomasbruzga.com/
 
 - artist: Dorothy Cruz
@@ -166,7 +166,7 @@
   image: ./slides/dorthy-cruz-17.png
   comments: Dorothy Cruz used an isometric grid for this poster in Comp Form '17.
   links:
-    - label: Artist's Website
+    - label: Artist Website
       href: http://wwww.dorothycruz.com/
 
 - artist: Talia Cotton
@@ -174,5 +174,5 @@
   image: ./slides/talia-cotton-17.png
   comments: Talia created a 3D tileset for this poster in Comp Form '17.
   links:
-    - label: Artist's Website
+    - label: Artist Website
       href: http://taliacotton.com/
