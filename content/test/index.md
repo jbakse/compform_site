@@ -301,7 +301,13 @@ Basic images are centered and shown 100%
 {% include ./test_slides.yaml %}
 {% endslides %}
 
-## Spoilers
+# Slides 2
+
+{% slides %}
+{% include ./test_slides_2.yaml %}
+{% endslides %}
+
+# Spoilers
 
 <div class="spoiler" >
 
