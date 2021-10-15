@@ -23,6 +23,16 @@
     - label: "Makehuman"
       href: http://www.makehumancommunity.org/
 
+- artist: Collins
+  title: San Francisco Symphony Symphosizer
+  image: https://www.creativeboom.com/uploads/articles/7f/7f13f6f7f77f7b00f6cd71d2ac01058c3eebb4db_1620.jpg
+  comments: A sound-activated typographic instrument that was part of the rebrand for the San Francisco Symphony.
+  links:
+    - label: "Symphosizer"
+      href: https://symphosizer.wearecollins.com/
+    - label: "Artist's Site"
+      href: https://www.wearecollins.com/
+
 - artist: Droftarts
   title: Parametric Pulley
   image: ./slides/pulley.png
@@ -36,6 +46,16 @@
   links:
     - label: "modulator"
       href: http://www.metaflop.com/modulator/font/pQkUOJOPk8
+
+- artist: Laura Devendorf
+  title: Computational Weaving Tools
+  image: https://d3i71xaburhd42.cloudfront.net/ad9380e7d1e45e334d41c12c22ceaf275126d248/5-Figure3-1.png
+  comments: Computational interfaces for designing weave drafts for both jacquard and frame looms.
+  links:
+    - label: Computational Weaving Tools
+      href: https://artfordorks.com/generative-overshot-weave/
+    - label: Artist's Site
+      href: http://artfordorks.com/
 
 - artist: Greg Schomburg
   title: Gregfont

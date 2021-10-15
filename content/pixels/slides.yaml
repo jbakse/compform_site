@@ -8,6 +8,18 @@
     - label: "Huge Gallery on Flickr"
       href: https://www.flickr.com/photos/97510924@N04/
 
+- artist: Adam Ferriss
+  title: Edward Snowden's Long, Strange Journey to Hollywood
+  image: https://freight.cargo.site/w/3000/q/75/i/afc37cf91e99ae290b0280c2f339891ed4281deb265055d6106b6db0f722471d/insideSnowden.jpg
+  comments: Pixelated cover illustrations of Edward Snowden for New York Times.
+  links:
+    - label: "Edward Snowden's Long, Strange Journey to Hollywood"
+      href: https://amf.fyi/Edward-Snowden-s-Long-Strange-Journey-to-Hollywood
+    - label: "New York Times Article"
+      href: https://www.nytimes.com/2016/09/04/magazine/edward-snowdens-long-strange-journey-to-hollywood.html
+    - label: "Artist's Site"
+      href: https://amf.fyi/
+
 - artist: Michael Bromley
   title: Chromata
   image: slides/chromata.png

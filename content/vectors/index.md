@@ -37,6 +37,10 @@ Vector graphics must be converted to raster graphics—a process called [rasteri
 
 <!-- [[ recipe vs finished dish? you can go one way, not the other. you can easily remove salt from a recipe, you can't easily remove salt from a dish]] -->
 
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
+
 <div class="activity">
 
 ## Felt Board

@@ -1,0 +1,19 @@
+- artist: A.M. Darke
+  title: Open Source Afro Hair Library
+  image: https://prettydarke.files.wordpress.com/2020/04/hair-03-render-02.png
+  comments: A feminist, anti-racist database for 3D models of Black hair textures and styles.
+  links:
+    - label: Open Source Afro Hair Library
+      href: https://afrohairlibrary.org/
+    - label: "Artist's Site"
+      href: https://prettydarke.cool
+
+- artist: Andy Lomas
+  title: Vase Forms
+  image: https://dataidedesign.com/wp-content/uploads/2020/10/vase_forms_DAD.jpg
+  comments: A variation on Cellular Forms using additional constraints and biases to create vase-like structures that should be fabricable as physical sculptures.
+  links:
+    - label: Vase Forms
+      href: https://andylomas.com/vaseForms.html
+    - label: "Artist's Site"
+      href: https://www.andylomas.com

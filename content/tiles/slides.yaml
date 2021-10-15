@@ -32,6 +32,18 @@
     - label: "MoMA: Anni Albers"
       href: http://www.moma.org/collection/artists/96?=undefined&page=1
 
+- artist: Aarati Akkapeddi
+  title: Kolam
+  image: https://d2w9rnfcy7mm78.cloudfront.net/6508795/original_c66d931ed50d93fc38c833170a0552e6.jpg
+  comments: Based on typical South Indian "Dot" Kolam patterns, kolam designs were produced based on facial recognition data from the artist's family photographs. Each photos' number in each corresponding facial recognition vector was translated into a component of the kolam pattern, producing distinct kolam designs.
+  links:
+    - label: Kolam
+      href: https://aarati.me/project.html?project=project-kolam
+    - label: "Wikipedia: Kolam"
+      href: https://en.wikipedia.org/wiki/Kolam
+    - label: Artist's Site
+      href: https://aarati.me/
+
 - artist: Mahan, Iran
   title: Shrine of Shah Nematollah Vali
   image: https://upload.wikimedia.org/wikipedia/commons/0/0d/Shah_Nematollah_Vali_Shrine_08.jpg

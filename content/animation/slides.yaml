@@ -18,6 +18,14 @@
     - label: "Wikipedia: Mind's Eye"
       href: https://en.wikipedia.org/wiki/Mind%27s_Eye_(film_series)
 
+- artist: John Whitney
+  title: Permutations, 1968
+  image: https://m.media-amazon.com/images/M/MV5BMDBlNGY1ZWQtMmVlNi00NjI2LWI1ZTctOTRhNWE5MDYwNGRiXkEyXkFqcGdeQXVyMDM1MzIyMQ@@._V1_.jpg
+  comments: An experimental short film that combines animated shapes and colors.
+  links:
+    - label: "Video: Permutations"
+      href: https://www.youtube.com/watch?v=kdYxJ85RSds
+
 - artist: Craig Reynolds
   title: Boids Simulation, 1986
   image: https://www.red3d.com/cwr/boids/images/flocking_around_19.gif
