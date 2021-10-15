@@ -3,8 +3,8 @@ title: Parameters
 layout: compform_chapter.pug
 
 hero_title: Parameters
-description: Expose parameters to make your procedural systems easier to control, explore, and use.
-software: p5.js
+description: Expose parameters to make your procedural systems easier to control, explore, and develop.
+software: p5.js + tweakpane
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>

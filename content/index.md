@@ -26,7 +26,7 @@ General principles, practices, and building blocks useful for all procedural gen
 
 [**Random Values** p5.js](./random)
 
-[**Parameters** p5.js](./parameters)
+[**Parameters** p5.js + tweakpane](./parameters)
 
 [**Noise** p5.js](./noise)
 
