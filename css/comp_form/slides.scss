@@ -103,6 +103,23 @@
     padding-top: 10px;
   }
 
+  .links a {
+    display: block;
+    text-decoration: none;
+    border: none;
+    margin-bottom: 1em;
+    font-size: 14px;
+  }
+  .links strong {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .links strong:after {
+    content: "\a";
+    white-space: pre-wrap;
+  }
+
   @media screen and (max-width: $breakpoint-1) {
     .slide {
       flex-direction: column;

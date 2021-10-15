@@ -106,7 +106,9 @@ Since p5.play builds on p5.js it should feel pretty familiar. One key difference
 
 ## Study Examples
 
-### Example 1: Sprites
+### Example 1:
+
+Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](https://opengameart.org/content/a-platformer-in-the-forest)
 
 {% js-lab "sketches/sprites_start.js" %}
 

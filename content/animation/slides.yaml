@@ -60,4 +60,8 @@
     - label: "Website"
       href: http://www.playdead.com/games/inside/
     - label: "GDC talk on Inside animation"
+      subtitle: "slides"
       href: https://www.gdcvault.com/play/1023002/Low-Complexity-High-Fidelity-INSIDE
+    - label: "GDC talk on Inside animation"
+      subtitle: "video"
+      href: "https://www.youtube.com/watch?v=RdN06E6Xn9E"

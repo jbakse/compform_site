@@ -26,7 +26,8 @@
   links:
     - label: "Wikipedia: Rogue"
       href: https://en.wikipedia.org/wiki/Rogue_(video_game)
-    - label: "Wikipedia: Roguelike"
+    - label: "Roguelike"
+      subtitle: wikipedia.org
       href: https://en.wikipedia.org/wiki/Roguelike
 
 - artist: Joshua Davis (Praystation)
