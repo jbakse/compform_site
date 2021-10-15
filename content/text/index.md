@@ -2,6 +2,7 @@
 title: Text
 layout: compform_chapter.pug
 
+image: /text/images/og_image.png
 hero_title: Text
 description: Explore generating strings with templates, Markov chains, and context-free grammars.
 software: javascript + html

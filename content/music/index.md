@@ -2,6 +2,7 @@
 title: Music
 layout: compform_chapter.pug
 
+image: /music/images/og_image.png
 hero_title: Music
 description: Music is organized sound. This chapter covers some specific tactics for generating a short piece of music.
 software: Tone.js
