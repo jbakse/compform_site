@@ -7,7 +7,7 @@
     "start": "npm run build && npm run serve",
     "serve": "concurrently npm:watch:sass npm:serve:eleventy",
     "watch:sass": "npm run build:sass -- --watch",
-    "serve:eleventy": "npx @11ty/eleventy --serve",
+    "serve:eleventy": "npx @11ty/eleventy --serve --incremental",
     "build": "npm run build:clean && npm run build:mkdir && npm run build:sass && npm run build:11ty",
     "build:clean": "rm -rf _site",
     "build:mkdir": "mkdir _site",

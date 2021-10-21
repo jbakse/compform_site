@@ -59,7 +59,7 @@
     content: "";
     position: absolute;
     inset: 3px auto 3px 0px;
-    border: 2px solid
+    border: 3px solid
       adjust-color($accent-color, $saturation: -50%, $lightness: 30%);
     border-radius: 3px;
   }

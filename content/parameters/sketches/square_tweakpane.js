@@ -1,5 +1,5 @@
 // require https://cdn.jsdelivr.net/npm/tweakpane@1.5.8/dist/tweakpane.min.js
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
 
 const params = {
   pos_x: 0,
