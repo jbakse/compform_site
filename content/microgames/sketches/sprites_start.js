@@ -1,8 +1,9 @@
 // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js
 // require /microgames/sketches/p5.play.js
 
-// art from opengameart.org
+// art from Buch @ opengameart.org
 // https://opengameart.org/content/a-platformer-in-the-forest
+// https://opengameart.org/users/buch
 
 var sprite1, sprite2;
 

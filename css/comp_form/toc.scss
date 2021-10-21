@@ -109,12 +109,35 @@
 
   dl {
     font-family: "Miriam Libre";
+    margin: 0;
+
+    width: 300px;
+    flex: 1 1 auto;
+
+    display: grid;
+    grid-template-columns: 150px 100px 1fr;
   }
 
-  dl dd {
-    float: left;
-    margin-left: 0;
-    margin-right: 2em;
-    margin-bottom: 2em;
+  dl dt,
+  dl dd,
+  .nav-wrap dl a {
+    font-size: 14px;
+    line-height: 28px;
+    display: inline-block;
+
+    width: 120px;
+
+    margin: 0;
   }
+  .nav-wrap dl a {
+    color: $accent-color;
+  }
+  .nav-wrap dl a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+}
+
+.toc #scroll-out {
+  background: $light-grey;
 }

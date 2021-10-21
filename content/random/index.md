@@ -15,17 +15,17 @@ software: p5.js
 
 We use the word _random_ to mean an hodgepodge of related ideas. Depending on context, we might mean unplanned, unexpected, unpatterned, uncontrolled, unbiased, or unpredictable. Each of these are important characteristics in many procedural systems. Randomness is a staple of procedural generation systems, and careful control of randomness is important to balancing chance and control.
 
-<div class='links-sidebar'>
+<div class='sidebar link-box'>
 
-[**_Instructions..._** demo](http://www.buschs.de/Mozart/Mozart.html)
+[**_Instructions..._** interactive demo](http://www.buschs.de/Mozart/Mozart.html)
 
-[**_Instructions..._** score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
+[**_Instructions..._** original score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
 
-[**_Musikalisches Würfelspiel_** Wikipedia](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel)
+[**_Musikalisches Würfelspiel_** wikipedia.org](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel)
 
 </div>
 
-As an example consider the 18th-century composition _[Instructions for the composition of as many waltzes as one desires with two dice, without understanding anything about music or composition](https://www.ensembleresonanz.com/task/mozarts-musikalisches-wuerfelspiel/)_, which [may](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) have been written by Mozart. Rather than a fixed score, _Instructions_ is a collection of pre-composed musical phrases a set of rules for using dice to select and order the phrases to create a unique composition. By leaving some aspects to chance while controlling others, the system ensures that each variation makes musical sense.
+As an example consider the 18th-century composition _Instructions for the composition of as many waltzes as one desires with two dice, without understanding anything about music or composition_, which [may](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) have been written by Mozart. Rather than a fixed score, _Instructions_ is a collection of pre-composed musical phrases a set of rules for using dice to select and order the phrases to create a unique composition. By leaving some aspects to chance while controlling others, the system ensures that each variation makes musical sense.
 
 Using random values in your procedural system doesn't mean your results must be haphazard, uncontrolled, or unorganized. While individual random values are unpredictable, with planning you can use these values to create a coherent cumulative effect.
 
@@ -54,7 +54,7 @@ Plain Javascript provides `Math.random()` to generate a random number.
 
 > The Math.random() function returns a floating-point, pseudo-random number in the range [0, 1); that is, from 0 (inclusive) up to but not including 1 (exclusive), which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 >
-> [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+> [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random){attrib}
 
 ### Specifying a Range
 
@@ -157,21 +157,21 @@ floor(random(1, 6));
 
 </div>
 
-### Biasing Distribution
+### Biasing the Distribution
 
-The `random()` function produces results that are appoximately [uniformly distributed](https://en.wikipedia.org/wiki/Continuous_uniform_distribution), all values are equally likely.
+The `random()` function produces results that are appoximately [uniformly distributed](https://en.wikipedia.org/wiki/Continuous_uniform_distribution): all values are equally likely.
 
-Sometimes, uniform distribution is exactly what you want. If you are randomly choosing who should go first in a game, all the players should have an equal chance.
+Sometimes, uniform distribution is exactly what you want. If you are randomly choosing who gets go first in a game, all the players should have an equal chance.
 
 Other times, uniform distribution isn’t what you really want. If you are drawing a forest scene, you might want mostly short trees, some middle-height trees, and only a few very tall trees.
 
-<div class="links-sidebar">
+<div class="sidebar link-box">
 
 [**Dice Calculator** anydice.com](http://anydice.com/)
 
 </div>
 
-With some math you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results towards the low end, high end, or middle is often enough to achieve appealing effects. Creating these types of distributions is easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in table top rollplaying games without the need for a computer.
+With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results towards the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions is easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in table top rollplaying games without the need for a computer.
 
 <div class ="activity">
 
@@ -189,9 +189,11 @@ Compare the outcomes of rolling 2 6-sided dice to rolling 1 12-sided die.
 1. Roll a twelve-sided die 50 times.
 1. Plot the values.
 
-<p class="boxed download">
-    <a href="../handouts/dice_chart.svg" download>dice_chart.svg</a>
-</p>
+<div class="link-box">
+
+[**dice_chart.svg**worksheet](../handouts/dice_chart.svg)
+
+</div>
 
 </div>
 
@@ -272,30 +274,20 @@ P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5
 ## Random Orders and Decks
 
 The `random()` function works a lot like rolling a die.
-When you roll a die, you get random values. Each value should be equally probable and each roll should be [independant](<https://en.wikipedia.org/wiki/Independence_(probability_theory)>).
+When you roll a die, you get random values. Each value should be equally probable and each roll should be [independent](<https://en.wikipedia.org/wiki/Independence_(probability_theory)>).
 If you roll the die multiple times, you **might get the same value more than once**, and it **might take a long time to get a particular value**.
 
-<div class='links-sidebar'>
-[**Birthday Paradox** wikipdedia.org](https://en.wikipedia.org/wiki/Birthday_problem)
+<div class='sidebar link-box'>
+
+[**Birthday Paradox** wikipedia.org](https://en.wikipedia.org/wiki/Birthday_problem)
+
 </div>
 
-These types of effects can sometime be counter-intuitive, and maybe aesthetcially undesireable.
+These types of effects can be counter-intuitive and sometimes aesthetcially undesireable.
 
 If you roll a normal die six times, it is unlikely—_about a 1.5% chance_—that you’ll get all six values without repeats. You have a pretty good chance—_about 33%_–of not rolling any 1s. You can be pretty sure—_98.5% sure_—that at least one number won’t have appeared after six rolls.
 
 A deck of cards works differently. When you pull cards from a deck, you don't get _random values_ you get _values in a random order_. You avoid duplicates, and you know you will have toured all the values when you reach the end of the deck.
-
-### Dice Visualizer
-
-This visualizer simulates rolling a 10-sided die. It chooses a random value every time you click and plots a histogram of the results. The expected distribution is uniform. In practice if you roll a few dozen times, you are likely to see some numbers come up much more often than other numbers. After hundreds or thousands of rolls the results should even out.
-
-{% js-lab "sketches/dice.js" %}
-
-### Deck Visualizer
-
-This visualizer simulates choosing numbers from a deck with 10 cards. It pulls the top card every time you click. When the deck runs out, it is shuffled. Using a deck ensures that the numbers come up very evenly, though the order is random.
-
-{% js-lab "sketches/cards.js" %}
 
 ### Modeling a Deck with an Array
 
@@ -335,6 +327,18 @@ function valueFromDeck() {
   return v;
 }
 ```
+
+### Dice Visualizer
+
+This visualizer simulates rolling a 10-sided die. It chooses a random value every time you click and plots a histogram of the results. The expected distribution is uniform. In practice if you roll a few dozen times, you are likely to see some numbers come up much more often than other numbers. After hundreds or thousands of rolls the results should even out.
+
+{% js-lab "sketches/dice.js" %}
+
+### Deck Visualizer
+
+This visualizer simulates choosing numbers from a deck with 10 cards. It pulls the top card every time you click. When the deck runs out, it is shuffled. Using a deck ensures that the numbers come up very evenly, though the order is random.
+
+{% js-lab "sketches/cards.js" %}
 
 <div class='activity'>
 
@@ -458,15 +462,17 @@ The Linear Congruential Generator Algorithm is simple enough that you can execut
 1. Enter your assigned seed in the top box.
 2. Follow the arrows, perform the indicated operations, and put each result in the following box.
 
-<p class="boxed download">
-    <a href="../handouts/lcg_random.svg" download>lcg_random.svg</a>
-</p>
+<div class="link-box">
+
+[**lcg_random.svg**worksheet](../handouts/lcg_random.svg)
+
+</div>
 
 </div>
 
 ### Toy Linear Congruential Generator
 
-Below is a very basic implementation of an LCG, using small numbers that are easier to reason about. This code follows the same process as the pencil + paper activity above.
+Below is a very basic implementation of an LCG, using small numbers that are easier to reason about. This code follows the same algorithm as the pencil + paper activity above.
 
 {% js-lab "sketches/random_lcg.js" %}
 
@@ -576,25 +582,29 @@ Working with a partner, create a sketch that generates random images. ALL random
 
 </div>
 
-## Reference Links
+## Explore
+
+<div class="link-box">
 
 [**Random.org** True RNG](https://www.random.org/)
-: A true random number generator that uses atmospheric noise as a source of randomness.
+A true random number generator that uses atmospheric noise as a source of randomness.
 
 [**LavaRand** Cloudflare](https://blog.cloudflare.com/lavarand-in-production-the-nitty-gritty-technical-details/)
-: Cloudflare uses lava lamps as a source of randomness for encryption.
+Cloudflare uses lava lamps as a source of randomness for encryption.
 
 [**Two Types of Random in Game Design** Game Maker's Toolkit](https://www.youtube.com/watch?v=dwI5b-wRLic)
-: Mark Brown discusses how game designers use randomness.
+Mark Brown discusses how game designers use randomness.
 
 [**Multiple Articles** anydice.com](https://anydice.com/articles/)
-: Series of articles on dice mechanics and probability.
+Series of articles on dice mechanics and probability.
 
 [**Damage Rolls** Redblob Games](https://www.redblobgames.com/articles/probability/damage-rolls.html)
-: Interactive article on shaping distributions.
+Interactive article on shaping distributions.
 
 [**Gallery of Distributions** Engineering Statistics Handbook](https://www.itl.nist.gov/div898/handbook/eda/section3/eda366.htm)
-: A great entry point if you want a technical deep dive on distributions.
+A great entry point if you want a technical deep dive on distributions.
 
 [**Chance vs. Randomness** Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/chance-randomness/)
-: Essay on the subtle distinction between chance and randomness.
+Essay on the subtle distinction between chance and randomness.
+
+</div>

@@ -90,27 +90,25 @@
   }
 
   /* blockquote */
+
   blockquote {
-    margin-bottom: 1.5em;
-
-    position: relative;
+    @include block-pad;
+    background: $light-grey;
+    padding: 15px;
+  }
+  blockquote :first-child {
+    margin-top: 0;
+  }
+  blockquote :last-child {
+    margin-bottom: 0;
   }
 
-  blockquote::before {
-    content: "";
-    background: $middle-grey;
-    width: 4px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -15px;
-    border-radius: 3px;
-  }
   .attrib {
-    font-style: italic;
+    // font-style: italic;
+    text-align: right;
   }
   .attrib::before {
-    content: "—";
+    // content: "—";
   }
 
   /* code */
@@ -121,8 +119,12 @@
     border-radius: 0;
   }
 
+  .callout code {
+    background-color: rgba(0.1, 0, 0, 0.1);
+  }
+
   :not(pre) > code {
-    padding: 1px 6px;
+    padding: 1px 4px;
     border-radius: 4px;
   }
 

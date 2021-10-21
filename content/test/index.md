@@ -139,9 +139,9 @@ He could see the tall, peeling yellow building at the periphery of his range of 
 
 ~~strike~~, _italic_, **bold**, `code`, [links](#links).
 
-> Blockquotes.
+> Rice is great if you're really hungry and want to eat two thousand of something.
 >
-> nobody{attrib}
+> Mitch Hedberg {attrib}
 
 - lists
 - of
@@ -194,9 +194,15 @@ This is a wide callout.{callout wide}
 
 [boxed right](google.com){boxed right}
 
+<div class="link-box">
+
+[**dice_chart.svg**worksheet](dice_chart.svg)
+
+</div>
+
 ### Links sidebar
 
-<div class="links-sidebar">
+<div class="sidebar link-box">
 
 [**Programming Paradigms** Wikipedia](#)
 

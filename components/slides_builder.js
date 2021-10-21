@@ -20,7 +20,9 @@ function slidesBuilder(content) {
     let links = "";
     if (slide.links && slide.links.length) {
       slide.links.forEach((link, i) => {
-        links += `<a href="${link.href}">${link.label}</a>`;
+        links += `<a href="${link.href}"><strong>${link.label}</strong>${
+          link.subtitle || ""
+        }</a>`;
       });
     }
 

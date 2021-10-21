@@ -3,8 +3,9 @@
 
 var sprite1, sprite2;
 
-// art from opengameart.org
+// art from Buch @ opengameart.org
 // https://opengameart.org/content/a-platformer-in-the-forest
+// https://opengameart.org/users/buch
 
 function setup() {
   createCanvas(600, 300);

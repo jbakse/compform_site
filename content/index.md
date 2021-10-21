@@ -28,7 +28,7 @@ General principles, practices, and building blocks useful for all procedural gen
 
 [**Random Values** p5.js](./random)
 
-[**Parameters** p5.js](./parameters)
+[**Parameters** p5.js + tweakpane](./parameters)
 
 [**Noise** p5.js](./noise)
 
@@ -79,6 +79,8 @@ Independent chapters exploring specific procedural generation tools, languages, 
 Syllabi, schedules, and lesson plans for the Computational Form class.
 
 <nav>
+
+[**Introduction** about the course](./introduction)
 
 Spring 2021
 : [Class Notes](https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4)
