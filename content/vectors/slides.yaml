@@ -1,21 +1,38 @@
 - artist: zzyw (Yang Wang and Zhenzhen Qi)
-  title: LENNA
+  title: LENNA, 2017
   image: https://www.zzyw.org/wp-content/uploads/2020/04/yw_tcm_36-scaled.jpg
   comments: A computing system that is programmed to create graphic designs that follow the visual principle of Swiss Style. The system is made of multiple software and hardware, including a custom-written computer algorithm, running on a modern computer, a connected plot printer, and a monitor displaying the design process.
   links:
     - label: LENNA
       href: https://www.zzyw.org/lenna/
+      subtitle: zzyw.org
     - label: Artist Site
       href: https://zzyw.org
+      subtitle: zzyw.org
 
 - artist: Matthias Dörfelt
-  title: Weird Faces
+  title: Weird Faces, 2012-13
   image: https://www.mokafolio.de/thumbs/works/Weird-Faces/01-2400x1526.jpg
   comments: Procedurally generated illustrations that have an individual artistic touch to it and is not instantly recognizable as a generative art piece.
   links:
     - label: Weird Faces
       href: https://www.mokafolio.de/works/Weird-Faces
+      subtitle: mokafolio.de
     - label: Weird Faces Vending Machine
       href: https://www.mokafolio.de/works/Weird-Faces-Vending-Machine
+      subtitle: extended project
     - label: Artist Site
       href: https://www.mokafolio.de/
+      subtitle: mokafolio.de
+
+- artist: Matthias Dörfelt
+  title: Cables, 2020
+  image: https://www.mokafolio.de/thumbs/works/Cables/01-2400x2291.jpg
+  comments: Computer-generated drawings printed on risograph.
+  links:
+    - label: Cables
+      href: https://www.mokafolio.de/works/Cables
+      subtitle: mokafolio.de
+    - label: Artist Site
+      href: https://www.mokafolio.de/
+      subtitle: mokafolio.de
