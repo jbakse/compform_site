@@ -1,69 +1,91 @@
-- artist: Sergio Albiac
-  title: Stardust
-  image: https://www.sergioalbiac.com/images/star01.jpg
-  comments: One of more than 15,000 portraits created by a project by Sergio Albiac
-  links:
-    - label: "Artist Site"
-      href: https://www.sergioalbiac.com/wall/stardust.html
-    - label: "Huge Gallery on Flickr"
-      href: https://www.flickr.com/photos/97510924@N04/
-
 - artist: Adam Ferriss
-  title: Edward Snowden's Long, Strange Journey to Hollywood
+  title: Edward Snowden's Long, Strange Journey to Hollywood, 2016
   image: https://freight.cargo.site/w/3000/q/75/i/afc37cf91e99ae290b0280c2f339891ed4281deb265055d6106b6db0f722471d/insideSnowden.jpg
   comments: Pixelated cover illustrations of Edward Snowden for New York Times.
   links:
-    - label: "Edward Snowden's Long, Strange Journey to Hollywood"
+    - label: Edward Snowden's Long, Strange Journey to Hollywood
       href: https://amf.fyi/Edward-Snowden-s-Long-Strange-Journey-to-Hollywood
-    - label: "New York Times Article"
+      subtitle: amf.fyi
+    - label: New York Times Article
       href: https://www.nytimes.com/2016/09/04/magazine/edward-snowdens-long-strange-journey-to-hollywood.html
-    - label: "Artist Site"
+      subtitle: nytimes.com
+    - label: Artist Site
       href: https://amf.fyi/
+      subtitle: amf.fyi
+
+- artist: Sergio Albiac
+  title: Stardust, 2013-14
+  image: https://www.sergioalbiac.com/images/star01.jpg
+  comments: One of more than 15,000 portraits created by a project by Sergio Albiac
+  links:
+    - label: Artist Site
+      href: https://www.sergioalbiac.com/wall/stardust.html
+      subtitle: sergioalbiac.com
+    - label: Huge Gallery
+      href: https://www.flickr.com/photos/97510924@N04/
+      subtitle: flickr.com
+
+- artist: Jon Corbett
+  title: Four Generations, 2015
+  image: https://i.ytimg.com/vi/1lO22Bl_-HI/maxresdefault.jpg
+  comments: Jon Corbett created a single channel video that shows four generations of his Cree-Métis heritage by animating a sequence of spiralled portraits starting with his grandmother, grandfather, himself, and his son. Each portrait rendered slowly to the screen by a computational algorithm that selects a colour from a source image, generates a 3D pixel in a 3D image space, and then digitally “sews” this bead to the screen.
+  links:
+    - label: Four Generations
+      href: https://www.youtube.com/watch?v=1lO22Bl_-HI&ab_channel=BACA
+      subtitle: video
+    - label: Artist Site
+      href: http://joncorbett.ca/
+      subtitle: Jon Corbett
 
 - artist: Michael Bromley
-  title: Chromata
+  title: Chromata, 2015
   image: slides/chromata.png
   comments: JavaScript image-to-art machine.
   links:
     - label: "Chromata"
       href: https://www.michaelbromley.co.uk/experiments/chromata/
+      subtitle: michaelbromley.co.uk
 
 - artist: Greg Schomburg
-  title: Sketching 2014 Identity
+  title: Sketching in Hardware, 2014
   image: slides/2014_in.png
   comments: Input map for a generative illustration.
   links:
     - label: "Greg Schomburg"
-      href: https://www.gregschomburg.com
+      href: http://www.gregschomburg.com
+      subtitle: gregschomburg.com
 
 - artist: Greg Schomburg
-  title: Sketching 2014 Identity
+  title: Sketching in Hardware, 2014
   image: slides/2014_out.png
   comments: Generated Illustration
   links:
     - label: "Greg Schomburg"
-      href: https://www.gregschomburg.com
+      href: http://www.gregschomburg.com
+      subtitle: gregschomburg.com
 
-- artist: Greg Schomburg
-  title: Sketching 2014 Identity
-  image: slides/castle_in.png
-  comments: Input map for a generative illustration.
-  links:
-    - label: "Greg Schomburg"
-      href: https://www.gregschomburg.com
+# commenting out these last two of Greg Schomburg's as we discussed
+# - artist: Greg Schomburg
+#   title: Sketching 2014 Identity
+#   image: slides/castle_in.png
+#   comments: Input map for a generative illustration.
+#   links:
+#     - label: "Greg Schomburg"
+#       href: https://www.gregschomburg.com
 
-- artist: Greg Schomburg
-  title: Sketching 2014 Identity
-  image: slides/castle_out.png
-  comments: Generated Illustration
-  links:
-    - label: "Greg Schomburg"
-      href: https://www.gregschomburg.com
+# - artist: Greg Schomburg
+#   title: Sketching 2014 Identity
+#   image: slides/castle_out.png
+#   comments: Generated Illustration
+#   links:
+#     - label: "Greg Schomburg"
+#       href: https://www.gregschomburg.com
 
 - artist: Derek Yu
-  title: Pixel Art Tutorial
+  title: Pixel Art Tutorial, 2013
   image: https://www.derekyu.com/images/extras/pixel-tools.jpg
   comments: This is not about computation, but is about making pixels look good. This is a short and useful tutorial on handcrafting pixel art written by Derek Yu, the designer of Spelunky.
   links:
     - label: "Pixel Art Tutorial"
       href: http://makegames.tumblr.com/post/42648699708/pixel-art-tutorial
+      subtitle: tutorial
