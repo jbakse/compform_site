@@ -60,3 +60,24 @@
     - label: Eddie Lee
       subtitle: vimeo.com
       href: https://vimeo.com/eddietree
+
+- artist: Tyler Hobbs
+  title: Return Zero, 2021
+  image: ./slides/tyler_hobbs.jpg
+  comments: Flow fields printed on large canvas.
+  links:
+    - label: Artist Site
+      href: https://tylerxhobbs.com/
+      subtitle: tylerxhobbs.com
+
+- artist: Emily Xie
+  title: Dunes, 2016
+  image: https://xie-emily.com/projects/images/dunes_2.jpg
+  comments: A study in the ways that algorithms can produce behavior that is at once organic yet systematic.
+  links:
+    - label: Dunes
+      href: https://xie-emily.com/projects/dunes.html
+      subtitle: xie-emily.com
+    - label: Artist Site
+      href: https://xie-emily.com/
+      subtitle: xie-emily.com
