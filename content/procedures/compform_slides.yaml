@@ -1,18 +1,32 @@
+- artist: Studio Moniker
+  title: Fungus Series, 2010
+  image: https://studiomoniker.com/thumbs/projects/fungus/ultramarine/action_2-720x450-q85.jpg
+  comments: A generative participatory installation that was executed by a large group of people. Each participant receives a sticker sheet containing 4 stickers and a simple set of instructions that specify how the stickers should be attached to the surface.
+  links:
+    - label: Fungus Series
+      href: https://studiomoniker.com/projects/fungus
+      subtitle: studiomoniker.com
+    - label: Artist Site
+      href: https://studiomoniker.com/
+      subtitle: studiomoniker.com
+
 - artist: Desmond Paul Henry
   title: Untitled, 1962
   image: https://upload.wikimedia.org/wikipedia/commons/9/97/Wiki.Henry_Drawing_Machine_1.jpg
   comments: Desmond Paul Henry modified WW2 analogue computers to create drawing machines.
   links:
     - label: Artist Site
-      href: https://www.desmondhenry.com/
+      href: http://www.desmondhenry.com/
+      subtitle: desmondhenry.com
 
 - artist: Desmond Paul Henry
   title: Untitled, 1962
   image: https://farm9.staticflickr.com/8243/8560060448_27d951d0ac_k.jpg
-  comments:
+  comments: Desmond Paul Henry modified WW2 analogue computers to create drawing machines.
   links:
     - label: Artist Site
       href: http://www.desmondhenry.com/
+      subtitle: desmondhenry.com
 
 # - artist: Golan Levin
 #   title: Floccular Portraits, 1999
@@ -22,21 +36,14 @@
 #     - label: Floccular Portraits on Artist's Site
 #       href: http://www.flong.com/projects/floccugraph/
 
-- artist: Craig Reynolds
-  title: Boids Simulation, 1986
-  image: https://www.red3d.com/cwr/boids/images/flocking_around_19.gif
-  comments: Craig Reynolds' <i>Boids</i> paper was presented at SIGGRAPH in 1986. In this program animation <b>emerges</b> from the application of basic rules.
-  links:
-    - label: Video
-      href: https://www.youtube.com/embed/86iQiV3-3IA
-
 - artist: Sol Lewitt
-  title: "Wall Drawing #56"
+  title: "Wall Drawing #56, 1970"
   image: https://4bqtf234d34a2gxuu749ctvy-wpengine.netdna-ssl.com/wp-content/uploads/2015/12/56-1.jpg
   comments: Sol Lewitt's work is often delivered to galleries as instructions to be executed by local teams.
   links:
-    - label: Mass MOCA Sol Lewitt Retrospective
+    - label: Sol Lewitt Retrospective
       href: http://massmoca.org/sol-lewitt/
+      subtitle: massmoca.org
 
 # - artist: Giuseppe Randazzo
 #   title: Transmutation, 2012
@@ -52,25 +59,29 @@
   image: https://pbs.twimg.com/media/C4SFfrJUoAMKt1R.jpg
   comments: Yoko Ono's "instruction pieces" are intended to be seen, considered, and performed by the audience.
   links:
-    - label: Voice Piece for Soprano @ Moma
+    - label: Voice Piece for Soprano at MoMa
       href: http://www.nytimes.com/2010/07/02/arts/design/02contemporary.html
+      subtitle: nytimes.com
 
 - artist: John Cage
   title: 4'33", 1952
   image: https://www.moma.org/d/assets/W1siZiIsIjIwMTUvMTAvMjEvMXNvcXVnb3NieV90aGVyZXdpbGxuZXZlcmJlc2lsZW5jZS5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXJlc2l6ZSAyMDAweDIwMDBeIC1ncmF2aXR5IENlbnRlciAtY3JvcCAyMDAweDIwMDArMCswIl1d/therewillneverbesilence.jpg?sha=db5713acfc387367
   links:
-    - label: 4'33" on moma.org
+    - label: 4'33"
       href: http://www.moma.org/calendar/exhibitions/1386?locale=en
-    - label: 4'33" on wikipedia
+      subtitle: moma.org
+    - label: 4'33"
       href: https://en.wikipedia.org/wiki/4%E2%80%B233%E2%80%B3
+      subtitle: wikipedia.org
 
 - artist: Nervous System
   title: Kinematics Dress 6, 2015
   image: https://n-e-r-v-o-u-s.com/projects/i.php?/000/976/Test-337,xlarge.2x.1441893095.jpg
   comments: Design studio Nervous System uses computation and 3D printing to explore fashion aesthetics.
   links:
-    - label: n-e-r-v-o-u-s.com
+    - label: Artist Site
       href: http://n-e-r-v-o-u-s.com/
+      subtitle: n-e-r-v-o-u-s.com
 
 # - artist: Micheal Hansmeyer and Benjamin Dillenburger
 #   title: Digital Grotesque, 2013
@@ -86,16 +97,36 @@
   image: https://static.planetminecraft.com/files/resource_media/screenshot/1245/Minecraft-2_4091491_lrg.jpg
   comments: Minecraft drops players into a procedurally-generated world on which they can build.
   links:
-    - label: minecraft.net
+    - label: Minecraft
       href: https://minecraft.net/
+      subtitle: minecraft.net
+
+- artist: On Kawara
+  title: Today Series, 1966
+  image: https://d2w9rnfcy7mm78.cloudfront.net/592565/original_d161b262aebf1127ad69a003e9903e45.jpg
+  comments: On Kawara worked on this series for nearly five decades. The paintings were produced meticulously over the course of many hours according to a series of steps that never varied. If a painting was not finished by midnight, he destroyed it. The quasi-mechanical element of his routine makes the production of each painting an exercise in meditation.
+  links:
+    - label: Today Series
+      href: https://www.guggenheim.org/teaching-materials/on-kawara-silence/paintings-today-series-date-paintings
+      subtitle: guggenheim.org
 
 - artist: Tarn Adams and Zach Adams
   title: Dwarf Fortress, 2006
   comments: Dwarf Fortress is an uncompromising game created entirely by Tarn and Zach Adams. Dwarf Fortress procedurally generates and simulates the game world in crazy detail.
   image: https://images.eurogamer.net/2013/articles/a/1/5/5/2/4/0/0/eurogamer-ign5y9.jpg
   links:
-    - label: Dwarf Fortress Site
+    - label: Dwarf Fortress
       href: http://www.bay12games.com/dwarves/
+      subtitle: bay12games.com
+
+- artist: Craig Reynolds
+  title: Boids Simulation, 1986
+  image: https://www.red3d.com/cwr/boids/images/flocking_around_19.gif
+  comments: Craig Reynolds' <i>Boids</i> paper was presented at SIGGRAPH in 1986. In this program animation <b>emerges</b> from the application of basic rules.
+  links:
+    - label: Boids Simulation
+      href: https://www.youtube.com/embed/86iQiV3-3IA
+      subtitle: youtube.com
 
 - artist: Hello Games
   title: No Man's Sky, 2016
@@ -104,3 +135,4 @@
   links:
     - label: Infinite Worlds Trailer
       href: https://www.youtube.com/watch?v=iKcumrtWzDk
+      subtitle: youtube.com
