@@ -18,12 +18,12 @@
   image: https://www.sergioalbiac.com/images/star01.jpg
   comments: One of more than 15,000 portraits created by a project by Sergio Albiac
   links:
-    - label: Artist Site
-      href: https://www.sergioalbiac.com/wall/stardust.html
-      subtitle: sergioalbiac.com
     - label: Huge Gallery
       href: https://www.flickr.com/photos/97510924@N04/
       subtitle: flickr.com
+    - label: Artist Site
+      href: https://www.sergioalbiac.com/wall/stardust.html
+      subtitle: sergioalbiac.com
 
 - artist: Jon Corbett
   title: Four Generations, 2015
@@ -35,7 +35,7 @@
       subtitle: video
     - label: Artist Site
       href: http://joncorbett.ca/
-      subtitle: Jon Corbett
+      subtitle: joncorbett.ca
 
 - artist: Michael Bromley
   title: Chromata, 2015
@@ -51,7 +51,10 @@
   image: slides/2014_in.png
   comments: Input map for a generative illustration.
   links:
-    - label: "Greg Schomburg"
+    - label: Sketching in Hardware
+      href: http://gregschomburg.com/2017/projects/sketching-in-hardware.html
+      subtitle: gregschomburg.com
+    - label: Artist Site
       href: http://www.gregschomburg.com
       subtitle: gregschomburg.com
 
@@ -60,7 +63,10 @@
   image: slides/2014_out.png
   comments: Generated Illustration
   links:
-    - label: "Greg Schomburg"
+    - label: Sketching in Hardware
+      href: http://gregschomburg.com/2017/projects/sketching-in-hardware.html
+      subtitle: gregschomburg.com
+    - label: Artist Site
       href: http://www.gregschomburg.com
       subtitle: gregschomburg.com
 
