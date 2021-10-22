@@ -1,3 +1,15 @@
+- artist: Martijn Steinrucken
+  title: The Drive Home, 2017
+  image: ./slides/the_drive_home.png
+  comments: Realtime procedurally generated view from a windshield in the rain.
+  links:
+    - label: Live Demo and Code
+      href: https://www.shadertoy.com/view/MdfBRX
+      subtitle: shadertoy.com
+    - label: Making of Video Series
+      href: https://www.youtube.com/watch?v=52TMliAWocY
+      subtitle: video
+
 - artist: Klei Entertainment
   title: Don't Starve, 2013
   image: https://www.klei.com/sites/default/files/games/dont-starve/gallery/ds16.png
@@ -36,15 +48,3 @@
     - label: Stipple Gen
       href: https://wiki.evilmadscientist.com/StippleGen
       subtitle: wiki.evilmadscientist.com
-
-- artist: Martijn Steinrucken
-  title: The Drive Home, 2017
-  image: ./slides/the_drive_home.png
-  comments: Realtime procedurally generated view from a windshield in the rain.
-  links:
-    - label: Live Demo and Code
-      href: https://www.shadertoy.com/view/MdfBRX
-      subtitle: shadertoy.com
-    - label: Making of Video Series
-      href: https://www.youtube.com/watch?v=52TMliAWocY
-      subtitle: video
