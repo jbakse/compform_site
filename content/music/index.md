@@ -23,7 +23,12 @@ Generative Music
 
 ### Examples
 
-[Six Marimbas](https://www.youtube.com/watch?v=mLZelvSvh3A) [Come Out](https://www.youtube.com/watch?v=g0WVh1D0N50) [Its Gonna Rain](https://www.youtube.com/watch?v=vugqRAX7xQE)
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
+
+<!-- commenting out the links because it's getting replaced with a gallery -->
+<!-- [Six Marimbas](https://www.youtube.com/watch?v=mLZelvSvh3A) [Come Out](https://www.youtube.com/watch?v=g0WVh1D0N50) [Its Gonna Rain](https://www.youtube.com/watch?v=vugqRAX7xQE)
 : Three compositions by Steve Reich
 
 [Cobra](https://www.youtube.com/watch?v=UdNdSJUf_8I) [Zorn on Cobra](https://www.youtube.com/watch?v=yp-oZbmsQVw&t=152s)
@@ -36,7 +41,7 @@ Generative Music
 : Generates a short sequence, with lots of knobs to tweak.
 
 [Happy Songs in Sad Versions](https://www.youtube.com/watch?v=En1BApnx3Co)
-: Popular songs in Minor Keys.
+: Popular songs in Minor Keys. -->
 
 <!-- Broken
 [Neural Network Music](http://yoavz.com/music_rnn/)
