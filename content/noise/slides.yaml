@@ -1,52 +1,61 @@
 - artist: Ken Perlin
-  title: Perlin Noise for Tron
+  title: Tron, 1982
   image: https://www.csee.umbc.edu/~olano/s2001c24/imgs/lightcycles.jpeg
-  comments: >
+  comments: Ken Perlin developed Perlin Noise while working on the feature film <i>Tron</i> with the goal of producing natural-appearing textures on computer-generated surfaces for motion picture visual effects.
   links:
     - label: Ken Perlin on Procedural Textures
       href: https://www.csee.umbc.edu/~olano/s2001c24/ch02.html
-    - label: "IMDB: Tron (1982)"
+      subtitle: umbc.edu
+    - label: "Tron (1982)"
       href: http://www.imdb.com/title/tt0084827/
+      subtitle: imdb.com
 
 - artist: Jaume Sanchez Elias
-  title: Fireball Tutorial
+  title: Fireball Tutorial, 2012
   image: https://www.clicktorelease.com/blog/vertex-displacement-webgl-glsl-perlin-noise-three-js/add-some-colour-movement.jpg
-  comments: >
+  comments: A tutorial showing how to create an animated shape, using a sphere as a basic geometry and Perlin Noise to disturb the vertices.
   links:
     - label: Fireball Tutorial
       href: https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js
+      subtitle: tutorial
 
 - artist: Shiny Dynamics
-  title: Wood Tutorial
+  title: Wood Tutorial, 2012
   image: https://3.bp.blogspot.com/-aROavndlrvw/T5JZl_-fMwI/AAAAAAAAAgQ/AdJp5pJP5dI/s320/rend6.png
-  comments: >
+  comments: A tutorial showing how to create wood texture using Perlin Noise.
   links:
     - label: Wood Tutorial
       href: http://shiny-dynamics.blogspot.com/2012/04/blender-wood-texture-part-2.html
+      subtitle: tutorial
 
 - artist: Redbox Games
-  title: Displacement Terrain
+  title: Displacement Terrain, 2015
   image: https://www.redblobgames.com/maps/terrain-from-noise/images/topdemo-3d.png
-  comments: >
+  comments: A tutorial showing how to generate maps using noise functions.
   links:
     - label: Terrain Tutorial
       href: http://www.redblobgames.com/maps/terrain-from-noise/
+      subtitle: tutorial
 
 - artist: RGBA + TBC
-  title: Elevated 4K Demo
+  title: Elevated 4K Demo, 2011
   image: https://img.youtube.com/vi/jB0vBmiTr6o/hqdefault.jpg
-  comments: >
+  comments: A landscape generated using Value Noise.
   links:
     - label: Elevated 4k
       href: https://www.youtube.com/watch?v=jB0vBmiTr6o&t=131s
+      subtitle: demo
+    - label: Behind Elevated
+      href: https://www.iquilezles.org/www/material/function2009/function2009.pdf
+      subtitle: tech presentation
 
 - artist: Eddie Lee
-  title: Open CL Perlin Particles
+  title: Open CL Perlin Particles, 2011
   image: https://i.vimeocdn.com/video/194454318-f50014973eb158fd39d86aa6bf012dd8d0a6cb2deb76981b9bf6eefdab75d9b0-d?mw=1920&mh=1080&q=70
-  comments: >
+  comments: Controlling 2-million particle movements using a 2D Perlin height map as a vector field. Each particle travels along the vector field to give this smokey behavior.
   links:
     - label: OpenCL Perlin Particles
-      subtile: video
+      subtitle: video
       href: https://vimeo.com/29074357
     - label: Eddie Lee
       subtitle: vimeo.com
