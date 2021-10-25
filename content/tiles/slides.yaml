@@ -5,10 +5,13 @@
   links:
     - label: The Josef & Anni Albers Foundation
       href: http://www.albersfoundation.org/
-    - label: "MoMA: Bauhaus Lettering Set"
+      subtitle: albersfoundation.org
+    - label: Bauhaus Lettering Set
       href: http://www.moma.org/collection/works/2724
-    - label: "MoMA: Josef Albers"
+      subtitle: moma.org
+    - label: Josef Albers
       href: http://www.moma.org/collection/artists/97?locale=en
+      subtitle: moma.org
 
 - artist: Josef Albers
   title: Bauhaus Lettering Set, 1926-31
@@ -17,25 +20,45 @@
   links:
     - label: The Josef & Anni Albers Foundation
       href: http://www.albersfoundation.org/
-    - label: "MoMA: Bauhaus Lettering Set"
+      subtitle: albersfoundation.org
+    - label: Bauhaus Lettering Set
       href: http://www.moma.org/collection/works/2724
-    - label: "MoMA: Josef Albers"
+      subtitle: moma.org
+    - label: Josef Albers
       href: http://www.moma.org/collection/artists/97?locale=en
+      subtitle: moma.org
 
 - artist: Anni Albers
-  title:
+  title: Design for Wall Hanging, 1927
   image: https://www.moma.org/media/W1siZiIsIjIyMTY4MSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MjAwMFx1MDAzRSJdXQ.jpg?sha=00147c0b3abde9d0
-  comments: Anni Albers was a prominent and influential textile artist and educator.
+  comments: Anni Albers was a prominent and influential textile artist and educator. These rectilinear abstract designs based on color relationships reflect the principles of Albers’s studies at the Bauhaus.
   links:
     - label: The Josef & Anni Albers Founation
       href: http://www.albersfoundation.org/
-    - label: "MoMA: Anni Albers"
+      subtitle: albersfoundation.org
+    - label: Anni Albers
       href: http://www.moma.org/collection/artists/96?=undefined&page=1
+      subtitle: moma.org
+
+- artist: Aarati Akkapeddi
+  title: Kolam, 2019
+  image: https://d2w9rnfcy7mm78.cloudfront.net/6508795/original_c66d931ed50d93fc38c833170a0552e6.jpg
+  comments: Based on typical South Indian "Dot" Kolam patterns, kolam designs were produced based on facial recognition data from the artist's family photographs. Each photos' number in each corresponding facial recognition vector was translated into a component of the kolam pattern, producing distinct kolam designs.
+  links:
+    - label: Kolam
+      href: https://aarati.me/project.html?project=project-kolam
+      subtitle: aarti.me
+    - label: Kolam
+      href: https://en.wikipedia.org/wiki/Kolam
+      subtitle: wikipedia.org
+    - label: Artist Site
+      href: https://aarati.me/
+      subtitle: aarti.me
 
 - artist: Mahan, Iran
-  title: Shrine of Shah Nematollah Vali
+  title: Shrine of Shah Nematollah Vali, 1436
   image: https://upload.wikimedia.org/wikipedia/commons/0/0d/Shah_Nematollah_Vali_Shrine_08.jpg
-  comments: >
+  comments:
     Islamic design builds on a rich variety of grid systems and tessellation patterns.
     <br/>
     <br/>
@@ -43,6 +66,7 @@
   links:
     - label: Shah Nematollah Vali Shrine
       href: https://en.wikipedia.org/wiki/Shah_Nematollah_Vali_Shrine
+      subtitle: wikipedia.org
 
 # - artist: Jessica Svendsen - Yale Architecture Lecture Series Poster - 2015
 #   title:
@@ -55,30 +79,37 @@
 #       href: http://jessicasvendsen.com/100-Days-with-Josef-Muller-Brockmann
 
 - artist: Sunsoft
-  title: Batman (NES)
+  title: Batman (NES), 1989
   image: ./slides/batman.png
   comments: Batman exhibits some of the best visuals found on the NES. Every tile uses just 4 colors chosen from the NES's 64-color palette.
   links:
     - label: Batman Tile Maps
       href: http://www.vgmaps.com/Atlas/NES/index.htm#B
-    - label: "Wikipedia: Batman"
+      subtitle: vgmaps.com
+    - label: "Batman: The Video Game"
       href: https://en.wikipedia.org/wiki/Batman:_The_Video_Game
+      subtitle: wikipedia.org
     - label: "Pixel Art Discussion"
       href: https://pixelation.org/index.php?topic=9173.0
+      subtitle: pixelation.org
 
 - artist: Nintendo
-  title: Advanced Wars
+  title: Advanced Wars, 2001
   image: https://flyingkirbypub.net/Weekly/Zeron/Maps/Machiavellianism.png
   comments: This GBA and DS series features tactical battle on an overtly grid-based map. More than an aesthetic choice, the grid is key to the rules of the game.
   links:
+    - label: Advance Wars
+      href: https://en.wikipedia.org/wiki/Advance_Wars
+      subtitle: wikipedia.org
 
 - artist: Yacht Club Games
-  title: Shovel Knight
-  image: https://i.ytimg.com/vi/bhG02JG7Sns/maxresdefault.jpg
+  title: Shovel Knight, 2014
+  image: https://images.gog-statics.com/e03b73e8bffe93e2d505dcad7cbf2f8659a0e5a7266501c8bbc2bdf7e652fc3e_product_card_v2_mobile_slider_639.jpg
   comments: Shovel Knight is an excellent retro platformer with an art style that carefully embraces the hardware limitations of the 8-bit era.
   links:
     - label: Shovel Knight
       href: http://yachtclubgames.com/shovel-knight/
+      subtitle: yachtclubgames.com
 
 # - artist: Pauline Gorelov
 #   title:
@@ -142,25 +173,28 @@
 #   links:
 
 - artist: Adomas Bruzga
-  title: Things
+  title: Things, 2016
   image: ./slides/adomas-bruzga-16.jpg
   comments: Adomas Bruzga used edge-matched tiles, themselves made on grids, to create this poster for Comp Form '16. Adomas also used a tile-based approach to design the *Virtue* speculative identity.
   links:
-    - label: Artist's Website
+    - label: Artist Website
       href: http://www.adomasbruzga.com/
+      subtitle: adomasbruzga.com
 
 - artist: Dorothy Cruz
-  title: You
+  title: You, 2017
   image: ./slides/dorthy-cruz-17.png
   comments: Dorothy Cruz used an isometric grid for this poster in Comp Form '17.
   links:
-    - label: Artist's Website
-      href: http://wwww.dorothycruz.com/
+    - label: Artist Website
+      href: https://www.dorothycruz.com/
+      subtitle: dorothycruz.com
 
 - artist: Talia Cotton
-  title: Go For It
+  title: Go For It, 2017
   image: ./slides/talia-cotton-17.png
   comments: Talia created a 3D tileset for this poster in Comp Form '17.
   links:
-    - label: Artist's Website
+    - label: Artist Website
       href: http://taliacotton.com/
+      subtitle: taliacotton.com

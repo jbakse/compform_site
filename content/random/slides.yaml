@@ -1,41 +1,54 @@
-- artist: Soungwen Chung
-  title: Drawing Operations
-  image: ./slides/soungwen_1.jpg
-  links:
-    - label: "Drawing Operations"
-      href: https://sougwen.com/project/drawingoperations-memory
-
 - artist: Jean Arp
-  title: Collage with Squares Arranged According to the Laws of Chance — 1917
+  title: Collage with Squares Arranged According to the Laws of Chance, 1917
   image: ./slides/arp.jpg
-  comments: >
+  comments: Jean Arp made this work and others like it by tearing paper into pieces, letting them fall to the floor, and pasting each scrap where it happened to land. Rather than ordering the page according to his own design, he ceded control to the random hand of gravity.
   links:
+    - label: Collage with Squares...
+      href: https://www.moma.org/collection/works/37013
+      subtitle: moma.org
 
 - artist: Marcel Duchamp
-  title: 3 Standard Stoppages — 1913
+  title: 3 Standard Stoppages, 1913
   image: https://www.moma.org/media/W1siZiIsIjEzODY0NSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=21b081fc5058286d
-  comments:
+  comments: Marcel Duchamp dropped three horizontal threads onto three stretched canvases, where they were then adhered, in order to preserve the random curves they assumed upon landing. The canvases were cut along those curves, creating a template for new units of measure that retain the meter’s length but undermine its rational basis.
   links:
-    - label: "Moma: 3 Standard Stoppages"
+    - label: 3 Standard Stoppages
       href: https://www.moma.org/collection/works/78990
+      subtitle: moma.org
 
 - artist: Micheal Toy and Glenn Wichman
-  title: Rogue - 1980
+  title: Rogue, 1980
   image: https://upload.wikimedia.org/wikipedia/commons/1/17/Rogue_Screen_Shot_CAR.PNG
   comments: <i>Rogue</i> was an genre-inspiring fantasy game with procedurally generated dungeons.
   links:
-    - label: "Wikipedia: Rogue"
+    - label: "Rogue"
       href: https://en.wikipedia.org/wiki/Rogue_(video_game)
-    - label: "Roguelike"
       subtitle: wikipedia.org
+    - label: "Roguelike"
       href: https://en.wikipedia.org/wiki/Roguelike
+      subtitle: wikipedia.org
 
 - artist: Joshua Davis (Praystation)
   title: Misc, 1
   image: ./slides/praystation_1.jpg
   links:
-    - label: "Artist's Site"
+    - label: "Artist Site"
       href: https://joshuadavis.com/
+      subtitle: joshuadavis.com
+# commenting this out for now because it concerns machine learning vs random
+# - artist: Soungwen Chung
+#   title: Drawing Operations, 2017
+#   image: ./slides/soungwen_1.jpg
+#   comments: An initial exploration into using machine learning on the drawing style of the artist's hand.
+#   The robotic arm’s behaviour is generated from neural nets trained on the artist’s drawing gestures.
+#   links:
+#     - label: "Drawing Operations"
+#       href: https://sougwen.com/project/drawingoperations-memory
+#       subtitle: sougwen.com
+#     - label: Artist Site
+#       href: https://sougwen.com/
+#       subtitle: sougwen.com
+
 # - artist: Kuva.io
 #   title: Hair
 #   image: ./slides/hair.png

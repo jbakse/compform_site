@@ -1,0 +1,59 @@
+- artist: Steve Reich
+  title: It's Gonna Rain, 1965
+  image: https://i.ytimg.com/vi/vugqRAX7xQE/hqdefault.jpg
+  comments: Steve Reich's first official piece made by manipulating a recording of a Pentecostal preacher. The creation of the work came about by chance as he was fiddling with two identical tape loops of the preacher that got out of synch with each other.
+  links:
+    - label: It's Gonna Rain
+      href: https://www.youtube.com/watch?v=vugqRAX7xQE
+      subtitle: music
+
+- artist: Steve Reich
+  title: Come Out, 1966
+  image: https://i.ytimg.com/vi/g0WVh1D0N50/hqdefault.jpg
+  comments: Steve Reich was asked to edit down tape footage into a form of collage for a benefit for the Harlem Six and <i>Come Out</i> was a byproduct of the collage's production.
+  links:
+    - label: Come Out
+      href: https://www.youtube.com/watch?v=g0WVh1D0N50
+      subtitle: music
+
+- artist: Steve Reich
+  title: Six Marimbas, 1986
+  image: https://i.ytimg.com/vi/mLZelvSvh3A/hqdefault.jpg
+  comments: A minimalist piece for six marimbas.
+  links:
+    - label: Six Marimbas
+      href: https://www.youtube.com/watch?v=mLZelvSvh3A
+      subtitle: music
+
+- artist: John Zorn
+  title: Cobra, 1984
+  image: https://i.ytimg.com/vi/q7plLE9f57s/maxresdefault.jpg
+  comments: John Zorn’s “game piece” music.
+  links:
+    - label: Cobra
+      href: https://www.youtube.com/watch?v=UdNdSJUf_8I
+      subtitle: music
+    - label: John Zorn on Cobra
+      href: https://www.youtube.com/watch?v=yp-oZbmsQVw&t=152s
+      subtitle: video
+
+- artist: Brian Eno
+  title: "Ambient 1: Music for Airports, 1978"
+  image: https://i.ytimg.com/vi/ZWUlLHv7-64/maxresdefault.jpg
+  comments: Ambient music created by Brian Eno.
+  links:
+    - label: "Ambient 1: Music for Airports"
+      href: https://www.youtube.com/watch?v=vNwYtllyt3Q
+      subtitle: music
+
+- artist: Jeremy Wentworth
+  title: WebKitSynth, 2016
+  image: https://lh3.googleusercontent.com/proxy/MJIG-FHM3gxcI5Z_fwPuGNuU4IPHQeqdcgEuTmY9oTHqQjhB7lXjGJDuX0ZJXneS7JwyTqXTx7UQHwyt6l8
+  comments: Generates a short sequence, with lots of knobs to tweak.
+  links:
+    - label: WebKitSynth
+      href: http://jeremywentworth.com/projects/webkitsynth/index.html
+      subtitle: jeremywentworth.com
+    - label: Artist Site
+      href: http://jeremywentworth.com/
+      subtitle: jeremywentworth.com

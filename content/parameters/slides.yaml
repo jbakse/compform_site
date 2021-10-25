@@ -1,12 +1,27 @@
-- artist: Zaha Hadid
-  title: Galaxy SOHO
-  image: https://images.adsttc.com/media/images/5285/1f2b/e8e4/4e52/4b00/01ab/slideshow/HAC_photo_by_Iwan_Baan_(2).jpg?1384455904
-  comments: >
+- artist: Laura Devendorf
+  title: Computational Weaving Tools, 2019
+  image: https://d3i71xaburhd42.cloudfront.net/ad9380e7d1e45e334d41c12c22ceaf275126d248/5-Figure3-1.png
+  comments: Computational interfaces for designing weave drafts for both jacquard and frame looms.
   links:
-    - label: Zaha Hadid Studio
+    - label: Computational Weaving Tools
+      href: http://artfordorks.com/generative-overshot-weave/
+      subtitle: artfordorks.com
+    - label: Artist Site
+      href: http://artfordorks.com/
+      subtitle: artfordorks.com
+
+- artist: Zaha Hadid Architects
+  title: Galaxy SOHO, 2012
+  image: https://images.adsttc.com/media/images/5285/1f2b/e8e4/4e52/4b00/01ab/slideshow/HAC_photo_by_Iwan_Baan_(2).jpg?1384455904
+  comments: The Galaxy SOHO architecture is a composition of five continuous, flowing volumes that are set apart, fused or linked by stretched bridges. These volumes adapt to each other in all directions, generating a panoramic architecture without corners or abrupt transitions that break the fluidity of its formal composition.
+  links:
+    - label: Zaha Hadid Architects
       href: http://www.zaha-hadid.com/
-    - label: "Wikipedia: Parametricism"
-      href: https://en.wikipedia.org/wiki/Parametricism
+      subtitle: zaha-hadid.com
+    # i feel like this should be a sidebar link
+    # - label: Parametricism
+    #   href: https://en.wikipedia.org/wiki/Parametricism
+    #   subtitle: wikipedia.org
 
 # - artist: Kuva.io
 #   title: Hair
@@ -17,46 +32,71 @@
 #       href: https://www.kuva.io/hair-simulation/
 
 - artist: MakeHuman Community
-  title: MakeHuman
+  title: MakeHuman, 2000
   image: https://upload.wikimedia.org/wikipedia/commons/c/c7/Makehuman_1_0_alpha8_rc_screenshot.png
+  comments: A free and open source 3D computer graphics middleware designed for the prototyping of photorealistic humanoids.
   links:
-    - label: "Makehuman"
+    - label: "MakeHuman"
       href: http://www.makehumancommunity.org/
+      subtitle: makehumancommunity.org
+
+- artist: Collins
+  title: San Francisco Symphony Symphosizer, 2021
+  image: https://www.creativeboom.com/uploads/articles/7f/7f13f6f7f77f7b00f6cd71d2ac01058c3eebb4db_1620.jpg
+  comments: A sound-activated typographic instrument that was part of the rebrand for the San Francisco Symphony.
+  links:
+    - label: Symphosizer
+      href: https://symphosizer.wearecollins.com/
+      subtitle: wearecollins.com
+    - label: Artist Site
+      href: https://www.wearecollins.com/
+      subtitle: wearecollins.com
 
 - artist: Droftarts
-  title: Parametric Pulley
+  title: Parametric Pulley, 2012
   image: ./slides/pulley.png
+  comments: Creates a range of metric and imperial tooth profile pulleys, with any number of teeth, specified in the OpenSCAD file.
   links:
     - label: "Parametric Pulley"
-      href: http://www.thingiverse.com/apps/customizer/run?thing_id=16627&code=65885a90cc68e3e23b0b36718f8b4242
-
-- artist: mataflop
-  title: modulator
-  image: ./slides/modulator.png
-  links:
-    - label: "modulator"
-      href: http://www.metaflop.com/modulator/font/pQkUOJOPk8
+      href: https://www.thingiverse.com/thing:16627
+      subtitle: thingiverse.com
 
 - artist: Greg Schomburg
-  title: Gregfont
+  title: GregFonts, 2017
   image: ./slides/gregfont.png
+  comments: GregFonts is a series of custom made single stroke fonts for use in vector design, laser cutting, and pen plotting.
   links:
-    - label: "Gregfont"
+    - label: GregFonts
       href: http://gregschomburg.com/gregfont/
+      subtitle: gregschomburg.com
+    - label: Artist Site
+      href: http://gregschomburg.com/
+      subtitle: gregschomburg.com
 
 - artist: Plastaq Software
   title: elsy
   image: ./slides/elsy.png
+  comments: An L-System explorer that works right in the browser.
   links:
     - label: elsy
       href: http://www.plastaq.com/elsy/
+      subtitle: plastaq.com
 
 - artist: Peter Biľak
-  title: The Q Project
+  title: The Q Project, 2020
   image: ./slides/peter_bilak.png
   comments: A game-like type system that enables users to create a nearly infinite number of variations.
   links:
     - label: The Q Project
       href: https://www.typotheque.com/fonts/q
-    - label: Artist's Site
+      subtitle: typotheque.com
+    - label: Artist Site
       href: https://peterbilak.com/
+      subtitle: peterbilak.com
+# commenting this out because we discussed only having two type gens
+# - artist: mataflop
+#   title: modulator
+#   image: ./slides/modulator.png
+#   links:
+#     - label: "modulator"
+#       href: http://www.metaflop.com/modulator/font/pQkUOJOPk8

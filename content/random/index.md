@@ -2,7 +2,7 @@
 title: Random Values
 layout: compform_chapter.pug
 
-image: /random/figures/city_deck.png
+image: /random/images/og_image.png
 hero_title: Random Values
 description: Procedural generation systems often employ random values as their main source of variety. Understanding how to generate, bias, map, and control random values is key to controlling the aesthetics of these systems.
 software: p5.js

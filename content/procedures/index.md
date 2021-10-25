@@ -2,6 +2,7 @@
 title: Procedures
 layout: compform_chapter.pug
 
+image: /procedures/images/og_image.png
 hero_title: Procedures
 description: Procedures are powerful creative tools. Defining procedures for creating form allows artists to focus on creative intent, reduce tedium, build higher scales of complexity, and explore otherwise impossible ideas.
 

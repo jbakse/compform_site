@@ -2,6 +2,7 @@
 title: Hello, p5!
 layout: compform_chapter.pug
 
+image: /p5/images/og_image.png
 hero_title: Hello, p5!
 description: Many of the examples on this site use p5.js, a Javascript creative coding based on Processing.
 software: p5.js + github

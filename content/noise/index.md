@@ -2,6 +2,7 @@
 title: Noise
 layout: compform_chapter.pug
 
+image: /noise/images/og_image.png
 hero_title: Noise
 description: Noise provides a flexible, powerful, and aesthetic source of variation that often works better than using a plain random number generator.
 software: p5.js

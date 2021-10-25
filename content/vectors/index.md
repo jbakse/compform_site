@@ -2,10 +2,9 @@
 title: Vector Drawing
 layout: compform_chapter.pug
 
+image: /vectors/images/og_image.png
 hero_title: Vector Drawing
-
 description: Vector graphics encode high-level meaning about the shapes that make up a drawing allowing you to manipulate them in higher-level ways.
-
 software: paper.js
 ---
 
@@ -36,6 +35,10 @@ Last week, we worked directly with **pixels**, the fundamental unit of raster gr
 Vector graphics must be converted to raster graphics—a process called [rasterization](https://magcius.github.io/xplain/article/rast1.html)—in order to be viewed on a pixel-based display. Fortunately, it is easy to rasterize vector graphics: vector graphics contain all the information necessary to do so. It is _not_ easy to convert from raster images to vector images: In order to do so we would have to make inferences about the meaning implied by the raster image. When the form is ambiguous our inferences are just guesses, and they may be wrong.
 
 <!-- [[ recipe vs finished dish? you can go one way, not the other. you can easily remove salt from a recipe, you can't easily remove salt from a dish]] -->
+
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
 
 <div class="activity">
 

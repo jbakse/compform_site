@@ -1,6 +1,8 @@
 ---
 title: Hello, Comp Form!
 layout: compform_toc.pug
+
+image: /images/og_image.png
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>

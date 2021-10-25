@@ -2,8 +2,8 @@
 title: Sound
 layout: compform_chapter.pug
 
+image: /sound/images/og_image.png
 hero_title: Comp Sound
-
 description: Make some noise using the p5 sound library.
 software: p5.js + p5.sound
 ---

@@ -2,6 +2,7 @@
 title: 3D Forms
 layout: compform_chapter.pug
 
+image: /3D/images/og_image.png
 hero_title: 3D Forms
 description: Explore building three-dimensional forms with OpenSCAD, a functional programming language for constructive solid geometry modeling.
 software: OpenSCAD
@@ -17,6 +18,10 @@ Tom Stoppard, author of [Rosencrantz & Guildenstern are Dead](<https://en.wikipe
 Most of the favorite subjects of representational art—human figures, landscapes, still lifes—are three dimensional forms. Paintings and drawings represent these forms by projecting them into two dimensions. This is a destructive process in which part of the form is lost. You cannot walk around a painting to see its subject from the other side. Where a painting strives to convey a sense of scale, of volume, of substance, and of presence, a sculpture cannot escape them.
 
 On screen, 3D graphics exist in between painting and sculpture. You can rotate computer generated 3D shapes, but you are still seeing a 2D projection. 3D Printing brings these shapes into the physical world. Getting "real" results from procedural generation can be very gratifying, providing physical evidence of your efforts. While not physical, VR is also a compelling medium for computational form. I especially enjoy combining the rapid iteration enabled by working procedurally with the sense of presence and scale afforded by virtual reality. It is an intensely creative experience to procedurally generate a tree and immediately stand in its shadow looking up at the sky through its branches.
+
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
 
 ## OpenSCAD
 
