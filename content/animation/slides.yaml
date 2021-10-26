@@ -1,3 +1,12 @@
+- artist: Craig Reynolds
+  title: Boids Simulation, 1986
+  image: https://www.red3d.com/cwr/boids/images/flocking_around_19.gif
+  comments: Craig Reynolds' <i>Boids</i> paper was presented at SIGGRAPH in 1986. In this program animation <b>emerges</b> from the application of basic rules.
+  links:
+    - label: Boids Simulation
+      href: https://www.youtube.com/embed/86iQiV3-3IA
+      subtitle: video
+
 - artist: Oskar Fischinger
   title: An Optical Poem, 1938
   image: ./slides/fischinger.jpg
@@ -30,24 +39,6 @@
     - label: Permutations
       href: https://www.youtube.com/watch?v=kdYxJ85RSds
       subtitle: video
-
-- artist: Craig Reynolds
-  title: Boids Simulation, 1986
-  image: https://www.red3d.com/cwr/boids/images/flocking_around_19.gif
-  comments: Craig Reynolds' <i>Boids</i> paper was presented at SIGGRAPH in 1986. In this program animation <b>emerges</b> from the application of basic rules.
-  links:
-    - label: Boids Simulation
-      href: https://www.youtube.com/embed/86iQiV3-3IA
-      subtitle: video
-
-- artist: Chuck Jones for Warner Bros.
-  title: Often An Orphan, 1949
-  image: https://idearocketanimation.com/wp-content/uploads/2016/03/b5c6eb85dcd9260569f9b1e44b55eac3.jpg
-  comments: Smear frames, popularized by Chuck Jones in Warner Bros. cartoons, convey speed and motion blur.
-  links:
-    - label: "Animation Techniques: The Smear"
-      href: https://idearocketanimation.com/8857-animation-techniques-smear/
-      subtitle: idearocketanimation.com
 
 - artist: Pixar
   title: Brave, 2012
@@ -84,3 +75,12 @@
     - label: "GDC talk on Inside animation"
       subtitle: "video"
       href: "https://www.youtube.com/watch?v=RdN06E6Xn9E"
+
+- artist: Chuck Jones for Warner Bros.
+  title: Often An Orphan, 1949
+  image: https://idearocketanimation.com/wp-content/uploads/2016/03/b5c6eb85dcd9260569f9b1e44b55eac3.jpg
+  comments: Smear frames, popularized by Chuck Jones in Warner Bros. cartoons, convey speed and motion blur.
+  links:
+    - label: "Animation Techniques: The Smear"
+      href: https://idearocketanimation.com/8857-animation-techniques-smear/
+      subtitle: idearocketanimation.com

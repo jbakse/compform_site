@@ -1,7 +1,7 @@
 - artist: zzyw (Yang Wang and Zhenzhen Qi)
   title: LENNA, 2017
   image: https://www.zzyw.org/wp-content/uploads/2020/04/yw_tcm_36-scaled.jpg
-  comments: A computing system that is programmed to create graphic designs that follow the visual principle of Swiss Style. The system is made of multiple software and hardware, including a custom-written computer algorithm, running on a modern computer, a connected plot printer, and a monitor displaying the design process.
+  comments: This algorithmic system creates designs that follow the visual principles of Swiss Style.
   links:
     - label: LENNA
       href: https://www.zzyw.org/lenna/
@@ -13,7 +13,7 @@
 - artist: Matthias Dörfelt
   title: Weird Faces, 2012-13
   image: https://www.mokafolio.de/thumbs/works/Weird-Faces/01-2400x1526.jpg
-  comments: Procedurally generated illustrations that have an individual artistic touch to it and is not instantly recognizable as a generative art piece.
+  comments: Procedurally generated illustrations with a deliberately hand-drawn feel.
   links:
     - label: Weird Faces
       href: https://www.mokafolio.de/works/Weird-Faces
@@ -36,3 +36,12 @@
     - label: Artist Site
       href: https://www.mokafolio.de/
       subtitle: mokafolio.de
+
+- artist: Scott Turner
+  title: Here Dragons Abound, 2016—2021
+  image: https://lh3.googleusercontent.com/-0_M_c-Z5XFA/YUphCMJvaZI/AAAAAAAAz9o/HQy-WGfr7jUaDw4jsXBrDcRWzZea6kqBACLcBGAsYHQ/image.png
+  comments: This long-running process blog documents years of work generating SVG maps, detailing each feature and technique.
+  links:
+    - label: Here Dragons Abound
+      href: https://heredragonsabound.blogspot.com/
+      subtitle: Process Blog

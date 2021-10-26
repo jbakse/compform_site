@@ -10,32 +10,17 @@
       href: http://www.imdb.com/title/tt0084827/
       subtitle: imdb.com
 
-- artist: Jaume Sanchez Elias
-  title: Fireball Tutorial, 2012
-  image: https://www.clicktorelease.com/blog/vertex-displacement-webgl-glsl-perlin-noise-three-js/add-some-colour-movement.jpg
-  comments: A tutorial showing how to create an animated shape, using a sphere as a basic geometry and Perlin Noise to disturb the vertices.
+- artist: Emily Xie
+  title: Dunes, 2016
+  image: https://xie-emily.com/projects/images/dunes_2.jpg
+  comments: Creative coding project in p5.js that explores "behavior that is at once organic yet systematic".
   links:
-    - label: Fireball Tutorial
-      href: https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js
-      subtitle: tutorial
-
-- artist: Shiny Dynamics
-  title: Wood Tutorial, 2012
-  image: https://3.bp.blogspot.com/-aROavndlrvw/T5JZl_-fMwI/AAAAAAAAAgQ/AdJp5pJP5dI/s320/rend6.png
-  comments: A tutorial showing how to create wood texture using Perlin Noise.
-  links:
-    - label: Wood Tutorial
-      href: http://shiny-dynamics.blogspot.com/2012/04/blender-wood-texture-part-2.html
-      subtitle: tutorial
-
-- artist: Redbox Games
-  title: Displacement Terrain, 2015
-  image: https://www.redblobgames.com/maps/terrain-from-noise/images/topdemo-3d.png
-  comments: A tutorial showing how to generate maps using noise functions.
-  links:
-    - label: Terrain Tutorial
-      href: http://www.redblobgames.com/maps/terrain-from-noise/
-      subtitle: tutorial
+    - label: Dunes
+      href: https://xie-emily.com/projects/dunes.html
+      subtitle: xie-emily.com
+    - label: Artist Site
+      href: https://xie-emily.com/
+      subtitle: xie-emily.com
 
 - artist: RGBA + TBC
   title: Elevated 4K Demo, 2011
@@ -49,6 +34,36 @@
       href: https://www.iquilezles.org/www/material/function2009/function2009.pdf
       subtitle: tech presentation
 
+# - artist: Jaume Sanchez Elias
+#   title: Fireball Tutorial, 2012
+#   image: https://www.clicktorelease.com/blog/vertex-displacement-webgl-glsl-perlin-noise-three-js/add-some-colour-movement.jpg
+#   comments: A tutorial showing how to create an animated shape, using a sphere as a basic geometry and Perlin Noise to disturb the vertices.
+#   links:
+#     - label: Fireball Tutorial
+#       href: https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js
+#       subtitle: tutorial
+
+# - artist: Shiny Dynamics
+#   title: Wood Tutorial, 2012
+#   image: https://3.bp.blogspot.com/-aROavndlrvw/T5JZl_-fMwI/AAAAAAAAAgQ/AdJp5pJP5dI/s320/rend6.png
+#   comments: A tutorial showing how to create wood texture using Perlin Noise.
+#   links:
+#     - label: Wood Tutorial
+#       href: http://shiny-dynamics.blogspot.com/2012/04/blender-wood-texture-part-2.html
+#       subtitle: tutorial
+
+- artist: Tyler Hobbs
+  title: Return Zero, 2021
+  image: ./slides/tyler_hobbs.jpg
+  comments: Flow fields printed on large canvas.
+  links:
+    - label: Artist Site
+      href: https://tylerxhobbs.com/
+      subtitle: tylerxhobbs.com
+    - label: Flow Fields
+      subtitle: Essay
+      href: https://tylerxhobbs.com/essays/2020/flow-fields
+
 - artist: Eddie Lee
   title: Open CL Perlin Particles, 2011
   image: https://i.vimeocdn.com/video/194454318-f50014973eb158fd39d86aa6bf012dd8d0a6cb2deb76981b9bf6eefdab75d9b0-d?mw=1920&mh=1080&q=70
@@ -61,23 +76,11 @@
       subtitle: vimeo.com
       href: https://vimeo.com/eddietree
 
-- artist: Tyler Hobbs
-  title: Return Zero, 2021
-  image: ./slides/tyler_hobbs.jpg
-  comments: Flow fields printed on large canvas.
+- artist: Red Blob Games
+  title: Displacement Terrain, 2015
+  image: https://www.redblobgames.com/maps/terrain-from-noise/images/topdemo-3d.png
+  comments: Interactive tutorial showing how to generate maps using noise functions.
   links:
-    - label: Artist Site
-      href: https://tylerxhobbs.com/
-      subtitle: tylerxhobbs.com
-
-- artist: Emily Xie
-  title: Dunes, 2016
-  image: https://xie-emily.com/projects/images/dunes_2.jpg
-  comments: A study in the ways that algorithms can produce behavior that is at once organic yet systematic.
-  links:
-    - label: Dunes
-      href: https://xie-emily.com/projects/dunes.html
-      subtitle: xie-emily.com
-    - label: Artist Site
-      href: https://xie-emily.com/
-      subtitle: xie-emily.com
+    - label: Terrain Tutorial
+      href: http://www.redblobgames.com/maps/terrain-from-noise/
+      subtitle: tutorial

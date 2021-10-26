@@ -19,6 +19,24 @@
       href: https://www.klei.com/games/dont-starve
       subtitle: klei.com
 
+- artist: Evil Mad Scientist Laboratories
+  title: StippleGen, 2012
+  image: https://evilmadscience.s3.amazonaws.com/wiki/eggbot/stipplegen/v2docs/graceegg-640.jpg
+  comments: StippleGen was created in Processing to turn photographs into pen-plottable drawings.
+  links:
+    - label: Stipple Gen
+      href: https://wiki.evilmadscientist.com/StippleGen
+      subtitle: wiki.evilmadscientist.com
+
+- artist: Hello Games
+  title: No Man's Sky, 2016
+  image: https://nmswp.azureedge.net/wp-content/uploads/2017/02/NewEridu-700x394.png
+  comments: No Man's Sky populates its vegetation on the three-dimensional surface of its planets.
+  links:
+    - label: No Man's Sky
+      href: https://www.nomanssky.com
+      subtitle: nomanssky.com
+
 - artist: Harm van den Dorpel
   title: Mutant Garden, 2021
   image: https://res.cloudinary.com/leftgallery/image/upload/v1606750677/hcwe970hpz5x3jm3hgc9.jpg
@@ -30,21 +48,3 @@
     - label: Artist Site
       href: https://harm.work/
       subtitle: harm.work
-
-- artist: Hello Games
-  title: No Man's Sky, 2016
-  image: https://nmswp.azureedge.net/wp-content/uploads/2017/02/NewEridu-700x394.png
-  comments: No Man's Sky populates its vegetation on the three-dimensional surface of its planets.
-  links:
-    - label: No Man's Sky
-      href: https://www.nomanssky.com
-      subtitle: nomanssky.com
-
-- artist: Evil Mad Scientist Laboratories
-  title: StippleGen, 2012
-  image: https://evilmadscience.s3.amazonaws.com/wiki/eggbot/stipplegen/v2docs/graceegg-640.jpg
-  comments: StippleGen was created in Processing to turn photographs into pen-plottable drawings.
-  links:
-    - label: Stipple Gen
-      href: https://wiki.evilmadscientist.com/StippleGen
-      subtitle: wiki.evilmadscientist.com

@@ -1,7 +1,7 @@
 - artist: Adam Ferriss
   title: Edward Snowden's Long, Strange Journey to Hollywood, 2016
   image: https://freight.cargo.site/w/3000/q/75/i/afc37cf91e99ae290b0280c2f339891ed4281deb265055d6106b6db0f722471d/insideSnowden.jpg
-  comments: Pixelated cover illustrations of Edward Snowden for New York Times.
+  comments: Pixel-manipulated cover illustrations of Edward Snowden for New York Times.
   links:
     - label: Edward Snowden's Long, Strange Journey to Hollywood
       href: https://amf.fyi/Edward-Snowden-s-Long-Strange-Journey-to-Hollywood
@@ -48,8 +48,8 @@
 
 - artist: Greg Schomburg
   title: Sketching in Hardware, 2014
-  image: slides/2014_in.png
-  comments: Input map for a generative illustration.
+  image: slides/2014_out.png
+  comments: An identity system that combines maze generation and pixel-map inputs.
   links:
     - label: Sketching in Hardware
       href: http://gregschomburg.com/2017/projects/sketching-in-hardware.html
@@ -58,17 +58,17 @@
       href: http://www.gregschomburg.com
       subtitle: gregschomburg.com
 
-- artist: Greg Schomburg
-  title: Sketching in Hardware, 2014
-  image: slides/2014_out.png
-  comments: Generated Illustration
-  links:
-    - label: Sketching in Hardware
-      href: http://gregschomburg.com/2017/projects/sketching-in-hardware.html
-      subtitle: gregschomburg.com
-    - label: Artist Site
-      href: http://www.gregschomburg.com
-      subtitle: gregschomburg.com
+# - artist: Greg Schomburg
+#   title: Sketching in Hardware, 2014
+#   image: slides/2014_in.png
+#   comments: Input map for a generative illustration.
+#   links:
+#     - label: Sketching in Hardware
+#       href: http://gregschomburg.com/2017/projects/sketching-in-hardware.html
+#       subtitle: gregschomburg.com
+#     - label: Artist Site
+#       href: http://www.gregschomburg.com
+#       subtitle: gregschomburg.com
 
 # commenting out these last two of Greg Schomburg's as we discussed
 # - artist: Greg Schomburg

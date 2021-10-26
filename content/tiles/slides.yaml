@@ -13,20 +13,20 @@
       href: http://www.moma.org/collection/artists/97?locale=en
       subtitle: moma.org
 
-- artist: Josef Albers
-  title: Bauhaus Lettering Set, 1926-31
-  image: https://www.moma.org/media/W1siZiIsIjY2NzIwIl0sWyJwIiwiY29udmVydCIsIi1yZXNpemUgMTI4MHgxMjgwXHUwMDNFIl1d.jpg?sha=73f0e9c465058815
-  comments: Alber's Bauhaus Lettering Set is a modularly constructed alphabet composed from 10 pieces (top row).
-  links:
-    - label: The Josef & Anni Albers Foundation
-      href: http://www.albersfoundation.org/
-      subtitle: albersfoundation.org
-    - label: Bauhaus Lettering Set
-      href: http://www.moma.org/collection/works/2724
-      subtitle: moma.org
-    - label: Josef Albers
-      href: http://www.moma.org/collection/artists/97?locale=en
-      subtitle: moma.org
+# - artist: Josef Albers
+#   title: Bauhaus Lettering Set, 1926-31
+#   image: https://www.moma.org/media/W1siZiIsIjY2NzIwIl0sWyJwIiwiY29udmVydCIsIi1yZXNpemUgMTI4MHgxMjgwXHUwMDNFIl1d.jpg?sha=73f0e9c465058815
+#   comments: Alber's Bauhaus Lettering Set is a modularly constructed alphabet composed from 10 pieces (top row).
+#   links:
+#     - label: The Josef & Anni Albers Foundation
+#       href: http://www.albersfoundation.org/
+#       subtitle: albersfoundation.org
+#     - label: Bauhaus Lettering Set
+#       href: http://www.moma.org/collection/works/2724
+#       subtitle: moma.org
+#     - label: Josef Albers
+#       href: http://www.moma.org/collection/artists/97?locale=en
+#       subtitle: moma.org
 
 - artist: Anni Albers
   title: Design for Wall Hanging, 1927
@@ -43,14 +43,14 @@
 - artist: Aarati Akkapeddi
   title: Kolam, 2019
   image: https://d2w9rnfcy7mm78.cloudfront.net/6508795/original_c66d931ed50d93fc38c833170a0552e6.jpg
-  comments: Based on typical South Indian "Dot" Kolam patterns, kolam designs were produced based on facial recognition data from the artist's family photographs. Each photos' number in each corresponding facial recognition vector was translated into a component of the kolam pattern, producing distinct kolam designs.
+  comments: Aarati Akkapeddi combines South Indian "Dot" Kolam patterns with facial recognition data.
   links:
     - label: Kolam
       href: https://aarati.me/project.html?project=project-kolam
       subtitle: aarti.me
-    - label: Kolam
-      href: https://en.wikipedia.org/wiki/Kolam
-      subtitle: wikipedia.org
+    # - label: Kolam
+    #   href: https://en.wikipedia.org/wiki/Kolam
+    #   subtitle: wikipedia.org
     - label: Artist Site
       href: https://aarati.me/
       subtitle: aarti.me
@@ -81,14 +81,14 @@
 - artist: Sunsoft
   title: Batman (NES), 1989
   image: ./slides/batman.png
-  comments: Batman exhibits some of the best visuals found on the NES. Every tile uses just 4 colors chosen from the NES's 64-color palette.
+  comments: Batman exhibits some of the best visuals found on the NES. Every tile is limited to just 4 colors, and only 4 of these palettes can be used together.
   links:
     - label: Batman Tile Maps
       href: http://www.vgmaps.com/Atlas/NES/index.htm#B
       subtitle: vgmaps.com
-    - label: "Batman: The Video Game"
-      href: https://en.wikipedia.org/wiki/Batman:_The_Video_Game
-      subtitle: wikipedia.org
+    # - label: "Batman: The Video Game"
+    #   href: https://en.wikipedia.org/wiki/Batman:_The_Video_Game
+    #   subtitle: wikipedia.org
     - label: "Pixel Art Discussion"
       href: https://pixelation.org/index.php?topic=9173.0
       subtitle: pixelation.org
@@ -105,12 +105,11 @@
 - artist: Yacht Club Games
   title: Shovel Knight, 2014
   image: https://images.gog-statics.com/e03b73e8bffe93e2d505dcad7cbf2f8659a0e5a7266501c8bbc2bdf7e652fc3e_product_card_v2_mobile_slider_639.jpg
-  comments: Shovel Knight is an excellent retro platformer with an art style that carefully embraces the hardware limitations of the 8-bit era.
+  comments: Shovel Knight is an excellent retro platformer with an art style that embraces the 8-bit era.
   links:
     - label: Shovel Knight
       href: http://yachtclubgames.com/shovel-knight/
       subtitle: yachtclubgames.com
-
 # - artist: Pauline Gorelov
 #   title:
 #   image: http://www.paulinegorelov.com/media/filter/l/img/hyperstructurewhite_modulartile_paulinegorelov_02.jpg
@@ -172,29 +171,29 @@
 #   comments: >
 #   links:
 
-- artist: Adomas Bruzga
-  title: Things, 2016
-  image: ./slides/adomas-bruzga-16.jpg
-  comments: Adomas Bruzga used edge-matched tiles, themselves made on grids, to create this poster for Comp Form '16. Adomas also used a tile-based approach to design the *Virtue* speculative identity.
-  links:
-    - label: Artist Website
-      href: http://www.adomasbruzga.com/
-      subtitle: adomasbruzga.com
+# - artist: Adomas Bruzga
+#   title: Things, 2016
+#   image: ./slides/adomas-bruzga-16.jpg
+#   comments: Adomas Bruzga used edge-matched tiles, themselves made on grids, to create this poster for Comp Form '16. Adomas also used a tile-based approach to design the *Virtue* speculative identity.
+#   links:
+#     - label: Artist Website
+#       href: http://www.adomasbruzga.com/
+#       subtitle: adomasbruzga.com
 
-- artist: Dorothy Cruz
-  title: You, 2017
-  image: ./slides/dorthy-cruz-17.png
-  comments: Dorothy Cruz used an isometric grid for this poster in Comp Form '17.
-  links:
-    - label: Artist Website
-      href: https://www.dorothycruz.com/
-      subtitle: dorothycruz.com
+# - artist: Dorothy Cruz
+#   title: You, 2017
+#   image: ./slides/dorthy-cruz-17.png
+#   comments: Dorothy Cruz used an isometric grid for this poster in Comp Form '17.
+#   links:
+#     - label: Artist Website
+#       href: https://www.dorothycruz.com/
+#       subtitle: dorothycruz.com
 
-- artist: Talia Cotton
-  title: Go For It, 2017
-  image: ./slides/talia-cotton-17.png
-  comments: Talia created a 3D tileset for this poster in Comp Form '17.
-  links:
-    - label: Artist Website
-      href: http://taliacotton.com/
-      subtitle: taliacotton.com
+# - artist: Talia Cotton
+#   title: Go For It, 2017
+#   image: ./slides/talia-cotton-17.png
+#   comments: Talia created a 3D tileset for this poster in Comp Form '17.
+#   links:
+#     - label: Artist Website
+#       href: http://taliacotton.com/
+#       subtitle: taliacotton.com

@@ -31,26 +31,26 @@
 #     - label: "Kuva.io: Hair"
 #       href: https://www.kuva.io/hair-simulation/
 
-- artist: MakeHuman Community
-  title: MakeHuman, 2000
-  image: https://upload.wikimedia.org/wikipedia/commons/c/c7/Makehuman_1_0_alpha8_rc_screenshot.png
-  comments: A free and open source 3D computer graphics middleware designed for the prototyping of photorealistic humanoids.
-  links:
-    - label: "MakeHuman"
-      href: http://www.makehumancommunity.org/
-      subtitle: makehumancommunity.org
+# - artist: MakeHuman Community
+#   title: MakeHuman, 2000
+#   image: https://upload.wikimedia.org/wikipedia/commons/c/c7/Makehuman_1_0_alpha8_rc_screenshot.png
+#   comments: A free and open source 3D computer graphics middleware designed for the prototyping of photorealistic humanoids.
+#   links:
+#     - label: "MakeHuman"
+#       href: http://www.makehumancommunity.org/
+#       subtitle: makehumancommunity.org
 
-- artist: Collins
-  title: San Francisco Symphony Symphosizer, 2021
-  image: https://www.creativeboom.com/uploads/articles/7f/7f13f6f7f77f7b00f6cd71d2ac01058c3eebb4db_1620.jpg
-  comments: A sound-activated typographic instrument that was part of the rebrand for the San Francisco Symphony.
-  links:
-    - label: Symphosizer
-      href: https://symphosizer.wearecollins.com/
-      subtitle: wearecollins.com
-    - label: Artist Site
-      href: https://www.wearecollins.com/
-      subtitle: wearecollins.com
+# - artist: Collins
+#   title: San Francisco Symphony Symphosizer, 2021
+#   image: https://www.creativeboom.com/uploads/articles/7f/7f13f6f7f77f7b00f6cd71d2ac01058c3eebb4db_1620.jpg
+#   comments: A sound-activated typographic instrument that was part of the rebrand for the San Francisco Symphony.
+#   links:
+#     - label: Symphosizer
+#       href: https://symphosizer.wearecollins.com/
+#       subtitle: wearecollins.com
+#     - label: Artist Site
+#       href: https://www.wearecollins.com/
+#       subtitle: wearecollins.com
 
 - artist: Droftarts
   title: Parametric Pulley, 2012
@@ -60,27 +60,6 @@
     - label: "Parametric Pulley"
       href: https://www.thingiverse.com/thing:16627
       subtitle: thingiverse.com
-
-- artist: Greg Schomburg
-  title: GregFonts, 2017
-  image: ./slides/gregfont.png
-  comments: GregFonts is a series of custom made single stroke fonts for use in vector design, laser cutting, and pen plotting.
-  links:
-    - label: GregFonts
-      href: http://gregschomburg.com/gregfont/
-      subtitle: gregschomburg.com
-    - label: Artist Site
-      href: http://gregschomburg.com/
-      subtitle: gregschomburg.com
-
-- artist: Plastaq Software
-  title: elsy
-  image: ./slides/elsy.png
-  comments: An L-System explorer that works right in the browser.
-  links:
-    - label: elsy
-      href: http://www.plastaq.com/elsy/
-      subtitle: plastaq.com
 
 - artist: Peter Biľak
   title: The Q Project, 2020
@@ -93,6 +72,27 @@
     - label: Artist Site
       href: https://peterbilak.com/
       subtitle: peterbilak.com
+
+- artist: Greg Schomburg
+  title: GregFonts, 2017
+  image: ./slides/gregfont.png
+  comments: GregFonts is a series of custom made single stroke fonts for use in vector design, laser cutting, and pen plotting.
+  links:
+    - label: GregFonts
+      href: http://gregschomburg.com/gregfont/
+      subtitle: gregschomburg.com
+    - label: Artist Site
+      href: http://gregschomburg.com/
+      subtitle: gregschomburg.com
+# - artist: Plastaq Software
+#   title: elsy
+#   image: ./slides/elsy.png
+#   comments: An L-System explorer that works right in the browser.
+#   links:
+#     - label: elsy
+#       href: http://www.plastaq.com/elsy/
+#       subtitle: plastaq.com
+
 # commenting this out because we discussed only having two type gens
 # - artist: mataflop
 #   title: modulator

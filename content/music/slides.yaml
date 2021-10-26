@@ -57,3 +57,15 @@
     - label: Artist Site
       href: http://jeremywentworth.com/
       subtitle: jeremywentworth.com
+
+- artist: John Cage
+  title: 4'33", 1952
+  image: https://www.moma.org/d/assets/W1siZiIsIjIwMTUvMTAvMjEvMXNvcXVnb3NieV90aGVyZXdpbGxuZXZlcmJlc2lsZW5jZS5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXJlc2l6ZSAyMDAweDIwMDBeIC1ncmF2aXR5IENlbnRlciAtY3JvcCAyMDAweDIwMDArMCswIl1d/therewillneverbesilence.jpg?sha=db5713acfc387367
+  comments: A musical score with no intentional sounds, <i>4'33"</i> challenges how many aspects of music are conventionally understood.
+  links:
+    - label: 4'33"
+      href: http://www.moma.org/calendar/exhibitions/1386?locale=en
+      subtitle: moma.org
+    - label: 4'33"
+      href: https://en.wikipedia.org/wiki/4%E2%80%B233%E2%80%B3
+      subtitle: wikipedia.org
