@@ -568,7 +568,7 @@ Explore the study examples above by completing the following challenges.
 
 ## Sketch!
 
-### Base
+### Sketch
 
 Experiment with procedurally generating images using `random()`. Explore each of the tactics discussed above.
 
