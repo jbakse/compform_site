@@ -52,6 +52,15 @@
 #       href: https://www.wearecollins.com/
 #       subtitle: wearecollins.com
 
+- artist: Apple
+  title: Memoji,2018
+  image: https://cdn.ithinkdiff.com/wp-content/uploads/2021/06/iOS-15-new-Memoji.jpg.webp
+  comments: Apple's Memoji allows users to hyper-customize their own animated avatar, which they can then use to mirror their real-life facial expressions.
+  links:
+    - label: "Memoji"
+      href: https://support.apple.com/en-us/HT208986
+      subtitle: apple.com
+
 - artist: Droftarts
   title: Parametric Pulley, 2012
   image: ./slides/pulley.png

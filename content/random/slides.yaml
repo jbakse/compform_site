@@ -1,3 +1,27 @@
+- artist: Vera Molnar
+  title: (Dés) Ordres, 1974
+  image: https://i2.wp.com/dam.org/museum/wp-content/uploads/2020/09/Molnar1974DesOrdres1-copy-scaled.jpg
+  comments: Vera Molnar is one of the earliest women arists to create computer assisted art. In this series, Vera made a pattern of concentric squares that were randomly disrupted to explore the tension between order and disorder.
+  links:
+    - label: (Dés) Ordres
+      href: https://dam.org/museum/artists_ui/artists/molnar-vera/des-ordres/
+      subtitle: dam.org
+    - label: Artist Site
+      href: http://www.veramolnar.com/
+      subtitle: veramolnar.com
+
+- artist: LIA
+  title: "Four Seasons: Spring, 2019"
+  image: https://www.liaworks.com/wp-content/uploads/2019/05/spring-2019-05-12-15-23-43.png
+  comments: LIA translated her interpretation of springtime into these blossom-like, abstract forms. The elements are randomly generated and never repeat.
+  links:
+    - label: "Four Seasons: Spring"
+      href: https://www.liaworks.com/theprojects/spring/
+      subtitle: liaworks.com
+    - label: Artist Site
+      href: https://www.liaworks.com/
+      subtitle: liaworks.com
+
 - artist: Jean Arp
   title: Collage with Squares Arranged According to the Laws of Chance, 1917
   image: ./slides/arp.jpg
@@ -6,6 +30,30 @@
     - label: Collage with Squares...
       href: https://www.moma.org/collection/works/37013
       subtitle: moma.org
+
+- artist: Rafael Lozano-Hemmer
+  title: Method Random, 2014
+  image: ./slides/lozano_hemmer.png
+  comments: A series of chromogenic prints that have been computationally generated in an attempt to create randomness. A random number generator was used to choose what color each pixel should be.
+  links:
+    - label: Method Random
+      href: https://www.lozano-hemmer.com/method_random.php
+      subtitle: lozano-hemmer.com
+    - label: Artist Site
+      href: https://www.lozano-hemmer.com/
+      subtitle: lozano-hemmer.com
+
+- artist: Amy Goodchild
+  title: Geometric Constellations, 2020
+  image: https://images.squarespace-cdn.com/content/v1/5f33cddd6aff255aabb0c6cd/1599403728779-DQBIQY2EE9N131KNHYUY/generated424651.png
+  comments: Constellation-like forms made up of nodes and connections. Although the placement of the nodes and connections are driven by randomness, the shapes formed are still recognizable.
+  links:
+    - label: Geometric Constellations
+      href: https://www.amygoodchild.com/blog/geometric-constellations
+      subtitle: amygoodchild.com
+    - label: Artist Site
+      href: https://www.amygoodchild.com
+      subtitle: amygoodchild.com
 
 - artist: Marcel Duchamp
   title: 3 Standard Stoppages, 1913
@@ -27,14 +75,13 @@
     - label: "Roguelike"
       href: https://en.wikipedia.org/wiki/Roguelike
       subtitle: wikipedia.org
-
-- artist: Joshua Davis (Praystation)
-  title: Misc, 1
-  image: ./slides/praystation_1.jpg
-  links:
-    - label: "Artist Site"
-      href: https://joshuadavis.com/
-      subtitle: joshuadavis.com
+# - artist: Joshua Davis (Praystation)
+#   title: Misc, 1
+#   image: ./slides/praystation_1.jpg
+#   links:
+#     - label: "Artist Site"
+#       href: https://joshuadavis.com/
+#       subtitle: joshuadavis.com
 # commenting this out for now because it concerns machine learning vs random
 # - artist: Soungwen Chung
 #   title: Drawing Operations, 2017

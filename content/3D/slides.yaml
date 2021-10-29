@@ -10,6 +10,30 @@
       href: https://prettydarke.cool
       subtitle: prettydarke.cool
 
+- artist: Tega Brain
+  title: New York Apartment, 2020
+  image: https://payload.cargocollective.com/1/10/351441/14055703/nyapt_2512.jpg
+  comments: This 3D structure is part of a project that combines the totality of New York real estate into a single listing. The structure is generated from an amalgamation of extruded floor plans.
+  links:
+    - label: New York Apartment
+      href: http://www.tegabrain.com/New-York-Apartment
+      subtitle: tegabrain.com
+    - label: "Artist Site"
+      href: http://www.tegabrain.com/
+      subtitle: tegabrain.com
+
+- artist: Lee Blalock
+  title: Plan3tary Bodies, 2015
+  image: http://www.leeblalock.com/images/planetlee.jpeg
+  comments: Images of the body are reimagined as planetary bodies through 3D modeling, as inspired by NASA images.
+  links:
+    - label: Plan3tary Bodies
+      href: http://www.leeblalock.com/planets.html
+      subtitle: leeblalock.com
+    - label: "Artist Site"
+      href: http://www.leeblalock.com
+      subtitle: leeblalock.com
+
 - artist: Andy Lomas
   title: Vase Forms, 2019
   image: https://dataidedesign.com/wp-content/uploads/2020/10/vase_forms_DAD.jpg

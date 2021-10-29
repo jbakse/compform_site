@@ -10,6 +10,18 @@
       href: https://zzyw.org
       subtitle: zzyw.org
 
+- artist: Talia Cotton (with Pentagram)
+  title: Central Park Typestester, 2021
+  image: ./slides/talia_cotton.png
+  comments: The letterforms in this typetester are comprised of leaves that are individual SVGs.
+  links:
+    - label: Central Park Typetester
+      href: https://centralparktypetester.netlify.app/
+      subtitle: generator
+    - label: Artist Site
+      href: https://taliacotton.com/
+      subtitle: taliacotton.com
+
 - artist: Matthias Dörfelt
   title: Weird Faces, 2012-13
   image: https://www.mokafolio.de/thumbs/works/Weird-Faces/01-2400x1526.jpg

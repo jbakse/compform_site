@@ -1,0 +1,32 @@
+- artist: Amy Goodchild
+  title: Curved Line Jellyfish, 2020
+  image: https://images.squarespace-cdn.com/content/v1/5f33cddd6aff255aabb0c6cd/1616439853856-GUIV332I0I3RY28NFG60/31.png
+  comments: Amy used the <code>curve()</code> and <code>noise()</code> functions from p5.js to create these organic, jellyfish-like orbs.
+  links:
+    - label: Curved Line Jellyfish
+      href: https://www.amygoodchild.com/blog/curved-line-jellyfish
+      subtitle: case study
+    - label: Artist Site
+      href: https://www.amygoodchild.com
+      subtitle: amygoodchild.com
+
+- artist: Roni Cantor
+  title: Programmed Plotter Drawings, 2020
+  image: https://p5js.org/assets/img/showcase/roni-cantor/roni-cantor_plotter-turquoise.jpg
+  comments: Roni used the p5.js <code>sin()</code> and <code>lerp()</code> functions to create wave forms that were then drawn with a plotter and pens.
+  links:
+    - label: Programmed Plotter Drawings
+      href: https://p5js.org/showcase/featuring/roni-cantor.html
+      subtitle: p5js.org
+
+- artist: Jenny Kowalski
+  title: Haystack, 2021
+  image: https://uploads-ssl.webflow.com/60c420a8ba3a284480b1899a/60d9e5e5840c1b5c633c2d74_haystack-p-800.jpeg
+  comments: Jenny uses the p5.js <code>random()</code> function to generate new layouts of overlapping lines.
+  links:
+    - label: Haystack
+      href: https://www.jennybkowalski.com/experiment/haystack
+      subtitle: jennybkowalski.com
+    - label: Artist Site
+      href: https://www.jennybkowalski.com/
+      subtitle: jennybkowalski.com

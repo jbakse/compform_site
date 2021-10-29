@@ -23,6 +23,8 @@ Minigames are small videogames included within larger videogames. They are often
 
 Some games are made up almost entirely of minigames. Party games like Mario Party, Rayman: Raving Rabbids, and 1-2-Switch allow players to compete in a series of minigame events. Evoland I + II are RPGs that mix many videogame styles and mechanics both by including many minigames and by evolving the presentation of the main game itself.
 
+<!-- commenting this out because now there's a gallery
+
 <div class="three-up">
 
 ![Bioshock](figures/bioshock.jpg)
@@ -34,7 +36,7 @@ Final Fantasy VII Chocobo Racing{figure}
 ![Animal Crossing](figures/animalcrossing.jpg)
 Animal Crossing NES Collection{figure}
 
-</div>
+</div> -->
 
 Minigames provide many benefits in game design. They offer a change of pace from the main game, reducing fatigue. They are usually low stakes, reducing stress. A well-placed minigame can improve the pacing of the main game significantly. Offering a break before a spike in the action will increase the apparent contrast in the intensity.
 
@@ -42,15 +44,21 @@ Minigames don't have to carry the weight of a full game. They don't have advance
 
 The [WarioWare](<https://en.wikipedia.org/wiki/Wario_(franchise)>) series, which debuted in 2003 on the Game Boy Advance, pushed the single-minded focus of minigames as far as possible. WarioWare presents the player with a rapid-fire sequence of microgames that demand only a single action from the player and take just seconds to play. As soon as the player completes one challenge, another begins.
 
+<!-- commenting this out because now there's a gallery
+
 <div class="three-up">
 
 ![WarioWare](figures/ww-stop.png)
 ![WarioWare](figures/ww-car.png)
 ![WarioWare](figures/ww-catch.png)
 
-</div>
+</div> -->
 
 Designing and building Microgames is a great way to explore game design. Their small scope allows even a single person to conceive, build, and test a game idea in a short amount of time. Each microgame is stripped to its essential element, allowing no distractions to cover up weak central mechanic. When building a microgame is left with a little to worry about as possible beyond the essentials of game design.
+
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
 
 <div class="activity">
 
