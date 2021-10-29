@@ -1,0 +1,35 @@
+- artist: 2K Games
+  title: BioShock, 2007
+  image: ./figures/bioshock.jpg
+  comments: The first-person shooter game Bioshock used a minigame version of Pipe Dream—a classic puzzler—as the mechanic used to hack doors and machines.
+  links:
+    - label: Bioshock
+      href: https://www.bioshockgame.com/
+      subtitle: bioshockgame.com
+
+- artist: Square Enix
+  title: Final Fantasy VII, 1997
+  image: ./figures/ffVII.jpg
+  comments: Final Fantasy VII introduced a Chocobo Racing minigame that allowed players to capture, breed, and race large, rideable birds.
+  links:
+    - label: Final Fantasy VII
+      href: https://finalfantasyviipc.square-enix-games.com/en
+      subtitle: square-enix-games.com
+
+- artist: Nintendo
+  title: Animal Crossing, 2001
+  image: ./figures/animalcrossing.jpg
+  comments: In Animal Crossing, players can decorate their home with playable NES games.
+  links:
+    - label: Animal Crossing
+      href: https://animal-crossing.com/
+      subtitle: animal-crossing.com
+
+- artist: Nintendo
+  title: WarioWare, 2003
+  image: ./figures/ww-stop.png
+  comments: WarioWare presents the player with a rapid-fire sequence of microgames that demand only a single action from the player and take just seconds to play. As soon as the player completes one challenge, another begins.
+  links:
+    - label: WarioWare
+      href: https://arcadespot.com/game/wario-ware-inc/
+      subtitle: arcadespot.com

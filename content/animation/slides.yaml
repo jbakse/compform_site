@@ -7,6 +7,18 @@
       href: https://www.youtube.com/embed/86iQiV3-3IA
       subtitle: video
 
+- artist: Lillian Schwartz
+  title: PIXILLATION, 1970
+  image: https://artforum.com/uploads/upload.001/id30685/article00_1064x.jpg
+  comments: Lillian Schwartz is considered one of the pioneers of computer-assisted art and animation. In <i>PIXILLATION</i> computer-produced images are animated to the sound of Moog synthesizers.
+  links:
+    - label: PIXILLATION
+      href: http://lillian.com/1970-pixillation-4-min/
+      subtitle: video
+    - label: Artist Site
+      href: http://lillian.com
+      subtitle: lillian.com
+
 - artist: Oskar Fischinger
   title: An Optical Poem, 1938
   image: ./slides/fischinger.jpg
@@ -39,6 +51,18 @@
     - label: Permutations
       href: https://www.youtube.com/watch?v=kdYxJ85RSds
       subtitle: video
+
+- artist: Loulou Joao
+  title: Birth of the Black Venus, 2020
+  image: https://admin.itsnicethat.com/images/-31j1Z3i24_87eOdWhmcoibx5iY=/201845/format-webp%7Cwidth-1440/loulou-joao-illustration-animation-itsnicethat-13.jpeg
+  comments: This piece was created at the start of the Black Lives Matter protests in 2020. Through animation, Loulou challenges the lack of representation found in Renaissance imagery that depict goddesses, such as <i>Birth of Venus.</i> In Loulou's own words, "These representations have formed a standard of what was perceived as beautiful during that era and which still affects the ideals of the present."
+  links:
+    - label: Birth of the Black Venus
+      href: https://www.instagram.com/p/CJEVWy1hlzJ/
+      subtitle: video
+    - label: Artist Site
+      href: https://louloujoao.com/
+      subtitle: louloujoao.com
 
 - artist: Pixar
   title: Brave, 2012
