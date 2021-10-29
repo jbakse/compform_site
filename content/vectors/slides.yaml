@@ -51,7 +51,7 @@
 
 - artist: Scott Turner
   title: Here Dragons Abound, 2016—2021
-  image: https://lh3.googleusercontent.com/-0_M_c-Z5XFA/YUphCMJvaZI/AAAAAAAAz9o/HQy-WGfr7jUaDw4jsXBrDcRWzZea6kqBACLcBGAsYHQ/image.png
+  image: ./slides/dragons.png
   comments: This long-running process blog documents years of work generating SVG maps, detailing each feature and technique.
   links:
     - label: Here Dragons Abound

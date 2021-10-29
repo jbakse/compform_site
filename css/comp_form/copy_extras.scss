@@ -245,7 +245,16 @@
     }
     .difficulty + ol li {
       // background: red;
+      // width: 90%;
+      position: relative;
+      margin-bottom: 0.75em;
+    }
+    .difficulty + ol li strong {
+      // background: blue;
+      font-weight: 300;
       width: 90%;
+      display: block;
+      line-height: 1.75;
     }
 
     .easy,
@@ -263,6 +272,7 @@
       letter-spacing: -0.15em;
       position: absolute;
       right: 0;
+      top: 0;
       font-size: 30px;
       line-height: 36px;
 

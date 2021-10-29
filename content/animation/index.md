@@ -388,3 +388,7 @@ Bumper Examples:
 
 [Animation Techniques: The Smear](https://idearocketanimation.com/8857-animation-techniques-smear/)
 : A history of the smear frame, featuring a gallery of images.
+
+    - label: "Animation Techniques: The Smear"
+      href: https://idearocketanimation.com/8857-animation-techniques-smear/
+      subtitle: idearocketanimation.com

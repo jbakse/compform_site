@@ -64,7 +64,7 @@ Where do those values come from? They could come from a few places.
 | random()   | You want random variation.                                      |
 | noise(x)   | You want controlled variation.                                  |
 
-Both `random()` and `noise()` would provide a source of variation, but `noise()` provides much more control. With `random()` the sizes of the boxes won't be related at all. With `noise()` we can control how quickly the size changes horizontally, vertically, and over time. If we sample a small area of the noise function the variation will be subtle and gradual. If our samples are far apart the variation will be be drastic, unpredictable and look a lot like `random()`.
+Both `random()` and `noise()` provide a source of variation, but `noise()` provides much more control. With `random()` the sizes of the boxes won't be related at all. With `noise()` we can control how quickly the size changes horizontally, vertically, and over time. If we sample a small area of the noise function the variation will be subtle and gradual. If our samples are far apart the variation will be be drastic, unpredictable and look a lot like `random()`.
 
 #### Random()
 
@@ -250,22 +250,22 @@ Explore using noise by completing the following challenges in order. <br/> Don't
 
 ### Modify the Mapping Noise Example {difficulty}
 
-1. This example shows several ways to map noise. Comment in and out each example, and compare the results. {easy}
+1. **This example shows several ways to map noise. Comment in and out each example, and compare the results.** {easy}
 
 ### Modify the Grass Example {difficulty}
 
-1. Study the code and get a general idea of how it works. {easy}
-1. Line 28 has two magic constants: `.01` and `.001`. Try changing the first constant to `.1`. What happens? What happens when you change it to `1`? {easy}
-1. Set the first constant back to `.01`. Change the second constant to `.01`. What happens? {easy}
-1. Add flowers to some of the blades of grass. {hard}
+1. **Study the code and get a general idea of how it works.** {easy}
+1. **Line 28 has two magic constants: `.01` and `.001`. Try changing the first constant to `.1`. What happens? What happens when you change it to `1`?** {easy}
+1. **Set the first constant back to `.01`. Change the second constant to `.01`. What happens?** {easy}
+1. **Add flowers to some of the blades of grass.** {hard}
    {continue}
 
 ### Modify the Skyline Example {difficulty}
 
-1. This example has two global parameters: `amplitude` and `frequency`. Change the values of these parameters to get a feel for how they affect the output. What happens when you use a very small value for frequency, such as `.001`? {easy}
-1. On line 23, what would happen if you changed `noise(x * frequency)` to `noise(x * frequency, frameCount)`? Make the change. Is that what you expected? {easy}
-1. Your last change should have caused the bar heights to animate very quickly. Slow down the rate of change. {medium}
-1. Add water towers to some of the buildings. {hard}
+1. **This example has two global parameters: `amplitude` and `frequency`. Change the values of these parameters to get a feel for how they affect the output. What happens when you use a very small value for frequency, such as `.001`?** {easy}
+1. **On line 23, what would happen if you changed `noise(x * frequency)` to `noise(x * frequency, frameCount)`? Make the change. Is that what you expected?** {easy}
+1. **Your last change should have caused the bar heights to animate very quickly. Slow down the rate of change.** {medium}
+1. **Add water towers to some of the buildings.** {hard}
    {continue}
 
 </div>
@@ -274,7 +274,7 @@ Explore using noise by completing the following challenges in order. <br/> Don't
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
 This week, focus on using the `noise()` function. Use `noise()` in a variety of ways. Use 1D, 2D, and 3D noise. Try using high, mid, and low frequency noise. Try using noise to control different things: position, size, color, rotation, etc. Think about tile graphics, `random()`, and parameters while you work. Consider combining these concepts with `noise()`.
 

@@ -64,14 +64,14 @@
       href: https://louloujoao.com/
       subtitle: louloujoao.com
 
-- artist: Pixar
-  title: Brave, 2012
-  image: https://sciencebehindpixar.org/sites/science-behind-pixar/files/simulation_challenge_preview.jpg
-  comments: Pixar has been a pioneer in digital animation, producing feature-length films with compelling stories, memorable characters, and iconic art.
-  links:
-    - label: The Science Behind Pixar
-      href: http://sciencebehindpixar.org
-      subtitle: sciencebehindpixar.org
+# - artist: Pixar
+#   title: Brave, 2012
+#   image: https://sciencebehindpixar.org/sites/science-behind-pixar/files/simulation_challenge_preview.jpg
+#   comments: Pixar has been a pioneer in digital animation, producing feature-length films with compelling stories, memorable characters, and iconic art.
+#   links:
+#     - label: The Science Behind Pixar
+#       href: http://sciencebehindpixar.org
+#       subtitle: sciencebehindpixar.org
 
 - artist: LAIKA
   title: Kubo and the Two Strings, 2016
@@ -99,12 +99,11 @@
     - label: "GDC talk on Inside animation"
       subtitle: "video"
       href: "https://www.youtube.com/watch?v=RdN06E6Xn9E"
-
-- artist: Chuck Jones for Warner Bros.
-  title: Often An Orphan, 1949
-  image: https://idearocketanimation.com/wp-content/uploads/2016/03/b5c6eb85dcd9260569f9b1e44b55eac3.jpg
-  comments: Smear frames, popularized by Chuck Jones in Warner Bros. cartoons, convey speed and motion blur.
-  links:
-    - label: "Animation Techniques: The Smear"
-      href: https://idearocketanimation.com/8857-animation-techniques-smear/
-      subtitle: idearocketanimation.com
+# - artist: Chuck Jones for Warner Bros.
+#   title: Often An Orphan, 1949
+#   image: https://idearocketanimation.com/wp-content/uploads/2016/03/b5c6eb85dcd9260569f9b1e44b55eac3.jpg
+#   comments: Smear frames, popularized by Chuck Jones in Warner Bros. cartoons, convey speed and motion blur.
+#   links:
+#     - label: "Animation Techniques: The Smear"
+#       href: https://idearocketanimation.com/8857-animation-techniques-smear/
+#       subtitle: idearocketanimation.com
