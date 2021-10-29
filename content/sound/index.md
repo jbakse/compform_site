@@ -19,6 +19,10 @@ This chapter will focus on playing and visualizing pre-recorded sound assets. Th
 - [p5.sound API Reference](https://p5js.org/reference/#/libraries/p5.sound)
 - [p5.sound Examples](https://p5js.org/examples/)
 
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
+
 <div class="discussion">
 
 ## Drawings and Sounds
