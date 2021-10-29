@@ -60,6 +60,10 @@ Processing and p5.js are both widely popular open-source projects with large, ac
 | [Shiffman's Videos](http://shiffman.net/videos/)                                                                   | Dan Shiffman has a full range of video tutorials for p5.js and creative code. |
 | [Khan Academy<br/> JS Drawing & Animation](https://www.khanacademy.org/computing/computer-programming/programming) | Complete, free course on drawing with code using p5.js.                       |
 
+{% slides %}
+{% include slides.yaml %}
+{% endslides %} |
+
 ### A p5.js Example Sketch
 
 This sketch draws a very simple house. You can try changing or adding to the house by editing the code below. You'll need to hit cmd/ctrl-s to update the code after you make changes.
