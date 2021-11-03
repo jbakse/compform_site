@@ -226,9 +226,11 @@
 
       border-bottom: 0.5px solid $middle-grey;
     }
-    .js-lab {
-      background: #ccc;
-      padding: 10px; // border: 10px solid #CCC;
+
+    > .js-lab {
+      background: #ddd;
+      padding: 15px; // border: 10px solid #CCC;
+      @include block-pad;
     }
 
     .difficulty {
