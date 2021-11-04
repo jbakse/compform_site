@@ -1,4 +1,4 @@
-// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
 let generatedNumber = null;
 const buckets = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
