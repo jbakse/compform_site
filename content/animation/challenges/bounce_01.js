@@ -1,4 +1,4 @@
-// require https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
 /*exported setup draw */
 

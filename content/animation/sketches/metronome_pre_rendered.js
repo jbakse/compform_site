@@ -1,5 +1,4 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
 function setup() {
   createCanvas(400, 350);

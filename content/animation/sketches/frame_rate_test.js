@@ -1,4 +1,4 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
 // change this to other values (15, 24, 30, 45, 50, 60 are good) to see how p5.js responds
 let requestedFPS = 50;
