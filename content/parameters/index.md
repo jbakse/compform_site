@@ -341,15 +341,15 @@ Explore using parameters by completing the following challenges. Reference the s
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
-Continue experimenting with procedurally-generated images. Now, focus on exposing parameters and exploring the parameter spaces of your sketches. You can mix random and parametric elements, but I suggest doing at least a couple of sketches that are not random at all.{bigger}
+Continue experimenting with procedurally-generated images but with a focus on exposing parameters and exploring the parametric potential of your sketches. You can mix random and parametric elements, but consider doing a couple of sketches that are not random at all.{bigger}
 
-### Individual Challenge: Face Generator
+### Challenge: Face Generator
 
 Build a face-generating tool. This tool will create an image of a face that can be adjusted by the user with sliders and other inputs.
 
-- Don’t use the built-in shape drawing commands like rect and ellipse. Build your face from hand-drawn or photographic images.
+- Don’t use the built-in shape drawing commands like `rect()` and `ellipse()`. Build your face from manually-created illustrations or photographic images.
 - Make your resulting images look as seamless and cohesive as possible.
 - Inputs can range from straightforward (eye color, nose size) to complex (anger, lighting).
 
@@ -357,15 +357,14 @@ Build a face-generating tool. This tool will create an image of a face that can 
 
 #### Part 1
 
-1. Create an computationally generated image.
-2. Post your image.
-3. Pass the code—not the image—to your partner.
+1. Create a computationally generated image.
+2. Pass the code—not the image—to your partner.
 
 #### Part 2
 
 1. Receive the code from your partner.
 2. Extend the code in any way you wish.
-3. Post the result.
+3. Share the result.
 
 </div>
 
