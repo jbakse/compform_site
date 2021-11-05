@@ -361,43 +361,39 @@ What tactics might have been used to get each result below?
 
 ## Coding Challenges
 
-Explore the code examples above by completing the following challenges in order. <br/> Don't skip any.
+Explore the study examples above by completing the following challenges in order.
 
-| Time                 | Comment                                                                              |
+<!-- <br/> Don't skip any. -->
+
+<!-- | Time                 | Comment                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------ |
 | < 11 in 20 Minutes   | You need to put in some extra work to strengthen your understanding of these topics. |
 | 11 in 20 Minutes     | Good.                                                                                |
-| All 14 in 20 Minutes | Great.                                                                               |
+| All 14 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Basic Grid Placement Example
+### Modify the Basic Grid Placement Example{difficulty}
 
-1. Change the grid to 10 x 20, 20 x 20, and 100 x 100.
-2. Add a little random offset to each circle.
-3. Draw a little "pine tree" at each point: a green triangle on a brown square.
-4. Remove the `noLoop()`. Does this introduce any problems?
+1. Change the grid to 10 x 20, 20 x 20, and 100 x 100.{easy}
+1. Add a little random offset to the position of each circle.{easy}
+1. Remove the `noLoop()`. Does this introduce any problems?{medium}
+1. Draw a little "pine tree" at each point: a green triangle on a brown square.{hard}
 
 ### Modify the Basic Random Placement Example
 
-1. Change the code to place only 10 points. Try placing 1000 points.
-2. Use middle biasing when placing points to make them more likely to appear near the center.
-3. Draw a little "snowman" at each point: three white circles, stacked.
-4. Remove the `noLoop()`. Does this introduce any problems?
+1. Change the code to place only 10 points. Try placing 1000 points. {easy}
+1. Use middle biasing when placing points so they're more likely to appear near the center. {medium}
+1. Draw a little "snowman" at each point: three white circles, stacked. {hard}
+1. Remove the `noLoop()`. Does this introduce any problems? {medium}
    {continue}
 
 ### Modify the Stored Grid Placement Example
 
-1. Add a little random offset to each circle.
-2. Change the setup to use random placement and place 100 points.
-3. This example doesn't need `noLoop()`. Why?
-   {continue}
-
-### Challenging Challenges
-
-Continue with the stored random placement code you made above.
-
-1. Draw about 75% of the points as trees and 25% as snowmen.
-2. Make sure the points don't switch between trees and snowmen every frame.
-3. For each `draw()` move the snowmen a random step left, up, right, or down.
+1. Add a little random offset to the position of each circle. {easy}
+1. Change the grid setup to use random placement and place 100 points. {easy}
+1. This example doesn't need `noLoop()`. Why? {medium}
+1. Draw about 75% of the points as trees and 25% as snowmen. {medium}
+1. Make sure the points don't switch between trees and snowmen every frame. {hard}
+1. For each `draw()` frame, move the snowmen a random step left, up, right, or down. {hard}
    {continue}
 
 </div>
