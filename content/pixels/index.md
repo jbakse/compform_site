@@ -435,25 +435,27 @@ This example uses an image as an input to control the density and placement of d
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
-Explore working with image pixel data directly. This week, most of your posts should be still images.{bigger}
+Explore working with image pixel data directly. Most of your sketches should be still images. {bigger}
 
-Post **at least one** sketch **for each** of the following:
+<!-- This week, most of your posts should be still images. -->
+
+Create **at least one** sketch **for each** of the following:
 
 1. Generate an image from scratch: pixel by pixel. Don't call any high-level drawing function like `ellipse()` or `rect()`.
-2. Load an image and process its pixels. Show the result.
+2. Load an image and process its pixels.
 3. Use an image as an input source to control a drawing. Don't show the original image, just the output.
 
-### Invidual Challenge — Pixel Ouroboros.
+### Challenge: Pixel Ouroboros
 
 Create code that processes an image. Feed the result back into your code and process it again. What happens after several generations?
 
-Post your source image, the result after one generation, and the result after several generations. Alternately, capture 90 generations as frames and post as a video.
+<!-- Post your source image, the result after one generation, and the result after several generations. Alternately, capture 90 generations as frames and post as a video. -->
 
-### Pair Challenge — Generate / Process.
+### Pair Challenge: Generate / Process
 
-Work with a partner you haven't worked before.
+Work with a partner.
 
 1. Make a sketch that generates an image pixel by pixel.
 2. Give your image to your partner.
