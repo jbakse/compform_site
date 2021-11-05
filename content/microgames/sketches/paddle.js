@@ -1,4 +1,4 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require /microgames/sketches/p5.play.js
 
 let ball;

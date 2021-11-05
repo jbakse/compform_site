@@ -1,6 +1,5 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js
 // require /music/SimpleSynth.js
 
 // connects a midi keyboard to the MonoSynth, lets you play music

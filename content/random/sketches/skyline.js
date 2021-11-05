@@ -1,4 +1,4 @@
-// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
 let deck = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let position = 0;
