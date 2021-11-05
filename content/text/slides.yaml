@@ -22,7 +22,7 @@
 - artist: Allison Parrish
   title: A Reflection, 2020
   image: ./slides/allison_parrish_01.png
-  comments: Allison Parrish computer-generated this poem that is comprised of blurbs of text from every English Wikipedia page that was linked from the page for <i>Mirror</i>.
+  comments: Allison Parrish computer-generated this poem that is comprised of blurbs of text from every Wikipedia page linked to from the entry for "mirror".
   links:
     - label: A Reflection
       href: https://empathyloading.com/content/4-reading-room/1-a-reflection-2020/allisonparrish_areflection_2020.pdf
@@ -34,7 +34,7 @@
 - artist: Allison Parrish
   title: Nonsense Laboratory, 2021
   image: https://storage.googleapis.com/gweb-experiments.appspot.com/2207-nonsense%20lab%20menu%20169.png
-  comments:
+  comments: A series of experimental tools for remixing language.
   links:
     - label: Nonsense Laboratory
       href: https://artsexperiments.withgoogle.com/nonsense-laboratory/
@@ -46,7 +46,7 @@
 - artist: Arwa Mboya
   title: Someone Tell the Boyz, 2021
   image: https://pbs.twimg.com/media/E-twTvJX0A4CPba.png
-  comments: Arwa utilized AI to generate strings of text from works by bell hooks, Simone de Beauvoir, Betty Friedan, and Audre Lorde.
+  comments: Arwa utilized AI to generate strings of text combining works by bell hooks, Simone de Beauvoir, Betty Friedan, and Audre Lorde.
   links:
     - label: Someone Tell the Boyz
       href: https://generative-unfoldings.mit.edu/works/someonetellboys/view.html

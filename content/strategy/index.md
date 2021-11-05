@@ -457,11 +457,10 @@ Explore the study examples above by completing the following challenges in order
 
 ### Modify the Stored Grid Placement Example
 
-1. Add a little random offset to the position of each circle. {easy}
-1. Change the grid setup to use random placement and place 100 points. {easy}
+1. Add a random offset to the position of each circle. {easy}
+1. Change setup code to use random placement to place 100 points. {easy}
 1. This example doesn't need `noLoop()`. Why? {medium}
 1. Draw about 75% of the points as trees and 25% as snowmen. {medium}
-1. Make sure the points don't switch between trees and snowmen every frame. {hard}
 1. For each `draw()` frame, move the snowmen a random step left, up, right, or down. {hard}
    {continue}
 
@@ -514,7 +513,6 @@ When designing a procedural generation system there are several properties to co
 
 <div class="assignment">
 
-
 ## Challenge!
 
 This is the last chapter of the "Foundation" section. The challenges in the chapters so far—random, noise, parameters—have been open ended. They suggested general themes, but left the specifics up to you.
@@ -533,13 +531,11 @@ Solving this chapter's challenges will require strategic planning:
 
 #### Challenge Goal
 
-
 {% js-show "sketches/dot_challenge/sketch.js" %}
 
 #### Challenge Start Code
 
 {% js-lab "sketches/dot_challenge_start.js" %}
-
 
 ### Challenge 2: Line
 

@@ -1,7 +1,7 @@
 - artist: Xin Xin
   title: Plant Ensemble, 2018
   image: https://xin-xin.info/assets/plantEnsemble.jpg
-  comments:
+  comments: Plant Ensemble uses an arduino, speaker, and _plant_ to create randomized sounds.
   links:
     - label: Plant Ensemble
       href: https://vimeo.com/298994697

@@ -315,7 +315,6 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 ## Coding Challenges
 
-
 Explore the study examples above by completing the following challenges.
 
 <!--
@@ -324,7 +323,6 @@ Explore the study examples above by completing the following challenges.
 | < 6 in 20 Minutes    | You need to put in some extra work to strengthen your understanding of these topics. |
 | 6 in 20 Minutes      | Good.                                                                                |
 | All 10 in 20 Minutes | Great.                                                                               | -->
-
 
 ### Modify the Globals as Interface Example{difficulty}
 
@@ -351,14 +349,11 @@ Explore the study examples above by completing the following challenges.
 
 ### Sketch
 
-
 Continue experimenting with procedurally-generated images. Focus on exposing parameters and exploring the parametric potential of your sketches. You can mix random and parametric elements, but consider doing a couple of sketches that are not random at all.{bigger}
-
 
 ### Challenge: Face Generator
 
 Build a face-generating tool. This tool will create an image of a face that can be adjusted by the user with sliders and other inputs.
-
 
 - Don’t use the built-in shape drawing commands like `rect()` and `ellipse()`. Build your face from manually-created illustrations or photographic images.
 - Make your resulting images look as seamless and cohesive as possible.
@@ -366,11 +361,9 @@ Build a face-generating tool. This tool will create an image of a face that can 
 
 ### Pair Challenge: Code Swap
 
-
 1. Create an computationally generated image.
 1. Pass the code—not the image—to your partner.
 1. Extend the code in any way you wish.
-
 
 </div>
 

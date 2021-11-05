@@ -1,23 +1,23 @@
 - artist: Laura Devendorf
   title: Computational Weaving Tools, 2019
   image: https://d3i71xaburhd42.cloudfront.net/ad9380e7d1e45e334d41c12c22ceaf275126d248/5-Figure3-1.png
-  comments:
+  comments: Laura Devendorf creates a range of tools for combining digital technology with analog textile crafts.
   links:
     - label: Computational Weaving Tools
       href: http://artfordorks.com/generative-overshot-weave/
-      subtitle: case study
-    - label: Artist Site
+      subtitle: Project Page
+    - label: artfordorks.com
       href: http://artfordorks.com/
-      subtitle: artfordorks.com
+      subtitle: Artist Site
 
 - artist: Zaha Hadid Architects
   title: Galaxy SOHO, 2012
   image: https://images.adsttc.com/media/images/5285/1f2b/e8e4/4e52/4b00/01ab/slideshow/HAC_photo_by_Iwan_Baan_(2).jpg?1384455904
-  comments:
+  comments: Iraqui architect Zaha Hadid pioneered the parametric architectural style.
   links:
     - label: Zaha Hadid Architects
       href: http://www.zaha-hadid.com/
-      subtitle: zaha-hadid.com
+      subtitle: Studio Site
     # i feel like this should be a sidebar link
     # - label: Parametricism
     #   href: https://en.wikipedia.org/wiki/Parametricism
@@ -59,7 +59,7 @@
   links:
     - label: "Hero Forge"
       href: https://www.heroforge.com/
-      subtitle: heroforge.com
+      subtitle: Character Creator
 
 - artist: Apple
   title: Memoji, 2018
@@ -68,28 +68,28 @@
   links:
     - label: "Memoji"
       href: https://support.apple.com/en-us/HT208986
-      subtitle: apple.com
+      subtitle: Product Page
 
-- artist: Droftarts
-  title: Parametric Pulley, 2012
-  image: ./slides/pulley.png
-  comments: Creates a range of metric and imperial tooth profile pulleys, with any number of teeth, specified in the OpenSCAD file.
-  links:
-    - label: "Parametric Pulley"
-      href: https://www.thingiverse.com/thing:16627
-      subtitle: thingiverse.com
+# - artist: Droftarts
+#   title: Parametric Pulley, 2012
+#   image: ./slides/pulley.png
+#   comments: Creates a range of metric and imperial tooth profile pulleys, with any number of teeth, specified in the OpenSCAD file.
+#   links:
+#     - label: "Parametric Pulley"
+#       href: https://www.thingiverse.com/thing:16627
+#       subtitle: thingiverse.com
 
 - artist: Peter Biľak
   title: The Q Project, 2020
   image: ./slides/peter_bilak.png
-  comments: Peter created this modular type system that enables users to create endless variations of letterforms based on its given parts.
+  comments: Peter created this modular type system that enables users to create endless variations of letterforms.
   links:
     - label: The Q Project
       href: https://www.typotheque.com/fonts/q
-      subtitle: typotheque.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: peterbilak.com
       href: https://peterbilak.com/
-      subtitle: peterbilak.com
+      subtitle: Artist Site
 
 - artist: Greg Schomburg
   title: GregFonts, 2017
@@ -98,10 +98,10 @@
   links:
     - label: GregFonts
       href: http://gregschomburg.com/gregfont/
-      subtitle: gregschomburg.com
-    - label: Artist Site
+      subtitle: Demo
+    - label: gregschomburg.com
       href: http://gregschomburg.com/
-      subtitle: gregschomburg.com
+      subtitle: Artist Site
 # - artist: Plastaq Software
 #   title: elsy
 #   image: ./slides/elsy.png

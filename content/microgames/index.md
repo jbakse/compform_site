@@ -115,13 +115,13 @@ Since p5.play builds on p5.js it should feel pretty familiar. One key difference
 
 ## Study Examples
 
-### Example 1:
+### p5.play Animation
 
 Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](https://opengameart.org/content/a-platformer-in-the-forest)
 
 {% js-lab "sketches/sprites_start.js" %}
 
-### Example 2: Interaction
+### p5.play Interaction
 
 {% js-lab "sketches/interaction.js" %}
 

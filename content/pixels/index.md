@@ -192,9 +192,13 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 
 ### Modify the Random Access Example
 
-1. Change the image resolution to `50x50`, adjust scatter to fill. {easy}
+1. Change the image resolution to `50x50`, adjust the code to fill the image. {easy}
 1. Instead of drawing single pixels, draw little plus marks (`+`) at random locations. {medium}
 1. Make each `+` a random color. {medium}
+   {continue}
+
+### Start from Scratch
+
 1. Use `sin()` to create a repeating black-to-red-to-black color wave. {hard}
 1. Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`. {hard}
    {continue}
