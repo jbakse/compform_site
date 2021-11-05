@@ -439,24 +439,26 @@ When designing a procedural generation system there are several properties to co
 
 <div class="assignment">
 
-## Challenge + Sketch!
+## Challenge + Keep Sketching!
 
-### Base
+### Sketch
 
-This is the last week of the "Foundation" unit. Look back at the topics covered so far: tile systems, using random, user parameters, using noise, and now, thinking strategically.
+This is the last Foundation chapter. Look back at the previous Foundation topics: tile systems, using random, user parameters, using noise, and now, thinking strategically.
 
-Begin by completing the challenges for this week. Completing this week's challenges will result in two posts. **This week the challenges are required.**
+Begin by completing the below challenges.
 
-Then keep sketching! For the remaining three posts, I encourage you to build a single, more complex sketch and post work in progress as you go.
+<!-- Completing this week's challenges will result in two posts. **This week the challenges are required.** -->
 
-### Required Challenge 1: Dots A -> B -> X
+Then keep sketching! Consider building a single, more complex sketch.
+
+### Challenge 1: Dots A -> B -> X
 
 - **Analyze** the challenge: clearly describe what the sketch does.
 - **Strategize** how you would achieve the same effect.
 - **Study** the provided starting code.
 - **Recreate** the challenge as closely as you can. You may use the starting code, or start from scratch.
-- **Extend** the example to create a unique sketch. Try to make something no one else will.
-- **Post** your finished sketch.
+- **Extend** the example to create a unique sketch. Try extending it in a way that's not obvious.
+<!-- - **Post** your finished sketch. -->
 
 `Challenge Goal`
 
@@ -466,9 +468,9 @@ Then keep sketching! For the remaining three posts, I encourage you to build a s
 
 {% js-lab "sketches/dot_challenge_start.js" %}
 
-### Required Challenge 2: Line A -> B -> X
+### Challenge 2: Line A -> B -> X
 
-Same as above: Analyze, Strategize, Study, Recreate, Extend, Post
+Same as above: Analyze, Strategize, Study, Recreate, Extend
 
 `Challenge Goal`
 
