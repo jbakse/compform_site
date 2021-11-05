@@ -10,8 +10,8 @@ function draw() {
   img = createImage(10, 10);
   img.loadPixels();
 
-  for (var i = 0; i < 50; i++) {
-    var c = color(255, 0, 0);
+  for (let i = 0; i < 50; i++) {
+    let c = color(255, 0, 0);
     img.set(random(10), random(10), c);
   }
 

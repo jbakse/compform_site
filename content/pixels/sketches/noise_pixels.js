@@ -7,13 +7,13 @@ function draw() {
 
   img = createImage(30, 30);
   img.loadPixels();
-  for (var y = 0; y < img.width; y++) {
-    for (var x = 0; x < img.height; x++) {
-      var r = noise(x * 0.1, y * 0.1, 0) * 255;
-      var g = noise(x * 0.1, y * 0.1, 100) * 255;
-      var b = noise(x * 0.1, y * 0.1, 200) * 255;
+  for (let y = 0; y < img.width; y++) {
+    for (let x = 0; x < img.height; x++) {
+      let r = noise(x * 0.1, y * 0.1, 0) * 255;
+      let g = noise(x * 0.1, y * 0.1, 100) * 255;
+      let b = noise(x * 0.1, y * 0.1, 200) * 255;
 
-      var c = color(r, g, b);
+      let c = color(r, g, b);
 
       img.set(x, y, c);
     }

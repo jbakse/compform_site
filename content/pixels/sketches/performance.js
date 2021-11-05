@@ -1,6 +1,6 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
-var testImage;
+let testImage;
 
 function preload() {
   testImage = loadImage("/pixels/sketches/world_100.png");
@@ -15,8 +15,8 @@ function setup() {
 function draw() {
   // clear the background
   background(255);
-  var start, end;
-  var testImageCopy = createImage(100, 100);
+  let start, end;
+  let testImageCopy = createImage(100, 100);
 
   noSmooth();
 
@@ -42,11 +42,11 @@ function draw() {
   noLoop();
 }
 
-//var pixelRed = img.pixels[(y * 640 + x) * 4];
+//let pixelRed = img.pixels[(y * 640 + x) * 4];
 function invertStandard(img) {
   for (y = 0; y < img.height; y++) {
     for (x = 0; x < img.width; x++) {
-      var c = img.get(x, y);
+      let c = img.get(x, y);
       c = [255 - c[0], 255 - c[1], 255 - c[2], c[3]];
       img.set(x, y, c);
       img.updatePixels();
@@ -60,7 +60,7 @@ function invertQuick(img) {
 
   for (y = 0; y < img.height; y++) {
     for (x = 0; x < img.width; x++) {
-      var c = getQuick(img, x, y);
+      let c = getQuick(img, x, y);
       c = [255 - c[0], 255 - c[1], 255 - c[2], c[3]];
       img.set(x, y, c);
     }
@@ -74,7 +74,7 @@ function invertQuick(img) {
 // we don't need to worry about screen pixel density here, because we are not reading from the screen
 
 function getQuick(img, x, y) {
-  var i = (y * img.width + x) * 4;
+  let i = (y * img.width + x) * 4;
   return [
     testImage.pixels[i],
     testImage.pixels[i + 1],
