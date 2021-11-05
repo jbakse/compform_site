@@ -25,7 +25,7 @@
 - artist: Jean Arp
   title: Collage with Squares Arranged According to the Laws of Chance, 1917
   image: ./slides/arp.jpg
-  comments: Jean Arp made this work and others like it by tearing paper into pieces, letting them fall to the floor, and pasting each scrap where it happened to land. Rather than ordering the page according to his own design, he ceded control to the random hand of gravity.
+  comments: Jean Arp created this collage by allowing gravity control where the scraps of paper should land.
   links:
     - label: Collage with Squares...
       href: https://www.moma.org/collection/works/37013
@@ -34,11 +34,11 @@
 - artist: Rafael Lozano-Hemmer
   title: Method Random, 2014
   image: ./slides/lozano_hemmer.png
-  comments: A series of chromogenic prints that have been computationally generated in an attempt to create randomness. A random number generator was used to choose what color each pixel should be.
+  comments: Rafael explored randomness in these chromogenic prints by using a random number generator to assign what color each pixel should be.
   links:
     - label: Method Random
       href: https://www.lozano-hemmer.com/method_random.php
-      subtitle: lozano-hemmer.com
+      subtitle: case study
     - label: Artist Site
       href: https://www.lozano-hemmer.com/
       subtitle: lozano-hemmer.com
@@ -46,11 +46,11 @@
 - artist: Amy Goodchild
   title: Geometric Constellations, 2020
   image: https://images.squarespace-cdn.com/content/v1/5f33cddd6aff255aabb0c6cd/1599403728779-DQBIQY2EE9N131KNHYUY/generated424651.png
-  comments: Constellation-like forms made up of nodes and connections. Although the placement of the nodes and connections are driven by randomness, the shapes formed are still recognizable.
+  comments: Amy created these constellation-like forms, each unique because of its random placement of nodes and connections.
   links:
     - label: Geometric Constellations
       href: https://www.amygoodchild.com/blog/geometric-constellations
-      subtitle: amygoodchild.com
+      subtitle: case study
     - label: Artist Site
       href: https://www.amygoodchild.com
       subtitle: amygoodchild.com
