@@ -1,5 +1,5 @@
 // language paperscript
-// require https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.min.js
+// require https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js
 
 // var canvas = document.getElementById('paperCanvas');
 
