@@ -566,19 +566,19 @@ Explore the study examples above by completing the following challenges.
 
 <div class='assignment'>
 
-## Sketch!
+## Keep Sketching!
 
-### Base
+### Sketch
 
 Experiment with procedurally generating images using `random()`. Explore each of the tactics discussed above.
 
-### Individual Challenge: Master Study
+### Challenge: Master Study
 
 Kasimir Malevich, Mark Rothko, Piet Modrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
 
 ### Pair Challenge: Deck
 
-Working with a partner, create a sketch that generates random images. ALL randomly values should chosen using the deck tactic discussed above. Work together in the same (real or virtual) place and time on the same code.
+Working with a partner, create a sketch that generates random images. ALL random images should be generated using the deck tactic discussed above. Work together in the same (real or virtual) place and time on the same code.
 
 </div>
 
