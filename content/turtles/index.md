@@ -251,47 +251,45 @@ Restores the turtle’s state to the top recorded state on the stack.
 
 ## Coding Challenges
 
-Explore turtle graphics by modifying the examples above. Work through the following challenges in order. Don't skip any.
+Explore turtle graphics by modifying the examples above. Work through the following challenges in order.
 
-| Time                 | Comment                                                      |
+<!-- Don't skip any. -->
+<!-- | Time                 | Comment                                                      |
 | -------------------- | ------------------------------------------------------------ |
 | < 11 in 20 Minutes   | Keep studying to improve your understanding of these topics. |
 | 11 in 20 Minutes     | Good.                                                        |
-| All 15 in 20 Minutes | Great.                                                       |
+| All 15 in 20 Minutes | Great.                                                       | -->
 
-### Modify the Triangle Example
+### Modify the Triangle Example{difficulty}
 
-1. Draw a pentagon.
-2. Draw an octagon.
-3. Draw a circle.
-4. Draw a circle with a dashed line. Tip: `penUp() + penDown()`
+1. Draw a pentagon.{easy}
+1. Draw an octagon.{medium}
+1. Draw a circle.{medium}
+1. Draw a circle with a dashed line. Tip: `penUp() + penDown()`{hard}
+1. Draw a spiral. {hard}
+1. Using a loop, draw 10 concentric triangles. {hard}
+1. Draw the figure below. {hard}
+1. Create a `function polygon(sides)` that receives a `sides` parameter and draws a regular polygon. {hard}
+   {continue}
+
+![challenge_1.png](challenge_1.png)
 
 ### Modify the Multiple Triangles Example
 
-5. Draw each triangle with different colors.
-6. Change the triangle function to draw pentagons.
-7. Draw a 3x3 grid of pentagons.
+1. Draw each triangle with different colored strokes.{easy}
+1. Change the triangle function to draw pentagons.{medium}
+1. Draw a 3x3 grid of pentagons.{hard}
    {continue}
 
 Style Tip: If you change what a function does, you should change its name as well. Did you change the function name when completing challenge 6?
 
 ### Modify the Spirograph Example
 
-8. Change the `moveForward()` parameter to `i * 3`.
-9. Center the drawing.
-10. Comment out the `noLoop()`
-11. Change the `turnRight()` parameter to `175 + frameCount`.
-    {continue}
-
-### Challenging Challenges
-
-12. Start with the original Triangle Example. Change it to draw a spiral.
-13. Using a loop, draw 10 concentric triangles.
-14. Draw the figure below.
-15. Create a `polygon(sides)` function that receives a `sides` parameter and draws a regular polygon.
-    {continue}
-
-![challenge_1.png](challenge_1.png)
+1. Change the `moveForward()` parameter to `i * 3`. {easy}
+1. Center the drawing in the middle of the canvas. {medium}
+1. Comment out the `noLoop()`. {easy}
+1. Change the `turnRight()` parameter to `175 + frameCount`. {easy}
+   {continue}
 
 </div>
 
