@@ -259,28 +259,24 @@ Explore using noise by completing the following challenges in order. <br/> Don't
 | 7 in 20 Minutes     | Good.                                                                                |
 | All 9 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Mapping Noise Example
+### Modify the Mapping Noise Example{difficulty}
 
-1. This example shows several ways to map noise. Comment in and out each example, and compare the results.
+1. This example shows several ways to map noise. Comment in and out each example, and compare the results. {easy}
 
 ### Modify the Grass Example
 
-1. Study the code and get a general idea of how it works.
-2. Line 28 has two magic constants: `.01` and `.001`. Try changing the first constant to `.1`. What happens? What happens when you change it to `1`?
-3. Set the first constant back to `.01`. Change the second constant to `.01`. What happens?
+1. Study the code and get a general idea of how it works. {easy}
+1. Line 28 has two magic constants: `.01` and `.001`. Try changing the first constant to `.1`. What happens? What happens when you change it to `1`? {easy}
+1. Set the first constant back to `.01`. Change the second constant to `.01`. What happens? {easy}
+1. Add flowers to some of the blades of grass. {hard}
    {continue}
 
 ### Modify the Skyline Example
 
-1. This example has two global parameters: `amplitude` and `frequency`. Change the values of these parameters to get a feel for how they affect the output. What happens when you use a very small value for frequency, such as `.001`?
-2. On line 23, what would happen if you changed `noise(x * frequency)` to `noise(x * frequency, frameCount)`? Make the change. Is that what you expected?
-3. Your last change should have caused the bar heights to animate very quickly. Slow down the rate of change.
-   {continue}
-
-### Challenging Challenges
-
-1. Add flowers to some of the blades of grass.
-2. Add water towers to some of the buildings.
+1. This example has two global parameters: `amplitude` and `frequency`. Change the values of these parameters in lines 3 and 4 to get a feel for how they affect the output. What happens when you use a very small value for frequency, such as `.001`? {easy}
+1. Think about what would happen if you changed `noise(x * frequency)` to `noise(x * frequency, frameCount)` on line 23. Make the change. Is the result what you expected? {easy}
+1. Your last change should have caused the bar heights to animate very quickly. Now slow down the rate of change. {medium}
+1. Add water towers to some of the buildings. {hard}
    {continue}
 
 </div>
