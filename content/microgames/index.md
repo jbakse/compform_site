@@ -131,26 +131,23 @@ Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](
 
 Explore p5.play by completing these challenges.
 
-### Modify Example 1
+### Modify Example 1{difficulty}
 
-1. Comment out the addImage lines. See what happens. Put them back.
-2. Change the size parameters on createSprite. What happens? Why?
-3. The Kid in Green is running backwards. Fix that. Tip: `mirrorX`
-4. Make The King run to the right.
+1. Comment out the `addImage` lines. See what happens. Then comment them back.{easy}
+1. Change the size parameters on `createSprite`. What happens? Why was this the result?{easy}
+1. The Kid in Green is running backwards. Fix that. Tip: `mirrorX` {medium}
+1. Make The King run to the right. {medium}
+1. Make The King and The Kid in Green run towards each other. Make them stop when they collide. Tip: `overlap()`{hard}
+1. Make The King and The Kid in Green “bounce” when they collide. Tip: Look at the “bouncing” p5play example.{hard}
 
 ### Modify Example 2
 
-1. Comment out the mouseActive line. See what happens. Put it back.
-2. Make The King spin when the mouse is over him.
-3. Make The King spin when the mouse is NOT over him.
-4. Make The King spin when he is clicked, and stop when clicked again.
-
-### Challenging Challenges
-
-1. With Example 1: Make The King and The Kid in Green run towards each other. Make them stop when they collide. Tip: `overlap()`
-2. With Example 2: Remove The King from the scene when he is clicked. Start the scene with 10 kings.
-3. With Example 1: Make The King and The Kid in Green “bounce” when they collide. Tip: Look at the “bouncing” p5play example.
-4. Start making microgames!
+1. Comment out the `mouseActive` line. See what happens. Then comment it back. {easy}
+1. Make The King spin when the mouse is over him.{easy}
+1. Make The King spin when the mouse is NOT over him.{medium}
+1. Make The King spin when he is clicked, and stop when clicked again. {medium}
+1. Remove The King from the scene when he is clicked. Start the scene with 10 kings. {hard}
+   {continue}
 
 </div>
 
