@@ -11,11 +11,11 @@ software: pencil + paper
 <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
 <script src="../mess/truchent_mess.js"></script>
 
-## Tile Maps + Sets
+## Tile Sets and Maps
 
-Artists and designers have worked with modular motifs arranged on grids throughout history. This approach affords a variety of aesthetic and practical benefits. Repetition on a grid leads to patterns with natural visual rhythm and concord while allowing for variety and complexity. Practically, this method allows templates and molds to facilitate mass production of the individual units, which can be arranged contextually on-site. This approach also allows the creative work to be split up: a single designer creates the system, and local craftsmen apply it.
+From masonry and tile to fabrics to movable type: artists and designers have been arranging modular motifs on grids for centuries. This approach affords a variety of aesthetic and practical benefits. It leads to designs with natural visual rhythm and concord while allowing for variety and complexity. It combines the benefits of mass production and manual customization. It also allows the creative work to be split up: a single designer creates the system and local craftsmen apply it.
 
-You will find examples of this approach in media including masonry and tile, textiles, fonts. In digital media, tile maps and sets are commonly associated with the 8-bit and 16-bit video game era. Hardware limitation imposed strict limits on designers who took advantage of hardware tile support to push the media forward. Today's games do not face the same hardware restrictions, but modular graphic systems are still an important tool for artists. Support for tile maps is built into many contemporary game engines, including [Unity](https://docs.unity3d.com/Manual/class-Tilemap.html).
+In digital media, tile maps and sets are used frequently and commonly associated with the 8-bit and 16-bit video game era. Hardware limitations imposed strict limits on designers. Designers pushed these limits to creative extreems, creating enduring visual styles. Today's games do not face the same hardware restrictions, but modular graphic systems are still an important tool for artists. Support for tile maps is built into many contemporary game engines, including [Unity](https://docs.unity3d.com/Manual/class-Tilemap.html) and [GameMaker Studio](https://www.yoyogames.com/en/gamemaker).
 
 {% slides %}
 {% include slides.yaml %}
@@ -23,7 +23,7 @@ You will find examples of this approach in media including masonry and tile, tex
 
 ## Designing Tile Sets
 
-The most basic tile set is a single image. Repeating this image, side by side by side, creates a pattern. With a little care, the image can be designed to match up edge-to-edge creating a pattern where the seams are hidden.
+The most basic tile set is a single image. Repeating this image, side by side by side, creates a pattern. With a little care, the image can be designed to match up edge-to-edge so the seams are hidden.
 
 You can build on this simple premise in many ways: alternate tiles, rotatable tiles, complex collections of tiles that work together. You can work with different grids as well: squares are commonly used, but many other [shapes can tessellate](https://www.mathsisfun.com/geometry/tessellation.html).
 
@@ -35,7 +35,7 @@ The basic repeating tile: top matches bottom, left matches right. Below, simple 
 
 ### Repeating Tiles with Alternates
 
-Top matches bottom, left matches right. Alternate tiles used to break up pattern.
+Top matches bottom, left matches right. Alternate tiles used to break up the repetion and add visual interest.
 
 ![patterns](./figures/patterns_alt.png){scale}
 
@@ -51,7 +51,7 @@ A set of tiles where the sides of each tile match up to the opposing side of ano
 
 ![set](./figures/patterns_set.png){scale}
 
-One way to create a tile set is to consider each edge to be one of two states: occupied or empty. Since there are 4 sides, and each has two states, there will be 4^2 = 16 tiles in the set.
+One way to create a tile set is to consider each edge to be one of two states: occupied or empty. Since there are 4 sides, and each has two states, there will be 4^2, or 16, tiles in the set.
 
 ![edge_full_shadow](./figures/edge_full_shadow.png){scale}
 
@@ -59,19 +59,19 @@ Depending on the design, some of these tiles may be rotations of other tiles.
 
 ![edge_full](./figures/edge_full.png){scale}
 
-In those cases, a smaller set will still work.
+In those cases a smaller set can be used.
 
 ![edge_5](./figures/edge_5.png){scale}
 
-With a set of tiles, you can start creating forms.
+The tiles can be arranged to create patterns and form.
 
 ![edge_form](./figures/edge_form.png){scale}
 
-A wide variety of looks can be created.
+Using different tile sets with the same tile map can create a variety of looks.
 
 ![multi_comp_form](./figures/multi_comp_form.png){scale wide pixel}
 
-Examples above were generated with [this tile mapping tool from cr31](http://www.cr31.co.uk/stagecast/wang/stage.html).
+The examples above were generated with [this tile mapping tool from cr31](http://www.cr31.co.uk/stagecast/wang/stage.html).
 
 ### Corner-matched Tile Sets
 
@@ -108,11 +108,14 @@ Discuss the aesthetic and practical features of tile sets and maps.
 
 Create an edge-matched tile kit with markers on paper squares.
 
-First, create a tile set. Create a design that allows rotation—this is faster to draw out than a full set. The image below shows which tiles you need to make, and how many to make of each.
+First, design a tile set. Create a design that allows rotation—this is faster than creating a full set. The image below shows which tiles you need to make.
 ![edge_counts](./figures/edge_counts.png){scale}
+
+Once you have designed your kit start copying. You can create additional copies by hand or mechanically.
 
 Once you have made your kit, use it to create a variety of forms. Try building out each letter in the alphabet. After playing with your set, start experimenting however you wish.
 
+<!--
 Before the end of the class take a picture of your work and **post it the class sketch blog.**
 
 At the end of class, trade your tiles with another student in the class. This week use your partner's tiles to create a sketch, and **post it to the sketch blog.**
@@ -120,7 +123,7 @@ At the end of class, trade your tiles with another student in the class. This we
 ### Deliverables
 
 1. In-class: Sketch Blog post using your own tile set.
-2. Homework: Sketch Blog post using your partner's tile set.
+2. Homework: Sketch Blog post using your partner's tile set. -->
 
 </div>
 
@@ -137,15 +140,14 @@ This is possible because SMB builds the world from a small set of reusable tiles
 
 ### 1-bit per Tile
 
-We can pack a map for edge-matched tile sets very efficiently using a single bit for each tile. By comparing the state of adjacent tiles, we can determine which tile should be drawn in each grid position.
+Maps for edge-matched tile sets can be represented very efficiently using a single bit for each tile. Comparing the state of adjacent tiles determines which tile should be drawn in each grid position.
 
 <div class="two-up">
 
-![Bit Map](./figures/overlay_drawn.png)
-1-Bit Map{figure}
+![Bit Map](./figures/overlay_drawn.png)1-Bit Map
 
 ![Road](./figures/road_drawn.png)
-Derived Roadway Drawing{figure}
+Derived Roadway Drawing
 
 </div>
 
@@ -167,7 +169,9 @@ The roadway image above was produced by following these rules:
 
 This point scheme generates a unique value for every combination of neighboring tile states.
 
-The following example uses this approach to draw a road using a edge-mapped tile set with a 1-bit map. You can click grid squares to toggle them on and off.
+### Roadway
+
+This example demonstrates the above approach. You can click grid squares to toggle them on and off.
 
 {% js-lab "sketches/tilemapper.js" %}
 
@@ -201,17 +205,16 @@ Partner with one other person in the class. Create a tile set and trade it with 
 
 ## Reference Links
 
-[cr31: Wang Tile Maze Design](http://www.cr31.co.uk/stagecast/wang/intro.html)
-: An absolutely **excellent** resource with lots of information on tile sets, tile maps, and wang titles.
+<div class="link-box">
 
-[Jamis BuckMaze Generation](http://www.jamisbuck.org/mazes/)
-: Many—_many_—maze generator algorithms complete with step-by-step visualizations from the author of _Mazes for Programmers_.
+[**Wang Tile Maze Design** cr31.co.uk](http://www.cr31.co.uk/stagecast/wang/intro.html) An excellent resource with lots of information on tile sets, tile maps, and wang titles.
 
-[Redblob Games: Tile Map Links](http://www-cs-students.stanford.edu/~amitp/gameprog.html#tiles)
-: Amit Patel at Red Blob writes great essays on game-programming concepts. Here are his links to tile-map related articles.
+[**Maze Algorithms** Jamis Buck](http://www.jamisbuck.org/mazes/) Many, _many_ maze generator algorithms complete with step-by-step visualizations from the author of _Mazes for Programmers_.
 
-[Breaking the NES for Shovel Knight](https://www.gamasutra.com/blogs/DavidDAngelo/20140625/219383/Breaking_the_NES_for_Shovel_Knight.php)
-: Shovel Knight is an amazing retro platformer from [Yacht Club Games](http://yachtclubgames.com/). Developer David D'Angelo discusses how the Nintendo's specific technical limitations and abilities influenced Shovel Knight's design.
+[**Tile Map Links** Redblob Games](http://www-cs-students.stanford.edu/~amitp/gameprog.html#tiles) Amit Patel at Red Blob writes great essays on game-programming concepts. Here are his links to tile-map related articles.
 
-[The 8-bit Guy: How "oldschool" graphics worked](https://www.youtube.com/watch?v=Tfh0ytz8S0k)
-: Overview of the hardware limitations and creative solutions in early pixel graphics.
+[**Breaking the NES for Shovel Knight** Tech + Art Paper](https://www.gamasutra.com/blogs/DavidDAngelo/20140625/219383/Breaking_the_NES_for_Shovel_Knight.php) Shovel Knight is an amazing retro platformer from [Yacht Club Games](http://yachtclubgames.com/). Developer David D'Angelo discusses how the Nintendo's specific technical limitations and abilities influenced Shovel Knight's design.
+
+[**How "oldschool" Graphics Worked** Video](https://www.youtube.com/watch?v=Tfh0ytz8S0k) Overview of the hardware limitations and creative solutions in early pixel graphics.
+
+</div>
