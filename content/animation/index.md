@@ -290,44 +290,38 @@ For lots of discussion on these two approaches, and others, and their merits tak
 
 Complete the following challenges to deepen your understanding of the examples above.
 
-### Modify the Bounce Example
+### Modify the Bounce Example{difficulty}
 
-1. Imagine what would happen if you commented in line 22.
-2. Comment in line 22.
-3. Make the ball bounce higher
-4. Make the ball bounce slower
-5. Make the ball bounce faster
-6. Make the ball bounce exactly 1 time per second
-
-### Challenging Challenge
-
-7. Recreate this:
+1. Imagine what would happen if you commented in line 22.{easy}
+1. Comment in line 22. Was the result what you expected?{easy}
+1. Make the ball bounce higher.{medium}
+1. Make the ball bounce slower.{medium}
+1. Make the ball bounce faster.{medium}
+1. Make the ball bounce exactly 1 time per second.{hard}
+1. Recreate the below.{hard}
 
 <!-- should be js-show -->
 
-{% js-lab "challenges/bounce_02.js" %}
+{% js-show "challenges/bounce_02.js" %}
 
 ### Modify the Fuzz Example
 
 1. Drawing a lot of transparent ellipses can be processor intensive.\
-   What framerate does the fuzz example run at on your computer?
+   What framerate does the fuzz example run at on your computer?{easy}
 
-2. Increase the the loop count from 100 to 1000.\
+1. Increase the the loop count from 100 to 1000.\
    How does that impact the drawing?\
-   How does that impact the framerate?
+   How does that impact the framerate?{easy}
 
-3. Increase the the loop count (again) from 1000 to 10000.\
+1. Increase the the loop count (again) from 1000 to 10000.\
    How does that impact the drawing?\
-   How does that impact the framerate?
+   How does that impact the framerate?{easy}
 
-4. Export 60 frames of this animation and turn them into a 30 fps video.\
+1. Export 60 frames of this animation and turn them into a 30 fps video.\
    How long (in seconds) did it take to render 60 frames?\
    How long (in seconds) is your resulting video?\
-   Does it matter what the frameRate() is set to in setup?
-
-### Challenging Challenge
-
-1. Recreate This
+   Does it matter what the frameRate() is set to in setup?{medium}
+1. Recreate the below.{hard}
 
 {% js-show "challenges/fuzzy_02.js" %}
 
