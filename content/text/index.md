@@ -214,23 +214,15 @@ Explore using Javascript Template literals by completing the following challenge
 
 ### Modify the Example Above
 
-1. Change the value of `person` to a different name.
-2. Change the value of `number` to a random integer between 0 and 100.
-3. Add a second sentence to the template with two new placeholders.
-
-### Modify the Example Above Some More
-
-1. Add an 's' to 'computer' when `number` is not 1.
-2. Add this to your template: `The word "${word}" has ${letterCount} letters`.
-3. Create a variable for `word` and set its value to a random word from a small list.
-4. Create a variable for `letterCount` and set its value to the number of letters in `word`.
-   {continue}
-
-### Challenging Challenges
-
-1. Instead of using `console.log()` to show the expanded template, inject the result into the webpage.
-2. Alter the program so that the dynamic parts of the template appear in bold.
-   {continue}
+1. Change the value of `person` to a different name. {easy}
+1. Change the value of `number` to a random integer between 0 and 100. {easy}
+1. Add a second sentence to the template with two new placeholders. {easy}
+1. Add an 's' to 'computer' when `number` is not 1. {easy}
+1. Add this to your template: `The word "${word}" has ${letterCount} letters`. {easy}
+1. Create a variable for `word` and set its value to a random word from a small list. {medium}
+1. Create a variable for `letterCount` and set its value to the number of letters in `word`.{medium}
+1. Instead of using `console.log()` to show the expanded template, inject the result into the webpage.{hard}
+1. Alter the program so that the dynamic parts of the template appear in bold.{hard}
 
 </div>
 
