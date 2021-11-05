@@ -4,7 +4,7 @@ layout: compform_chapter.pug
 
 image: /p5/images/og_image.png
 hero_title: Hello, p5!
-description: Many of the examples on this site use p5.js, a Javascript creative coding based on Processing.
+description: Many of the examples on this site use p5.js, a Javascript creative coding library.
 software: p5.js + github
 ---
 
@@ -13,7 +13,11 @@ software: p5.js + github
 
 ## Processing and p5.js
 
-There are many live, working code examples throught this site. Many of these examples use **p5.js**, a Javascript version of **Processing**. This chapter introduces p5.js, which is a great tool building quick creative-coding sketches for the web.
+This book explores a wide range of media and uses a variety of languages and libraries. The most commonly used library is p5.js, a very popular Javascript creative coding library.
+
+The p5.js is essentially a javascript version of the Processing creative coding language and library. Both Processing and p5.js were created to support students learning computer programming within a creative, arts, or design context. p5.js has a contained scope and a strong community. These factors make it a great library for learning, sketching, and experimenting.
+
+Many live code examples throught this book use p5.js. This chapter briefly introduces
 
 ### Processing
 
