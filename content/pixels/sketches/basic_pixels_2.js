@@ -10,9 +10,9 @@ function draw() {
   img = createImage(10, 10);
   img.loadPixels();
 
-  for (var y = 0; y < img.height; y++) {
-    for (var x = 0; x < img.width; x++) {
-      var c = color(y * 25, x * 25, 0);
+  for (let y = 0; y < img.height; y++) {
+    for (let x = 0; x < img.width; x++) {
+      let c = color(y * 25, x * 25, 0);
       img.set(x, y, c);
     }
   }

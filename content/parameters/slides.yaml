@@ -1,11 +1,11 @@
 - artist: Laura Devendorf
   title: Computational Weaving Tools, 2019
   image: https://d3i71xaburhd42.cloudfront.net/ad9380e7d1e45e334d41c12c22ceaf275126d248/5-Figure3-1.png
-  comments: Computational interfaces for designing weave drafts for both jacquard and frame looms.
+  comments:
   links:
     - label: Computational Weaving Tools
       href: http://artfordorks.com/generative-overshot-weave/
-      subtitle: artfordorks.com
+      subtitle: case study
     - label: Artist Site
       href: http://artfordorks.com/
       subtitle: artfordorks.com
@@ -13,7 +13,7 @@
 - artist: Zaha Hadid Architects
   title: Galaxy SOHO, 2012
   image: https://images.adsttc.com/media/images/5285/1f2b/e8e4/4e52/4b00/01ab/slideshow/HAC_photo_by_Iwan_Baan_(2).jpg?1384455904
-  comments: The Galaxy SOHO architecture is a composition of five continuous, flowing volumes that are set apart, fused or linked by stretched bridges. These volumes adapt to each other in all directions, generating a panoramic architecture without corners or abrupt transitions that break the fluidity of its formal composition.
+  comments:
   links:
     - label: Zaha Hadid Architects
       href: http://www.zaha-hadid.com/
@@ -52,8 +52,17 @@
 #       href: https://www.wearecollins.com/
 #       subtitle: wearecollins.com
 
+- artist: Sky Castle Studios
+  title: Hero Forge, 2014
+  image: ./slides/heroforge.png
+  comments: Hero Forge is an interface for creating 3D-printed miniature characters. There are a wide range of parameters that enables users to hyper-customize their characters to their liking.
+  links:
+    - label: "Hero Forge"
+      href: https://www.heroforge.com/
+      subtitle: heroforge.com
+
 - artist: Apple
-  title: Memoji,2018
+  title: Memoji, 2018
   image: https://cdn.ithinkdiff.com/wp-content/uploads/2021/06/iOS-15-new-Memoji.jpg.webp
   comments: Apple's Memoji allows users to hyper-customize their own animated avatar, which they can then use to mirror their real-life facial expressions.
   links:
@@ -73,7 +82,7 @@
 - artist: Peter Biľak
   title: The Q Project, 2020
   image: ./slides/peter_bilak.png
-  comments: A game-like type system that enables users to create a nearly infinite number of variations.
+  comments: Peter created this modular type system that enables users to create endless variations of letterforms based on its given parts.
   links:
     - label: The Q Project
       href: https://www.typotheque.com/fonts/q

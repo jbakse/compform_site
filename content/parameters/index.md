@@ -290,7 +290,7 @@ These next two examples both have a function named `stipleRect()` that fills a r
 
 {% js-lab "sketches/stipple_rect_2.js" %}
 
-### HTML Interfaces with p5.dom.js
+### Globals as Interface
 
 The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions that allow you create HTML elements and user interface controls. This is more complicated to set up, but still pretty quick. It is a much better choice if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload your sketch.
 
@@ -315,6 +315,7 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 ## Coding Challenges
 
+
 Explore the study examples above by completing the following challenges.
 
 <!--
@@ -324,20 +325,22 @@ Explore the study examples above by completing the following challenges.
 | 6 in 20 Minutes      | Good.                                                                                |
 | All 10 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Globals as Interface Example {difficulty}
 
-1. Make each square a different randomly-chosen size. {easy}
-1. Add global variable parameters to control the minimum and maximum size of the squares. {easy}
+### Modify the Globals as Interface Example{difficulty}
+
+1. Make each square a different randomly-chosen size.{easy}
 1. Add a white stroke to the squares. {easy}
-1. Add a global variable parameter to control the width of the stroke. {easy}
-1. Draw the squares in two sizes: small and large. Randomly choose which size for each square. {medium}
-1. Add parameters to control the small size, large size, and percentage chance of drawing large or small. {medium}
+1. Add a global variable parameter to control the width of the stroke. {medium}
+1. Add global variable parameters to control the minimum and maximum size of the square.{medium}
+1. Draw the square in two sizes: small and large. Randomly generate which of the two sizes the square will be. {hard}
+1. Add parameters to control the small size, large size, and percentage chance of drawing a large or small square. {hard}
 
-### Modify the HTML Interfaces Example
+### Modify the HTML Interfaces with Tweakpane Example
 
 1. Add a slider to control the vertical position of the square. {easy}
-1. Add a color picker to control the background color of the sketch. {easy}
-1. Instead of drawing the square, draw a "target" of white and red rings. Draw more rings to make a bigger target. {hard}
+1. Add a color picker to control the background color of the sketch. {medium}
+1. Instead of drawing the square, draw a "target" of concentric white and red rings. Draw more rings to make a bigger target. {hard}
+
    {continue}
 
 </div>
@@ -348,21 +351,26 @@ Explore the study examples above by completing the following challenges.
 
 ### Sketch
 
-Continue experimenting with procedurally-generated images. Focus on exposing parameters and exploring the parameter spaces of your sketches. You can mix random and parametric elements, but I suggest doing at least a couple of sketches that have no random elements at all.
 
-### Individual Challenge: Face Generator
+Continue experimenting with procedurally-generated images. Focus on exposing parameters and exploring the parametric potential of your sketches. You can mix random and parametric elements, but consider doing a couple of sketches that are not random at all.{bigger}
+
+
+### Challenge: Face Generator
 
 Build a face-generating tool. This tool will create an image of a face that can be adjusted by the user with sliders and other inputs.
 
-- Don’t use the built-in shape drawing commands like rect and ellipse. Build your face by collaging hand-drawn or photographic images.
+
+- Don’t use the built-in shape drawing commands like `rect()` and `ellipse()`. Build your face from manually-created illustrations or photographic images.
 - Make your resulting images look as seamless and cohesive as possible.
 - Inputs can range from straightforward (eye color, nose size) to complex (anger, lighting).
 
 ### Pair Challenge: Code Swap
 
+
 1. Create an computationally generated image.
 1. Pass the code—not the image—to your partner.
 1. Extend the code in any way you wish.
+
 
 </div>
 

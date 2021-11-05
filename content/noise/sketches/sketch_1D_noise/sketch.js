@@ -1,8 +1,8 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
-var freq_slider;
-var amplitude_slider;
-var octave_slider;
+let freq_slider;
+let amplitude_slider;
+let octave_slider;
 
 function setup() {
   createCanvas(640, 300);
@@ -22,14 +22,14 @@ function setup() {
 function draw() {
   background(50);
   ellipseMode(CENTER);
-  var frequency = freq_slider.value() / 1000;
-  var amplitude = amplitude_slider.value() / 100;
+  let frequency = freq_slider.value() / 1000;
+  let amplitude = amplitude_slider.value() / 100;
   noiseDetail(octave_slider.value(), 0.5);
 
   // draw grid lines where the input to noise is 1,2,3,...
   // 1 / frequency = period
   stroke(100, 100, 100);
-  for (var x = 0; x < width; x += 1 / frequency) {
+  for (let x = 0; x < width; x += 1 / frequency) {
     line(x, 0, x, height);
   }
 
@@ -41,7 +41,7 @@ function draw() {
   // draw function plot
   fill(240);
   noStroke();
-  for (var x = 0; x < width; x += 0.5) {
+  for (let x = 0; x < width; x += 0.5) {
     let n;
     if (animate_checkbox.checked()) {
       n = noise(x * frequency, frameCount * 0.01);

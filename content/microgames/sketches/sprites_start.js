@@ -5,13 +5,13 @@
 // https://opengameart.org/content/a-platformer-in-the-forest
 // https://opengameart.org/users/buch
 
-var sprite1, sprite2;
+let sprite1, sprite2;
 
 function setup() {
   createCanvas(600, 300);
 
-  var kingImage = loadImage("/microgames/sketches/king.png");
-  var guyImage = loadImage("/microgames/sketches/guy.png");
+  let kingImage = loadImage("/microgames/sketches/king.png");
+  let guyImage = loadImage("/microgames/sketches/guy.png");
 
   sprite1 = createSprite(200, 150, 100, 100);
   sprite1.addImage("main", kingImage);

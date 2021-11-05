@@ -79,7 +79,7 @@ function saveFrame(name, frameNumber, extension, maxFrame) {
   // remove the decimal part (just in case)
   frameNumber = floor(frameNumber);
   // zero-pad the number (e.g. 13 -> 0013);
-  var paddedNumber = ("0000" + frameNumber).substr(-4, 4);
+  let paddedNumber = ("0000" + frameNumber).substr(-4, 4);
 
   save(name + "_" + paddedNumber + "." + extension);
 }

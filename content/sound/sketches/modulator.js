@@ -1,9 +1,8 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.js
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js
 
-var frequency = 220;
-var carrier;
+let frequency = 220;
+let carrier;
 
 function setup() {
   createCanvas(400, 200);
@@ -52,8 +51,8 @@ function draw() {
 // uses the p5 SoundRecorder and SoundFile classes to record the audio output.
 // begins recording when called. records for _length_ time in milliseconds.
 function record(length) {
-  var soundRecorder = new p5.SoundRecorder();
-  var soundFile = new p5.SoundFile();
+  let soundRecorder = new p5.SoundRecorder();
+  let soundFile = new p5.SoundFile();
   soundRecorder.record(soundFile);
   setTimeout(function () {
     console.log("Recording Complete");
@@ -62,4 +61,4 @@ function record(length) {
   }, length);
 }
 
-var carrier, modulator;
+let carrier, modulator;

@@ -1,11 +1,11 @@
 - artist: Adam Ferriss
   title: Edward Snowden's Long, Strange Journey to Hollywood, 2016
   image: https://freight.cargo.site/w/3000/q/75/i/afc37cf91e99ae290b0280c2f339891ed4281deb265055d6106b6db0f722471d/insideSnowden.jpg
-  comments: Pixel-manipulated cover illustrations of Edward Snowden for New York Times.
+  comments: Adam pixel-manipulated photos of Edward Snowden for the cover of the New York Times.
   links:
     - label: Edward Snowden's Long, Strange Journey to Hollywood
       href: https://amf.fyi/Edward-Snowden-s-Long-Strange-Journey-to-Hollywood
-      subtitle: amf.fyi
+      subtitle: case study
     - label: New York Times Article
       href: https://www.nytimes.com/2016/09/04/magazine/edward-snowdens-long-strange-journey-to-hollywood.html
       subtitle: nytimes.com
@@ -16,7 +16,7 @@
 - artist: Camille Utterback
   title: Visual Resolve, 2000
   image: http://camilleutterback.com/wp2017/wp-content/gallery/visual-resolve/VisualResolve_Answer_hires.jpg
-  comments: "A live video of participants is recreated out of a series of small icons and images. Two new levels of reading the reconstructed imagery emerge: the level of the icons, and the level of the overall image."
+  comments:
   links:
     - label: Visual Resolve
       href: http://camilleutterback.com/projects/visual-resolve/
@@ -40,7 +40,7 @@
 - artist: Jon Corbett
   title: Four Generations, 2015
   image: https://i.ytimg.com/vi/1lO22Bl_-HI/maxresdefault.jpg
-  comments: Jon Corbett created a single channel video that shows four generations of his Cree-Métis heritage by animating a sequence of spiralled portraits starting with his grandmother, grandfather, himself, and his son. Each portrait rendered slowly to the screen by a computational algorithm that selects a colour from a source image, generates a 3D pixel in a 3D image space, and then digitally “sews” this bead to the screen.
+  comments: Jon documented four generations of his Cree-Métis heritage by computationally transforming his family portraits into beaded images.
   links:
     - label: Four Generations
       href: https://www.youtube.com/watch?v=1lO22Bl_-HI&ab_channel=BACA

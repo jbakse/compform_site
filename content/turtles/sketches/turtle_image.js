@@ -1,8 +1,8 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require /turtles/turtle/turtle.js
 
-var myTurtle;
-var aImage;
+let myTurtle;
+let aImage;
 
 function preload() {
   aImage = loadImage("/turtles/sketches/a.png");
@@ -29,7 +29,7 @@ function draw() {
   myTurtle.penDown();
 
   // draw the triangle
-  for (var i = 0; i < 12; i++) {
+  for (let i = 0; i < 12; i++) {
     myTurtle.moveForward(60);
     myTurtle.turnRight(30);
     myTurtle.image(aImage);

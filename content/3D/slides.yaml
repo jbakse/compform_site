@@ -1,15 +1,3 @@
-- artist: A.M. Darke
-  title: Open Source Afro Hair Library, 2021
-  image: https://prettydarke.files.wordpress.com/2020/04/hair-03-render-02.png
-  comments: A feminist, anti-racist database for 3D models of Black hair textures and styles.
-  links:
-    - label: Open Source Afro Hair Library
-      href: https://afrohairlibrary.org/
-      subtitle: afrohairlibrary.org
-    - label: "Artist Site"
-      href: https://prettydarke.cool
-      subtitle: prettydarke.cool
-
 - artist: Tega Brain
   title: New York Apartment, 2020
   image: https://payload.cargocollective.com/1/10/351441/14055703/nyapt_2512.jpg
@@ -37,7 +25,7 @@
 - artist: Andy Lomas
   title: Vase Forms, 2019
   image: https://dataidedesign.com/wp-content/uploads/2020/10/vase_forms_DAD.jpg
-  comments: A variation on Cellular Forms using additional constraints and biases to create vase-like structures that should be fabricable as physical sculptures.
+  comments:
   links:
     - label: Vase Forms
       href: https://andylomas.com/vaseForms.html
@@ -45,3 +33,15 @@
     - label: "Artist Site"
       href: https://www.andylomas.com
       subtitle: andylomas.com
+
+- artist: A.M. Darke
+  title: Open Source Afro Hair Library, 2021
+  image: https://prettydarke.files.wordpress.com/2020/04/hair-03-render-02.png
+  comments: A.M. Darke is cultivating this feminist, anti-racist database for 3D models of Black hair textures and styles.
+  links:
+    - label: Open Source Afro Hair Library
+      href: https://afrohairlibrary.org/
+      subtitle: afrohairlibrary.org
+    - label: "Artist Site"
+      href: https://prettydarke.cool
+      subtitle: prettydarke.cool

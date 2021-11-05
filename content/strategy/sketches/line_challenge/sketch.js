@@ -1,18 +1,17 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
 // draws a rectangle, where you tell it to!
 
-var freq_slider;
-var amplitude_slider;
-var time_slider;
+let freq_slider;
+let amplitude_slider;
+let time_slider;
 
-var startX = 50;
-var startY = 250;
-var endX = 450;
-var endY = 50;
+let startX = 50;
+let startY = 250;
+let endX = 450;
+let endY = 50;
 
-var t = 0;
+let t = 0;
 
 function setup() {
   createCanvas(500, 300);
@@ -29,9 +28,9 @@ function draw() {
   background(50);
   ellipseMode(CENTER);
 
-  var frequency = freq_slider.value() / 10;
-  var amplitude = amplitude_slider.value() / 100;
-  var timeStep = time_slider.value() / 1000;
+  let frequency = freq_slider.value() / 10;
+  let amplitude = amplitude_slider.value() / 100;
+  let timeStep = time_slider.value() / 1000;
 
   t += timeStep;
   noiseDetail(1, 0.5);
@@ -39,10 +38,10 @@ function draw() {
   fill(255);
   noStroke();
   for (i = 0; i < 1; i += 0.02) {
-    var x = lerp(startX, endX, i);
-    var y = lerp(startY, endY, i);
-    var offsetX = noise(i * frequency + t) * amplitude * 100;
-    var offsetY = noise(i * frequency + t, 100) * amplitude * 100;
+    let x = lerp(startX, endX, i);
+    let y = lerp(startY, endY, i);
+    let offsetX = noise(i * frequency + t) * amplitude * 100;
+    let offsetY = noise(i * frequency + t, 100) * amplitude * 100;
 
     ellipse(x + offsetX, y + offsetY, 10, 10);
   }

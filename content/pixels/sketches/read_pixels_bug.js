@@ -14,10 +14,10 @@ function draw() {
   background(0);
 
   img = createImage(10, 10);
-  for (var y = 0; y < img.height; y++) {
-    for (var x = 0; x < img.width; x++) {
+  for (let y = 0; y < img.height; y++) {
+    for (let x = 0; x < img.width; x++) {
       img.get(x, y);
-      var out_color = color(255, 0, 0, 255);
+      let out_color = color(255, 0, 0, 255);
       img.set(x, y, out_color);
 
       // img.updatePixels();

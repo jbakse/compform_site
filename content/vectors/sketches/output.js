@@ -1,5 +1,5 @@
 // language paperscript
-// require https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.min.js
+// require https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js
 
 var circle1 = new Path.Circle([200, 250], 150);
 circle1.fillColor = "red";
