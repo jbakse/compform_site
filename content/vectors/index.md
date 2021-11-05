@@ -273,13 +273,13 @@ Paper Garden is a program written in about 300 lines of PaperScript using [Paper
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
-Explore using Paper.js. Focus on creating vector-based images this week. I highly encourage you to use a hybrid workflow this week: start with code in Paper.js but finish with manual work in Illustrator.{bigger}
+Explore using Paper.js. Focus on creating vector-based images this week. Consider using a hybrid workflow this week: start with code in Paper.js but finish with manual work in Illustrator.{bigger}
 
-This week you must complete at least one of the following challenges. These challenges count as 2 sketches. Post one work-in-progress screenshot sketch, and a second sketch with a photo of the final output.
+<!-- This week you must complete at least one of the following challenges. These challenges count as 2 sketches. Post one work-in-progress screenshot sketch, and a second sketch with a photo of the final output. -->
 
-### Individual Challenge: Zoom Background
+### Challenge: Zoom Background
 
 Well, the lockdown pretty much rules out posters and lasercuts. But Zoom backgrounds are pretty big now. Its not a good fit, but lets make lemonaid.
 
@@ -287,9 +287,9 @@ Well, the lockdown pretty much rules out posters and lasercuts. But Zoom backgro
 
 1. Create a PaperScript program that outputs vector data.
 2. Post an image of the output.
-3. Swap your vector data with someone else in the class.
+3. Swap your vector data with another person.
 4. Manipulate the vector data in a vector tool like Illustrator.
-5. Post the result.
+<!-- 5. Post the result. -->
 
 ### Challenge: Promo Poster{strike}
 
@@ -299,7 +299,7 @@ Create a promotional poster for a real or fictional event. Your poster must be p
 
 Create a lasercut thing. This can be anything you like that combines generative vector data and laser cutting or etching.
 
-**Complete your posts before our next class and bring your posters and laser cuts to class!**
+<!-- **Complete your posts before our next class and bring your posters and laser cuts to class!** -->
 
 </div>
 
