@@ -2,11 +2,11 @@
 
 // draws a rectangle, where you tell it to!
 
-var freq_slider;
-var amplitude_slider;
-var time_slider;
+let freq_slider;
+let amplitude_slider;
+let time_slider;
 
-var t = 0;
+let t = 0;
 
 function setup() {
   createCanvas(400, 400);
@@ -23,29 +23,29 @@ function draw() {
   background(50);
   ellipseMode(CENTER);
 
-  var frequency = freq_slider.value() / 10;
-  var amplitude = amplitude_slider.value() / 100;
-  var timeStep = time_slider.value() / 1000;
+  let frequency = freq_slider.value() / 10;
+  let amplitude = amplitude_slider.value() / 100;
+  let timeStep = time_slider.value() / 1000;
 
   t += timeStep;
   noiseDetail(1, 0.5);
 
   noStroke();
 
-  var rays = 30;
+  let rays = 30;
   for (ray = 0; ray < rays; ray++) {
-    var startX = (width / rays) * ray;
-    var startY = 425;
-    var endX = startX + noise(ray, 0) * 30;
-    var endY = startY - 400 + noise(ray, 10) * 330;
+    let startX = (width / rays) * ray;
+    let startY = 425;
+    let endX = startX + noise(ray, 0) * 30;
+    let endY = startY - 400 + noise(ray, 10) * 330;
 
     colorMode(RGB);
     fill(0, 0, 0, 50);
     for (i = 0; i < 1; i += 0.02) {
-      var x = lerp(startX, endX, i);
-      var y = lerp(startY, endY, i);
-      var offsetX = noise(i * frequency + t, ray) * amplitude * 100;
-      var offsetY = noise(i * frequency + t, ray, 100) * amplitude * 100;
+      let x = lerp(startX, endX, i);
+      let y = lerp(startY, endY, i);
+      let offsetX = noise(i * frequency + t, ray) * amplitude * 100;
+      let offsetY = noise(i * frequency + t, ray, 100) * amplitude * 100;
 
       ellipse(x + offsetX, y + offsetY, 25, 25);
       ellipse(x + offsetX, y + offsetY, 20, 20);
@@ -55,10 +55,10 @@ function draw() {
     colorMode(HSB, 100);
     for (i = 0; i < 1; i += 0.01) {
       fill(noise(ray + i * 2) * 100, 100, 100);
-      var x = lerp(startX, endX, i);
-      var y = lerp(startY, endY, i);
-      var offsetX = noise(i * frequency + t, ray) * amplitude * 100;
-      var offsetY = noise(i * frequency + t, ray, 100) * amplitude * 100;
+      let x = lerp(startX, endX, i);
+      let y = lerp(startY, endY, i);
+      let offsetX = noise(i * frequency + t, ray) * amplitude * 100;
+      let offsetY = noise(i * frequency + t, ray, 100) * amplitude * 100;
 
       ellipse(x + offsetX, y + offsetY, 10, 10);
     }

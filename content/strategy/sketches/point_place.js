@@ -3,17 +3,17 @@
 // places points on squares
 
 // PREVIEW SETTINGS
-var POINT_COUNT = 500;
-var POINT_SIZE = 10;
-var CANVAS_SIZE = 500;
+let POINT_COUNT = 500;
+let POINT_SIZE = 10;
+let CANVAS_SIZE = 500;
 
 // RENDER SETTINGS
-// var POINT_COUNT = 2000;
-// var CANVAS_SIZE = 1000;
+// let POINT_COUNT = 2000;
+// let CANVAS_SIZE = 1000;
 
-var strategies;
+let strategies;
 
-var strat_i = 0;
+let strat_i = 0;
 
 function setup() {
   createCanvas(CANVAS_SIZE, CANVAS_SIZE);
@@ -64,7 +64,7 @@ function setup() {
 // storing the strategy functions in this way makes it easy to call the function named in the select dropdown
 
 function buildStrategies() {
-  var strategies = {};
+  let strategies = {};
 
   strategies.random = function () {
     return placePointsRandom(POINT_COUNT, width, height);
@@ -117,14 +117,14 @@ function buildStrategies() {
   };
 
   strategies.tighten_relax = function () {
-    var ps = placePointsRandom(POINT_COUNT, width, height);
+    let ps = placePointsRandom(POINT_COUNT, width, height);
     ps = relaxPoints(ps, 5, 50, -0.3); // tighten
     ps = relaxPoints(ps, 10, 10, 1); // relax
     return ps;
   };
 
   strategies.tiles_plus = function () {
-    var ps = placePointsTiles(width / 150, width, height);
+    let ps = placePointsTiles(width / 150, width, height);
     ps = addPoints(ps, placePointsRandom(POINT_COUNT, 12, 12));
     relaxPoints(ps, 5, 17, 4);
 
@@ -174,7 +174,7 @@ function buildStrategies() {
   };
 
   strategies.cull_close_noise = function () {
-    var ps = placePointsCullRange(POINT_COUNT, width, height, 15, 1000);
+    let ps = placePointsCullRange(POINT_COUNT, width, height, 15, 1000);
     return noiseCull(ps, 0.01, 0.5, 0.0);
   };
 
@@ -199,17 +199,17 @@ function draw() {
 }
 
 function drawDelaunay(points) {
-  var ps = [];
-  for (var i = 0; i < points.length; i++) {
+  let ps = [];
+  for (let i = 0; i < points.length; i++) {
     ps.push([points[i].x, points[i].y]);
   }
   console.log(ps);
-  var tris = Delaunay.triangulate(ps);
+  let tris = Delaunay.triangulate(ps);
   console.log(tris);
 
   line(255, 0, 0);
 
-  for (var j = 0; j < tris.length - 1; j++) {
+  for (let j = 0; j < tris.length - 1; j++) {
     if (j % 3 < 2) {
       line(
         ps[tris[j]][0],
@@ -231,10 +231,10 @@ function drawDelaunay(points) {
 // visualize the points as simple ellipses
 function drawPoints(points) {
   // loop through the points
-  for (var i = 0; i < points.length; i++) {
+  for (let i = 0; i < points.length; i++) {
     // pull the coordianates from the current point in array
-    var x = points[i].x;
-    var y = points[i].y;
+    let x = points[i].x;
+    let y = points[i].y;
 
     // draw an ellipse at point
     // noStroke();
@@ -253,24 +253,24 @@ function drawPoints(points) {
 // positive _strength_ will move them apart, negative _strenghth_ will move them together
 // iterates _steps_ times
 function relaxPoints(points, steps, min_distance, strength) {
-  for (var step = 0; step < steps; step++) {
-    for (var i = 0; i < points.length; i++) {
-      for (var j = 0; j < points.length; j++) {
+  for (let step = 0; step < steps; step++) {
+    for (let i = 0; i < points.length; i++) {
+      for (let j = 0; j < points.length; j++) {
         if (i == j) continue;
-        var p1 = points[i];
-        var p2 = points[j];
+        let p1 = points[i];
+        let p2 = points[j];
 
         // checking distance with dist() is slowish
         // this test (which is faster) can weed out some pairs so we don't need to test them
         // this speeds things up a bit, but this is still a very ineficient way to relax points
         // much faster solutions exist, but this one is easier to follow.
-        var quickTest =
+        let quickTest =
           abs(p1.x - p2.x) < min_distance && abs(p1.y - p2.y) < min_distance;
 
         // too close, move apart
         if (quickTest && dist(p1.x, p1.y, p2.x, p2.y) < min_distance) {
-          var v = subtractPoint(p1, p2); // find the vector between two points
-          var nV = normalizePoint(v); // scale to 1 px unit size
+          let v = subtractPoint(p1, p2); // find the vector between two points
+          let nV = normalizePoint(v); // scale to 1 px unit size
 
           p1.x += nV.x * strength;
           p1.y += nV.y * strength;
@@ -289,9 +289,9 @@ function relaxPoints(points, steps, min_distance, strength) {
 
 // offsets the coords of points in _inPoints_ by values found in noise
 function noiseDistort(inPoints, frequency, amplitude) {
-  var outPoints = [];
-  for (var i = 0; i < inPoints.length; i++) {
-    var p = inPoints[i];
+  let outPoints = [];
+  for (let i = 0; i < inPoints.length; i++) {
+    let p = inPoints[i];
 
     p.x += (noise(p.x * frequency, p.y * frequency) - 0.5) * amplitude;
     p.y += (noise(p.x * frequency, p.y * frequency) - 0.5) * amplitude;
@@ -303,10 +303,10 @@ function noiseDistort(inPoints, frequency, amplitude) {
 
 // processes _inPoints_ removing points that land on high values in noise
 function noiseCull(inPoints, frequency, threshold, dither) {
-  var outPoints = [];
+  let outPoints = [];
 
-  for (var i = 0; i < inPoints.length; i++) {
-    var p = inPoints[i];
+  for (let i = 0; i < inPoints.length; i++) {
+    let p = inPoints[i];
 
     // accept point if noise value is below threshold
     if (
@@ -326,11 +326,11 @@ function noiseCull(inPoints, frequency, threshold, dither) {
 // places _count_ points in the range _w_,_h_
 // coords are chosen with random()
 function placePointsRandom(count, w, h) {
-  var points = [];
+  let points = [];
 
-  for (var i = 0; i < count; i++) {
-    var x = random() * w;
-    var y = random() * h;
+  for (let i = 0; i < count; i++) {
+    let x = random() * w;
+    let y = random() * h;
     points.push({
       x: x,
       y: y,
@@ -342,10 +342,10 @@ function placePointsRandom(count, w, h) {
 
 // places points on the center of squres in a _grid_size_ x _grid_size_ grid
 function placePointsGrid(grid_size, w, h) {
-  var points = [];
+  let points = [];
 
-  for (var y = 0; y < grid_size; y++) {
-    for (var x = 0; x < grid_size; x++) {
+  for (let y = 0; y < grid_size; y++) {
+    for (let x = 0; x < grid_size; x++) {
       points.push({
         x: ((x + 0.5) / grid_size) * w,
         y: ((y + 0.5) / grid_size) * h,
@@ -361,11 +361,11 @@ function placePointsGrid(grid_size, w, h) {
 // using a high _frequency_ value will skip large areas in noise and provide highly random results
 // using a low _frequency_ value will skip small areas in noise and dots will be organized in a windy line
 function placePointsNoise(count, w, h, frequency) {
-  var points = [];
+  let points = [];
 
-  for (var i = 0; i < count; i++) {
-    var x = noise(i * frequency, 0) * w;
-    var y = noise(i * frequency, 1000) * h;
+  for (let i = 0; i < count; i++) {
+    let x = noise(i * frequency, 0) * w;
+    let y = noise(i * frequency, 1000) * h;
     points.push({
       x: x,
       y: y,
@@ -380,10 +380,10 @@ function placePointsNoise(count, w, h, frequency) {
 // don't place a point that would be further than _max_distance_ from all other points
 
 function placePointsCullRange(count, w, h, min_distance, max_distance) {
-  var points = [];
+  let points = [];
 
-  var current_try = 0;
-  var max_tries = count * 10;
+  let current_try = 0;
+  let max_tries = count * 10;
 
   // init with one point in center
   points.push({
@@ -394,11 +394,11 @@ function placePointsCullRange(count, w, h, min_distance, max_distance) {
   while (points.length < count && current_try < max_tries) {
     current_try++;
 
-    var x = random() * w;
-    var y = random() * h;
+    let x = random() * w;
+    let y = random() * h;
 
-    var isTooClose = checkClose(x, y, points, min_distance);
-    var isCloseEnough = checkClose(x, y, points, max_distance);
+    let isTooClose = checkClose(x, y, points, min_distance);
+    let isCloseEnough = checkClose(x, y, points, max_distance);
 
     if (!isTooClose && isCloseEnough) {
       points.push({
@@ -413,9 +413,9 @@ function placePointsCullRange(count, w, h, min_distance, max_distance) {
 
 // place points from premade "tiles"
 function placePointsTiles(grid_size, width, height) {
-  var points = [];
+  let points = [];
 
-  var tile1 = [
+  let tile1 = [
     {
       x: 0.049009,
       y: 0.497592,
@@ -482,7 +482,7 @@ function placePointsTiles(grid_size, width, height) {
     },
   ];
 
-  var tile2 = [
+  let tile2 = [
     {
       x: 0.497592,
       y: 0.950991,
@@ -549,7 +549,7 @@ function placePointsTiles(grid_size, width, height) {
     },
   ];
 
-  var tile3 = [
+  let tile3 = [
     {
       x: 0.497592,
       y: 0.950991,
@@ -634,19 +634,19 @@ function placePointsTiles(grid_size, width, height) {
 
   randomSeed(4);
 
-  for (var y = 0; y < grid_size; y++) {
-    for (var x = 0; x < grid_size; x++) {
-      var r = random();
-      var t = tile1;
+  for (let y = 0; y < grid_size; y++) {
+    for (let x = 0; x < grid_size; x++) {
+      let r = random();
+      let t = tile1;
       if (r > 0.4) {
         t = tile2;
       }
       if (r > 0.8) {
         t = tile3;
       }
-      for (var i = 0; i < t.length; i++) {
-        var pX = (t[i].x * width) / grid_size + (x * width) / grid_size;
-        var pY = (t[i].y * height) / grid_size + (y * width) / grid_size;
+      for (let i = 0; i < t.length; i++) {
+        let pX = (t[i].x * width) / grid_size + (x * width) / grid_size;
+        let pY = (t[i].y * height) / grid_size + (y * width) / grid_size;
         points.push({
           x: pX,
           y: pY,
@@ -663,8 +663,8 @@ function placePointsTiles(grid_size, width, height) {
 
 // add the coresponding points in two lists.
 function addPoints(p1s, p2s) {
-  var points = [];
-  for (var i = 0; i < p1s.length && i < p2s.length; i++) {
+  let points = [];
+  for (let i = 0; i < p1s.length && i < p2s.length; i++) {
     points.push({
       x: p1s[i].x + p2s[i].x,
       y: p1s[i].y + p2s[i].y,
@@ -675,8 +675,8 @@ function addPoints(p1s, p2s) {
 
 // lerp the coresponding points in two lists.
 function lerpPoints(p1s, p2s, mix) {
-  var points = [];
-  for (var i = 0; i < p1s.length && i < p2s.length; i++) {
+  let points = [];
+  for (let i = 0; i < p1s.length && i < p2s.length; i++) {
     points.push({
       x: lerp(p1s[i].x, p2s[i].x, mix),
       y: lerp(p1s[i].y, p2s[i].y, mix),
@@ -687,7 +687,7 @@ function lerpPoints(p1s, p2s, mix) {
 
 // checks if the point (x, y) is within min_distance of any point in points
 function checkClose(x, y, points, min_distance) {
-  for (var i = 0; i < points.length; i++) {
+  for (let i = 0; i < points.length; i++) {
     if (dist(points[i].x, points[i].y, x, y) < min_distance) {
       return true;
     }
@@ -705,7 +705,7 @@ function subtractPoint(p1, p2) {
 
 // scales point as vector to magnitude of one
 function normalizePoint(p) {
-  var d = dist(0, 0, p.x, p.y);
+  let d = dist(0, 0, p.x, p.y);
   return {
     x: p.x / d,
     y: p.y / d,
@@ -714,7 +714,7 @@ function normalizePoint(p) {
 
 // render each strategy and save out (probably broken)
 function saveAll() {
-  var s = Object.keys(strategies)[strat_i];
+  let s = Object.keys(strategies)[strat_i];
   points = strategies[s]();
   drawPoints(points);
   save(s + ".png");
