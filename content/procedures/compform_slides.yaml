@@ -1,7 +1,7 @@
 - artist: Studio Moniker
   title: Fungus Series, 2010
   image: https://studiomoniker.com/thumbs/projects/fungus/ultramarine/action_2-720x450-q85.jpg
-  comments: A generative participatory installation that was executed by a large group of people. Each participant receives a sticker sheet containing 4 stickers and a simple set of instructions that specify how the stickers should be attached to the surface.
+  comments: Studio Moniker created a series of generative participatory installation in which people contribute by following instructions and placing stickers.
   links:
     - label: Fungus Series
       href: https://studiomoniker.com/projects/fungus
@@ -83,7 +83,7 @@
 
 - artist: Tarn Adams and Zach Adams
   title: Dwarf Fortress, 2006
-  comments: Dwarf Fortress is an uncompromising game created entirely by Tarn and Zach Adams. Dwarf Fortress procedurally generates and simulates the game world in crazy detail.
+  comments: Dwarf Fortress is a cult-classic game created entirely by Tarn and Zach Adams. Dwarf Fortress procedurally generates and simulates the game world in crazy detail.
   image: https://images.eurogamer.net/2013/articles/a/1/5/5/2/4/0/0/eurogamer-ign5y9.jpg
   links:
     - label: Dwarf Fortress
@@ -102,7 +102,8 @@
 - artist: On Kawara
   title: Today Series, 1966
   image: https://d2w9rnfcy7mm78.cloudfront.net/592565/original_d161b262aebf1127ad69a003e9903e45.jpg
-  comments: On Kawara worked on this series for nearly five decades. The paintings were produced meticulously over the course of many hours according to a series of steps that never varied. If a painting was not finished by midnight, he destroyed it. The quasi-mechanical element of his routine makes the production of each painting an exercise in meditation.
+  comments: On Kawara worked on this series of systematic paintings for nearly 50 years. He completed each painting in a single day or destroyed them.
+
   links:
     - label: Today Series
       href: https://www.guggenheim.org/teaching-materials/on-kawara-silence/paintings-today-series-date-paintings

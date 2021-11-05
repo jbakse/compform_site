@@ -14,44 +14,36 @@ software: p5.js
 
 ## Noise
 
-Random values are extremely common and important in procedural generation, but in many situations they are hard to work with. Psuedo-random number generators are designed to provide independent, unpredictable, and evenly-distributed values. If we want _related_ or _repeatable_ random values we have to do extra work. If we want random variation that _looks good_ we have to do extra work.
+Random values are extremely common and important in procedural generation, but in many situations they are hard to work with. Psuedo-random number generators are designed to provide independent, unpredictable, and evenly-distributed values. If we want _related_ or _repeatable_ random values we have to do extra work. If we want random variation that _looks good_ we also have to do extra work.
 
-Before we continue, look at the code below. What if `random()` didn't exist? How could you modify this example to get the same effect using the provided `randomValues` array?
+Before we continue, look at the code below. What if the `random()` function didn't exist? How could you modify this example to get the same effect using the provided `randomValues` array instead?
+
+#### Random Array
 
 {% js-lab "sketches/without_random.js" %}
 
-Noise functions are often a better source of random values.
+Noise functions are an alternative source of random values. Unlike the `random()` function however, noise functions provide related, repeatable, and good looking random variation.
 
 There are several common noise functions, each with different characteristics. The most widely known noise function is probably [Perlin Noise](https://en.wikipedia.org/wiki/Perlin_noise), developed by Ken Perlin while working on visual effects for the amazing 1982 motion picture [_Tron_](http://www.imdb.com/title/tt0084827/). Ken later developed a similar and faster version called [simplex noise](https://en.wikipedia.org/wiki/Simplex_noise). Other noise functions include [Worley noise](https://en.wikipedia.org/wiki/Worley_noise), developed by Steven Worley, and the simpler [value noise](https://en.wikipedia.org/wiki/Value_noise).
 
-<div class="three-up">
+<div class="three-up wide">
 
 ![Perlin Noise](https://upload.wikimedia.org/wikipedia/commons/d/da/Perlin_noise.jpg)
-Perlin Noise{figure}
+Perlin Noise{scale}
 
 ![Worley Noise](https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Worley.jpg/400px-Worley.jpg)
-Worely Noise{figure}
+Worely Noise{scale}
 
 ![Value Noise](https://upload.wikimedia.org/wikipedia/commons/b/bc/Value_noise_2D.png)
-Value Noise{figure}
+Value Noise{scale}
 
 </div>
 
-Noise functions provide a "cloud" of random values that can be used in a wide variety of ways. Noise functions are very frequently used in procedural texture generation and terrain generation. More generally, noise functions can be thought of as a lookup table of pre-generated random values that can be used in place of `random()` in many cases.
-
-<!-- short and cover class  not included-->
+Noise functions provide a "cloud" of random values that can be used in a wide variety of ways. Noise functions are very frequently used in procedural texture generation and terrain generation, but their applications are not at all limited to those areas. Noise functions can be thought of as a lookup table of pre-generated random values that can be used in place of `random()` in many cases. Noise functions are particularly well suited to adding small variations to create more natural feeling output.
 
 {% slides %}
 {% include slides.yaml %}
 {% endslides %}
-
-<!-- ::: .discussion
-
-# Blue Squares
-
-
-
-</div> -->
 
 ## Noise vs. Random
 
@@ -69,20 +61,20 @@ Where do those values come from? They could come from a few places.
 | ---------- | --------------------------------------------------------------- |
 | Hard Coded | You always want the same, specific value.                       |
 | Parameters | You want to be able to control the value from a larger context. |
-| `random()` | You want random variation.                                      |
-| `noise(x)` | You want controlled variation.                                  |
+| random()   | You want random variation.                                      |
+| noise(x)   | You want controlled variation.                                  |
 
-Now suppose we wanted to add variation to the size of the squares. Both `random()` and `noise()` would allow us to do that, but `noise()` provides much more control. With `random()` the sizes of the boxes won't be related at all. With `noise()` we can control how quickly the size changes horizontally, vertically, and over time. If we sample a small area of the noise function the variation will be subtle and gradual. If our samples are far apart the variation will be be drastic, unpredictable and look a lot like `random()`.
+Both `random()` and `noise()` provide a source of variation, but `noise()` provides much more control. With `random()` the sizes of the boxes won't be related at all. With `noise()` we can control how quickly the size changes horizontally, vertically, and over time. If we sample a small area of the noise function the variation will be subtle and gradual. If our samples are far apart the variation will be be drastic, unpredictable and look a lot like `random()`.
 
-### Random()
+#### Random()
 
 {% js-lab "sketches/sketch_random/sketch.js" %}
 
-### Noise(x)
+#### Noise(x)
 
 {% js-lab "sketches/sketch_noise/sketch.js" %}
 
-Consider the two examples above: one uses `random()` and one uses `noise()`.
+Consider the two examples above. Both draw a circle that changes size over time and a line of smaller circles of varying size. One uses `random()` and one uses `noise()`.
 
 | random()                                                                                                                                                      | noise()                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -95,32 +87,41 @@ Consider the two examples above: one uses `random()` and one uses `noise()`.
 
 ### Noise Looks Good
 
-The `noise(x)` function returns values sampled from Perlin Noise. Perlin Noise provides random values that are aesthetically arranged. The variation in Perlin Noise is band-limited: It is even, without flat or noisy areas. The variation is also visually isotropic—it looks the same at different rotations. These characteristics make it a useful basis for many applications that require natural-feeling variation.
+The p5 `noise(x)` function returns values sampled from Perlin Noise. Perlin Noise provides random values with a particular aesthetic arrangement. The variation in Perlin Noise is band-limited: the frequency of values is predictable and even, without flat or noisy areas. The variation is also visually isotropic: it looks the same at different rotations. These characteristics make it a useful basis for many applications that require natural-feeling variation.
 
-You can tweak the aesthetics of a noise functional by manipulating its values with a little math. The [Terrain from Noise](https://www.redblobgames.com/maps/terrain-from-noise/) article on Red Blob Games is a good place to see some common techniques for shaping noise.
-
-Other noise functions—like Worely and Value Noise—offer different aesthetic qualities, and it is quite possible to create your own noise function that looks the way you want.
+Other noise functions—like Worely and Value Noise—offer different aesthetic qualities, and it is quite possible to create your own noise function that looks the way you want. Most of the time you don't _need_ to create your own noise function to get a particular look. You can tweak the aesthetics of a noise functional by manipulating its values with math. The [Terrain from Noise](https://www.redblobgames.com/maps/terrain-from-noise/) article on Red Blob Games is a good place to see some common techniques for shaping noise.
 
 ### Noise is Repeatable
 
-Repeated variation is easy with `noise(x)`: every time you call `noise(x)` with a particular argument, you get the same value back. This can be very useful. For example, in an animation you often need a value to stay the same from frame to frame.
+Noise functions take one or more coordinate arguments. These arguments specify a location in the noise cloud and the function returns the value found at that location.
 
-- `random()` requires no arguments and returns a different random value every time.
-- `noise(x)` requires an argument and returns the same random value _for that argument_ every time.
+This makes getting repeated results easy: every time you call `noise(x)` with a particular argument, you get the same value back. This can be very useful. For example, in an animation you often need a value to stay the same from frame to frame.
 
-This difference is a core reason why `noise(x)` is so useful. This difference takes some getting used to, and learning what to pass in for `x` takes some practice.
+- `random()` _accepts_ no coordinate arguments and returns a different random value every time.
+- `noise(x)` _requires_ an coordinate argument and returns the same random value every time it is called _with that argument_.
+
+<div class="callout">
+This difference is the core reason why `noise(x)` is so useful AND the core reason it can be confusing at first. Learning what arguments to pass to `noise()` takes some practice.
+</div>
 
 ### Noise is Controllable
 
-By controlling what you pass to `noise(x)`, you can control the frequency of the values returned. This can be used to control how quickly values vary in space and time. Like `random()` values, you can scale and shift the values from `noise(x)` to the range you need. You can also adjust the character of `noise(x)` using `noiseDetail()`.
+By controlling what you pass to `noise(x)`, you can control the frequency of change in the returned values. This can be used to control how quickly values vary in space and time. With p5s Perlin Noise, you can also adjust the character of `noise(x)` using `noiseDetail()`. You can scale and shift the values returned from `noise(x)` to the range you need in the same way you shift values from `random()`.
+
+Current: Multiplayer p5.party
 
 ### 1D Noise Example
 
 {% js-lab "sketches/sketch_1D_noise/sketch.js" %}
 
-## Building Noise
+## Building Noise Functions
 
-<!-- [[would be good to write an intro into building noise: fill a multi-dimensional space with random numbers, create a system to look those numbers up, interpolate, etc.]] -->
+The `noise()` function models an infinite cloud of predetermined random values. When you call `noise(x)`, you are asking for the value in the cloud at the coordinate `x`. To create a noise function you need to build two things:
+
+1. a way to associate a random values with each integer coordinate in the cloud
+2. a way to interpolate between these values if fractional coordinates are requested.
+
+Different noise functions sove these problems in different ways.
 
 <div class='activity'>
 
@@ -208,27 +209,15 @@ n = map(n, 0, 1, 10, 20);
 
 ### Controlling the Detail
 
-<div class='links-sidebar'>
+The [noiseDetail()](https://p5js.org/reference/#/p5/noiseDetail) function allows you to control the "roughness" or "detail" of the noise returned. Detailed noise is achieved by adding layers of simle noise together.
 
-[p5:<br/>noiseDetail()](https://p5js.org/reference/#/p5/noiseDetail)
+![noise detail](figures/noise_detail.jpg)
 
-</div>
-
-The `noiseDetail()` function allows you to control the "roughness" or "detail" of the noise returned.
-
-<!--[[Sometimes in sketches you call this octaves, sometimes detail. Maybe make clear that octaves, detail, and roughness all refer to the same noiseDetail() function. "Octaves" especially might require explanation, since the function itself is just called "detail".]]-->
+Typically, each layer of noise is twice as detailed (higher frequency) and half as prominent (lower amplitude). These layers are sometimes refered to as "octaves" because their frequncies double each time, like musical octives.
 
 ### Controlling the Seed
 
-<div class='links-sidebar'>
-
-[p5:<br/>noiseSeed()](https://p5js.org/reference/#/p5/noiseSeed)
-
-</div>
-
-By default, every time you restart your sketch the noise pattern will be different. The `noiseSeed()` allows you to manually set the noise pattern seed.
-
-<!--[[You discuss in the beginning how noise(x) always returns the same value for the same input. It's not immediately clear that this means the same value within the context of a single sketch run vs. constant across each run.]]-->
+By default, every time you restart your sketch the noise cloud is regenerated with a randomized seed. The [noiseSeed()](https://p5js.org/reference/#/p5/noiseSeed) allows you to manually set the seed used for the noise cloud. This allows you to get the same values from `noise()` after restarting your sketch.
 
 ## Study Examples
 
@@ -259,24 +248,27 @@ Explore using noise by completing the following challenges in order. <br/> Don't
 | 7 in 20 Minutes     | Good.                                                                                |
 | All 9 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Mapping Noise Example{difficulty}
 
-1. This example shows several ways to map noise. Comment in and out each example, and compare the results. {easy}
+### Modify the Mapping Noise Example {difficulty}
 
-### Modify the Grass Example
+1. **This example shows several ways to map noise. Comment in and out each example, and compare the results.** {easy}
 
-1. Study the code and get a general idea of how it works. {easy}
-1. Line 28 has two magic constants: `.01` and `.001`. Try changing the first constant to `.1`. What happens? What happens when you change it to `1`? {easy}
-1. Set the first constant back to `.01`. Change the second constant to `.01`. What happens? {easy}
-1. Add flowers to some of the blades of grass. {hard}
+
+### Modify the Grass Example {difficulty}
+
+
+1. **Study the code and get a general idea of how it works.** {easy}
+1. **Line 28 has two magic constants: `.01` and `.001`. Try changing the first constant to `.1`. What happens? What happens when you change it to `1`?** {easy}
+1. **Set the first constant back to `.01`. Change the second constant to `.01`. What happens?** {easy}
+1. **Add flowers to some of the blades of grass.** {hard}
    {continue}
 
-### Modify the Skyline Example
+### Modify the Skyline Example {difficulty}
 
-1. This example has two global parameters: `amplitude` and `frequency`. Change the values of these parameters in lines 3 and 4 to get a feel for how they affect the output. What happens when you use a very small value for frequency, such as `.001`? {easy}
-1. Think about what would happen if you changed `noise(x * frequency)` to `noise(x * frequency, frameCount)` on line 23. Make the change. Is the result what you expected? {easy}
-1. Your last change should have caused the bar heights to animate very quickly. Now slow down the rate of change. {medium}
-1. Add water towers to some of the buildings. {hard}
+1. **This example has two global parameters: `amplitude` and `frequency`. Change the values of these parameters to get a feel for how they affect the output. What happens when you use a very small value for frequency, such as `.001`?** {easy}
+1. **On line 23, what would happen if you changed `noise(x * frequency)` to `noise(x * frequency, frameCount)`? Make the change. Is that what you expected?** {easy}
+1. **Your last change should have caused the bar heights to animate very quickly. Slow down the rate of change.** {medium}
+1. **Add water towers to some of the buildings.** {hard}
    {continue}
 
 </div>
@@ -333,20 +325,24 @@ Make a program that generates treasure maps.
 
 ## Reference Links
 
-[Pinterest: Perlin Noise](https://in.pinterest.com/explore/perlin-noise/)
-: Active Pinterest search for _Perlin Noise Art_
+<div class="link-box">
 
-[Book of Shaders: Noise](https://thebookofshaders.com/11/)
-: Chapter on using noise in GLSL shaders from the excellent _The Book of Shaders_.
+[**Noise Functions and Map Generation** redblobgames.com](https://www.redblobgames.com/articles/noise/introduction.html)
+Interactive article on creating and using noise functions.
 
-[Shiffman: 2D Noise](https://www.youtube.com/watch?v=ikwNrFvnL3g)
-: [Daniel Shiffman's](http://shiffman.net/about/) video on 2D Perlin Noise
+[**Noise** Book of Shaders](https://thebookofshaders.com/11/)
+Chapter on using noise in GLSL shaders from the excellent _The Book of Shaders_.
 
-[Ken Perlin: Noise and Turbulence](http://mrl.nyu.edu/~perlin/doc/oscar.html)
-: Comments on Perlin Noise direct from the source, including the code.
+[**2D Noise** The Coding Train](https://www.youtube.com/watch?v=ikwNrFvnL3g)
+: Daniel Shiffman's video on 2D Perlin Noise in p5.js
 
-[GPU Gems: Improved Perlin Noise](https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch05.html)
-: Ken Perlin details an improved implementation of Perlin Noise for [GPU Gems](https://developer.nvidia.com/gpugems/GPUGems/gpugems_pref01.html)
+[**Noise and Turbulence** Ken Perlin](http://mrl.nyu.edu/~perlin/doc/oscar.html)
+Comments on Perlin Noise direct from the source, including the code.
 
-[Lecture: Juicing your Cameras With Math](https://www.youtube.com/watch?v=tu-Qe66AvtY)
-: GDC talk on making cameras cooler. At 11:40 he discusses the benefits of using Perlin Noise instead of RNG for camera shake.
+[**Improved Perlin Noise** GPU Gems](https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch05.html)
+Ken Perlin details an improved implementation of Perlin Noise for [GPU Gems](https://developer.nvidia.com/gpugems/GPUGems/gpugems_pref01.html)
+
+[**Juicing your Cameras With Math** GDC Tech Talk](https://www.youtube.com/watch?v=tu-Qe66AvtY)
+GDC talk on making cameras cooler. At 11:40 he discusses the benefits of using Perlin Noise instead of RNG for camera shake.
+
+</div>

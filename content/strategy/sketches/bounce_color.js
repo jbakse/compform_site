@@ -9,6 +9,7 @@ function setup() {
 
 function draw() {
   background(50);
+  noStroke();
 
   if (ballColor < 0) {
     ballSpeed = abs(ballSpeed);

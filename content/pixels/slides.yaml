@@ -102,8 +102,12 @@
 - artist: Derek Yu
   title: Pixel Art Tutorial, 2013
   image: https://www.derekyu.com/images/extras/pixel-tools.jpg
-  comments: This is not about computation, but is about making pixels look good. This is a short and useful tutorial on handcrafting pixel art written by Derek Yu, the designer of Spelunky.
+  comments: This is a short and useful tutorial on handcrafting pixel art written by Derek Yu. Derek also wrote a great book that looks at the design and implementation of his indie game hit, Spelunky.
   links:
     - label: "Pixel Art Tutorial"
       href: http://makegames.tumblr.com/post/42648699708/pixel-art-tutorial
       subtitle: tutorial
+
+    - label: Spelunky
+      href: https://bossfightbooks.com/products/spelunky-by-derek-yu
+      subtitle: book

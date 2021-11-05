@@ -44,7 +44,7 @@ software: p5.js + tweakpane
 
 ## Parameters
 
-One of the most powerful and rewarding aspects of writing a procedural generation system is exploring what it can make. The initial investment of time spent coding is repaid by the ability to iterate easily and quickly. Many procedural systems can produce endless variations and can be pushed to surprising extremes. Exploring the range of the system reveals new ideas to consider and aesthetics to explore.
+One of the most rewarding aspects of creating a procedural generation system is exploring what it can make. The initial investment of time spent coding is repaid by the ability to iterate easily and quickly. Many procedural systems can produce endless variations and can be pushed to surprising extremes. Exploring the range of the system reveals new ideas to consider and aesthetics to explore.
 
 <!-- <div class='sidebar link-box'>
 
@@ -262,7 +262,7 @@ Think about how your user will control your machine. What options would the user
 
 </div>
 
-## Parameters + p5
+## Study Examples
 
 ### Globals as Interfaces
 
@@ -271,6 +271,8 @@ A quick-and-dirty way to make your comp form sketches “tweakable” is to use 
 - Choose clear variable names that explain the purpose of each parameter.
 - Use comments to explain the parameter in more detail, document legal value ranges, and suggest good values.
 - Keep in mind that [global variables are evil](https://stackoverflow.com/questions/19158339/why-are-global-variables-evil). Use constants instead of variables, if your language supports them. If your language doesn't support true constants use a naming convention, such as all caps, to indicate that a value shouldn't be changed.
+
+#### Global Constants
 
 {% js-lab "sketches/square.js" %}
 
@@ -297,11 +299,15 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 - Use `select()` in p5 if you want to make your controls in HTML.
 - Consider styling your interface with CSS.
 
+#### DOM Interface
+
 {% js-lab "sketches/square_slider.js" %}
 
 ### HTML Interfaces with Tweakpane
 
 [Tweakpane](https://cocopon.github.io/tweakpane/) is a javascript library that lets you quickly setup and display a interactive pane for adjusting parameters.
+
+#### Tweakpane Interface
 
 {% js-lab "sketches/square_tweakpane.js" %}
 
@@ -309,15 +315,16 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 ## Coding Challenges
 
-Explore using parameters by completing the following challenges. Reference the study examples above.
 
-<!-- <br/> Don't skip any. -->
+Explore the study examples above by completing the following challenges.
 
-<!-- | Time                 | Comment                                                                              |
+<!--
+| Time                 | Comment                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------ |
 | < 6 in 20 Minutes    | You need to put in some extra work to strengthen your understanding of these topics. |
 | 6 in 20 Minutes      | Good.                                                                                |
 | All 10 in 20 Minutes | Great.                                                                               | -->
+
 
 ### Modify the Globals as Interface Example{difficulty}
 
@@ -333,6 +340,7 @@ Explore using parameters by completing the following challenges. Reference the s
 1. Add a slider to control the vertical position of the square. {easy}
 1. Add a color picker to control the background color of the sketch. {medium}
 1. Instead of drawing the square, draw a "target" of concentric white and red rings. Draw more rings to make a bigger target. {hard}
+
    {continue}
 
 </div>
@@ -343,11 +351,14 @@ Explore using parameters by completing the following challenges. Reference the s
 
 ### Sketch
 
-Continue experimenting with procedurally-generated images but with a focus on exposing parameters and exploring the parametric potential of your sketches. You can mix random and parametric elements, but consider doing a couple of sketches that are not random at all.{bigger}
+
+Continue experimenting with procedurally-generated images. Focus on exposing parameters and exploring the parametric potential of your sketches. You can mix random and parametric elements, but consider doing a couple of sketches that are not random at all.{bigger}
+
 
 ### Challenge: Face Generator
 
 Build a face-generating tool. This tool will create an image of a face that can be adjusted by the user with sliders and other inputs.
+
 
 - Don’t use the built-in shape drawing commands like `rect()` and `ellipse()`. Build your face from manually-created illustrations or photographic images.
 - Make your resulting images look as seamless and cohesive as possible.
@@ -355,38 +366,28 @@ Build a face-generating tool. This tool will create an image of a face that can 
 
 ### Pair Challenge: Code Swap
 
-#### Part 1
 
-1. Create a computationally generated image.
-2. Pass the code—not the image—to your partner.
+1. Create an computationally generated image.
+1. Pass the code—not the image—to your partner.
+1. Extend the code in any way you wish.
 
-#### Part 2
-
-1. Receive the code from your partner.
-2. Extend the code in any way you wish.
-3. Share the result.
 
 </div>
 
 ## Reference Links
 
-[p5: Reference](https://p5js.org/reference/)
-: Documentation on the p5 API.
+<div class="link-box">
 
-[dat.gui](https://github.com/dataarts/dat.gui)
-: Popular, lightweight tool for quickly making nice-looking interfaces.
+[**A History of Parametric** Essay](http://www.danieldavis.com/a-history-of-parametric/)
+A history of parametricism and parametric architecture, beginning before the invention of the computer.
 
-[How secure is 256 bit security?](https://www.youtube.com/watch?v=S9JGmA5_unY)
-: The fantastic YouTube channel 3Blue1Brown explores combinatorial explosion in the context of cryptographic security.
+[**Safavid Surfaces and Parametricism** Essay](https://archinect.com/features/article/29553480/safavid-surfaces-and-parametricism)
+Article describing how "digital fabrication and parametric design tools have brought about a contemporary resurgence of surface articulation".
 
-[A History of Parametric](http://www.danieldavis.com/a-history-of-parametric/)
-: A history of parametricism and parametric architecture, beginning before the invention of the computer.
+[**Variable Fonts** Collection](https://v-fonts.com/)
+A compilation of OpenType variable fonts which offer parametric control over weight, contrast, and other variables.
 
-[Engare](http://www.engare.design/)
-: A game about motion and geometry that draws on the mathematical principles of Islamic pattern design.
+[**Engare** Puzzle Game](http://www.engare.design/)
+A game about motion and geometry that draws on the mathematical principles of Islamic pattern design.
 
-[Variable Fonts](https://v-fonts.com/)
-: A compilation of [OpenType variable fonts](https://medium.com/variable-fonts/https-medium-com-tiro-introducing-opentype-variable-fonts-12ba6cd2369), which offer parametric control over weight, contrast, and other variables.
-
-[Safavid Surfaces and Parametricism](https://archinect.com/features/article/29553480/safavid-surfaces-and-parametricism)
-: Article describing "parametric design tools have brought about a contemporary resurgence of surface articulation".
+</div>
