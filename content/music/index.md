@@ -301,7 +301,7 @@ Codebases often diverge from their initial specifications. Compare the target ch
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
 Continuing to explore generating and visualizing sound and music.{bigger}
 
