@@ -1,6 +1,6 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
-var worldImage;
+let worldImage;
 
 function preload() {
   worldImage = loadImage("/pixels/sketches/world.png");
@@ -13,15 +13,15 @@ function setup() {
 function draw() {
   background(0);
 
-  for (var y = 0; y < worldImage.height; y++) {
-    for (var x = 0; x < worldImage.width; x++) {
-      var in_color = worldImage.get(x, y);
+  for (let y = 0; y < worldImage.height; y++) {
+    for (let x = 0; x < worldImage.width; x++) {
+      let in_color = worldImage.get(x, y);
 
-      var r = red(in_color);
-      var g = green(in_color);
-      var b = blue(in_color);
+      let r = red(in_color);
+      let g = green(in_color);
+      let b = blue(in_color);
 
-      var out_color;
+      let out_color;
       if (r === 255) {
         out_color = color(255, 0, 0);
       } else {

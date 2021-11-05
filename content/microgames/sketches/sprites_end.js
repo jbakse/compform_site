@@ -1,7 +1,7 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require /microgames/sketches/p5.play.js
 
-var sprite1, sprite2;
+let sprite1, sprite2;
 
 // art from Buch @ opengameart.org
 // https://opengameart.org/content/a-platformer-in-the-forest
@@ -10,8 +10,8 @@ var sprite1, sprite2;
 function setup() {
   createCanvas(600, 300);
 
-  var kingImage = loadImage("king.png");
-  var guyImage = loadImage("guy.png");
+  let kingImage = loadImage("king.png");
+  let guyImage = loadImage("guy.png");
 
   sprite1 = createSprite(200, 150, 100, 100);
   sprite1.addImage("main", kingImage);

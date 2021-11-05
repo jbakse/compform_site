@@ -25,11 +25,11 @@
 - artist: Matthias Dörfelt
   title: Weird Faces, 2012-13
   image: https://www.mokafolio.de/thumbs/works/Weird-Faces/01-2400x1526.jpg
-  comments: Procedurally generated illustrations with a deliberately hand-drawn feel.
+  comments: Matthias procedurally generated these illustrations while capturing a hand-drawn quality to the faces.
   links:
     - label: Weird Faces
       href: https://www.mokafolio.de/works/Weird-Faces
-      subtitle: mokafolio.de
+      subtitle: documentation
     - label: Weird Faces Vending Machine
       href: https://www.mokafolio.de/works/Weird-Faces-Vending-Machine
       subtitle: extended project
@@ -40,11 +40,11 @@
 - artist: Matthias Dörfelt
   title: Cables, 2020
   image: https://www.mokafolio.de/thumbs/works/Cables/01-2400x2291.jpg
-  comments: Computer-generated drawings printed on risograph.
+  comments: Matthias computationally generated these abstract forms that were then printed on risograph.
   links:
     - label: Cables
       href: https://www.mokafolio.de/works/Cables
-      subtitle: mokafolio.de
+      subtitle: documentation
     - label: Artist Site
       href: https://www.mokafolio.de/
       subtitle: mokafolio.de

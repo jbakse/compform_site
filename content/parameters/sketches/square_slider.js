@@ -1,6 +1,6 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
 
-var pos_x_slider, pos_y_slider, size_slider, color_picker;
+let pos_x_slider, pos_y_slider, size_slider, color_picker;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight * 0.5);
@@ -22,8 +22,8 @@ function setup() {
 function draw() {
   background(250);
   fill(color_picker.value());
-  var pos_x = pos_x_slider.value();
-  var pos_y = height * 0.5;
-  var size = size_slider.value();
+  let pos_x = pos_x_slider.value();
+  let pos_y = height * 0.5;
+  let size = size_slider.value();
   rect(pos_x, pos_y, size, size);
 }

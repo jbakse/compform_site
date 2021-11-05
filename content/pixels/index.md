@@ -159,47 +159,45 @@ The first two examples use a nested loop to set a value for every pixel in the i
 
 ## Coding Challenges One
 
-Explore using p5's pixel manipulation functions by modifying the scripts above. Work through the following challenges in order. <br/> Don't skip any.
+Explore using p5's pixel manipulation functions by modifying the scripts above. Work through the following challenges in order.
 
-| Time               | Comment                                                                               |
+<!-- <br/> Don't skip any. -->
+
+<!-- | Time               | Comment                                                                               |
 | ------------------ | ------------------------------------------------------------------------------------- |
 | < 13 in 20 Minutes | You need to put in some extra work<br/> to strengthen your programming understanding. |
 | 13 in 20 Minutes   | Good.                                                                                 |
 | All in 20 Minutes  | Great.                                                                                |
-| All in 15 Minutes  | Hot Dang!                                                                             |
+| All in 15 Minutes  | Hot Dang!                                                                             | -->
 
-### Modify the Basic Example
+### Modify the Basic Example{difficulty}
 
-1. Change the image resolution to `20x20`
-2. Change the image resolution to `500x500`
-3. Change the image resolution back to `10x10`
-4. Make each pixel a random shade of blue.
-5. Make each pixel a random shade of gray.
+1. Change the image resolution to `20x20`. {easy}
+1. Change the image resolution to `500x500`. {easy}
+1. Change the image resolution back to `10x10`. {easy}
+1. Make each pixel a random shade of blue. {medium}
+1. Make each pixel a random shade of gray. {medium}
+1. Color each pixel with `noise()` to visualize its values. {hard}
 
 ### Modify the Gradient Example
 
-6. Make a horizontal black-to-blue gradient.
-7. Make a vertical green-to-black gradient.
-8. Make a horizontal white-to-blue gradient.
-9. Make a vertical rainbow gradient. Tip: `colorMode()`
-10. Create an inset square with a gradient, surrounded by randomly-colored pixels.
-    {continue}
+1. Make a horizontal black-to-blue gradient. {easy}
+1. Make a vertical green-to-black gradient. {easy}
+1. Make a horizontal white-to-blue gradient. {easy}
+1. Make a vertical rainbow gradient. Tip: `colorMode()` {medium}
+1. Create an inset square with a gradient, surrounded by randomly-colored pixels. {hard}
+1. Make a radial gradient from black to red. Tip: `dist()` {hard}
+1. Create a diagonal gradient. {hard}
+   {continue}
 
 ### Modify the Random Access Example
 
-11. Change the image resolution to `50x50`, adjust scatter to fill.
-12. Instead of drawing single pixels, draw little `+` marks at random locations.
-13. Make each `+` a random color.
-    {continue}
-
-### Challenging Challenges
-
-14. Color each pixel with `noise()` to visualize its values.
-15. Make a radial gradient from black to red. Tip: `dist()`
-16. Create a diagonal gradient.
-17. Use `sin()` to create a repeating black-to-red-to-black color wave.
-18. Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`
-    {continue}
+1. Change the image resolution to `50x50`, adjust scatter to fill. {easy}
+1. Instead of drawing single pixels, draw little plus marks (`+`) at random locations. {medium}
+1. Make each `+` a random color. {medium}
+1. Use `sin()` to create a repeating black-to-red-to-black color wave. {hard}
+1. Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`. {hard}
+   {continue}
 
 </div>
 
@@ -271,50 +269,48 @@ This example doesn't draw the image at all. Instead, the image is used as an inp
 
 ## Coding Challenges Two
 
-Explore using p5's pixel manipulation functions by modifying the scripts above. Work through the following challenges in order. <br/> Don't skip any.
+Explore using p5's pixel manipulation functions by modifying the scripts above. Work through the following challenges in order.
 
-| Time               | Comment                                                                               |
+<!-- <br/> Don't skip any. -->
+
+<!-- | Time               | Comment                                                                               |
 | ------------------ | ------------------------------------------------------------------------------------- |
 | < 10 in 20 Minutes | You need to put in some extra work<br/> to strengthen your programming understanding. |
 | 10 in 20 Minutes   | Good.                                                                                 |
 | All in 20 Minutes  | Great.                                                                                |
-| All in 15 Minutes  | Hot Dang!                                                                             |
+| All in 15 Minutes  | Hot Dang!                                                                             | -->
 
-### Modify Example 1
+### Modify Read Pixels Example 1{difficulty}
 
-1. Make the program turn white pixels green.
-2. Turn the black pixels to a random shade of red.
-3. Turn the black pixels into a vertical, black-to-red gradient.
-4. Comment out line 34 which calls `updatePixels()`. What happens?
+1. Make the program turn white pixels green.{easy}
+1. Turn the black pixels to a random shade of red.{easy}
+1. Turn the black pixels into a vertical, black-to-red gradient.{medium}
+1. Comment out line 34 which calls `updatePixels()`. What happens?{medium}
 
 <!-- <img src="sketches/world_100.png" style="image-rendering: pixelated;"> -->
 
-### Modify Example 2
+### Modify Read Pixels Example 2
 
-4. Change the `lightness()` comparison to `>`.
-5. Change the `lightness()` comparison to `!=`.
-6. Add an `else` block that changes the pixels to black.
+1. Change the `lightness()` comparison to `>`.{easy}
+1. Change the `lightness()` comparison to `!=`.{easy}
+1. Add an `else` block that changes the pixels to black.{medium}
+1. Starting with the original code without any changes, set the `out_color` to the average of `this_color` and `below_color`. Here is an example you could follow:
+   ```
+   var color_a = color(worldImage.get(0, 1));
+   var color_b = color(worldImage.get(0, 2));
+   var blended_color = lerpColor(color_a, color_b, .5);{hard}
+   ```
+1. Change `worldImage.set(x, y, out_color);` to `worldImage.set(x, y+1, out_color);`.{hard}
+1. Remove the `if` statement (but not its contents) so that its content always runs.{hard}
    {continue}
 
-### Modify Example 3
+### Modify Read Pixels Example 3
 
 <img src="sketches/world_100.png" style="image-rendering: pixelated;">
 
-8. Tell the program to use the image above by switching which `loadImage()` call is commented out in `preload()`.
-9. Adjust the expression that determines `dot_size` to make the result prettier.
+1. Tell the program to use the image above by switching which `loadImage()` call is commented out in `preload()`.{easy}
+1. Adjust the expression that determines `dot_size` to make the result prettier.{medium}
    {continue}
-
-### Challenging Challenges
-
-11. Start with the original Example 2 code, without your changes. Set `out_color` to the average of `this_color` and `below_color`. Here is an example you could follow:
-    ```
-    var color_a = color(worldImage.get(0, 1));
-    var color_b = color(worldImage.get(0, 2));
-    var blended_color = lerpColor(color_a, color_b, .5);
-    ```
-12. Change `worldImage.set(x, y, out_color);` to `worldImage.set(x, y+1, out_color);`.
-13. Remove the `if` statement (but not its contents) so that its content always runs.
-    {continue}
 
 </div>
 
@@ -439,25 +435,27 @@ This example uses an image as an input to control the density and placement of d
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
-Explore working with image pixel data directly. This week, most of your posts should be still images.{bigger}
+Explore working with image pixel data directly. Most of your sketches should be still images. {bigger}
 
-Post **at least one** sketch **for each** of the following:
+<!-- This week, most of your posts should be still images. -->
+
+Create **at least one** sketch **for each** of the following:
 
 1. Generate an image from scratch: pixel by pixel. Don't call any high-level drawing function like `ellipse()` or `rect()`.
-2. Load an image and process its pixels. Show the result.
+2. Load an image and process its pixels.
 3. Use an image as an input source to control a drawing. Don't show the original image, just the output.
 
-### Invidual Challenge — Pixel Ouroboros.
+### Challenge: Pixel Ouroboros
 
 Create code that processes an image. Feed the result back into your code and process it again. What happens after several generations?
 
-Post your source image, the result after one generation, and the result after several generations. Alternately, capture 90 generations as frames and post as a video.
+<!-- Post your source image, the result after one generation, and the result after several generations. Alternately, capture 90 generations as frames and post as a video. -->
 
-### Pair Challenge — Generate / Process.
+### Pair Challenge: Generate / Process
 
-Work with a partner you haven't worked before.
+Work with a partner.
 
 1. Make a sketch that generates an image pixel by pixel.
 2. Give your image to your partner.

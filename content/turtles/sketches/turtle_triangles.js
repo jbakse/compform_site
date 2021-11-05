@@ -1,7 +1,7 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require /turtles/turtle/turtle.js
 
-var myTurtle;
+let myTurtle;
 
 function setup() {
   createCanvas(500, 500);
@@ -39,7 +39,7 @@ function draw() {
 
 // draw a triangle using the turtle provided
 function drawTriangle(t) {
-  for (var i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i++) {
     t.moveForward(100);
     t.turnRight(120);
   }

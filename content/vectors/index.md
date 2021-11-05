@@ -218,42 +218,44 @@ A super-useful feature of Paper.js is the ability to combine shapes with boolean
 
 ## Coding Challenges
 
-Explore Paper.js by modifying the examples above. Work through the following challenges in order. Don't skip any.
+Explore Paper.js by modifying the examples above. Work through the following challenges in order.
+
+<!-- Don't skip any.
 
 | Time                 | Comment                                                      |
 | -------------------- | ------------------------------------------------------------ |
 | < 11 in 20 Minutes   | Keep studying to improve your understanding of these topics. |
 | 11 in 20 Minutes     | Good.                                                        |
-| All 15 in 20 Minutes | Great.                                                       |
+| All 15 in 20 Minutes | Great.                                                       | -->
 
-### Modify the Basic Example
+### Modify the Basic Example{difficulty}
 
 It might help to have the documentation for [Paper.js Path](http://paperjs.org/reference/path/) handy.
 
-1. Make both lines 8 pixels wide and blue.
-2. Set the `.strokeCap` of both lines to `round`.
-3. Make 50 lines with random start and end points.
+1. Make both lines 8 pixels wide and blue. {easy}
+1. Set the `.strokeCap` of both lines to `round`.{easy}
+1. Make 50 lines with random start and end points.{medium}
 
    You don't have the p5.js `random()` function in Paper.js, but you do have JavaScript's `Math.random()`. This will get you a random value between 0 and 500: `Math.random() * 500`.
 
-4. Make each of the 50 lines a random width and color.
+1. Make each of the 50 lines a random width and color.{medium}
    {continue}
 
 ### Modify the Boolean Example
 
-5. Make the green square 500 pixels wide.
-6. Change the function that creates comboPath from `subtract` to `unite`.
-7. Change the function again. This time try `intersect`.
-8. Change the green square to an ellipse.
-9. Remove the green and red shapes, leaving only the compound shape. Tip: `.remove()` [docs](http://paperjs.org/reference/path/#remove).
+1. Make the green square 500 pixels wide.{easy}
+1. Change the function that creates comboPath from `subtract` to `unite`.{easy}
+1. Change the function again. This time try `intersect`.{easy}
+1. Change the green square to an ellipse.{medium}
+1. Remove the green and red shapes, leaving only the compound shape. Tip: `.remove()` [docs](http://paperjs.org/reference/path/#remove).{hard}
    {continue}
 
-### Challenging Challenges
+### Create from Scratch
 
-10. Starting from scratch, draw a simple stick figure.
-11. Create a compound shape from _three_ shapes using any of the boolean operations: `unite`, `intersect`, `subtract`. Tip: You'll need to do this in two steps.
-12. Create the drawing below.
-    {continue}
+1. Draw a simple stick figure.{easy}
+1. Create a compound shape from _three_ shapes using any of the boolean operations: `unite`, `intersect`, `subtract`. Tip: You'll need to do this in two steps.{medium}
+1. Create the drawing below.{hard}
+   {continue}
 
 {% js-show "sketches/challenge.js" %}
 
@@ -271,13 +273,13 @@ Paper Garden is a program written in about 300 lines of PaperScript using [Paper
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
-Explore using Paper.js. Focus on creating vector-based images this week. I highly encourage you to use a hybrid workflow this week: start with code in Paper.js but finish with manual work in Illustrator.{bigger}
+Explore using Paper.js. Focus on creating vector-based images this week. Consider using a hybrid workflow this week: start with code in Paper.js but finish with manual work in Illustrator.{bigger}
 
-This week you must complete at least one of the following challenges. These challenges count as 2 sketches. Post one work-in-progress screenshot sketch, and a second sketch with a photo of the final output.
+<!-- This week you must complete at least one of the following challenges. These challenges count as 2 sketches. Post one work-in-progress screenshot sketch, and a second sketch with a photo of the final output. -->
 
-### Individual Challenge: Zoom Background
+### Challenge: Zoom Background
 
 Well, the lockdown pretty much rules out posters and lasercuts. But Zoom backgrounds are pretty big now. Its not a good fit, but lets make lemonaid.
 
@@ -285,9 +287,9 @@ Well, the lockdown pretty much rules out posters and lasercuts. But Zoom backgro
 
 1. Create a PaperScript program that outputs vector data.
 2. Post an image of the output.
-3. Swap your vector data with someone else in the class.
+3. Swap your vector data with another person.
 4. Manipulate the vector data in a vector tool like Illustrator.
-5. Post the result.
+<!-- 5. Post the result. -->
 
 ### Challenge: Promo Poster{strike}
 
@@ -297,7 +299,7 @@ Create a promotional poster for a real or fictional event. Your poster must be p
 
 Create a lasercut thing. This can be anything you like that combines generative vector data and laser cutting or etching.
 
-**Complete your posts before our next class and bring your posters and laser cuts to class!**
+<!-- **Complete your posts before our next class and bring your posters and laser cuts to class!** -->
 
 </div>
 

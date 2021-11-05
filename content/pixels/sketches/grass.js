@@ -2,7 +2,7 @@
 
 // draws some grass with density driven by a luminance map image
 
-var testImage;
+let testImage;
 
 function preload() {
   testImage = loadImage("/pixels/sketches/cf.png");
@@ -26,17 +26,17 @@ function draw() {
   fill(255, 255, 255);
   stroke(0, 200, 100, 80);
 
-  var start = millis();
+  let start = millis();
 
   // loop over every x,y pixel coordinate in the image
   for (x = 0; x < 640; x++) {
     for (y = 0; y < 320; y++) {
       // slow
       // this is _really_ slow, it might crash your browser
-      // var pixelRed = red(testImage.get(x, y));
+      // let pixelRed = red(testImage.get(x, y));
 
       // quick
-      var pixelRed = getQuick(testImage, x, y)[0];
+      let pixelRed = getQuick(testImage, x, y)[0];
 
       // pick a random value and compare it pixelRed
       // for example:
@@ -49,7 +49,7 @@ function draw() {
     }
   }
 
-  var end = millis();
+  let end = millis();
 
   console.log(`took ${floor(end - start)} ms`);
 
@@ -57,7 +57,7 @@ function draw() {
 }
 
 function drawGrassBlade(x, y) {
-  var bladeHeight = min(
+  let bladeHeight = min(
     random(1, 60),
     random(1, 60),
     random(1, 60),
@@ -66,7 +66,7 @@ function drawGrassBlade(x, y) {
     random(1, 60)
   );
 
-  var bladeLean = random(-0.3, 0.3);
+  let bladeLean = random(-0.3, 0.3);
   bladeLean *= bladeHeight;
 
   line(x, y, x + bladeLean, y - bladeHeight);
@@ -77,7 +77,7 @@ function drawGrassBlade(x, y) {
 // we don't need to worry about screen pixel density here, because we are not reading from the screen
 
 function getQuick(img, x, y) {
-  var i = (y * img.width + x) * 4;
+  let i = (y * img.width + x) * 4;
   return [
     testImage.pixels[i],
     testImage.pixels[i + 1],

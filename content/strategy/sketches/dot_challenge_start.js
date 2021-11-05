@@ -1,4 +1,4 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
 // Dot Challenge Starting Point
 
@@ -12,16 +12,16 @@ function draw() {
   noStroke();
   ellipseMode(CENTER);
 
-  var noiseFrequency = 0.02;
+  let noiseFrequency = 0.02;
 
-  for (var i = 0; i < 100; i++) {
+  for (let i = 0; i < 100; i++) {
     // these points are not scattered in the same way
     // how can you make the arrangement match the challenge?
-    var x = random(width);
-    var y = random(height);
+    let x = random(width);
+    let y = random(height);
 
     // the diameter shouldn't always be 10, it needs to vary
-    var diameter = 10;
+    let diameter = 10;
 
     // the colors also need to change
     // what colorMode would be easiest to work with?

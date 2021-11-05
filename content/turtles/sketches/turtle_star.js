@@ -1,8 +1,8 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require /turtles/turtle/turtle.js
 
 // basic template sketch showing how to use the Turtle class
-var myTurtle;
+let myTurtle;
 
 function setup() {
   createCanvas(500, 500);
@@ -24,7 +24,7 @@ function draw() {
   myTurtle.penDown();
 
   // draw the triangle
-  for (var i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     console.log(myTurtle.x, myTurtle.y);
     myTurtle.moveForward(100);
     myTurtle.turnRight(144);

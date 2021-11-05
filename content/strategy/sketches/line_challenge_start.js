@@ -1,14 +1,13 @@
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.js
+// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
 // draws a rectangle, where you tell it to!
 
-var amplitude_slider;
+let amplitude_slider;
 
-var startX = 50;
-var startY = 250;
-var endX = 450;
-var endY = 50;
+let startX = 50;
+let startY = 250;
+let endX = 450;
+let endY = 50;
 
 function setup() {
   createCanvas(500, 300);
@@ -21,7 +20,7 @@ function draw() {
   background(50);
   ellipseMode(CENTER);
 
-  var amplitude = amplitude_slider.value() / 100;
+  let amplitude = amplitude_slider.value() / 100;
 
   noiseDetail(1, 0.5);
 
@@ -30,12 +29,12 @@ function draw() {
 
   // study this loop. do you understand how the line of ellipses is created?
   for (i = 0; i < 1; i += 0.02) {
-    var x = lerp(startX, endX, i);
-    var y = lerp(startY, endY, i);
+    let x = lerp(startX, endX, i);
+    let y = lerp(startY, endY, i);
 
     // hint: drive offsetX and offsetY with noise() instead of random()
-    var offsetX = (random() - 0.5) * amplitude * 10;
-    var offsetY = (random() - 0.5) * amplitude * 10;
+    let offsetX = (random() - 0.5) * amplitude * 10;
+    let offsetY = (random() - 0.5) * amplitude * 10;
 
     ellipse(x + offsetX, y + offsetY, 10, 10);
   }

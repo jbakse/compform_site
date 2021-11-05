@@ -155,10 +155,16 @@ function record(length) {
 
 ## Coding Challenges
 
-- In the Drum Kit example, switch the samples used to play the beat.
-- Change the timing to create a more complex beat.
-- In the Bounce example, add a drum sound when the ball bounces.
-- Add a little randomness to the playback rate of the sound each time the ball bounces. This little trick can add some realism to sound effects.
+### Modify the Drum Kit Example{difficulty}
+
+1. Switch around the samples used to play the beat.{easy}
+1. Change the timing to create a more complex beat.{medium}
+
+### Modify the Drum Kit Example
+
+1. Add a drum sound when the ball bounces.{medium}
+1. Add a little randomness to the playback rate of the sound each time the ball bounces. This little trick can add some realism to sound effects.{hard}
+   {continue}
 
 </div>
 
@@ -204,23 +210,23 @@ P5.js has functions for working with oscillators, envelopes, and effects if you 
 
 <div class="assignment">
 
-## Sketch!
+## Keep Sketching!
 
-### Base
+### Sketch
 
 Keep sketching. Make a bunch of noise!
 
 ### Challenge 1: Synesthesia 1
 
-Choose a 15 second video clip. Use p5.sound to create a new soundtrack for your clip. Combine audio and sound and post.
+Choose a 15-second video clip. Use p5.sound to create a new soundtrack for your clip. Combine audio and sound.
 
 ### Challenge 2: Synesthesia 2
 
-Choose a 15 second audio clip. Use p5.sound to generate graphics driven by the sound. Combine audio and sound and post.
+Choose a 15-second audio clip. Use p5.sound to generate graphics driven by the sound. Combine audio and sound.
 
 ### Challenge 3: Synesthesia 3
 
-Create a 15 second procedurally generated audio+visual form. Create the audio and the video from the same process.
+Create a 15-second procedurally generated audio and visual form. The audio and video should be generated from the same process.
 
 </div>
 

@@ -1,6 +1,6 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
-var worldImage;
+let worldImage;
 
 function preload() {
   worldImage = loadImage("/pixels/sketches/world.png");
@@ -17,11 +17,11 @@ function draw() {
   fill(200, 50, 50);
   noStroke();
 
-  var spacing = 500 / worldImage.width;
-  for (var y = 0; y < worldImage.height; y++) {
-    for (var x = 0; x < worldImage.width; x++) {
-      var in_color = worldImage.get(x, y);
-      var dot_size = (lightness(in_color) / 255) * 50;
+  let spacing = 500 / worldImage.width;
+  for (let y = 0; y < worldImage.height; y++) {
+    for (let x = 0; x < worldImage.width; x++) {
+      let in_color = worldImage.get(x, y);
+      let dot_size = (lightness(in_color) / 255) * 50;
       ellipse(
         x * spacing + spacing * 0.5,
         y * spacing + spacing * 0.5,

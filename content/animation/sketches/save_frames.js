@@ -1,6 +1,6 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
-var EXPORT = false;
+let EXPORT = false;
 
 function setup() {
   pixelDensity(1);
@@ -16,14 +16,14 @@ function draw() {
 
   blendMode(ADD);
   fill(1);
-  var x = width * 0.5;
-  var y = height * 0.5;
+  let x = width * 0.5;
+  let y = height * 0.5;
 
   for (i = 0; i < 5000; i++) {
-    var s = sin((frameCount / 90) * PI) * 100;
+    let s = sin((frameCount / 90) * PI) * 100;
 
-    var offsetX = map(noise(i * 0.5, frameCount * 0.01, 0), 0, 0.5, -640, 640);
-    var offsetY = map(noise(i * 0.5, frameCount * 0.01, 1), 0, 0.5, -640, 640);
+    let offsetX = map(noise(i * 0.5, frameCount * 0.01, 0), 0, 0.5, -640, 640);
+    let offsetY = map(noise(i * 0.5, frameCount * 0.01, 1), 0, 0.5, -640, 640);
 
     ellipse(x + offsetX, y + offsetY, s, s);
   }
@@ -54,7 +54,7 @@ function saveFrame(name, frameNumber, extension, maxFrame) {
   // remove the decimal part (just in case)
   frameNumber = floor(frameNumber);
   // zero-pad the number (e.g. 13 -> 0013);
-  var paddedNumber = ("0000" + frameNumber).substr(-4, 4);
+  let paddedNumber = ("0000" + frameNumber).substr(-4, 4);
 
   save(name + "_" + paddedNumber + "." + extension);
 }

@@ -1,8 +1,8 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 
-var freq_slider;
-var amplitude_slider;
-var octive_slider;
+let freq_slider;
+let amplitude_slider;
+let octive_slider;
 
 function setup() {
   createCanvas(640, 360);
@@ -30,12 +30,12 @@ function draw() {
 }
 
 function field() {
-  var frequency = freq_slider.value() / 1000;
-  var amplitude = amplitude_slider.value() / 100;
+  let frequency = freq_slider.value() / 1000;
+  let amplitude = amplitude_slider.value() / 100;
   noiseDetail(octive_slider.value(), 0.5);
 
-  for (var y = 0; y < height; y += 25) {
-    for (var x = 0; x < width; x += 25) {
+  for (let y = 0; y < height; y += 25) {
+    for (let x = 0; x < width; x += 25) {
       let n = noise(x * frequency, y * frequency);
       n = n * amplitude;
       ellipse(x, y, n, n);
@@ -44,12 +44,12 @@ function field() {
 }
 
 function field2() {
-  var frequency = freq_slider.value() / 1000;
-  var amplitude = amplitude_slider.value() / 100;
+  let frequency = freq_slider.value() / 1000;
+  let amplitude = amplitude_slider.value() / 100;
   noiseDetail(octive_slider.value(), 0.5);
 
-  for (var y = 0; y < height; y += 15) {
-    for (var x = 0; x < width; x += 15) {
+  for (let y = 0; y < height; y += 15) {
+    for (let x = 0; x < width; x += 15) {
       let n = noise(x * frequency, y * frequency);
       n = n * amplitude;
       if (1 < n) {
@@ -60,12 +60,12 @@ function field2() {
 }
 
 function field3() {
-  var frequency = freq_slider.value() / 1000;
-  var amplitude = amplitude_slider.value() / 1000;
+  let frequency = freq_slider.value() / 1000;
+  let amplitude = amplitude_slider.value() / 1000;
   noiseDetail(octive_slider.value(), 0.5);
   randomSeed(1);
-  for (var y = 0; y < height; y += 15) {
-    for (var x = 0; x < width; x += 15) {
+  for (let y = 0; y < height; y += 15) {
+    for (let x = 0; x < width; x += 15) {
       let n = noise(x * frequency, y * frequency);
 
       if (0.5 < n) {
@@ -76,12 +76,12 @@ function field3() {
 }
 
 function prettyMistake() {
-  var frequency = freq_slider.value() / 1000;
-  var amplitude = amplitude_slider.value() / 100;
+  let frequency = freq_slider.value() / 1000;
+  let amplitude = amplitude_slider.value() / 100;
   noiseDetail(octive_slider.value(), 0.5);
 
-  for (var y = 0; y < height; y += 5) {
-    for (var x = 0; x < width; x += 5) {
+  for (let y = 0; y < height; y += 5) {
+    for (let x = 0; x < width; x += 5) {
       let n = noise(x * frequency, y * frequency);
       n = n * amplitude;
       ellipse(x, y - n, 5, 5);

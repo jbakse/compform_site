@@ -418,9 +418,9 @@ Rhino 6 includes Grasshopper (Windows only) and has a reduced cost [educational 
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
-This week explore using OpenSCAD, OpenJSCAD, or another tool to procedurally generate 3D shapes. Consider exporting your shapes and working with them further in a 3D package such as Cinema 4D, Maya, After Effects, or even Photoshop.
+Explore using OpenSCAD, OpenJSCAD, or another tool to procedurally generate 3D shapes. Consider exporting your shapes and working with them further in a 3D package such as Cinema 4D, Maya, After Effects, or even Photoshop.
 
 ### Challenge: Castle
 
