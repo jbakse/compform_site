@@ -288,7 +288,7 @@ These next two examples both have a function named `stipleRect()` that fills a r
 
 {% js-lab "sketches/stipple_rect_2.js" %}
 
-### HTML Interfaces with p5.dom.js
+### Globals as Interface
 
 The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions that allow you create HTML elements and user interface controls. This is more complicated to set up, but still pretty quick. It is a much better choice if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload your sketch.
 
@@ -309,36 +309,30 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 ## Coding Challenges
 
-Explore using parameters by completing the following challenges in order. <br/> Don't skip any.
+Explore using parameters by completing the following challenges. Reference the study examples above.
 
-| Time                 | Comment                                                                              |
+<!-- <br/> Don't skip any. -->
+
+<!-- | Time                 | Comment                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------ |
 | < 6 in 20 Minutes    | You need to put in some extra work to strengthen your understanding of these topics. |
 | 6 in 20 Minutes      | Good.                                                                                |
-| All 10 in 20 Minutes | Great.                                                                               |
+| All 10 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Globals as Interface Example
+### Modify the Globals as Interface Example{difficulty}
 
-1. Make each square a different randomly-chosen size.
-2. Add global variable parameters to control the minimum and maximum size of the squares.
-3. Add a white stroke to the squares.
-4. Add a global variable parameter to control the width of the stroke.
+1. Make each square a different randomly-chosen size.{easy}
+1. Add a white stroke to the squares. {easy}
+1. Add a global variable parameter to control the width of the stroke. {medium}
+1. Add global variable parameters to control the minimum and maximum size of the square.{medium}
+1. Draw the square in two sizes: small and large. Randomly generate which of the two sizes the square will be. {hard}
+1. Add parameters to control the small size, large size, and percentage chance of drawing a large or small square. {hard}
 
-### Modify the HTML Interfaces Example
+### Modify the HTML Interfaces with Tweakpane Example
 
-1. Add a slider to control the vertical position of the square.
-2. Add a color picker to control the background color of the sketch.
-   {continue}
-
-### Challenging Challenges: Globals as Interface
-
-1. Draw the squares in two sizes: small and large. Randomly choose which size for each square.
-2. Add parameters to control the small size, large size, and percentage chance of drawing large or small.
-   {continue}
-
-### Challenging Challenges: HTML Interfaces
-
-1. Instead of drawing the square, draw a "target" of white and red rings. Draw more rings to make a bigger target.
+1. Add a slider to control the vertical position of the square. {easy}
+1. Add a color picker to control the background color of the sketch. {medium}
+1. Instead of drawing the square, draw a "target" of concentric white and red rings. Draw more rings to make a bigger target. {hard}
    {continue}
 
 </div>
