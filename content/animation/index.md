@@ -18,8 +18,6 @@ Creatively, animation differs from still images by introducing another dimension
 {% include slides.yaml %}
 {% endslides %}
 
-<!--[[todo: Slide show: Oskar Fischinger on here,  show a smear frame, Chuck Jones (mention golden age), boids, inside the mind's eye, pixar, realtime indie game "inside", realtime AAA game thats really animaty... ]]-->
-
 ## Real-time vs. Pre-rendered
 
 ### Frames Per Second
@@ -332,20 +330,6 @@ Complete the following challenges to deepen your understanding of the examples a
 {% js-show "challenges/fuzzy_02.js" %}
 
 </div>
-
-<style>
-.center {
-border: 1px solid red;
-text-align: center;
-width: 100%;
-padding: 0;
-margin: 0;
-
-}
-.center .js-show {
-  margin: auto;
-}
-</style>
 
 <div class="assignment">
 
