@@ -52,8 +52,17 @@
 #       href: https://www.wearecollins.com/
 #       subtitle: wearecollins.com
 
+- artist: Sky Castle Studios
+  title: Hero Forge, 2014
+  image: ./slides/heroforge.png
+  comments: Hero Forge is an interface for creating 3D-printed miniature characters. There are a wide range of parameters that enables users to hyper-customize their characters to their liking.
+  links:
+    - label: "Hero Forge"
+      href: https://www.heroforge.com/
+      subtitle: heroforge.com
+
 - artist: Apple
-  title: Memoji,2018
+  title: Memoji, 2018
   image: https://cdn.ithinkdiff.com/wp-content/uploads/2021/06/iOS-15-new-Memoji.jpg.webp
   comments: Apple's Memoji allows users to hyper-customize their own animated avatar, which they can then use to mirror their real-life facial expressions.
   links:
