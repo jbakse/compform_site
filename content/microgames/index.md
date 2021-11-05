@@ -147,6 +147,7 @@ Explore p5.play by completing these challenges.
 1. Make The King spin when the mouse is NOT over him.{medium}
 1. Make The King spin when he is clicked, and stop when clicked again. {medium}
 1. Remove The King from the scene when he is clicked. Start the scene with 10 kings. {hard}
+1. Create a microgame from this example! {hard}
    {continue}
 
 </div>
@@ -155,7 +156,7 @@ Explore p5.play by completing these challenges.
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
 Build interactive experiments that focus on minimally expressing a single mechanic.
 
