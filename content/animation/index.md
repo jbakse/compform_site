@@ -345,20 +345,20 @@ margin: 0;
 
 ## Keep Sketching!
 
-### Base
+### Sketch
 
 This week focuses on creating smooth pre-rendered animations.{bigger}
 
 ### Challenge: Comp Form Bumper
 
-Create a three-second bumper for Computational Form
+Create a three-second bumper for this site, Computational Form. The bumper should:
 
-- Should be exactly 90 frames: 3 seconds @ 30fps
-- Should have a clear progression: beginning, middle, end
-- Should feature either the text “Compform” or “Computational Form”
-- Consider including the five-triangle "Sierpinski" icon
-- Consider adding music or sound in post production
-- Consider submitting multiple takes on this challenge
+- be exactly 90 frames: 3 seconds @ 30fps.
+- have a clear progression: beginning, middle, end.
+- feature either the text “Compform” or “Computational Form”.
+- consider including the five-triangle "Sierpinski" icon.
+- consider adding music or sound in post production.
+<!-- - Consider submitting multiple takes on this challenge -->
 
 Bumper Examples:
 
