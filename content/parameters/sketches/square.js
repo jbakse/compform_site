@@ -16,7 +16,7 @@ function setup() {
 function draw() {
   background(50);
   fill(200, 100, 100);
-  for (var i = 0; i < SQUARE_COUNT; i++) {
+  for (let i = 0; i < SQUARE_COUNT; i++) {
     rect(random(0, width), random(0, height), SQUARE_SIZE, SQUARE_SIZE);
   }
   noLoop();
