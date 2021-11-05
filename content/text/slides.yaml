@@ -13,7 +13,7 @@
 - artist: Aaron Marcus
   title: Shades of Hades, 1972-74
   image: https://bamlive.s3.amazonaws.com/art_objects/Aaron_Marcus_Shades%20of%20Hades.2018.57.6_0.jpg
-  comments: In 1972, Aaron Marcus created his first “computer-assisted poem-drawings”. Using standard typographical symbols, Marcus experimented with a photo-typesetting machine connected to a digital computer, reordering the symbols and their uses to create new meanings. The works were then printed as lithographs and serigraphs.
+  comments: Aaron Marcus created “computer-assisted poem-drawings” purely through typographic glyphs.
   links:
     - label: "Aaron Marcus: Early Works"
       href: https://bampfa.org/program/aaron-marcus-early-works
@@ -22,7 +22,7 @@
 - artist: Allison Parrish
   title: A Reflection, 2020
   image: ./slides/allison_parrish_01.png
-  comments: A computer-generated prose poem created from stitched-together scraps of text from every English Wikipedia page that was linked from the page for <i>Mirror</i>.
+  comments: Allison Parrish computer-generated this poem that is comprised of blurbs of text from every English Wikipedia page that was linked from the page for <i>Mirror</i>.
   links:
     - label: A Reflection
       href: https://empathyloading.com/content/4-reading-room/1-a-reflection-2020/allisonparrish_areflection_2020.pdf
@@ -34,7 +34,7 @@
 - artist: Allison Parrish
   title: Nonsense Laboratory, 2021
   image: https://storage.googleapis.com/gweb-experiments.appspot.com/2207-nonsense%20lab%20menu%20169.png
-  comments: A series of playful tools for manipulating the way words sound and are spelled with machine learning.
+  comments:
   links:
     - label: Nonsense Laboratory
       href: https://artsexperiments.withgoogle.com/nonsense-laboratory/
@@ -46,7 +46,7 @@
 - artist: Arwa Mboya
   title: Someone Tell the Boyz, 2021
   image: https://pbs.twimg.com/media/E-twTvJX0A4CPba.png
-  comments: Using AI to generate strings of text from works by bell hooks, Simone de Beauvoir, Betty Friedan, and Audre Lorde.
+  comments: Arwa utilized AI to generate strings of text from works by bell hooks, Simone de Beauvoir, Betty Friedan, and Audre Lorde.
   links:
     - label: Someone Tell the Boyz
       href: https://generative-unfoldings.mit.edu/works/someonetellboys/view.html
