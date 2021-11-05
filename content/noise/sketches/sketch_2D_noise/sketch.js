@@ -15,10 +15,10 @@ function draw() {
 function drawNoise() {
   stroke(0);
   noStroke();
-  var frequency = 0.01;
-  var amplitude = 1;
+  let frequency = 0.01;
+  let amplitude = 1;
 
-  for (var z = 0; z < height; z += 50) {
+  for (let z = 0; z < height; z += 50) {
     push();
     translate(0, 0, -601);
     rotateY(radians(45));
@@ -28,8 +28,8 @@ function drawNoise() {
     rect(-3, -3, 606, 606);
     pop();
 
-    for (var y = 0; y < height; y += 30) {
-      for (var x = 0; x < width; x += 30) {
+    for (let y = 0; y < height; y += 30) {
+      for (let x = 0; x < width; x += 30) {
         let n = noise(x * frequency, y * frequency, z * frequency);
         n = n * amplitude * 255;
         fill(n);
