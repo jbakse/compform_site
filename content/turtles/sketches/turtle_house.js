@@ -2,7 +2,7 @@
 // require /turtles/turtle/turtle.js
 
 // basic template sketch showing how to use the Turtle class
-var myTurtle;
+let myTurtle;
 
 function setup() {
   createCanvas(500, 500);

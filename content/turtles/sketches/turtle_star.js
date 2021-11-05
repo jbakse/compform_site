@@ -2,7 +2,7 @@
 // require /turtles/turtle/turtle.js
 
 // basic template sketch showing how to use the Turtle class
-var myTurtle;
+let myTurtle;
 
 function setup() {
   createCanvas(500, 500);
@@ -24,7 +24,7 @@ function draw() {
   myTurtle.penDown();
 
   // draw the triangle
-  for (var i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     console.log(myTurtle.x, myTurtle.y);
     myTurtle.moveForward(100);
     myTurtle.turnRight(144);

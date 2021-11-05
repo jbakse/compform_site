@@ -1,7 +1,7 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require /turtles/turtle/turtle.js
 
-var myTurtle;
+let myTurtle;
 
 function setup() {
   createCanvas(500, 500);
@@ -18,7 +18,7 @@ function draw() {
   myTurtle.moveTo(250, 385);
   myTurtle.penDown();
 
-  for (var i = 0; i < 180; i++) {
+  for (let i = 0; i < 180; i++) {
     myTurtle.moveForward(25 + i * 0.1);
     myTurtle.turnLeft(10);
     drawLeaf();

@@ -1,7 +1,7 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
 // require /turtles/turtle/turtle.js
 
-var myTurtle;
+let myTurtle;
 
 function setup() {
   createCanvas(500, 500);
@@ -23,7 +23,7 @@ function draw() {
   myTurtle.penDown();
 
   // draw the triangle
-  for (var i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i++) {
     myTurtle.moveForward(300);
     myTurtle.turnRight(120);
   }
