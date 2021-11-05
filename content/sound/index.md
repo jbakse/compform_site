@@ -155,10 +155,16 @@ function record(length) {
 
 ## Coding Challenges
 
-- In the Drum Kit example, switch the samples used to play the beat.
-- Change the timing to create a more complex beat.
-- In the Bounce example, add a drum sound when the ball bounces.
-- Add a little randomness to the playback rate of the sound each time the ball bounces. This little trick can add some realism to sound effects.
+### Modify the Drum Kit Example{difficulty}
+
+1. Switch around the samples used to play the beat.{easy}
+1. Change the timing to create a more complex beat.{medium}
+
+### Modify the Drum Kit Example
+
+1. Add a drum sound when the ball bounces.{medium}
+1. Add a little randomness to the playback rate of the sound each time the ball bounces. This little trick can add some realism to sound effects.{hard}
+   {continue}
 
 </div>
 
