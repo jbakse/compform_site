@@ -212,17 +212,17 @@ Explore using Javascript Template literals by completing the following challenge
 
 {% js-lab "sketches/challenge.js" %}
 
-### Modify the Example Above
+### Modify the Example Above {difficulty}
 
-1. Change the value of `person` to a different name. {easy}
-1. Change the value of `number` to a random integer between 0 and 100. {easy}
-1. Add a second sentence to the template with two new placeholders. {easy}
-1. Add an 's' to 'computer' when `number` is not 1. {easy}
-1. Add this to your template: `The word "${word}" has ${letterCount} letters`. {easy}
-1. Create a variable for `word` and set its value to a random word from a small list. {medium}
-1. Create a variable for `letterCount` and set its value to the number of letters in `word`.{medium}
-1. Instead of using `console.log()` to show the expanded template, inject the result into the webpage.{hard}
-1. Alter the program so that the dynamic parts of the template appear in bold.{hard}
+1. **Change the value of `person` to a different name.** {easy}
+1. **Change the value of `number` to a random integer between 0 and 100.** {easy}
+1. **Add a second sentence to the template with two new placeholders.** {easy}
+1. **Add an 's' to 'computer' when `number` is not 1.** {easy}
+1. **Add this to your template: `The word "${word}" has ${letterCount} letters`.** {easy}
+1. **Create a variable for `word` and set its value to a random word from a small list.** {medium}
+1. **Create a variable for `letterCount` and set its value to the number of letters in `word`.**{medium}
+1. **Instead of using `console.log()` to show the expanded template, inject the result into the webpage.**{hard}
+1. **Alter the program so that the dynamic parts of the template appear in bold.** {hard}
 
 </div>
 
