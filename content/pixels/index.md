@@ -170,37 +170,37 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 | All in 20 Minutes  | Great.                                                                                |
 | All in 15 Minutes  | Hot Dang!                                                                             | -->
 
-### Modify the Basic Example{difficulty}
+### Modify the Basic Example {difficulty}
 
-1. Change the image resolution to `20x20`. {easy}
-1. Change the image resolution to `500x500`. {easy}
-1. Change the image resolution back to `10x10`. {easy}
-1. Make each pixel a random shade of blue. {medium}
-1. Make each pixel a random shade of gray. {medium}
-1. Color each pixel with `noise()` to visualize its values. {hard}
+1. **Change the image resolution to `20x20`.** {easy}
+1. **Change the image resolution to `500x500`.** {easy}
+1. **Change the image resolution back to `10x10`.** {easy}
+1. **Make each pixel a random shade of blue.** {medium}
+1. **Make each pixel a random shade of gray.** {medium}
+1. **Color each pixel with `noise()` to visualize its values.** {hard}
 
-### Modify the Gradient Example
+### Modify the Gradient Example {difficulty}
 
-1. Make a horizontal black-to-blue gradient. {easy}
-1. Make a vertical green-to-black gradient. {easy}
-1. Make a horizontal white-to-blue gradient. {easy}
-1. Make a vertical rainbow gradient. Tip: `colorMode()` {medium}
-1. Create an inset square with a gradient, surrounded by randomly-colored pixels. {hard}
-1. Make a radial gradient from black to red. Tip: `dist()` {hard}
-1. Create a diagonal gradient. {hard}
+1. **Make a horizontal black-to-blue gradient.** {easy}
+1. **Make a vertical green-to-black gradient.** {easy}
+1. **Make a horizontal white-to-blue gradient.** {easy}
+1. **Make a vertical rainbow gradient. Tip: `colorMode()`** {medium}
+1. **Create an inset square with a gradient, surrounded by randomly-colored pixels.** {hard}
+1. **Make a radial gradient from black to red. Tip: `dist()`** {hard}
+1. **Create a diagonal gradient.** {hard}
    {continue}
 
-### Modify the Random Access Example
+### Modify the Random Access Example {difficulty}
 
-1. Change the image resolution to `50x50`, adjust the code to fill the image. {easy}
-1. Instead of drawing single pixels, draw little plus marks (`+`) at random locations. {medium}
-1. Make each `+` a random color. {medium}
+1. **Change the image resolution to `50x50`, adjust the code to fill the image.** {easy}
+1. **Instead of drawing single pixels, draw little plus marks (`+`) at random locations.** {medium}
+1. **Make each `+` a random color.** {medium}
    {continue}
 
-### Start from Scratch
+### Start from Scratch {difficulty}
 
-1. Use `sin()` to create a repeating black-to-red-to-black color wave. {hard}
-1. Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`. {hard}
+1. **Use `sin()` to create a repeating black-to-red-to-black color wave.** {hard}
+1. **Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`.** {hard}
    {continue}
 
 </div>
@@ -284,37 +284,40 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 | All in 20 Minutes  | Great.                                                                                |
 | All in 15 Minutes  | Hot Dang!                                                                             | -->
 
-### Modify Read Pixels Example 1{difficulty}
+### Modify Read Pixels Example 1 {difficulty}
 
-1. Make the program turn white pixels green.{easy}
-1. Turn the black pixels to a random shade of red.{easy}
-1. Turn the black pixels into a vertical, black-to-red gradient.{medium}
-1. Comment out line 34 which calls `updatePixels()`. What happens?{medium}
+1. **Make the program turn white pixels green.** {easy}
+1. **Turn the black pixels to a random shade of red.** {easy}
+1. **Turn the black pixels into a vertical, black-to-red gradient.** {medium}
+1. **Comment out line 34 which calls `updatePixels()`. What happens?** {medium}
 
 <!-- <img src="sketches/world_100.png" style="image-rendering: pixelated;"> -->
 
-### Modify Read Pixels Example 2
+### Modify Read Pixels Example 2 {difficulty}
 
-1. Change the `lightness()` comparison to `>`.{easy}
-1. Change the `lightness()` comparison to `!=`.{easy}
-1. Add an `else` block that changes the pixels to black.{medium}
-1. Starting with the original code without any changes, set the `out_color` to the average of `this_color` and `below_color`. Here is an example you could follow:
+1. **Change the `lightness()` comparison to `>`.** {easy}
+1. **Change the `lightness()` comparison to `!=`.** {easy}
+1. **Add an `else` block that changes the pixels to black.** {medium}
+1. **Starting with the original code without any changes, set the `out_color` to the average of `this_color` and `below_color`. Here is an example you could follow:** {hard}
+
    ```
    var color_a = color(worldImage.get(0, 1));
    var color_b = color(worldImage.get(0, 2));
-   var blended_color = lerpColor(color_a, color_b, .5);{hard}
+   var blended_color = lerpColor(color_a, color_b, .5);
+
    ```
-1. Change `worldImage.set(x, y, out_color);` to `worldImage.set(x, y+1, out_color);`.{hard}
-1. Remove the `if` statement (but not its contents) so that its content always runs.{hard}
+
+1. **Change `worldImage.set(x, y, out_color);` to `worldImage.set(x, y+1, out_color);`.** {hard}
+1. **Remove the `if` statement (but not its contents) so that its content always runs.** {hard}
    {continue}
 
-### Modify Read Pixels Example 3
+### Modify Read Pixels Example 3 {difficulty}
+
+1. **Tell the program to use the image below by switching which `loadImage()` call is commented out in `preload()`.** {easy}
+1. **Adjust the expression that determines `dot_size` to make the result prettier.** {medium}
+   {continue}
 
 <img src="sketches/world_100.png" style="image-rendering: pixelated;">
-
-1. Tell the program to use the image above by switching which `loadImage()` call is commented out in `preload()`.{easy}
-1. Adjust the expression that determines `dot_size` to make the result prettier.{medium}
-   {continue}
 
 </div>
 
