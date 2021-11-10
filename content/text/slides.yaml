@@ -3,12 +3,12 @@
   image: https://zkm.de/sites/default/files/styles/r17_1280/public/bild/MNK_01135_01134_knowles_house-of-dust_001.jpg
   comments: Alison Knowles, a founding member of the Fluxus art movement, created this early example of generative poetry.
   links:
-    - label: Artist Site
+    - label: aknowles.com
       href: https://www.aknowles.com/
-      subtitle: aknowles.com
+      subtitle: Artist Site
     - label: Recreated Poem by Nick Montfort
       href: https://nickm.com/memslam/a_house_of_dust.html
-      subtitle: nickm.com
+      subtitle: Project Page
 
 - artist: Aaron Marcus
   title: Shades of Hades, 1972-74
@@ -17,7 +17,7 @@
   links:
     - label: "Aaron Marcus: Early Works"
       href: https://bampfa.org/program/aaron-marcus-early-works
-      subtitle: bampfa.org
+      subtitle: BAMPFA
 
 - artist: Allison Parrish
   title: A Reflection, 2020
@@ -26,10 +26,10 @@
   links:
     - label: A Reflection
       href: https://empathyloading.com/content/4-reading-room/1-a-reflection-2020/allisonparrish_areflection_2020.pdf
-      subtitle: empathyloading.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: decontextualize.com
       href: https://www.decontextualize.com/
-      subtitle: decontextualize.com
+      subtitle: Artist Site
 
 - artist: Allison Parrish
   title: Nonsense Laboratory, 2021
@@ -38,10 +38,10 @@
   links:
     - label: Nonsense Laboratory
       href: https://artsexperiments.withgoogle.com/nonsense-laboratory/
-      subtitle: artsexperiments.withgoogle.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: decontextualize.com
       href: https://www.decontextualize.com/
-      subtitle: decontextualize.com
+      subtitle: Artist Site
 
 - artist: Arwa Mboya
   title: Someone Tell the Boyz, 2021
@@ -50,4 +50,4 @@
   links:
     - label: Someone Tell the Boyz
       href: https://generative-unfoldings.mit.edu/works/someonetellboys/view.html
-      subtitle: generative-unfoldings.mit.edu
+      subtitle: Project Page
