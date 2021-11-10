@@ -5,7 +5,7 @@
   links:
     - label: Bioshock
       href: https://www.bioshockgame.com/
-      subtitle: bioshockgame.com
+      subtitle: Game Page
 
 - artist: Square Enix
   title: Final Fantasy VII, 1997
@@ -14,7 +14,7 @@
   links:
     - label: Final Fantasy VII
       href: https://finalfantasyviipc.square-enix-games.com/en
-      subtitle: square-enix-games.com
+      subtitle: Game Page
 
 - artist: Nintendo
   title: Animal Crossing, 2001
@@ -23,7 +23,7 @@
   links:
     - label: Animal Crossing
       href: https://animal-crossing.com/
-      subtitle: animal-crossing.com
+      subtitle: Game Page
 
 - artist: Nintendo
   title: WarioWare, 2003
@@ -32,4 +32,4 @@
   links:
     - label: WarioWare
       href: https://arcadespot.com/game/wario-ware-inc/
-      subtitle: arcadespot.com
+      subtitle: Game Page
