@@ -5,10 +5,10 @@
   links:
     - label: Ken Perlin on Procedural Textures
       href: https://www.csee.umbc.edu/~olano/s2001c24/ch02.html
-      subtitle: umbc.edu
+      subtitle: Essay
     - label: "Tron (1982)"
       href: http://www.imdb.com/title/tt0084827/
-      subtitle: imdb.com
+      subtitle: IMDB
 
 - artist: Emily Xie
   title: Dunes, 2016
@@ -17,10 +17,10 @@
   links:
     - label: Dunes
       href: https://xie-emily.com/projects/dunes.html
-      subtitle: xie-emily.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: xie-emily.com
       href: https://xie-emily.com/
-      subtitle: xie-emily.com
+      subtitle: Artist Site
 
 - artist: RGBA + TBC
   title: Elevated 4K Demo, 2011
@@ -29,10 +29,10 @@
   links:
     - label: Elevated 4k
       href: https://www.youtube.com/watch?v=jB0vBmiTr6o&t=131s
-      subtitle: demo
+      subtitle: Demo
     - label: Behind Elevated
       href: https://www.iquilezles.org/www/material/function2009/function2009.pdf
-      subtitle: tech presentation
+      subtitle: Tech Presentation
 
 # - artist: Jaume Sanchez Elias
 #   title: Fireball Tutorial, 2012
@@ -57,9 +57,9 @@
   image: ./slides/tyler_hobbs.jpg
   comments: Flow fields printed on large canvas.
   links:
-    - label: Artist Site
+    - label: tylerxhobbs.com
       href: https://tylerxhobbs.com/
-      subtitle: tylerxhobbs.com
+      subtitle: Artist Site
     - label: Flow Fields
       subtitle: Essay
       href: https://tylerxhobbs.com/essays/2020/flow-fields
@@ -70,10 +70,10 @@
   comments: Controlling 2-million particle movements using a 2D Perlin height map as a vector field. Each particle travels along the vector field to give this smokey behavior.
   links:
     - label: OpenCL Perlin Particles
-      subtitle: video
+      subtitle: Video
       href: https://vimeo.com/29074357
     - label: Eddie Lee
-      subtitle: vimeo.com
+      subtitle: Vimeo
       href: https://vimeo.com/eddietree
 
 - artist: Red Blob Games
@@ -83,4 +83,4 @@
   links:
     - label: Terrain Tutorial
       href: http://www.redblobgames.com/maps/terrain-from-noise/
-      subtitle: tutorial
+      subtitle: Tutorial
