@@ -5,10 +5,10 @@
   links:
     - label: Curved Line Jellyfish
       href: https://www.amygoodchild.com/blog/curved-line-jellyfish
-      subtitle: case study
-    - label: Artist Site
+      subtitle: Case Study
+    - label: amygoodchild.com
       href: https://www.amygoodchild.com
-      subtitle: amygoodchild.com
+      subtitle: Artist Site
 
 - artist: Roni Cantor
   title: Programmed Plotter Drawings, 2020
@@ -17,7 +17,7 @@
   links:
     - label: Programmed Plotter Drawings
       href: https://p5js.org/showcase/featuring/roni-cantor.html
-      subtitle: p5js.org
+      subtitle: Project Page
 
 - artist: Jenny Kowalski
   title: Haystack, 2021
@@ -26,7 +26,7 @@
   links:
     - label: Haystack
       href: https://www.jennybkowalski.com/experiment/haystack
-      subtitle: jennybkowalski.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: jennybkowalski.com
       href: https://www.jennybkowalski.com/
-      subtitle: jennybkowalski.com
+      subtitle: Artist Site
