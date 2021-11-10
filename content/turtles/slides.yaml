@@ -1,0 +1,23 @@
+- artist: Wally Feurzeig, Seymour Papert, and Cynthia Solomon
+  title: Logo, 1967
+  image: https://upload.wikimedia.org/wikipedia/commons/7/76/IBM_LCSI_Logo_Circles.png
+  comments: Logo is the computer programming language that first introduced turtle graphics.
+  links:
+    - label: Logo
+      href: https://en.wikipedia.org/wiki/Logo_(programming_language)
+      subtitle: Wikipedia
+    - label: Mindstorms by Seymour Papert
+      href: https://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746/ref=asap_bc?ie=UTF8
+      subtitle: Book
+
+- artist: Mitchel Resnick
+  title: Turtles, Termites and Traffic Jams, 1994
+  image: ./slides/mitchel_resnick.png
+  comments: Mitchel Resnick wrote this seminal book that connects computational tools to decentralized systems such as termite colonies and flocks.
+  links:
+    - label: Turtles, Termites and Traffic Jams
+      href: https://mitpress.mit.edu/books/turtles-termites-and-traffic-jams
+      subtitle: Book
+    - label: Mitchel Resnick
+      href: https://web.media.mit.edu/~mres/
+      subtitle: Artist Site

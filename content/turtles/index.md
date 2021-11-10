@@ -41,6 +41,10 @@ Logo's use of turtles allows students to make a strong association between what 
 - [Seymour Papert on Logo: Teaching (1986) 4:25 - 6:40](https://youtu.be/ZG9cYhekB8A?t=4m25s)
 - [Learning with Toys (1986)](https://www.youtube.com/watch?v=IhEovwWiniY)
 
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
+
 <div class="activity">
 
 ## Be the Turtle
