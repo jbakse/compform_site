@@ -5,19 +5,19 @@
   links:
     - label: Fungus Series
       href: https://studiomoniker.com/projects/fungus
-      subtitle: studiomoniker.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: studiomoniker.com
       href: https://studiomoniker.com/
-      subtitle: studiomoniker.com
+      subtitle: Artist Site
 
 - artist: Desmond Paul Henry
   title: Untitled, 1962
   image: https://upload.wikimedia.org/wikipedia/commons/9/97/Wiki.Henry_Drawing_Machine_1.jpg
   comments: Desmond Paul Henry modified WW2 analogue computers to create drawing machines.
   links:
-    - label: Artist Site
+    - label: desmondhenry.com
       href: http://www.desmondhenry.com/
-      subtitle: desmondhenry.com
+      subtitle: Artist Site
 
 # - artist: Desmond Paul Henry
 #   title: Untitled, 1962
@@ -43,7 +43,7 @@
   links:
     - label: Sol Lewitt Retrospective
       href: http://massmoca.org/sol-lewitt/
-      subtitle: massmoca.org
+      subtitle: MASS MoCA
 
 # - artist: Giuseppe Randazzo
 #   title: Transmutation, 2012
@@ -61,16 +61,16 @@
   links:
     - label: Voice Piece for Soprano at MoMa
       href: http://www.nytimes.com/2010/07/02/arts/design/02contemporary.html
-      subtitle: nytimes.com
+      subtitle: New York Times
 
 - artist: Nervous System
   title: Kinematics Dress 6, 2015
   image: https://n-e-r-v-o-u-s.com/projects/i.php?/000/976/Test-337,xlarge.2x.1441893095.jpg
   comments: Design studio Nervous System uses computation and 3D printing to explore fashion aesthetics.
   links:
-    - label: Artist Site
+    - label: n-e-r-v-o-u-s.com
       href: http://n-e-r-v-o-u-s.com/
-      subtitle: n-e-r-v-o-u-s.com
+      subtitle: Artist Site
 
 # - artist: Micheal Hansmeyer and Benjamin Dillenburger
 #   title: Digital Grotesque, 2013
@@ -88,7 +88,7 @@
   links:
     - label: Dwarf Fortress
       href: http://www.bay12games.com/dwarves/
-      subtitle: bay12games.com
+      subtitle: Game Page
 
 - artist: Markus "Notch" Persson
   title: Minecraft, 2009
@@ -97,7 +97,7 @@
   links:
     - label: Minecraft
       href: https://minecraft.net/
-      subtitle: minecraft.net
+      subtitle: Game Page
 
 - artist: On Kawara
   title: Today Series, 1966
@@ -107,7 +107,7 @@
   links:
     - label: Today Series
       href: https://www.guggenheim.org/teaching-materials/on-kawara-silence/paintings-today-series-date-paintings
-      subtitle: guggenheim.org
+      subtitle: Guggenheim
 # - artist: Craig Reynolds
 #   title: Boids Simulation, 1986
 #   image: https://www.red3d.com/cwr/boids/images/flocking_around_19.gif
