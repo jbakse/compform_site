@@ -5,10 +5,10 @@
   links:
     - label: LENNA
       href: https://www.zzyw.org/lenna/
-      subtitle: zzyw.org
-    - label: Artist Site
+      subtitle: Project Page
+    - label: zzyw.org
       href: https://zzyw.org
-      subtitle: zzyw.org
+      subtitle: Artist Site
 
 - artist: Talia Cotton (with Pentagram)
   title: Central Park Typestester, 2021
@@ -17,10 +17,10 @@
   links:
     - label: Central Park Typetester
       href: https://centralparktypetester.netlify.app/
-      subtitle: generator
-    - label: Artist Site
+      subtitle: Project Page
+    - label: taliacotton.com
       href: https://taliacotton.com/
-      subtitle: taliacotton.com
+      subtitle: Artist Site
 
 - artist: Matthias Dörfelt
   title: Weird Faces, 2012-13
@@ -29,13 +29,13 @@
   links:
     - label: Weird Faces
       href: https://www.mokafolio.de/works/Weird-Faces
-      subtitle: documentation
+      subtitle: Project Page
     - label: Weird Faces Vending Machine
       href: https://www.mokafolio.de/works/Weird-Faces-Vending-Machine
-      subtitle: extended project
-    - label: Artist Site
+      subtitle: Extended Project
+    - label: mokafolio.de
       href: https://www.mokafolio.de/
-      subtitle: mokafolio.de
+      subtitle: Artist Site
 
 - artist: Matthias Dörfelt
   title: Cables, 2020
@@ -44,10 +44,10 @@
   links:
     - label: Cables
       href: https://www.mokafolio.de/works/Cables
-      subtitle: documentation
-    - label: Artist Site
+      subtitle: Project Page
+    - label: mokafolio.de
       href: https://www.mokafolio.de/
-      subtitle: mokafolio.de
+      subtitle: Artist Site
 
 - artist: Scott Turner
   title: Here Dragons Abound, 2016—2021
