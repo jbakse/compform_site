@@ -64,6 +64,18 @@
       subtitle: Essay
       href: https://tylerxhobbs.com/essays/2020/flow-fields
 
+- artist: Yasai
+  title: Perlin Noise Painter, 2019
+  image: ./slides/yasai.png
+  comments: Yasai created an interface that allows users to "paint" with Perlin noise.
+  links:
+    - label: Perlin Noise Painter
+      href: https://wangyasai.github.io/PerlinNoisePainter/
+      subtitle: Project Page
+    - label: wangyasai.github.io
+      subtitle: Artist Site
+      href: https://wangyasai.github.io/
+
 - artist: Eddie Lee
   title: Open CL Perlin Particles, 2011
   image: https://i.vimeocdn.com/video/194454318-f50014973eb158fd39d86aa6bf012dd8d0a6cb2deb76981b9bf6eefdab75d9b0-d?mw=1920&mh=1080&q=70
