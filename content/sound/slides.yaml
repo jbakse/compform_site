@@ -22,6 +22,18 @@
       href: https://www.jasonsigal.cc/
       subtitle: Artist Site
 
+- artist: Luisa Pereira and Manuela Donoso
+  title: The Harmonic Series, 2012
+  image: https://payload.cargocollective.com/1/10/325414/5013007/harmonics_web_6_o.jpg
+  comments: This interactive series visualizes sound and harmony through 2D and 3D prints and sculptures.
+  links:
+    - label: The Harmonic Series
+      href: https://www.theharmonicseries.net/
+      subtitle: Project Page
+    - label: luisapereira.net
+      href: https://www.luisapereira.net
+      subtitle: Artist Site
+
 - artist: Vineet Kapil
   title: Neon Impasse, 2021
   image: ./slides/vineet_kapil.png
