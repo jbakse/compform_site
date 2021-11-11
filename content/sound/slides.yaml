@@ -9,3 +9,27 @@
     - label: xin-xin.info
       href: https://xin-xin.info/
       subtitle: Artist Site
+
+- artist: Jason Sigal
+  title: Sonic Scrolls, 2014
+  image: ./slides/jason_sigal.png
+  comments: In this interactive installation, users created a sonic scroll that comprised of colors and shapes that represented different instruments, tone, and timbre.
+  links:
+    - label: Sonic Scrolls
+      href: https://www.jasonsigal.cc/portfolio/sonic-scrolls/
+      subtitle: Project Page
+    - label: jasonsigal.cc
+      href: https://www.jasonsigal.cc/
+      subtitle: Artist Site
+
+- artist: Vineet Kapil
+  title: Neon Impasse, 2021
+  image: ./slides/vineet_kapil.png
+  comments: In this sound visualizer, users can add guitar riffs and synth sounds using their keyboard and mouse to the first track of the album, "neon impasse" by city girl.
+  links:
+    - label: Neon Impasse
+      href: https://playriffs.netlify.app/
+      subtitle: Project Page
+    - label: vineetk.com
+      href: https://www.vineetk.com/
+      subtitle: Artist Site
