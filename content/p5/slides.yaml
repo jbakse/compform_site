@@ -30,3 +30,39 @@
     - label: jennybkowalski.com
       href: https://www.jennybkowalski.com/
       subtitle: Artist Site
+
+- artist: Daniel Zou
+  title: WORM, 2020
+  image: ./slides/daniel_zou.jpg
+  comments: Daniel created a Pac-Man-like game purely using p5.js.
+  links:
+    - label: WORM
+      href: https://github.com/actbee/Worm---a-game
+      subtitle: Project Page
+    - label: actbee.github.io
+      href: https://actbee.github.io/
+      subtitle: Artist Site
+
+- artist: Studio Dumbar
+  title: DEMO Festival, 2019
+  image: https://image.commarts.com/images1/4/4/5/0/1/1054428_102_1160_LTE3NjA3MTczNjkxNjQyNDgwNzcy.jpg
+  comments: Studio Dumbar took advantage of p5.js mouse interactions to create DEMO festival's web experience. The apertures of the letterforms in the festival's logo move with the user's mouse.
+  links:
+    - label: DEMO Festival
+      href: https://demofestival.com/
+      subtitle: Event Page
+    - label: Studio Dumbar
+      href: https://studiodumbar.com/
+      subtitle: Artist Site
+
+- artist: Playables (Mario von Rickenbach and Michael Frei)
+  title: Coin, 2019
+  image: ./slides/playables.png
+  comments: This simple coin slot game was created purely with p5.js.
+  links:
+    - label: Coin
+      href: https://projects.playables.net/coin/
+      subtitle: Game Page
+    - label: playables.net
+      href: https://playables.net/
+      subtitle: Artist Site
