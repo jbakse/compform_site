@@ -125,29 +125,37 @@ Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](
 
 {% js-lab "sketches/interaction.js" %}
 
-<div class="activity">
+<div class="activity challenges">
 
 ## Coding Challenges
 
 Explore p5.play by completing these challenges.
 
-### Modify the p5.play Animation Example {difficulty}
+### Modify the p5.play Animation Example
 
-1. **Comment out the `addImage` lines. See what happens. Then comment them back.** {easy}
-1. **Change the size parameters on `createSprite`. What happens? Why was this the result?** {easy}
-1. **The Kid in Green is running backwards. Fix that. Tip: `mirrorX`** {medium}
-1. **Make The King run to the right.** {medium}
-1. **Make The King and The Kid in Green run towards each other. Make them stop when they collide. Tip: `overlap()`**{hard}
-1. **Make The King and The Kid in Green “bounce” when they collide. Tip: Look at the “bouncing” p5play example.**{hard}
+1. Comment out the `addImage` lines. See what happens. Then comment them back. `•`
+1. Change the size parameters on `createSprite`. What happens? Why was this the result? `•`
+1. The Kid in Green is running backwards. Fix that. Tip: `mirrorX` `••`
+1. Make The King run to the right. `••`
+1. Make The King and The Kid in Green run towards each other. Make them stop when they collide. Tip: `overlap()` `•••`
+1. Make The King and The Kid in Green “bounce” when they collide. Tip: Look at the “bouncing” p5play example. `•••`
 
-### Modify the p5.play Interaction Example {difficulty}
+```
+interuption
+```
 
-1. **Comment out the `mouseActive` line. See what happens. Then comment it back.** {easy}
-1. **Make The King spin when the mouse is over him.** {easy}
-1. **Make The King spin when the mouse is NOT over him.** {medium}
-1. **Make The King spin when he is clicked, and stop when clicked again.** {medium}
-1. **Remove The King from the scene when he is clicked. Start the scene with 10 kings.** {hard}
-1. **Create a microgame from this example!** {hard}
+1. list
+2. list
+   {continue}
+
+### Modify the p5.play Interaction Example
+
+1. Comment out the `mouseActive` line. See what happens. Then comment it back. `•`
+1. Make The King spin when the mouse is over him. `•`
+1. Make The King spin when the mouse is NOT over him. `••`
+1. Make The King spin when he is clicked, and stop when clicked again. `••`
+1. Remove The King from the scene when he is clicked. Start the scene with 10 kings. `•••`
+1. Create a microgame from this example! `•••`
    {continue}
 
 </div>

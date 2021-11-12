@@ -145,8 +145,7 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 | All in 20 Minutes  | Great.                                                                                |
 | All in 15 Minutes  | Hot Dang!                                                                             | -->
 
-
-### Modify the Basic Example {difficulty}
+### Modify the Basic Example
 
 1. **Change the image resolution to `20x20`.** {easy}
 1. **Change the image resolution to `500x500`.** {easy}
@@ -155,7 +154,7 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 1. **Make each pixel a random shade of gray.** {medium}
 1. **Color each pixel with `noise()` to visualize its values.** {hard}
 
-### Modify the Gradient Example {difficulty}
+### Modify the Gradient Example
 
 1. **Make a horizontal black-to-blue gradient.** {easy}
 1. **Make a vertical green-to-black gradient.** {easy}
@@ -166,14 +165,14 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 1. **Create a diagonal gradient.** {hard}
    {continue}
 
-### Modify the Random Access Example {difficulty}
+### Modify the Random Access Example
 
 1. **Change the image resolution to `50x50`, adjust the code to fill the image.** {easy}
 1. **Instead of drawing single pixels, draw little plus marks (`+`) at random locations.** {medium}
 1. **Make each `+` a random color.** {medium}
    {continue}
 
-### Start from Scratch {difficulty}
+### Start from Scratch
 
 1. **Use `sin()` to create a repeating black-to-red-to-black color wave.** {hard}
 1. **Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`.** {hard}
@@ -245,7 +244,7 @@ This example doesn't draw the image at all. Instead, the image is used as an inp
 
 {% js-lab "sketches/read_pixels_3.js" %}
 
-<div class="activity">
+<div class="activity challenges">
 
 ## Coding Challenges Two
 
@@ -260,37 +259,37 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 | All in 20 Minutes  | Great.                                                                                |
 | All in 15 Minutes  | Hot Dang!                                                                             | -->
 
-### Modify Read Pixels Example 1 {difficulty}
+### Modify Read Pixels Example 1
 
-1. **Make the program turn white pixels green.** {easy}
-1. **Turn the black pixels to a random shade of red.** {easy}
-1. **Turn the black pixels into a vertical, black-to-red gradient.** {medium}
-1. **Comment out line 34 which calls `updatePixels()`. What happens?** {medium}
+1. Make the program turn white pixels green. `•`
+1. Turn the black pixels to a random shade of red. `•`
+1. Turn the black pixels into a vertical, black-to-red gradient. `••`
+1. Comment out line 34 which calls `updatePixels()`. What happens? `••`
 
 <!-- <img src="sketches/world_100.png" style="image-rendering: pixelated;"> -->
 
-### Modify Read Pixels Example 2 {difficulty}
+### Modify Read Pixels Example 2
 
-1. **Change the `lightness()` comparison to `>`.** {easy}
-1. **Change the `lightness()` comparison to `!=`.** {easy}
-1. **Add an `else` block that changes the pixels to black.** {medium}
-1. **Starting with the original code without any changes, set the `out_color` to the average of `this_color` and `below_color`. Here is an example you could follow:** {hard}
-
-   ```
-   var color_a = color(worldImage.get(0, 1));
-   var color_b = color(worldImage.get(0, 2));
-   var blended_color = lerpColor(color_a, color_b, .5);
-
-   ```
-
-1. **Change `worldImage.set(x, y, out_color);` to `worldImage.set(x, y+1, out_color);`.** {hard}
-1. **Remove the `if` statement (but not its contents) so that its content always runs.** {hard}
+1. Change the `lightness()` comparison to `>`. `•`
+1. Change the `lightness()` comparison to `!=`. `•`
+1. Add an `else` block that changes the pixels to black. `••`
+1. Starting with the original code without any changes, set the `out_color` to the average of `this_color` and `below_color`. Here is an example you could follow:`•••`
    {continue}
 
-### Modify Read Pixels Example 3 {difficulty}
+```javascript
+var color_a = color(worldImage.get(0, 1));
+var color_b = color(worldImage.get(0, 2));
+var blended_color = lerpColor(color_a, color_b, 0.5);
+```
 
-1. **Tell the program to use the image below by switching which `loadImage()` call is commented out in `preload()`.** {easy}
-1. **Adjust the expression that determines `dot_size` to make the result prettier.** {medium}
+1. Change `worldImage.set(x, y, out_color);` to `worldImage.set(x, y+1, out_color);`. `•••`
+1. Remove the `if` statement (but not its contents) so that its content always runs. `•••`
+   {continue}
+
+### Modify Read Pixels Example 3
+
+1. Tell the program to use the image below by switching which `loadImage()` call is commented out in `preload()`. `•`
+1. Adjust the expression that determines `dot_size` to make the result prettier. `••`
    {continue}
 
 <img src="sketches/world_100.png" style="image-rendering: pixelated;">

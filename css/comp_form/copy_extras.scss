@@ -233,61 +233,54 @@
       @include block-pad;
     }
 
-    .difficulty {
-      position: relative;
-    }
-    .difficulty::after {
-      content: "Difficulty Level";
-      position: absolute;
-      right: 0;
+    code {
+      background: white; //rgba(0, 0, 0, 0.05);
     }
 
-    .difficulty + ol {
-      position: relative;
-    }
-    .difficulty + ol li {
-      // background: red;
-      // width: 90%;
-      position: relative;
-      margin-bottom: 0.75em;
-    }
-    .difficulty + ol li strong {
-      // background: blue;
-      font-weight: 300;
-      width: 90%;
-      display: block;
-      line-height: 1.75;
-    }
+    // pre code {
+    //   margin-left: 30px;
+    //   margin-right: 100px;
+    // }
 
-    .easy,
-    .medium,
-    .hard {
-      // position: relative;
-      margin-bottom: 0.5em;
-      line-height: 36px;
-    }
+    // placed on the h3 leading into a challenge list
+    &.challenges {
+      h3 {
+        position: relative;
+      }
 
-    .easy::after,
-    .medium::after,
-    .hard::after {
-      font-family: "Courier New", Courier, monospace;
-      letter-spacing: -0.15em;
-      position: absolute;
-      right: 0;
-      top: 0;
-      font-size: 30px;
-      line-height: 36px;
+      h3::after {
+        content: "Difficulty Level";
+        position: absolute;
+        right: 0;
+      }
 
-      // width: 40px;
-    }
-    .easy::after {
-      content: "•" / "easy";
-    }
-    .medium::after {
-      content: "••" / "medium";
-    }
-    .hard::after {
-      content: "•••" / "hard";
+      ol li {
+        position: relative;
+        margin-bottom: 0.75em;
+        margin-right: 100px;
+
+        line-height: 30px;
+      }
+
+      // show the ••• difficulty symbol
+      ol li > code:last-child {
+        background: none;
+        position: absolute;
+        top: 5px;
+        right: -100px;
+        width: 40px;
+        font-size: 32px;
+        line-height: 30px;
+        letter-spacing: -5px;
+        z-index: 1;
+      }
+
+      ol li > code:last-child:before {
+        content: "•••";
+        color: #bbb;
+        position: absolute;
+        z-index: -1;
+      }
     }
   }
 
