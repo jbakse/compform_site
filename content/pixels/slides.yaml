@@ -20,22 +20,25 @@
   links:
     - label: Visual Resolve
       href: http://camilleutterback.com/projects/visual-resolve/
-      subtitle: camilleutterback.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: camilleutterback.coms
       href: http://camilleutterback.com/
-      subtitle: camilleutterback.com
+      subtitle: Artist Site
 
 - artist: Sergio Albiac
   title: Stardust, 2013-14
   image: https://www.sergioalbiac.com/images/star01.jpg
   comments: One of more than 15,000 portraits created by a project by Sergio Albiac
   links:
-    - label: Huge Gallery
+    - label: Stardust Portrait Gallery
       href: https://www.flickr.com/photos/97510924@N04/
-      subtitle: flickr.com
-    - label: Artist Site
+      subtitle: Online Exhibition
+    - label: Stardust
       href: https://www.sergioalbiac.com/wall/stardust.html
-      subtitle: sergioalbiac.com
+      subtitle: Project Page
+    - label: sergioalbiac.com
+      href: https://www.sergioalbiac.com/
+      subtitle: Artist Site
 
 - artist: Jon Corbett
   title: Four Generations, 2015
@@ -44,19 +47,22 @@
   links:
     - label: Four Generations
       href: https://www.youtube.com/watch?v=1lO22Bl_-HI&ab_channel=BACA
-      subtitle: video
-    - label: Artist Site
+      subtitle: Video
+    - label: joncorbett.ca
       href: http://joncorbett.ca/
-      subtitle: joncorbett.ca
+      subtitle: Artist Site
 
 - artist: Michael Bromley
   title: Chromata, 2015
   image: slides/chromata.png
   comments: JavaScript image-to-art machine.
   links:
-    - label: "Chromata"
+    - label: Chromata
       href: https://www.michaelbromley.co.uk/experiments/chromata/
-      subtitle: michaelbromley.co.uk
+      subtitle: Project Page
+    - label: michaelbromley.co.uk
+      href: https://www.michaelbromley.co.uk
+      subtitle: Artist Site
 
 - artist: Greg Schomburg
   title: Sketching in Hardware, 2014
@@ -65,10 +71,10 @@
   links:
     - label: Sketching in Hardware
       href: http://gregschomburg.com/2017/projects/sketching-in-hardware.html
-      subtitle: gregschomburg.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: gregschomburg.com
       href: http://www.gregschomburg.com
-      subtitle: gregschomburg.com
+      subtitle: Artist Site
 
 # - artist: Greg Schomburg
 #   title: Sketching in Hardware, 2014
@@ -106,8 +112,8 @@
   links:
     - label: "Pixel Art Tutorial"
       href: http://makegames.tumblr.com/post/42648699708/pixel-art-tutorial
-      subtitle: tutorial
+      subtitle: Tutorial
 
     - label: Spelunky
       href: https://bossfightbooks.com/products/spelunky-by-derek-yu
-      subtitle: book
+      subtitle: Book

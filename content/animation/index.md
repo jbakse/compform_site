@@ -288,38 +288,38 @@ For lots of discussion on these two approaches, and others, and their merits tak
 
 Complete the following challenges to deepen your understanding of the examples above.
 
-### Modify the Bounce Example{difficulty}
+### Modify the Bounce Example {difficulty}
 
-1. Imagine what would happen if you commented in line 22.{easy}
-1. Comment in line 22. Was the result what you expected?{easy}
-1. Make the ball bounce higher.{medium}
-1. Make the ball bounce slower.{medium}
-1. Make the ball bounce faster.{medium}
-1. Make the ball bounce exactly 1 time per second.{hard}
-1. Recreate the below.{hard}
+1. **Imagine what would happen if you commented in line 22.** {easy}
+1. **Comment in line 22. Was the result what you expected?** {easy}
+1. **Make the ball bounce higher.** {medium}
+1. **Make the ball bounce slower.** {medium}
+1. **Make the ball bounce faster.** {medium}
+1. **Make the ball bounce exactly 1 time per second.** {hard}
+1. **Recreate the below.** {hard}
 
 <!-- should be js-show -->
 
 {% js-show "challenges/bounce_02.js" %}
 
-### Modify the Fuzz Example
+### Modify the Fuzz Example {difficulty}
 
-1. Drawing a lot of transparent ellipses can be processor intensive.\
-   What framerate does the fuzz example run at on your computer?{easy}
+1. **Drawing a lot of transparent ellipses can be processor intensive.**\
+   **What framerate does the fuzz example run at on your computer?** {easy}
 
-1. Increase the the loop count from 100 to 1000.\
-   How does that impact the drawing?\
-   How does that impact the framerate?{easy}
+1. **Increase the the loop count from 100 to 1000.**\
+   **How does that impact the drawing?**\
+   **How does that impact the framerate?** {easy}
 
-1. Increase the the loop count (again) from 1000 to 10000.\
-   How does that impact the drawing?\
-   How does that impact the framerate?{easy}
+1. **Increase the the loop count (again) from 1000 to 10000.**\
+   **How does that impact the drawing?**\
+   **How does that impact the framerate?** {easy}
 
-1. Export 60 frames of this animation and turn them into a 30 fps video.\
-   How long (in seconds) did it take to render 60 frames?\
-   How long (in seconds) is your resulting video?\
-   Does it matter what the frameRate() is set to in setup?{medium}
-1. Recreate the below.{hard}
+1. **Export 60 frames of this animation and turn them into a 30 fps video.**\
+   **How long (in seconds) did it take to render 60 frames?**\
+   **How long (in seconds) is your resulting video?**\
+   **Does it matter what the frameRate() is set to in setup?** {medium}
+1. **Recreate the below.** {hard}
 
 {% js-show "challenges/fuzzy_02.js" %}
 

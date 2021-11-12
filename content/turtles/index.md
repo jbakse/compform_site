@@ -41,6 +41,10 @@ Logo's use of turtles allows students to make a strong association between what 
 - [Seymour Papert on Logo: Teaching (1986) 4:25 - 6:40](https://youtu.be/ZG9cYhekB8A?t=4m25s)
 - [Learning with Toys (1986)](https://www.youtube.com/watch?v=IhEovwWiniY)
 
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
+
 <div class="activity">
 
 ## Be the Turtle
@@ -260,35 +264,34 @@ Explore turtle graphics by modifying the examples above. Work through the follow
 | 11 in 20 Minutes     | Good.                                                        |
 | All 15 in 20 Minutes | Great.                                                       | -->
 
-### Modify the Triangle Example{difficulty}
+### Modify the Triangle Example {difficulty}
 
-1. Draw a pentagon.{easy}
-1. Draw an octagon.{medium}
-1. Draw a circle.{medium}
-1. Draw a circle with a dashed line. Tip: `penUp() + penDown()`{hard}
-1. Draw a spiral. {hard}
-1. Using a loop, draw 10 concentric triangles. {hard}
-1. Draw the figure below. {hard}
-1. Create a `function polygon(sides)` that receives a `sides` parameter and draws a regular polygon. {hard}
-   {continue}
+1. **Draw a pentagon.** {easy}
+1. **Draw an octagon.** {medium}
+1. **Draw a circle.** {medium}
+1. **Draw a circle with a dashed line. Tip: `penUp() + penDown()`** {hard}
+1. **Draw a spiral.** {hard}
+1. **Using a loop, draw 10 concentric triangles.** {hard}
+1. **Draw the figure below.** {hard}
+1. **Create a `function polygon(sides)` that receives a `sides` parameter and draws a regular polygon.** {hard}
 
 ![challenge_1.png](challenge_1.png)
 
-### Modify the Multiple Triangles Example
+### Modify the Multiple Triangles Example {difficulty}
 
-1. Draw each triangle with different colored strokes.{easy}
-1. Change the triangle function to draw pentagons.{medium}
-1. Draw a 3x3 grid of pentagons.{hard}
+1. **Draw each triangle with different colored strokes.** {easy}
+1. **Change the triangle function to draw pentagons.** {medium}
+1. **Draw a 3x3 grid of pentagons.** {hard}
    {continue}
 
 Style Tip: If you change what a function does, you should change its name as well. Did you change the function name when completing challenge 6?
 
-### Modify the Spirograph Example
+### Modify the Spirograph Example {difficulty}
 
-1. Change the `moveForward()` parameter to `i * 3`. {easy}
-1. Center the drawing in the middle of the canvas. {medium}
-1. Comment out the `noLoop()`. {easy}
-1. Change the `turnRight()` parameter to `175 + frameCount`. {easy}
+1. **Change the `moveForward()` parameter to `i * 3`.** {easy}
+1. **Center the drawing in the middle of the canvas.** {medium}
+1. **Comment out the `noLoop()`.** {easy}
+1. **Change the `turnRight()` parameter to `175 + frameCount`.** {easy}
    {continue}
 
 </div>

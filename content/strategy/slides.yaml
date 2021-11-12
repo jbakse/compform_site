@@ -3,12 +3,12 @@
   image: ./slides/the_drive_home.png
   comments: Realtime procedurally generated view from a windshield in the rain.
   links:
-    - label: Live Demo and Code
+    - label: The Drive Home
       href: https://www.shadertoy.com/view/MdfBRX
-      subtitle: shadertoy.com
+      subtitle: Live Demo and Code
     - label: Making of Video Series
       href: https://www.youtube.com/watch?v=52TMliAWocY
-      subtitle: video
+      subtitle: Video
 
 - artist: Klei Entertainment
   title: Don't Starve, 2013
@@ -17,7 +17,7 @@
   links:
     - label: Don't Starve
       href: https://www.klei.com/games/dont-starve
-      subtitle: klei.com
+      subtitle: Game Page
 
 - artist: Evil Mad Scientist Laboratories
   title: StippleGen, 2012
@@ -26,7 +26,7 @@
   links:
     - label: Stipple Gen
       href: https://wiki.evilmadscientist.com/StippleGen
-      subtitle: wiki.evilmadscientist.com
+      subtitle: Project Page
 
 - artist: Hello Games
   title: No Man's Sky, 2016
@@ -35,16 +35,16 @@
   links:
     - label: No Man's Sky
       href: https://www.nomanssky.com
-      subtitle: nomanssky.com
+      subtitle: Game Page
 
 - artist: Harm van den Dorpel
   title: Mutant Garden, 2021
   image: https://res.cloudinary.com/leftgallery/image/upload/v1606750677/hcwe970hpz5x3jm3hgc9.jpg
-  comments: A breeding strategy that creates colorful geometric shapes.
+  comments: This project implements a breeding strategy that creates colorful geometric shapes.
   links:
     - label: Mutant Garden
       href: https://mutant.garden/
-      subtitle: mutant.garden
-    - label: Artist Site
+      subtitle: Project Page
+    - label: harm.work
       href: https://harm.work/
-      subtitle: harm.work
+      subtitle: Artist Site

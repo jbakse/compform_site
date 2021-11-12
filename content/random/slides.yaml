@@ -5,10 +5,10 @@
   links:
     - label: (Dés) Ordres
       href: https://dam.org/museum/artists_ui/artists/molnar-vera/des-ordres/
-      subtitle: dam.org
-    - label: Artist Site
+      subtitle: Digital Art Museum
+    - label: veramolnar.com
       href: http://www.veramolnar.com/
-      subtitle: veramolnar.com
+      subtitle: Artist Site
 
 - artist: LIA
   title: "Four Seasons: Spring, 2019"
@@ -17,10 +17,10 @@
   links:
     - label: "Four Seasons: Spring"
       href: https://www.liaworks.com/theprojects/spring/
-      subtitle: liaworks.com
-    - label: Artist Site
+      subtitle: Project Page
+    - label: liaworks.com
       href: https://www.liaworks.com/
-      subtitle: liaworks.com
+      subtitle: Artist Site
 
 - artist: Jean Arp
   title: Collage with Squares Arranged According to the Laws of Chance, 1917
@@ -29,7 +29,7 @@
   links:
     - label: Collage with Squares...
       href: https://www.moma.org/collection/works/37013
-      subtitle: moma.org
+      subtitle: MoMA
 
 - artist: Rafael Lozano-Hemmer
   title: Method Random, 2014
@@ -38,10 +38,10 @@
   links:
     - label: Method Random
       href: https://www.lozano-hemmer.com/method_random.php
-      subtitle: case study
-    - label: Artist Site
+      subtitle: Case Study
+    - label: lozano-hemmer.com
       href: https://www.lozano-hemmer.com/
-      subtitle: lozano-hemmer.com
+      subtitle: Artist Site
 
 - artist: Amy Goodchild
   title: Geometric Constellations, 2020
@@ -50,10 +50,10 @@
   links:
     - label: Geometric Constellations
       href: https://www.amygoodchild.com/blog/geometric-constellations
-      subtitle: case study
-    - label: Artist Site
+      subtitle: Case Study
+    - label: amygoodchild.com
       href: https://www.amygoodchild.com
-      subtitle: amygoodchild.com
+      subtitle: Artist Site
 
 - artist: Marcel Duchamp
   title: 3 Standard Stoppages, 1913
@@ -62,7 +62,7 @@
   links:
     - label: 3 Standard Stoppages
       href: https://www.moma.org/collection/works/78990
-      subtitle: moma.org
+      subtitle: MoMA
 
 - artist: Micheal Toy and Glenn Wichman
   title: Rogue, 1980
@@ -71,10 +71,10 @@
   links:
     - label: "Rogue"
       href: https://en.wikipedia.org/wiki/Rogue_(video_game)
-      subtitle: wikipedia.org
+      subtitle: Wikipedia
     - label: "Roguelike"
       href: https://en.wikipedia.org/wiki/Roguelike
-      subtitle: wikipedia.org
+      subtitle: Wikipedia
 # - artist: Joshua Davis (Praystation)
 #   title: Misc, 1
 #   image: ./slides/praystation_1.jpg

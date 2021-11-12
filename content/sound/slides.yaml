@@ -1,11 +1,47 @@
 - artist: Xin Xin
   title: Plant Ensemble, 2018
   image: https://xin-xin.info/assets/plantEnsemble.jpg
-  comments: Plant Ensemble uses an arduino, speaker, and _plant_ to create randomized sounds.
+  comments: Plant Ensemble uses an arduino, speaker, and <i>plants</i> to create randomized sounds.
   links:
     - label: Plant Ensemble
       href: https://vimeo.com/298994697
-      subtitle: video
-    - label: Artist Site
+      subtitle: Video
+    - label: xin-xin.info
       href: https://xin-xin.info/
-      subtitle: xin-xin.info
+      subtitle: Artist Site
+
+- artist: Jason Sigal
+  title: Sonic Scrolls, 2014
+  image: ./slides/jason_sigal.png
+  comments: In this interactive installation, users created a sonic scroll that comprised of colors and shapes that represented different instruments, tone, and timbre.
+  links:
+    - label: Sonic Scrolls
+      href: https://www.jasonsigal.cc/portfolio/sonic-scrolls/
+      subtitle: Project Page
+    - label: jasonsigal.cc
+      href: https://www.jasonsigal.cc/
+      subtitle: Artist Site
+
+- artist: Luisa Pereira and Manuela Donoso
+  title: The Harmonic Series, 2012
+  image: https://payload.cargocollective.com/1/10/325414/5013007/harmonics_web_6_o.jpg
+  comments: This interactive series visualizes sound and harmony through 2D and 3D prints and sculptures.
+  links:
+    - label: The Harmonic Series
+      href: https://www.theharmonicseries.net/
+      subtitle: Project Page
+    - label: luisapereira.net
+      href: https://www.luisapereira.net
+      subtitle: Artist Site
+
+- artist: Vineet Kapil
+  title: Neon Impasse, 2021
+  image: ./slides/vineet_kapil.png
+  comments: In this sound visualizer, users can add guitar riffs and synth sounds using their keyboard and mouse to the first track of the album, "neon impasse" by city girl.
+  links:
+    - label: Neon Impasse
+      href: https://playriffs.netlify.app/
+      subtitle: Project Page
+    - label: vineetk.com
+      href: https://www.vineetk.com/
+      subtitle: Artist Site

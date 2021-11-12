@@ -248,14 +248,11 @@ Explore using noise by completing the following challenges in order. <br/> Don't
 | 7 in 20 Minutes     | Good.                                                                                |
 | All 9 in 20 Minutes | Great.                                                                               | -->
 
-
 ### Modify the Mapping Noise Example {difficulty}
 
 1. **This example shows several ways to map noise. Comment in and out each example, and compare the results.** {easy}
 
-
 ### Modify the Grass Example {difficulty}
-
 
 1. **Study the code and get a general idea of how it works.** {easy}
 1. **Line 28 has two magic constants: `.01` and `.001`. Try changing the first constant to `.1`. What happens? What happens when you change it to `1`?** {easy}

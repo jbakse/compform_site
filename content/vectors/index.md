@@ -228,33 +228,33 @@ Explore Paper.js by modifying the examples above. Work through the following cha
 | 11 in 20 Minutes     | Good.                                                        |
 | All 15 in 20 Minutes | Great.                                                       | -->
 
-### Modify the Basic Example{difficulty}
-
 It might help to have the documentation for [Paper.js Path](http://paperjs.org/reference/path/) handy.
 
-1. Make both lines 8 pixels wide and blue. {easy}
-1. Set the `.strokeCap` of both lines to `round`.{easy}
-1. Make 50 lines with random start and end points.{medium}
+### Modify the Basic Example {difficulty}
 
-   You don't have the p5.js `random()` function in Paper.js, but you do have JavaScript's `Math.random()`. This will get you a random value between 0 and 500: `Math.random() * 500`.
+1. **Make both lines 8 pixels wide and blue.** {easy}
+1. **Set the `.strokeCap` of both lines to `round`.** {easy}
+1. **Make 50 lines with random start and end points.**
 
-1. Make each of the 50 lines a random width and color.{medium}
+   **You don't have the p5.js `random()` function in Paper.js, but you do have JavaScript's `Math.random()`. This will get you a random value between 0 and 500: `Math.random() * 500`.** {medium}
+
+1. **Make each of the 50 lines a random width and color.** {medium}
    {continue}
 
-### Modify the Boolean Example
+### Modify the Boolean Example {difficulty}
 
-1. Make the green square 500 pixels wide.{easy}
-1. Change the function that creates comboPath from `subtract` to `unite`.{easy}
-1. Change the function again. This time try `intersect`.{easy}
-1. Change the green square to an ellipse.{medium}
-1. Remove the green and red shapes, leaving only the compound shape. Tip: `.remove()` [docs](http://paperjs.org/reference/path/#remove).{hard}
+1. **Make the green square 500 pixels wide.** {easy}
+1. **Change the function that creates comboPath from `subtract` to `unite`.** {easy}
+1. **Change the function again. This time try `intersect`.** {easy}
+1. **Change the green square to an ellipse.** {medium}
+1. **Remove the green and red shapes, leaving only the compound shape. Tip: `.remove()` [docs](http://paperjs.org/reference/path/#remove).** {hard}
    {continue}
 
-### Create from Scratch
+### Create from Scratch {difficulty}
 
-1. Draw a simple stick figure.{easy}
-1. Create a compound shape from _three_ shapes using any of the boolean operations: `unite`, `intersect`, `subtract`. Tip: You'll need to do this in two steps.{medium}
-1. Create the drawing below.{hard}
+1. **Draw a simple stick figure.** {easy}
+1. **Create a compound shape from _three_ shapes using any of the boolean operations: `unite`, `intersect`, `subtract`. Tip: You'll need to do this in two steps.** {medium}
+1. **Create the drawing below.** {hard}
    {continue}
 
 {% js-show "sketches/challenge.js" %}
