@@ -13,66 +13,59 @@ software: p5.js + github
 
 ## Processing and p5.js
 
-This book explores a wide range of media and uses a variety of languages and libraries. The most commonly used library is p5.js, a very popular Javascript creative coding library.
+This book explores a wide range of media and provides examples in a variety of languages and libraries. The most commonly used library is [p5.js](https://p5js.org/), a very popular Javascript creative coding library. The p5.js is a javascript version of the [Processing](<(https://processing.org/)>) creative coding language and library.
 
-The p5.js is essentially a javascript version of the Processing creative coding language and library. Both Processing and p5.js were created to support students learning computer programming within a creative, arts, or design context. p5.js has a contained scope and a strong community. These factors make it a great library for learning, sketching, and experimenting.
+Both Processing and p5.js were created to support students learning computer programming within a creative art and design context. Because p5.js has a contained scope and a strong community, it is a great library for teaching, learning, sketching, and experimenting.
 
-Many live code examples throught this book use p5.js. This chapter briefly introduces
+A full introduction to p5.js is outside of the scope of this book, but this chapter aims to point you in the right direction.
 
 ### Processing
 
-<div class="links-sidebar">
+[Processing](https://processing.org/) is a programming language created for visual artists learning to make creative coding projects. It was released in 2001 by MIT Media Lab alumni and creative coders [Casey Reas](http://reas.com/) and [Benjamin Fry](http://benfry.com/). The project is now also led by [Daniel Shiffman](http://shiffman.net/), who has published a number of popular books and video tutorials on creating art with Processing.
 
-[Processing](https://processing.org/)
-
-[Casey Reas](http://reas.com/)
-
-[Benjamin Fry](http://benfry.com/)
-
-[Daniel Shiffman](http://shiffman.net/)
-
-</div>
-
-[Processing](https://processing.org/) is a programming language created for visual artists learning to make creative coding projects. It was created in 2001 by MIT Media Lab alumni and creative coders [Casey Reas](http://reas.com/) and [Benjamin Fry](http://benfry.com/). The project is now also let by [Daniel Shiffman](http://shiffman.net/), who has published a number of popular books and video tutorials on creating art with Processing.
-
-Processing combines a simple programming environment and a programming language to create an low friction entry point for creative computing. Processing provides a basic but powerful [drawing API](https://processing.org/reference/), and has libraries for other common applications like sound and networking.
+Processing combines a simple programming environment, a programming language built on top of Java, and a drawing library to create an low friction entry point for creative computing. In addition to the basic but powerful [drawing API](https://processing.org/reference/), and has libraries for other common applications like sound and networking.
 
 ### p5.js
 
-<div class="links-sidebar">
+The p5.js library was created by artist [Lauren McCarthy](http://lauren-mccarthy.com/) to brings the Processing API and spirit to Javascript and the web. Programming with p5.js is very similar to working in Processing, with the benefit that p5.js sketches work in any modern browser.
 
-[p5.js](https://p5js.org/)
+## Gallery
 
-[Lauren McCarthy](http://lauren-mccarthy.com/)
-
-</div>
-
-[p5.js](https://p5js.org/) was created by artist [Lauren McCarthy](http://lauren-mccarthy.com/) to brings the Processing API and spirit to Javascript and the web. Working in p5.js is very similar to working in Processing, with the benefit that p5.js sketches work in any modern browser.
-
-### Learning Processing and p5.js
-
-Processing and p5.js are both widely popular open-source projects with large, active communities. They are both well documented as well. You can start with either language, you don't need to know Processing to learn p5.js.
-
-| Site                                                                                                               | Description                                                                   |
-| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| [Processing](https://processing.org/)                                                                              | Processing Homepage                                                           |
-| [Reference](https://processing.org/reference/)                                                                     | The Processing core API Documentation                                         |
-| [Tutorials](https://processing.org/tutorials/)                                                                     | Official Processing tutorials                                                 |
-| [p5.js](https://p5js.org/)                                                                                         | pt.js Homepage                                                                |
-| [p5.js Reference](https://p5js.org/reference/)                                                                     | The p5.js core API Documentation                                              |
-| [p5.js Tutorials](https://p5js.org/learn/)                                                                         | Official p5.js tutorials                                                      |
-| [Shiffman's Videos](http://shiffman.net/videos/)                                                                   | Dan Shiffman has a full range of video tutorials for p5.js and creative code. |
-| [Khan Academy<br/> JS Drawing & Animation](https://www.khanacademy.org/computing/computer-programming/programming) | Complete, free course on drawing with code using p5.js.                       |
+Here are a few examples to give you an idea of what kinds of things people make with p5.js
 
 {% slides %}
 {% include slides.yaml %}
 {% endslides %} |
 
-### A p5.js Example Sketch
+## A p5.js Example Sketch
 
-This sketch draws a very simple house. You can try changing or adding to the house by editing the code below. You'll need to hit cmd/ctrl-s to update the code after you make changes.
+Want to try p5.js RIGHT NOW? The example below draws a very simple house. You can try changing or adding to the house by editing the code below. You'll need to hit cmd/ctrl-s to update the code after you make changes.
 
 {% js-lab "sketches/house.js" %}
+
+## Learning Processing and p5.js
+
+Processing and p5.js are both widely popular open-source projects with large, active communities. They are also both well documented. You can start with either language, you don't need to know Processing to learn p5.js. These resources are a good place to start.
+
+<div class="link-box">
+
+[**Processing**Library Website](https://processing.org/) Processing Homepage
+
+[**Processing API Reference**Official Documentation](https://processing.org/reference/) The Processing core API Documentation
+
+[**Processing Tutorials**Official Documentation](https://processing.org/tutorials/) Official Processing tutorials
+
+[**p5.js**Library Website](https://p5js.org/) pt.js Homepage
+
+[**p5.js Reference**Official Documentation](https://p5js.org/reference/) The p5.js core API Documentation
+
+[**p5.js Tutorials**Official Documentation](https://p5js.org/learn/) Official p5.js tutorials
+
+[**The Coding Train**Video Tutorials](http://shiffman.net/videos/) Dan Shiffman has a wealth of video tutorials for p5.js and creative code.
+
+[**JS Drawing & Animation**Khan Academy Course](https://www.khanacademy.org/computing/computer-programming/programming) Complete, free course on drawing with code using p5.js.
+
+</div>
 
 ## Sketching Locally
 
@@ -80,20 +73,19 @@ You can try out p5.js in the editor above, but to start making your own sketches
 
 ### Recommended Tools
 
-[Google Chrome](https://www.google.com/chrome/browser/desktop/){boxed right}
-: You can use any modern browser. I tend to use Google Chrome because I like its developer tools. In Chrome, be sure to open the Javascript console with `command-option-j`. If you have problems in your code, chrome will report errors in the console.
+#### Code Editor
 
-[Atom](https://atom.io/){boxed right}
-: Atom is a free text editor from Github. It works pretty good for quick p5.js sketches, especially if you install a few add-on packages. I recommend installing and using these.
+To edit your sketches, you'll need a code editor. I use [VS Code](https://code.visualstudio.com/) with the following extensions.
 
-| Package          | Purpose                                                                                                                |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| jsformat         | Consistently formats the spacing and indenting of your code. Well formatted code is much easier to read and work with. |
-| linter           | Base package that looks for and reports mistakes in your code.                                                         |
-| linter-jshint    | Language linter for javascript                                                                                         |
-| atom-live-server | Provides a simple webserver right from Atom, complete with live reload.                                                |
+| Package     | Purpose                                                                                                                          |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Live Server | The Live Server extension makes it very simple to properly serve you sketches to your browser                                    |
+| Prettier    | Prettier is a code formatter. It makes sure that your spaces and indents are consistent, improving the readability of your code. |
+| ESLint      | ESLint will audit your code to find potential problems.                                                                          |
 
-Lately, I've also been using [VS Code](https://code.visualstudio.com/) with similar packages. You can use any text editor you wish.
+#### Web Browser
+
+To view your sketches, you'll load them in a web browser. I tend to use [Google Chrome](https://www.google.com/chrome/browser/desktop/) because I like its developer tools. In Chrome, be sure to open the Javascript console with `command-option-j`. If you have problems in your code, chrome will report errors in the console.
 
 ### Creating a p5.js Project
 
@@ -104,12 +96,6 @@ To create a p5.js Project from scratch you need to do a few things.
 3. Create an `.html` file that includes the p5.js library.
 4. Write a sketch in Javascript. The script will be included either in `<script>` tags with your `.html` file or in a seperate `.js` file.
 5. Load the `.html` file in a browser to see it run.
-
-<div class="links-sidebar">
-
-[p5.js:<br/> Get Started](https://p5js.org/get-started/)
-
-</div>
 
 This process is detailed in the [p5.js Get Started guide](https://p5js.org/get-started/).
 
@@ -123,11 +109,11 @@ This process is detailed in the [p5.js Get Started guide](https://p5js.org/get-s
 
 2. Run a Local Server
 
-   You are going to need a local server. As soon as you start working with images or other network resources, Chrome is going to require that your code be served via `http` instead of the local file system. The `atom-live-server` package for Atom provides a super easy-to-use and simple web server you can start right from within Atom.
+   If you are working with a source code editor like VS Code, you are going to need a local server or your web browser will complain about security issues. The Live Server extension for VS Code makes this super simple.
 
 3. Use Live Reload
 
-   It is important to break down your problem into small steps and try them out one by one. It is a good idea to reload your sketch after each small change, so you will be reloading very often. Manual reloading requires saving, switching to the browser, and reloading. The `atom-live-server` provides live reloading: it will tell the browser to reload every time you save. This keeps you in your editor and speeds up your workflow.
+   It is important to break down your problem into small steps and try them out one by one. It is a good idea to reload your sketch after each small change, so you will be reloading very often. Manual reloading requires saving, switching to the browser, and reloading. Live Server provides live reloading by default. It will tell the browser to reload every time you save. This keeps you in your editor and speeds up your workflow.
 
 4. Use a Code Formatter
 
@@ -189,6 +175,18 @@ Normally, you use the Git software through its command line interface. If you ar
 [[ just a little info?]]
  -->
 
-<style>
+<!-- <style>
 td:first-child { width : 25% }
-</style>
+</style> -->
+
+<!--
+<div class="link-box">
+
+
+[Casey Reas](http://reas.com/)
+
+[Benjamin Fry](http://benfry.com/)
+
+[Daniel Shiffman](http://shiffman.net/)
+
+</div> -->
