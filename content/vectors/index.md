@@ -228,7 +228,7 @@ Explore Paper.js by modifying the examples above. Work through the following cha
 | 11 in 20 Minutes     | Good.                                                        |
 | All 15 in 20 Minutes | Great.                                                       | -->
 
-It might help to have the documentation for [Paper.js Path](http://paperjs.org/reference/path/) handy.
+<!-- It might help to have the documentation for [Paper.js Path](http://paperjs.org/reference/path/) handy. -->
 
 ### Modify the Basic Example {difficulty}
 
