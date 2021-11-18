@@ -140,14 +140,6 @@ Explore p5.play by completing these challenges.
 1. Make The King and The Kid in Green run towards each other. Make them stop when they collide. Tip: `overlap()` `•••`
 1. Make The King and The Kid in Green “bounce” when they collide. Tip: Look at the “bouncing” p5play example. `•••`
 
-```
-interuption
-```
-
-1. list
-2. list
-   {continue}
-
 ### Modify the p5.play Interaction Example
 
 1. Comment out the `mouseActive` line. See what happens. Then comment it back. `•`

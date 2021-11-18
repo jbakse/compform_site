@@ -426,7 +426,7 @@ Like the _Basic Grid Placement_ example above, this example places dots on a gri
 
 {% js-lab "sketches/grid_stored.js" %}
 
-<div class="activity">
+<div class="activity challenges">
 
 ## Coding Challenges
 
@@ -440,28 +440,28 @@ Explore the study examples above by completing the following challenges in order
 | 11 in 20 Minutes     | Good.                                                                                |
 | All 14 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Basic Grid Placement Example {difficulty}
+### Modify the Basic Grid Placement Example
 
-1. **Change the grid to 10 x 20, 20 x 20, and 100 x 100.** {easy}
-1. **Add a little random offset to the position of each circle.** {easy}
-1. **Remove the `noLoop()`. Does this introduce any problems?** {medium}
-1. **Draw a little "pine tree" at each point: a green triangle on a brown square.** {hard}
+1. Change the grid to 10 x 20, 20 x 20, and 100 x 100. `•`
+1. Add a little random offset to the position of each circle. `•`
+1. Remove the `noLoop()`. Does this introduce any problems? `••`
+1. Draw a little "pine tree" at each point: a green triangle on a brown square. `•••`
 
-### Modify the Basic Random Placement Example {difficulty}
+### Modify the Basic Random Placement Example
 
-1. **Change the code to place only 10 points. Try placing 1000 points.** {easy}
-1. **Use middle biasing when placing points so they're more likely to appear near the center.** {medium}
-1. **Draw a little "snowman" at each point: three white circles, stacked.** {hard}
-1. **Remove the `noLoop()`. Does this introduce any problems?** {medium}
+1. Change the code to place only 10 points. Try placing 1000 points. `•`
+1. Use middle biasing when placing points so they're more likely to appear near the center. `••`
+1. Draw a little "snowman" at each point: three white circles, stacked. `•••`
+1. Remove the `noLoop()`. Does this introduce any problems? `••`
    {continue}
 
-### Modify the Stored Grid Placement Example {difficulty}
+### Modify the Stored Grid Placement Example
 
-1. **Add a random offset to the position of each circle.** {easy}
-1. **Change setup code to use random placement to place 100 points.** {easy}
-1. **This example doesn't need `noLoop()`. Why?** {medium}
-1. **Draw about 75% of the points as trees and 25% as snowmen.** {medium}
-1. **For each `draw()` frame, move the snowmen a random step left, up, right, or down.** {hard}
+1. Add a random offset to the position of each circle. `•`
+1. Change setup code to use random placement to place 100 points. `•`
+1. This example doesn't need `noLoop()`. Why? `••`
+1. Draw about 75% of the points as trees and 25% as snowmen. `••`
+1. For each `draw()` frame, move the snowmen a random step left, up, right, or down. `•••`
    {continue}
 
 </div>

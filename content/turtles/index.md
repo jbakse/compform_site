@@ -251,7 +251,7 @@ Restores the turtle’s state to the top recorded state on the stack.
 
 {% js-lab "sketches/turtle_triangles.js" %}
 
-<div class="activity">
+<div class="activity challenges">
 
 ## Coding Challenges
 
@@ -264,34 +264,34 @@ Explore turtle graphics by modifying the examples above. Work through the follow
 | 11 in 20 Minutes     | Good.                                                        |
 | All 15 in 20 Minutes | Great.                                                       | -->
 
-### Modify the Triangle Example {difficulty}
+### Modify the Triangle Example
 
-1. **Draw a pentagon.** {easy}
-1. **Draw an octagon.** {medium}
-1. **Draw a circle.** {medium}
-1. **Draw a circle with a dashed line. Tip: `penUp() + penDown()`** {hard}
-1. **Draw a spiral.** {hard}
-1. **Using a loop, draw 10 concentric triangles.** {hard}
-1. **Draw the figure below.** {hard}
-1. **Create a `function polygon(sides)` that receives a `sides` parameter and draws a regular polygon.** {hard}
+1. Draw a pentagon. `•`
+1. Draw an octagon. `••`
+1. Draw a circle. `••`
+1. Draw a circle with a dashed line. Tip: `penUp() + penDown()` `•••`
+1. Draw a spiral. `•••`
+1. Using a loop, draw 10 concentric triangles. `•••`
+1. Draw the figure below. `•••`
+1. Create a `function polygon(sides)` that receives a `sides` parameter and draws a regular polygon. `•••`
 
 ![challenge_1.png](challenge_1.png)
 
-### Modify the Multiple Triangles Example {difficulty}
+### Modify the Multiple Triangles Example
 
-1. **Draw each triangle with different colored strokes.** {easy}
-1. **Change the triangle function to draw pentagons.** {medium}
-1. **Draw a 3x3 grid of pentagons.** {hard}
+1. Draw each triangle with different colored strokes. `•`
+1. Change the triangle function to draw pentagons. `••`
+1. Draw a 3x3 grid of pentagons. `•••`
    {continue}
 
 Style Tip: If you change what a function does, you should change its name as well. Did you change the function name when completing challenge 6?
 
-### Modify the Spirograph Example {difficulty}
+### Modify the Spirograph Example
 
-1. **Change the `moveForward()` parameter to `i * 3`.** {easy}
-1. **Center the drawing in the middle of the canvas.** {medium}
-1. **Comment out the `noLoop()`.** {easy}
-1. **Change the `turnRight()` parameter to `175 + frameCount`.** {easy}
+1. Change the `moveForward()` parameter to `i * 3`. `•`
+1. Center the drawing in the middle of the canvas. `••`
+1. Comment out the `noLoop()`. `•`
+1. Change the `turnRight()` parameter to `175 + frameCount`. `•`
    {continue}
 
 </div>

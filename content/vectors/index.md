@@ -214,7 +214,7 @@ A super-useful feature of Paper.js is the ability to combine shapes with boolean
 
 {% js-lab "sketches/example_boolean.js" %}
 
-<div class="activity">
+<div class="activity challenges">
 
 ## Coding Challenges
 
@@ -230,31 +230,28 @@ Explore Paper.js by modifying the examples above. Work through the following cha
 
 <!-- It might help to have the documentation for [Paper.js Path](http://paperjs.org/reference/path/) handy. -->
 
-### Modify the Basic Example {difficulty}
+### Modify the Basic Example
 
-1. **Make both lines 8 pixels wide and blue.** {easy}
-1. **Set the `.strokeCap` of both lines to `round`.** {easy}
-1. **Make 50 lines with random start and end points.**
+1. Make both lines 8 pixels wide and blue. `•`
+1. Set the `.strokeCap` of both lines to `round`. `•`
+1. Make 50 lines with random start and end points.<br/>
+   You don't have the p5.js `random()` function in Paper.js, but you do have JavaScript's `Math.random()`. This will get you a random value between 0 and 500: `Math.random() * 500`. `••`
+1. Make each of the 50 lines a random width and color. `••`
 
-   **You don't have the p5.js `random()` function in Paper.js, but you do have JavaScript's `Math.random()`. This will get you a random value between 0 and 500: `Math.random() * 500`.** {medium}
+### Modify the Boolean Example
 
-1. **Make each of the 50 lines a random width and color.** {medium}
+1. Make the green square 500 pixels wide. `•`
+1. Change the function that creates comboPath from `subtract` to `unite`. `•`
+1. Change the function again. This time try `intersect`. `•`
+1. Change the green square to an ellipse. `••`
+1. Remove the green and red shapes, leaving only the compound shape. Tip: `.remove()` [docs](http://paperjs.org/reference/path/#remove). `•••`
    {continue}
 
-### Modify the Boolean Example {difficulty}
+### Create from Scratch
 
-1. **Make the green square 500 pixels wide.** {easy}
-1. **Change the function that creates comboPath from `subtract` to `unite`.** {easy}
-1. **Change the function again. This time try `intersect`.** {easy}
-1. **Change the green square to an ellipse.** {medium}
-1. **Remove the green and red shapes, leaving only the compound shape. Tip: `.remove()` [docs](http://paperjs.org/reference/path/#remove).** {hard}
-   {continue}
-
-### Create from Scratch {difficulty}
-
-1. **Draw a simple stick figure.** {easy}
-1. **Create a compound shape from _three_ shapes using any of the boolean operations: `unite`, `intersect`, `subtract`. Tip: You'll need to do this in two steps.** {medium}
-1. **Create the drawing below.** {hard}
+1. Draw a simple stick figure. `•`
+1. Create a compound shape from _three_ shapes using any of the boolean operations: `unite`, `intersect`, `subtract`. Tip: You'll need to do this in two steps. `••`
+1. Create the drawing below. `•••`
    {continue}
 
 {% js-show "sketches/challenge.js" %}
