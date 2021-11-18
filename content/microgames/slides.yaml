@@ -33,3 +33,27 @@
     - label: WarioWare
       href: https://arcadespot.com/game/wario-ware-inc/
       subtitle: Game Page
+
+- artist: Munro Hoberman
+  title: Aeronaut, 2020
+  image: https://i.imgur.com/YmO8MmI.gif
+  comments: Comp Form alumni, Munro Hoberman, created this low stakes flight simulator game.
+  links:
+    - label: Aeronaut
+      href: https://munro.itch.io/aeronaut
+      subtitle: Game Page
+    - label: munrohoberman.com
+      href: http://www.munrohoberman.com/
+      subtitle: Artist Site
+
+- artist: Tomasz Wesołowski
+  title: Beat Rocks, 2021
+  image: ./slides/tomasz_wesołowski.png
+  comments: Tomasz turned the classic aestroids arcade game into a rhythm challenge. The entire game is just under 13 kilobytes and is made entirely with Javascript.
+  links:
+    - label: Beat Rocks
+      href: https://munro.itch.io/aeronaut
+      subtitle: Game Page
+    - label: kos.gd
+      href: https://kos.gd/
+      subtitle: Artist Site
