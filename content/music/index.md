@@ -16,7 +16,7 @@ Algorithmic Music
 : In [algorithmic music](https://en.wikipedia.org/wiki/Algorithmic_composition), an algorithm is employed _at the time of composition_ resulting in a fixed score.
 
 Aleatoric Music
-: In [aleatoric music](https://en.wikipedia.org/wiki/Aleatoric_music), important aspects of a composition are intended to be decided _at the time of the performance_. Aleatoric music allows for variation according to the performer or chance within a specific structure. For example, a musical system published in 1792, _Anleitung zum Componieren von Walzern so viele man will vermittelst zweier Würfel, ohne etwas von der Musik oder Composition zu verstehen (Instructions for the composition of as many waltzes as one desires with two dice, without understanding anything about music or composition)_ employed chance to arrange pre-composed measures of music.
+: In [aleatoric music](https://en.wikipedia.org/wiki/Aleatoric_music), important aspects of a composition are intended to be decided _at the time of the performance_. Aleatoric music allows for variation according to the performer or chance within a specific structure.
 
 Generative Music
 : Brian Eno used the term [Generative Music](https://en.wikipedia.org/wiki/Generative_music) to describe music that is created by a system and that constantly changes.
@@ -55,11 +55,11 @@ We'll look at how to plan this project, the pieces that need to be built, and ho
 
 Our result will be a simplified version of [this demo](http://psam3060-d-s16.github.io/class_notes/week_9/sketch_music/).
 
-<div class="callout">
+<!-- <div class="callout">
 
 The examples in the chapter originally used the p5.sound library. You can find information about building a synth with p5.sound [here](./p5_sound.html).
 
-</div>
+</div> -->
 
 ## Synthesizing a Note
 
