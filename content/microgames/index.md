@@ -182,7 +182,10 @@ Create a couch co-op microgame!
 : How much game can fit in 13k of Javascript? Find out in this coding competition.
 
 [The Nothings Suite](https://pippinbarr.github.io/the-nothings-suite/)
-: A collection of minigames made using Unity, Twine, and PICO-8 by Pippin Barr.
+: A collection of microgames made using Unity, Twine, and PICO-8 by Pippin Barr.
+
+[GIPHY Arcade](https://arcade.giphy.com/)
+: Play, share, and build customized microgames through GIPHY.
 
 <style>
   .spoiler h3 {
