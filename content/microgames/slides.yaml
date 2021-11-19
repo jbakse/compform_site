@@ -57,3 +57,15 @@
     - label: kos.gd
       href: https://kos.gd/
       subtitle: Artist Site
+
+- artist: 2DArray
+  title: Froggy Road, 2018
+  image: https://img.itch.zone/aW1nLzE2MzgyMjMucG5n/original/Ur%2FaB0.png
+  comments: The video game studio 2D Array made a Frogger-inspired game using only 560 characters of code.
+  links:
+    - label: Froggy Road
+      href: https://2darray.itch.io/froggy-road
+      subtitle: Game Page
+    - label: 2darray.net
+      href: http://2darray.net/
+      subtitle: Artist Site
