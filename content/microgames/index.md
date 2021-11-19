@@ -140,14 +140,6 @@ Explore p5.play by completing these challenges.
 1. Make The King and The Kid in Green run towards each other. Make them stop when they collide. Tip: `overlap()` `•••`
 1. Make The King and The Kid in Green “bounce” when they collide. Tip: Look at the “bouncing” p5play example. `•••`
 
-```
-interuption
-```
-
-1. list
-2. list
-   {continue}
-
 ### Modify the p5.play Interaction Example
 
 1. Comment out the `mouseActive` line. See what happens. Then comment it back. `•`
@@ -185,6 +177,15 @@ Create a couch co-op microgame!
 
 [Piskel](https://www.piskelapp.com/)
 : A tool for building animated sprites.
+
+[Js13kGames](https://js13kgames.com/)
+: How much game can fit in 13k of Javascript? Find out in this coding competition.
+
+[The Nothings Suite](https://pippinbarr.github.io/the-nothings-suite/)
+: A collection of microgames made using Unity, Twine, and PICO-8 by Pippin Barr.
+
+[GIPHY Arcade](https://arcade.giphy.com/)
+: Play, share, and build customized microgames through GIPHY.
 
 <style>
   .spoiler h3 {

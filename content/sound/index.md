@@ -151,19 +151,19 @@ function record(length) {
 }
 ```
 
-<div class="activity">
+<div class="activity challenges">
 
 ## Coding Challenges
 
-### Modify the Drum Kit Example {difficulty}
+### Modify the Drum Kit Example
 
-1. **Switch around the samples used to play the beat.** {easy}
-1. **Change the timing to create a more complex beat.** {medium}
+1. Switch around the samples used to play the beat. `•`
+1. Change the timing to create a more complex beat. `••`
 
-### Modify the Bounce Example {difficulty}
+### Modify the Bounce Example
 
-1. **Add a drum sound when the ball bounces.** {medium}
-1. **Add a little randomness to the playback rate of the sound each time the ball bounces. This little trick can add some realism to sound effects.** {hard}
+1. Add a drum sound when the ball bounces. `••`
+1. Add a little randomness to the playback rate of the sound each time the ball bounces. This little trick can add some realism to sound effects. `•••`
    {continue}
 
 </div>

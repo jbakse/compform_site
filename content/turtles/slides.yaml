@@ -21,3 +21,24 @@
     - label: Mitchel Resnick
       href: https://web.media.mit.edu/~mres/
       subtitle: Artist Site
+
+- artist: Reinder Nijhoff
+  title: Turtletoy, 2018
+  image: ./slides/turtletoy.png
+  comments: Turtletoy is a web editor that allows users to create sketches using a simple javascript Turtle graphics API.
+  links:
+    - label: Turtletoy
+      href: https://turtletoy.net/
+      subtitle: Project Page
+    - label: reindernijhoff.net
+      href: https://reindernijhoff.net
+      subtitle: Artist Site
+
+- artist: ge1doot
+  title: Paired Hosts, 2019
+  image: ./slides/ge1doot.png
+  comments: The Turtletoy user ge1doot created these organic figure studies using turtle graphics.
+  links:
+    - label: Paired Hosts
+      href: https://turtletoy.net/turtle/005357575a
+      subtitle: Project Page

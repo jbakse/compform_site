@@ -33,3 +33,39 @@
     - label: WarioWare
       href: https://arcadespot.com/game/wario-ware-inc/
       subtitle: Game Page
+
+- artist: Munro Hoberman
+  title: Aeronaut, 2020
+  image: https://i.imgur.com/YmO8MmI.gif
+  comments: Comp Form alumni, Munro Hoberman, created this low stakes flight simulator game.
+  links:
+    - label: Aeronaut
+      href: https://munro.itch.io/aeronaut
+      subtitle: Game Page
+    - label: munrohoberman.com
+      href: http://www.munrohoberman.com/
+      subtitle: Artist Site
+
+- artist: Tomasz Wesołowski
+  title: Beat Rocks, 2021
+  image: ./slides/tomasz_wesołowski.png
+  comments: Tomasz turned the classic aestroids arcade game into a rhythm challenge. The entire game is just under 13 kilobytes and is made entirely with Javascript.
+  links:
+    - label: Beat Rocks
+      href: https://munro.itch.io/aeronaut
+      subtitle: Game Page
+    - label: kos.gd
+      href: https://kos.gd/
+      subtitle: Artist Site
+
+- artist: 2DArray
+  title: Froggy Road, 2018
+  image: https://img.itch.zone/aW1nLzE2MzgyMjMucG5n/original/Ur%2FaB0.png
+  comments: The video game studio 2D Array made a Frogger-inspired game using only 560 characters of code.
+  links:
+    - label: Froggy Road
+      href: https://2darray.itch.io/froggy-road
+      subtitle: Game Page
+    - label: 2darray.net
+      href: http://2darray.net/
+      subtitle: Artist Site

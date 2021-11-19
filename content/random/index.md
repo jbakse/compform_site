@@ -532,7 +532,7 @@ This example draws a simple landscape using geometric shapes. It defines functio
 
 {% js-lab "sketches/horizon.js" %}
 
-<div class='activity'>
+<div class='activity challenges'>
 
 ## Coding Challenges
 
@@ -545,21 +545,21 @@ Explore the study examples above by completing the following challenges.
 | 6 in 20 Minutes      | Good.                                                                                |
 | All 10 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Small Multiples Example {difficulty}
+### Modify the Small Multiples Example
 
-1. **Change the background color to dark grey.** {easy}
-1. **Change the circle color to white.** {easy}
-1. **Draw each circle filled with a randomly-chosen color.** {easy}
-1. **Draw each row with a randomly-chosen color.** {medium}
-1. **Draw each column with a randomly-chosen color.** {hard}
+1. Change the background color to dark grey. `•`
+1. Change the circle color to white. `•`
+1. Draw each circle filled with a randomly-chosen color. `•`
+1. Draw each row with a randomly-chosen color. `••`
+1. Draw each column with a randomly-chosen color. `•••`
 
-### Modify the Grass Example {difficulty}
+### Modify the Grass Example
 
-1. **Make the grass taller.** {easy}
-1. **Make the grass green.** {easy}
-1. **Make the grass messier.** {easy}
-1. **Make each blade of grass with a randomly-chosen shade of green.** {medium}
-1. **Make the short blades of grass darker than the tall ones.** {hard}
+1. Make the grass taller. `•`
+1. Make the grass green. `•`
+1. Make the grass messier. `•`
+1. Make each blade of grass with a randomly-chosen shade of green. `••`
+1. Make the short blades of grass darker than the tall ones. `•••`
    {continue}
 
 </div>

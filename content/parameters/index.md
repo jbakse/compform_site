@@ -311,7 +311,7 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 {% js-lab "sketches/square_tweakpane.js" %}
 
-<div class='activity'>
+<div class='activity challenges'>
 
 ## Coding Challenges
 
@@ -324,21 +324,20 @@ Explore the study examples above by completing the following challenges.
 | 6 in 20 Minutes      | Good.                                                                                |
 | All 10 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Globals as Interface Example {difficulty}
+### Modify the Globals as Interface Example
 
-1. **Make each square a different randomly-chosen size.**{easy}
-1. **Add a white stroke to the squares.** {easy}
-1. **Add a global variable parameter to control the width of the stroke.** {medium}
-1. **Add global variable parameters to control the minimum and maximum size of the square.** {medium}
-1. **Draw the square in two sizes: small and large. Randomly generate which of the two sizes the square will be.** {hard}
-1. **Add parameters to control the small size, large size, and percentage chance of drawing a large or small square.** {hard}
+1. Make each square a different randomly-chosen size. `•`
+1. Add a white stroke to the squares. `•`
+1. Add a global variable parameter to control the width of the stroke. `••`
+1. \*\*Add global variable parameters to control the minimum and maximum size of the square. `••`
+1. Draw the square in two sizes: small and large. Randomly generate which of the two sizes the square will be. `•••`
+1. Add parameters to control the small size, large size, and percentage chance of drawing a large or small square. `•••`
 
-### Modify the HTML Interfaces with Tweakpane Example {difficulty}
+### Modify the HTML Interfaces with Tweakpane Example
 
-1. **Add a slider to control the vertical position of the square.** {easy}
-1. **Add a color picker to control the background color of the sketch.** {medium}
-1. **Instead of drawing the square, draw a "target" of concentric white and red rings. Draw more rings to make a bigger target.** {hard}
-
+1. Add a slider to control the vertical position of the square. `•`
+1. Add a color picker to control the background color of the sketch. `••`
+1. Instead of drawing the square, draw a "target" of concentric white and red rings. Draw more rings to make a bigger target. `•••`
    {continue}
 
 </div>

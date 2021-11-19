@@ -130,7 +130,7 @@ The first two examples use a nested loop to set a value for every pixel in the i
 
 {% js-lab "sketches/basic_pixels_3.js" %}
 
-<div class="activity">
+<div class="activity challenges">
 
 ## Coding Challenges One
 
@@ -147,35 +147,35 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 
 ### Modify the Basic Example
 
-1. **Change the image resolution to `20x20`.** {easy}
-1. **Change the image resolution to `500x500`.** {easy}
-1. **Change the image resolution back to `10x10`.** {easy}
-1. **Make each pixel a random shade of blue.** {medium}
-1. **Make each pixel a random shade of gray.** {medium}
-1. **Color each pixel with `noise()` to visualize its values.** {hard}
+1. Change the image resolution to `20x20`. `•`
+1. Change the image resolution to `500x500`. `•`
+1. Change the image resolution back to `10x10`. `•`
+1. Make each pixel a random shade of blue. `••`
+1. Make each pixel a random shade of gray. `••`
+1. Color each pixel with `noise()` to visualize its values. `•••`
 
 ### Modify the Gradient Example
 
-1. **Make a horizontal black-to-blue gradient.** {easy}
-1. **Make a vertical green-to-black gradient.** {easy}
-1. **Make a horizontal white-to-blue gradient.** {easy}
-1. **Make a vertical rainbow gradient. Tip: `colorMode()`** {medium}
-1. **Create an inset square with a gradient, surrounded by randomly-colored pixels.** {hard}
-1. **Make a radial gradient from black to red. Tip: `dist()`** {hard}
-1. **Create a diagonal gradient.** {hard}
+1. Make a horizontal black-to-blue gradient. `•`
+1. Make a vertical green-to-black gradient. `•`
+1. Make a horizontal white-to-blue gradient. `•`
+1. Make a vertical rainbow gradient. Tip: `colorMode()` `••`
+1. Create an inset square with a gradient, surrounded by randomly-colored pixels. `•••`
+1. Make a radial gradient from black to red. Tip: `dist()` `•••`
+1. Create a diagonal gradient. `•••`
    {continue}
 
 ### Modify the Random Access Example
 
-1. **Change the image resolution to `50x50`, adjust the code to fill the image.** {easy}
-1. **Instead of drawing single pixels, draw little plus marks (`+`) at random locations.** {medium}
-1. **Make each `+` a random color.** {medium}
+1. Change the image resolution to `50x50`, adjust the code to fill the image. `•`
+1. Instead of drawing single pixels, draw little plus marks (`+`) at random locations. `••`
+1. Make each `+` a random color. `••`
    {continue}
 
 ### Start from Scratch
 
-1. **Use `sin()` to create a repeating black-to-red-to-black color wave.** {hard}
-1. **Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`.** {hard}
+1. Use `sin()` to create a repeating black-to-red-to-black color wave. `•••`
+1. Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`. `•••`
    {continue}
 
 </div>
