@@ -298,13 +298,13 @@ Basic images are centered and shown 100%
 ## Slides
 
 {% slides %}
-{% include ./test_slides.yaml %}
+{% include ./test_slides_2.yaml %}
 {% endslides %}
 
 # Slides 2
 
 {% slides %}
-{% include ./test_slides_2.yaml %}
+{% include ./test_slides.yaml %}
 {% endslides %}
 
 # Spoilers
