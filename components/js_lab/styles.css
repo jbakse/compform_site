@@ -1,164 +1,107 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono:300");
 
 /* /////////////////////////////////////////
 /// Lab
 */
 
 .js-lab {
-    margin: 0;
+  margin: 0;
 
-    position: absolute;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 
-    /* background: #CCF; */
-    display: flex;
-    justify-content: space-between;
+  /* background: #CCF; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .js-lab #editor-wrap {
-    background-color: #F4F3F1;
+  background-color: #f4f3f1;
 
-    width: calc(50% - 15px);
-    height: 100%;
-    position: relative;
+  width: calc(50% - 15px);
+  height: 100%;
+  position: relative;
 }
-
 
 .js-lab #preview-wrap {
-    background-color: #F4F3F1;
+  background-color: #f4f3f1;
 
-    width: calc(50% - 15px);
-    height: 100%;
-    position: relative;
+  width: calc(50% - 15px);
+  height: 100%;
+  position: relative;
 }
-
-
 
 @media (max-width: 576px) {
+  .js-lab {
+    /* background: pink; */
+    flex-direction: column-reverse;
+  }
 
-    .js-lab {
-        /* background: pink; */
-        flex-direction: column-reverse;
-    }
+  .js-lab #editor-wrap {
+    height: calc(60%);
+    width: 100%;
+  }
 
-    .js-lab #editor-wrap {
-
-        height: calc(60%);
-        width: 100%;
-    }
-
-
-    .js-lab #preview-wrap {
-
-        height: calc(40%);
-        width: 100%;
-    }
+  .js-lab #preview-wrap {
+    height: calc(40%);
+    width: 100%;
+  }
 }
-
-
-
-
-
-
-
 
 .js-lab #editor {
-    line-height: 20px !important;
-    background-color: #F4F3F1;
-    position: absolute;
-    top: 10px;
-    bottom: 30px;
-    left: 0;
-    right: 5px;
+  line-height: 20px !important;
+  background-color: #f4f3f1;
+  position: absolute;
+  top: 10px;
+  bottom: 30px;
+  left: 0;
+  right: 5px;
 }
 
 @media (max-width: 576px) {
-    .js-lab #editor {
-
-        bottom: 10px;
-    }
+  .js-lab #editor {
+    bottom: 10px;
+  }
 }
-
 
 .js-lab #editor .ace_selection {
-    background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-
 .js-lab #editor .ace_gutter {
-    background-color: #F4F3F1;
+  background-color: #f4f3f1;
 }
 
 .js-lab #editor .ace_gutter-cell {
-    color: #AAA;
+  color: #aaa;
 }
 
 .js-lab #editor .ace_active-line {
-    background-color: rgba(0, 0, 0, .02);
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
-
 .js-lab #reminder {
-    position: absolute;
-    box-sizing: border-box;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 
-    padding: 5px 10px;
-    background-color: #F4F3F1;
+  padding: 5px 10px;
+  background-color: #f4f3f1;
 
-    color: #AAA;
-    font-family: Monaco;
-    font-size: 10px;
-    z-index: 10;
+  color: #aaa;
+  font-family: Monaco;
+  font-size: 10px;
+  z-index: 10;
 
-    border-top: 1px solid rgba(0, 0, 0, .1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .js-lab #maxamize {
-    color: inherit;
+  color: inherit;
 }
-
-
-
-
-
-
-
 
 /* .js-lab #maxamize {
     position: absolute;
@@ -170,407 +113,142 @@
 } */
 
 @media (max-width: 576px) {
-    .js-lab #reminder {
-        display: none;
-    }
+  .js-lab #reminder {
+    display: none;
+  }
 }
-
-
-
 
 .js-lab #preview {
-    background-color: #F4F3F1;
+  background-color: #f4f3f1;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 
-    border: none;
+  border: none;
 }
 
-
-
-
 .js-lab ::-webkit-scrollbar-track {
-
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .js-lab ::-webkit-scrollbar {
-
-    height: 6px;
-    width: 6px;
+  height: 6px;
+  width: 6px;
 }
 
 .js-lab ::-webkit-scrollbar-thumb {
-
-    border-radius: 10px;
-    background-color: #CCC;
+  border-radius: 10px;
+  background-color: #ccc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* /////////////////////////////////////////
 /// Lab View
 */
 
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300');
-
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono:300");
 
 body.js-lab-view {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    background-color: #F4F3F1;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #f4f3f1;
 }
 
 .js-lab-view canvas {
-    max-width: 100% !important;
-    height: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
-@media (max-width: 576px) {
-    .js-lab-view canvas {
-        max-height: 100% !important;
-        width: auto !important;
-    }
-}
+/* @media (max-width: 576px) {
+  .js-lab-view canvas {
+    height: 200px !important;
+    max-height: 100% !important;
+    width: auto !important;
 
+    border: 1px solid blue;
+  }
+} */
 
 .js-lab-view div.lab-console {
-    /*border: 1px solid red;*/
-    z-index: 10;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-height: 30%;
-    overflow: auto;
-    padding: 10px;
-    box-sizing: border-box;
-    border-top: 1px solid black;
-    background: rgba(0, 0, 0, .4);
-    color: white;
-    font-family: "Monaco", monospace;
-    font-size: 12px;
-    line-height: 1.5;
+  /*border: 1px solid red;*/
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 30%;
+  overflow: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-family: "Monaco", monospace;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .js-lab-view div.lab-console:empty {
-    display: none;
+  display: none;
 }
 
 .js-lab-view span.error {
-    color: gray;
+  color: gray;
 }
 
 .js-lab-view span.error b {
-    color: red;
+  color: red;
 }
 
 .cover {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
-    font-family: monospace;
-    background-color: #F4F3F1;
-    color: #AAA;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  background-color: #f4f3f1;
+  color: #aaa;
 
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .cover.visible {
-    opacity: 100;
+  opacity: 100;
 }
 
 .cover {
-    opacity: 0;
-    transition: all .3s;
+  opacity: 0;
+  transition: all 0.3s;
 }
-
 
 .js-lab-view p,
 .js-lab-view label {
-
-    font-size: 12px;
-    margin-bottom: .25em;
+  font-size: 12px;
+  margin-bottom: 0.25em;
 }
 
 body.js-lab-view {
-    box-sizing: border-box;
-    padding: 10px;
+  box-sizing: border-box;
+  padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #editor.ace_editor {
-    font-family: 'Overpass Mono', monospace;
-    font-size: 14px;
-    color: #000;
+  font-family: "Overpass Mono", monospace;
+  font-size: 14px;
+  color: #000;
 }
-
-
-
 
 .ace_scroller {
-
-    bottom: 0 !important;
-    right: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
 
