@@ -9,9 +9,9 @@
 @mixin font-copy() {
   font-family: "Roboto";
   font-weight: 300;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 0.31px;
-  line-height: 1.6;
+  line-height: 1.75;
   color: $dark-grey;
 }
 
@@ -209,7 +209,7 @@
 
   dl > dt {
     font-weight: 400;
-    font-size: 0.75em;
+    // font-size: 0.75em;
   }
   dl > dd {
     // margin-bottom: 15px;
@@ -217,7 +217,11 @@
   }
 
   dl > dd + dt {
-    margin-top: 1em;
+    margin-top: 1.5em;
+  }
+
+  dl > dt + dd {
+    margin-top: 0.5em;
   }
 
   /* hr */
