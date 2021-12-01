@@ -22,7 +22,7 @@ The Logo computer programming language was [created in 1967](http://el.media.mit
 
 </div>
 
-One of the key ideas introduced in Logo was _turtle graphics_. The turtle was originally a small programmable physical robot that carried a pen and could trace its path as it moved. Logo could control this turtle with simple commands: `left` and `right` to turn and `forward` to move. This idea was extended to drawing on-screen using a virtual turtle.
+One of the key ideas introduced in Logo was _turtle graphics_. The turtle was originally a small programmable physical robot that carried a pen and could trace its path as it moved. Logo could control this turtle with simple commands like `left` and `right` to turn and `forward` to move. This idea was extended to drawing on-screen using a virtual turtle.
 
 <div class="two-up">
 
@@ -70,15 +70,15 @@ Did involving your bodily senses and physical movement impact how you thought ab
 
 </div>
 
-# A Shift in Perspective
+## A Shift in Perspective
 
-The p5.js graphics API uses a _Cartesian_ coordinate system. To draw a line in p5.js you might use code like this:
+Most graphics APIs—including p5.js—use a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system). To draw a line in p5.js you might use code like this:
 
 ```javascript
 line(100, 100, 200, 200);
 ```
 
-This prioritizes the `x,y` coordinates of the **start** and **end** of the line. The **length** and **angle** of the line are deprioritized: they are not directly specified at all.
+This prioritizes the `x,y` coordinates of the **start** and **end** of the line. The **length** and **angle** of the line are deprioritized. You can infer them, but they are not directly specified. Also note that these positions are **absolute** coordinates measured on the canvas.
 
 Turtle graphics flips these priorities around. This is code you might write to draw a line using a turtle:
 
@@ -89,7 +89,7 @@ forward(100);
 
 Now the line's **angle** and **length** are specified instead of its **start** and **end**. This is one of the key shifts in thinking encouraged by turtle graphics.
 
-The second shift becomes apparent if we ask where the line in the second example should be drawn. We can figure out the angle and length of a line from its start and end points, but we can't go the other way. Knowing the length and angle of a line does not tell us where it should be drawn. In turtle graphics, commands like `right` and `forward` use coordinates **relative** to the turtle, rather than **absolute** coordinates measured on the canvas.
+The second shift becomes apparent if we ask where the line in the second example should be drawn. We can figure out the angle and length of a line from its start and end points, but we can't go the other way. Knowing the length and angle of a line does not tell us where it should be drawn. In turtle graphics, commands like `right` and `forward` are **relative** to the turtle.
 
 This shift in priorities makes some things easier to express and some things harder:
 
@@ -155,14 +155,14 @@ for (side = 0; side < 5; side++) {
 
 </div>
 
-In the examples above, the Cartesian system works well for drawing a square, but the Cartesian code for the star is awkward and unclear. Changing the star's position or size would take a lot of work. Work should be done by computers, not programmers. With turtle graphics, the code that draws the star mirrors how we might describe the figure. It is a more natural expression of the idea and will be easier to modify.
+In the examples above, the Cartesian system works well for drawing a square, but the Cartesian code for the star is awkward and unclear. Changing the star's position or size would take a lot of work. Work should be done by computers, not programmers. With turtle graphics, the code that draws the star mirrors how we might describe the figure. It is a more natural expression of the idea and will be easier to modify to draw stars with different numbers of points.
 
 <!-- <div class="s-lab">
 
 /turtles/sketches/turtle_star.js
 </div> -->
 
-Both frameworks can be used to draw a square or star. We are not [_forced_](https://en.wikipedia.org/wiki/Technological_determinism) to draw specific things by either framework, but each framework encourages a different way of thinking. Just as working directly with pixels encourages different forms than working with higher-level drawing APIs, working with turtle graphics encourages yet other forms.
+Both approaches can be used to draw a square or star. We are not [_forced_](https://en.wikipedia.org/wiki/Technological_determinism) to draw specific things by either framework, but each framework encourages a different way of thinking. Just as working directly with pixels encourages different forms than working with higher-level drawing APIs, working with turtle graphics encourages yet other forms.
 
 Two of the forms that turtles tend to encourage are spirograph-like figures and recursive trees.
 
@@ -176,7 +176,7 @@ Two of the forms that turtles tend to encourage are spirograph-like figures and 
 
 ## A Simple Turtle in p5.js
 
-To explore using turtle graphics with p5.js, I've created a basic turtle class for you to use this week. The examples above and below use this library, and you can copy it into your sketches.
+To explore using turtle graphics with p5.js, I've created a basic turtle class for you to use. The examples above and below use this library, and you can copy it into your sketches.
 
 Grab [the code here](turtle/turtle.html).
 
@@ -188,66 +188,57 @@ Grab [the code here](turtle/turtle.html).
 ### Comp Form Turtle API
 
 `myTurtle = new Turtle(x, y)`
-
-The turtle constructor: it creates a turtle object.
-
-It takes optional [x, y] starting coordinates or defaults to the center of the sketch.
+: The turtle constructor: it creates a turtle object. It takes optional `x`, `y` starting coordinates or defaults to the center of the sketch.
 
 `myTurtle.moveForward(distance)`
-
-Moves the turtle along its current bearing, drawing a line if pen is down.
+: Moves the turtle forward `distance` pixels along its current bearing, drawing a line if pen is down.
 
 `myTurtle.moveBackward(distance)`
-
-Moves the turtle backward from its current bearing, drawing a line if pen is down.
+: Moves the turtle backward `distance` pixels from its current bearing, drawing a line if pen is down.
 
 `myTurtle.moveTo(x, y)`
-
-Instantly transports the turtle to the provided x, y location, drawing a line if pen is down.
+: Instantly transports the turtle to the provided `x`,`y` location, drawing a line if pen is down.
 
 `myTurtle.turnRight(angleDegrees)`
-
-Rotates the turtle's bearing clockwise by the provided angle in degrees.
+: Rotates the turtle's bearing clockwise by `angleDegrees`.
 
 `myTurtle.turnLeft(angleDegrees)`
-
-Rotates the turtle's bearing counter-clockwise by the provided angle in degrees.
+: Rotates the turtle's bearing counter-clockwise by `angleDegrees`.
 
 `myTurtle.turnTo(angleDegrees)`
-
-Changes the turtle's bearing to the provided angle. The angle is measured in clockwise degrees from straight right.
+: Changes the turtle's bearing to the provided `angleDegrees`. The angle is measured in clockwise degrees from straight right.
 
 `myTurtle.penUp()`
-
-Tells the turtle to stop drawing lines while it moves.
+: Tells the turtle to stop drawing lines while it moves.
 
 `myTurtle.penDown()`
-
-Tells the turtle to start drawing lines while it moves.
+: Tells the turtle to start drawing lines while it moves.
 
 `myTurtle.image(image, width, height)`
-
-Draws an image centered on the turtle's current location and aligned with the turtle's rotation.
+: Draws an image centered on the turtle's current location and aligned with the turtle's rotation.
 
 `myTurtle.pushState()`
-
-Records the turtle’s current state (position, bearing, etc.) to a stack.
+: Records the turtle’s current state (position, bearing, etc.) to a stack.
 
 `myTurtle.popState()`
-
-Restores the turtle’s state to the top recorded state on the stack.
+: Restores the turtle’s state to the top recorded state on the stack.
 
 ## Turtle Examples
 
-### Turtle Square Example
+<!-- ### Turtle Square Example
 
-{% js-lab "sketches/turtle_square.js" %}
+This basic example creates a turtle and uses it to draw a square.
+{% js-lab "sketches/turtle_square.js" %} -->
 
 ### Turtle Triangle Example
+
+This basic example creates a turtle and uses it to draw a triangle.
 
 {% js-lab "sketches/turtle_triangle.js" %}
 
 ### Turtle Multiple Triangles Example
+
+This example has a `drawTriangle()` function that controls the turtle passed as the first argument. The code moves the turtle to random locations before calling `drawTriangle()`.
 
 {% js-lab "sketches/turtle_triangles.js" %}
 
@@ -298,19 +289,25 @@ Style Tip: If you change what a function does, you should change its name as wel
 
 ### Turtle + Images
 
+The turtle class can also draw images aligned with the current position of the turtle.
+
 {% js-lab "sketches/turtle_image.js" %}
 
 ### Turtle Push + Pop
+
+You can use `push()` and `pop()` together to take a break from drawing one shape, draw something else, and then return to original shape.
 
 {% js-lab "sketches/turtle_push.js" %}
 
 ### Turtle Recursive Tree
 
+A common application of turtle graphics is drawing organic branching shapes, like trees.
+
 {% js-lab "sketches/turtle_tree_2.js" %}
 
 ## Drawing Machines in Code
 
-Turtles make it possible to change how you think about drawing and give you a new set of tools for expressing an image in code. They don't change _what you can do_ though: [under the hood](turtle/turtle.html) the turtle class uses the standard p5.js drawing API and a little trigonometry. Instead, using a turtle changes _how you do it_. Changing your approach and mental model has a significant effect on the solutions you create. You could make the same exact drawing with or without turtles, but in practice using turtles tends to lead to certain motifs and styles.
+Turtles make it possible to change how you think about drawing and give you a new set of tools for expressing an image in code. They don't change _what you can do_: [under the hood](turtle/turtle.html) the turtle class uses the standard p5.js drawing API and a little trigonometry. Instead, using a turtle changes _how you do it_. Changing your approach and mental model has a significant effect on the solutions you create. You could make the same exact drawings with or without turtles, but in practice using turtles tends to lead to certain motifs and styles.
 
 Turtles are just one example of a drawing machine. Inventing your own drawing machine is a rewarding exercise. It leads to new ways of approaching problems, a deeper understanding of programming, and new aesthetics to explore.
 
