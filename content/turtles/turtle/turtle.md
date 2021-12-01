@@ -3,7 +3,7 @@ title: Turtle Library
 layout: compform_plain.pug
 ---
 
-# Turtle.js
+## Turtle.js
 
 The following is a basic implementation of a graphics turtle. This implementation is written in Javascript and uses the p5.js library.
 
