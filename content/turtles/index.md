@@ -14,15 +14,13 @@ The Logo computer programming language was [created in 1967](http://el.media.mit
 
 > In many schools today, the phrase "computer-aided instruction" means making the computer teach the child. One might say _the computer is being used to program the child_. In my vision, _the child programs the computer_ and, in doing so, both acquires a sense of mastery over a piece of the most modern and powerful technology and establishes an intimate contact with some of the deepest ideas from science, from mathematics, and from the art of intellectual model building.
 
-<div class="links-sidebar">
+<div class="sidebar link-box">
 
-[Wikipedia:<br/> Turtle Graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
-
-[MIT: Scratch + Turtles](https://scratch.mit.edu/projects/196503540/)
+[**Scratch + Turtles** MIT](https://scratch.mit.edu/projects/196503540/)
 
 </div>
 
-One of the key ideas introduced in Logo was _turtle graphics_. The turtle was originally a small programmable physical robot that carried a pen and could trace its path as it moved. Logo could control this turtle with simple commands like `left` and `right` to turn and `forward` to move. This idea was extended to drawing on-screen using a virtual turtle.
+One of the key ideas introduced in Logo was [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics). The turtle was originally a small programmable physical robot that carried a pen and could trace its path as it moved. Logo could control this turtle with simple commands like `left` and `right` to turn and `forward` to move. This idea was extended to drawing on-screen using a virtual turtle.
 
 <div class="two-up">
 
@@ -317,7 +315,7 @@ Turtles are just one example of a drawing machine. Inventing your own drawing ma
 
 ### Sketch
 
-Explore using turtle graphics. Start with a crazy spirograph thing and get that out of the way. Then see how much variety you can get from the turtle.{bigger}
+Explore using turtle graphics. Start with a crazy spirograph thing and get that out of the way. Then see how much variety you can get from the turtle.
 
 ### Challenge: Animal Face
 
