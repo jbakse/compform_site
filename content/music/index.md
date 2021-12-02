@@ -63,9 +63,7 @@ The examples in the chapter originally used the p5.sound library. You can find i
 
 ## Synthesizing a Note
 
-Generating a melody isn't much use if we can't hear it. We could export our melody in an interchange format like MIDI, and play it back in an audio software package, but it will be more fun to build a synthesizer into our generator so we can hear the results right away. A synthesizer is a computer program or circuit that generates sounds. Synthesizers can simulate the sounds of natural instruments like pianos, guitars, and drums or create entirely new sounds.
-
-[Wikipedia: Synthesizer](https://en.wikipedia.org/wiki/Synthesizer)
+Generating a melody isn't much use if we can't hear it. We could export our melody in an interchange format like MIDI, and play it back in an audio software package, but it will be more fun to build a synthesizer into our generator so we can hear the results right away. A [synthesizer](https://en.wikipedia.org/wiki/Synthesizer) is a computer program or circuit that generates sounds. Synthesizers can simulate the sounds of natural instruments like pianos, guitars, and drums or create entirely new sounds.
 
 <div class="discussion">
 
@@ -138,7 +136,11 @@ Jake Albaugh's pretty cool [Musical Chord Progression Arpeggiator](https://codep
 
 The Tone.js library offers a several synthesizer options. The simplest one is `Tone.Synth()`. `Tone.Synth()` pairs an oscillator that generates a tone and an ADSR envelope that controls its volume. Even though this is a pretty simple synth, it can create a wide range of sounds.
 
-[Play with the official Tone.Synth() example.](https://tonejs.github.io/examples/simpleSynth.html){boxed right}
+<div class='sidebar link-box'>
+
+[**Simple Synth** Tone.js Example](https://tonejs.github.io/examples/simpleSynth.html)
+
+</div>
 
 #### Using Tone.Synth()
 
@@ -303,7 +305,7 @@ Codebases often diverge from their initial specifications. Compare the target ch
 
 ### Sketch
 
-Continuing to explore generating and visualizing sound and music.{bigger}
+Continuing to explore generating and visualizing sound and music.
 
 ### Challenge: Write and Record a Song
 
