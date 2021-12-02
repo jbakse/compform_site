@@ -11,7 +11,6 @@ software: OpenSCAD
 ## 3D Forms
 
 > It is not hard to understand modern art. If it hangs on a wall it's a painting, and if you can walk around it it's a sculpture.
-> {bigger}
 
 Tom Stoppard, author of [Rosencrantz & Guildenstern are Dead](<https://en.wikipedia.org/wiki/Rosencrantz_%26_Guildenstern_Are_Dead_(film)>){attrib}
 
@@ -25,21 +24,25 @@ On screen, 3D graphics exist in between painting and sculpture. You can rotate c
 
 ## OpenSCAD
 
-[OpenSCAD](http://www.openscad.org/about.html) is a language for specifying procedural 3D forms using [constructive solid geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry). CSG is a modeling technique in which complex shapes are created by combining simple shapes using boolean operations like union, difference, and intersection. It is well-suited to designing mechanical parts for manufacturing, but not well-suited for organic shapes or characters.
+[_OpenSCAD_](http://www.openscad.org/about.html) is a language for specifying procedural 3D forms using [constructive solid geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry). CSG is a modeling technique in which complex shapes are created by combining simple shapes using boolean operations like union, difference, and intersection. It is well-suited to designing mechanical parts for manufacturing, but not well-suited for organic shapes or characters.
 
-![OpenSCAD](images/OpenSCAD_screenshot.png)
+![*OpenSCAD*](images/OpenSCAD_screenshot.png)
 
-[OpenSCAD.org](http://www.openscad.org/)
-: Main site for OpenSCAD. IDE Download, Documentation, Examples.
+<div class="link-box">
 
-[CheatSheet](http://www.openscad.org/cheatsheet/index.html)
-: A quick index of OpenSCAD's syntax and library.
+[**OpenSCAD.org** Library Website](http://www.openscad.org/)
+Main site for OpenSCAD. IDE Download, Documentation, Examples.
 
-[Manual](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual)
-: The specifics of the OpenSCAD IDE and language.
+[**OpenSCAD CheatSheet** Official Documentation](http://www.openscad.org/cheatsheet/index.html)
+A quick index of OpenSCAD's syntax and library.
 
-[OpenSCAD.net](http://openscad.net/)
-: A web-based OpenSCAD editor and renderer. Does not implement every feature of OpenSCAD.
+[**OpenSCADManual** Official Documentation](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual)
+The specifics of the OpenSCAD IDE and language.
+
+[**OpenSCAD.net** Library Alternative](http://openscad.net/)
+A web-based OpenSCAD editor and renderer. Does not implement every feature of OpenSCAD.
+
+</div>
 
 <div class="activity">
 
@@ -71,17 +74,15 @@ These differences reflect the fundamentally different approach to programming in
 
 ### Functional vs. Procedural
 
-<div class="links-sidebar">
+<div class="sidebar link-box">
 
-[Wikipeda:<br/>Programming Paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
-
-[Talk:<br/>4 Paradigms in 40 Minutes](https://www.youtube.com/watch?v=cgVVZMfLjEI)
+[**4 Paradigms in 40 Minutes** Video](https://www.youtube.com/watch?v=cgVVZMfLjEI)
 
 </div>
 
 The [OpenSCAD Manual](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language) describes OpenSCAD as a [functional](https://en.wikipedia.org/wiki/Functional_programming) programming language. One could also more generally refer to OpenSCAD as a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) language. In contrast to JavaScript, C, and Processing, it is not an [imperative](https://en.wikipedia.org/wiki/Imperative_programming) or [procedural](https://en.wikipedia.org/wiki/Procedural_programming) language.
 
-Classifying programming languages by paradigm is tricky in practice. The boundaries of paradigms are not always clear. Different paradigms have different primary concerns and may be orthogonal to each other, and many languages support multiple paradigms.
+Classifying programming languages by [paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) is tricky in practice. The boundaries of paradigms are not always clear. Different paradigms have different primary concerns and may be orthogonal to each other, and many languages support multiple paradigms.
 
 | paradigm                    | description                                                                                                        |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -164,14 +165,18 @@ cylinder ({h=4, r=1, center=true});
 
 OpenSCAD's functional model has its advantages, but imperative languages also have advantages. For one, imperative languages are more familiar to most programmers. To explore constructive solid geometry modeling in an imperative style, you may want to use one of these tools inspired by OpenSCAD.
 
-[OpenJSCAD](http://joostn.github.io/OpenJsCad/)
-: Web-based solid modeling in JavaScript. OpenSCAD but in JS.
+<div class="link-box">
 
-[OpenJSCAD.org IDE](https://openjscad.org/) [OpenJSCAD.org repo](https://github.com/jscad/OpenJSCAD.org)
-: A web-based IDE built on OpenJSCAD.
+[**OpenJSCAD** Library Website](http://joostn.github.io/OpenJsCad/)
+Web-based solid modeling in JavaScript. OpenSCAD but in JS.
 
-[OpenJSCAD.org User and Programming Guide](https://en.wikibooks.org/wiki/OpenJSCAD_User_Guide)
-: Manual for OpenJSCAD syntax and library.
+[**OpenJSCAD.org** Web-Based IDE](https://openjscad.org/)
+A web-based IDE built on OpenJSCAD. Check out the [OpenJSCAD.org repo](https://github.com/jscad/OpenJSCAD.org).
+
+[**OpenJSCAD.org User and Programming Guide** Official Documentation](https://en.wikibooks.org/wiki/OpenJSCAD_User_Guide)
+Manual for OpenJSCAD syntax and library.
+
+</div>
 
 ## Study Examples
 
@@ -333,11 +338,15 @@ Build this shape so that you can parametrically control the number of disks that
 
 ## Parametric OpenSCAD
 
+<div class="sidebar link-box">
+
+[**Parametric Pulley** Thingiverse](https://www.thingiverse.com/thing:16627)
+
+[**Parametric Nuts + Bolts** Thingiverse](https://www.thingiverse.com/thing:193647)
+
+</div>
+
 Because OpenSCAD is a language, not an interactive modeler, OpenSCAD files fully specify the modeling process rather than the just the resulting geometry. This makes OpenSCAD very well-suited to parametric designs—flexible designs that a user can customize by adjusting parameters. [Thingiverse](https://www.thingiverse.com) uses OpenSCAD to allow users to share and customize 3D printable objects.
-
-[Parametric Pulley](https://www.thingiverse.com/thing:16627)
-
-[Parametric Nuts + Bolts](https://www.thingiverse.com/thing:193647)
 
 ## Digital Fabrication
 
@@ -345,13 +354,7 @@ Digital fabrication is a prototyping and production workflow that combines compu
 
 Machining is a subtractive manufacturing technique in which an object is carved out of a block of material. Computer numerical control (CNC) milling and [lathing](https://www.youtube.com/watch?v=q2PP9P-p79w) machines use subtractive manufacturing to make highly precise and very strong parts.
 
-3D printing refers to a range of additive fabrication techniques. In additive fabrication an object is built up, usually in layers. Because subtractive methods can only create shapes that allow the cutting tool to reach all the material that must be removed, additive fabrication can achieve shapes that subtractive manufacturing cannot. There are many types of 3D printing in use.
-
-<div class="links-sidebar">
-
-[Wikipedia: <br/> 3D Printing Processes](https://en.wikipedia.org/wiki/3D_printing_processes)
-
-</div>
+[3D printing](https://en.wikipedia.org/wiki/3D_printing_processes) refers to a range of additive fabrication techniques. In additive fabrication an object is built up, usually in layers. Because subtractive methods can only create shapes that allow the cutting tool to reach all the material that must be removed, additive fabrication can achieve shapes that subtractive manufacturing cannot. There are many types of 3D printing in use.
 
 Fused Deposition Modeling (FDM) + Fused Filament Fabrication (FFF)
 : Thermoplastic is fed from a spool through a heated extruder.
@@ -387,32 +390,30 @@ Greg Schomburg and I created this custom [drawbot project](http://justinbakse.co
 
 Support for procedural methods is common in 3D software. Nearly all CAD software has support for expressing design constrains and parameters. CG modeling software often hosts a runtime for executing scripts. These scripts are often used to add functionality to the UI, automate tasks, or procedurally generate 3D content.
 
-[Maya](https://www.autodesk.com/products/maya/overview) and [Blender](https://www.blender.org/)
-: Maya and Blender are full 3D creation suites that allow you to model, animate, and render 3D content.
+<div class="link-box">
 
-Maya is available for free with an [academic license](https://www.autodesk.com/education/free-software/featured).
+[**Maya** Product Page](https://www.autodesk.com/products/maya/overview) and
+Maya is a full 3D creation suite that allows you to model, animate, and render 3D content. Maya is available for free with an [academic license](https://www.autodesk.com/education/free-software/featured).
 
-Blender is free to everyone under the [GNU GPL license](https://www.blender.org/about/license/).
+[**Blender** Product Page](https://www.blender.org/)
+Blender is another 3D creation suite that's free to everyone under the [GNU GPL license](https://www.blender.org/about/license/).
 
-[Fusion 360](https://www.autodesk.com/products/fusion-360/overview) and [Tinkercad](https://www.tinkercad.com)
-: Fusion 360 is a cloud-based computer-aided design, manufacturing, and engineering package. Tinkercad is a much simpler tool for designing and printing 3D objects.
+[**Fusion 360** Product Page](https://www.autodesk.com/products/fusion-360/overview)
+Fusion 360 is a cloud-based computer-aided design, manufacturing, and engineering package. Tinkercad is a much simpler tool for designing and printing 3D objects.
 
+[**Tinkercad** Product Page](https://www.tinkercad.com)
 Tinkercad is free to use, and Fusion 360 has an [academic license](https://www.autodesk.com/education/free-software/featured)
 
-[Houdini](https://www.sidefx.com/)
-: Houdini is an extremely powerful tool for procedural 3D modeling and simulating for visual effects work. Houdini can be used to build parametric tools that work inside other 3D tools like Maya and Unity.
+[**Houdini** Product Page](https://www.sidefx.com/)
+Houdini is an extremely powerful tool for procedural 3D modeling and simulating for visual effects work. Houdini can be used to build parametric tools that work inside other 3D tools like Maya and Unity. Houdini has a reduced cost [educational license](https://www.sidefx.com/products/houdini-education/).
 
-Houdini has a reduced cost [educational license](https://www.sidefx.com/products/houdini-education/).
+[**Substance Designer** Product Page](https://www.allegorithmic.com/products/substance-designer)
+Substance Designer is a tool for procedurally creating realistic materials for 3D rendering. Available for free with an [educational license](https://www.allegorithmic.com/buy/education).
 
-[Substance Designer](https://www.allegorithmic.com/products/substance-designer)
-: Substance designer is a tool for procedurally creating realistic materials for 3D rendering.
+[**Grasshopper + Rhino** Product Page](http://www.grasshopper3d.com/)
+Grasshopper is a visual scripting plug-in for the 3D modeling software Rhino. It is used in generative architecture, product design, and art. Rhino 6 includes Grasshopper (Windows only) and has a reduced cost [educational license](https://www.rhino3d.com/edu).
 
-Available for free with an [educational license](https://www.allegorithmic.com/buy/education).
-
-[Grasshopper + Rhino](http://www.grasshopper3d.com/)
-: Grasshopper is a visual scripting plug-in for the 3D modeling software Rhino. It is used in generative architecture, product design, and art.
-
-Rhino 6 includes Grasshopper (Windows only) and has a reduced cost [educational license](https://www.rhino3d.com/edu).
+</div>
 
 <div class="assignment">
 
