@@ -74,7 +74,11 @@ Light and sound flow through our environment as electromagnetic and air pressure
 
 <!--[[This last sentence is unclear to me...I'll work on it.]]-->
 
-[Light and Sound Lecture Notes](./light_and_sound.html)
+<div class="link-box">
+
+[**Light and Sound** Lecture Notes](./light_and_sound.html)
+
+</div>
 
 ## Playing Sound with p5.js
 
