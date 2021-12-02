@@ -65,9 +65,9 @@ The heart of a real-time animation system is the draw loop. Most real-time draw 
 
 In a 60fps animation, each frame should be shown for 16.6 milliseconds. If drawing the frame takes only 10 milliseconds, the loop will _wait_ for the remaining 6.6. This prevents the animation from running too fast.
 
-<div class=".links-sidebar">
+<div class="sidebar link-box">
 
-[p5.js<br/> draw loop code](https://github.com/processing/p5.js/blob/ed94431045900c61cb1f78942a64e0f2a623df69/src/core/core.js#L341)
+[**p5.js Draw Loop Code** GitHub](https://github.com/processing/p5.js/blob/ed94431045900c61cb1f78942a64e0f2a623df69/src/core/core.js#L341)
 
 </div>
 
@@ -329,7 +329,7 @@ Complete the following challenges to deepen your understanding of the examples a
 
 ### Sketch
 
-This week focuses on creating smooth pre-rendered animations.{bigger}
+This week focuses on creating smooth pre-rendered animations.
 
 ### Challenge: Comp Form Bumper
 
