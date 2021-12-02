@@ -14,9 +14,9 @@ software: javascript + html
 
 Procedural generation can be used to create form in almost any media: image, video, animation, sound, sculpture. This chapter introduces some tactics for procedurally generating text, which may be the media most often computationally generated. Web pages are built out of text, and most of the time this text is computationally generated at least to some degree.
 
-<div class="links-sidebar">
+<div class='sidebar link-box'>
 
-[Google:<br/>How search works.](https://www.google.com/search/howsearchworks/)
+[**How Search Works** Google](https://www.google.com/search/howsearchworks/)
 
 </div>
 
@@ -65,39 +65,51 @@ Most programming languages are themselves text-based. Programs that generate pro
 
 ### Content Generators
 
-[Subreddit Simulator](https://www.reddit.com/r/SubredditSimulator/), [Explanation](https://www.reddit.com/r/SubredditSimulator/comments/3g9ioz/what_is_rsubredditsimulator/)
-: The Subreddit Simulator is a subreddit populated entirely by bots using Markov Chains trained on posts made across Reddit.
+<div class="link-box">
 
-[NaNoGenMo 2018](https://github.com/NaNoGenMo/2018)
-: Annual competition to procedurally generate a 50,000 word novel.
+[**Subreddit Simulator** Reddit](https://www.reddit.com/r/SubredditSimulator/)
+The Subreddit Simulator is a subreddit populated entirely by bots using Markov Chains trained on posts made across Reddit. This [post](https://www.reddit.com/r/SubredditSimulator/comments/3g9ioz/what_is_rsubredditsimulator/) explains the sub more thoroughly.
 
-[Indie Game Generator](http://orteil.dashnet.org/gamegen), [Another Indie Game Generator](https://applepinegames.com/tech/steam-game-generator)
-: Instant pitches for your next game project.
+[**NaNoGenMo 2018** Competition](https://github.com/NaNoGenMo/2018)
+Annual competition to procedurally generate a 50,000 word novel.
 
-[Pentametron](https://twitter.com/pentametron?lang=en)
-: A twitter bot that pairs up tweets to create couplets in iambic pentameter.
+[**Indie Game Generator** Tool](http://orteil.dashnet.org/gamegen)
+An instant pitch for your next game project. Here's [another](https://applepinegames.com/tech/steam-game-generator) generator.
+
+[**Pentametron** Twitter Bot](http://orteil.dashnet.org/gamegen)
+A twitter bot that pairs up tweets to create couplets in iambic pentameter.
+
+</div>
 
 ### Procedural Journalism
 
-[NYT: The Best and Worst Places to Grow Up](https://www.nytimes.com/interactive/2015/05/03/upshot/the-best-and-worst-places-to-grow-up-how-your-area-compares.html)
-: This fantastic NYT piece looks at how where someone grows up impacts income. To make the information relatable the story adapts itself based on the location of the reader.
+<div class="link-box">
 
-[Interactive Journalism](https://github.com/wbkd/awesome-interactive-journalism)
-: A curated collection of "outstanding examples of visual and interactive journalism".
+[**The Best and Worst Places to Grow Up** New York Times](https://www.nytimes.com/interactive/2015/05/03/upshot/the-best-and-worst-places-to-grow-up-how-your-area-compares.html)
+This fantastic NYT piece looks at how where someone grows up impacts income. To make the information relatable the story adapts itself based on the location of the reader.
 
-[NYT: The little girl/boy who lost her/his name.](https://www.nytimes.com/2015/12/23/business/media/personalizing-books-via-robot.html?_r=0)
-: NYT covers a custom, made-to-order children's book.
+[**Interactive Journalism** Collection](https://github.com/wbkd/awesome-interactive-journalism)
+A curated collection of "outstanding examples of visual and interactive journalism".
 
-Associated Press
-: The Associated Press procedurally generates [college sports coverage](https://www.ap.org/press-releases/2015/ap-ncaa-to-grow-college-sports-coverage-with-automated-game-stories) and [corporate earnings reports](https://blog.ap.org/announcements/automated-earnings-stories-multiply).
+[**The little girl/boy who lost her/his name** New York Times](https://www.nytimes.com/2015/12/23/business/media/personalizing-books-via-robot.html?_r=0)
+NYT covers a custom, made-to-order children's book.
+
+[**Associated Press** Media Outlet](https://www.ap.org/)
+The Associated Press procedurally generates [college sports coverage](https://www.ap.org/press-releases/2015/ap-ncaa-to-grow-college-sports-coverage-with-automated-game-stories) and [corporate earnings reports](https://blog.ap.org/announcements/automated-earnings-stories-multiply).
+
+</div>
 
 ### Bots
 
-[ELIZA](https://en.wikipedia.org/wiki/ELIZA)
-: In 1964 Joseph Weizenbaum created ELIZA, a therapist chatbot that you can still [talk to today](http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm).
+<div class="link-box">
 
-[Tay](<https://en.wikipedia.org/wiki/Tay_(bot)>), [Verge covers Tay](http://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist)
-: Tay was an AI twitterbot created by Microsoft and launched on March 23, 2016. Less than a day later, it was shut down after posting many controversial, inflammatory, and racist tweets.
+[**ELIZA** wikipedia.org](https://en.wikipedia.org/wiki/ELIZA)
+In 1964 Joseph Weizenbaum created ELIZA, a therapist chatbot that you can still [talk to today](http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm).
+
+[**Tay** wikipedia.org](<https://en.wikipedia.org/wiki/Tay_(bot)>)
+Tay was an AI twitter bot created by Microsoft and launched on March 23, 2016. Less than a day later, it was shut down after posting many controversial, inflammatory, and racist tweets. Read more about it on [The Verge](http://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist).
+
+</div>
 
 ## String Templates
 
@@ -161,12 +173,16 @@ The right side of the worksheet lists every word that occurs in the Dr. Seuss po
 
 Choose a random word from the keys. Write it down. Choose a word at random from the corresponding box, and write it down. Continue this process, choosing each word based on the previous one.
 
-<br/>
+<div class="link-box">
 
-<div class="boxed"> 
+[**markov.svg**worksheet](../handouts/markov.svg)
+
+</div>
+
+<!-- <div class="boxed">
  .download
 <a href="../handouts/markov.svg" download>markov.svg</a>
-</div>
+</div> -->
 
 </div>
 
@@ -232,7 +248,7 @@ Explore using Javascript Template literals by completing the following challenge
 
 ### Sketch
 
-Explore generating and displaying text.{bigger}
+Explore generating and displaying text.
 
 ### Challenge: It Was a Dark and Stormy Night
 
