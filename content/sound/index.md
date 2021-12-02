@@ -12,12 +12,17 @@ software: p5.js + p5.sound
 
 ### p5.js Sound Library
 
+<div class='sidebar link-box'>
+
+[**p5.sound API Reference** Library Website](https://p5js.org/reference/#/libraries/p5.sound)
+
+[**p5.sound Examples** Library Examples](https://p5js.org/examples/)
+
+</div>
+
 In addition to the basic drawing API, p5.js includes add-on [libraries](https://p5js.org/libraries/). The [parameters](../parameters) chapter introduces the p5.dom library, and the examples in this chapter use the p5.sound library. The p5.sound library builds on the [Web Audio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) API and provides functions for generating tones, playing recorded sounds, and visualizing the waveform and spectrum of sounds. I highly suggest taking a look at **all** of the sound examples to get an idea of what the sound library can do.
 
-This chapter will focus on playing and visualizing pre-recorded sound assets. The [comp music](../music) chapter talks more about sound synthesis.
-
-- [p5.sound API Reference](https://p5js.org/reference/#/libraries/p5.sound)
-- [p5.sound Examples](https://p5js.org/examples/)
+This chapter will focus on playing and visualizing pre-recorded sound assets. The [Comp Music](../music) chapter talks more about sound synthesis.
 
 {% slides %}
 {% include slides.yaml %}
