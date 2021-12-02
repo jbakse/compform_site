@@ -184,7 +184,7 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 
 The p5.js library also allows you to read pixel data, so you can process images or use images as inputs. These examples use this low-res black-and-white image of Earth.
 
-<img class="scale pixel" style="image-rendering: pixelated; height: 120px;" src="sketches/world.png" />
+![world.png](sketches/world.png){scale pixel}
 
 ### Read Pixels Example 1
 
@@ -420,7 +420,7 @@ This example uses an image as an input to control the density and placement of d
 
 ### Sketch
 
-Explore working with image pixel data directly. Most of your sketches should be still images. {bigger}
+Explore working with image pixel data directly. Most of your sketches should be still images.
 
 <!-- This week, most of your posts should be still images. -->
 
