@@ -11,8 +11,8 @@ software: OpenSCAD
 ## 3D Forms
 
 > It is not hard to understand modern art. If it hangs on a wall it's a painting, and if you can walk around it it's a sculpture.
-
-Tom Stoppard, author of [Rosencrantz & Guildenstern are Dead](<https://en.wikipedia.org/wiki/Rosencrantz_%26_Guildenstern_Are_Dead_(film)>){attrib}
+>
+> Tom Stoppard, author of [Rosencrantz & Guildenstern are Dead](<https://en.wikipedia.org/wiki/Rosencrantz_%26_Guildenstern_Are_Dead_(film)>){attrib}
 
 Most of the favorite subjects of representational art—human figures, landscapes, still lifes—are three dimensional forms. Paintings and drawings represent these forms by projecting them into two dimensions. This is a destructive process in which part of the form is lost. You cannot walk around a painting to see its subject from the other side. Where a painting strives to convey a sense of scale, of volume, of substance, and of presence, a sculpture cannot escape them.
 

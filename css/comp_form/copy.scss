@@ -95,7 +95,7 @@
     @include block-pad;
     background: $light-grey;
     padding: 15px;
-    font-size: 1.25em;
+    // font-size: 1.25em;
   }
   blockquote :first-child {
     margin-top: 0;
@@ -106,6 +106,13 @@
 
   blockquote p {
     margin: 0.5em 0;
+  }
+
+  .callout blockquote {
+    font-size: inherit;
+    background: white;
+    margin: 0;
+    width: auto;
   }
 
   .attrib {
