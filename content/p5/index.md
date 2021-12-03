@@ -49,17 +49,9 @@ Processing and p5.js are both widely popular open-source projects with large, ac
 
 <div class="link-box">
 
-[**Processing**Library Website](https://processing.org/) Processing Homepage
+[**Processing**Library Website](https://processing.org/) Processing Homepage, API reference, and tutorials.
 
-[**Processing API Reference**Official Documentation](https://processing.org/reference/) The Processing core API Documentation
-
-[**Processing Tutorials**Official Documentation](https://processing.org/tutorials/) Official Processing tutorials
-
-[**p5.js**Library Website](https://p5js.org/) pt.js Homepage
-
-[**p5.js Reference**Official Documentation](https://p5js.org/reference/) The p5.js core API Documentation
-
-[**p5.js Tutorials**Official Documentation](https://p5js.org/learn/) Official p5.js tutorials
+[**p5.js**Library Website](https://p5js.org/) pt.js Homepage, API reference, and tutorials.
 
 [**The Coding Train**Video Tutorials](http://shiffman.net/videos/) Dan Shiffman has a wealth of video tutorials for p5.js and creative code.
 

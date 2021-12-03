@@ -143,13 +143,11 @@ How does the `noise(x)` function work? Explore the underlying concepts by buildi
 
 <div class="link-box">
 
-[**1d_noise_graph.svg**worksheet](../handouts/1d_noise_graph.svg)
+<a href="../handouts/1d_noise_graph.svg" download>**1d_noise_graph.svg** Worksheet</a>
+
+<a href="../handouts/1d_noise_graph.ai" download>**1d_noise_graph.ai**Worksheet</a>
 
 </div>
-
-<div class="link-box">
-
-[**1d_noise_graph.ai**worksheet](../handouts/1d_noise_graph.ai)
 
 </div>
 
@@ -320,7 +318,6 @@ Make a program that generates treasure maps.
 2. Create a computationally generated image in response.
 3. Composite your image and their image using an image editing software and share the result.
 
-</div>
 </div>
 
 ## Explore

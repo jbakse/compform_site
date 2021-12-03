@@ -86,14 +86,11 @@ Consider the image below. What would the image look like if the black circle wer
 
 <div class="three-up">
 
-![inference-02](figures/inference-02.png)
-We might infer that a red circle lies behind the black one.{figure}
+![inference-02](figures/inference-02.png)We might infer that a red circle lies behind the black one.{scale}
 
-![inference-03](figures/inference-03.png)
-The red shape might be a crescent instead. Or it could be something else entirely. We don't know.{figure}
+![inference-03](figures/inference-03.png)The red shape might be a crescent instead. Or it could be something else entirely. We don't know.{scale}
 
-![inference-04](figures/inference-04.png)
-We don't know if the blue background should continue either.{figure}
+![inference-04](figures/inference-04.png)We don't know if the blue background should continue either.{scale}
 
 </div>
 
@@ -134,9 +131,7 @@ Using a vector-based graphics library allows us to computationally generate imag
 
 <div class="callout">
 
-![figures/post.svg](figures/post.svg)
-
-Top: Vector Output<br/>Middle: Illustrator » Effect » Stylize » Round Corners...<br/>Bottom: Illustrator » Custom Pattern Brush{figure}
+![figures/post.svg](figures/post.svg)Top: Vector Output<br/>Middle: Illustrator » Effect » Stylize » Round Corners...<br/>Bottom: Illustrator » Custom Pattern Brush{scale}
 
 </div>
 
@@ -310,12 +305,9 @@ Create a lasercut thing. This can be anything you like that combines generative 
     }
 </style>
 
-## Reference Links
+## Explore
 
 <div class='link-box'>
-
-[**Más Que la Cara** YesYesNo](https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0)
-An interactive installation in downtown Houston using paper.js and facial detection.
 
 [**Autodraw** Google](https://www.autodraw.com/)
 A Google AI experiment that interprets sketches, using Paper.js for the draw area.
