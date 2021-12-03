@@ -182,7 +182,7 @@ Analyze each of the examples below. Carefully consider their similarities and di
 
 <div class="link-box">
 
-[**strategy_workshop.ai**worksheet](../handouts/strategy_workshop.ai)
+<a href="../handouts/strategy_workshop.ai" download>**strategy_workshop.ai**Worksheet</a>
 
 </div>
 
@@ -392,7 +392,7 @@ What tactics might have been used to get each result below?
 
 <div class="link-box">
 
-[**strategy_workshop.ai**workshop materials](../handouts/dice_chart.svg)
+<a href="../handouts/dice_chart.svg" download>**strategy_workshop.svg**Worksheet</a>
 
 </div>
 

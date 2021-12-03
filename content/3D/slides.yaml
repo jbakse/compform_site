@@ -5,10 +5,10 @@
   links:
     - label: New York Apartment
       href: http://www.tegabrain.com/New-York-Apartment
-      subtitle: tegabrain.com
-    - label: "Artist Site"
+      subtitle: Project Page
+    - label: tegabrain.com
       href: http://www.tegabrain.com/
-      subtitle: tegabrain.com
+      subtitle: Artist Site
 
 - artist: Lee Blalock
   title: Plan3tary Bodies, 2015
@@ -17,10 +17,10 @@
   links:
     - label: Plan3tary Bodies
       href: http://www.leeblalock.com/planets.html
-      subtitle: leeblalock.com
-    - label: "Artist Site"
+      subtitle: Project Page
+    - label: leeblalock.com
       href: http://www.leeblalock.com
-      subtitle: leeblalock.com
+      subtitle: Artist Site
 
 - artist: Andy Lomas
   title: Vase Forms, 2019
@@ -29,10 +29,22 @@
   links:
     - label: Vase Forms
       href: https://andylomas.com/vaseForms.html
-      subtitle: andylomas.com
-    - label: "Artist Site"
+      subtitle: Project Page
+    - label: andylomas.com
       href: https://www.andylomas.com
-      subtitle: andylomas.com
+      subtitle: Artist Site
+
+- artist: F.A.T. Lab
+  title: Free Universal Construction Kit, 2012
+  image: http://fffff.at/files/2012/03/kit_6463_collection_500x333.jpg
+  comments: A collection of adapters that allows you to join different construction toys together, such as Lego, Duplo, Zoob, and more.
+  links:
+    - label: Free Universal Construction Kit
+      href: http://fffff.at/free-universal-construction-kit/
+      subtitle: Project Page
+    - label: fffff.at
+      href: http://fffff.at/
+      subtitle: Artist Site
 
 - artist: A.M. Darke
   title: Open Source Afro Hair Library, 2021
@@ -42,6 +54,6 @@
     - label: Open Source Afro Hair Library
       href: https://afrohairlibrary.org/
       subtitle: afrohairlibrary.org
-    - label: "Artist Site"
+    - label: prettydarke.cool
       href: https://prettydarke.cool
-      subtitle: prettydarke.cool
+      subtitle: Artist Site

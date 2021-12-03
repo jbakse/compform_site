@@ -17,9 +17,9 @@ We use the word _random_ to mean an hodgepodge of related ideas. Depending on co
 
 <div class='sidebar link-box'>
 
-[**_Instructions..._** interactive demo](http://www.buschs.de/Mozart/Mozart.html)
+[**_Instructions..._** Interactive Demo](http://www.buschs.de/Mozart/Mozart.html)
 
-[**_Instructions..._** original score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
+[**_Instructions..._** Original Score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
 
 [**_Musikalisches Würfelspiel_** wikipedia.org](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel)
 
@@ -191,7 +191,7 @@ Compare the outcomes of rolling 2 6-sided dice to rolling 1 12-sided die.
 
 <div class="link-box">
 
-[**dice_chart.svg**worksheet](../handouts/dice_chart.svg)
+<a href="../handouts/dice_chart.svg" download>**dice_chart.svg**Worksheet</a>
 
 </div>
 
@@ -464,7 +464,7 @@ The Linear Congruential Generator Algorithm is simple enough that you can execut
 
 <div class="link-box">
 
-[**lcg_random.svg**worksheet](../handouts/lcg_random.svg)
+<a href="../handouts/lcg_random.svg" download>**lcg_random.svg**Worksheet</a>
 
 </div>
 
