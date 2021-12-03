@@ -14,9 +14,9 @@ software: p5.js + p5.sound
 
 <div class='sidebar link-box'>
 
-[**p5.sound API Reference** Library Website](https://p5js.org/reference/#/libraries/p5.sound)
+[**p5.sound** API Reference](https://p5js.org/reference/#/libraries/p5.sound)
 
-[**p5.sound Examples** Library Examples](https://p5js.org/examples/)
+[**p5.sound** Examples](https://p5js.org/examples/)
 
 </div>
 
