@@ -1,10 +1,8 @@
-
 # JS Lab
 
-Javascript Example Editor
+Javascript Example Live Editor
 
 Uses ace editor to provide a code editor and displays results in preview iframe.
-
 
 ## Libraries
 
@@ -15,7 +13,6 @@ JS Lab provides method for including libraries (local or from CDN) using require
 ```
 
 Libraries are loaded in the order provided, and the script is run after libraries are all loaded.
-
 
 ## P5 Bootstrapping
 
@@ -36,7 +33,6 @@ function setup() {
 
 See: https://github.com/toolness/p5.js-widget/issues/53
 
-
 ## DOM Console
 
 JS Lab provides a basic DOM console to show `console.log()`s and errors on the webpage instead of in the console. This is helpful embedded examples.
@@ -45,10 +41,10 @@ JS Lab provides a basic DOM console to show `console.log()`s and errors on the w
 
 - `js_lab.html` HTML for the Editor, embeds `js_lab_view.html`
 - `js_lab_view.html` HTML for the Preview, is emebedded in `js_lab.html`
-- `js_lab.js` Javascript for `js_lab.html`
-- `styles.css` CSS for `js_lab.html`
+- `js_show.html` HTML for view only examples
+- `js_lab.js` Javascript for both `js_lab.html` and `js_lab_view.html`
+- `styles.css` CSS for both `js_lab.html` and `js_lab_view.html`
 - `example.css` Default source to show in the editor, if no content is provided
-
 
 ## Todo
 
@@ -56,10 +52,8 @@ JS Lab provides a basic DOM console to show `console.log()`s and errors on the w
 - [x] Report errors in DOM console
 - [x] Reload on "save" keypress
 - [x] Make auto reload optional (hardcoded settings in js_lab.js)
-- [ ] Auto run on scroll into view
+- [x] Auto run on scroll into view
 - [ ] Catch runaway infinite loops
-
-
 
 ## References
 
