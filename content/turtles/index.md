@@ -24,11 +24,9 @@ One of the key ideas introduced in Logo was [turtle graphics](https://en.wikiped
 
 <div class="two-up">
 
-![Papert w/ turtle](https://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)
-Seymour Papert with a physical turtle robot, photo by Cynthia Solomon{figure}
+![Papert w/ turtle](https://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)Seymour Papert with a physical turtle robot, photo by Cynthia Solomon{caption}
 
-![turtle screenshot](images/turtle.png)
-A virtual turtle in action!{figure}
+![turtle screenshot](images/turtle.png)A virtual turtle in action!{caption}
 
 </div>
 
