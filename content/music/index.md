@@ -313,35 +313,39 @@ It doesn't have to be good. It doesn't have to use code.
 
 </div>
 
-## Reference Links
+## Explore
 
-[Melody in Songwriting](https://www.amazon.com/Melody-Songwriting-Techniques-Writing-Berklee/dp/063400638X)
-:Melody in Songwriting is an excellent book for developing melody-writing skills.
+<div class="link-box">
+
+[**Melody in Songwriting** Book](https://www.amazon.com/Melody-Songwriting-Techniques-Writing-Berklee/dp/063400638X)
+Melody in Songwriting is an excellent book for developing melody-writing skills.
 
 <!-- Broken Link
 [C-sharp vs D-flat](http://blog.eumlab.com/c-and-db-whats-the-difference/)
 :Music theory article addressing note naming within different keys. -->
 
-[Kahn Academy: Music Basics](https://www.khanacademy.org/humanities/music/music-basics2)
-:Khan Academy offers interactive tutorials on basic music theory, including rhythm and musical notation.
+[**Music Basics** Tutorial](https://www.khanacademy.org/humanities/music/music-basics2)
+Khan Academy offers interactive tutorials on basic music theory, including rhythm and musical notation.
 
-[MDN: Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
-:Documentation for the Web Audio API.
+[**Web Audio API** MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+Documentation for the Web Audio API.
 
-[HTML5Rocks: Getting Started with Web Audio](https://www.html5rocks.com/en/tutorials/webaudio/intro/)
+[**Getting Started with Web Audio** HTML5Rocks](https://www.html5rocks.com/en/tutorials/webaudio/intro/)
 
-[HTML5Rocks: Audio Scheduling](https://www.html5rocks.com/en/tutorials/audio/scheduling/)
-:A tutorial on audio timing and scheduling in the Web Audio API.
+[**Audio Scheduling** HTML5Rocks](https://www.html5rocks.com/en/tutorials/audio/scheduling/)
+A tutorial on audio timing and scheduling in the Web Audio API.
 
-[I don't know who the Web Audio API is designed for](http://blog.mecheye.net/2017/09/i-dont-know-who-the-web-audio-api-is-designed-for/)
+[**I don't know who the Web Audio API is designed for** Essay](http://blog.mecheye.net/2017/09/i-dont-know-who-the-web-audio-api-is-designed-for/)
 
-[UNSW: Midi Notes and Math](https://newt.phys.unsw.edu.au/jw/notes.html)
+[**Midi Notes and Math** UNSW](https://newt.phys.unsw.edu.au/jw/notes.html)
 
-[Teoria.js Music Theory Library](https://github.com/saebekassebil/teoria)
-:A library for music software that supports musical structures and language, including chords, scales, and notes.
+[**Teoria.js Music Theory Library** Library](https://github.com/saebekassebil/teoria)
+A library for music software that supports musical structures and language, including chords, scales, and notes.
 
-[Ocenaudio](http://www.ocenaudio.com/):
-:Ocenaudio is a free sound editor available for both OS X and Windows. It's beginner-friendly while still offering more advanced features.
+[**Ocenaudio** Tool](http://www.ocenaudio.com/)
+Ocenaudio is a free sound editor available for both OS X and Windows. It's beginner-friendly while still offering more advanced features.
 
-[ChucK](http://chuck.cs.princeton.edu/)
-:ChucK is a programming language for real-time music and audio generation. Watch creator Ge Wang discuss his design and use of the program in this [video](https://www.youtube.com/watch?v=2rpk461T6l4).
+[**ChucK** Programming Language](http://chuck.cs.princeton.edu/)
+ChucK is a programming language for real-time music and audio generation. Watch creator Ge Wang discuss his design and use of the program in this [video](https://www.youtube.com/watch?v=2rpk461T6l4).
+
+</div>

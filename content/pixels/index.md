@@ -446,16 +446,20 @@ Work with a partner.
 
 </div>
 
-## Reference Links
+## Explore
 
-[Reaction Diffusion in Photoshop](https://vimeo.com/61154654)
-: Create a pattern in Photoshop by repeatedly applying filters.
+<div class='link-box'>
 
-[Factorio](http://store.steampowered.com/app/427520/)
-: A game in which players gather resources to create increasingly complex technology and factories—sometimes building these structures into pixel art.
+[**Reaction Diffusion in Photoshop** Tutorial](https://vimeo.com/61154654)
+Create a pattern in Photoshop by repeatedly applying filters.
 
-[Icon Machine](http://brianmacintosh.com/iconmachine/)
-: A pixel art web app that randomly generates potion bottle icons.
+[**Factorio** Game Page](http://store.steampowered.com/app/427520/)
+A game in which players gather resources to create increasingly complex technology and factories—sometimes building these structures into pixel art.
 
-[AtariArchives.org: Memory-Mapped Video: The Scanning Game](https://www.atariarchives.org/cgp/Ch02_Sec03.php)
-: An article on ASCII encoding and storage, part of a 1979 primer on computer graphics.
+[**Icon Machine** Generator](http://brianmacintosh.com/iconmachine/)
+A pixel art web app that randomly generates potion bottle icons.
+
+[**Memory-Mapped Video: The Scanning Game** Technical Article](https://www.atariarchives.org/cgp/Ch02_Sec03.php)
+An article on ASCII encoding and storage, part of a 1979 primer on computer graphics.
+
+</div>

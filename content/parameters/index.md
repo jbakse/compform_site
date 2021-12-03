@@ -366,7 +366,7 @@ Build a face-generating tool. This tool will create an image of a face that can 
 
 </div>
 
-## Reference Links
+## Explore
 
 <div class="link-box">
 

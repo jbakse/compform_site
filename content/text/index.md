@@ -271,27 +271,30 @@ Ideally, your story should:
 
 </div>
 
-## Reference Links
+## Explore
 
 <!-- Currently broken
 [RiTa](https://rednoise.org/rita/index.php)
 : Software toolkit for computational literature.
 -->
+<div class="link-box">
 
-[Twine](http://twinery.org/)
-: Open-source tool for telling interactive, nonlinear stories.
+[**Twine** Tool](http://twinery.org/)
+Open-source tool for telling interactive, nonlinear stories.
 
-[Coding Train: Context-Free Grammar](https://www.youtube.com/watch?v=Rhqk9HYiB7Q)
-: Daniel Shiffman talks about context-free grammars, Tracery, and RiTa.
+[**Context-Free Grammar** The Coding Train](https://www.youtube.com/watch?v=Rhqk9HYiB7Q)
+Daniel Shiffman talks about context-free grammars, Tracery, and RiTa.
 
-[Coding Train: Context-Free Challenge](https://www.youtube.com/watch?v=8Z9FRiW2Jlc)
-: Daniel Shiffman builds a small context-free grammar from scratch.
+[**Context-Free Challenge** The Coding Train](https://www.youtube.com/watch?v=8Z9FRiW2Jlc)
+Daniel Shiffman builds a small context-free grammar from scratch.
 
-[Wikipedia: L-Systems](https://en.wikipedia.org/wiki/L-system)
-: L-systems are a type of formal grammar often used in procedural graphics generation.
+[**L-Systems** Wikipedia](https://en.wikipedia.org/wiki/L-system)
+L-systems are a type of formal grammar often used in procedural graphics generation.
 
-[Insignificant Little Vermin](https://egamebook.com/vermin/v/latest/)
-: This game, written by Filip Hracek, renders an open-world RPG game in writing.
+[**Insignificant Little Vermin** Game](https://egamebook.com/vermin/v/latest/)
+This game, written by Filip Hracek, renders an open-world RPG game in writing.
 
-[donjon](https://donjon.bin.sh/)
-: Large collection of random text and dungeon generators for D&D and tabletop roleplaying.
+[**donjon** Collection](https://donjon.bin.sh/)
+Large collection of random text and dungeon generators for D&D and tabletop roleplaying.
+
+</div>

@@ -207,6 +207,12 @@ If you want to play Spelunky—which I highly recommend—the original version (
 
 ## Additional Reading
 
-[PCG Book](http://pcgbook.com/)
+<div class="link-box">
 
-[Procedures and Algorithms](http://web.uvic.ca/~ling48x/ling484/notes/procedures.html)
+[**Procedural Content Generation in Games** Online Book](http://pcgbook.com/)
+A free online textbook that focuses on gaming applications.
+
+<!-- Link is broken
+[Procedures and Algorithms](http://web.uvic.ca/~ling48x/ling484/notes/procedures.html) -->
+
+</div>

@@ -327,12 +327,20 @@ Work with a partner. Draw a garden.
 
 </div>
 
-## Reference Links
+## Goals
 
-[Mitchel Resnick: The Seeds that Seymour Sowed](https://www.media.mit.edu/posts/the-seeds-that-seymour-sowed/)
+<div class="link-box">
 
-[Rough.js](https://roughjs.com/): A tool for creating graphics with a sketchy, hand-drawn aesthetic.
+[**The Seeds that Seymour Sowed** Essay](https://www.media.mit.edu/posts/the-seeds-that-seymour-sowed/)
+Mitchel Resnick reflects on the work and research of Seymour Papert.
 
-[Turtle for Processing](http://leahbuechley.com/Turtle/): A turtle library for Processing from Leah Buechley.
+[**Rough.js** Library](https://roughjs.com/)
+A tool for creating graphics with a sketchy, hand-drawn aesthetic.
 
-[iLogo](http://www.cr31.co.uk/logojs/logo.html): Draw with turtles on this web editor, iLogo.
+[**Turtle for Processing** Library](http://leahbuechley.com/Turtle/)
+A turtle library for Processing from Leah Buechley.
+
+[**iLogo** Web Editor](http://www.cr31.co.uk/logojs/logo.html)
+Draw with turtles on this web editor, iLogo.
+
+</div>

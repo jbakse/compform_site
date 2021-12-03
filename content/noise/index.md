@@ -321,8 +321,9 @@ Make a program that generates treasure maps.
 3. Composite your image and their image using an image editing software and share the result.
 
 </div>
+</div>
 
-## Reference Links
+## Explore
 
 <div class="link-box">
 

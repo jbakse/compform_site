@@ -353,18 +353,18 @@ Bumper Examples:
 
 ## Reference Links
 
-[GDC: Fast and Funky 1D Nonlinear Transformations](https://www.youtube.com/watch?v=mr5xkf6zSzk)
-: Great developer talk about creating interesting motion with nonlinear mapping.
+<div class='link-box'>
 
-[The Illusion of Life: Disney Animation](https://www.amazon.com/gp/product/0786860707?tag=parblo-20)
-: Now out of print, this iconic book by Disney animators describes 12 principles for good animation.
+[**Fast and Funky 1D Nonlinear Transformations** Game Developers Conference](https://www.youtube.com/watch?v=mr5xkf6zSzk)
+Great developer talk about creating interesting motion with nonlinear mapping.
 
-[12 Principles of Animation: Squash and Stretch](https://www.youtube.com/watch?v=haa7n3UGyDc)
-: Squash and stretch is a crucial principle for creating engaging, lifelike animation.
+[**The Illusion of Life: Disney Animation** Book](https://www.amazon.com/gp/product/0786860707?tag=parblo-20)
+Now out of print, this iconic book by Disney animators describes 12 principles for good animation.
 
-[Animation Techniques: The Smear](https://idearocketanimation.com/8857-animation-techniques-smear/)
-: A history of the smear frame, featuring a gallery of images.
+[**12 Principles of Animation: Squash and Stretch** Video](https://www.youtube.com/watch?v=haa7n3UGyDc)
+Squash and stretch is a crucial principle for creating engaging, lifelike animation.
 
-    - label: "Animation Techniques: The Smear"
-      href: https://idearocketanimation.com/8857-animation-techniques-smear/
-      subtitle: idearocketanimation.com
+[**Animation Techniques: The Smear** Essay](https://idearocketanimation.com/8857-animation-techniques-smear/)
+A history of the smear frame, featuring a gallery of images.
+
+</div>

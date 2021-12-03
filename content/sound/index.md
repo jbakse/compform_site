@@ -239,22 +239,26 @@ Create a 15-second procedurally generated audio and visual form. The audio and v
 
 </div>
 
-## Reference Links
+## Explore
 
-[Jamie Wong: Color from Hexcodes to Eyeballs](http://jamie-wong.com/post/color/)
-: Jamie Wong describes the each step of how color is expressed and interpreted.
+<div class="link-box">
 
-[Compform '16 Comp Music Notes](http://psam3060-d-s16.github.io/class_notes/week_9/)
-: Compform '16 week on computational music.
+[**Color from Hexcodes to Eyeballs** Technical Essay](http://jamie-wong.com/post/color/)
+Jamie Wong describes the each step of how color is expressed and interpreted.
 
-[Compform '16 Comp Music Notes](http://psam3060-d-s16.github.io/class_notes/week_9/docco_out/)
-: Examples from Compform '16 week on computational music.
+[**Compform '16 Comp Music** Lecture Notes](http://psam3060-d-s16.github.io/class_notes/week_9/)
+Compform '16 week on computational music.
 
-[WebMidiAPIShim](https://github.com/cwilso/WebMIDIAPIShim)
-: A javascript shim for accessing midi devices.
+[**Compform '16 Comp Music Examples** Lecture Notes](http://psam3060-d-s16.github.io/class_notes/week_9/docco_out/)
+Examples from Compform '16 week on computational music.
 
-[3Blue1Brown: Fourier Transform](https://www.youtube.com/watch?v=spUNpyF58BY)
-: A great visual introduction to the Fourier transform.
+[**WebMidiAPIShim** Library](https://github.com/cwilso/WebMIDIAPIShim)
+A javascript shim for accessing midi devices.
 
-[An Interactive Introduction to Fourier Transforms](http://www.jezzamon.com/fourier/index.html)
-: Visual and interactive demos of Fourier Transforms for both sound and drawing.
+[**Fourier Transform** 3Blue1Brown](https://www.youtube.com/watch?v=spUNpyF58BY)
+A great visual introduction to the Fourier transform.
+
+[**An Interactive Introduction to Fourier Transforms** Demo](http://www.jezzamon.com/fourier/index.html)
+Visual and interactive demos of Fourier Transforms for both sound and drawing.
+
+</div>

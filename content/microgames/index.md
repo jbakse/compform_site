@@ -169,22 +169,26 @@ Create a couch co-op microgame!
 
 </div>
 
-## Reference Links
+## Explore
 
-[Game Maker's Toolkit: What Makes a Good Puzzle?](https://www.youtube.com/watch?v=zsjC6fa_YBg)
-: Game Maker's Toolkit is an excellent Youtube series about game design. This video addresses how to design a good micro challenge, and [The Secret Of Mario's Jump](https://www.youtube.com/watch?v=7daTGyVZ60I) analyzes player input.
+<div class="link-box">
 
-[Piskel](https://www.piskelapp.com/)
-: A tool for building animated sprites.
+[**What Makes a Good Puzzle?** Game Maker's Toolkit](https://www.youtube.com/watch?v=zsjC6fa_YBg)
+Game Maker's Toolkit is an excellent Youtube series about game design. This video addresses how to design a good micro challenge, and [The Secret Of Mario's Jump](https://www.youtube.com/watch?v=7daTGyVZ60I) analyzes player input.
 
-[Js13kGames](https://js13kgames.com/)
-: How much game can fit in 13k of Javascript? Find out in this coding competition.
+[**Piskel** Tool](https://www.piskelapp.com/)
+A tool for building animated sprites.
 
-[The Nothings Suite](https://pippinbarr.github.io/the-nothings-suite/)
-: A collection of microgames made using Unity, Twine, and PICO-8 by Pippin Barr.
+[**Js13kGames** Competition](https://js13kgames.com/)
+How much game can fit in 13k of Javascript? Find out in this coding competition.
 
-[GIPHY Arcade](https://arcade.giphy.com/)
-: Play, share, and build customized microgames through GIPHY.
+[**The Nothings Suite** Collection](https://pippinbarr.github.io/the-nothings-suite/)
+A collection of microgames made using Unity, Twine, and PICO-8 by Pippin Barr.
+
+[**GIPHY Arcade** Tool](https://arcade.giphy.com/)
+Play, share, and build customized microgames through GIPHY.
+
+</div>
 
 <style>
   .spoiler h3 {
