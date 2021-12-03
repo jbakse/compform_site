@@ -40,7 +40,7 @@ Doing simple, repetitious work by hand is tedious and very prone to simple error
 
 The processes of defining a computer program to create form is often initially slower than creating the form directly by hand. But once the program is completed it can be very fast to try many variations.
 
-##### Enables Greater Detail
+#### Enables Greater Detail
 
 Practical concerns often limit how much detail can be included in manually created form. Working with procedures allows extremely—even infinitely—detailed compositions to be created.
 

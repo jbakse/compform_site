@@ -34,8 +34,8 @@ Social media sites like Facebook and Twitter are software systems for collecting
 Search engines and social media sites are certainly procedurally generating text, but for the most part they are not generating _content_. Few would argue that these sites are being truly _creative_. In fact, many have argued that computers are not capable of true creativity at all.
 
 > Not until a machine can write a sonnet or compose a concerto because of thoughts and emotions felt, and not by the chance fall of symbols, could we agree that machine equals brain—that is, not only write it but know that it had written it. No mechanism could feel (and not merely artificially signal, an easy contrivance) pleasure at its successes, grief when its valves fuse, be warmed by flattery, be made miserable by its mistakes, be charmed by sex, be angry or depressed when it cannot get what it wants.
-
-Geoffrey Jefferson{attrib}
+>
+> Geoffrey Jefferson{attrib}
 
 In 1950, [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) directly addressed this argument and several others in [Computing Machinery and Intelligence](https://www.csee.umbc.edu/courses/471/papers/turing.pdf), in which he considered the question "Can machines think?" Rather than answering the question directly, Turing proposes an _imitation game_, often referred to as the Turing Test, which challenges a machine to imitate a human over "a teleprinter communicating between two rooms". Turing asks whether a machine could do well enough that a human interrogator would be unable to tell such a machine from an actual human. He argues that such a test would actually be **harder** than needed to prove the machine was thinking—after all, a human can certainly think, but could not convincingly imitate a computer.
 
