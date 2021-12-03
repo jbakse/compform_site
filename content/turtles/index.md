@@ -14,15 +14,13 @@ The Logo computer programming language was [created in 1967](http://el.media.mit
 
 > In many schools today, the phrase "computer-aided instruction" means making the computer teach the child. One might say _the computer is being used to program the child_. In my vision, _the child programs the computer_ and, in doing so, both acquires a sense of mastery over a piece of the most modern and powerful technology and establishes an intimate contact with some of the deepest ideas from science, from mathematics, and from the art of intellectual model building.
 
-<div class="links-sidebar">
+<div class="sidebar link-box">
 
-[Wikipedia:<br/> Turtle Graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
-
-[MIT: Scratch + Turtles](https://scratch.mit.edu/projects/196503540/)
+[**Scratch + Turtles** MIT](https://scratch.mit.edu/projects/196503540/)
 
 </div>
 
-One of the key ideas introduced in Logo was _turtle graphics_. The turtle was originally a small programmable physical robot that carried a pen and could trace its path as it moved. Logo could control this turtle with simple commands like `left` and `right` to turn and `forward` to move. This idea was extended to drawing on-screen using a virtual turtle.
+One of the key ideas introduced in Logo was [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics). The turtle was originally a small programmable physical robot that carried a pen and could trace its path as it moved. Logo could control this turtle with simple commands like `left` and `right` to turn and `forward` to move. This idea was extended to drawing on-screen using a virtual turtle.
 
 <div class="two-up">
 
@@ -36,10 +34,19 @@ A virtual turtle in action!{figure}
 
 Logo's use of turtles allows students to make a strong association between what happens in the program and how they move their own bodies in the real world. Papert called this _body-syntonic_ learning. Body-syntonic learning supports understanding of abstract ideas through sensory experience. Papert often discussed these ideas in writing and videos.
 
-- [Seymour Papert and Students (1972)](https://www.youtube.com/watch?v=5dZMgdqy7zY), [longer cut](https://www.youtube.com/watch?v=xMzojQFyMo0)
-- [Seymour Papert on Logo (1986, full video series)](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
-- [Seymour Papert on Logo: Teaching (1986) 4:25 - 6:40](https://youtu.be/ZG9cYhekB8A?t=4m25s)
-- [Learning with Toys (1986)](https://www.youtube.com/watch?v=IhEovwWiniY)
+<div class="link-box">
+
+[**Seymour Papert and Students (1972)** Video](https://www.youtube.com/watch?v=5dZMgdqy7zY)
+See [here](https://www.youtube.com/watch?v=xMzojQFyMo0) for the longer cut of this video.
+
+[**Seymour Papert on Logo (1986)** Video Series](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
+
+[**Seymour Papert on Logo: Teaching (1986)** Video](https://youtu.be/ZG9cYhekB8A?t=4m25s)
+Watch the clip from 4:25 - 6:40.
+
+[**Learning with Toys (1986)** Video](https://www.youtube.com/watch?v=IhEovwWiniY)
+
+</div>
 
 {% slides %}
 {% include slides.yaml %}
@@ -317,7 +324,7 @@ Turtles are just one example of a drawing machine. Inventing your own drawing ma
 
 ### Sketch
 
-Explore using turtle graphics. Start with a crazy spirograph thing and get that out of the way. Then see how much variety you can get from the turtle.{bigger}
+Explore using turtle graphics. Start with a crazy spirograph thing and get that out of the way. Then see how much variety you can get from the turtle.
 
 ### Challenge: Animal Face
 
@@ -329,12 +336,20 @@ Work with a partner. Draw a garden.
 
 </div>
 
-## Reference Links
+## Goals
 
-[Mitchel Resnick: The Seeds that Seymour Sowed](https://www.media.mit.edu/posts/the-seeds-that-seymour-sowed/)
+<div class="link-box">
 
-[Rough.js](https://roughjs.com/): A tool for creating graphics with a sketchy, hand-drawn aesthetic.
+[**The Seeds that Seymour Sowed** Essay](https://www.media.mit.edu/posts/the-seeds-that-seymour-sowed/)
+Mitchel Resnick reflects on the work and research of Seymour Papert.
 
-[Turtle for Processing](http://leahbuechley.com/Turtle/): A turtle library for Processing from Leah Buechley.
+[**Rough.js** Library](https://roughjs.com/)
+A tool for creating graphics with a sketchy, hand-drawn aesthetic.
 
-[iLogo](http://www.cr31.co.uk/logojs/logo.html): Draw with turtles on this web editor, iLogo.
+[**Turtle for Processing** Library](http://leahbuechley.com/Turtle/)
+A turtle library for Processing from Leah Buechley.
+
+[**iLogo** Web Editor](http://www.cr31.co.uk/logojs/logo.html)
+Draw with turtles on this web editor, iLogo.
+
+</div>

@@ -348,7 +348,7 @@ Explore the study examples above by completing the following challenges.
 
 ### Sketch
 
-Continue experimenting with procedurally-generated images. Focus on exposing parameters and exploring the parametric potential of your sketches. You can mix random and parametric elements, but consider doing a couple of sketches that are not random at all.{bigger}
+Continue experimenting with procedurally-generated images. Focus on exposing parameters and exploring the parametric potential of your sketches. You can mix random and parametric elements, but consider doing a couple of sketches that are not random at all.
 
 ### Challenge: Face Generator
 
@@ -366,7 +366,7 @@ Build a face-generating tool. This tool will create an image of a face that can 
 
 </div>
 
-## Reference Links
+## Explore
 
 <div class="link-box">
 

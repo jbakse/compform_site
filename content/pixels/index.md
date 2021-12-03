@@ -184,7 +184,7 @@ Explore using p5's pixel manipulation functions by modifying the scripts above. 
 
 The p5.js library also allows you to read pixel data, so you can process images or use images as inputs. These examples use this low-res black-and-white image of Earth.
 
-<img class="scale pixel" style="image-rendering: pixelated; height: 120px;" src="sketches/world.png" />
+![world.png](sketches/world.png){scale pixel}
 
 ### Read Pixels Example 1
 
@@ -420,7 +420,7 @@ This example uses an image as an input to control the density and placement of d
 
 ### Sketch
 
-Explore working with image pixel data directly. Most of your sketches should be still images. {bigger}
+Explore working with image pixel data directly. Most of your sketches should be still images.
 
 <!-- This week, most of your posts should be still images. -->
 
@@ -446,16 +446,20 @@ Work with a partner.
 
 </div>
 
-## Reference Links
+## Explore
 
-[Reaction Diffusion in Photoshop](https://vimeo.com/61154654)
-: Create a pattern in Photoshop by repeatedly applying filters.
+<div class='link-box'>
 
-[Factorio](http://store.steampowered.com/app/427520/)
-: A game in which players gather resources to create increasingly complex technology and factories—sometimes building these structures into pixel art.
+[**Reaction Diffusion in Photoshop** Tutorial](https://vimeo.com/61154654)
+Create a pattern in Photoshop by repeatedly applying filters.
 
-[Icon Machine](http://brianmacintosh.com/iconmachine/)
-: A pixel art web app that randomly generates potion bottle icons.
+[**Factorio** Game Page](http://store.steampowered.com/app/427520/)
+A game in which players gather resources to create increasingly complex technology and factories—sometimes building these structures into pixel art.
 
-[AtariArchives.org: Memory-Mapped Video: The Scanning Game](https://www.atariarchives.org/cgp/Ch02_Sec03.php)
-: An article on ASCII encoding and storage, part of a 1979 primer on computer graphics.
+[**Icon Machine** Generator](http://brianmacintosh.com/iconmachine/)
+A pixel art web app that randomly generates potion bottle icons.
+
+[**Memory-Mapped Video: The Scanning Game** Technical Article](https://www.atariarchives.org/cgp/Ch02_Sec03.php)
+An article on ASCII encoding and storage, part of a 1979 primer on computer graphics.
+
+</div>

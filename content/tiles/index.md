@@ -209,7 +209,7 @@ Partner with another person. Create a tile set and trade it with your partner. U
 
 </div>
 
-## Reference Links
+## Explore
 
 <div class="link-box">
 

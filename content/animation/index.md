@@ -65,9 +65,9 @@ The heart of a real-time animation system is the draw loop. Most real-time draw 
 
 In a 60fps animation, each frame should be shown for 16.6 milliseconds. If drawing the frame takes only 10 milliseconds, the loop will _wait_ for the remaining 6.6. This prevents the animation from running too fast.
 
-<div class=".links-sidebar">
+<div class="sidebar link-box">
 
-[p5.js<br/> draw loop code](https://github.com/processing/p5.js/blob/ed94431045900c61cb1f78942a64e0f2a623df69/src/core/core.js#L341)
+[**p5.js Draw Loop Code** GitHub](https://github.com/processing/p5.js/blob/ed94431045900c61cb1f78942a64e0f2a623df69/src/core/core.js#L341)
 
 </div>
 
@@ -329,7 +329,7 @@ Complete the following challenges to deepen your understanding of the examples a
 
 ### Sketch
 
-This week focuses on creating smooth pre-rendered animations.{bigger}
+This week focuses on creating smooth pre-rendered animations.
 
 ### Challenge: Comp Form Bumper
 
@@ -353,18 +353,18 @@ Bumper Examples:
 
 ## Reference Links
 
-[GDC: Fast and Funky 1D Nonlinear Transformations](https://www.youtube.com/watch?v=mr5xkf6zSzk)
-: Great developer talk about creating interesting motion with nonlinear mapping.
+<div class='link-box'>
 
-[The Illusion of Life: Disney Animation](https://www.amazon.com/gp/product/0786860707?tag=parblo-20)
-: Now out of print, this iconic book by Disney animators describes 12 principles for good animation.
+[**Fast and Funky 1D Nonlinear Transformations** Game Developers Conference](https://www.youtube.com/watch?v=mr5xkf6zSzk)
+Great developer talk about creating interesting motion with nonlinear mapping.
 
-[12 Principles of Animation: Squash and Stretch](https://www.youtube.com/watch?v=haa7n3UGyDc)
-: Squash and stretch is a crucial principle for creating engaging, lifelike animation.
+[**The Illusion of Life: Disney Animation** Book](https://www.amazon.com/gp/product/0786860707?tag=parblo-20)
+Now out of print, this iconic book by Disney animators describes 12 principles for good animation.
 
-[Animation Techniques: The Smear](https://idearocketanimation.com/8857-animation-techniques-smear/)
-: A history of the smear frame, featuring a gallery of images.
+[**12 Principles of Animation: Squash and Stretch** Video](https://www.youtube.com/watch?v=haa7n3UGyDc)
+Squash and stretch is a crucial principle for creating engaging, lifelike animation.
 
-    - label: "Animation Techniques: The Smear"
-      href: https://idearocketanimation.com/8857-animation-techniques-smear/
-      subtitle: idearocketanimation.com
+[**Animation Techniques: The Smear** Essay](https://idearocketanimation.com/8857-animation-techniques-smear/)
+A history of the smear frame, featuring a gallery of images.
+
+</div>

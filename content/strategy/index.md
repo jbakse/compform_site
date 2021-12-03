@@ -277,7 +277,7 @@ This method scatters points evenly across the square, but without the clumps and
 
 <div class="sidebar link-box">
 
-[**Posson-Disc II** Visual Explination](https://www.jasondavies.com/poisson-disc/)
+[**Posson-Disc II** Visual Explanation](https://www.jasondavies.com/poisson-disc/)
 
 </div>
 

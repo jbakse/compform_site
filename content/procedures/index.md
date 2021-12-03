@@ -72,7 +72,11 @@ Please take out a sheet of paper and pen and follow these instructions:
 
 Yes, these instructions will go on forever. Stop after a few minutes.
 
-[stand-alone instructions](../introduction/sierpinski.html){boxed right}
+<div class="link-box">
+
+[**stand-alone instructions**worksheet](../introduction/sierpinski.html)
+
+</div>
 
 </div>
 
@@ -171,25 +175,44 @@ The following properties are borrowed from [the first chapter of Procedural Cont
 
 [Game Maker's Toolkit](https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw) is a Youtube channel that features high-quality video essays on game design. His video on the level-generation in Spelunky is great.
 
-[GMT: Spelunky](https://www.youtube.com/watch?v=Uqk5Zf0tw3o){boxed right}
+<div class="link-box">
+
+[**How (and Why) Spelunky Makes its Own Levels** Video](https://www.youtube.com/watch?v=Uqk5Zf0tw3o)
+
+</div>
 
 ### Read
 
 The author of Spelunky, Derek Yu, wrote a fantastic book on making the game, along with a deeper dive into how the levels are procedurally generated. His blog post on [finishing games](http://makegames.tumblr.com/post/1136623767/finishing-a-game) is also great.
 
-[Spelunky Book](https://www.amazon.com/Spelunky-Boss-Fight-Books-Book-ebook/dp/B01CYVHYSS){boxed right}
+<div class="link-box">
+
+[**Spelunky** Book](https://www.amazon.com/Spelunky-Boss-Fight-Books-Book-ebook/dp/B01CYVHYSS)
+
+</div>
 
 ### Play
 
 If you want to play Spelunky—which I highly recommend—the original version (not the HD Remake) is free.
 
-[For PC](http://spelunkyworld.com/original.html){boxed right}
-[For Mac](https://forums.tigsource.com/index.php?topic=28467.0){boxed right}
+<div class="link-box">
+
+[**Spelunky for PC** Game Page](http://spelunkyworld.com/original.html)
+
+[**Spelunky for Mac** Game Page](https://forums.tigsource.com/index.php?topic=28467.0)
+
+</div>
 
 </div>
 
 ## Additional Reading
 
-[PCG Book](http://pcgbook.com/)
+<div class="link-box">
 
-[Procedures and Algorithms](http://web.uvic.ca/~ling48x/ling484/notes/procedures.html)
+[**Procedural Content Generation in Games** Online Book](http://pcgbook.com/)
+A free online textbook that focuses on gaming applications.
+
+<!-- Link is broken
+[Procedures and Algorithms](http://web.uvic.ca/~ling48x/ling484/notes/procedures.html) -->
+
+</div>

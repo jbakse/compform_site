@@ -70,7 +70,7 @@ Many interactive artifacts fall into the categories of _games_, _toys_, or _tool
 
 Group these interactive artifacts into games, toys, and tools.
 
-Legos, Monopoly, Photoshop, Hammers, Tops, Dolls, Chess, Super Mario Brothers, Pac-man, Telephones{bigger}
+Legos, Monopoly, Photoshop, Hammers, Tops, Dolls, Chess, Super Mario Brothers, Pac-man, Telephones
 
 Do any of these artifacts belong in more than one category?
 
@@ -99,13 +99,18 @@ Compare features to each of the artifacts in the list above. Do these features s
 The p5.play library builds on p5.js to add features commonly needed in interactive applications, especially games. The p5.play homepage describes the library like this:
 
 > p5.play provides a <a href="http://p5play.molleindustria.org/examples/index.html?fileName=sprite.js" target="_blank">Sprite</a> class to manage visual objects in <a href="http://p5play.molleindustria.org/examples/index.html?fileName=sprite4.js" target="_blank">2D space</a> and features such as <a href="http://p5play.molleindustria.org/examples/index.html?fileName=sprite3.js" target="_blank">animation support</a>, <a href="http://p5play.molleindustria.org/examples/index.html?fileName=collisions.js" target="_blank">basic collision detection</a> and <a href="http://p5play.molleindustria.org/examples/index.html?fileName=collisions4.js" target="_blank">resolution</a>, sprite <a href="http://p5play.molleindustria.org/examples/index.html?fileName=sprite8.js" target="_blank">grouping</a>, helpers for mouse and keyboard <a href="http://p5play.molleindustria.org/examples/index.html?fileName=keyPresses.js" target="_blank">interactions</a>, and a <a href="http://p5play.molleindustria.org/examples/index.html?fileName=camera.js" target="_blank">virtual camera</a>. </p>
-> {bigger}
 
 Since p5.play builds on p5.js it should feel pretty familiar. One key difference is that p5.play provides a scene graph. When you create a new sprite, p5.play remembers that it is part of the scene. When you set the velocity of a sprite, p5.play remembers that for you too. When you call `drawSprites()`, p5.play will move and draw all the sprites.
 
-- [p5.play homepage](http://p5play.molleindustria.org/)
-- [p5.play examples](http://p5play.molleindustria.org/examples/index.html)
-- [p5.play api reference](http://p5play.molleindustria.org/docs/index.html)
+<div class="link-box">
+
+[**p5.play homepage** Library Website](http://p5play.molleindustria.org/)
+
+[**p5.play examples** Library Website](http://p5play.molleindustria.org/examples/index.html)
+
+[**p5.play api reference** Official Documentation](http://p5play.molleindustria.org/docs/index.html)
+
+</div>
 
 <div class="callout">
 
@@ -170,22 +175,26 @@ Create a couch co-op microgame!
 
 </div>
 
-## Reference Links
+## Explore
 
-[Game Maker's Toolkit: What Makes a Good Puzzle?](https://www.youtube.com/watch?v=zsjC6fa_YBg)
-: Game Maker's Toolkit is an excellent Youtube series about game design. This video addresses how to design a good micro challenge, and [The Secret Of Mario's Jump](https://www.youtube.com/watch?v=7daTGyVZ60I) analyzes player input.
+<div class="link-box">
 
-[Piskel](https://www.piskelapp.com/)
-: A tool for building animated sprites.
+[**What Makes a Good Puzzle?** Game Maker's Toolkit](https://www.youtube.com/watch?v=zsjC6fa_YBg)
+Game Maker's Toolkit is an excellent Youtube series about game design. This video addresses how to design a good micro challenge, and [The Secret Of Mario's Jump](https://www.youtube.com/watch?v=7daTGyVZ60I) analyzes player input.
 
-[Js13kGames](https://js13kgames.com/)
-: How much game can fit in 13k of Javascript? Find out in this coding competition.
+[**Piskel** Tool](https://www.piskelapp.com/)
+A tool for building animated sprites.
 
-[The Nothings Suite](https://pippinbarr.github.io/the-nothings-suite/)
-: A collection of microgames made using Unity, Twine, and PICO-8 by Pippin Barr.
+[**Js13kGames** Competition](https://js13kgames.com/)
+How much game can fit in 13k of Javascript? Find out in this coding competition.
 
-[GIPHY Arcade](https://arcade.giphy.com/)
-: Play, share, and build customized microgames through GIPHY.
+[**The Nothings Suite** Collection](https://pippinbarr.github.io/the-nothings-suite/)
+A collection of microgames made using Unity, Twine, and PICO-8 by Pippin Barr.
+
+[**GIPHY Arcade** Tool](https://arcade.giphy.com/)
+Play, share, and build customized microgames through GIPHY.
+
+</div>
 
 <style>
   .spoiler h3 {

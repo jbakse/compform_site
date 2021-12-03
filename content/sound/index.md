@@ -12,12 +12,17 @@ software: p5.js + p5.sound
 
 ### p5.js Sound Library
 
+<div class='sidebar link-box'>
+
+[**p5.sound API Reference** Library Website](https://p5js.org/reference/#/libraries/p5.sound)
+
+[**p5.sound Examples** Library Examples](https://p5js.org/examples/)
+
+</div>
+
 In addition to the basic drawing API, p5.js includes add-on [libraries](https://p5js.org/libraries/). The [parameters](../parameters) chapter introduces the p5.dom library, and the examples in this chapter use the p5.sound library. The p5.sound library builds on the [Web Audio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) API and provides functions for generating tones, playing recorded sounds, and visualizing the waveform and spectrum of sounds. I highly suggest taking a look at **all** of the sound examples to get an idea of what the sound library can do.
 
-This chapter will focus on playing and visualizing pre-recorded sound assets. The [comp music](../music) chapter talks more about sound synthesis.
-
-- [p5.sound API Reference](https://p5js.org/reference/#/libraries/p5.sound)
-- [p5.sound Examples](https://p5js.org/examples/)
+This chapter will focus on playing and visualizing pre-recorded sound assets. The [Comp Music](../music) chapter talks more about sound synthesis.
 
 {% slides %}
 {% include slides.yaml %}
@@ -69,7 +74,11 @@ Light and sound flow through our environment as electromagnetic and air pressure
 
 <!--[[This last sentence is unclear to me...I'll work on it.]]-->
 
-[Light and Sound Lecture Notes](./light_and_sound.html)
+<div class="link-box">
+
+[**Light and Sound** Lecture Notes](./light_and_sound.html)
+
+</div>
 
 ## Playing Sound with p5.js
 
@@ -230,22 +239,26 @@ Create a 15-second procedurally generated audio and visual form. The audio and v
 
 </div>
 
-## Reference Links
+## Explore
 
-[Jamie Wong: Color from Hexcodes to Eyeballs](http://jamie-wong.com/post/color/)
-: Jamie Wong describes the each step of how color is expressed and interpreted.
+<div class="link-box">
 
-[Compform '16 Comp Music Notes](http://psam3060-d-s16.github.io/class_notes/week_9/)
-: Compform '16 week on computational music.
+[**Color from Hexcodes to Eyeballs** Technical Essay](http://jamie-wong.com/post/color/)
+Jamie Wong describes the each step of how color is expressed and interpreted.
 
-[Compform '16 Comp Music Notes](http://psam3060-d-s16.github.io/class_notes/week_9/docco_out/)
-: Examples from Compform '16 week on computational music.
+[**Compform '16 Comp Music** Lecture Notes](http://psam3060-d-s16.github.io/class_notes/week_9/)
+Compform '16 week on computational music.
 
-[WebMidiAPIShim](https://github.com/cwilso/WebMIDIAPIShim)
-: A javascript shim for accessing midi devices.
+[**Compform '16 Comp Music Examples** Lecture Notes](http://psam3060-d-s16.github.io/class_notes/week_9/docco_out/)
+Examples from Compform '16 week on computational music.
 
-[3Blue1Brown: Fourier Transform](https://www.youtube.com/watch?v=spUNpyF58BY)
-: A great visual introduction to the Fourier transform.
+[**WebMidiAPIShim** Library](https://github.com/cwilso/WebMIDIAPIShim)
+A javascript shim for accessing midi devices.
 
-[An Interactive Introduction to Fourier Transforms](http://www.jezzamon.com/fourier/index.html)
-: Visual and interactive demos of Fourier Transforms for both sound and drawing.
+[**Fourier Transform** 3Blue1Brown](https://www.youtube.com/watch?v=spUNpyF58BY)
+A great visual introduction to the Fourier transform.
+
+[**An Interactive Introduction to Fourier Transforms** Demo](http://www.jezzamon.com/fourier/index.html)
+Visual and interactive demos of Fourier Transforms for both sound and drawing.
+
+</div>

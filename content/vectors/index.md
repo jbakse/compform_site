@@ -262,7 +262,11 @@ Explore Paper.js by modifying the examples above. Work through the following cha
 
 Paper Garden is a program written in about 300 lines of PaperScript using [Paper.js](http://paperjs.org/). It generates stylized drawings of plants arranged in a wall garden. Read about how this program works and explore the code.
 
-[Paper Garden Case Study](./paper_garden/paper_garden.html){boxed right}
+<div class='link-box'>
+
+[**Paper Garden** Case Study](./paper_garden/paper_garden.html)
+
+</div>
 
 ![paper_garden](./paper_garden/images/1500.png)
 
@@ -272,7 +276,7 @@ Paper Garden is a program written in about 300 lines of PaperScript using [Paper
 
 ### Sketch
 
-Explore using Paper.js. Focus on creating vector-based images this week. Consider using a hybrid workflow this week: start with code in Paper.js but finish with manual work in Illustrator.{bigger}
+Explore using Paper.js. Focus on creating vector-based images this week. Consider using a hybrid workflow this week: start with code in Paper.js but finish with manual work in Illustrator.
 
 <!-- This week you must complete at least one of the following challenges. These challenges count as 2 sketches. Post one work-in-progress screenshot sketch, and a second sketch with a photo of the final output. -->
 
@@ -308,19 +312,23 @@ Create a lasercut thing. This can be anything you like that combines generative 
 
 ## Reference Links
 
-[YesYesNo: Más Que la Cara](https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0)
-: An interactive installation in downtown Houston using paper.js and facial detection.
+<div class='link-box'>
 
-[Autodraw](https://www.autodraw.com/)
-: A Google AI experiment that interprets sketches, using Paper.js for the draw area.
+[**Más Que la Cara** YesYesNo](https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0)
+An interactive installation in downtown Houston using paper.js and facial detection.
+
+[**Autodraw** Google](https://www.autodraw.com/)
+A Google AI experiment that interprets sketches, using Paper.js for the draw area.
 
 <!-- Currently goes to a gambling site
 [Plumin.js](http://www.pluminjs.com/)
 : Javascript typeface editing using Paper.js.
 -->
 
-[Variable Fonts](https://v-fonts.com/)
-: Experiment with OpenType customizable typefaces.
+[**Variable Fonts** Collection](https://v-fonts.com/)
+Experiment with OpenType customizable typefaces.
+
+</div>
 
 <!--
 Describe the steps taken to make a drawing
