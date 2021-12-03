@@ -191,7 +191,7 @@ Compare the outcomes of rolling 2 6-sided dice to rolling 1 12-sided die.
 
 <div class="link-box">
 
-[**dice_chart.svg**worksheet](../handouts/dice_chart.svg)
+<a href="../handouts/dice_chart.svg" download>**dice_chart.svg**Worksheet</a>
 
 </div>
 
@@ -464,7 +464,7 @@ The Linear Congruential Generator Algorithm is simple enough that you can execut
 
 <div class="link-box">
 
-[**lcg_random.svg**worksheet](../handouts/lcg_random.svg)
+<a href="../handouts/lcg_random.svg" download>**lcg_random.svg**Worksheet</a>
 
 </div>
 
