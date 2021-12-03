@@ -102,9 +102,15 @@ The p5.play library builds on p5.js to add features commonly needed in interacti
 
 Since p5.play builds on p5.js it should feel pretty familiar. One key difference is that p5.play provides a scene graph. When you create a new sprite, p5.play remembers that it is part of the scene. When you set the velocity of a sprite, p5.play remembers that for you too. When you call `drawSprites()`, p5.play will move and draw all the sprites.
 
-- [p5.play homepage](http://p5play.molleindustria.org/)
-- [p5.play examples](http://p5play.molleindustria.org/examples/index.html)
-- [p5.play api reference](http://p5play.molleindustria.org/docs/index.html)
+<div class="link-box">
+
+[**p5.play homepage** Library Website](http://p5play.molleindustria.org/)
+
+[**p5.play examples** Library Website](http://p5play.molleindustria.org/examples/index.html)
+
+[**p5.play api reference** Official Documentation](http://p5play.molleindustria.org/docs/index.html)
+
+</div>
 
 <div class="callout">
 
