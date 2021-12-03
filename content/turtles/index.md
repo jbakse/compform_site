@@ -34,10 +34,19 @@ A virtual turtle in action!{figure}
 
 Logo's use of turtles allows students to make a strong association between what happens in the program and how they move their own bodies in the real world. Papert called this _body-syntonic_ learning. Body-syntonic learning supports understanding of abstract ideas through sensory experience. Papert often discussed these ideas in writing and videos.
 
-- [Seymour Papert and Students (1972)](https://www.youtube.com/watch?v=5dZMgdqy7zY), [longer cut](https://www.youtube.com/watch?v=xMzojQFyMo0)
-- [Seymour Papert on Logo (1986, full video series)](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
-- [Seymour Papert on Logo: Teaching (1986) 4:25 - 6:40](https://youtu.be/ZG9cYhekB8A?t=4m25s)
-- [Learning with Toys (1986)](https://www.youtube.com/watch?v=IhEovwWiniY)
+<div class="link-box">
+
+[**Seymour Papert and Students (1972)** Video](https://www.youtube.com/watch?v=5dZMgdqy7zY)
+See [here](https://www.youtube.com/watch?v=xMzojQFyMo0) for the longer cut of this video.
+
+[**Seymour Papert on Logo (1986)** Video Series](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
+
+[**Seymour Papert on Logo: Teaching (1986)** Video](https://youtu.be/ZG9cYhekB8A?t=4m25s)
+Watch the clip from 4:25 - 6:40.
+
+[**Learning with Toys (1986)** Video](https://www.youtube.com/watch?v=IhEovwWiniY)
+
+</div>
 
 {% slides %}
 {% include slides.yaml %}
