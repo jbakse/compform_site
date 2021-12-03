@@ -22,6 +22,18 @@
       href: https://taliacotton.com/
       subtitle: Artist Site
 
+- artist: YesYesNo
+  title: Más Que la Cara, 2012-13
+  image: https://miro.medium.com/max/2000/1*wAubJo7u09LPK2e75czrxA.png
+  comments: An interactive installation in downtown Houston using paper.js and facial detection.
+  links:
+    - label: Más Que la Cara
+      href: https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0
+      subtitle: Case Study
+    - label: yesyesno.com
+      href: http://www.yesyesno.com/
+      subtitle: Artist Site
+
 - artist: Matthias Dörfelt
   title: Weird Faces, 2012-13
   image: https://www.mokafolio.de/thumbs/works/Weird-Faces/01-2400x1526.jpg
