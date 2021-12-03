@@ -143,13 +143,9 @@ How does the `noise(x)` function work? Explore the underlying concepts by buildi
 
 <div class="link-box">
 
-[**1d_noise_graph.svg**worksheet](../handouts/1d_noise_graph.svg)
+<a href="../handouts/1d_noise_graph.svg" download>**1d_noise_graph.svg** Worksheet</a>
 
-</div>
-
-<div class="link-box">
-
-[**1d_noise_graph.ai**worksheet](../handouts/1d_noise_graph.ai)
+<a href="../handouts/1d_noise_graph.ai" download>**1d_noise_graph.ai**Worksheet</a>
 
 </div>
 

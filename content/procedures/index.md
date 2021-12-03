@@ -74,7 +74,7 @@ Yes, these instructions will go on forever. Stop after a few minutes.
 
 <div class="link-box">
 
-[**stand-alone instructions**worksheet](../introduction/sierpinski.html)
+[**stand-alone instructions**Worksheet](../introduction/sierpinski.html)
 
 </div>
 
