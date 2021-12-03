@@ -17,9 +17,9 @@ We use the word _random_ to mean an hodgepodge of related ideas. Depending on co
 
 <div class='sidebar link-box'>
 
-[**_Instructions..._** interactive demo](http://www.buschs.de/Mozart/Mozart.html)
+[**_Instructions..._** Interactive Demo](http://www.buschs.de/Mozart/Mozart.html)
 
-[**_Instructions..._** original score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
+[**_Instructions..._** Original Score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
 
 [**_Musikalisches Würfelspiel_** wikipedia.org](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel)
 
