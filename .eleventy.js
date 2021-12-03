@@ -26,6 +26,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("content/**/*.svg");
   eleventyConfig.addPassthroughCopy("content/**/*.js");
   eleventyConfig.addPassthroughCopy("content/**/*.wav");
+  eleventyConfig.addPassthroughCopy("content/**/*.ai");
 
   // shortcodes
   eleventyConfig.addShortcode(
