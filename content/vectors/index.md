@@ -10,7 +10,7 @@ software: paper.js
 
 ## Vector Data
 
-Last week, we worked directly with **pixels**, the fundamental unit of raster graphics. Today we will work with vector graphics, which represent images as collections of **shapes**. Scalable Vector Graphics, or `svg`, is a common XML-based vector graphics format. SVG files look like this:
+The Pixel Data chapter discusses working directly with **pixels**, the fundamental, low-level unit of raster graphics. This chapter looks at vector graphics, which represent images as high-level **shapes**. Scalable Vector Graphics, or `svg`, is a common XML-based vector graphics format. SVG files look like this:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -30,9 +30,12 @@ Last week, we worked directly with **pixels**, the fundamental unit of raster gr
 <rect fill="#fff" x="252" y="54" width="36" height="36"/>
 <polygon fill="#f00" points="288 54 270 36 252 54 288 54"/>
 </svg>
+
 </div>
 
-Vector graphics must be converted to raster graphics—a process called [rasterization](https://magcius.github.io/xplain/article/rast1.html)—in order to be viewed on a pixel-based display. Fortunately, it is easy to rasterize vector graphics: vector graphics contain all the information necessary to do so. It is _not_ easy to convert from raster images to vector images: In order to do so we would have to make inferences about the meaning implied by the raster image. When the form is ambiguous our inferences are just guesses, and they may be wrong.
+SVG files are fairly easy to read and write. One way to get started with vector drawing and code is to write SVG directly by hand and then view them in software like Illustrator or Figma. While this works, SVG is more of an interchange format and isn't really intended for hand coding. In particular, SVG is declarative and doesn't have the imperative control structures—like `if` conditionals and `for` loops—you would may be used to from languages like Javascript.
+
+In this chapter the code examples will use Paper.js, a library for working with vector drawing in Javascript. With Paper.js, you have the full power of Javascript running in a browser and can export SVG files to work with them in other programs.
 
 <!-- [[ recipe vs finished dish? you can go one way, not the other. you can easily remove salt from a recipe, you can't easily remove salt from a dish]] -->
 
@@ -54,7 +57,7 @@ Divide class into groups. Give some groups felt and scissors and the other group
 
 _Groups, 5 minutes_
 
-Using only the materials on the table, create a scene that includes a car.
+Using only the materials on _your group's_ table, create a side-view depiction of a car.
 
 Before you begin, consider the elements that will make up your image of the car: wheels, doors, windows.
 
@@ -79,6 +82,8 @@ _Class, 5 minutes_
 </div>
 
 ### Meaning vs. Form
+
+Vector graphics must be converted to raster graphics—a process called [rasterization](https://magcius.github.io/xplain/article/rast1.html)—in order to be viewed on a pixel-based display. Vector graphics contain all the information necessary to do so, but you can not directly convert _from_ raster images _to_ vector images: In order to do so you would have to make inferences about the meaning implied by the raster image. Form is ambiguous and inferences are just guesses; they may be wrong.
 
 Consider the image below. What would the image look like if the black circle were removed?
 
@@ -108,26 +113,27 @@ Humans are so good at inferring visual meaning that it can be difficult for us t
 
 </div>
 
-Because we are so good at inferring meaning, meaning is always there. We don't appreciate how limited we would be without it. Computers are not good at inferring meaning from form. A human can guess that a red circle lies behind the black one, but a computer can't—so the human can imagine the drawing without the circle, and the computer can't.
+Because we are so good at inferring meaning, meaning is always available to us. Computers are not good at inferring meaning from form. A human can guess that a red circle lies behind the black one, but a computer can't—so the human can imagine the drawing without the circle, and the computer can't.
 
-This is the key advantage of vector graphics over raster graphics: **vector graphics contain high-level _meaning_** about the image that they represent. They are built from semantic units like rectangles and ellipses instead of nonsemantic pixels. This meaning allows us to make high-level changes: we can scale the vector image up and perfectly fill in the needed additional detail; we can change the fonts used to render text; we can remove a shape and reveal what is behind it.
+This is the key advantage of vector graphics over raster graphics: **vector graphics contain high-level _meaning_** about the image that they represent. They are built from semantic units like rectangles and ellipses instead of nonsemantic pixels. This meaning allows computers to easily make high-level changes: we can scale the vector image up and perfectly fill in the needed additional detail; we can change the fonts used to render text; we can remove a shape and reveal what is behind it.
 
 <div class="callout">
 
-Actually, computers _can_ infer meaning from images, they just need to be programmed to do so. This is an extremely active area of research, and the rate of progress in recent years is staggering. This research is already making its way to consumer tools—Photoshop introduced [Content-Aware Fill](https://helpx.adobe.com/photoshop/using/content-aware-fill.html) in 2010—and current approaches are actually **better than humans** at specific tasks.
+Actually, computers _can_ infer meaning from images, they just need to be programmed to do so. This is an extremely active area of research, and the rate of progress in recent years is staggering. This research is already making its way to consumer tools—Photoshop introduced [Content-Aware Fill](https://helpx.adobe.com/photoshop/using/content-aware-fill.html) in 2010. Current approaches are actually **better than humans** at many specific tasks.
 
 The [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg) channel on YouTube summarizes graphics and AI research papers. Here are some great videos:
 
-- [Two Minute Papers: AI Learns Semantic Image Manipulation](https://www.youtube.com/watch?v=XhH2Cc4thJw)
-- [Two Minute Papers: Physics-based Image and Video Editing](https://www.youtube.com/watch?v=bVGubOt_jLI)
-- [Two Minute Papers: Deep Image Prior](https://www.youtube.com/watch?v=_BPJFFkxSbw)
-- [Two Minute Papers: Image Colorization with Deep Learning and Classification](https://www.youtube.com/watch?v=MfaTOXxA8dM)
-- [Two Minute Papers: Learning to Fill Holes in Images](https://www.youtube.com/watch?v=psOPu3TldgY)
-  </div>
+- [AI Learns Semantic Image Manipulation](https://www.youtube.com/watch?v=XhH2Cc4thJw)
+- [Physics-based Image and Video Editing](https://www.youtube.com/watch?v=bVGubOt_jLI)
+- [Deep Image Prior](https://www.youtube.com/watch?v=_BPJFFkxSbw)
+- [Image Colorization with Deep Learning and Classification](https://www.youtube.com/watch?v=MfaTOXxA8dM)
+- [Learning to Fill Holes in Images](https://www.youtube.com/watch?v=psOPu3TldgY)
+
+</div>
 
 ## A Hybrid Workflow
 
-Using a vector-based graphics library allows us to computationally generate images, export them in a way that preserves their shape information, and further manipulate them in vector editing software.
+Using a vector-based graphics library allows us to computationally generate images, export them in a way that preserves their high-level shape information, and then further manipulate them in vector editing software.
 
 <div class="callout">
 
@@ -135,21 +141,23 @@ Using a vector-based graphics library allows us to computationally generate imag
 
 </div>
 
+Building a workflow like this, that combines custom coding with manual manipulation and prebuilt vector effects, can be a powerful approach to exploring form.
+
 ## Paper.js
 
-This chapter introduces [Paper.js](http://paperjs.org/), developed by [Jürg Lehni](http://lehni.org) and [Jonathan Puckey](http://jonathanpuckey.com).
+This section introduces [Paper.js](http://paperjs.org/), a Javascript vecotr library developed by [Jürg Lehni](http://lehni.org) and [Jonathan Puckey](http://jonathanpuckey.com).
 
 > Paper.js is an open source vector graphics scripting framework that runs on top of the HTML5 Canvas. It offers a clean Scene Graph / Document Object Model and a lot of powerful functionality to create and work with vector graphics and bezier curves, all neatly wrapped up in a well designed, consistent and clean programming interface.
-
-[About Paper.js](http://paperjs.org/about/){attrib}
+>
+> [About Paper.js](http://paperjs.org/about/){attrib}
 
 You can find an overview of Paper.js [features](http://paperjs.org/features/), a set of [tutorials](http://paperjs.org/tutorials/), and a complete [API Reference](http://paperjs.org/reference/global/) on the Paper.js site.
 
 ### PaperScript vs. JavaScript
 
-Paper.js is a JavaScript library, and can be used with JavaScript alone, but can also be used with PaperScript. Paper.js is easier to use with PaperScript, at least for small projects. You can find info on setting up your workspace here: [Working with Paper.js](http://paperjs.org/tutorials/getting-started/working-with-paper-js/)
+Paper.js is a JavaScript library, and can be used with JavaScript directly or with a special version of Javascript called PaperScript. Paper.js is easier to use with PaperScript, at least for small projects. You can find info on setting up your workspace here: [Working with Paper.js](http://paperjs.org/tutorials/getting-started/working-with-paper-js/)
 
-You can use PaperScript with this site's code example editor. You can tell the editor you are using PaperScript with a special comment: `// language paperscript`.
+You can also use PaperScript with this site's code example editor. You can tell the editor you are using PaperScript with a special comment: `// language paperscript`.
 
 Here is an example of a Paper.js program written in PaperScript:
 
@@ -157,13 +165,7 @@ Here is an example of a Paper.js program written in PaperScript:
 
 #### Library Exports
 
-If you use Paper.js as a Javascript library, you will access the library through the `paper` object. In PaperScript, the library contents are exported to the scope of the program and can be accessed directly.
-
-Javascript:
-
-```javascript
-var path = new paper.Path();
-```
+In PaperScript, the library contents are exported to the scope of the program and can be accessed directly. If you use Paper.js with Javascript, you will access the library through the `paper` object.
 
 PaperScript:
 
@@ -171,35 +173,71 @@ PaperScript:
 var path = new Path();
 ```
 
+Javascript:
+
+```javascript
+let path = new paper.Path();
+```
+
 #### Operator Overloads
 
-PaperScript also lets you use mathematical operators to work with Point and Size objects. You can see this on line 12. `circle1Location + new Point(100, 0)` adds two points together. JavaScript is not able to overload operators like this: this is a feature of PaperScript.
+PaperScript lets you use mathematical operators to work with Point and Size objects. You can see this on line 12 in the example above. `circle1Location + new Point(100, 0)` adds two points together by adding their components. `{x: 10, y:10} + {x:5, y:5} = {x: 15, y:15}`. Allowing custom addition procedures for specific types of perators is called _operator overloading_. JavaScript doesn't have operator overloading so you'll have to add each component seperately or use Paper.Point's `add` method.
 
-#### `Let` Does Not Work in PaperScript
+PaperScript:
 
-Javascript now allows you to declar variables with `let` and `const`, but PaperScript uses only `var`
+```javascript
+var point1 = new Point(5, 10);
+var point2 = new Point(10, 20);
+var result = point1 + point2;
+```
 
-### Retained Mode vs. Immediate Mode
+Javascript:
+
+```javascript
+const point1 = new paper.Point(5, 10);
+const point2 = new paper.Point(10, 20);
+const result = point1.add(point2);
+```
+
+#### `Let` and `Const` Do Not Work in PaperScript
+
+Modern Javascript allows you to declare variables with `let` and `const`. PaperScript is based on an older version of Javascript and supports only `var`.
+
+PaperScript:
+
+```javascript
+var point1 = new Point(5, 10);
+```
+
+Javascript:
+
+```javascript
+let point1 = new paper.Point(5, 10);
+```
+
+## Retained Mode vs. Immediate Mode
 
 The p5.js library is an _immediate mode_ graphics library. When you call `rect()` or `ellipse()`, p5.js immediately draws the shape to the canvas.
 
-Paper.js is a _retained mode_ graphics library. When you call `Path.Rectangles()` or `Path.Ellipses()`, Paper.js creates object instances to represent the shapes and adds them to a _scene graph_. The scene graph can then be changed. You can add and remove shapes and change their properties. The shapes in the scene graph are all drawn to the canvas at once, when you are done making changes to it.
+Paper.js is a _retained mode_ graphics library. When you call `Path.Rectangle()` or `Path.Ellipse()`, Paper.js creates object instances to represent those shapes and adds them to a _scene graph_. The scene graph is editable: you can add, remove, and reorder shapes in the graph and you change their properties. The shapes in the scene graph are all drawn to the canvas at once, when you are done making changes to it.
 
-Creating an animation in p5.js involves constructing and drawing the entire canvas every frame. Paper.js redraws the shapes in your scene graph every frame, so all you have to do is change the properties of your animated shapes.
+Creating an animation in p5.js involves constructing and drawing the entire canvas every frame. In contrast, Paper.js redraws the shapes in your scene graph every frame. To create an animation all you have to do is change the properties of your already existing shapes.
 
 {% js-lab "sketches/animation.js" %}
 
-Notice that we don't need to create the rectangle or the ellipse in every `onFrame()` call. We don't need to mention the background rectangle at all, once it is in the scene graph. Paper.js will draw it every frame until we remove it. We also don't need to set the color of the circle every frame. We can set it just when it changes, and that information is also stored in the scene graph.
+Notice that we don't need to create the rectangle or the ellipse in every `onFrame()` call. They are created only once before the animation begins. We also don't need to set the color of the circle every frame. We can set it just when it changes, and that information is also stored in the scene graph.
 
 ### SVG Output
 
 Since Paper.js works in retained mode and stores your drawing as a vector scene graph, you can export your scene as an `svg` drawing that you can open in a vector editor like Adobe Illustrator.
 
-The `Project.exportSVG()` function will create `svg` data of your Paper.js project. You need to do a little more work to download this data as a file. You can use the `downloadAsSVG()` in the example below to export your sketches. To export the example click it to focus it, and then press the `s` key.
+The `Project.exportSVG()` function will create an `svg` representation of your project as a string. You need to do a little more work to download this data as a file. You can use the `downloadAsSVG()` in the example below to export your sketches. To export the example click it to focus it, and then press the `s` key to download the export.
 
 {% js-lab "sketches/output.js" %}
 
 ### Basic Example
+
+This pretty minimal example shows the basics of drawing lines with Paper.js. It shows how to create and configure a path object, and how to add points to the path with `moveTo` and `lineTo`.
 
 {% js-lab "sketches/example_basic.js" %}
 
@@ -255,7 +293,9 @@ Explore Paper.js by modifying the examples above. Work through the following cha
 
 ## Project Case Study
 
-Paper Garden is a program written in about 300 lines of PaperScript using [Paper.js](http://paperjs.org/). It generates stylized drawings of plants arranged in a wall garden. Read about how this program works and explore the code.
+![paper_garden](./paper_garden/images/1500.png)
+
+Paper Garden is a program that generates stylized drawings of plants arranged in a wall garden. It is writen in about 300 lines of PaperScript using [Paper.js](http://paperjs.org/). Read the case study to learn about how this program works and explore the code.
 
 <div class='link-box'>
 
@@ -263,21 +303,17 @@ Paper Garden is a program written in about 300 lines of PaperScript using [Paper
 
 </div>
 
-![paper_garden](./paper_garden/images/1500.png)
-
 <div class="assignment">
 
 ## Keep Sketching!
 
 ### Sketch
 
-Explore using Paper.js. Focus on creating vector-based images this week. Consider using a hybrid workflow this week: start with code in Paper.js but finish with manual work in Illustrator.
+Explore using Paper.js. Consider using a hybrid workflow: start with code and Paper.js, export as SVG, and then work manually in vector illustration software.
 
-<!-- This week you must complete at least one of the following challenges. These challenges count as 2 sketches. Post one work-in-progress screenshot sketch, and a second sketch with a photo of the final output. -->
+### Challenge: Laser Cut or Pen Plot
 
-### Challenge: Zoom Background
-
-Well, the lockdown pretty much rules out posters and lasercuts. But Zoom backgrounds are pretty big now. Its not a good fit, but lets make lemonaid.
+Displaying vector art on a pixel-based display, inkjet printer, or laser printer requires rasterization. It is possible, however, to display vector art without rasterizing using a laser cutter or pen plotter. Explore these tools in combination with creative coding by creating a laser cut or pen plotted design in paper.js.
 
 ### Pair Challenge: Vector Swap
 
@@ -287,13 +323,13 @@ Well, the lockdown pretty much rules out posters and lasercuts. But Zoom backgro
 4. Manipulate the vector data in a vector tool like Illustrator.
 <!-- 5. Post the result. -->
 
-### Challenge: Promo Poster{strike}
+<!-- ### Challenge: Promo Poster{strike}
 
 Create a promotional poster for a real or fictional event. Your poster must be printed in color at 24"x24" or greater. Your poster should promote a specific event (of your choosing) and must include a generative vector element and text describing the title, date, and location of the event.
 
 ### Challenge: Lasercut Anything{strike}
 
-Create a lasercut thing. This can be anything you like that combines generative vector data and laser cutting or etching.
+Create a lasercut thing. This can be anything you like that combines generative vector data and laser cutting or etching. -->
 
 <!-- **Complete your posts before our next class and bring your posters and laser cuts to class!** -->
 

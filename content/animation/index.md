@@ -4,15 +4,15 @@ layout: compform_chapter.pug
 
 image: /animation/images/og_image.png
 hero_title: Animation
-description: Procedural generation can be used to describe motion in animations. In both pre-rendered and real-time animations, an understanding of frame rate and timing are crucial for generating satisfying motion graphics.
+description: Procedural methods are often used to describe motion in animations. In both pre-rendered and real-time animations, an understanding of frame rate and timing are crucial for generating moving images.
 software: p5.js
 ---
 
 ## Animation
 
-At heart, a procedurally-generated animation is just a series of procedurally-generated images. These images, called frames, are shown in quick succession—like a flipbook—to show motion. Even a short animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. Making a procedurally-generated animation is similar to making a procedurally-generated image, but with additional instructions to express how the image will change over time.
+At its heart, an animation is just a series of images. These images, called frames, are shown in quick succession—like a flipbook—to show motion. Convincing motion requires frames be shown very quickly; a few seconds of animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. At its heart, a procedurally-generated animation is just a series of procedurally-generated frames. Coding a procedurally-generated animation is similar to coding a procedurally-generated image, but with additional instructions to express how the image will change over time.
 
-Creatively, animation differs from still images by introducing another dimension: time. Because animations live in time, they excel at depicting actions, showing cause and effect, expressing narrative arcs, and telling stories.
+As a creative medium, animation differs from still images by introducing time. Because animations live in time, they excel at depicting actions, showing cause and effect, expressing narrative arcs, and telling stories.
 
 {% slides %}
 {% include slides.yaml %}
@@ -22,7 +22,7 @@ Creatively, animation differs from still images by introducing another dimension
 
 ### Frames Per Second
 
-Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of images as just that: a series of images. Above 10, we can begin to perceive a series of images as motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are necessary for virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second.
+Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of frames as independent images. Above 10, we begin to perceive a series of frames as a single image in motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are helpful in some applications like esports and virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second.
 
 {% js-lab "sketches/metronome_fps.js" %}
 
