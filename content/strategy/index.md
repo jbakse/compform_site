@@ -468,13 +468,7 @@ Explore the study examples above by completing the following challenges in order
 
 ## Properties of PCG System
 
-<div class="sidebar link-box">
-
-[**PCG Book** Online Book](http://pcgbook.com)
-
-</div>
-
-When designing a procedural generation system there are several properties to consider. The following properties are discussed in [Chapter 1](http://pcgbook.com/wp-content/uploads/chapter01.pdf) of _Procedural Content Generation in Games_.
+When designing a procedural generation system there are several properties to consider. The following properties are discussed in Chapter 1 of [_Procedural Content Generation in Games_](http://pcgbook.com).
 
 ### Speed
 
