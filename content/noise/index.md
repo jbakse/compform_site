@@ -101,7 +101,9 @@ This makes getting repeated results easy: every time you call `noise(x)` with a 
 - `noise(x)` _requires_ an coordinate argument and returns the same random value every time it is called _with that argument_.
 
 <div class="callout">
+
 This difference is the core reason why `noise(x)` is so useful AND the core reason it can be confusing at first. Learning what arguments to pass to `noise()` takes some practice.
+
 </div>
 
 ### Noise is Controllable
