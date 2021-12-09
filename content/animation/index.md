@@ -26,9 +26,7 @@ Generally, faster frame rates produce smoother motion. At rates below about 10 f
 
 {% js-lab "sketches/metronome_fps.js" %}
 
-Metronomes animated at 5, 15, 30, and 60 frames per second.{caption}
-
-<br/>
+The above example shows metronomes animated at 5, 15, 30, and 60 frames per second.
 
 In **pre-rendered** animation, all the frames are created ahead of time. In **real-time** animations, the frames are created as they are shown.
 
