@@ -70,15 +70,15 @@ function setup() {
 
 ### Computers, Light, Sound, and People
 
-Light and sound flow through our environment as electromagnetic and air pressure waves. Our eyes and our ears collect data about these waves and our visual and auditory cortexes process that data to create information. Though they work in different ways, both of these sensory systems are powerful. We can take advantage of these systems by choosing the types of forms we create.
-
-<!--[[This last sentence is unclear to me...I'll work on it.]]-->
-
-<div class="link-box">
+<div class="sidebar link-box">
 
 [**Light and Sound** Lecture Notes](./light_and_sound.html)
 
 </div>
+
+Light and sound flow through our environment as electromagnetic and air pressure waves. Our eyes and our ears collect data about these waves and our visual and auditory cortexes process that data to create information. Though they work in different ways, both of these sensory systems are powerful. We can take advantage of these systems by choosing the types of forms we create.
+
+<!--[[This last sentence is unclear to me...I'll work on it.]]-->
 
 ## Playing Sound with p5.js
 
