@@ -22,11 +22,11 @@ The Logo computer programming language was [created in 1967](http://el.media.mit
 
 One of the key ideas introduced in Logo was [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics). The turtle was originally a small programmable physical robot that carried a pen and could trace its path as it moved. Logo could control this turtle with simple commands like `left` and `right` to turn and `forward` to move. This idea was extended to drawing on-screen using a virtual turtle.
 
-<div class="two-up">
+<div class="two-up pad">
 
-![Papert w/ turtle](https://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)Seymour Papert with a physical turtle robot, photo by Cynthia Solomon{caption}
+![Papert w/ turtle](https://cyberneticzoo.com/wp-content/uploads/Papert-x640.jpg)Seymour Papert with a physical turtle robot, photo by Cynthia Solomon{scale}
 
-![turtle screenshot](images/turtle.png)A virtual turtle in action!{caption}
+![turtle screenshot](images/turtle.png)A virtual turtle in action!{scale}
 
 </div>
 
@@ -34,15 +34,23 @@ Logo's use of turtles allows students to make a strong association between what 
 
 <div class="link-box">
 
+<!-- Link to shorter cut is broken
+
 [**Seymour Papert and Students (1972)** Video](https://www.youtube.com/watch?v=5dZMgdqy7zY)
-See [here](https://www.youtube.com/watch?v=xMzojQFyMo0) for the longer cut of this video.
+See [here](https://www.youtube.com/watch?v=xMzojQFyMo0) for the longer cut of this video. -->
+
+[**Seymour Papert and Students (1972)** Video](https://www.youtube.com/watch?v=xMzojQFyMo0)
+An in-depth video where Papert discusses his work on computer-aided teaching for children.
+
 
 [**Seymour Papert on Logo (1986)** Video Series](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
+A two-part video series where Papert shares his thoughts on learning and evaluates the technical aspects of Logo.
 
 [**Seymour Papert on Logo: Teaching (1986)** Video](https://youtu.be/ZG9cYhekB8A?t=4m25s)
-Watch the clip from 4:25 - 6:40.
+Watch the clip from 4:25 - 6:40 to hear Papert talk about turtle graphics and body-syntonic learning.
 
 [**Learning with Toys (1986)** Video](https://www.youtube.com/watch?v=IhEovwWiniY)
+A short excerpt where Papert touches on learning, play, and programming.
 
 </div>
 

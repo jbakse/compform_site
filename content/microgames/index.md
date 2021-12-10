@@ -40,6 +40,10 @@ Animal Crossing NES Collection{figure}
 
 Minigames provide many benefits in game design. They offer a change of pace from the main game, reducing fatigue. They are usually low stakes, reducing stress. A well-placed minigame can improve the pacing of the main game significantly. Offering a break before a spike in the action will increase the apparent contrast in the intensity.
 
+{% slides %}
+{% include slides.yaml %}
+{% endslides %}
+
 Minigames don't have to carry the weight of a full game. They don't have advance the story or provide the amount of mechanics, levels, and content expected of full games. They are free to focus on a small set of ideas, deliver some fun gameplay, and move on.
 
 The [WarioWare](<https://en.wikipedia.org/wiki/Wario_(franchise)>) series, which debuted in 2003 on the Game Boy Advance, pushed the single-minded focus of minigames as far as possible. WarioWare presents the player with a rapid-fire sequence of microgames that demand only a single action from the player and take just seconds to play. As soon as the player completes one challenge, another begins.
@@ -55,10 +59,6 @@ The [WarioWare](<https://en.wikipedia.org/wiki/Wario_(franchise)>) series, which
 </div> -->
 
 Designing and building Microgames is a great way to explore game design. Their small scope allows even a single person to conceive, build, and test a game idea in a short amount of time. Each microgame is stripped to its essential element, allowing no distractions to cover up weak central mechanic. When building a microgame is left with a little to worry about as possible beyond the essentials of game design.
-
-{% slides %}
-{% include slides.yaml %}
-{% endslides %}
 
 <div class="activity">
 
@@ -96,21 +96,17 @@ Compare features to each of the artifacts in the list above. Do these features s
 
 ## p5.play
 
+<div class="sidebar link-box">
+
+[**p5.play homepage** Library Website](http://p5play.molleindustria.org/)
+
+</div>
+
 The p5.play library builds on p5.js to add features commonly needed in interactive applications, especially games. The p5.play homepage describes the library like this:
 
 > p5.play provides a <a href="http://p5play.molleindustria.org/examples/index.html?fileName=sprite.js" target="_blank">Sprite</a> class to manage visual objects in <a href="http://p5play.molleindustria.org/examples/index.html?fileName=sprite4.js" target="_blank">2D space</a> and features such as <a href="http://p5play.molleindustria.org/examples/index.html?fileName=sprite3.js" target="_blank">animation support</a>, <a href="http://p5play.molleindustria.org/examples/index.html?fileName=collisions.js" target="_blank">basic collision detection</a> and <a href="http://p5play.molleindustria.org/examples/index.html?fileName=collisions4.js" target="_blank">resolution</a>, sprite <a href="http://p5play.molleindustria.org/examples/index.html?fileName=sprite8.js" target="_blank">grouping</a>, helpers for mouse and keyboard <a href="http://p5play.molleindustria.org/examples/index.html?fileName=keyPresses.js" target="_blank">interactions</a>, and a <a href="http://p5play.molleindustria.org/examples/index.html?fileName=camera.js" target="_blank">virtual camera</a>. </p>
 
 Since p5.play builds on p5.js it should feel pretty familiar. One key difference is that p5.play provides a scene graph. When you create a new sprite, p5.play remembers that it is part of the scene. When you set the velocity of a sprite, p5.play remembers that for you too. When you call `drawSprites()`, p5.play will move and draw all the sprites.
-
-<div class="link-box">
-
-[**p5.play homepage** Library Website](http://p5play.molleindustria.org/)
-
-[**p5.play examples** Library Website](http://p5play.molleindustria.org/examples/index.html)
-
-[**p5.play api reference** Official Documentation](http://p5play.molleindustria.org/docs/index.html)
-
-</div>
 
 <div class="callout">
 

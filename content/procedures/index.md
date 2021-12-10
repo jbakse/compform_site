@@ -130,7 +130,7 @@ The reason this strategy works is simple: **instead of trying to do something yo
 
 When designing a procedural generation system there are several properties to consider. The designer must balance these concerns and design a system that fits the goals of the project. As an example, consider execution speed. A newly-written procedure may run slowly, perhaps taking minutes or hours to generate an image. Usually, with effort, the procedure can be rewritten to run much more quickly, perhaps in just a few milliseconds. It probably wouldn't be worth the effort to speed up the procedure if it is part of a tool that will only be used a few times, but the optimized procedure could be used in completely different ways.
 
-The following properties are borrowed from [the first chapter of Procedural Content Generation in Games](http://pcgbook.com/wp-content/uploads/chapter01.pdf), a great textbook on procedural generation which is available free online and [in print](https://www.amazon.com/Procedural-Generation-Computational-Synthesis-Creative/dp/3319427148/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=pcgbook-20&linkId=cf064284f4aa7d2b4c8585fa20b2b07e).
+The following properties are borrowed from [the first chapter of _Procedural Content Generation in Games_](http://pcgbook.com/wp-content/uploads/chapter01.pdf), a great textbook on procedural generation which is available free online and [in print](https://www.amazon.com/Procedural-Generation-Computational-Synthesis-Creative/dp/3319427148/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=pcgbook-20&linkId=cf064284f4aa7d2b4c8585fa20b2b07e).
 
 ### Speed
 
@@ -205,7 +205,7 @@ If you want to play Spelunky—which I highly recommend—the original version (
 
 </div>
 
-## Additional Reading
+## Explore
 
 <div class="link-box">
 

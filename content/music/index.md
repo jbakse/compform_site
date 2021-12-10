@@ -125,8 +125,8 @@ Synthesizes often let you control this aspect of the sound created using an [ADS
 The following exampes will use the Tone.js library to synthesize musical notes.
 
 > Tone.js is a framework for creating interactive music in the browser. It provides advanced scheduling capabilities, synths and effects, and intuitive musical abstractions built on top of the Web Audio API.
-
-- [Tone.js Homepage](https://tonejs.github.io/) {attrib}
+>
+> [Tone.js Homepage](https://tonejs.github.io/) {attrib}
 
 Tone.js is pretty easy to get started with and well documented. Be sure to read through the [overview](https://tonejs.github.io/), browse the [API docs](https://tonejs.github.io/docs/), and look at ALL the [examples](https://tonejs.github.io/examples/). By looking at the examples you will learn what the library can do, and you'll also learn a fair amount about different synthesis techniques. At least you will learn the names of interesting techniques and common paramters. You can study the [code for the examples](https://github.com/Tonejs/Tone.js/tree/dev/examples) also. Finally, the [Tone.js Wiki](https://github.com/Tonejs/Tone.js/wiki) has important conceptual information.
 
@@ -328,16 +328,19 @@ Melody in Songwriting is an excellent book for developing melody-writing skills.
 Khan Academy offers interactive tutorials on basic music theory, including rhythm and musical notation.
 
 [**Web Audio API** MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
-Documentation for the Web Audio API.
+The documentation for the Web Audio API.
 
 [**Getting Started with Web Audio** HTML5Rocks](https://www.html5rocks.com/en/tutorials/webaudio/intro/)
+A comprehensive introduction to how the Web Audio API works.
 
 [**Audio Scheduling** HTML5Rocks](https://www.html5rocks.com/en/tutorials/audio/scheduling/)
 A tutorial on audio timing and scheduling in the Web Audio API.
 
 [**I don't know who the Web Audio API is designed for** Essay](http://blog.mecheye.net/2017/09/i-dont-know-who-the-web-audio-api-is-designed-for/)
+An essay that discusses the weaknesses and limitations of the Web Audio API.
 
 [**Midi Notes and Math** UNSW](https://newt.phys.unsw.edu.au/jw/notes.html)
+A breakdown of MIDI numbers and frequencies.
 
 [**Teoria.js Music Theory Library** Library](https://github.com/saebekassebil/teoria)
 A library for music software that supports musical structures and language, including chords, scales, and notes.
