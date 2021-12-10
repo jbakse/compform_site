@@ -9,7 +9,7 @@
 @mixin font-copy() {
   font-family: "Roboto";
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.31px;
   line-height: 1.75;
   color: $dark-grey;
@@ -39,30 +39,31 @@
 
   h1 {
     font-size: 25px;
-    text-decoration: line-through;
+    // text-decoration: line-through;
   }
 
   h2 {
     font-size: 25px;
-    margin-top: 100px;
+    margin-top: 4em;
   }
 
   h3 {
     font-size: 24px;
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 2em;
   }
 
   h4 {
     font-size: 20px;
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 2em;
   }
 
   h5,
   h6 {
     font-size: 20px;
-    text-decoration: line-through;
+    // text-decoration: line-through;
+    background-color: red;
   }
 
   // numbering the h2s
@@ -86,7 +87,8 @@
   /* blocks */
   /* paragraphs */
   p {
-    margin-bottom: 1.5em;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
   }
 
   /* blockquote */
@@ -95,6 +97,8 @@
     @include block-pad;
     background: $light-grey;
     padding: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     // font-size: 1.25em;
   }
   blockquote :first-child {
@@ -111,7 +115,7 @@
   .callout blockquote {
     font-size: inherit;
     background: white;
-    margin: 0;
+    margin: 1em 0;
     width: auto;
   }
 
@@ -178,6 +182,7 @@
   ol {
     list-style-type: none;
     padding-left: 40px;
+    margin-top: 0.25em;
     margin-bottom: 1.5em;
   }
 

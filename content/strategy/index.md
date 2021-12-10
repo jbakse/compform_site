@@ -28,18 +28,21 @@ So far we've been looking at low-level topics like how to use—and get the most
 
 When planning and coding a project, I tend to think in terms of _strategies_ and _tactics_.
 
-Strategies
-: Strategies are high-level plans for achieving your unique, broad goals. Because strategies are specific to their goals they are not highly reusable.
+#### Strategies
+
+Strategies are high-level plans for achieving your unique, broad goals. Because strategies are specific to their goals they are not highly reusable.
 
 _Strategies are composed of tactics._
 
-Tactics
-: Tactics are low- to mid-level concrete approaches to solving common problems. Tactics can include common [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms), [data structures](https://en.wikipedia.org/wiki/List_of_data_structures), [design patterns](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), and other reusable components. Tactics correspond to common problems and are highly reusable.
+#### Tactics
+
+Tactics are low- to mid-level concrete approaches to solving common problems. Tactics can include common [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms), [data structures](https://en.wikipedia.org/wiki/List_of_data_structures), [design patterns](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), and other reusable components. Tactics correspond to common problems and are highly reusable.
 
 _Tactics are composed of smaller tactics and primitives._
 
-Primitives
-: Primitives are the programming building blocks provided by your language and libraries. These include control structures like loops and functions and built-in data types like variables, objects, and arrays. They may also include more complex tasks like `rect()` and `random()` when the complexity is encapsulated and you don't have to think about how they work internally to use them.
+#### Primitives
+
+Primitives are the programming building blocks provided by your language and libraries. These include control structures like loops and functions and built-in data types like variables, objects, and arrays. They may also include more complex tasks like `rect()` and `random()` when the complexity is encapsulated and you don't have to think about how they work internally to use them.
 
 _Primitives are atomic: they are the smallest units of composition and are not further broken down._
 

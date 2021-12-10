@@ -162,9 +162,9 @@ Definition Lists
 
 ## Headers
 
-Don't use H1s. There should only be one h1 per page. Its in the masthead.
+Don't use H1 on chapters. There should only be one h1 per page and it is in the masthead.
 
-Use h2 (like above) for the major sections. They will be numbered. You can hide the number with `{plain}`.
+Use h2 (like above) for the major sections. Major sections divide content of significantly different type: history and background vs technical details. H2s will be numbered. You can hide the number with `{plain}`.
 
 ### h3 for sub sections
 
@@ -173,6 +173,13 @@ Use h3 to devide larger sections.
 #### h4 for details
 
 Use h4s sparingly. Two levels (h2 and h3) is usually detailed enough for sectioning.
+
+Again the logic is like this:
+
+- h1 for the masthead
+- h2 for major sections
+- h3 for sub sections
+- h4 for details
 
 ## Content Classes
 
