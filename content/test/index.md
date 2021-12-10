@@ -295,6 +295,14 @@ Basic images are centered and shown 100%
 
 </div>
 
+### one-up
+
+<div class="one-up pad">
+
+![cross](./figures/make_things.png)You can use a one up to caption a single image.
+
+</div>
+
 ## Slides
 
 {% slides %}

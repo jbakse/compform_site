@@ -41,7 +41,7 @@ Computer displays don't have to use pixels at all. One of the earliest video gam
 
 </div>
 
-## Gallery
+<!-- ## Gallery -->
 
 This high/low level tradeoff has some important implications for the creative coder. When you work at a high level you are not responsible for the details. Because you are not responsible for the details you tend to think about them less. Working directly with the pixels leads to thinking about drawing with code differently.
 

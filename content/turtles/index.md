@@ -177,13 +177,17 @@ In the examples above, the Cartesian system works well for drawing a square, but
 
 Both approaches can be used to draw a square or star. We are not [_forced_](https://en.wikipedia.org/wiki/Technological_determinism) to draw specific things by either framework, but each framework encourages a different way of thinking. Just as working directly with pixels encourages different forms than working with higher-level drawing APIs, working with turtle graphics encourages yet other forms.
 
-Two of the forms that turtles tend to encourage are spirograph-like figures and recursive trees.
+Two of the forms that turtles tend to encourage are [spirograph](https://en.wikipedia.org/wiki/Spirograph)-like figures and recursive trees.
 
-### Spirograph Example
+### Spirograph
+
+This example draws a 72 pointed star. This isn't really what a Spirograph draws, but shares some visual characteristics, like rotational symmetry.
 
 {% js-lab "sketches/turtle_spirograph.js" %}
 
-### Recursive Tree Example
+### Recursive Tree I
+
+Turtles are often paired with recursion to draw tree-like forms. Study this ,simpified example to see how, and see the _Recursive Tree II_ below for a little more detailed example.
 
 {% js-lab "sketches/turtle_tree.js" %}
 
@@ -243,15 +247,15 @@ Grab [the code here](turtle/turtle.html).
 This basic example creates a turtle and uses it to draw a square.
 {% js-lab "sketches/turtle_square.js" %} -->
 
-### Turtle Triangle Example
+### A Triangle
 
 This basic example creates a turtle and uses it to draw a triangle.
 
 {% js-lab "sketches/turtle_triangle.js" %}
 
-### Turtle Multiple Triangles Example
+### Multiple Triangles
 
-This example has a `drawTriangle()` function that controls the turtle passed as the first argument. The code moves the turtle to random locations before calling `drawTriangle()`.
+This example moves the main drawing code into the `drawTriangle()` function which takes a turtle as its argument. The location of the triangle is controlled by moving the turtle before calling `drawTriangle()`.
 
 {% js-lab "sketches/turtle_triangles.js" %}
 
@@ -259,7 +263,7 @@ This example has a `drawTriangle()` function that controls the turtle passed as 
 
 ## Coding Challenges
 
-Explore turtle graphics by modifying the examples above. Work through the following challenges in order.
+Explore this chapter's example code by completing the following challenges.
 
 <!-- Don't skip any. -->
 <!-- | Time                 | Comment                                                      |
@@ -312,7 +316,7 @@ You can use `push()` and `pop()` together to take a break from drawing one shape
 
 {% js-lab "sketches/turtle_push.js" %}
 
-### Turtle Recursive Tree
+### Recursive Tree II
 
 A common application of turtle graphics is drawing organic branching shapes, like trees.
 

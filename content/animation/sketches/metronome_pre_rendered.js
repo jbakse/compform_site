@@ -12,7 +12,7 @@ function setup() {
 function draw() {
   clear();
 
-  const theta = map(frameCount, 0, 60, 0, 2 * PI);
+  const theta = map(frameCount, 0, 30, 0, 2 * PI);
   const pendulumAngle = sin(theta) * 0.5;
   metronome(200, 325, 3, pendulumAngle);
 }

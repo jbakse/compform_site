@@ -110,8 +110,6 @@ This difference is the core reason why `noise(x)` is so useful AND the core reas
 
 By controlling what you pass to `noise(x)`, you can control the frequency of change in the returned values. This can be used to control how quickly values vary in space and time. With p5s Perlin Noise, you can also adjust the character of `noise(x)` using `noiseDetail()`. You can scale and shift the values returned from `noise(x)` to the range you need in the same way you shift values from `random()`.
 
-Current: Multiplayer p5.party
-
 ### 1D Noise Example
 
 {% js-lab "sketches/sketch_1D_noise/sketch.js" %}

@@ -12,13 +12,12 @@ software: p5.js + p5.dom
 > Q: Can the computer substitute for the Designer?
 >
 > A: Probably, in some special cases, but usually the computer is an aid to the Designer.
-> {bigger}
-
-Charles Eames, Design Q&A [Transcript](http://www.markwunsch.com/eames.html) [Video](https://www.youtube.com/watch?v=bmgxDCujTUw&feature=emb_logo){attrib}
+>
+> Charles Eames, Design Q&A [Transcript](http://www.markwunsch.com/eames.html) [Video](https://www.youtube.com/watch?v=bmgxDCujTUw&feature=emb_logo){attrib}
 
 This is a class about computational form, algorithmic images, generative art, parametric design, and procedural generation. In this class, we will explore a creative process in which form is made indirectly, by creating and then following a defined processes. We will write instructions that a computer will follow to create images, animations, sounds, and sculptures.
 
-We will make things that make things.{bigger}
+**We will make things that make things.**
 
 There are many reasons artists and designers employ algorithmic methods. Some important ones include:
 
@@ -110,7 +109,7 @@ This sketching process is central to the approach of the class. There are NO lon
 
 ![This not That](figures/this_not_that.png){wide}
 
-### Notes on Daily Sketching
+## Notes on Daily Sketching
 
 Your goal **each day** should be to explore a different aspect of the weekly theme. Ideally, you will spend **1 to 2 hours on an idea**, resulting in an image or other artifact. Each day you will work on **a new idea**, possibly informed by something you did earlier in the week or class.
 
@@ -219,7 +218,7 @@ Don't put in less than 45 minutes. Sometimes, you'll make a really nice sketch p
 
 Four sketches at 90 minutes each is 6 hours. The weekly advanced reading and coding challenge will take about one to two hours. Expect to spend about 7 to 8 hours each week on homework for this class.
 
-### Syllabus Notes
+## Syllabus Notes
 
 ### Attend every class, arrive early, stay late.
 
@@ -239,7 +238,7 @@ All the work you submit for this class should be your own. For the most part you
 
 **If your work builds on or includes anyone else's work, make sure you cite it and give them credit!**
 
-### Who I am
+## Who I am
 
 I am Justin Bakse. I am an assistant professor of interaction design at Parsons. I am personally very interested in computational form and have used computational methods in a great deal of my work. You can see some of my work below or [on my website](http://justinbakse.com/).
 

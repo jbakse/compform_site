@@ -1,6 +1,6 @@
 ---
 title: Sierpinski
-layout: compform_chapter.pug
+layout: compform_plain.pug
 
 hide_logo: true
 ---

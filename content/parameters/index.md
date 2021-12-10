@@ -185,17 +185,11 @@ I sometimes find it helpful to consider wether my parameters should be method-or
 
 #### Balance
 
-Exposing **more**...
-
-- gives your user more control.
-- makes your interface harder to understand.
-- allows your users to do more good things.
-
-Exposing **less**...
-
-- gives you more control.
-- makes your interface easier to understand.
-- prevents your users from doing bad things.
+| Exposing more...                           | Exposing less...                           |
+| ------------------------------------------ | ------------------------------------------ |
+| gives your user more control.              | gives you more control.                    |
+| makes your interface harder to understand. | makes your interface easier to understand. |
+| allows your users to do more good things.  | prevents your users from doing bad things. |
 
 #### Presenting Your Interface
 

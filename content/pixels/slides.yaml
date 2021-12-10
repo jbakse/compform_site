@@ -13,17 +13,19 @@
       href: https://amf.fyi/
       subtitle: Artist Site
 
-- artist: Camille Utterback
-  title: Visual Resolve, 2000
-  image: http://camilleutterback.com/wp2017/wp-content/gallery/visual-resolve/VisualResolve_Answer_hires.jpg
-  comments: Visual Resolve creates a mosiac rendering of an incoming video feed.
-  links:
-    - label: Visual Resolve
-      href: ./slides/camille_utterback.png
-      subtitle: Project Page
-    - label: camilleutterback.coms
-      href: http://camilleutterback.com/
-      subtitle: Artist Site
+
+# - artist: Camille Utterback
+#   title: Visual Resolve, 2000
+#   image: http://camilleutterback.com/wp2017/wp-content/gallery/visual-resolve/VisualResolve_Answer_hires.jpg
+#   comments: Visual Resolve creates a mosiac rendering of an incoming video feed.
+#   links:
+#     - label: Visual Resolve
+#       href: http://camilleutterback.com/projects/visual-resolve/
+#       subtitle: Project Page
+#     - label: camilleutterback.coms
+#       href: http://camilleutterback.com/
+#       subtitle: Artist Site
+
 
 - artist: Sergio Albiac
   title: Stardust, 2013-14

@@ -215,7 +215,7 @@
     > h3 {
       font-family: "Miriam Libre";
       font-weight: bold;
-      font-size: 10px;
+      font-size: 12px;
       letter-spacing: 0.04px;
 
       color: $dark-grey;
@@ -357,5 +357,10 @@
 
   .center {
     text-align: center;
+    background: red;
+  }
+
+  .caption {
+    background: red;
   }
 }

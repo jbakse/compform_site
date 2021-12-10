@@ -32,14 +32,11 @@ function drawBranch(length) {
   myTurtle.pushState();
   myTurtle.turnLeft(35);
   drawBranch(length * 0.75);
-  //drawBranch(length * random(.5, .9));
-
   myTurtle.popState();
 
   // right child
   myTurtle.pushState();
   myTurtle.turnRight(35);
   drawBranch(length * 0.75);
-  //drawBranch(length * random(.5, .9));
   myTurtle.popState();
 }

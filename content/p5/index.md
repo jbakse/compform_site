@@ -29,7 +29,7 @@ Processing combines a simple programming environment, a programming language bui
 
 The p5.js library was created by artist [Lauren McCarthy](http://lauren-mccarthy.com/) to brings the Processing API and spirit to Javascript and the web. Programming with p5.js is very similar to working in Processing, with the benefit that p5.js sketches work in any modern browser.
 
-## Gallery
+<!-- ## Gallery -->
 
 Here are a few examples to give you an idea of what kinds of things people make with p5.js
 

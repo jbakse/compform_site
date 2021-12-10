@@ -4,15 +4,15 @@ layout: compform_chapter.pug
 
 image: /animation/images/og_image.png
 hero_title: Animation
-description: Procedural generation can be used to describe motion in animations. In both pre-rendered and real-time animations, an understanding of frame rate and timing are crucial for generating satisfying motion graphics.
+description: Procedural methods are often used to describe motion in animations. In both pre-rendered and real-time animations, an understanding of frame rate and timing are crucial for generating moving images.
 software: p5.js
 ---
 
 ## Animation
 
-At heart, a procedurally-generated animation is just a series of procedurally-generated images. These images, called frames, are shown in quick succession—like a flipbook—to show motion. Even a short animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. Making a procedurally-generated animation is similar to making a procedurally-generated image, but with additional instructions to express how the image will change over time.
+At its heart, an animation is just a series of images. These images, called frames, are shown in quick succession—like a flipbook—to show motion. Convincing motion requires frames be shown very quickly; a few seconds of animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. At its heart, a procedurally-generated animation is just a series of procedurally-generated frames. Coding a procedurally-generated animation is similar to coding a procedurally-generated image, but with additional instructions to express how the image will change over time.
 
-Creatively, animation differs from still images by introducing another dimension: time. Because animations live in time, they excel at depicting actions, showing cause and effect, expressing narrative arcs, and telling stories.
+As a creative medium, animation differs from still images by introducing time. Because animations live in time, they excel at depicting actions, showing cause and effect, expressing narrative arcs, and telling stories.
 
 {% slides %}
 {% include slides.yaml %}
@@ -20,27 +20,27 @@ Creatively, animation differs from still images by introducing another dimension
 
 ## Real-time vs. Pre-rendered
 
+In **pre-rendered** animations, all the frames in an animation are created ahead of time and then played back seperately. In **real-time** animations, the frames are created as they are shown.
+
+Real-time rendering for animation needs to be done quickly. To render an animation at 30 frames per second, each frame must be generated in 33 milliseconds or less. In exchange for limiting how much time can be spent rendering each frame, we gain a huge benefit. Real-time animation can react to information—including user input—that is not known ahead of time. This allows real-time animation to be _interactive_.
+
+But pre-rendering provides its own huge benefit. Limiting the time spent rendering each frame often means compromising on the quality or complexity of the animation. When creating a pre-rendered animation, one can take as long as necessary to create each frame, allowing for high complexity and quality. Individual frames in high-end animated films often take hours or even days to render, but they look better as a result.
+
 ### Frames Per Second
 
-Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of images as just that: a series of images. Above 10, we can begin to perceive a series of images as motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are necessary for virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second.
+Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of frames as independent images. Above 10, we begin to perceive a series of frames as a single image in motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are helpful in some cases like e-sports and virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second. VR scenes must be rendered twice—once for each eye—and in realtime, so each frame must be rendered in about 5 milliseconds.
+
+Take a look at the metronomes below to get a feel for how framerate coresponds to smoothness. They are are animated at 5, 15, 30, and 60 frames per second.
 
 {% js-lab "sketches/metronome_fps.js" %}
-
-The above example shows metronomes animated at 5, 15, 30, and 60 frames per second.
-
-In **pre-rendered** animation, all the frames are created ahead of time. In **real-time** animations, the frames are created as they are shown.
-
-Real-time rendering for animation needs to be done quickly. To render an animation at 30 frames per second, each frame must be generated in 33 milliseconds or less. To render VR at 90 frames per second, two frames—one for each eye—must be rendered in 10 milliseconds. In exchange for limiting how much time can be spent rendering each frame, we gain a huge benefit. Real-time animation can react to information—including user input—that is not known ahead of time. This allows real-time animation to be _interactive_.
-
-But pre-rendering provides its own huge benefit. Limiting the time spent rendering each frame often means compromising on the quality or complexity of the animation. When creating a pre-rendered animation, one can take as long as necessary to create each frame, allowing for high complexity and quality. Individual frames in high-end animated films often take hours or even days to render, and they look better as a result.
 
 ### Time Keeping
 
 Time keeping is essential to generating animation. Time is the foundation for sequencing, pace, rhythm, and speed. Choosing an appropriate method for keeping time is an important step to getting the results you want.
 
-Real-time animation is computed at the same rate it is shown. If a frame is rendered faster than needed, the application can simply wait to display it. If the frame takes too long, frames will be dropped and the frame rate will dip. In either case the render time and display time move at the same pace. Something drawn four seconds after rendering begins is seen four seconds after the animation begins.
+Real-time animation is computed at the same rate it is shown. In real-time rendering the render time and display time are linked. Something drawn four seconds after rendering begins is seen four seconds after the animation begins. Rendering a frame faster than needed is fine: the application can simply wait to display it. If rendering the frame takes too long, however, frames will be dropped. The frame rate will dip and animation will become choppy.
 
-Pre-rendered animation is computed at a different rate—probably much slower, but maybe faster—than it is displayed so the render time and display time are not the same. A frame seen four seconds into an animation may have been drawn several hours into the rendering job that created it.
+Pre-rendered animation is computed at a different rate—probably much slower, but maybe faster—than it is displayed. The render time and display time are not linked. A frame seen four seconds into an animation may have been drawn several hours into the rendering job that created it.
 
 ### The Simple Approach
 
@@ -48,12 +48,18 @@ A common and simple approach to keeping time is to first set the frame rate, and
 
 {% js-lab "sketches/metronome_simple.js" %}
 
-This example draws a metronome that swings its pendulum **once every second**. The `metronome()` function draws the metronome. This function doesn't position the arm based on time, it exposes a parameter called `pendulumAngle` which controls the position instead. The calling code is responsible for controlling how fast the arm swings. Lines 10 and 11 do this work.
+This example draws a metronome that swings its pendulum **once every second**. The `metronome()` function draws the metronome. It takes a parameter called `pendulumAngle` which controls the position instead. The calling code is responsible for controlling how fast the arm swings. Lines 10 and 11 do this work.
 
 - **Line 10** uses `map()` to map the current `frameCount` to `theta` such that `theta` increases by 2π every 60 frames or 1 second.
 - **Line 11** calculates `pendulumAngle` using `sin()`. Because the sin function has a period of 2π, `sin(theta)` will produce a smooth wave that repeats every 1 second.
 
-This approach works fine for many simpler programs, but it has some problems. The `frameCount` variable tells us how many _frames_ have been drawn: It doesn't actually tell us how much _time_ has gone by. We can calculate time from `frameCount`, but only if we assume that each frame is drawn exactly on schedule. Unfortunately, that is not always the case.
+<div class="callout">
+
+The variable `theta` in the example above is called "theta" because "theta" or "θ" is a conventional name in trigonometry for the angle input to `sin()`, `cos()`, and `tan()`.
+
+</div>
+
+This approach works fine for many simpler programs, but it has a problem. The `frameCount` variable tells us how many _frames_ have been drawn: It doesn't actually tell us how much _time_ has gone by. We can calculate time from `frameCount`, but only if we assume that each frame is drawn exactly on schedule. Unfortunately, that is not always the case.
 
 ### Real-time Draw Loops
 
@@ -65,31 +71,31 @@ In a 60fps animation, each frame should be shown for 16.6 milliseconds. If drawi
 
 <div class="sidebar link-box">
 
-[**p5.js Draw Loop Code** GitHub](https://github.com/processing/p5.js/blob/ed94431045900c61cb1f78942a64e0f2a623df69/src/core/core.js#L341)
+[**p5.js Draw Loop** GitHub](https://github.com/processing/p5.js/blob/ed94431045900c61cb1f78942a64e0f2a623df69/src/core/core.js#L341)
 
 </div>
 
-On the other hand, consider what happens if drawing a frame takes too long: 20 milliseconds. The draw loop might show the frame as soon as possible, but it will still be a few milliseconds late. Alternatively, the draw loop might wait an additional 13.2 milliseconds, a longer delay but in sync with the global framerate. In either case, the frame count is now behind the actual elapsed time. These delays are cumulative: slow frames set things back but fast frames don't recover the lost time. Over time, the frame count will lag more and more.
+On the other hand, consider what happens if drawing a frame takes too long, let's say 20 milliseconds. The draw loop might show the frame as soon as possible, but it will still be a few milliseconds late. Alternatively, the draw loop might wait an additional 13.2 milliseconds, a longer delay but in sync with the global framerate. In either case, the frame count is now behind the actual elapsed time. These delays are cumulative: slow frames set things back but fast frames don't recover the lost time. Over time, the frame count will lag more and more.
 
 Another way your frame count can fall out of sync with time is if your requested frame rate just isn't possible. Many environments, including p5.js in the browser, synchronize drawing to the screen's refresh rate, commonly 60hz. In p5.js your framerate will effectively get rounded to a factor of 60.
 
 {% js-lab "sketches/frame_rate_test.js" %}
 
-In simple games and other real-time applications, these problems may not matter. When syncing animation to real time _does_ matter the simple approach above will cause problems.
+In simple games, apps, and prototypes these problems may not matter. When syncing animation to real time _does_ matter—e.g. if your animation should sync with sound playback—the simple approach above will cause problems.
 
 ### Real-time Clocks for Real-time Animation
 
 For real-time animation, we want to base our animation on how much real time has elapsed.
 
-The example below swings the pendulum once per second using `millis()` as the time base. If you slow the frame rate down with the slider, the animation becomes choppy, but the pendulum still swings at the same rate.
+The example below swings the pendulum **once per second** using `millis()` as the time base. If you slow the frame rate down with the slider, the animation becomes choppy, but the pendulum still swings at the same rate.
 
 {% js-lab "sketches/metronome_real_time.js" %}
 
 ### Frame Counting for Pre-rendered Animation
 
-For pre-rendered animation, we want to base our animation on the current frame, regardless of the time elapsed. We don't care how long the frames take to render because we know we will play them back at the correct rate. Our priority is to render every frame needed for later playback.
+For pre-rendered animation, we want to base our animation on the current frame, regardless of the time elapsed. We don't care how long the frames take to render because we know we will play them back at the correct rate.
 
-The example below swings the pendulum once per second using `frameCount` as the time base. If you slow the frame rate down with the slider, the animation slows down.
+The example below swings the pendulum **once per 30 frames** using `frameCount` as the time base. It is rendering _faster_ than the intended playback rate. If you slow the frame rate down with the slider, the rendering slows down. But when you export the frames and playe them back at 30fps the pendulum will swing at a steady one swing per second.
 
 {% js-lab "sketches/metronome_pre_rendered.js" %}
 
@@ -97,49 +103,62 @@ The example below swings the pendulum once per second using `frameCount` as the 
 
 ### Timed Events
 
-Imagine you want something to happen in your animation 10.2 seconds after it starts. It is pretty likely that your event will happen between frames, so a simple equality check won't work.
+Imagine you want something to happen in your animation 10 seconds after it starts in your realtime animation. It is pretty likely that your event will happen between frames, so a simple equality check won't work.
 
 <div class="bad">
 
 ```javascript
-// this will probably fail
-if (thisFrameTime === 10.2) {
-  doThing();
+const eventTime = 10;
+if (currentTime === eventTime) {
+  doThing(); // probably never happens
 }
 ```
 
 </div>
 
 ```javascript
-// this is better
-if (lastFrameTime < 10.2 && thisFrameTime >= 10.2) {
+const eventTime = 10;
+if (lastFrameTime < eventTime && currentTime >= eventTime) {
+  doThing(); // will happen on the first frame after eventTime
+}
+```
+
+This isn't a problem in prerendered animations if your event is scheduled for a specific frame.
+
+```javascript
+const eventFrame = 300;
+if (frameCount === eventFrame) {
   doThing();
 }
 ```
 
-This isn't a problem if you are using the frame number as your base and your event falls on a specific frame.
+But the problem might come up if you calculate the frame based on a time.
+
+<div class="bad">
 
 ```javascript
-// okay
-if (frameCount === 10) {
-  doThing();
+const eventTime = 0.75;
+const eventFrame = 0.75 * 30; // = 22.5
+if (frameCount === eventFrame) {
+  doThing(); // never happens
 }
 ```
 
-But the problem might come up if you convert an event time from seconds to frames and the result is not an integer.
+</div>
+
+You can fix this by rounding in your comparison.
 
 ```javascript
-// okay
-const eventTime = 0.92; // seconds
-const eventFrame = 0.92 * 60; // 55.2
-if (frameCount - 1 < eventFrame && frameCount >= eventFrame) {
+const eventTime = 0.75;
+const eventFrame = 0.75 * 30; // = 22.5
+if (frameCount === Math.floor(eventFrame)) {
   doThing();
 }
 ```
 
 ### Timed Intervals
 
-The `map()` function can be useful for making things happen over a set interval.
+The `map()` function can be useful for mapping time to other things, like position.
 
 ```javascript
 // move an ellipse from 100 to 400
@@ -156,17 +175,17 @@ The modulo operator—`%`—is great for breaking time into repeated chunks or m
 
 {% js-lab "sketches/metronome_modulo.js" %}
 
-The new work is done on line 20:
+The interesting work is done on line 20:
 
 ```javascript
 const red = map(millis() % 500, 0, 300, 255, 0, true);
 ```
 
-First `millis() % 500` converts the time from `0 → ∞` to `0 → 500, 0 → 500, ...`. Then the map function makes `red` decrease from 255 to 0 over the first 300 milliseconds of each interval.
+First `millis() % 500` converts the time from `0 → ∞` to `0 → 500, 0 → 500, ...`. Then the map function sets `red` to decreasing values from 255 to 0 over the first 300 milliseconds of each interval.
 
-### Periodic Functions
+<!-- ### Periodic Functions
 
-Periodic functions produce repeating values in regular intervals. They are very useful for creating rhythms in procedurally-generated animation. The modulus operator and `sin()` function are both periodic and are used in the examples above to produce steadily repeating animation.
+Periodic functions produce repeating values in regular intervals. They are very useful for creating rhythms in procedurally-generated animation. The modulus operator and `sin()` function are both periodic and are used in the examples above to produce steadily repeating animation. -->
 
 <!--
 ### Derivative Motion
@@ -216,7 +235,7 @@ function saveFrame(name, frameNumber, extension, maxFrame) {
 }
 ```
 
-<div class="callout">  .warn
+<div class="callout warn"> 
 If you are exporting frames, keep in mind that p5.js automatically uses a higher resolution on retina displays, and this is the resolution at which `save()` will export. You can use `pixelDensity(1);` before your `createCanvas()` call to disable this.
 </div>
 
@@ -232,7 +251,13 @@ You can even stitch images in [Photoshop](https://www.adobe.com/products/photosh
 6. Adjust export settings.
 7. Click `Render`
 
+### Clouds
+
+This example uses a particle effect to generate an animation of a cloud forming and dissipating. It animates 5000 particles, and can't run in realtime (at least not on my computer).
+
 {% js-lab "sketches/save_frames.js" %}
+
+Here is a video created from the frames exported by the example above. The frames were stiched in Photoshop.
 
 <div class="wide">
 
@@ -240,7 +265,7 @@ You can even stitch images in [Photoshop](https://www.adobe.com/products/photosh
 
 </div>
 
-You can even apply Photoshop effects in the bargain.
+This video was also created in Photoshop with a gradient map effect added.
 
 <div class="wide">
 
@@ -250,13 +275,15 @@ You can even apply Photoshop effects in the bargain.
 
 ## Study Examples
 
-### Example 1: Bounce
+### Bounce
+
+In the example below, the black circle "bobs" up and down using `sin()`. Complete the challenges below to alter this example to show a bouncing motion.
 
 {% js-lab "challenges/bounce_01.js" %}
 
-### Example 2: Fuzz
+### Fuzzy Ellipse
 
-In this sketch `fuzz_ellipse(x,y,w,h,fuzz)` takes parameters like ellipse but instead of drawing one ellipse, it draws many in random positions near `x,y`. It can be used to create a textured ellipse with a fuzzy edge.
+In this sketch `fuzzy_ellipse(x,y,w,h,fuzz)` takes the same parameters as p5's `ellipse()` but instead of drawing one ellipse, it draws many in random positions near `x,y`. It can be used to create a textured ellipse with a fuzzy edge.
 
 Take some time to study `fuzzy_ellipse()` in detail. Try to build an understanding of every line.
 
@@ -270,7 +297,7 @@ Take some time to study `fuzzy_ellipse()` in detail. Try to build an understandi
 
 ### Looking a little deeper.
 
-The Fuzz example also defines a function called `fuzzy_ellipse_2()`. It is a drop-in replacement for `fuzzy_ellipse()`. Change line 31 to call `fuzzy_ellipse_2()` to see it in action..
+The Fuzz Ellipse example also defines a function called `fuzzy_ellipse_2()`. It is a drop-in replacement for `fuzzy_ellipse()`. Change line 31 to call `fuzzy_ellipse_2()` to see it in action..
 
 1. Do the functions produce the same outcome?
 2. Do the functions produce the exact same outcome?
