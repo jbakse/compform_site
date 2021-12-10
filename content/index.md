@@ -28,7 +28,7 @@ General principles, practices, and building blocks useful for all procedural gen
 
 [**Random Values** p5.js](./random)
 
-[**Parameters** p5.js + tweakpane](./parameters)
+[**Parameters** p5.js + Tweakpane](./parameters)
 
 [**Noise** p5.js](./noise)
 
@@ -46,19 +46,19 @@ Independent chapters exploring specific procedural generation tools, languages, 
 
 <nav>
 
-[**Tile Maps** pencil + paper](./tiles)
+[**Tile Maps** Pencil + Paper](./tiles)
 
-[**Hello, p5** p5.js + github](./p5)
+[**Hello, p5** p5.js + GitHub](./p5)
 
 [**Pixel Data** p5.js](./pixels)
 
-[**Turtle Graphics** p5.js + custom library](./turtles)
+[**Turtle Graphics** p5.js + Custom Library](./turtles)
 
 [**Vector Drawing** paper.js](./vectors)
 
 [**Animation** p5.js](./animation)
 
-[**Generating Text** javascript + html](./text)
+[**Generating Text** JavaScript + html](./text)
 
 [**Comp Sound** p5.js + p5.sound](./sound)
 
@@ -80,7 +80,7 @@ Syllabi, schedules, and lesson plans for the Computational Form class.
 
 <nav>
 
-[**Introduction** about the course](./introduction)
+[**Introduction** About the Course](./introduction)
 
 Spring 2021
 : [Class Notes](https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4)
