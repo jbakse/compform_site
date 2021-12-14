@@ -58,7 +58,7 @@
 - artist: Nicky Case
   title: Flower, 2017
   image: ./slides/nicky_case.png
-  comments: Nicky created Turtle art using her tool, joy.js.
+  comments: Nicky created Turtle art using their tool, joy.js.
   links:
     - label: Flower
       href: https://ncase.me/joy/demo/turtle/?drawing=flower

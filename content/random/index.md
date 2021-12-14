@@ -273,6 +273,12 @@ P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5
 
 ## Random Orders and Decks
 
+<div class='sidebar link-box'>
+
+[**Birthday Paradox** wikipedia.org](https://en.wikipedia.org/wiki/Birthday_problem)
+
+</div>
+
 The `random()` function works a lot like rolling a die.
 When you roll a die, you get random values. Each value should be equally probable and each roll should be [independent](<https://en.wikipedia.org/wiki/Independence_(probability_theory)>).
 If you roll the die multiple times, you **might get the same value more than once**, and it **might take a long time to get a particular value**.
@@ -508,7 +514,7 @@ This is the code used to generate the abstract skyline images from the Skyline a
 
 {% js-lab "sketches/skyline.js" %}
 
-### Small Multiples
+### Circle Grid
 
 This example draws a grid of randomly-sized circles. Try commenting in the different methods for choosing the size of each circle. Each method has a distinct look.
 
@@ -545,7 +551,7 @@ Explore the study examples above by completing the following challenges.
 | 6 in 20 Minutes      | Good.                                                                                |
 | All 10 in 20 Minutes | Great.                                                                               | -->
 
-### Modify the Small Multiples Example
+### Modify the Circle Grid Example
 
 1. Change the background color to dark grey. `•`
 1. Change the circle color to white. `•`

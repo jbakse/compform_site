@@ -27,14 +27,28 @@ function draw() {
   line(50, 200, 350, 200);
 
   noStroke();
-  fill(0, 0, 0, 5);
-  fuzzy_ellipse_2(200, 200, 100, 100, 100);
+  fill(0, 0, 0, 20);
+
+  let i = floor(frameCount / 60);
+  let f = frameCount / 60 - i;
+  f = 1 - f;
+  fuzzy_ellipse(200, 200, 150, 150, f * 40);
 
   params.frame_rate = frameRate();
 }
 
+function fuzzy_ellipse(x, y, w, h, fuzz = 100) {
+  for (let i = 0; i < 100; i++) {
+    const xx = random(-fuzz, fuzz);
+    const yy = random(-fuzz, fuzz);
+    if (dist(0, 0, xx, yy) > fuzz) continue;
+    ellipse(x + xx, y + yy, w, h);
+  }
+}
+
+// eslint-disable-next-line
 function fuzzy_ellipse_2(x, y, w, h, fuzz = 100) {
-  //stackoverflow.com/questions/5837572/generate-a-random-point-within-a-circle-uniformly
+  // http://stackoverflow.com/questions/5837572/generate-a-random-point-within-a-circle-uniformly
 
   for (let i = 0; i < 100; i++) {
     const a = random(2 * PI);

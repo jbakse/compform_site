@@ -64,6 +64,7 @@ body {
     margin-bottom: 30px;
 }
 #input input {
+    font-family: "Overpass Mono", sans-serif;
     border: 1px solid black;
     padding: 5px;
     font-size: 18px;

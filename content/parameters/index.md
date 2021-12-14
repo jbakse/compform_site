@@ -266,8 +266,6 @@ A quick-and-dirty way to make your comp form sketches “tweakable” is to use 
 - Use comments to explain the parameter in more detail, document legal value ranges, and suggest good values.
 - Keep in mind that [global variables are evil](https://stackoverflow.com/questions/19158339/why-are-global-variables-evil). Use constants instead of variables, if your language supports them. If your language doesn't support true constants use a naming convention, such as all caps, to indicate that a value shouldn't be changed.
 
-#### Global Constants
-
 {% js-lab "sketches/square.js" %}
 
 Take a moment to explore the parameter space of the sketch above by tweaking the globals. What happens if you set them both to 100?
@@ -284,24 +282,20 @@ These next two examples both have a function named `stipleRect()` that fills a r
 
 {% js-lab "sketches/stipple_rect_2.js" %}
 
-### Globals as Interface
+### HTML Interfaces
 
-The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions that allow you create HTML elements and user interface controls. This is more complicated to set up, but still pretty quick. It is a much better choice if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload your sketch.
+The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions that allow you create HTML elements and use them as interface controls. This is a little more complicated to set up but still pretty quick. GUI interfaces are usually better than global variables if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload and restart your sketch.
 
-- Label your inputs clearly.
+<!-- - Label your inputs clearly.
 - Consider your interface carefully.
 - Use `select()` in p5 if you want to make your controls in HTML.
-- Consider styling your interface with CSS.
-
-#### DOM Interface
+- Consider styling your interface with CSS. -->
 
 {% js-lab "sketches/square_slider.js" %}
 
-### HTML Interfaces with Tweakpane
+### Tweakpane
 
 [Tweakpane](https://cocopon.github.io/tweakpane/) is a javascript library that lets you quickly setup and display a interactive pane for adjusting parameters.
-
-#### Tweakpane Interface
 
 {% js-lab "sketches/square_tweakpane.js" %}
 
@@ -309,7 +303,7 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 ## Coding Challenges
 
-Explore the study examples above by completing the following challenges.
+Explore this chapter's example code by completing the following challenges.
 
 <!--
 | Time                 | Comment                                                                              |
@@ -327,7 +321,7 @@ Explore the study examples above by completing the following challenges.
 1. Draw the square in two sizes: small and large. Randomly generate which of the two sizes the square will be. `•••`
 1. Add parameters to control the small size, large size, and percentage chance of drawing a large or small square. `•••`
 
-### Modify the HTML Interfaces with Tweakpane Example
+### Modify the Tweakpane Example
 
 1. Add a slider to control the vertical position of the square. `•`
 1. Add a color picker to control the background color of the sketch. `••`

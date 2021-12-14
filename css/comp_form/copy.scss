@@ -34,7 +34,7 @@
   h5,
   h6 {
     @include font-title();
-    margin-bottom: 0;
+    margin-bottom: 0.25em;
   }
 
   h1 {

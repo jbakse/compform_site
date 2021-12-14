@@ -235,13 +235,15 @@ The `Project.exportSVG()` function will create an `svg` representation of your p
 
 {% js-lab "sketches/output.js" %}
 
-### Basic Example
+## Study Examples
+
+### Basics
 
 This pretty minimal example shows the basics of drawing lines with Paper.js. It shows how to create and configure a path object, and how to add points to the path with `moveTo` and `lineTo`.
 
 {% js-lab "sketches/example_basic.js" %}
 
-### Boolean Example
+### Boolean Operations
 
 A super-useful feature of Paper.js is the ability to combine shapes with boolean operations. This allows you to describe complex shapes by building them from primitives.
 
@@ -251,7 +253,7 @@ A super-useful feature of Paper.js is the ability to combine shapes with boolean
 
 ## Coding Challenges
 
-Explore Paper.js by modifying the examples above. Work through the following challenges in order.
+Explore this chapter's example code by completing the following challenges.
 
 <!-- Don't skip any.
 

@@ -17,14 +17,14 @@ function draw() {
     let offsetX = 0;
     let offsetY = 0;
 
-    // lean (mid frequency, static)
+    // lean (low frequency, static)
     n = noise(x * 0.1);
     offsetX += n * 20 - 10;
 
-    // height (very high frequency becomes fully random due to aliasing)
-    offsetY += noise(x * 100) * 20;
+    // height (high frequency sampling yields independent values)
+    offsetY += noise(x * 10) * 20;
 
-    // wind( low frequency, timed)
+    // wind( lower frequency, timed)
     n = noise(x * 0.01 + millis() * -0.001);
     offsetX += n * 40;
 

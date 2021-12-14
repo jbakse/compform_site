@@ -24,7 +24,7 @@ canvas {
 }
 </style>
 
-So far we've been looking at low-level topics like how to use—and get the most from—`random()` and `noise()`. In the chapter, the focus is on high-level planning. To create more complex systems you must develop a clear understanding of your goal, create a plan to achieve that goal, divide that plan into sub-problems ([decomposition](<https://en.wikipedia.org/wiki/Decomposition_(computer_science)>)) and create code to solve those sub-problems ([implementation](https://en.wikipedia.org/wiki/Implementation)).
+So far we've been looking at low-level topics like how to use—and get the most from—`random()` and `noise()`. In the chapter, the focus is on the high-level structure of a program. To create more complex systems you must develop a clear understanding of your goal and create a plan to achieve that goal, divide that plan into sub-problems ([decomposition](<https://en.wikipedia.org/wiki/Decomposition_(computer_science)>)) and create code to solve those sub-problems ([implementation](https://en.wikipedia.org/wiki/Implementation)).
 
 When planning and coding a project, I tend to think in terms of _strategies_ and _tactics_.
 
@@ -403,6 +403,8 @@ What tactics might have been used to get each result below?
 
 ### Point Placing Demo
 
+This code implements the tactics described above, and demonstrates the effect of combining the tactics in different ways.
+
 <!-- todo: refactor this example so its easy to follow, and let the user combine the steps how they want (instead of only presets) -->
 
 {% js-lab "sketches/point_place.js" %}
@@ -433,7 +435,7 @@ Like the _Basic Grid Placement_ example above, this example places dots on a gri
 
 ## Coding Challenges
 
-Explore the study examples above by completing the following challenges in order.
+Explore this chapter's example code by completing the following challenges.
 
 <!-- <br/> Don't skip any. -->
 
@@ -510,13 +512,15 @@ When designing a procedural generation system there are several properties to co
 
 <div class="assignment">
 
-## Challenge!
+## Take Home Challenge
+
+<p></p>
 
 This is the last chapter of the "Foundation" section. The challenges in the chapters so far—random, noise, parameters—have been open ended. They suggested general themes, but left the specifics up to you.
 
-The challenges this week are much more specific, challenging you to recreate a specific effect. Recreating existing effects presents different challenges than open ended sketching, and forces you to contend directly with any problems you run into. Both this type of work and open ended exploratoin are good ways to study creative coding, and mixing them is particulary effective.
+The challenges this week are much more specific, challenging you to recreate a specific effect. Recreating existing effects presents different challenges than open ended sketching, and forces you to contend directly with any problems you run into. Both this type of work and open ended exploration are good ways to study creative coding and mixing them is particulary effective.
 
-Solving this chapter's challenges will require strategic planning:
+Solving these two challenges will require strategic planning:
 
 - **Analyze** Clearly describe what the sketch does in fine detail.
 - **Strategize** Think about what tactics you will use and how you will combine them.
