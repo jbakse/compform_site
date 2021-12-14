@@ -118,11 +118,15 @@ Since p5.play builds on p5.js it should feel pretty familiar. One key difference
 
 ### p5.play Animation
 
-Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](https://opengameart.org/content/a-platformer-in-the-forest)
+This example shows the basics of p5.play: creating, animating, and drawing sprites.
 
 {% js-lab "sketches/sprites_start.js" %}
 
+Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](https://opengameart.org/content/a-platformer-in-the-forest)
+
 ### p5.play Interaction
+
+This example shows how to use the `.mouseIsOver` property of a sprite for user interaction.
 
 {% js-lab "sketches/interaction.js" %}
 

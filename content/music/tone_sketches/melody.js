@@ -41,7 +41,7 @@ function generateMeasure() {
 
   while (timeLeft.toSeconds() > 0) {
     // choose note
-    const change = sample([-1, -1, -1, 1, 1, -2, 2, -3]);
+    const change = sample([-1, -1, -1, 1, 1, -2, 2, 2, 2, -3]);
     degree = constrain(degree + change, 0, 6);
     const note = notes[degree];
 

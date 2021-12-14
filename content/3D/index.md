@@ -48,7 +48,7 @@ A web-based OpenSCAD editor and renderer. Does not implement every feature of Op
 
 ## Hello, OpenSCAD!
 
-Download OpenSCAD, set it up, and try to make the challenges below. Tip: Use code to rotate the bar.
+Download OpenSCAD, set it up, and try to recreate the images below. Tip: Use code to rotate the bar.
 
 ![green bar](images/green_bar.png)
 ![yellow ring](images/yellow_ring.png)
@@ -61,14 +61,14 @@ At first glance OpenSCAD syntax looks similar to C or JavaScript, with braces, b
 
 Look at the example below, which creates a ring by subtracting one cylinder from another.
 
-```
+```javascript
 difference() {
     cylinder (h=1, r=4, center = true);
     cylinder (h=1, r=3, center = true);
 }
 ```
 
-In the example, `difference()` works somewhat like a function call and looks somewhat like a function definition. It isn't really either of things. In the vocabulary of OpenSCAD `difference()` is an **operator** and `cylinder(...);` is an **action**. Operators act on an action or a **group** of actions in braces.
+In the example, `difference()` looks somewhat like a function definition and it works somewhat like a function call and. It isn't really either of things. In the vocabulary of OpenSCAD `difference()` is an **operator** and `cylinder(...);` is an **action**. Operators act on actions or **groups** of actions in braces.
 
 These differences reflect the fundamentally different approach to programming in OpenSCAD compared to C.
 
@@ -95,7 +95,7 @@ Classifying programming languages by [paradigm](https://en.wikipedia.org/wiki/Pr
 
 ### Immutable vs. Mutable Data
 
-The most noticeable effect of OpenSCAD being functional is that data in OpenSCAD is immutable: the value of every variable is constant. In fact, variables are not even assigned values at runtime. A variable's value is determined and assigned at compile time, before the script is run. The variable's value will be the _last_ assigned value.
+The most noticeable effect of OpenSCAD being functional is that data in OpenSCAD is immutable: the value of every variable is constant. In fact, variables are not even assigned values at runtime. A variable's value is determined and assigned at compile time, before the script is run. Since variables are constant, you should only assign a variable a value one time. If you do assign to a variable more than once, the variable's value will be the _last_ assigned value, which is pretty confusing.
 
 ```
 a = 1;
@@ -104,9 +104,13 @@ a = 2;
 echo(a); // -> 2
 ```
 
-This takes some getting used to. It helps to keep in mind that variables are given their value before the script is run. The OpenSCAD manual goes into more detail about how [variables](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language#Variables) behave.
+This takes some getting used to. It helps to keep in mind that variables are constant and given their value before the script is run. The OpenSCAD manual goes into more detail about how [variables](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_OpenSCAD_Language#Variables) behave.
 
 ### Prefix vs. Infix Notation
+
+OpenSCAD's boolean and transformation operators appear in code _before_ their operands. This is called prefix notation. OpenSCAD's mathematic operators appear _between_ their operands. This is called infix notation.
+
+Infix notation probably looks familiar. Its how arethmatic is notated, and is used in the most popular programming languages.
 
 Javascript expression with infix notation
 
@@ -116,6 +120,8 @@ Javascript expression with infix notation
 2 * (3 + 4) -> 14
 ```
 
+Prefix notation probably doesn't look familiar, though it is used in some important programming languages.
+
 Lisp expressions with prefix notation
 
 ```lisp
@@ -124,7 +130,7 @@ Lisp expressions with prefix notation
 (* 2 (+ 3 4)) -> 14
 ```
 
-While the example above looks unusual if you are used to C or JavaScript, prefix notation isn't really that crazy. Compare it to function calls in JavaScript.
+While the example above looks unusual if you are used to C or JavaScript, prefix notation isn't really that unusual. Compare infix notation to calling a function in JavaScript. The name of the function comes first, followed by the parameters.
 
 ```javascript
 multiply(2, 3) -> 6
@@ -132,7 +138,7 @@ multiply(2, 3, 4) -> 24
 multiply(2, add(3, 4)) -> 14
 ```
 
-You can think of OpenSCAD's boolean and transform operations as prefix operators or function calls. Unlike JavaScript and C, the contents of `{}` are operands or parameters rather than commands.
+You can think of OpenSCAD's boolean and transform operations as prefix operators or function calls. Unlike JavaScript and C, the contents of `{}` are operands or parameters rather than statements.
 
 ```javascript
 union() {
@@ -143,15 +149,17 @@ union() {
 
 ### Named vs. Positional Parameters
 
+OpenSCAD supports both positional and named parameters.
+
 OpenSCAD with named parameters
 
-```javascript
-cylinder((h = 4), (r = 1), (center = true));
+```OpenSCAD
+cylinder(h = 4, r = 1, center = true);
 ```
 
 OpenSCAD with positional parameters
 
-```javascript
+```OpenSCAD
 cylinder(4, 1, 1, true);
 ```
 
@@ -161,9 +169,9 @@ Javascript emulating named params with an object literal
 cylinder ({h=4, r=1, center=true});
 ```
 
-### JavaScript Alternatives
+## OpenJSCAD
 
-OpenSCAD's functional model has its advantages, but imperative languages also have advantages. For one, imperative languages are more familiar to most programmers. To explore constructive solid geometry modeling in an imperative style, you may want to use one of these tools inspired by OpenSCAD.
+OpenSCAD's functional model has its advantages, but imperative languages also have advantages. For one, imperative languages are more familiar to most programmers. To explore constructive solid geometry modeling in an imperative style, you may want to use one OpenJSCAD.
 
 <div class="link-box">
 
@@ -381,7 +389,7 @@ G0 F100;
 G1 X0 Y0;
 ```
 
-You don't need to know much about g-code to use a 3D printer: you simply convert your model to g-code with a slicer app and load it on your printer. The app generates the g-code based on the object you are printing, the material you are using, and the specs of your machine. You _can_ write g-code directly if you want: g-code files are plain text and relatively easy to understand. Writing your own g-code allows you to directly control your hardware, which can be useful for custom applications and machines like drawbots.
+You don't need to know g-code to use a 3D printer: you simply convert your model to g-code with a slicer app and load it on your printer. The app generates the g-code based on the object you are printing, the material you are using, and the specs of your machine. You _can_ write g-code directly if you want: g-code files are plain text and relatively easy to understand. Writing your own g-code allows you to directly control your hardware, which can be useful for custom applications and machines like drawbots.
 
 <div class="one-up">
 
