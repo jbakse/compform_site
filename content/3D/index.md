@@ -153,13 +153,13 @@ OpenSCAD supports both positional and named parameters.
 
 OpenSCAD with named parameters
 
-```OpenSCAD
+```
 cylinder(h = 4, r = 1, center = true);
 ```
 
 OpenSCAD with positional parameters
 
-```OpenSCAD
+```
 cylinder(4, 1, 1, true);
 ```
 

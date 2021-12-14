@@ -111,118 +111,96 @@ This sketching process is central to the approach of the class. There are NO lon
 
 ## Notes on Daily Sketching
 
-Your goal **each day** should be to explore a different aspect of the weekly theme. Ideally, you will spend **1 to 2 hours on an idea**, resulting in an image or other artifact. Each day you will work on **a new idea**, possibly informed by something you did earlier in the week or class.
+Your goal **each day** should be to explore a different aspect of the weekly theme. Ideally, you will spend **1 to 2 hours on an idea**, resulting in an image or other artifact. Each day you will work on **a new idea**, possibly informed by something you did earlier in the week or class. This is an unusual homework format. You probably have some questions.
 
-<br>
+### Frequently Asked Questions
 
-> So I have to post something **every single day**?
-> The spirit of the assignment is daily practice + flexibility. ~~Five~~ Four posts a week that explore the weekly theme in a variety of ways is considered `A` work.
+<style>
+    .q {color: black; font-weight: 400; margin-top: 1em !important; margin-bottom: 0em !important;}
+    .q + p {color: black; margin-top: .5em !important;}
+</style>
 
-Normally I require 5 skeches each week. I'm reducing this to four because I'm going to be assigning a weekly advanced reading and coding challenge to fit the online class format.{callout}
+Do I have to post something _every single day_? {q}
 
-<br>
+Not quite. In spirit this assignment format combines daily practice with flexibility. Each week you should post ~~five~~ four sketches exploring the weekly theme in a variety of ways. This is considered `A` work.
 
-> What if I miss a day?
+<!-- Normally I require 5 skeches each week. I'm reducing this to four because I'm going to be assigning a weekly advanced reading and coding challenge to fit the online class format.{callout} -->
+
+What if I miss a day? {q}
 
 That is fine, spend more time on another day and post twice.
 
-<br>
-
-> Can I spend, say, 8 hours all in one day? Maybe I'll pull an all-nighter.
+Can I spend, say, 8 hours all in one day? Maybe I'll pull an all-nighter. {q}
 
 Don't do that. This process is about exploring different ideas. Spacing out your work gives you time to think and reflect. Creativity often comes in the space between actions.
 
-<br>
-
-> How long should I spend on a sketch?
+How long should I spend on a sketch? {?}
 
 Between 1 and 2 hours. Ideally 90 minutes.
 
-<br>
+What if I make something I like in 15 minutes? {q}
 
-> What if I make something I like in 15 minutes?
+Post it! We want to see it. Then keep working, use the full time. Post again. One sketch; two posts.
 
-Post it! We want to see it. Then keep working, fill the time. Post again.
+What if I work for two hours and I'm not done or I don't really like what I've made? {q}
 
-<br>
+Post it! Then stop working. Part of the value of sketching is that you can stop before you get stuck of frustrated. Try something different tomorrow.
 
-> What if I work for two hours and I'm not done or I don't really like what I've made?
+1 to 2 hours is too short. Can I work longer? {q}
 
-Post it. Then stop working. Try something different tomorrow.
+No. Two hours should be a daily _maximum_.
 
-<br>
+If after two hours you feel excited about what you are doing, make an in-progress post, take a break, and build on it the next day.
 
-> 1 to 2 hours is too short. Can I work longer?
-
-Two hours should be a daily maximum.
-
-If after two hours you still feel excited about what you are doing, make an in-progress post, take a break, and build on it the next day.
-
-If you are frustrated, just post what you've got and move on. Don't ever put more than 2 hours into a frustrating sketch. Just post what you've got and start fresh on something else the next day.
+If after two hours you feel frustrated, just post what you've got. Don't ever put more than 2 hours into a frustrating sketch. Just post what you've got and start fresh on something else the next day.
 
 If you find you often need more than 90 minutes, you are probably trying to make things that are too complex.
 
-<br>
+Can I post a work in progress and keep working on it tomorrow? {q}
 
-> Can I post a work in progress and keep working on it tomorrow?
+Yes, if you are having fun. But don't work on one thing the whole week. Sketch a variety of ideas each week.
 
-Yes. Sometimes. But don't work on one thing the whole week. Sketch a variety of ideas each week.
-
-<br>
-
-> I can't decide what to work on today.
+I can't decide what to work on today. {q}
 
 If you have more than one idea, just pick one at random. Don't change your mind, just run with it. You are only investing an hour or two and you can try another idea tomorrow.
 
-If you have no ideas, review the class notes, do some Google image searches, and be open to _any_ idea that pops up. Just run with the first idea even if it seems bad.
+If you have no ideas, review the class notes, look at the sketch site, do some Google image searches, and be open to _any_ idea that pops up. Just run with the first idea even if it seems bad.
 
-<br>
+I can't get whatever technology we are working on this week to work; my computer is broken; I missed class and I don't know whats going on; I'm just lost this week. What should I do? {q}
 
-> I can't get whatever technology we are working on this week to work; my computer is broken; I missed class and I'm lost; I'm just lost this week. What should I do?
+Post anyway. Focus on the themes rather than the technology. If the tech isn't working use something else. Most weeks you could make interesting sketches, related to the weekly themes, without even using a computer.
 
-Post anyway. If you can't do exactly what you want, find something close that you can do and do that. Focus on the themes rather than the technology. If the tech isn't working use something else. Most weeks you could make interesting sketches, related to the weekly themes, without even using a computer.
+What about the challenges? Do they count as sketches? {q}
 
-<br>
+Yes, they do. Each week I'll include an individual and a pair challenge. The challenges are _required_, and each challenge counts towards your weekly sketches and follows the sketching guidelines: spend 1 to 2 hours, its okay if it doesn't work.
 
-> What about the challenges? Do they count as sketches?
+I'm tired of looking at the computer screen. Can I do a couple of posts with paper/paint/glue/wood/whatever? {q}
 
-Yes, they do. Each week I'll include an individual and a pair challenge. The challenges are _required_, but each challenge counts towards your weekly sketches and follows the sketching guidelines (spend 1 to 2 hours on them).
+Absolutely. **I highly recommend that you do!** The more variety between your posts the better. As long as the work relates to the weekly topic, you can make it however you want. I strongly suggest making at least one sketch without a computer each week.
 
-<br>
+I'm a data vis major. I'm a game design major. I like making websites. I'm interested in dance. Can I make data visualizations/games/websites/dances in this class? {q}
 
-> I'm tired of looking at the computer screen. Can I do a couple of posts with paper/paint/glue/wood/whatever?
+Yes, absolutely! I encourage you to think about how each weekly theme relates to your own interests and practice. It is a great idea to make a sketches that explore those relationships.
 
-Absolutely. **I highly recommend that you do!** The more variety between your posts the better. If the work relates to the weekly topic, you can make it however you want. I strongly suggest making at least one sketch without a computer each week.
-
-<br>
-
-> I'm a data vis major. I'm a game design major. I like making websites. I'm interested in dance. Can I make data visualizations/games/websites/dances in this class?
-
-Yes! I encourage you to think about how each weekly theme relates to your own interests and practice. It is a great idea to make a sketches that explore those relationships.
-
-<br>
-
-> What about in-class work? Does that count?
+What about in-class work? Does that count? {q}
 
 Some weeks we'll have time set aside in class to make something, some weeks we won't. If we do start something in class, you can finish it after class and post it as one of your sketches.
 
-<br>
+Bottom line, how much time do I have to spend on these sketches? {q}
 
-> Bottom line, how much time do I have to spend on these sketches?
+Four sketches per week. 90 minutes per sketch.
 
-90 minutes per sketch is ideal.
+Don't put more than 2 hours in on a sketch. If your sketch takes that long it is too complex or too difficult for your current skill level. It is okay to stop at 2 hours even if your sketch is incomplete or broken. Post whatever you have. If you put in the thime, you'll get full marks for the sketch.
 
-Don't put more than 2 hours in on a sketch. If your sketch takes that long it is too complex or too difficult for your current skill level. It is okay to stop at 2 hours even if your sketch is broken. Post whatever you have. If you put in the work, you'll get full marks for the sketch.
+Don't put in less than an hour. Sometimes, you'll make a really nice sketch pretty quickly. If that happens, post it! But keep exploring variations on your idea. If you often get done very quickly, you probably need to work on more challenging sketches.
 
-Don't put in less than 45 minutes. Sometimes, you'll make a really nice sketch pretty quickly. If that happens, post it! But keep exploring variations on your idea. If you often get done very quickly, you probably need to work on more challenging sketches.
-
-Four sketches at 90 minutes each is 6 hours. The weekly advanced reading and coding challenge will take about one to two hours. Expect to spend about 7 to 8 hours each week on homework for this class.
+Four sketches at 90 minutes each is 6 hours. The weekly chapter reading and coding challenges will take one to two hours. Expect to spend about 7 to 8 hours each week on homework for this class.
 
 ## Syllabus Notes
 
 ### Attend every class, arrive early, stay late.
 
-Attend every class. This class moves fast. New content is introduced in every meeting. We will have individual or group activities in most if not all meetings. Don't miss any.
+Attend every class. This class moves fast. New content is introduced in every meeting. We will have individual or group activities in most if not all meetings. Try not to miss any. Per school policy, you are allowed two absences but you should avoid taking them if you can.
 
 Arrive early. Get to the room early, review the sketches of your fellow students, make sure your av is working. Get yourself mentally settled and ready for class.
 
