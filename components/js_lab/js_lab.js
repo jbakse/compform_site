@@ -275,7 +275,6 @@ function inIframe() {
 let show = {};
 
 show.main = function main() {
-  console.log("hello, world");
   let script_name = window.location.search.substr(1) || "example.js";
 
   let jqxhr = $.ajax({

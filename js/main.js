@@ -1,4 +1,7 @@
-console.log("Hello, Comp Form!");
+console.log(
+  "%cHello, Comp Form!",
+  "color: white; background: black; padding:5px; border-radius: 3px;"
+);
 
 function ready(cb) {
   if (document.readyState != "loading") {
@@ -18,18 +21,18 @@ function main() {
   }
 
   // glider slides
-  var slider = document.querySelector(".glider");
-  if (slider) {
-    new Glider(slider, {
+  var gliders = document.querySelectorAll(".glider");
+  gliders.forEach((item) => {
+    new Glider(item, {
       slidesToShow: 1,
-      dots: ".dots",
+      dots: item.parentNode.querySelector(".dots"),
       draggable: true,
       scrollLock: true,
       dragVelocity: 1,
       arrows: {
-        prev: ".prev",
-        next: ".next",
+        prev: item.parentNode.querySelector(".prev"),
+        next: item.parentNode.querySelector(".next"),
       },
     });
-  }
+  });
 }
