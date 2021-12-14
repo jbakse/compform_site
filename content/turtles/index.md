@@ -290,14 +290,7 @@ A common application of turtle graphics is drawing organic branching shapes, lik
 
 ## Coding Challenges
 
-Explore this chapter's example code by completing the following challenges.
-
-<!-- Don't skip any. -->
-<!-- | Time                 | Comment                                                      |
-| -------------------- | ------------------------------------------------------------ |
-| < 11 in 20 Minutes   | Keep studying to improve your understanding of these topics. |
-| 11 in 20 Minutes     | Good.                                                        |
-| All 15 in 20 Minutes | Great.                                                       | -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Triangle Example
 

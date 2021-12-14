@@ -310,7 +310,7 @@ For lots of discussion on these two approaches, and others, and their merits tak
 
 ## Coding Challenges
 
-Complete the following challenges to deepen your understanding of the examples above.
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Bounce Example
 
@@ -377,7 +377,7 @@ Bumper Examples:
 
 ## Reference Links
 
-<div class='link-box'>
+<div class="link-box">
 
 [**Fast and Funky 1D Nonlinear Transformations** Game Developers Conference](https://www.youtube.com/watch?v=mr5xkf6zSzk)
 Great developer talk about creating interesting motion with nonlinear mapping.

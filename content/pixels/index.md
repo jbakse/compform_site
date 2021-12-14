@@ -125,16 +125,7 @@ The first two examples use a nested loop to set a value for every pixel in the i
 
 ## Coding Challenges One
 
-Explore using p5's pixel manipulation functions by modifying the scripts above. Work through the following challenges in order.
-
-<!-- <br/> Don't skip any. -->
-
-<!-- | Time               | Comment                                                                               |
-| ------------------ | ------------------------------------------------------------------------------------- |
-| < 13 in 20 Minutes | You need to put in some extra work<br/> to strengthen your programming understanding. |
-| 13 in 20 Minutes   | Good.                                                                                 |
-| All in 20 Minutes  | Great.                                                                                |
-| All in 15 Minutes  | Hot Dang!                                                                             | -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Basic Example
 
@@ -229,16 +220,7 @@ This example doesn't draw the image at all. Instead, the image is used as an inp
 
 ## Coding Challenges Two
 
-Explore using p5's pixel manipulation functions by modifying the scripts above. Work through the following challenges in order.
-
-<!-- <br/> Don't skip any. -->
-
-<!-- | Time               | Comment                                                                               |
-| ------------------ | ------------------------------------------------------------------------------------- |
-| < 10 in 20 Minutes | You need to put in some extra work<br/> to strengthen your programming understanding. |
-| 10 in 20 Minutes   | Good.                                                                                 |
-| All in 20 Minutes  | Great.                                                                                |
-| All in 15 Minutes  | Hot Dang!                                                                             | -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify Read Pixels Example 1
 
@@ -429,7 +411,7 @@ Work with a partner.
 
 ## Explore
 
-<div class='link-box'>
+<div class="link-box">
 
 [**Reaction Diffusion in Photoshop** Tutorial](https://vimeo.com/61154654)
 Create a pattern in Photoshop by repeatedly applying filters.

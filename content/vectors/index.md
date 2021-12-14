@@ -253,17 +253,7 @@ A super-useful feature of Paper.js is the ability to combine shapes with boolean
 
 ## Coding Challenges
 
-Explore this chapter's example code by completing the following challenges.
-
-<!-- Don't skip any.
-
-| Time                 | Comment                                                      |
-| -------------------- | ------------------------------------------------------------ |
-| < 11 in 20 Minutes   | Keep studying to improve your understanding of these topics. |
-| 11 in 20 Minutes     | Good.                                                        |
-| All 15 in 20 Minutes | Great.                                                       | -->
-
-<!-- It might help to have the documentation for [Paper.js Path](http://paperjs.org/reference/path/) handy. -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Basic Example
 
@@ -299,7 +289,7 @@ Explore this chapter's example code by completing the following challenges.
 
 Paper Garden is a program that generates stylized drawings of plants arranged in a wall garden. It is writen in about 300 lines of PaperScript using [Paper.js](http://paperjs.org/). Read the case study to learn about how this program works and explore the code.
 
-<div class='link-box'>
+<div class="link-box">
 
 [**Paper Garden** Case Study](./paper_garden/paper_garden.html)
 
@@ -345,7 +335,7 @@ Create a lasercut thing. This can be anything you like that combines generative 
 
 ## Explore
 
-<div class='link-box'>
+<div class="link-box">
 
 [**Autodraw** Google](https://www.autodraw.com/)
 A Google AI experiment that interprets sketches, using Paper.js for the draw area.

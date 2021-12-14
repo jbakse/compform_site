@@ -46,12 +46,6 @@ software: p5.js + tweakpane
 
 One of the most rewarding aspects of creating a procedural generation system is exploring what it can make. The initial investment of time spent coding is repaid by the ability to iterate easily and quickly. Many procedural systems can produce endless variations and can be pushed to surprising extremes. Exploring the range of the system reveals new ideas to consider and aesthetics to explore.
 
-<!-- <div class='sidebar link-box'>
-
-[Wikipedia:<br/>Parameter](https://en.wikipedia.org/wiki/Parameter#Computing)
-
-</div> -->
-
 Procedural generators can provide enormous creative leverage. They allow expressive artistic control while automating much of the work. This control is afforded by exposing parameters. Parameters are adjustable values that influence the internal behavior of a system.
 
 {% slides %}
@@ -78,7 +72,7 @@ Sometimes different parameters will lead to the same final output. Sometimes the
 
 When creating interfaces for procedural systems, focus on exposing parameters that allow for _interesting_ variation.
 
-<div class='discussion'>
+<div class="discussion">
 
 ## The Blue Square
 
@@ -121,37 +115,6 @@ Exposing parameters doesn't necessiarly require creatring a GUI for them. Early 
 On small projects—projects that you don't plan on sharing—it is tempting to skip the time needed to clean up code, factor out parameters, and create a better UI. This is often a false economy. These efforts are usually quickly repaid.
 
 When you can explore the parameter space of your procedural systems more quickly, you can explore it more thoroughly. You will find more interesting possibilities, ideas, and aesthetics to explore further.
-
-<!--
-### An Example
-
-The following code has been adapted from a real program that displays animated messages.
-
-<div class='bad'>
-
-```javascript
-// original version
-offset = 40 * transitionPercent + transitionPercent * sin(i + 3 * 0.5) * 80;
-```
-
-</div>
-
-It calculates an offset used in an animated transition. The original has several magic numbers: `40`, `3`, `.5`, and `80` and had become hard to reason about and change.
-
-This revised version is better.
-
-<div class='good'>
-
-```javascript
-// revised version
-offset = transitionPercent * sin(angle + phase) * amplitude;
-```
-
-</div>
-
-The main expression is now much clearer. It contains fewer terms and is better organized. The magic numbers have been replaced with named values which are easier to understand. Because they are variables, they can be set elsewhere in the code, or exposed as function arguments.
-
-Notably, this code doesn't do _exactly_ the same thing as the original version. Some of the complexity in the original was left over from an earlier approach and no longer needed. Considering the code as a system and identifying and naming its parameters made the unneeded complexity easy to spot and fix. -->
 
 ## Parameters & Interface Design
 
@@ -218,7 +181,7 @@ When designing, step back and consider the relationship between your project and
 
 ![what_you_design](figures/what_you_design-01.svg)
 
-<div class='activity'>
+<div class="activity">
 
 ## Fictional Machines
 
@@ -299,18 +262,11 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 {% js-lab "sketches/square_tweakpane.js" %}
 
-<div class='activity challenges'>
+<div class="activity challenges">
 
 ## Coding Challenges
 
-Explore this chapter's example code by completing the following challenges.
-
-<!--
-| Time                 | Comment                                                                              |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| < 6 in 20 Minutes    | You need to put in some extra work to strengthen your understanding of these topics. |
-| 6 in 20 Minutes      | Good.                                                                                |
-| All 10 in 20 Minutes | Great.                                                                               | -->
+Explore the study examples above by completing the following challenges.{intro}
 
 ### Modify the Globals as Interface Example
 
@@ -330,7 +286,7 @@ Explore this chapter's example code by completing the following challenges.
 
 </div>
 
-<div class='assignment'>
+<div class="assignment">
 
 ## Keep Sketching!
 

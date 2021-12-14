@@ -435,15 +435,7 @@ Like the _Basic Grid Placement_ example above, this example places dots on a gri
 
 ## Coding Challenges
 
-Explore this chapter's example code by completing the following challenges.
-
-<!-- <br/> Don't skip any. -->
-
-<!-- | Time                 | Comment                                                                              |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| < 11 in 20 Minutes   | You need to put in some extra work to strengthen your understanding of these topics. |
-| 11 in 20 Minutes     | Good.                                                                                |
-| All 14 in 20 Minutes | Great.                                                                               | -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Basic Grid Placement Example
 
@@ -513,8 +505,6 @@ When designing a procedural generation system there are several properties to co
 <div class="assignment">
 
 ## Take Home Challenge
-
-<p></p>
 
 This is the last chapter of the "Foundation" section. The challenges in the chapters so far—random, noise, parameters—have been open ended. They suggested general themes, but left the specifics up to you.
 

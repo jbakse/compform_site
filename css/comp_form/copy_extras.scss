@@ -171,47 +171,32 @@
       @include block-base;
     }
 
+    // main title
     > h2:first-child {
       margin-top: 0;
-      padding: 0;
+
       text-align: center;
-      color: $dark-grey;
-
-      font-family: "Miriam Libre";
-      font-weight: bold;
-      font-size: 26px;
-      letter-spacing: 0.37px;
-
-      text-transform: none;
-      position: relative;
     }
 
+    // above the title
     > h2:first-child::before {
       content: "activity";
       display: block;
 
-      width: 100%;
-      margin: 0;
       position: relative;
       top: -10px;
 
-      text-align: center;
       font-size: 10px;
       letter-spacing: 2.41px;
-
       text-transform: uppercase;
     }
 
-    > h2:first-child + p {
+    // optional small centered intro
+    .intro {
       text-align: center;
       width: 300px;
       margin: 35px auto 65px auto;
-
-      font-family: "Roboto";
-      font-weight: 300;
       font-size: 14px;
-      letter-spacing: 0.31px;
-      line-height: 20px;
     }
 
     > h3 {
@@ -238,52 +223,6 @@
     code {
       background: white; //rgba(0, 0, 0, 0.05);
     }
-
-    // pre code {
-    //   margin-left: 30px;
-    //   margin-right: 100px;
-    // }
-
-    // placed on the h3 leading into a challenge list
-    &.challenges {
-      h3 {
-        position: relative;
-      }
-
-      h3::after {
-        content: "Difficulty Level";
-        position: absolute;
-        right: 0;
-      }
-
-      ol li {
-        position: relative;
-        margin-bottom: 0.75em;
-        margin-right: 100px;
-
-        line-height: 30px;
-      }
-
-      // show the ••• difficulty symbol
-      ol li > code:last-child {
-        background: none;
-        position: absolute;
-        top: 5px;
-        right: -100px;
-        width: 40px;
-        font-size: 32px;
-        line-height: 30px;
-        letter-spacing: -5px;
-        z-index: 1;
-      }
-
-      ol li > code:last-child:before {
-        content: "•••";
-        color: #bbb;
-        position: absolute;
-        z-index: -1;
-      }
-    }
   }
 
   .assignment {
@@ -295,6 +234,47 @@
   .discussion {
     > h2:first-child::before {
       content: "discussion";
+    }
+  }
+
+  /* activity challenges */
+  .challenges {
+    h3 {
+      position: relative;
+    }
+
+    h3::after {
+      content: "Difficulty Level";
+      position: absolute;
+      right: 0;
+    }
+
+    ol li {
+      position: relative;
+      margin-bottom: 0.75em;
+      margin-right: 100px;
+
+      line-height: 30px;
+    }
+
+    // show the ••• difficulty symbol
+    ol li > code:last-child {
+      background: none;
+      position: absolute;
+      top: 5px;
+      right: -100px;
+      width: 40px;
+      font-size: 32px;
+      line-height: 30px;
+      letter-spacing: -5px;
+      z-index: 1;
+    }
+
+    ol li > code:last-child:before {
+      content: "•••";
+      color: #bbb;
+      position: absolute;
+      z-index: -1;
     }
   }
 

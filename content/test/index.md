@@ -235,7 +235,7 @@ This is some caption text.{caption}
 
 ## Example Activity
 
-This is an example activity provided as an example of what activities look like.
+This is an example activity provided as an example of what activities look like.{intro}
 
 This is an example activity provided as an example of what activities look like on the page. This is an example activity provided as an example of what activities look like.
 
@@ -249,7 +249,7 @@ This is an example.
 
 ## Example Assignment
 
-Practice coding by modifying the examples above as described.
+Practice coding by modifying the examples above as described. {intro}
 
 ### Modify the Triangle Example{difficulty}
 
@@ -263,7 +263,7 @@ Practice coding by modifying the examples above as described.
 
 ## Example Discussion
 
-This is an example.
+This is an example, this example doesn't have an {intro}.
 
 This is an example.
 

@@ -12,7 +12,7 @@ software: p5.js + p5.sound
 
 ### p5.js Sound Library
 
-<div class='sidebar link-box'>
+<div class="sidebar link-box">
 
 [**p5.sound** API Reference](https://p5js.org/reference/#/libraries/p5.sound)
 
@@ -165,6 +165,8 @@ function record(length) {
 <div class="activity challenges">
 
 ## Coding Challenges
+
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Drum Kit Example
 

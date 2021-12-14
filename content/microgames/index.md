@@ -119,7 +119,7 @@ This example shows how to use the `.mouseIsOver` property of a sprite for user i
 
 ## Coding Challenges
 
-Explore p5.play by completing these challenges.
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the p5.play Animation Example
 

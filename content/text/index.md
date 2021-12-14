@@ -14,7 +14,7 @@ software: javascript + html
 
 Procedural generation can be used to create form in almost any media: image, video, animation, sound, sculpture. This chapter introduces some tactics for procedurally generating text, which may be the media most often computationally generated. Web pages are built out of text, and most of the time this text is computationally generated at least to some degree.
 
-<div class='sidebar link-box'>
+<div class="sidebar link-box">
 
 [**How Search Works** Google](https://www.google.com/search/howsearchworks/)
 
@@ -234,7 +234,7 @@ HTML is text, so Tracery can generate HTML!
 
 ## Coding Challenges
 
-Explore using Javascript Template literals by completing the following challenges.
+Explore this chapter's example code by completing the following challenges.{intro}
 
 {% js-lab "sketches/challenge.js" %}
 

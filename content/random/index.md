@@ -15,7 +15,7 @@ software: p5.js
 
 We use the word _random_ to mean an hodgepodge of related ideas. Depending on context, we might mean unplanned, unexpected, unpatterned, uncontrolled, unbiased, or unpredictable. Each of these are important characteristics in many procedural systems. Randomness is a staple of procedural generation systems, and careful control of randomness is important to balancing chance and control.
 
-<div class='sidebar link-box'>
+<div class="sidebar link-box">
 
 [**_Instructions..._** Interactive Demo](http://www.buschs.de/Mozart/Mozart.html)
 
@@ -148,7 +148,7 @@ floor(random(0, 6)) + 1;
 floor(random(1, 7));
 ```
 
-<div class='bad'>
+<div class="bad">
 
 ```javascript
 // this won't quite work. why?
@@ -265,7 +265,7 @@ If you generate three or more random numbers and average them, the results appro
 
 Try `3d10` on [anydice.com](https://anydice.com/program/1437)
 
-<div class='callout'>
+<div class="callout">
 
 P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5/randomGaussian) for generating numbers fitting a specific normal distrution with a given mean and deviation. With `randomGaussian()` the possible values have a infinite range but extreme outliers are very rare.
 
@@ -273,7 +273,7 @@ P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5
 
 ## Random Orders and Decks
 
-<div class='sidebar link-box'>
+<div class="sidebar link-box">
 
 [**Birthday Paradox** wikipedia.org](https://en.wikipedia.org/wiki/Birthday_problem)
 
@@ -283,7 +283,7 @@ The `random()` function works a lot like rolling a die.
 When you roll a die, you get random values. Each value should be equally probable and each roll should be [independent](<https://en.wikipedia.org/wiki/Independence_(probability_theory)>).
 If you roll the die multiple times, you **might get the same value more than once**, and it **might take a long time to get a particular value**.
 
-<div class='sidebar link-box'>
+<div class="sidebar link-box">
 
 [**Birthday Paradox** wikipedia.org](https://en.wikipedia.org/wiki/Birthday_problem)
 
@@ -346,7 +346,7 @@ This visualizer simulates choosing numbers from a deck with 10 cards. It pulls t
 
 {% js-lab "sketches/cards.js" %}
 
-<div class='activity'>
+<div class="activity">
 
 ## Skyline Tactic Match
 
@@ -429,7 +429,7 @@ if (r < 20) {
 
 A common mistake when following this pattern is calling random multiple times. If you are making one choice between several options, you only want to call `random()` once.
 
-<div class='bad'>
+<div class="bad">
 
 ```javascript
 // this code doesn't work as expected
@@ -455,7 +455,7 @@ So how can `random()` produce a random value? Technically, it can't and it doesn
 
 A common method to create pseudorandom values is a [Linear Congruential Generator](https://en.wikipedia.org/wiki/Linear_congruential_generator). LCGs begin with an initial value called the **seed**, then use multiplication, addition, and modulus (remainder after division) to derive a new, seemingly random value. It is important to understand that the sequence of `random()` numbers is perfectly predictable if you know the seed.
 
-<div class='activity'>
+<div class="activity">
 
 ## Pencil + Paper LCG
 
@@ -498,7 +498,7 @@ Be careful when using a seed with `random()` to get a repeatable sequence. There
 
 - Second, if your program accepts user input, and that input can influence how many times `random()` is called, your program can also get off sequence.
 
-<div class='callout'>
+<div class="callout">
 
 The Javascript does not provide any way for you to set the seed used by `Math.random()`, so if you need to set the seed and are not using p5, you'll need to find and use another Javascript library for generating random numbers.
 
@@ -538,18 +538,11 @@ This example draws a simple landscape using geometric shapes. It defines functio
 
 {% js-lab "sketches/horizon.js" %}
 
-<div class='activity challenges'>
+<div class="activity challenges">
 
 ## Coding Challenges
 
-Explore the study examples above by completing the following challenges.
-
-<!--
-| Time                 | Comment                                                                              |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| < 6 in 20 Minutes    | You need to put in some extra work to strengthen your understanding of these topics. |
-| 6 in 20 Minutes      | Good.                                                                                |
-| All 10 in 20 Minutes | Great.                                                                               | -->
+Explore the study examples above by completing the following challenges.{intro}
 
 ### Modify the Circle Grid Example
 
@@ -570,7 +563,7 @@ Explore the study examples above by completing the following challenges.
 
 </div>
 
-<div class='assignment'>
+<div class="assignment">
 
 ## Keep Sketching!
 

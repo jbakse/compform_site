@@ -20,8 +20,6 @@ Random values are extremely common and important in procedural generation. Funct
 
 ## Random Array
 
-<p></p>
-
 What if the `random()` function didn't exist? How could you modify this example to get the same effect using the provided `randomValues` array instead?
 
 {% js-lab "sketches/without_random.js" %}
@@ -53,7 +51,7 @@ Noise functions provide a "cloud" of random values that can be used in a wide va
 
 ## Noise vs. Random
 
-<div class='callout'>
+<div class="callout">
 
 ![blue square](figures/grid.svg){scale}
 
@@ -146,7 +144,7 @@ The `noise()` function models an infinite cloud of predetermined random values. 
 
 Different noise functions sove these problems in different ways.
 
-<div class='activity'>
+<div class="activity">
 
 ## Building 1D Noise
 
@@ -249,18 +247,11 @@ Using noise to control the lean of each blade of grass leads to a nice, natural-
 
 {% js-lab "sketches/grass.js" %}
 
-<div class='activity challenges'>
+<div class="activity challenges">
 
 ## Coding Challenges
 
-Explore this chapter's example code by completing the following challenges.
-
-<!--
-| Time                | Comment                                                                              |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| < 7 in 20 Minutes   | You need to put in some extra work to strengthen your understanding of these topics. |
-| 7 in 20 Minutes     | Good.                                                                                |
-| All 9 in 20 Minutes | Great.                                                                               | -->
+Explore the study examples above by completing the following challenges.{intro}
 
 ### Modify the Circle Grid Example
 
@@ -284,7 +275,7 @@ Explore this chapter's example code by completing the following challenges.
 
 </div>
 
-<div class='assignment'>
+<div class="assignment">
 
 ## Keep Sketching!
 
