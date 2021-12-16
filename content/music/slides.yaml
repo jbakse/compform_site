@@ -63,7 +63,7 @@
 
 - artist: Jeremy Wentworth
   title: WebKitSynth, 2016
-  image: http://jeremywentworth.com/img/wks.png
+  image: ./slides/jeremy_wentworth.png
   comments: Generates a short sequence, with lots of knobs to tweak.
   links:
     - label: WebKitSynth

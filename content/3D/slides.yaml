@@ -12,7 +12,7 @@
 
 - artist: Lee Blalock
   title: Plan3tary Bodies, 2015
-  image: http://www.leeblalock.com/images/planetlee.jpeg
+  image: https://www.leeblalock.com/images/planetlee.jpeg
   comments: Images of the body are reimagined as planetary bodies through 3D modeling, as inspired by NASA images.
   links:
     - label: Plan3tary Bodies
@@ -36,7 +36,7 @@
 
 - artist: F.A.T. Lab
   title: Free Universal Construction Kit, 2012
-  image: http://fffff.at/files/2012/03/kit_6463_collection_500x333.jpg
+  image: ./slides/fat_lab.jpg
   comments: A collection of adapters that allows you to join different construction toys together, such as Lego, Duplo, Zoob, and more.
   links:
     - label: Free Universal Construction Kit
