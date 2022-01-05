@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
 
   // file copy operations
   eleventyConfig.addPassthroughCopy("vendor");
-  eleventyConfig.addPassthroughCopy("components/js_lab");
+  eleventyConfig.addPassthroughCopy({ "components/js_lab": "js_lab" });
   eleventyConfig.addPassthroughCopy("js/main.js");
   eleventyConfig.addPassthroughCopy("content/**/*.png");
   eleventyConfig.addPassthroughCopy("content/**/*.jpg");

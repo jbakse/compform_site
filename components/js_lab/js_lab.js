@@ -113,7 +113,7 @@ lab.inject = function inject() {
   let f_visible = check_frame_visible();
   if (f_visible) {
     // console.log("inject");
-    frame.contentWindow.location.replace("/components/js_lab/js_lab_view.html");
+    frame.contentWindow.location.replace("/js_lab/js_lab_view.html");
   }
 };
 
