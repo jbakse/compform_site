@@ -17,7 +17,7 @@ software: p5.js + p5.dom
 
 This is a class about computational form, algorithmic images, generative art, parametric design, and procedural generation. In this class, we will explore a creative process in which form is made indirectly, by creating and then following a defined processes. We will write instructions that a computer will follow to create images, animations, sounds, and sculptures.
 
-**We will make things that make things.**
+We will make things that make things.
 
 There are many reasons artists and designers employ algorithmic methods. Some important ones include:
 
@@ -39,7 +39,9 @@ include('./compform_slides.yaml')
 
 ### What Computational Form is Not
 
-While we use computer programming throughout this class, it is important to understand that procedural generation doesn't require a computer. Procedural generation is about defining instructions and processes that create form. Computers are very useful tools for carrying out these instructions, but artists have also built systems that rely on humans or purpose-built machines instead. Many of the works included in the slideshow above embody principles of computation and instruction without using computers.
+While we use computer programming throughout this class, it is important to understand that procedural generation doesn't require a computer. Procedural generation is about defining instructions, systems, and processes that create form. Computers are very useful tools for carrying out these instructions, but artists have also built systems that rely on humans or purpose-built machines instead.
+
+<!-- Many of the works included in the slideshow above embody principles of computation and instruction without using computers. -->
 
 <!-- ::: .activity
 

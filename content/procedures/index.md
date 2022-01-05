@@ -52,7 +52,7 @@ Creating form through procedures shifts the artist's perspective and can lead to
 
 Because procedures can be executed quickly and tirelessly by computers, it is possible to create systems that produce unique variations for every viewer.
 
-<div class="activity">
+<div class="activity spoiler">
 
 ## The Sierpinski Triangle
 
@@ -112,7 +112,7 @@ As procedures begin to include `looping` and `conditional branching` they become
 
 When beginner and intermediate programmers run into trouble building more complex projects, they often hear this (bad) advice: **Break your complex program into smaller parts, and solve those parts.**
 
-I've given this advice myself, but now I try not to. Very often this advice just isn't helpful, especially for beginners. This advice falls short because it describes how the final program should be structured (results) rather than the how to approach developing it (process). In practice, programming almost always involves prototyping, backtracking, and refactoring. It is hard to understand a complex problem and it is hard to break complex problems down into parts. How big should the parts be? How do you build an individual part without the other parts it depends on? Once you have a few working parts, how do you put them together? With experience, these questions get easier to answer, but advanced programmers still frequently encounter problems they can't initially understand well enough to break down. When this happens to you, you still have an option for getting started: \*Make a simpler program\*\*.
+I've given this advice myself, but now I try not to. Very often this advice just isn't helpful, especially for beginners. This advice falls short because it describes how the final program should be structured (results) rather than the how to approach developing it (process). In practice, programming almost always involves prototyping, backtracking, and refactoring. It is hard to understand a complex problem and it is hard to break complex problems down into parts. How big should the parts be? How do you build an individual part without the other parts it depends on? Once you have a few working parts, how do you put them together? With experience, these questions get easier to answer, but advanced programmers still frequently encounter problems they can't initially understand well enough to break down. When this happens to you, you still have an option for getting started: **Make a simpler program**.
 
 Imagine you want to make a game like [pong](https://www.youtube.com/watch?v=1LsRGUODHlQ), but you don't know how. You could begin by trying to break it down into sub-tasks—keyboard controlled paddles, an animated ball, a scoreboard—but it is very hard to plan all those pieces all at once. At the planning stage you will have a rough idea of how each piece should work, but you won't know the details until you start building each piece. Without understanding the details, the pieces you make probably won't fit together. You might end up with _a lot_ of code that _doesn't work_ and that you _don't understand_. It is much better to have _a little bit_ of code that _does work_ and that you _do understand_.
 
