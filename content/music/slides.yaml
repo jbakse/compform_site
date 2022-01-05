@@ -61,17 +61,17 @@
       href: https://www.youtube.com/watch?v=vNwYtllyt3Q
       subtitle: Music
 
-- artist: Jeremy Wentworth
-  title: WebKitSynth, 2016
-  image: http://jeremywentworth.com/img/wks.png
-  comments: Generates a short sequence, with lots of knobs to tweak.
-  links:
-    - label: WebKitSynth
-      href: http://jeremywentworth.com/projects/webkitsynth/index.html
-      subtitle: Project Page
-    - label: jeremywentworth.com
-      href: http://jeremywentworth.com/
-      subtitle: Artist Site
+# - artist: Jeremy Wentworth
+#   title: WebKitSynth, 2016
+#   image: http://jeremywentworth.com/img/wks.png
+#   comments: Generates a short sequence, with lots of knobs to tweak.
+#   links:
+#     - label: WebKitSynth
+#       href: http://jeremywentworth.com/projects/webkitsynth/index.html
+#       subtitle: Project Page
+#     - label: jeremywentworth.com
+#       href: http://jeremywentworth.com/
+#       subtitle: Artist Site
 
 - artist: John Cage
   title: 4'33", 1952
