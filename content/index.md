@@ -12,7 +12,7 @@ image: /images/og_image.png
 
 <div class="intro">
 
-This site introduces tools, methods, and concepts related to creating computational form, algorithmic images, generative art, procedurally generated content, and parametric designs. It introduces computational form in many mediums, primarily as a method of aesthetic experimentation. This site is a companion to the Computational Form elective taught by [Justin Bakse](http://justinbakse.com) in the [Parsons](parsons.edu) Design and Technology program.
+This site introduces tools, methods, and concepts related to creating computational form, algorithmic images, generative art, procedurally generated content, and parametric designs. It discusses computational form in many mediums, primarily as a method of aesthetic experimentation. This site is a companion to the Computational Form elective taught by [Justin Bakse](http://justinbakse.com) in the [Parsons](parsons.edu) Design and Technology program.
 
 </div>
 
