@@ -5,8 +5,8 @@ layout: compform_toc.pug
 image: /images/og_image.png
 ---
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script> -->
-<!-- <script src="./index_mess.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="./mess.js"></script>
 
 # Comp Form
 
