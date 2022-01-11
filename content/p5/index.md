@@ -8,8 +8,8 @@ description: Many of the examples on this site use p5.js, a Javascript creative 
 software: p5.js + github
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
-<script src="../mess/flakes_mess.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="./flakes_mess.js"></script>
 
 ## Processing and p5.js
 
