@@ -124,7 +124,6 @@ function step() {
 
 let resize_timeout;
 window.addEventListener("resize", (e) => {
-  console.log("Resize");
   clearTimeout(resize_timeout);
   resize_timeout = setTimeout(() => {
     p5_canvas.canvas.setAttribute("style", "");
