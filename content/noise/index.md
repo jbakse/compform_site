@@ -8,9 +8,8 @@ description: Noise provides a flexible, powerful, and aesthetic source of variat
 software: p5.js
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
-
-<script src="../mess/noise_mess_3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="./noise_mess.js"></script>
 
 ## Noise
 

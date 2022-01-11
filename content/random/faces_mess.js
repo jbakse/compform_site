@@ -1,3 +1,5 @@
+// draws random composite face
+
 const grid_width = 32;
 const grid_height = 32;
 const bases = 0;
@@ -187,9 +189,7 @@ function drawTile(x, y, width, height, tile_x, tile_y) {
 }
 
 // fade the canvas out when mouse is still
-
 let hide_timeout = null;
-
 const wait_ms = 3000;
 
 function show() {
@@ -206,7 +206,6 @@ window.addEventListener("mousemove", () => {
 });
 
 // resize canvas
-
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
