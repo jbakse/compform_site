@@ -9,5 +9,8 @@ module.exports = {
     ecmaVersion: 12,
   },
   globals: { mess: true },
-  rules: {},
+  rules: {
+    "no-var": "error",
+    "prefer-const": "error",
+  },
 };

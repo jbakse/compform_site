@@ -8,8 +8,9 @@ description: Expose parameters to make your procedural systems easier to control
 software: p5.js + tweakpane
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
-<script src="/mess/rocket_mess.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/mess.js"></script>
+<script src="./rocket_mess.js"></script>
 
 <style>
 
