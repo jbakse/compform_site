@@ -10,6 +10,10 @@ description: Access pixel values directly to process and generate images.
 software: p5.js
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/mess.js"></script>
+<script src="./pixel_mess.js"></script>
+
 ## Pixels
 
 Today, most computers use color displays that produce images using a grid of pixels. Conceptually, each color pixel is made up of three sub-pixels—red, green, and blue—though the actual hardware may use a different pattern. Because these pixels are small and close together, the image appears continuous. Because our eyes can only directly distinguish red, green, and blue light, the screen can reproduce most of the colors we are capable of seeing.
@@ -293,10 +297,10 @@ The `getQuick()` function below reads a pixel's color value from an image's `pix
 function getQuick(img, x, y) {
   var i = (y * img.width + x) * 4;
   return [
-    testImage.pixels[i],
-    testImage.pixels[i + 1],
-    testImage.pixels[i + 2],
-    testImage.pixels[i + 3],
+    img.pixels[i],
+    img.pixels[i + 1],
+    img.pixels[i + 2],
+    img.pixels[i + 3],
   ];
 }
 ```
