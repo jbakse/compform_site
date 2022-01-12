@@ -1,4 +1,6 @@
-let p5_canvas;
+// draws colorflow confetti
+
+/* exported preload setup draw mousePressed windowResized */
 
 let flakes = [];
 
@@ -8,11 +10,9 @@ function preload() {}
 
 function setup() {
   pixelDensity(1);
-  p5_canvas = createCanvas(windowWidth, windowHeight);
+  const p5_canvas = createCanvas(windowWidth, windowHeight);
 
-  p5_canvas.canvas.classList.add("mess");
-  p5_canvas.canvas.classList.add("hide");
-  p5_canvas.canvas.setAttribute("style", "");
+  mess(p5_canvas);
 
   colorMode(HSB, 1000);
 }
@@ -87,26 +87,4 @@ class Flake {
     rect(0, 0, this.scale, this.scale);
     pop();
   }
-}
-
-// fade the canvas out when mouse is still
-let hide_timeout = null;
-const wait_ms = 2000;
-
-function show() {
-  p5_canvas && p5_canvas.canvas.classList.remove("hide");
-  hide_timeout && clearTimeout(hide_timeout);
-  hide_timeout = setTimeout(hide, wait_ms);
-}
-function hide() {
-  p5_canvas && p5_canvas.canvas.classList.add("hide");
-}
-
-window.addEventListener("mousemove", () => {
-  show();
-});
-
-// resize canvas
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }

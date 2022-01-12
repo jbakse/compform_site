@@ -1,7 +1,7 @@
 // draws random composite face
 
-const grid_width = 32;
-const grid_height = 32;
+/* exported preload setup draw mousePressed windowResized */
+
 const bases = 0;
 const eyes = 1;
 const noses = 2;
@@ -21,7 +21,6 @@ const trait_names = [
   "hair_colors",
 ];
 
-let p5_canvas;
 let face_parts;
 let tiles;
 
@@ -39,12 +38,8 @@ function preload() {
 
 function setup() {
   pixelDensity(1);
-
-  //p5_canvas = createCanvas(windowWidth * 0.5, windowHeight * 0.5);
-  p5_canvas = createCanvas(windowWidth, windowHeight);
-
-  p5_canvas.canvas.classList.add("mess");
-  p5_canvas.canvas.setAttribute("style", "");
+  let p5_canvas = createCanvas(windowWidth, windowHeight);
+  mess(p5_canvas);
 
   face_colors.push(color(250, 220, 180));
   face_colors.push(color(250, 180, 140));
@@ -98,8 +93,6 @@ function setup() {
 
   x = mouseX = width * 0.5;
   y = mouseY = width * 0.5;
-
-  show();
 }
 
 function draw() {
@@ -186,26 +179,4 @@ function randomInt(max) {
 
 function drawTile(x, y, width, height, tile_x, tile_y) {
   image(tiles[tile_x][tile_y], x, y, width, height);
-}
-
-// fade the canvas out when mouse is still
-let hide_timeout = null;
-const wait_ms = 3000;
-
-function show() {
-  p5_canvas && p5_canvas.canvas.classList.remove("hide");
-  hide_timeout && clearTimeout(hide_timeout);
-  hide_timeout = setTimeout(hide, wait_ms);
-}
-function hide() {
-  p5_canvas && p5_canvas.canvas.classList.add("hide");
-}
-
-window.addEventListener("mousemove", () => {
-  show();
-});
-
-// resize canvas
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }

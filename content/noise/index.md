@@ -9,9 +9,10 @@ software: p5.js
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/mess.js"></script>
 <script src="./noise_mess.js"></script>
 
-## Noise
+## Noise Generation
 
 Random values are extremely common and important in procedural generation. Functions like `Math.random()` are the common go-to for choosing random values, but in many situations they are hard to work with. Psuedo-random number generators are designed to provide independent, unpredictable, and evenly-distributed values. If we want _related_ or _repeatable_ random values we have to do extra work. If we want random variation with specific aesthetic characteristics we also have to do extra work.
 

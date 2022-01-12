@@ -9,6 +9,7 @@ software: p5.js + github
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/mess.js"></script>
 <script src="./flakes_mess.js"></script>
 
 ## Processing and p5.js

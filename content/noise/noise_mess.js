@@ -1,22 +1,22 @@
 // draws noise trail
 
+/* exported preload setup draw mousePressed windowResized */
+
+// config
 const lines = 50;
 const line_closeness = 1;
 const in_scale = 0.01;
 const out_scale = 100;
 
-let p5_canvas;
+// state
 let old_x = false;
 let old_y = false;
-let hue = 0;
+let c_hue = 0;
 
 function setup() {
   pixelDensity(1);
-  p5_canvas = createCanvas(windowWidth, windowHeight);
-
-  p5_canvas.canvas.classList.add("mess");
-  p5_canvas.canvas.classList.add("hide");
-  p5_canvas.canvas.setAttribute("style", "");
+  const p5_canvas = createCanvas(windowWidth, windowHeight);
+  mess(p5_canvas);
 
   noFill();
   colorMode(HSB, 1000);
@@ -50,8 +50,8 @@ function brush(x1, y1, x2, y2) {
 
   for (let n = 0; n < steps; n++) {
     //color
-    hue = ++hue % 1000;
-    stroke(hue, 1000, 1000, 200);
+    c_hue = ++c_hue % 1000;
+    stroke(c_hue, 1000, 1000, 200);
 
     // find start/end of segment
     let start_x = lerp(x1, x2, n / steps);
@@ -83,26 +83,4 @@ function noiseLine(x1, y1, x2, y2, n, in_scale, out_scale) {
   y2 += (noise(x2 * in_scale, y2 * in_scale, n) - 0.5) * out_scale;
 
   line(x1, y1, x2, y2);
-}
-
-// fade the canvas out when mouse is still
-let hide_timeout = null;
-const wait_ms = 3000;
-
-function show() {
-  p5_canvas && p5_canvas.canvas.classList.remove("hide");
-  hide_timeout && clearTimeout(hide_timeout);
-  hide_timeout = setTimeout(hide, wait_ms);
-}
-function hide() {
-  p5_canvas && p5_canvas.canvas.classList.add("hide");
-}
-
-window.addEventListener("mousemove", () => {
-  show();
-});
-
-// resize canvas
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
