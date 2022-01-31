@@ -3,7 +3,7 @@
 let amplitude_slider;
 
 function setup() {
-  createCanvas(300, 200);
+  createCanvas(600, 400);
 
   fill(240);
   noStroke();

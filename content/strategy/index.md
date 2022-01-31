@@ -8,9 +8,9 @@ description: Building a complex procedural generation system requires analyzing 
 software: p5.js
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
-
-<script src="/mess/strat_mess.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/mess.js"></script>
+<script src="./strategy_mess.js"></script>
 
 ## Computational Form + Strategies + Tactics
 
@@ -24,22 +24,25 @@ canvas {
 }
 </style>
 
-So far we've been looking at low-level topics like how to use—and get the most from—`random()` and `noise()`. In the chapter, the focus is on high-level planning. To create more complex systems you must develop a clear understanding of your goal, create a plan to achieve that goal, divide that plan into sub-problems ([decomposition](<https://en.wikipedia.org/wiki/Decomposition_(computer_science)>)) and create code to solve those sub-problems ([implementation](https://en.wikipedia.org/wiki/Implementation)).
+So far we've been looking at low-level topics like how to use—and get the most from—`random()` and `noise()`. In the chapter, the focus is on the high-level structure of a program. To create more complex systems you must develop a clear understanding of your goal and create a plan to achieve that goal, divide that plan into sub-problems ([decomposition](<https://en.wikipedia.org/wiki/Decomposition_(computer_science)>)) and create code to solve those sub-problems ([implementation](https://en.wikipedia.org/wiki/Implementation)).
 
 When planning and coding a project, I tend to think in terms of _strategies_ and _tactics_.
 
-Strategies
-: Strategies are high-level plans for achieving your unique, broad goals. Because strategies are specific to their goals they are not highly reusable.
+#### Strategies
+
+Strategies are high-level plans for achieving your unique, broad goals. Because strategies are specific to their goals they are not highly reusable.
 
 _Strategies are composed of tactics._
 
-Tactics
-: Tactics are low- to mid-level concrete approaches to solving common problems. Tactics can include common [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms), [data structures](https://en.wikipedia.org/wiki/List_of_data_structures), [design patterns](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), and other reusable components. Tactics correspond to common problems and are highly reusable.
+#### Tactics
+
+Tactics are low- to mid-level concrete approaches to solving common problems. Tactics can include common [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms), [data structures](https://en.wikipedia.org/wiki/List_of_data_structures), [design patterns](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), and other reusable components. Tactics correspond to common problems and are highly reusable.
 
 _Tactics are composed of smaller tactics and primitives._
 
-Primitives
-: Primitives are the programming building blocks provided by your language and libraries. These include control structures like loops and functions and built-in data types like variables, objects, and arrays. They may also include more complex tasks like `rect()` and `random()` when the complexity is encapsulated and you don't have to think about how they work internally to use them.
+#### Primitives
+
+Primitives are the programming building blocks provided by your language and libraries. These include control structures like loops and functions and built-in data types like variables, objects, and arrays. They may also include more complex tasks like `rect()` and `random()` when the complexity is encapsulated and you don't have to think about how they work internally to use them.
 
 _Primitives are atomic: they are the smallest units of composition and are not further broken down._
 
@@ -400,6 +403,8 @@ What tactics might have been used to get each result below?
 
 ### Point Placing Demo
 
+This code implements the tactics described above, and demonstrates the effect of combining the tactics in different ways.
+
 <!-- todo: refactor this example so its easy to follow, and let the user combine the steps how they want (instead of only presets) -->
 
 {% js-lab "sketches/point_place.js" %}
@@ -430,15 +435,7 @@ Like the _Basic Grid Placement_ example above, this example places dots on a gri
 
 ## Coding Challenges
 
-Explore the study examples above by completing the following challenges in order.
-
-<!-- <br/> Don't skip any. -->
-
-<!-- | Time                 | Comment                                                                              |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| < 11 in 20 Minutes   | You need to put in some extra work to strengthen your understanding of these topics. |
-| 11 in 20 Minutes     | Good.                                                                                |
-| All 14 in 20 Minutes | Great.                                                                               | -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Basic Grid Placement Example
 
@@ -507,13 +504,13 @@ When designing a procedural generation system there are several properties to co
 
 <div class="assignment">
 
-## Challenge!
+## Take Home Challenge
 
 This is the last chapter of the "Foundation" section. The challenges in the chapters so far—random, noise, parameters—have been open ended. They suggested general themes, but left the specifics up to you.
 
-The challenges this week are much more specific, challenging you to recreate a specific effect. Recreating existing effects presents different challenges than open ended sketching, and forces you to contend directly with any problems you run into. Both this type of work and open ended exploratoin are good ways to study creative coding, and mixing them is particulary effective.
+The challenges this week are much more specific, challenging you to recreate a specific effect. Recreating existing effects presents different challenges than open ended sketching, and forces you to contend directly with any problems you run into. Both this type of work and open ended exploration are good ways to study creative coding and mixing them is particulary effective.
 
-Solving this chapter's challenges will require strategic planning:
+Solving these two challenges will require strategic planning:
 
 - **Analyze** Clearly describe what the sketch does in fine detail.
 - **Strategize** Think about what tactics you will use and how you will combine them.

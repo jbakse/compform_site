@@ -52,7 +52,7 @@ Creating form through procedures shifts the artist's perspective and can lead to
 
 Because procedures can be executed quickly and tirelessly by computers, it is possible to create systems that produce unique variations for every viewer.
 
-<div class="activity">
+<div class="activity spoiler">
 
 ## The Sierpinski Triangle
 
@@ -86,6 +86,8 @@ Computational Form doesn't necessarily require computers or computer programming
 
 This site explores a variety of computer languages and tools which can be used to create form computationally. Many of the examples—including those in this chapter—are written using [p5.js](https://p5js.org/). For a quick introduction to p5.js, see the [Hello, p5!](../p5) chapter and the [p5.js](https://p5js.org/) website.
 
+### House I
+
 Here is a simple example of a p5.js program that draws a house.
 
 {% js-lab "./sketches/house.js" %}
@@ -94,33 +96,33 @@ This is a fairly simple program. It is mostly a series of `fill`, `rect`, and `t
 
 At first, this indirect way of working can feel cumbersome. It would be easier to create and alter this drawing in a program like Adobe Illustrator. But even a slightly more sophisticated program begins to show the power afforded by working with procedures.
 
-{% js-lab "./sketches/houses.js" %}
+### House II
 
 This example is only little more complex but instead of drawing one specific house, can generate many, many variations. The procedure used here introduces a few new concepts like making decisions based on random numbers and mixing colors, but the flow of the program is still straight down from top to bottom.
+
+{% js-lab "./sketches/houses.js" %}
+
+### Sierpinski Triangle
 
 As procedures begin to include `looping` and `conditional branching` they become much more powerful and even a short program can produce complex, detailed form. The following program draws a Sierpinski triangle using a completely different procedure from the one above.
 
 {% js-lab "./sketches/donkey.js" %}
 
-<div class="callout">
+## Tackling Complexity
 
-**Tackling Complexity**
+When beginner and intermediate programmers run into trouble building more complex projects, they often hear this (bad) advice: **Break your complex program into smaller parts, and solve those parts.**
 
-When beginner and intermediate programmers run into trouble building more complex projects, they often hear this advice:
+I've given this advice myself, but now I try not to. Very often this advice just isn't helpful, especially for beginners. This advice falls short because it describes how the final program should be structured (results) rather than the how to approach developing it (process). In practice, programming almost always involves prototyping, backtracking, and refactoring. It is hard to understand a complex problem and it is hard to break complex problems down into parts. How big should the parts be? How do you build an individual part without the other parts it depends on? Once you have a few working parts, how do you put them together? With experience, these questions get easier to answer, but advanced programmers still frequently encounter problems they can't initially understand well enough to break down. When this happens to you, you still have an option for getting started: **Make a simpler program**.
 
-> Break your problem into smaller parts, and solve those parts.
+Imagine you want to make a game like [pong](https://www.youtube.com/watch?v=1LsRGUODHlQ), but you don't know how. You could begin by trying to break it down into sub-tasks—keyboard controlled paddles, an animated ball, a scoreboard—but it is very hard to plan all those pieces all at once. At the planning stage you will have a rough idea of how each piece should work, but you won't know the details until you start building each piece. Without understanding the details, the pieces you make probably won't fit together. You might end up with _a lot_ of code that _doesn't work_ and that you _don't understand_. It is much better to have _a little bit_ of code that _does work_ and that you _do understand_.
 
-Unfortunately this advice often isn't helpful: programmers often try to follow it and still get stuck. This advice falls short because it describes how the final program should be structured rather than the process of developing it. It is hard to understand a complex problem and it is hard to break complex problems down into parts. How big should the parts be? How do you build an individual part without the other parts it depends on? Once you have a few working parts, how do you put them together? With experience, these questions get easier to answer, but advanced programmers still frequently encounter problems they can't initially understand well enough to break down. When this happens to you, you still have an option for getting started: **make a simpler program**.
+Instead, you could start with a very simple program: just draw a little square—the ball—on the screen. Build and run this program to make sure it works. Then start adding on. Make the ball move to the right. Don't worry about the paddles or the score yet: focus on the ball. Make the square bounce when it hits the side. Then make it move diagonally. Make the ball bounce off all the sides. You might make dozens of incremental working programs as you get the basic ball working. As you do, take the time to review the code and make sure you understand how _everything_ works.
 
-Imagine you want to make a game like [pong](https://www.youtube.com/watch?v=1LsRGUODHlQ). You could begin by trying to break it down into sub-tasks—keyboard controlled paddles, an animated ball, a scoreboard—but it is hard to plan all those pieces all at once. At the planning stage you will have a rough idea of how each piece should work, but you won't know the details until you start building each piece. Without understanding the details, the pieces you make probably won't fit together. You might end up with _a lot_ of code that _doesn't work_ and that you _don't understand_. It is much better to have _a little bit_ of code that _does work_ and that you _do understand_.
+Remember: it is much, much better to have a little bit of code you understand than a lot of code you don't understand.
 
-Instead, you could start with a very simple program: just draw a little square—the ball—on the screen. Build and run this program to make sure it works. Then start adding on. Make the ball move to the right. Don't worry about the paddles or the score yet: focus on the ball. Make the square bounce when it hits the side. Then make it move diagonally. Make the ball bounce off all the sides. You might make dozens of incremental working programs as you get the basic ball working. As you do, take the time to review the code and make sure you understand how everything works.
-
-Working this way will let you discover the details of how your ball—an important piece of your program—works. These details will help you discover how that piece will connect with the others. As you start to build other elements—like the paddles or scoreboard—you might find out that you need to go back and change how the ball works. Expect to run into some dead ends, and expect the need to back track. This might have been avoided if you had made a complete plan in the beginning, but _in the beginning, you didn't know enough to make a complete plan_.
+Working this way will let you discover the details of how your ball—an important piece of your program—works. These details will help you discover how that piece will connect with the others. As you start to build other elements—like the paddles or scoreboard—you might find out that you need to go back and change how the ball works. Expect to run into some dead ends, and expect the need to back track. Sure, this might have been avoided if you had made a complete, correct plan in the beginning, but _in the beginning, you didn't know enough to make a complete, correct plan_.
 
 The reason this strategy works is simple: **instead of trying to do something you can't, you try to do something you can.**
-
-</div>
 
 > A complex system that works is invariably found to have evolved from a simple system that worked. The inverse proposition also appears to be true: A complex system designed from scratch never works and cannot be made to work. You have to start over, beginning with a working simple system.
 >

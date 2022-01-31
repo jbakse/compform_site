@@ -9,14 +9,15 @@ const the_raven =
 const seuss =
   "One fish Two fish Red fish Blue fish. Black fish Blue fish Old fish New fish. This one has a little star. This one has a little car. Say! What a lot Of fish there are. Yes. Some are red. And some are blue. Some are old. And some are new. Some are sad. And some are glad. And some are very, very bad. Why are they Sad and glad and bad? I do not know. Go ask your dad. Some are thin. And some are fat. The fat one has A yellow hat. From there to here, from here to there, Funny things Are everywhere.  Here are some Who like to run. They run for fun In the hot, hot sun. Oh me! Oh my! Oh me! Oh my! What a lot Of funny things go by. Some have two feet And some have four. Some have six feet And some have more. Where do they come from? I can’t say. But I bet they have come a long, long way. We see them come. We see them go. Some are fast. And some are slow. Some are high And some are low. Not one of them Is like another. Don’t ask us why. Go ask your mother. Say! Look at his fingers! One, two, three… How many fingers Do I see? One, two, three, four, Five, six, seven, Eight, nine, ten. He has eleven! Eleven! This is something new. I wish I had Eleven, too! ";
 
-const model = generateModel(bill_of_rights + " " + the_raven);
-const output_text = generateText("Congress", model);
+const model = generateModel(bill_of_rights, the_raven);
+const output_text = generateText(model);
 
 document.body.innerHTML = output_text;
 // console.log(output_text);
 
-function generateModel(input_text) {
-  const words = input_text.split(" ");
+// creates a markov chain model based on one or more input strings
+function generateModel(...args) {
+  const words = args.join(" ").split(" ");
   const model = {};
 
   // loop through all the words except the last one.
@@ -36,7 +37,10 @@ function generateModel(input_text) {
   return model;
 }
 
-function generateText(first_word, model) {
+function generateText(model, first_word) {
+  // if first_word isn't provided use a random word in the model object
+  first_word = first_word || sample(Object.keys(model));
+
   // start with the word passed in
   let output_text = first_word;
   let current_word = first_word;

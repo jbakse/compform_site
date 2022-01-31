@@ -7,7 +7,7 @@ let animate_checkbox;
 let t = 0;
 
 function setup() {
-  createCanvas(300, 200);
+  createCanvas(600, 400);
 
   fill(240);
   noStroke();
@@ -20,7 +20,7 @@ function setup() {
   createP("Octaves/Detail");
   octave_slider = createSlider(1, 8, 1);
 
-  animate_checkbox = createCheckbox("Animate Line", false);
+  animate_checkbox = createCheckbox("Animate Line", true);
 }
 
 function draw() {

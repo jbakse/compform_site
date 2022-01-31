@@ -11,7 +11,8 @@ function valueFromDeck() {
   position++;
   if (position > deck.length) {
     deck = shuffle(deck);
-    position = 0;
+    v = deck[0];
+    position = 1;
   }
   return v;
 }

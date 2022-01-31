@@ -5,14 +5,15 @@ layout: compform_toc.pug
 image: /images/og_image.png
 ---
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script> -->
-<!-- <script src="./index_mess.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="./mess.js"></script>
+<script src="./toc_mess.js"></script>
 
 # Comp Form
 
 <div class="intro">
 
-This site introduces tools, methods, and concepts related to creating computational form, algorithmic images, generative art, procedurally generated content, and parametric designs. It introduces computational form in many mediums, primarily as a method of aesthetic experimentation. This site is a companion to the Computational Form elective taught by [Justin Bakse](http://justinbakse.com) in the [Parsons](parsons.edu) Design and Technology program.
+This site introduces tools, methods, and concepts related to creating computational form, algorithmic images, generative art, procedurally generated content, and parametric designs. It discusses computational form in many mediums, primarily as a method of aesthetic experimentation. This site is a companion to the Computational Form elective taught by [Justin Bakse](http://justinbakse.com) in the [Parsons](parsons.edu) Design and Technology program.
 
 </div>
 
@@ -28,7 +29,7 @@ General principles, practices, and building blocks useful for all procedural gen
 
 [**Random Values** p5.js](./random)
 
-[**Parameters** p5.js + tweakpane](./parameters)
+[**Parameters** p5.js + Tweakpane](./parameters)
 
 [**Noise** p5.js](./noise)
 
@@ -46,19 +47,19 @@ Independent chapters exploring specific procedural generation tools, languages, 
 
 <nav>
 
-[**Tile Maps** pencil + paper](./tiles)
+[**Tile Maps** Pencil + Paper](./tiles)
 
-[**Hello, p5** p5.js + github](./p5)
+[**Hello, p5** p5.js + GitHub](./p5)
 
 [**Pixel Data** p5.js](./pixels)
 
-[**Turtle Graphics** p5.js + custom library](./turtles)
+[**Turtle Graphics** p5.js + Custom Library](./turtles)
 
 [**Vector Drawing** paper.js](./vectors)
 
 [**Animation** p5.js](./animation)
 
-[**Generating Text** javascript + html](./text)
+[**Generating Text** JavaScript + html](./text)
 
 [**Comp Sound** p5.js + p5.sound](./sound)
 
@@ -80,7 +81,11 @@ Syllabi, schedules, and lesson plans for the Computational Form class.
 
 <nav>
 
-[**Introduction** about the course](./introduction)
+[**Introduction** About the Course](./introduction)
+
+Spring 2022
+: [Class Notes](https://www.notion.so/Comp-Form-S22-c7f4416eab7d4eb4a354aabbeea37e3e)
+: [Sketch Book](http://sketches2022spring.compform.net/)
 
 Spring 2021
 : [Class Notes](https://www.notion.so/Comp-Form-Spring-2021-91302ea4d8df4af5af54d2b615cef5d4)

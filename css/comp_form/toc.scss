@@ -1,5 +1,7 @@
-.comp-form-toc {
+body.toc {
   background-color: $light-grey;
+}
+.comp-form-toc {
   padding-top: 1px;
 
   &.container > * {
@@ -143,5 +145,5 @@
 }
 
 .toc #scroll-out {
-  background: $light-grey;
+  // background: $light-grey;
 }

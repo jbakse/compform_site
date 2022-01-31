@@ -10,6 +10,10 @@ description: Access pixel values directly to process and generate images.
 software: p5.js
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/mess.js"></script>
+<script src="./pixel_mess.js"></script>
+
 ## Pixels
 
 Today, most computers use color displays that produce images using a grid of pixels. Conceptually, each color pixel is made up of three sub-pixels—red, green, and blue—though the actual hardware may use a different pattern. Because these pixels are small and close together, the image appears continuous. Because our eyes can only directly distinguish red, green, and blue light, the screen can reproduce most of the colors we are capable of seeing.
@@ -91,29 +95,21 @@ This example uses `set()` to set each pixel in a 10x10 image to a random color. 
 
 Let's look at the code in depth.
 
-Line 10
-: Use `createImage()` to create a new, empty 10x10 image in memory. We can draw this image just like an image loaded from a `.jpg` or `.gif`.
+**Line 10:** Use `createImage()` to create a new, empty 10x10 image in memory. We can draw this image just like an image loaded from a `.jpg` or `.gif`.
 
-Line 11
-: Use `loadPixels()` to tell p5 that we want to access the pixels of the image for reading or writing. You must call `loadPixels()` before using `set()`, `get()`, or the `pixels[]` array.
+**Line 11:** Use `loadPixels()` to tell p5 that we want to access the pixels of the image for reading or writing. You must call `loadPixels()` before using `set()`, `get()`, or the `pixels[]` array.
 
-Line 13
-: Set up a nested loop. The inner content of the loop will be run once for every pixel.
+**Line 13:** Set up a nested loop. The inner content of the loop will be run once for every pixel.
 
-Line 15
-: Use the `color()` function to create a color value, which is assigned to `c`. Color values hold the R, G, B, and A values of a color. The color function takes into account the current `colorMode()`.
+**Line 15:** Use the `color()` function to create a color value, which is assigned to `c`. Color values hold the R, G, B, and A values of a color. The color function takes into account the current `colorMode()`.
 
-Line 16
-: Use `set()` to set the color of the pixel at `x, y`.
+**Line 16:** Use `set()` to set the color of the pixel at `x, y`.
 
-Line 20
-: Use `updatePixels()` to tell p5 we are done accessing the pixels of the image.
+**Line 20:** Use `updatePixels()` to tell p5 we are done accessing the pixels of the image.
 
-Line 22
-: Use `noSmooth()` to tell p5 not to smooth the image when we scale it: we want it pixelated. This resembles Photoshop's 'nearest neighbor' scaling method.
+**Line 22:** Use `noSmooth()` to tell p5 not to smooth the image when we scale it: we want it pixelated. This resembles Photoshop's 'nearest neighbor' scaling method.
 
-Line 23
-: Draw the image, scaling up so we can clearly see each pixel.
+**Line 23:** Draw the image, scaling up so we can clearly see each pixel.
 
 ### Gradient Example
 
@@ -121,8 +117,7 @@ This example has the same structure as the first one, but draws a gradient pixel
 
 {% js-lab "sketches/basic_pixels_2.js" %}
 
-Line 15
-: Instead of choosing a color at random, this example calculates a color based on the current `x` and `y` position of the pixel being set.
+**Line 15:** Instead of choosing a color at random, this example calculates a color based on the current `x` and `y` position of the pixel being set.
 
 ### Random Access Example
 
@@ -134,16 +129,7 @@ The first two examples use a nested loop to set a value for every pixel in the i
 
 ## Coding Challenges One
 
-Explore using p5's pixel manipulation functions by modifying the scripts above. Work through the following challenges in order.
-
-<!-- <br/> Don't skip any. -->
-
-<!-- | Time               | Comment                                                                               |
-| ------------------ | ------------------------------------------------------------------------------------- |
-| < 13 in 20 Minutes | You need to put in some extra work<br/> to strengthen your programming understanding. |
-| 13 in 20 Minutes   | Good.                                                                                 |
-| All in 20 Minutes  | Great.                                                                                |
-| All in 15 Minutes  | Hot Dang!                                                                             | -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Basic Example
 
@@ -194,37 +180,27 @@ This example loads the image of Earth, loops over its pixels, and white pixels t
 
 #### First we need to load an image to read pixel data from.
 
-Line 3
-: Declare a variable to hold our image.
+**Line 3:** Declare a variable to hold our image.
 
-Line 5
-: The `preload()` function. Use this function to load assets. p5.js will wait until all assets are loaded before calling `setup()` and `draw()`
+**Line 5:** The `preload()` function. Use this function to load assets. p5.js will wait until all assets are loaded before calling `setup()` and `draw()`
 
-Line 6
-: Load the image.
+**Line 6:** Load the image.
 
 #### With our image loaded we can process the pixels.
 
-Line 18
-: Set up a nested loop to cover every pixel.
+**Line 18:** Set up a nested loop to cover every pixel.
 
-Line 20
-: Use `get()` to load the color data of the current pixel. `get()` returns an array like `[255, 0, 0, 255]` with components for red, green, blue, and alpha.
+**Line 20:** Use `get()` to load the color data of the current pixel. `get()` returns an array like `[255, 0, 0, 255]` with components for red, green, blue, and alpha.
 
-Lines 22, 23, 24
-: Read the red, blue, and green parts of the color.
+**Lines 22, 23, 24:** Read the red, blue, and green parts of the color.
 
-Line 27
-: Check if the red value is 255 to see if it is black or white. Since we know the image is only black and white this is enough to check.
+**Line 27:** Check if the red value is 255 to see if it is black or white. Since we know the image is only black and white this is enough to check.
 
-Line 28 and Line 30
-: Set `out_color` to red or blue.
+**Line 28 and Line 30:** Set `out_color` to red or blue.
 
-Line 33
-: Set the pixel's color to `out_color`.
+**Line 33:** Set the pixel's color to `out_color`.
 
-Line 34
-: Use `updatePixels()` to tell the image there has been an update. We didn't need to do this in the loop when we were just setting pixels, but here we mix `set()` and `get()`. p5.js requires calling `updatePixels()` anytime we switch from setting to getting or drawing.
+**Line 34:** Use `updatePixels()` to tell the image there has been an update. We didn't need to do this in the loop when we were just setting pixels, but here we mix `set()` and `get()`. p5.js requires calling `updatePixels()` anytime we switch from setting to getting or drawing.
 
 <div class="callout">
 
@@ -248,16 +224,7 @@ This example doesn't draw the image at all. Instead, the image is used as an inp
 
 ## Coding Challenges Two
 
-Explore using p5's pixel manipulation functions by modifying the scripts above. Work through the following challenges in order.
-
-<!-- <br/> Don't skip any. -->
-
-<!-- | Time               | Comment                                                                               |
-| ------------------ | ------------------------------------------------------------------------------------- |
-| < 10 in 20 Minutes | You need to put in some extra work<br/> to strengthen your programming understanding. |
-| 10 in 20 Minutes   | Good.                                                                                 |
-| All in 20 Minutes  | Great.                                                                                |
-| All in 15 Minutes  | Hot Dang!                                                                             | -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify Read Pixels Example 1
 
@@ -330,10 +297,10 @@ The `getQuick()` function below reads a pixel's color value from an image's `pix
 function getQuick(img, x, y) {
   var i = (y * img.width + x) * 4;
   return [
-    testImage.pixels[i],
-    testImage.pixels[i + 1],
-    testImage.pixels[i + 2],
-    testImage.pixels[i + 3],
+    img.pixels[i],
+    img.pixels[i + 1],
+    img.pixels[i + 2],
+    img.pixels[i + 3],
   ];
 }
 ```
@@ -448,7 +415,7 @@ Work with a partner.
 
 ## Explore
 
-<div class='link-box'>
+<div class="link-box">
 
 [**Reaction Diffusion in Photoshop** Tutorial](https://vimeo.com/61154654)
 Create a pattern in Photoshop by repeatedly applying filters.

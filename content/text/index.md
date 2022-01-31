@@ -14,7 +14,7 @@ software: javascript + html
 
 Procedural generation can be used to create form in almost any media: image, video, animation, sound, sculpture. This chapter introduces some tactics for procedurally generating text, which may be the media most often computationally generated. Web pages are built out of text, and most of the time this text is computationally generated at least to some degree.
 
-<div class='sidebar link-box'>
+<div class="sidebar link-box">
 
 [**How Search Works** Google](https://www.google.com/search/howsearchworks/)
 
@@ -113,7 +113,7 @@ Tay was an AI twitter bot created by Microsoft and launched on March 23, 2016. L
 
 ## String Templates
 
-String templating is a basic but powerful tool for building text procedurally. If you have ever completed a [Mad Lib](http://www.madlibs.com/) fill-in-the-blank story, you've worked with string templates.
+String templating is a basic but powerful tool for building text procedurally. If you have ever completed a [Mad Lib](http://www.madlibs.com/) fill-in-the-blank story, you've worked with the basic idea of string templates.
 
 <div class="activity">
 
@@ -146,11 +146,15 @@ console.log(`I ate ${2 * 4} apples on ${day}!`);
 // I ate 8 apples on Monday!
 ```
 
-The examples below demonstrate using JavaScript template literals.
+### Book Title
 
-### Template Examples
+This example generates a book title and subtitle by populating string templates with words randomly chosen from a curated list.
 
 {% js-lab "sketches/title/title.js" %}
+
+### Life Expectancy
+
+This example uses string templates and data lookups to create personalized text.
 
 {% js-lab "sketches/death/death.js" %}
 
@@ -186,7 +190,9 @@ Choose a random word from the keys. Write it down. Choose a word at random from 
 
 </div>
 
-### Markov Chain Example
+### Markov Text Generator
+
+This example creates a Markov chain model based on provided text and then generates text based on that model.
 
 {% js-lab "sketches/markov.js" %}
 
@@ -212,9 +218,13 @@ HTML is text, and it can be represented by a text string. But not all text strin
 
 [Context-free grammars](https://en.wikipedia.org/wiki/Context-free_grammar) are a subtype of formal grammars that are useful for generating text. A context-free grammar is described as a set of replacement rules. Each rule represents a legal replacement of one symbol with zero, one, or multiple other symbols. In a context-free grammar, the rules don't consider the symbols before or after—the context around—the symbol being replaced.
 
-The following example demonstrates using a context-free grammar to generate a short story. This example uses [Tracery](https://github.com/galaxykate/tracery), created by [Kate Compton](http://www.galaxykate.com/). The [Cheap Bots, Done Quick](https://cheapbotsdonequick.com/) service lets you [make twitterbots](http://programminghistorian.github.io/ph-submissions/lessons/intro-to-twitterbots) very quickly using Tracery. You can learn more about Tracery by watching this [talk (16:16)](https://www.gdcvault.com/play/1023377/Tech) by Kate Compton.
+### Story Teller
+
+The following example uses a context-free grammar to generate a short story. This example uses [Tracery](https://github.com/galaxykate/tracery), created by [Kate Compton](http://www.galaxykate.com/). The [Cheap Bots, Done Quick](https://cheapbotsdonequick.com/) service lets you [make twitterbots](http://programminghistorian.github.io/ph-submissions/lessons/intro-to-twitterbots) very quickly using Tracery. You can learn more about Tracery by watching this [talk (16:16)](https://www.gdcvault.com/play/1023377/Tech) by Kate Compton.
 
 {% js-lab "sketches/tracery_example.js" %}
+
+### Marquee Maker
 
 HTML is text, so Tracery can generate HTML!
 
@@ -224,7 +234,7 @@ HTML is text, so Tracery can generate HTML!
 
 ## Coding Challenges
 
-Explore using Javascript Template literals by completing the following challenges.
+Explore this chapter's example code by completing the following challenges.{intro}
 
 {% js-lab "sketches/challenge.js" %}
 

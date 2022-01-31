@@ -19,32 +19,17 @@ TogetherJSConfig_hubBase = "https://clover-grateful-source.glitch.me/";
 
 ## Microgames
 
-Minigames are small videogames included within larger videogames. They are often included as [Easter eggs](<https://en.wikipedia.org/wiki/Easter_egg_(media)>) or to add variety to the larger game. BioShock—a first-person shooter—used a minigame version of Pipe Dream—a classic puzzler—as the mechanic used to hack doors and machines. Final Fantasy 7 introduced a Chocobo Racing minigame that allowed players to capture, breed, and race large, rideable birds. In Animal Crossing, players can decorate their home with playable NES games.
+Minigames are small videogames included within larger videogames. They are often included as [Easter eggs](<https://en.wikipedia.org/wiki/Easter_egg_(media)>) or to add variety to the larger game. The hit first-person shooter BioShock used a minigame version of Pipe Dream—a classic puzzler—as the mechanic used to hack door locks and machines. Final Fantasy 7 introduced a Chocobo Racing minigame that allowed players to capture, breed, and race large, rideable birds. In Animal Crossing, players can decorate their home with playable NES games.
 
 Some games are made up almost entirely of minigames. Party games like Mario Party, Rayman: Raving Rabbids, and 1-2-Switch allow players to compete in a series of minigame events. Evoland I + II are RPGs that mix many videogame styles and mechanics both by including many minigames and by evolving the presentation of the main game itself.
 
-<!-- commenting this out because now there's a gallery
-
-<div class="three-up">
-
-![Bioshock](figures/bioshock.jpg)
-BioShock Hacking{figure}
-
-![Final Fantasy VII](figures/ffVII.jpg)
-Final Fantasy VII Chocobo Racing{figure}
-
-![Animal Crossing](figures/animalcrossing.jpg)
-Animal Crossing NES Collection{figure}
-
-</div> -->
-
-Minigames provide many benefits in game design. They offer a change of pace from the main game, reducing fatigue. They are usually low stakes, reducing stress. A well-placed minigame can improve the pacing of the main game significantly. Offering a break before a spike in the action will increase the apparent contrast in the intensity.
+Minigames provide many benefits in game design. They offer a change of pace from the main game, reducing player fatigue. They are usually low stakes, reducing player stress. A well-placed minigame can improve the pacing of the main game significantly. Offering a break before a spike in the action will increase the apparent contrast in the intensity.
 
 {% slides %}
 {% include slides.yaml %}
 {% endslides %}
 
-Minigames don't have to carry the weight of a full game. They don't have advance the story or provide the amount of mechanics, levels, and content expected of full games. They are free to focus on a small set of ideas, deliver some fun gameplay, and move on.
+Minigames don't have the weight of a full game. They don't have advance a story or provide the amount of mechanics, levels, and content expected of full games. They are free to focus on a small set of ideas, deliver some fun gameplay, and move on.
 
 The [WarioWare](<https://en.wikipedia.org/wiki/Wario_(franchise)>) series, which debuted in 2003 on the Game Boy Advance, pushed the single-minded focus of minigames as far as possible. WarioWare presents the player with a rapid-fire sequence of microgames that demand only a single action from the player and take just seconds to play. As soon as the player completes one challenge, another begins.
 
@@ -118,11 +103,15 @@ Since p5.play builds on p5.js it should feel pretty familiar. One key difference
 
 ### p5.play Animation
 
-Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](https://opengameart.org/content/a-platformer-in-the-forest)
+This example shows the basics of p5.play: creating, animating, and drawing sprites.
 
 {% js-lab "sketches/sprites_start.js" %}
 
+Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](https://opengameart.org/content/a-platformer-in-the-forest)
+
 ### p5.play Interaction
+
+This example shows how to use the `.mouseIsOver` property of a sprite for user interaction.
 
 {% js-lab "sketches/interaction.js" %}
 
@@ -130,7 +119,7 @@ Character art by [Buch](https://opengameart.org/users/buch) @ [opengameart.org](
 
 ## Coding Challenges
 
-Explore p5.play by completing these challenges.
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the p5.play Animation Example
 

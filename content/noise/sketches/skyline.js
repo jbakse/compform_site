@@ -20,6 +20,8 @@ function draw() {
   let x = 0;
   for (x = 0; x < width; x += 20) {
     let buildingHeight = noise(x * frequency) * amplitude;
+    // Note: what happens if you change the noise call above to this:
+    // let buildingHeight = noise(x * frequency, frameCount * frequency) * amplitude;
 
     rect(x, height * 0.9 - buildingHeight, 20, buildingHeight);
   }
@@ -27,6 +29,3 @@ function draw() {
   fill(150);
   rect(0, height * 0.9, width, height * 0.5);
 }
-
-// Note: what happens if you change the noise call above to this:
-// let buildingHeight = noise(x * frequency, frameCount * frequency) * amplitude;

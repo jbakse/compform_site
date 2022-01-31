@@ -1,0 +1,32 @@
+.comp-form.resources {
+  .resource-list {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  h2,
+  p,
+  dl {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    border: 1px solid red;
+  }
+
+  h2 + p {
+    border: 1px solid blue;
+  }
+
+  dl {
+    border: 1px solid green;
+  }
+
+  .break {
+    flex-basis: 100%;
+    width: 0;
+  }
+}

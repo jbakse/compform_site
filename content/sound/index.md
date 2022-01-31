@@ -12,7 +12,7 @@ software: p5.js + p5.sound
 
 ### p5.js Sound Library
 
-<div class='sidebar link-box'>
+<div class="sidebar link-box">
 
 [**p5.sound** API Reference](https://p5js.org/reference/#/libraries/p5.sound)
 
@@ -109,7 +109,7 @@ p5.js makes it pretty easy to play sound assets, like this audio clip from [Hack
 
 <div class="callout warn">
 
-Chrome won't start playing sound on a page until the user performs a "gesture" on that page.
+Chrome won't start playing sound on a page until the user performs a "gesture" on that page, so starting a sound in `setup()` won't work consistently. These examples start audio on a button press.
 
 [Web Audio Autoplay Policy](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio)
 
@@ -123,6 +123,8 @@ The third parameter to `play()` controlls the rate of playback. If you play a so
 
 ### Looping
 
+This example loads an audio file twice and then plays two loops at once. The looping end time is slightly different so the playback falls out of sync.
+
 {% js-lab "sketches/two_loops.js" %}
 
 ### Drum Kit
@@ -133,7 +135,7 @@ This example uses `frameCount` to keep time and play a beat with drum samples. T
 
 ### Bounce
 
-This example doesn't have any sound in it... yet.
+This example doesn't have any sound in it. Add sound as part of the coding challenges below
 
 {% js-lab "sketches/bounce.js" %}
 
@@ -164,6 +166,8 @@ function record(length) {
 
 ## Coding Challenges
 
+Explore this chapter's example code by completing the following challenges.{intro}
+
 ### Modify the Drum Kit Example
 
 1. Switch around the samples used to play the beat. `•`
@@ -181,19 +185,25 @@ function record(length) {
 
 ### Cuepoints
 
+This example adds a single cuepoint to the sound at 1.7 seconds. When playback passes that specific time, `cueBig()` is called.
+
 {% js-lab "sketches/hello_cue.js" %}
 
 ### Volume
+
+This example uses `p5.Amplitude()` to track and visualize the volume/loudness of the entire sound.
 
 {% js-lab "sketches/volume.js" %}
 
 ### Wave
 
+This example uses `p5.FFT()` to track the and visualize the waveform of the sound.
+
 {% js-lab "sketches/wave.js" %}
 
 ### FFT
 
-The Fast Fourier Transform transforms a signal from the time domain to the frequency domain. For audio analysis that means the FFT can tell the strength of different frequencies in an audio buffer.
+The Fast Fourier Transform transforms a signal from the time domain to the frequency domain. For audio analysis that means the FFT can tell the strength of different frequencies—bass, mids, treble—in an audio buffer.
 
 For a visual exploration of FFT, see this excellent video by 3Blue1Brown [But what is the Fourier Transform? A visual introduction](https://www.youtube.com/watch?v=spUNpyF58BY).
 
@@ -207,7 +217,7 @@ Display a little melody.
 
 </div> -->
 
-### Making Sounds from Scratch
+## Making Sounds from Scratch
 
 You can create an empty soundFile object with `new p5.SoundFile()` and generate the sound data yourself with Javascript. To do so you will create and fill a [Float32Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array) and then attach it to the SoundFile object with `setBuffer()`.
 

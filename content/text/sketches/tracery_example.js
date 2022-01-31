@@ -11,7 +11,7 @@ const storyGrammar = {
   ],
   adverb: ["exceptionally", "somewhat"],
   adjective: ["proud", "small", "forgetful", "handsome", "comical", "wild"],
-  noun: ["cat", "dog", "frog", "duck"],
+  noun: ["bear", "cat", "dog", "frog", "goose", "lamb", "rabbit"],
   verb: ["becomes friends with", "finds", "chases", "plots with"],
 };
 

@@ -7,7 +7,7 @@ module.exports = function jsshowBuilder(src) {
   );
   content = util.trimLines(`
         <div class="js-show">
-        <iframe class="js-show" src="/components/js_lab/js_show.html?${url_directory}${src}">
+        <iframe class="js-show" src="/js_lab/js_show.html?${url_directory}${src}">
         </iframe>
         </div>
         `);

@@ -10,9 +10,9 @@ software: p5.js
 
 ## Animation
 
-At its heart, an animation is just a series of images. These images, called frames, are shown in quick succession—like a flipbook—to show motion. Convincing motion requires frames be shown very quickly; a few seconds of animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. At its heart, a procedurally-generated animation is just a series of procedurally-generated frames. Coding a procedurally-generated animation is similar to coding a procedurally-generated image, but with additional instructions to express how the image will change over time.
+Animation introduces intereresting creative potential because it includes the dimension of time. Because animations live in time, they excel at depicting actions, showing cause and effect, expressing narrative arcs, and telling stories.
 
-As a creative medium, animation differs from still images by introducing time. Because animations live in time, they excel at depicting actions, showing cause and effect, expressing narrative arcs, and telling stories.
+An animation is a series of still frames be shown in very quick succession; a few seconds of animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. At its heart, a procedurally-generated animation is just a series of procedurally-generated images. Creating an animation with code is similar to coding a still image, but with additional instructions to express how the image will change over time.
 
 {% slides %}
 {% include slides.yaml %}
@@ -283,27 +283,26 @@ In the example below, the black circle "bobs" up and down using `sin()`. Complet
 
 ### Fuzzy Ellipse
 
-In this sketch `fuzzy_ellipse(x,y,w,h,fuzz)` takes the same parameters as p5's `ellipse()` but instead of drawing one ellipse, it draws many in random positions near `x,y`. It can be used to create a textured ellipse with a fuzzy edge.
+In this sketch `fuzzy_ellipse(x,y,w,h,fuzz)` takes the same parameters as p5's `ellipse()` but instead of drawing one ellipse, it draws many ellipses in random positions near `x,y`. It creates a textured ellipse with a sort-of-fuzzy edge.
 
 Take some time to study `fuzzy_ellipse()` in detail. Try to build an understanding of every line.
 
-- How many parameters does it take? Are they all required?
-- What does `if (dist(0, 0, xx, yy) > fuzz) continue;` do?
-- What happens without this line?
-- How many ellipses are drawn on each call of fuzzy_ellipse?
-- Does it have a return value? Why or why not?
+1. How many parameters does it take? Are they all required?
+1. What does `if (dist(0, 0, xx, yy) > fuzz) continue;` do?
+1. What happens without this line?
+1. How many ellipses are drawn on each call of fuzzy_ellipse?
 
 {% js-lab "challenges/fuzzy_01.js" %}
 
-### Looking a little deeper.
+### Fuzzy Ellipse II
 
-The Fuzz Ellipse example also defines a function called `fuzzy_ellipse_2()`. It is a drop-in replacement for `fuzzy_ellipse()`. Change line 31 to call `fuzzy_ellipse_2()` to see it in action..
+This example has a function called `fuzzy_ellipse_2()`. It produces output very similar to `fuzzy_ellipse()` but uses a different method.
 
-1. Do the functions produce the same outcome?
-2. Do the functions produce the exact same outcome?
-3. Look at the frame_rate display. Is one more performant than then the other?
-4. How does `fuzzy_ellipse_2()` approach the problem differently?
-5. Which is better `fuzzy_ellipse` or `fuzzy_ellipse_2`?
+1. Do the functions produce the exact same outcome?
+1. How does `fuzzy_ellipse_2()` approach the problem differently?
+1. Which is better `fuzzy_ellipse` or `fuzzy_ellipse_2`?
+
+{% js-lab "challenges/fuzzy_02.js" %}
 
 For lots of discussion on these two approaches, and others, and their merits take a look at this [stackoverflow question](http://stackoverflow.com/questions/5837572/generate-a-random-point-within-a-circle-uniformly).
 
@@ -311,7 +310,7 @@ For lots of discussion on these two approaches, and others, and their merits tak
 
 ## Coding Challenges
 
-Complete the following challenges to deepen your understanding of the examples above.
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Bounce Example
 
@@ -327,7 +326,7 @@ Complete the following challenges to deepen your understanding of the examples a
 
 {% js-show "challenges/bounce_02.js" %}
 
-### Modify the Fuzz Example
+### Modify the Fuzzy Ellipse Example
 
 1. Drawing a lot of transparent ellipses can be processor intensive.\
    What framerate does the fuzz example run at on your computer? `•`
@@ -344,7 +343,7 @@ Complete the following challenges to deepen your understanding of the examples a
 1. Recreate the example below. `•••`
    {continue}
 
-   {% js-show "challenges/fuzzy_02.js" %}
+   {% js-show "challenges/fuzzy_challenge.js" %}
 
 </div>
 
@@ -378,7 +377,7 @@ Bumper Examples:
 
 ## Reference Links
 
-<div class='link-box'>
+<div class="link-box">
 
 [**Fast and Funky 1D Nonlinear Transformations** Game Developers Conference](https://www.youtube.com/watch?v=mr5xkf6zSzk)
 Great developer talk about creating interesting motion with nonlinear mapping.

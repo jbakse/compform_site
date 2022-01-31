@@ -8,23 +8,27 @@ description: Noise provides a flexible, powerful, and aesthetic source of variat
 software: p5.js
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/mess.js"></script>
+<script src="./noise_mess.js"></script>
 
-<script src="../mess/noise_mess_3.js"></script>
+## Noise Generation
 
-## Noise
+Random values are extremely common and important in procedural generation. Functions like `Math.random()` are the common go-to for choosing random values, but in many situations they are hard to work with. Psuedo-random number generators are designed to provide independent, unpredictable, and evenly-distributed values. If we want _related_ or _repeatable_ random values we have to do extra work. If we want random variation with specific aesthetic characteristics we also have to do extra work.
 
-Random values are extremely common and important in procedural generation, but in many situations they are hard to work with. Psuedo-random number generators are designed to provide independent, unpredictable, and evenly-distributed values. If we want _related_ or _repeatable_ random values we have to do extra work. If we want random variation that _looks good_ we also have to do extra work.
+<div class="activity">
 
-Before we continue, look at the code below. What if the `random()` function didn't exist? How could you modify this example to get the same effect using the provided `randomValues` array instead?
+## Random Array
 
-#### Random Array
+What if the `random()` function didn't exist? How could you modify this example to get the same effect using the provided `randomValues` array instead?
 
 {% js-lab "sketches/without_random.js" %}
 
-Noise functions are an alternative source of random values. Unlike the `random()` function however, noise functions provide related, repeatable, and good looking random variation.
+</div>
 
-There are several common noise functions, each with different characteristics. The most widely known noise function is probably [Perlin Noise](https://en.wikipedia.org/wiki/Perlin_noise), developed by Ken Perlin while working on visual effects for the amazing 1982 motion picture [_Tron_](http://www.imdb.com/title/tt0084827/). Ken later developed a similar and faster version called [simplex noise](https://en.wikipedia.org/wiki/Simplex_noise). Other noise functions include [Worley noise](https://en.wikipedia.org/wiki/Worley_noise), developed by Steven Worley, and the simpler [value noise](https://en.wikipedia.org/wiki/Value_noise).
+Noise functions are an alternative source of random values. Unlike the `random()` function however, noise functions provide related, repeatable, and "good looking" random variation.
+
+There are several common noise functions, each with different characteristics. The most widely known noise function is probably [Perlin Noise](https://en.wikipedia.org/wiki/Perlin_noise), developed by Ken Perlin while working on visual effects for the amazing 1982 motion picture [_Tron_](http://www.imdb.com/title/tt0084827/). Ken later developed a similar but faster version called [simplex noise](https://en.wikipedia.org/wiki/Simplex_noise). Other noise functions include [Worley noise](https://en.wikipedia.org/wiki/Worley_noise), developed by Steven Worley, and the simpler [value noise](https://en.wikipedia.org/wiki/Value_noise).
 
 <div class="three-up wide">
 
@@ -39,7 +43,7 @@ Value Noise{scale}
 
 </div>
 
-Noise functions provide a "cloud" of random values that can be used in a wide variety of ways. Noise functions are very frequently used in procedural texture generation and terrain generation, but their applications are not at all limited to those areas. Noise functions can be thought of as a lookup table of pre-generated random values that can be used in place of `random()` in many cases. Noise functions are particularly well suited to adding small variations to create more natural feeling output.
+Noise functions provide a "cloud" of random values that can be used in a wide variety of ways. Noise functions are frequently used in procedural texture generation and terrain generation, but their applications are not at all limited to those areas. Noise functions can be thought of as a lookup table of pre-generated random values that can be used in place of `random()` in many cases. Noise functions are particularly well suited to adding small variations to create more natural feeling output.
 
 {% slides %}
 {% include slides.yaml %}
@@ -47,7 +51,7 @@ Noise functions provide a "cloud" of random values that can be used in a wide va
 
 ## Noise vs. Random
 
-<div class='callout'>
+<div class="callout">
 
 ![blue square](figures/grid.svg){scale}
 
@@ -62,19 +66,23 @@ Where do those values come from? They could come from a few places.
 | Hard Coded | You always want the same, specific value.                       |
 | Parameters | You want to be able to control the value from a larger context. |
 | random()   | You want random variation.                                      |
-| noise(x)   | You want controlled variation.                                  |
+| noise(x)   | You want random—but controlled—variation.                       |
 
-Both `random()` and `noise()` provide a source of variation, but `noise()` provides much more control. With `random()` the sizes of the boxes won't be related at all. With `noise()` we can control how quickly the size changes horizontally, vertically, and over time. If we sample a small area of the noise function the variation will be subtle and gradual. If our samples are far apart the variation will be be drastic, unpredictable and look a lot like `random()`.
+Both `random()` and `noise()` provide a source of variation, but `noise()` provides much more control. The values from `random()` the sizes of the boxes won't be related at all. With `noise()` we can control how quickly the size changes horizontally, vertically, and over time. If we sample a small area of the noise function the variation will be subtle and gradual. If our samples are far apart the variation will be be drastic, unpredictable and look a lot like `random()`.
 
 #### Random()
+
+This example draws a big circle, and a line of smaller circles. Variation is crreated with the `random()` function, which allows control over the amount of variation, and global (and fragil) repeatability via the random seed.
 
 {% js-lab "sketches/sketch_random/sketch.js" %}
 
 #### Noise(x)
 
+This example uses the `noise()` function to create variation. It control over the amplitude, frequency, and character of the variation. It also provides independent (and robust) repeatability.
+
 {% js-lab "sketches/sketch_noise/sketch.js" %}
 
-Consider the two examples above. Both draw a circle that changes size over time and a line of smaller circles of varying size. One uses `random()` and one uses `noise()`.
+Compare the code and results of the two examples above.
 
 | random()                                                                                                                                                      | noise()                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -97,12 +105,12 @@ Noise functions take one or more coordinate arguments. These arguments specify a
 
 This makes getting repeated results easy: every time you call `noise(x)` with a particular argument, you get the same value back. This can be very useful. For example, in an animation you often need a value to stay the same from frame to frame.
 
-- `random()` _accepts_ no coordinate arguments and returns a different random value every time.
+- `random()` _does not accept_ coordinate arguments and returns a different random value every time.
 - `noise(x)` _requires_ an coordinate argument and returns the same random value every time it is called _with that argument_.
 
 <div class="callout">
 
-This difference is the core reason why `noise(x)` is so useful AND the core reason it can be confusing at first. Learning what arguments to pass to `noise()` takes some practice.
+This difference is the core reason why `noise(x)` is so useful AND the core reason it can be confusing at first. Learning what values to pass to `noise()` takes some practice.
 
 </div>
 
@@ -114,6 +122,19 @@ By controlling what you pass to `noise(x)`, you can control the frequency of cha
 
 {% js-lab "sketches/sketch_1D_noise/sketch.js" %}
 
+### 1D, 2D, + 3D Noise
+
+Many noise functions are multidimensional. The noise function in most programming libraries can take 1, 2, 3, or even more parameters. You can think of these parameters as specifying a multidimensional address in a "cloud" of values.
+
+`noise(x)`
+![noise_1d](figures/noise_1d.png)
+
+`noise(x, y)`
+![noise_2d](figures/noise_2d.png)
+
+`noise(x, y, z)`
+![noise_3d](figures/noise_3d.png)
+
 ## Building Noise Functions
 
 The `noise()` function models an infinite cloud of predetermined random values. When you call `noise(x)`, you are asking for the value in the cloud at the coordinate `x`. To create a noise function you need to build two things:
@@ -123,7 +144,7 @@ The `noise()` function models an infinite cloud of predetermined random values. 
 
 Different noise functions sove these problems in different ways.
 
-<div class='activity'>
+<div class="activity">
 
 ## Building 1D Noise
 
@@ -151,19 +172,6 @@ How does the `noise(x)` function work? Explore the underlying concepts by buildi
 
 </div>
 
-### 1D, 2D, + 3D Noise
-
-The _Building 1D Noise_ activity above shows how to build a simple 1-dimensional noise function that can provide smoothly varying values based on a single input parameter. You can think of the parameter as the address of the random value to return. The noise function in most programming libraries can take 2, 3, or even more parameters. You can think of these parameters as specifying a multidimensional address in a "cloud" of values.
-
-`noise(x)`
-![noise_1d](figures/noise_1d.png)
-
-`noise(x, y)`
-![noise_2d](figures/noise_2d.png)
-
-`noise(x, y, z)`
-![noise_3d](figures/noise_3d.png)
-
 ## Working with Noise
 
 ### Calling the Noise Function
@@ -180,18 +188,18 @@ You can control the frequency of returned values by scaling the values you pass 
 
 ```javascript
 // get a value that changes over time
-n = noise(frameCount);
+n = noise(seconds);
 
 // get a value that changes over time more slowly
-n = noise(frameCount * 0.1);
+n = noise(seconds * 0.1);
 
 // get a value that changes over time more quickly
-n = noise(frameCount * 10);
+n = noise(seconds * 10);
 ```
 
 ### Controlling the Amplitude and Range
 
-The `noise(x)` function returns values in the range of 0 to 1. Use multiplication and addition to shift values to the range you need. Be aware that while `random()` provides evenly-distributed values, `noise()` values are biased towards the middle.
+Noise functions typically return values in the range of 0 to 1. Use multiplication and addition to shift values to the range you need. Be aware that while `random()` provides evenly-distributed values, noise values are biased towards the middle. Also check the documenation for your noise function to understand the range it provides. In p5.js the range will differ depending on how you have configured it with `noiseDetail()`.
 
 ```javascript
 // scale values to sit between 10 and 20;
@@ -201,15 +209,13 @@ n = noise(frameCount) * 10 + 10;
 You could also use `map()`:
 
 ```javascript
-// get values from 0 to 1
-n = noise(frameCount);
-// map to 10 to 20
-n = map(n, 0, 1, 10, 20);
+// map noise(frameCount) fromt he range [0,1) to the range [10 to 20)
+n = map(noise(frameCount), 0, 1, 10, 20);
 ```
 
 ### Controlling the Detail
 
-The [noiseDetail()](https://p5js.org/reference/#/p5/noiseDetail) function allows you to control the "roughness" or "detail" of the noise returned. Detailed noise is achieved by adding layers of simle noise together.
+The [noiseDetail()](https://p5js.org/reference/#/p5/noiseDetail) function allows you to control the "roughness" or "detail" of the noise returned. Detailed noise is achieved by adding layers of noise together.
 
 ![noise detail](figures/noise_detail.jpg)
 
@@ -221,34 +227,33 @@ By default, every time you restart your sketch the noise cloud is regenerated wi
 
 ## Study Examples
 
-The following study examples demonstrate different methods of using noise to get varied looks and effects. Some of these examples are similar to the examples in the [Random Values](../random) chapter. Carefully study each example to understand how it works. Several of the examples offer multiple approaches which can be commented in and out to compare their results.
+The following study examples demonstrate using noise to introduce variation. Compare these examples to their counterparts in the [Random Values](../random) chapter.
 
-### Mapping Noise
+### Skyline
+
+Using noise to determine the height of the buildings creates a skyline with tall and short buildings clustering together.
+
+{% js-lab "sketches/skyline.js" %}
+
+### Circle Grid
+
+This example draws circles of varying sizes. Explore how passing different values to `noise()` impacts what is drawn.
 
 {% js-lab "sketches/study_2D.js" %}
 
 ### Grass
 
+Using noise to control the lean of each blade of grass leads to a nice, natural-looking wind effect.
+
 {% js-lab "sketches/grass.js" %}
 
-### Skyline
-
-{% js-lab "sketches/skyline.js" %}
-
-<div class='activity challenges'>
+<div class="activity challenges">
 
 ## Coding Challenges
 
-Explore using noise by completing the following challenges in order. <br/> Don't skip any.
+Explore the study examples above by completing the following challenges.{intro}
 
-<!--
-| Time                | Comment                                                                              |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| < 7 in 20 Minutes   | You need to put in some extra work to strengthen your understanding of these topics. |
-| 7 in 20 Minutes     | Good.                                                                                |
-| All 9 in 20 Minutes | Great.                                                                               | -->
-
-### Modify the Mapping Noise Example
+### Modify the Circle Grid Example
 
 1. This example shows several ways to map noise. Comment in and out each example, and compare the results. `•`
 
@@ -270,7 +275,7 @@ Explore using noise by completing the following challenges in order. <br/> Don't
 
 </div>
 
-<div class='assignment'>
+<div class="assignment">
 
 ## Keep Sketching!
 

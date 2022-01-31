@@ -46,13 +46,13 @@ html(lang="en")
 		script(src="/js/main.js")
 
 
-	body.comp-form.plain
+	body.comp-form.plain(class=body_class)
 		if !hide_logo
 			#logo
 				a(href="/")
 					include ./_logo.svg
 
-		#copy.container.comp-form-copy
+		.container.comp-form-copy
 			!=content
 
 		#scroll-out.container

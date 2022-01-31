@@ -113,7 +113,7 @@ lab.inject = function inject() {
   let f_visible = check_frame_visible();
   if (f_visible) {
     // console.log("inject");
-    frame.contentWindow.location.replace("/components/js_lab/js_lab_view.html");
+    frame.contentWindow.location.replace("/js_lab/js_lab_view.html");
   }
 };
 
@@ -275,7 +275,6 @@ function inIframe() {
 let show = {};
 
 show.main = function main() {
-  console.log("hello, world");
   let script_name = window.location.search.substr(1) || "example.js";
 
   let jqxhr = $.ajax({

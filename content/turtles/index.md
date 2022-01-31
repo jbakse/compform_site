@@ -30,7 +30,9 @@ One of the key ideas introduced in Logo was [turtle graphics](https://en.wikiped
 
 </div>
 
-Logo's use of turtles allows students to make a strong association between what happens in the program and how they move their own bodies in the real world. Papert called this _body-syntonic_ learning. Body-syntonic learning supports understanding of abstract ideas through sensory experience. Papert often discussed these ideas in writing and videos.
+Turtles make it possible to change how you think about drawing and give you a new set of tools for expressing an image in code. They don't change _what you can do_: the turtle class provided in this chapter uses the standard p5.js drawing API under the hood. Instead, using a turtle changes _how you do it_.
+
+Logo's use of turtles allows students to make a strong association between what happens in the program and how they move their own bodies in the real world. Papert called this _body-syntonic_ learning. Body-syntonic learning supports understanding of abstract ideas through sensory experience. Papert often discussed these ideas in his writing and videos.
 
 <div class="link-box">
 
@@ -41,7 +43,6 @@ See [here](https://www.youtube.com/watch?v=xMzojQFyMo0) for the longer cut of th
 
 [**Seymour Papert and Students (1972)** Video](https://www.youtube.com/watch?v=xMzojQFyMo0)
 An in-depth video where Papert discusses his work on computer-aided teaching for children.
-
 
 [**Seymour Papert on Logo (1986)** Video Series](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
 A two-part video series where Papert shares his thoughts on learning and evaluates the technical aspects of Logo.
@@ -168,7 +169,7 @@ for (side = 0; side < 5; side++) {
 
 </div>
 
-In the examples above, the Cartesian system works well for drawing a square, but the Cartesian code for the star is awkward and unclear. Changing the star's position or size would take a lot of work. Work should be done by computers, not programmers. With turtle graphics, the code that draws the star mirrors how we might describe the figure. It is a more natural expression of the idea and will be easier to modify to draw stars with different numbers of points.
+Drawing a square using rect and Cartesian coordinates works well. The turtle graphics version is longer and less clear. But for the star, the Cartesian code is very awkward and unclear. Changing the star's position or size would take a lot of work. Work should be done by computers, not programmers. The turtle code for drawing the star mirrors how we might describe the figure. It is a more natural expression of the idea, easier to understand, and easier to modify.
 
 <!-- <div class="s-lab">
 
@@ -181,7 +182,7 @@ Two of the forms that turtles tend to encourage are [spirograph](https://en.wiki
 
 ### Spirograph
 
-This example draws a 72 pointed star. This isn't really what a Spirograph draws, but shares some visual characteristics, like rotational symmetry.
+This example draws a 72 pointed star. Technically, this isn't really [what a Spirograph draws](https://en.wikipedia.org/wiki/Hypotrochoid), but shares some visual characteristics, like rotational symmetry.
 
 {% js-lab "sketches/turtle_spirograph.js" %}
 
@@ -190,6 +191,14 @@ This example draws a 72 pointed star. This isn't really what a Spirograph draws,
 Turtles are often paired with recursion to draw tree-like forms. Study this ,simpified example to see how, and see the _Recursive Tree II_ below for a little more detailed example.
 
 {% js-lab "sketches/turtle_tree.js" %}
+
+<div class="callout">
+
+### Make your own Drawing Machines
+
+Changing your approach and mental model has a significant effect on the solutions you create. Turtles are just one example of a "drawing machine" that provides a new way of thinking about drawing. Inventing your own drawing machine is a rewarding exercise that can lead to new ways of approaching problems, a deeper understanding of programming, and new aesthetics to explore.
+
+</div>
 
 ## A Simple Turtle in p5.js
 
@@ -259,18 +268,29 @@ This example moves the main drawing code into the `drawTriangle()` function whic
 
 {% js-lab "sketches/turtle_triangles.js" %}
 
+### Images
+
+The turtle class can also draw images aligned with the current position of the turtle.
+
+{% js-lab "sketches/turtle_image.js" %}
+
+### Push + Pop
+
+You can use `push()` and `pop()` together to take a break from drawing one shape, draw something else, and then return to original shape.
+
+{% js-lab "sketches/turtle_push.js" %}
+
+### Recursive Tree II
+
+A common application of turtle graphics is drawing organic branching shapes, like trees.
+
+{% js-lab "sketches/turtle_tree_2.js" %}
+
 <div class="activity challenges">
 
 ## Coding Challenges
 
-Explore this chapter's example code by completing the following challenges.
-
-<!-- Don't skip any. -->
-<!-- | Time                 | Comment                                                      |
-| -------------------- | ------------------------------------------------------------ |
-| < 11 in 20 Minutes   | Keep studying to improve your understanding of these topics. |
-| 11 in 20 Minutes     | Good.                                                        |
-| All 15 in 20 Minutes | Great.                                                       | -->
+Explore this chapter's example code by completing the following challenges.{intro}
 
 ### Modify the Triangle Example
 
@@ -304,30 +324,6 @@ Style Tip: If you change what a function does, you should change its name as wel
 
 </div>
 
-### Turtle + Images
-
-The turtle class can also draw images aligned with the current position of the turtle.
-
-{% js-lab "sketches/turtle_image.js" %}
-
-### Turtle Push + Pop
-
-You can use `push()` and `pop()` together to take a break from drawing one shape, draw something else, and then return to original shape.
-
-{% js-lab "sketches/turtle_push.js" %}
-
-### Recursive Tree II
-
-A common application of turtle graphics is drawing organic branching shapes, like trees.
-
-{% js-lab "sketches/turtle_tree_2.js" %}
-
-## Drawing Machines in Code
-
-Turtles make it possible to change how you think about drawing and give you a new set of tools for expressing an image in code. They don't change _what you can do_: [under the hood](turtle/turtle.html) the turtle class uses the standard p5.js drawing API and a little trigonometry. Instead, using a turtle changes _how you do it_. Changing your approach and mental model has a significant effect on the solutions you create. You could make the same exact drawings with or without turtles, but in practice using turtles tends to lead to certain motifs and styles.
-
-Turtles are just one example of a drawing machine. Inventing your own drawing machine is a rewarding exercise. It leads to new ways of approaching problems, a deeper understanding of programming, and new aesthetics to explore.
-
 <div class="assignment">
 
 ## Keep Sketching!
@@ -346,7 +342,7 @@ Work with a partner. Draw a garden.
 
 </div>
 
-## Goals
+## Explore
 
 <div class="link-box">
 
