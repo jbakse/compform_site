@@ -27,7 +27,7 @@ function draw() {
 
   text("Click to Generate Number", 10, 20);
 
-  if (recentValue !== null) {
+  if (recentValue !== null && recentValue !== undefined) {
     text(recentValue, 10, 40);
   }
 
