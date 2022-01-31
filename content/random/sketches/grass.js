@@ -30,17 +30,16 @@ function drawGrass(left, top, width, height) {
   // loop from the left to the right, one pixel per step
   for (let x = left; x < left + width; x++) {
     // x and y are the base of the blade of grass
-    let y = top + height;
+    const y = top + height;
 
     // height of the grass
     // pick lowest of three "rolls" to bias strongly towards short blades
     // with occasional long ones
-    let bladeHeight = min(
+    const bladeHeight = min(
       random(0, height),
       random(0, height),
       random(0, height)
     );
-    bladeHeight = random(0, height);
 
     // horizontal offset of top of blade relative to base
     // average two "rolls" to bias towards middle
