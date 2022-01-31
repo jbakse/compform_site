@@ -11,7 +11,8 @@ function valueFromDeck() {
   position++;
   if (position > deck.length) {
     deck = shuffle(deck);
-    position = 0;
+    v = deck[0];
+    position = 1;
   }
   return v;
 }
@@ -27,7 +28,7 @@ function draw() {
 
   text("Click to Generate Number", 10, 20);
 
-  if (recentValue !== null && recentValue !== undefined) {
+  if (recentValue !== null) {
     text(recentValue, 10, 40);
   }
 
