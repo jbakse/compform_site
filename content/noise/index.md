@@ -347,4 +347,10 @@ Ken Perlin details an improved implementation of Perlin Noise for [GPU Gems](htt
 [**Juicing your Cameras With Math** GDC Tech Talk](https://www.youtube.com/watch?v=tu-Qe66AvtY)
 GDC talk on making cameras cooler. At 11:40 he discusses the benefits of using Perlin Noise instead of RNG for camera shake.
 
+[**Noise in Creative Coding** Vuran Vachhar](https://varun.ca/noise/)
+A full discussion of noise with interactive demos.
+
+[**The Renderig of INSIDE** Playdead Devs](https://www.youtube.com/watch?v=RdN06E6Xn9E)
+A great developer talk covering the graphics techniques in INSIDE.
+
 </div>
