@@ -1,33 +1,32 @@
-// require https://cdn.jsdelivr.net/npm/tweakpane@1.5.8/dist/tweakpane.min.js
+// require https://cdn.jsdelivr.net/npm/tweakpane@3.0.7/dist/tweakpane.min.js
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js
+/* globals Tweakpane */
+/* exported setup draw */
 
 const params = {
   pos_x: 0,
   pos_y: 0,
-  size: 0,
+  size: 100,
   color: "blue",
 };
 
-const pane = new Tweakpane();
+const pane = new Tweakpane.Pane();
+
+pane.addInput(params, "pos_x", { min: 0, max: 512 });
+pane.addInput(params, "pos_y", { min: 0, max: 512 });
+pane.addInput(params, "size", { min: 10, max: 200 });
+pane.addInput(params, "color", { input: "color" });
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight * 0.5);
+  createCanvas(512, 512);
 
   fill(100);
   noStroke();
   rectMode(CENTER);
 
+  // if you change a params property tweakpane will reflect it
   params.pos_x = width * 0.5;
-  pane.addInput(params, "pos_x", { min: 0, max: width });
-
   params.pos_y = height * 0.5;
-  pane.addInput(params, "pos_y", { min: 0, max: height });
-
-  params.size = 100;
-  pane.addInput(params, "size", { min: 10, max: 200 });
-
-  params.color = "#0000FF";
-  pane.addInput(params, "color", { min: 0, max: width, input: "color" });
 }
 
 function draw() {
