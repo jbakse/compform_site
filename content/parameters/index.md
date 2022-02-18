@@ -280,9 +280,8 @@ Explore the study examples above by completing the following challenges.{intro}
 
 ### Modify the Tweakpane Example
 
-1. Add a slider to control the vertical position of the square. `•`
 1. Add a color picker to control the background color of the sketch. `••`
-1. Instead of drawing the square, draw a "target" of concentric white and red rings. Draw more rings to make a bigger target. `•••`
+1. Instead of drawing the square, draw a "target" of concentric rings that alternate between white and the chosen color. Draw more rings to make a bigger target. `•••`
    {continue}
 
 </div>

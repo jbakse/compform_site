@@ -7,7 +7,7 @@ const params = {
   pos_x: 0,
   pos_y: 0,
   size: 100,
-  color: "blue",
+  color: "#f00",
 };
 
 const pane = new Tweakpane.Pane();
@@ -15,7 +15,7 @@ const pane = new Tweakpane.Pane();
 pane.addInput(params, "pos_x", { min: 0, max: 512 });
 pane.addInput(params, "pos_y", { min: 0, max: 512 });
 pane.addInput(params, "size", { min: 10, max: 200 });
-pane.addInput(params, "color", { input: "color" });
+pane.addInput(params, "color");
 
 function setup() {
   createCanvas(512, 512);
