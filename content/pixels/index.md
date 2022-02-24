@@ -161,7 +161,7 @@ Explore this chapter's example code by completing the following challenges.{intr
 ### Start from Scratch
 
 1. Use `sin()` to create a repeating black-to-red-to-black color wave. `•••`
-1. Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`. `•••`
+1. Create a `512x512` image and set the blue value of each pixel to `(y&x) * 16`. `•••`
    {continue}
 
 </div>
