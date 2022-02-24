@@ -131,7 +131,7 @@ The first two examples use a nested loop to set a value for every pixel in the i
 
 Explore this chapter's example code by completing the following challenges.{intro}
 
-### Modify the Basic Example
+### Modify the Random Pixels Example
 
 1. Change the image resolution to `20x20`. `•`
 1. Change the image resolution to `500x500`. `•`
