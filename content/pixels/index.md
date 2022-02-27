@@ -16,8 +16,7 @@ software: p5.js
 
 ## Pixels
 
-Today, most computers use color displays that produce images using a grid of pixels. Conceptually, each color pixel is made up of three sub-pixels—red, green, and blue—though the actual hardware may use a different pattern. Because these pixels are small and close together, the image appears continuous. Because our eyes can only directly distinguish red, green, and blue light, the screen can reproduce most of the colors we are capable of seeing.
-Today, most computers use color displays that produce images using a grid of pixels. Conceptually, each color pixel is made up of three sub-pixels—red, green, and blue—though the actual hardware may use a different pattern. Because these pixels are small and close together, the image appears continuous. Because our eyes can only directly distinguish red, green, and blue light, the screen can reproduce most of the colors we are capable of seeing.
+Today, most computers use color displays that produce images using a grid of pixels. Often each color pixel is made up of three sub-pixels—red, green, and blue—though the actual hardware may use a different pattern. Because these pixels are small and close together, the image appears continuous. Because our eyes can only directly distinguish red, green, and blue light, the screen can reproduce most of the colors we are capable of seeing.
 
 <div class="one-up">
 
@@ -47,7 +46,7 @@ Computer displays don't have to use pixels at all. One of the earliest video gam
 
 <!-- ## Gallery -->
 
-This high/low level tradeoff has some important implications for the creative coder. When you work at a high level you are not responsible for the details. Because you are not responsible for the details you tend to think about them less. Working directly with the pixels leads to thinking about drawing with code differently.
+This [high/low level](https://en.wikipedia.org/wiki/High-_and_low-level) tradeoff has some important implications for the creative coder. When you work at a high level you are not responsible for the details. Because you are not responsible for the details you tend to think about them less. Working directly with the pixels leads to thinking about drawing with code differently.
 
 {% slides %}
 {% include slides.yaml %}
