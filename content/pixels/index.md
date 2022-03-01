@@ -16,8 +16,7 @@ software: p5.js
 
 ## Pixels
 
-Today, most computers use color displays that produce images using a grid of pixels. Conceptually, each color pixel is made up of three sub-pixels—red, green, and blue—though the actual hardware may use a different pattern. Because these pixels are small and close together, the image appears continuous. Because our eyes can only directly distinguish red, green, and blue light, the screen can reproduce most of the colors we are capable of seeing.
-Today, most computers use color displays that produce images using a grid of pixels. Conceptually, each color pixel is made up of three sub-pixels—red, green, and blue—though the actual hardware may use a different pattern. Because these pixels are small and close together, the image appears continuous. Because our eyes can only directly distinguish red, green, and blue light, the screen can reproduce most of the colors we are capable of seeing.
+Today, most computers use color displays that produce images using a grid of pixels. Often each color pixel is made up of three sub-pixels—red, green, and blue—though the actual hardware may use a different pattern. Because these pixels are small and close together, the image appears continuous. Because our eyes can only directly distinguish red, green, and blue light, the screen can reproduce most of the colors we are capable of seeing.
 
 <div class="one-up">
 
@@ -47,7 +46,7 @@ Computer displays don't have to use pixels at all. One of the earliest video gam
 
 <!-- ## Gallery -->
 
-This high/low level tradeoff has some important implications for the creative coder. When you work at a high level you are not responsible for the details. Because you are not responsible for the details you tend to think about them less. Working directly with the pixels leads to thinking about drawing with code differently.
+This [high/low level](https://en.wikipedia.org/wiki/High-_and_low-level) tradeoff has some important implications for the creative coder. When you work at a high level you are not responsible for the details. Because you are not responsible for the details you tend to think about them less. Working directly with the pixels leads to thinking about drawing with code differently.
 
 {% slides %}
 {% include slides.yaml %}
@@ -131,7 +130,7 @@ The first two examples use a nested loop to set a value for every pixel in the i
 
 Explore this chapter's example code by completing the following challenges.{intro}
 
-### Modify the Basic Example
+### Modify the Random Pixels Example
 
 1. Change the image resolution to `20x20`. `•`
 1. Change the image resolution to `500x500`. `•`
@@ -161,7 +160,7 @@ Explore this chapter's example code by completing the following challenges.{intr
 ### Start from Scratch
 
 1. Use `sin()` to create a repeating black-to-red-to-black color wave. `•••`
-1. Create a `128x128` image and set the blue value of each pixel to `(y&x) * 16`. `•••`
+1. Create a `512x512` image and set the blue value of each pixel to `(y&x) * 16`. `•••`
    {continue}
 
 </div>
