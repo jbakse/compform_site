@@ -188,19 +188,19 @@ This example loads the image of Earth, loops over its pixels, and white pixels t
 
 #### With our image loaded we can process the pixels.
 
-**Line 18:** Set up a nested loop to cover every pixel.
+**Line 16:** Set up a nested loop to cover every pixel.
 
-**Line 20:** Use `get()` to load the color data of the current pixel. `get()` returns an array like `[255, 0, 0, 255]` with components for red, green, blue, and alpha.
+**Line 18:** Use `get()` to load the color data of the current pixel. `get()` returns an array like `[255, 0, 0, 255]` with components for red, green, blue, and alpha.
 
-**Lines 22, 23, 24:** Read the red, blue, and green parts of the color.
+**Lines 20, 22, 23:** Read the red, blue, and green parts of the color.
 
-**Line 27:** Check if the red value is 255 to see if it is black or white. Since we know the image is only black and white this is enough to check.
+**Line 25:** Check if the red value is 255 to see if it is black or white. Since we know the image is only black and white this is enough to check.
 
-**Line 28 and Line 30:** Set `out_color` to red or blue.
+**Line 26 and Line 28:** Set `out_color` to red or blue.
 
-**Line 33:** Set the pixel's color to `out_color`.
+**Line 31:** Set the pixel's color to `out_color`.
 
-**Line 34:** Use `updatePixels()` to tell the image there has been an update. We didn't need to do this in the loop when we were just setting pixels, but here we mix `set()` and `get()`. p5.js requires calling `updatePixels()` anytime we switch from setting to getting or drawing.
+**Line 32:** Use `updatePixels()` to tell the image there has been an update. We didn't need to do this in the loop when we were just setting pixels, but here we mix `set()` and `get()`. p5.js requires calling `updatePixels()` anytime we switch from setting to getting or drawing.
 
 <div class="callout">
 
