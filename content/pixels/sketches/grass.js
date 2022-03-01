@@ -1,4 +1,5 @@
 // require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
+/* exported preload setup draw */
 
 // draws some grass with density driven by a luminance map image
 
@@ -26,17 +27,14 @@ function draw() {
   fill(255, 255, 255);
   stroke(0, 200, 100, 80);
 
-  let start = millis();
+  testImage.loadPixels();
+
+  const start = performance.now();
 
   // loop over every x,y pixel coordinate in the image
-  for (x = 0; x < 640; x++) {
-    for (y = 0; y < 320; y++) {
-      // slow
-      // this is _really_ slow, it might crash your browser
-      // let pixelRed = red(testImage.get(x, y));
-
-      // quick
-      let pixelRed = getQuick(testImage, x, y)[0];
+  for (let x = 0; x < 640; x++) {
+    for (let y = 0; y < 320; y++) {
+      const pixelRed = getQuick(testImage, x, y)[0];
 
       // pick a random value and compare it pixelRed
       // for example:
@@ -49,7 +47,7 @@ function draw() {
     }
   }
 
-  let end = millis();
+  const end = performance.now();
 
   console.log(`took ${floor(end - start)} ms`);
 
@@ -57,7 +55,7 @@ function draw() {
 }
 
 function drawGrassBlade(x, y) {
-  let bladeHeight = min(
+  const bladeHeight = min(
     random(1, 60),
     random(1, 60),
     random(1, 60),
@@ -73,15 +71,12 @@ function drawGrassBlade(x, y) {
 }
 
 // find the RGBA values of the pixel at x, y in the img.pixels array
-// see: http://p5js.org/reference/#/p5/pixels[]
-// we don't need to worry about screen pixel density here, because we are not reading from the screen
-
 function getQuick(img, x, y) {
-  let i = (y * img.width + x) * 4;
+  const i = (y * img.width + x) * 4;
   return [
-    testImage.pixels[i],
-    testImage.pixels[i + 1],
-    testImage.pixels[i + 2],
-    testImage.pixels[i + 3],
+    img.pixels[i],
+    img.pixels[i + 1],
+    img.pixels[i + 2],
+    img.pixels[i + 3],
   ];
 }

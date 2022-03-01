@@ -1,84 +1,139 @@
-// require https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js
+// require https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.js
+
+/* exported preload setup draw*/
+
+// height and width of the image to test
+// be careful turning this up, the slow case can be very slow
+// with big images
+const TEST_SIZE = 200;
 
 let testImage;
 
 function preload() {
-  testImage = loadImage("/pixels/sketches/world_100.png");
-  noLoop();
+  testImage = loadImage(`https://placekitten.com/g/${TEST_SIZE}/${TEST_SIZE}`);
 }
 
 function setup() {
-  // create a place to draw
-  createCanvas(500, 500);
+  createCanvas(TEST_SIZE * 3, TEST_SIZE);
+  noSmooth();
+  noLoop();
 }
 
 function draw() {
-  // clear the background
-  background(255);
-  let start, end;
-  let testImageCopy = createImage(100, 100);
+  let startTime;
+  let endTime;
 
-  noSmooth();
+  background(255);
 
   // draw original image
   image(testImage, 0, 0);
 
-  // invert and draw
-  testImageCopy.copy(testImage, 0, 0, 100, 100, 0, 0, 100, 100);
-  start = millis();
-  invertStandard(testImageCopy);
-  end = millis();
-  console.log("invertStandard: ", end - start);
-  image(testImageCopy, 100, 0);
+  // invert with built in get() + set()
+  const testImageCopy = createImage(TEST_SIZE, TEST_SIZE);
+  testImageCopy.copy(
+    testImage,
+    0,
+    0,
+    TEST_SIZE,
+    TEST_SIZE,
+    0,
+    0,
+    TEST_SIZE,
+    TEST_SIZE
+  );
 
-  // invert and draw
-  testImageCopy.copy(testImage, 0, 0, 100, 100, 0, 0, 100, 100);
-  start = millis();
+  startTime = performance.now();
+  invertStandard(testImageCopy);
+  endTime = performance.now();
+
+  console.log("invertStandard: ", endTime - startTime);
+
+  image(testImageCopy, TEST_SIZE, 0);
+
+  // invert with direct pixel array access
+  testImageCopy.copy(
+    testImage,
+    0,
+    0,
+    TEST_SIZE,
+    TEST_SIZE,
+    0,
+    0,
+    TEST_SIZE,
+    TEST_SIZE
+  );
+
+  startTime = performance.now();
   invertQuick(testImageCopy);
-  end = millis();
-  console.log("invertQuick: ", end - start);
-  image(testImageCopy, 200, 0);
+  endTime = performance.now();
+
+  console.log("invertQuick: ", endTime - startTime);
+
+  image(testImageCopy, TEST_SIZE * 2, 0);
 
   noLoop();
 }
 
-//let pixelRed = img.pixels[(y * 640 + x) * 4];
 function invertStandard(img) {
-  for (y = 0; y < img.height; y++) {
-    for (x = 0; x < img.width; x++) {
-      let c = img.get(x, y);
-      c = [255 - c[0], 255 - c[1], 255 - c[2], c[3]];
+  for (let y = 0; y < img.height; y++) {
+    for (let x = 0; x < img.width; x++) {
+      const c = img.get(x, y);
+      c[0] = 255 - c[0]; // invert red
+      c[1] = 255 - c[1]; // invert green
+      c[2] = 255 - c[2]; // invert blue
+      // don't touch alpha
       img.set(x, y, c);
-      img.updatePixels();
     }
   }
+  img.updatePixels();
 }
 
 function invertQuick(img) {
   // load up the pixel[] array so we can read colors out of it
   img.loadPixels();
 
-  for (y = 0; y < img.height; y++) {
-    for (x = 0; x < img.width; x++) {
-      let c = getQuick(img, x, y);
-      c = [255 - c[0], 255 - c[1], 255 - c[2], c[3]];
-      img.set(x, y, c);
+  for (let y = 0; y < img.height; y++) {
+    for (let x = 0; x < img.width; x++) {
+      const c = getQuick(img, x, y);
+      c[0] = 255 - c[0]; // invert red
+      c[1] = 255 - c[1]; // invert green
+      c[2] = 255 - c[2]; // invert blue
+      // don't touch alpha
+      setQuick(img, x, y, c);
     }
   }
 
   img.updatePixels();
 }
 
-// find the RGBA values of the pixel at x, y in the img.pixels array
-// see: http://p5js.org/reference/#/p5/pixels[]
-// we don't need to worry about screen pixel density here, because we are not reading from the screen
+// getQuick()
+// find the RGBA values of the pixel at `x`, `y` in the pixel array of `img`
+// unlike get() this functions only supports getting a single pixel
+// it also doesn't do any bounds checking or other checks
+//
+// we don't need to worry about screen pixel density here, because we are
+// not reading from the screen, just an image
 
 function getQuick(img, x, y) {
-  let i = (y * img.width + x) * 4;
+  const i = (y * img.width + x) * 4;
   return [
-    testImage.pixels[i],
-    testImage.pixels[i + 1],
-    testImage.pixels[i + 2],
-    testImage.pixels[i + 3],
+    img.pixels[i],
+    img.pixels[i + 1],
+    img.pixels[i + 2],
+    img.pixels[i + 3],
   ];
+}
+
+// setQuick()
+// set the RGBA values of the pixel at `x`, `y` in the pixel array of `img`
+// unlike set() this functions only supports setting a single pixel
+// it doesn't work with a p5 color object
+// it also doesn't do any bounds checking or other checks
+function setQuick(img, x, y, c) {
+  const i = (y * img.width + x) * 4;
+
+  img.pixels[i + 0] = c[0];
+  img.pixels[i + 1] = c[1];
+  img.pixels[i + 2] = c[2];
+  img.pixels[i + 3] = c[3];
 }
