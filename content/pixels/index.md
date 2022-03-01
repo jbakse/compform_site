@@ -187,9 +187,9 @@ This example loads the image of Earth, loops over its pixels, and white pixels t
 
 #### With our image loaded we can process the pixels.
 
-**Line 18:** Set up a nested loop to cover every pixel.
+**Line 16:** Set up a nested loop to cover every pixel.
 
-**Line 20:** Use `get()` to load the color data of the current pixel. `get()` returns an array like `[255, 0, 0, 255]` with components for red, green, blue, and alpha.
+**Line 18:** Use `get()` to load the color data of the current pixel. `get()` returns an array like `[255, 0, 0, 255]` with components for red, green, blue, and alpha.
 
 **Lines 22:** Read the red component of the color. We could also access directly like this: `in_color[0]`
 
