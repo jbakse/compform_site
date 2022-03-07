@@ -145,7 +145,7 @@ Building a workflow like this, that combines custom coding with manual manipulat
 
 ## Paper.js
 
-This section introduces [Paper.js](http://paperjs.org/), a Javascript vecotr library developed by [Jürg Lehni](http://lehni.org) and [Jonathan Puckey](http://jonathanpuckey.com).
+This section introduces [Paper.js](http://paperjs.org/), a Javascript vector library developed by [Jürg Lehni](http://lehni.org) and [Jonathan Puckey](http://jonathanpuckey.com).
 
 > Paper.js is an open source vector graphics scripting framework that runs on top of the HTML5 Canvas. It offers a clean Scene Graph / Document Object Model and a lot of powerful functionality to create and work with vector graphics and bezier curves, all neatly wrapped up in a well designed, consistent and clean programming interface.
 >
