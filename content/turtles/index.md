@@ -161,7 +161,7 @@ t.moveTo(100, 100);
 t.penDown();
 for (side = 0; side < 5; side++) {
   t.forward(100);
-  t.turnRight(135);
+  t.turnRight(144);
 }
 ```
 

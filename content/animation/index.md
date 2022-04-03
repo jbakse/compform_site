@@ -214,7 +214,8 @@ Some environments support exporting frames as video, but neither JavaScript nor 
 // saveFrame - a utility function to save the current frame out with a nicely formatted name
 // format: name_####.extension
 // name: prefix for file name
-// frameNumber: number for the frame, will be zero padded
+// frameNumber: number of the frame to be exported
+// (1, 2, 3, ...), will be zero padded for you
 // extension: jpg or png, controls file name and image format
 // maxFrame: checked against frameNumber, frames beyond maxFrame are not saved
 function saveFrame(name, frameNumber, extension, maxFrame) {
