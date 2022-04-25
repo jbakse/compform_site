@@ -117,7 +117,7 @@ Chrome won't start playing sound on a page until the user performs a "gesture" o
 
 ### Changing Rate + Pitch
 
-The third parameter to `play()` controlls the rate of playback. If you play a sound faster the pitch will go up; play it slower and the pitch will go down. p5 cannot change the pitch of a sound without changing its length.
+The second parameter to `play()` controlls the rate of playback. If you play a sound faster the pitch will go up; play it slower and the pitch will go down. p5 cannot change the pitch of a sound without changing its length.
 
 {% js-lab "sketches/hello_pitch.js" %}
 
@@ -151,8 +151,8 @@ If you can't get good quality audio capture from p5.SoundRecorder, you might get
 // uses the p5 SoundRecorder and SoundFile classes to record the audio output.
 // begins recording when called. records for _length_ time in milliseconds.
 function record(length) {
-  var soundRecorder = new p5.SoundRecorder();
-  var soundFile = new p5.SoundFile();
+  const soundRecorder = new p5.SoundRecorder();
+  const soundFile = new p5.SoundFile();
   soundRecorder.record(soundFile);
   setTimeout(function () {
     console.log("Recording Complete");

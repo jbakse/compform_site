@@ -188,7 +188,7 @@ Manual for OpenJSCAD syntax and library.
 
 ## Study Examples
 
-These examples will build up to a simplified parametric Lego brick, introducing many features of OpenSCAD along the way. To get started we'll need the [dimensions of a Lego brick](https://www.cailliau.org/Lego/Dimensions/zMeasurements-en.xhtml).
+These examples will build up to a simplified parametric Lego brick, introducing many features of OpenSCAD along the way. To get started we'll need the [dimensions of a Lego brick](https://www.cailliau.org/en/Alphabetical/L/Lego/Dimensions/General%20Considerations/).
 
 ### Generating Primitives
 
