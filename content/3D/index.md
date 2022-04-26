@@ -166,7 +166,13 @@ cylinder(4, 1, 1, true);
 Javascript emulating named params with an object literal
 
 ```javascript
-cylinder ({h=4, r=1, center=true});
+cylinder({ h: 4, r: 1, center: true });
+
+function cylinder(options) {
+  let h = options.h;
+  let r = options.r;
+  let center = options.center;
+}
 ```
 
 ## OpenJSCAD
