@@ -564,6 +564,18 @@ Explore the study examples above by completing the following challenges.{intro}
 
 </div>
 
+## Project Case Study: Conspiracy Board
+
+![conspiracy board](conspiracy_board/seed_1098_HD.png)
+
+Conspiracy Board is a program that generates pixel-art style collage of documments, portraits, and strings. It is written in Javascript using the p5.js library. Visit the case study to learn how it works.
+
+<div class="link-box">
+
+[**Conspiracy Board** Case Study](./conspiracy_board/index.html)
+
+</div>
+
 <div class="assignment">
 
 ## Keep Sketching!

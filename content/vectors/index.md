@@ -283,7 +283,7 @@ Explore this chapter's example code by completing the following challenges.{intr
 
 </div>
 
-## Project Case Study
+## Project Case Study: Paper Garden
 
 ![paper_garden](./paper_garden/images/1500.png)
 
