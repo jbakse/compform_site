@@ -32,9 +32,11 @@ Before you dive into reading the code, you can watch this video that walks you t
 
 ## Pixelated p5.js
 
-The p5.js [noSmooth()](https://p5js.org/reference/#/p5/noSmooth) function doesn't actually work as documented. It does disable smoothing of images, but shapes and lines are still drawn with anti-aliasing. You can even see this in the example on the documentation page!
+Working on this, I ran into a pretty big hitch: the p5.js [noSmooth()](https://p5js.org/reference/#/p5/noSmooth) function doesn't actually work as documented! It does disable smoothing of images, but shapes and lines are still drawn with anti-aliasing. You can even see this in the example on the documentation page.
 
-I don't think its possible to get non-anti-aliased shapes and lines in p5.js using the P2D render, because the underlying canvas API doesn't support it. You _can_ get non-anti-aliased shapes and lines in p5.js using the WEBGL renderer though. Set it up like this:
+After a [little](https://stackoverflow.com/questions/195262/can-i-turn-off-antialiasing-on-an-html-canvas-element) [digging](https://github.com/processing/p5.js/issues/5472), I don't think its possible to get non-anti-aliased shapes and lines in p5.js using the P2D render, because the underlying canvas API doesn't support it.
+
+You _can_ get non-anti-aliased shapes and lines in p5.js using the WEBGL renderer though. Set it up like this:
 
 ```javascript
 function setup() {
