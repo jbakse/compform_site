@@ -1,18 +1,17 @@
 // require https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js
 /* exported setup draw keyPressed*/
 
+/* globals p5 */
 /**
  * draws a "consipiracy board"
  * a pin board with numerous documents, photos, Post-Its, and strings
  */
 
-// a small p5.Graphics for drawing the faces into
-
-const RESOLUTION = 1;
 const PIXELY_SHAPES = true;
 const PIXELY_FACES = true;
 const MESSY = 10;
 
+// a small p5.Graphics for drawing the faces into
 let face;
 
 function setup() {
@@ -22,7 +21,7 @@ function setup() {
   // use WEBGL + noSmooth() to get non antialiased shapes and lines
   pixelDensity(1);
   if (PIXELY_SHAPES) noSmooth();
-  const mainCanvas = createCanvas(192 * RESOLUTION, 108 * RESOLUTION, WEBGL);
+  const mainCanvas = createCanvas(192, 108, WEBGL);
 
   // scale the canvas up, without antialiasing
   mainCanvas.elt.style =
