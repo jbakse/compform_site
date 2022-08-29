@@ -192,7 +192,7 @@ Bottom line, how much time do I have to spend on these sketches? {q}
 
 Four sketches per week. 90 minutes per sketch.
 
-Don't put more than 2 hours in on a sketch. If your sketch takes that long it is too complex or too difficult for your current skill level. It is okay to stop at 2 hours even if your sketch is incomplete or broken. Post whatever you have. If you put in the thime, you'll get full marks for the sketch.
+Don't put more than 2 hours in on a sketch. If your sketch takes that long it is too complex or too difficult for your current skill level. It is okay to stop at 2 hours even if your sketch is incomplete or broken. Post whatever you have. If you put in the time, you'll get full marks for the sketch.
 
 Don't put in less than an hour. Sometimes, you'll make a really nice sketch pretty quickly. If that happens, post it! But keep exploring variations on your idea. If you often get done very quickly, you probably need to work on more challenging sketches.
 
