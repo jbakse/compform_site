@@ -139,13 +139,15 @@ Exposing parameters allows artists and designers to create systems that can be c
 - Which parameters are required, and which are optional?
 - Which values should be accepted for each parameter?
 
-<div class="sidebar link-box">
+<!-- <div class="sidebar link-box">
 
 [**Constraint Solver** Matt Keeter](https://www.mattkeeter.com/projects/constraints/)
 
-</div>
+</div> -->
 
-I sometimes find it helpful to consider wether my parameters should be method-oriented or goal-oriented. By method-oriented, I mean parameters that control what the procedure does. By goal-oriented, I mean parameters what control what the procedure achieves. This isn't a practical difference and programming languages don't make a distinction between these things. This is just a way of thinking about parameters and their purpose that can be helpful when designing interfaces. If you take an internal, hard-coded value of a function and turn it into a parameter, it will probably be a method-oriented parameter almost by defintion. It often takes a little more effort, and some additions to the code, to introduce a goal-oriented parameter because the code needs to figure out how to reach the goal. [Constraint solvers](https://en.wikipedia.org/wiki/Constraint_programming) are algorithms that try to find solutions satisfying several goal-oriented parameter at once.
+I sometimes find it helpful to consider wether my parameters should be process-oriented or goal-oriented. By process-oriented, I mean parameters that control what the procedure does. By goal-oriented, I mean parameters what control what the procedure achieves. This isn't a concrete difference and programming languages don't make a distinction between these things. This is just a way of thinking about parameters and their purpose that can be helpful when designing interfaces. If you take an internal, hard-coded value of a function and turn it into a parameter, it will probably be a process-oriented parameter almost by defintion. It often takes a little more effort, and some additions to the code, to introduce a goal-oriented parameter because the code needs to figure out how to reach the goal.
+
+<!-- [Constraint solvers](https://en.wikipedia.org/wiki/Constraint_programming) are algorithms that try to find solutions satisfying several goal-oriented parameter at once. -->
 
 #### Balance
 
