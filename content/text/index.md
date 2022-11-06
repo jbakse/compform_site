@@ -224,9 +224,13 @@ The following example uses a context-free grammar to generate a short story. Thi
 
 {% js-lab "sketches/tracery_example.js" %}
 
+Here is the same generator, created using [RiTa](http://rednoise.org/rita/) instead of Tracery. RiTa is a javascript library for working with natural language. It includes a context-free grammar parser, a Markov chain generator, and other natural language tools.
+
+{% js-lab "sketches/rita_example.js" %}
+
 ### Marquee Maker
 
-HTML is text, so Tracery can generate HTML!
+HTML is text, so CFGs can generate HTML!
 
 {% js-lab "sketches/tracery_html.js" %}
 

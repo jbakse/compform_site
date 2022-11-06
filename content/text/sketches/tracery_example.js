@@ -16,14 +16,17 @@ const storyGrammar = {
 };
 
 function main() {
-  let grammar = tracery.createGrammar(storyGrammar);
-  let story = grammar.flatten("#story#");
-
-  const storyDiv = document.createElement("div");
-  storyDiv.style = "font-size: 30px; margin: 10%; line-height: 1.5;";
-  storyDiv.textContent = story;
-
-  document.body.insertAdjacentElement("beforeend", storyDiv);
+  const grammar = tracery.createGrammar(storyGrammar);
+  const story = grammar.flatten("#story#");
+  display(story);
 }
 
+function display(...strings) {
+  const div = document.createElement("div");
+  div.style = "font-size: 30px; margin: 10%; line-height: 1.5;";
+  div.innerText = strings.join("\n");
+  document.body.append(div);
+}
+
+// tracery doesn't load immediately, not sure why, so kludge it
 setTimeout(main, 10);
