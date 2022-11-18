@@ -121,3 +121,18 @@ Spring 2016
 
 </nav>
 </div>
+
+## More Resources
+
+<div class="nav-wrap">
+
+Additional resources for learning about computational form.
+
+<nav>
+
+[**Comp Form Videos** Code Reviews and Tutorials](https://www.youtube.com/channel/UCvUZXTGGAmIwb9sek1oP0RA)
+
+[**External Links** Books, Videos, More](./resources)
+
+</nav>
+</div>
