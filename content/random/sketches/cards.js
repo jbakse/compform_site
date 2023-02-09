@@ -12,7 +12,7 @@ function valueFromDeck() {
   if (position > deck.length) {
     deck = shuffle(deck);
     v = deck[0];
-    position = 1;
+    position = 0;
   }
   return v;
 }
@@ -40,9 +40,9 @@ function drawBuckets() {
   for (i = 0; i < buckets.length; i++) {
     text(i, 10 + 20 * i, height - 10);
 
-    let barLeft = 10 + 20 * i;
-    let barBottom = height - 30;
-    let barHeight = buckets[i] * 15;
+    const barLeft = 10 + 20 * i;
+    const barBottom = height - 30;
+    const barHeight = buckets[i] * 15;
 
     rect(barLeft, barBottom, 15, -barHeight);
   }

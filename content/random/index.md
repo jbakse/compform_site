@@ -232,7 +232,7 @@ Try `[lowest 1 of 5d10]` on [anydice.com](https://anydice.com/program/24a0a)
 
 #### High Bias
 
-Taking the highest of two or more random numbers will bias the result toward the high end. The p5 `max()` or JavaScript `Math.max()` function returns the lowest value among the provided arguments. Like the low bias example, the more random numbers you compare, the stronger the bias.
+Taking the highest of two or more random numbers will bias the result toward the high end. The p5 `max()` or JavaScript `Math.max()` function returns the highest value among the provided arguments. Like the low bias example, the more random numbers you compare, the stronger the bias.
 
 ```javascript
 max(randomInt(10), randomInt(10));
