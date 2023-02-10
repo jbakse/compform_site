@@ -72,7 +72,7 @@ Both `random()` and `noise()` provide a source of variation, but `noise()` provi
 
 #### Random()
 
-This example draws a big circle, and a line of smaller circles. Variation is crreated with the `random()` function, which allows control over the amount of variation, and global (and fragile) repeatability via the random seed.
+This example draws a big circle, and a line of smaller circles. Variation is created with the `random()` function, which allows control over the amount of variation, and global (and fragile) repeatability via the random seed.
 
 {% js-lab "sketches/sketch_random/sketch.js" %}
 
