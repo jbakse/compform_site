@@ -69,7 +69,7 @@ When changes to input parameters map to interesting changes in output, combinato
 
 Leveraging combinatorial explosion in your procedural system does not guarantee _variety_.
 
-Sometimes different parameters will lead to the same final output. Sometimes the output will differ only slightly or in ways that are not meaningul or important. When this happens a system's output can feel monotonous, uninteresting, and "samey". A system that takes just two numeric parameters (as 32-bit floats) has [a little less](https://stackoverflow.com/questions/7744016/how-many-distinct-values-can-be-stored-in-floating-point-formats) than `18,446,744,073,709,551,616` (18.4 Quintillion!) states. This is an inconceivably large number, but it is quite likely that many of those states would look very similar. The p5.js `ellipse()` function takes four parameters: x, y, width, and height. These are each 64-bit floats, so there are 2^256 possible combinations. Thats [115 quattuorvigintillion](https://www.wolframalpha.com/input/?i=2%5E256) different circles! In practice though, a 50 pixel wide circle and a 50.001 pixel wide circle look the same and most of those circles won't even fall on your canvas at all.
+Sometimes different parameters will lead to the same final output. Sometimes the output will differ only slightly or in ways that are not meaningful or important. When this happens a system's output can feel monotonous, uninteresting, and "samey". A system that takes just two numeric parameters (as 32-bit floats) has [a little less](https://stackoverflow.com/questions/7744016/how-many-distinct-values-can-be-stored-in-floating-point-formats) than `18,446,744,073,709,551,616` (18.4 Quintillion!) states. This is an inconceivably large number, but it is quite likely that many of those states would look very similar. The p5.js `ellipse()` function takes four parameters: x, y, width, and height. These are each 64-bit floats, so there are 2^256 possible combinations. That is [115 quattuorvigintillion](https://www.wolframalpha.com/input/?i=2%5E256) different circles! In practice though, a 50 pixel wide circle and a 50.001 pixel wide circle look the same and most of those circles won't even fall on your canvas at all.
 
 When creating interfaces for procedural systems, focus on exposing parameters that allow for _interesting_ variation.
 
@@ -95,7 +95,7 @@ Imagine a machine that makes a snowman. The machine might take parameters for ho
 
 ### Benefits of Parameterization
 
-You explore the range of a procedural genertion system by changing the values of its parameters and seeing what happens. In simple sketches you might tweak parameters directly, by changing [hard-coded](https://en.wikipedia.org/wiki/Hard_coding) values directly in the source.
+You explore the range of a procedural generation system by changing the values of its parameters and seeing what happens. In simple sketches you might tweak parameters directly, by changing [hard-coded](https://en.wikipedia.org/wiki/Hard_coding) values directly in the source.
 
 It is almost always worth taking time to identify useful parameters in your code, consider their possible values, and expose them in a way that encourages exploration. Doing so will lead to _better user experiences_, _better code_, and _better results_.
 
@@ -109,7 +109,7 @@ Exposing key values in your program as parameters makes them easier to document,
 
 Procedural generation code often grows organically and iteratively: tweak some code, run it to see what it builds, get inspired, and then tweak again. Iterative growth leads to code that is increasingly disorganized, hard to read, and hard to change. Exposing parameters helps to organize the code by separating configuration and implementation.
 
-Exposing parameters doesn't necessiarly require creatring a GUI for them. Early versions of a program often contain a lot of [magic numbers](<https://en.wikipedia.org/wiki/Magic_number_(programming)>). Simply changing these magic numbers into named constants helps make the code easier to read and easier reason about. Organizing your code into well-factored functions with carefully chosen parameters helps even more. Thinking of your program as a collection of components—each with their own parameter-driven interface—will generally lead to better organized, more maintainable code.
+Exposing parameters doesn't necessiarly require creating a GUI for them. Early versions of a program often contain a lot of [magic numbers](<https://en.wikipedia.org/wiki/Magic_number_(programming)>). Simply changing these magic numbers into named constants helps make the code easier to read and easier reason about. Organizing your code into well-factored functions with carefully chosen parameters helps even more. Thinking of your program as a collection of components—each with their own parameter-driven interface—will generally lead to better organized, more maintainable code.
 
 #### Better Results
 
@@ -145,7 +145,7 @@ Exposing parameters allows artists and designers to create systems that can be c
 
 </div> -->
 
-I sometimes find it helpful to consider wether my parameters should be process-oriented or goal-oriented. By process-oriented, I mean parameters that control what the procedure does. By goal-oriented, I mean parameters what control what the procedure achieves. This isn't a concrete difference and programming languages don't make a distinction between these things. This is just a way of thinking about parameters and their purpose that can be helpful when designing interfaces. If you take an internal, hard-coded value of a function and turn it into a parameter, it will probably be a process-oriented parameter almost by defintion. It often takes a little more effort, and some additions to the code, to introduce a goal-oriented parameter because the code needs to figure out how to reach the goal.
+I sometimes find it helpful to consider whether my parameters should be process-oriented or goal-oriented. By process-oriented, I mean parameters that control what the procedure does. By goal-oriented, I mean parameters what control what the procedure achieves. This isn't a concrete difference and programming languages don't make a distinction between these things. This is just a way of thinking about parameters and their purpose that can be helpful when designing interfaces. If you take an internal, hard-coded value of a function and turn it into a parameter, it will probably be a process-oriented parameter almost by defintion. It often takes a little more effort, and some additions to the code, to introduce a goal-oriented parameter because the code needs to figure out how to reach the goal.
 
 <!-- [Constraint solvers](https://en.wikipedia.org/wiki/Constraint_programming) are algorithms that try to find solutions satisfying several goal-oriented parameter at once. -->
 
@@ -238,7 +238,7 @@ Take a moment to explore the parameter space of the sketch above by tweaking the
 
 ### Method-oriented vs Goal-oriented
 
-These next two examples both have a function named `stipleRect()` that fills a rectangular region with randomly placed dots. The first four parameters of each implementation are the same: `left` `top` `width` and `height`. The fifth parameter is different. In the method-oriented example, the fifth parameter controls how many dots to draw directly. In the goal-oriented example, the fifth parameter controls how densley the dots should be placed, and the function internally calculates how many dots it needs to draw to achieve that goal.
+These next two examples both have a function named `stipleRect()` that fills a rectangular region with randomly placed dots. The first four parameters of each implementation are the same: `left` `top` `width` and `height`. The fifth parameter is different. In the method-oriented example, the fifth parameter controls how many dots to draw directly. In the goal-oriented example, the fifth parameter controls how densely the dots should be placed, and the function internally calculates how many dots it needs to draw to achieve that goal.
 
 #### Stipple Rect (Method-oriented)
 
@@ -250,7 +250,7 @@ These next two examples both have a function named `stipleRect()` that fills a r
 
 ### HTML Interfaces
 
-The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions that allow you create HTML elements and use them as interface controls. This is a little more complicated to set up but still pretty quick. GUI interfaces are usually better than global variables if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload and restart your sketch.
+The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions that allows you create HTML elements and use them as interface controls. This is a little more complicated to set up but still pretty quick. GUI interfaces are usually better than global variables if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload and restart your sketch.
 
 <!-- - Label your inputs clearly.
 - Consider your interface carefully.
