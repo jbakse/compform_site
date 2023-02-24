@@ -204,7 +204,7 @@ x = random() * width;
 y = random() * height;
 ```
 
-This is a quick, effective, and straightforward way to lay points down. In theory, since the placement is random, all of the points might be placed in a clump or on one half of the square. In practice, the points are mostly evenly distributed over the plane, with some clumps and some sparse areas. Random placement isn't usualy very pretty.
+This is a quick, effective, and straightforward way to lay points down. In theory, since the placement is random, all of the points might be placed in a clump or on one half of the square. In practice, the points are mostly evenly distributed over the plane, with some clumps and some sparse areas. Random placement isn't usually very pretty.
 
 <div class="three-up">
 
@@ -256,7 +256,7 @@ y = noise(i * frequency, 1000) * h;
 
 #### Proximity Cull Placement
 
-Place points randomly, but reject a point if it is too close to an existing point or too far from all existing points. In the example below, three points have already been placed and a four point is about to be added. Three possible locations are shown are shown. One is too close and one is too far, so they are rejected. The third location is okay, and a point is added at that location.
+Place points randomly, but reject a point if it is too close to an existing point or too far from all existing points. In the example below, three points have already been placed and a fourth point is about to be added. Three possible locations are shown. One is too close and one is too far, so they are rejected. The third location is okay, and a point is added at that location.
 
 <div class="three-up">
 
