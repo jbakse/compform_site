@@ -45,7 +45,7 @@ In 1950, [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) directly addre
 
 Creativity can be expressed in many mediums, but—perhaps as a consequence of the Turing Test using verbal communication—artificial creativity is often explored in the context of natural-language text generation. This chapter introduces three common and accessible text generation tactics: string templating, Markov chains, and context-free grammars.
 
-These techniques focus on **syntax**—the patterns and structure of language—without much concern for **semantics**—the underlying meaning expressed. They tend to result in text that is somewhat gramatical but mostly nonesensical. Natural-language processing and natural-language generation are areas of active research with numerous sub-fields including automatic summarization, translation, question answering, and sentiment analysis. Much of this research is focused on semantics, knowledge, and understanding and often approaches these problems with machine learning.
+These techniques focus on **syntax**—the patterns and structure of language—without much concern for **semantics**—the underlying meaning expressed. They tend to result in text that is somewhat grammatical but mostly nonsensical. Natural-language processing and natural-language generation are areas of active research with numerous sub-fields including automatic summarization, translation, question answering, and sentiment analysis. Much of this research is focused on semantics, knowledge, and understanding and often approaches these problems with machine learning.
 
 ### Generating other Media via Text
 
@@ -77,7 +77,7 @@ Annual competition to procedurally generate a 50,000 word novel.
 An instant pitch for your next game project. Here's [another](https://applepinegames.com/tech/steam-game-generator) generator.
 
 [**Pentametron** Twitter Bot](http://orteil.dashnet.org/gamegen)
-A twitter bot that pairs up tweets to create couplets in iambic pentameter.
+A Twitter bot that pairs up tweets to create couplets in iambic pentameter.
 
 </div>
 
@@ -107,7 +107,7 @@ The Associated Press procedurally generates [college sports coverage](https://ww
 In 1964 Joseph Weizenbaum created ELIZA, a therapist chatbot that you can still [talk to today](http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm).
 
 [**Tay** wikipedia.org](<https://en.wikipedia.org/wiki/Tay_(bot)>)
-Tay was an AI twitter bot created by Microsoft and launched on March 23, 2016. Less than a day later, it was shut down after posting many controversial, inflammatory, and racist tweets. Read more about it on [The Verge](http://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist).
+Tay was an AI Twitter bot created by Microsoft and launched on March 23, 2016. Less than a day later, it was shut down after posting many controversial, inflammatory, and racist tweets. Read more about it on [The Verge](http://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist).
 
 </div>
 
@@ -208,7 +208,7 @@ Consider this html excerpt:
 
 </div>
 
-This isn't proper html. The `b` tag should be closed before the the `div` tag.
+This isn't proper html. The `b` tag should be closed before the `div` tag.
 
 ```html
 <div><b>Hello, World!</b></div>
@@ -220,7 +220,7 @@ HTML is text, and it can be represented by a text string. But not all text strin
 
 ### Story Teller
 
-The following example uses a context-free grammar to generate a short story. This example uses [Tracery](https://github.com/galaxykate/tracery), created by [Kate Compton](http://www.galaxykate.com/). The [Cheap Bots, Done Quick](https://cheapbotsdonequick.com/) service lets you [make twitterbots](http://programminghistorian.github.io/ph-submissions/lessons/intro-to-twitterbots) very quickly using Tracery. You can learn more about Tracery by watching this [talk (16:16)](https://www.gdcvault.com/play/1023377/Tech) by Kate Compton.
+The following example uses a context-free grammar to generate a short story. This example uses [Tracery](https://github.com/galaxykate/tracery), created by [Kate Compton](http://www.galaxykate.com/). The [Cheap Bots, Done Quick](https://cheapbotsdonequick.com/) service lets you [make Twitterbots](http://programminghistorian.github.io/ph-submissions/lessons/intro-to-twitterbots) very quickly using Tracery. You can learn more about Tracery by watching this [talk (16:16)](https://www.gdcvault.com/play/1023377/Tech) by Kate Compton.
 
 {% js-lab "sketches/tracery_example.js" %}
 
