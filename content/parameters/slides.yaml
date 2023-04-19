@@ -55,7 +55,7 @@
 - artist: Sky Castle Studios
   title: Hero Forge, 2014
   image: ./slides/heroforge.png
-  comments: Hero Forge is an interface for creating 3D-printed miniature characters. There are a wide range of parameters that enables users to hyper-customize their characters to their liking.
+  comments: Hero Forge is an interface for creating 3D-printed miniature characters. There is a wide range of parameters that enables users to hyper-customize their characters to their liking.
   links:
     - label: "Hero Forge"
       href: https://www.heroforge.com/
@@ -94,7 +94,7 @@
 - artist: Greg Schomburg
   title: GregFonts, 2017
   image: ./slides/gregfont.png
-  comments: GregFonts is a series of custom made single stroke fonts for use in vector design, laser cutting, and pen plotting.
+  comments: GregFonts is a series of custom-made single-stroke fonts for use in vector design, laser cutting, and pen plotting.
   links:
     - label: GregFonts
       href: http://gregschomburg.com/gregfont/
