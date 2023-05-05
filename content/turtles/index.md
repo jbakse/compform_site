@@ -10,7 +10,7 @@ software: p5.js + custom library
 
 ## Logo and Turtle Graphics
 
-The Logo computer programming language was [created in 1967](http://el.media.mit.edu/logo-foundation/what_is_logo/history.html) by Wally Feurzeig, Seymour Papert, and Cynthia Solomon to explore how programming can help children learn critical thinking and problem solving. One of the creators of Logo, Seymour Papert, wrote the 1980 book [Mindstorms](https://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746/ref=asap_bc?ie=UTF8) which discusses Logo and its goals:
+The Logo computer programming language was [created in 1967](http://el.media.mit.edu/logo-foundation/what_is_logo/history.html) by Wally Feurzeig, Seymour Papert, and Cynthia Solomon to explore how programming can help children learn critical thinking and problem-solving. One of the creators of Logo, Seymour Papert, wrote the 1980 book [Mindstorms](https://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746/ref=asap_bc?ie=UTF8) which discusses Logo and its goals:
 
 > In many schools today, the phrase "computer-aided instruction" means making the computer teach the child. One might say _the computer is being used to program the child_. In my vision, _the child programs the computer_ and, in doing so, both acquires a sense of mastery over a piece of the most modern and powerful technology and establishes an intimate contact with some of the deepest ideas from science, from mathematics, and from the art of intellectual model building.
 
@@ -32,7 +32,7 @@ One of the key ideas introduced in Logo was [turtle graphics](https://en.wikiped
 
 Turtles make it possible to change how you think about drawing and give you a new set of tools for expressing an image in code. They don't change _what you can do_: the turtle class provided in this chapter uses the standard p5.js drawing API under the hood. Instead, using a turtle changes _how you do it_.
 
-Logo's use of turtles allows students to make a strong association between what happens in the program and how they move their own bodies in the real world. Papert called this _body-syntonic_ learning. Body-syntonic learning supports understanding of abstract ideas through sensory experience. Papert often discussed these ideas in his writing and videos.
+Logo's use of turtles allows students to make a strong association between what happens in the program and how they move their own bodies in the real world. Papert called this _body-syntonic_ learning. Body-syntonic learning supports the understanding of abstract ideas through sensory experience. Papert often discussed these ideas in his writing and videos.
 
 <div class="link-box">
 
@@ -182,13 +182,13 @@ Two of the forms that turtles tend to encourage are [spirograph](https://en.wiki
 
 ### Spirograph
 
-This example draws a 72 pointed star. Technically, this isn't really [what a Spirograph draws](https://en.wikipedia.org/wiki/Hypotrochoid), but shares some visual characteristics, like rotational symmetry.
+This example draws a 72-pointed star. Technically, this isn't really [what a Spirograph draws](https://en.wikipedia.org/wiki/Hypotrochoid), but shares some visual characteristics, like rotational symmetry.
 
 {% js-lab "sketches/turtle_spirograph.js" %}
 
 ### Recursive Tree I
 
-Turtles are often paired with recursion to draw tree-like forms. Study this ,simpified example to see how, and see the _Recursive Tree II_ below for a little more detailed example.
+Turtles are often paired with recursion to draw tree-like forms. Study this simpified example to see how, and see the _Recursive Tree II_ below for a little more detailed example.
 
 {% js-lab "sketches/turtle_tree.js" %}
 
@@ -276,7 +276,7 @@ The turtle class can also draw images aligned with the current position of the t
 
 ### Push + Pop
 
-You can use `push()` and `pop()` together to take a break from drawing one shape, draw something else, and then return to original shape.
+You can use `push()` and `pop()` together to take a break from drawing one shape, draw something else, and then return to the original shape.
 
 {% js-lab "sketches/turtle_push.js" %}
 
