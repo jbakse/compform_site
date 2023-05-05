@@ -25,7 +25,7 @@
 - artist: Reinder Nijhoff
   title: Turtletoy, 2018
   image: ./slides/turtletoy.png
-  comments: Turtletoy is a web editor that allows users to create sketches using a simple javascript Turtle graphics API.
+  comments: Turtletoy is a web editor that allows users to create sketches using a simple JavaScript Turtle graphics API.
   links:
     - label: Turtletoy
       href: https://turtletoy.net/
