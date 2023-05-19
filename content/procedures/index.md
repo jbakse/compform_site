@@ -38,7 +38,7 @@ Doing simple, repetitious work by hand is tedious and very prone to simple error
 
 #### Speeds Iteration
 
-The processes of defining a computer program to create form is often initially slower than creating the form directly by hand. But once the program is completed it can be very fast to try many variations.
+The process of defining a computer program to create form is often initially slower than creating the form directly by hand. But once the program is completed it can be very fast to try many variations.
 
 #### Enables Greater Detail
 
@@ -62,11 +62,11 @@ The [Sierpinski Triangle](http://en.wikipedia.org/wiki/Sierpinski_triangle) is a
 
 ### Instructions
 
-Please take out a sheet of paper and pen and follow these instructions:
+Please take out a sheet of paper and a pen and follow these instructions:
 
 1. Draw an up-pointing equilateral triangle that fills most of the page.
 2. Lightly mark the midpoint of each line of that triangle.
-3. Draw straight lines connecting each of those marks. This forms **four** new triangles: **three** that point up, **one** that points down.
+3. Draw straight lines connecting each of those marks. This forms **four** new triangles: **three** that point up and **one** that points down.
 4. Choose any empty, up-pointing triangle on the page.
 5. Go to instruction 2.
 
@@ -84,7 +84,7 @@ Yes, these instructions will go on forever. Stop after a few minutes.
 
 Computational Form doesn't necessarily require computers or computer programming. Artists have been experimenting with generative concepts since before computers even existed and artists still write instructions and then carry them out themselves manually. But computers are an _exceptionally_ powerful tool for exploring procedural generation and computational form. They are fast, accurate, predictable, and reliable and they don't complain about tedious tasks.
 
-This site explores a variety of computer languages and tools which can be used to create form computationally. Many of the examples—including those in this chapter—are written using [p5.js](https://p5js.org/). For a quick introduction to p5.js, see the [Hello, p5!](../p5) chapter and the [p5.js](https://p5js.org/) website.
+This site explores a variety of computer languages and tools that can be used to create form computationally. Many of the examples—including those in this chapter—are written using [p5.js](https://p5js.org/). For a quick introduction to p5.js, see the [Hello, p5!](../p5) chapter and the [p5.js](https://p5js.org/) website.
 
 ### House I
 
@@ -92,13 +92,13 @@ Here is a simple example of a p5.js program that draws a house.
 
 {% js-lab "./sketches/house.js" %}
 
-This is a fairly simple program. It is mostly a series of `fill`, `rect`, and `triangle` commands to specify colors and draw shapes. This program demonstrates the indirect nature of drawing with code. If we wanted the grass to be a darker green, we wouldn't change it directly. Instead we would alter the program and then completely redraw the image using the new instructions.
+This is a fairly simple program. It is mostly a series of `fill`, `rect`, and `triangle` commands to specify colors and draw shapes. This program demonstrates the indirect nature of drawing with code. If we wanted the grass to be a darker green, we wouldn't change it directly. Instead, we would alter the program and then completely redraw the image using the new instructions.
 
 At first, this indirect way of working can feel cumbersome. It would be easier to create and alter this drawing in a program like Adobe Illustrator. But even a slightly more sophisticated program begins to show the power afforded by working with procedures.
 
 ### House II
 
-This example is only little more complex but instead of drawing one specific house, can generate many, many variations. The procedure used here introduces a few new concepts like making decisions based on random numbers and mixing colors, but the flow of the program is still straight down from top to bottom.
+This example is only a little more complex but instead of drawing one specific house, can generate many, many variations. The procedure used here introduces a few new concepts like making decisions based on random numbers and mixing colors, but the flow of the program is still straight down from top to bottom.
 
 {% js-lab "./sketches/houses.js" %}
 
@@ -112,15 +112,15 @@ As procedures begin to include `looping` and `conditional branching` they become
 
 When beginner and intermediate programmers run into trouble building more complex projects, they often hear this (bad) advice: **Break your complex program into smaller parts, and solve those parts.**
 
-I've given this advice myself, but now I try not to. Very often this advice just isn't helpful, especially for beginners. This advice falls short because it describes how the final program should be structured (results) rather than the how to approach developing it (process). In practice, programming almost always involves prototyping, backtracking, and refactoring. It is hard to understand a complex problem and it is hard to break complex problems down into parts. How big should the parts be? How do you build an individual part without the other parts it depends on? Once you have a few working parts, how do you put them together? With experience, these questions get easier to answer, but advanced programmers still frequently encounter problems they can't initially understand well enough to break down. When this happens to you, you still have an option for getting started: **Make a simpler program**.
+I've given this advice myself, but now I try not to. Very often this advice just isn't helpful, especially for beginners. This advice falls short because it describes how the final program should be structured (results) rather than the how-to approach to developing it (process). In practice, programming almost always involves prototyping, backtracking, and refactoring. It is hard to understand a complex problem and it is hard to break complex problems down into parts. How big should the parts be? How do you build an individual part without the other parts it depends on? Once you have a few working parts, how do you put them together? With experience, these questions get easier to answer, but advanced programmers still frequently encounter problems they can't initially understand well enough to break down. When this happens to you, you still have an option for getting started: **Make a simpler program**.
 
-Imagine you want to make a game like [pong](https://www.youtube.com/watch?v=1LsRGUODHlQ), but you don't know how. You could begin by trying to break it down into sub-tasks—keyboard controlled paddles, an animated ball, a scoreboard—but it is very hard to plan all those pieces all at once. At the planning stage you will have a rough idea of how each piece should work, but you won't know the details until you start building each piece. Without understanding the details, the pieces you make probably won't fit together. You might end up with _a lot_ of code that _doesn't work_ and that you _don't understand_. It is much better to have _a little bit_ of code that _does work_ and that you _do understand_.
+Imagine you want to make a game like [pong](https://www.youtube.com/watch?v=1LsRGUODHlQ), but you don't know how. You could begin by trying to break it down into sub-tasks—keyboard-controlled paddles, an animated ball, a scoreboard—but it is very hard to plan all those pieces all at once. At the planning stage you will have a rough idea of how each piece should work, but you won't know the details until you start building each piece. Without understanding the details, the pieces you make probably won't fit together. You might end up with _a lot_ of code that _doesn't work_ and that you _don't understand_. It is much better to have _a little bit_ of code that _does work_ and that you _do understand_.
 
 Instead, you could start with a very simple program: just draw a little square—the ball—on the screen. Build and run this program to make sure it works. Then start adding on. Make the ball move to the right. Don't worry about the paddles or the score yet: focus on the ball. Make the square bounce when it hits the side. Then make it move diagonally. Make the ball bounce off all the sides. You might make dozens of incremental working programs as you get the basic ball working. As you do, take the time to review the code and make sure you understand how _everything_ works.
 
 Remember: it is much, much better to have a little bit of code you understand than a lot of code you don't understand.
 
-Working this way will let you discover the details of how your ball—an important piece of your program—works. These details will help you discover how that piece will connect with the others. As you start to build other elements—like the paddles or scoreboard—you might find out that you need to go back and change how the ball works. Expect to run into some dead ends, and expect the need to back track. Sure, this might have been avoided if you had made a complete, correct plan in the beginning, but _in the beginning, you didn't know enough to make a complete, correct plan_.
+Working this way will let you discover the details of how your ball—an important piece of your program—works. These details will help you discover how that piece will connect with the others. As you start to build other elements—like the paddles or scoreboard—you might find out that you need to go back and change how the ball works. Expect to run into some dead ends, and expect the need to backtrack. Sure, this might have been avoided if you had made a complete, correct plan in the beginning, but _in the beginning, you didn't know enough to make a complete, correct plan_.
 
 The reason this strategy works is simple: **instead of trying to do something you can't, you try to do something you can.**
 
@@ -132,7 +132,7 @@ The reason this strategy works is simple: **instead of trying to do something yo
 
 When designing a procedural generation system there are several properties to consider. The designer must balance these concerns and design a system that fits the goals of the project. As an example, consider execution speed. A newly-written procedure may run slowly, perhaps taking minutes or hours to generate an image. Usually, with effort, the procedure can be rewritten to run much more quickly, perhaps in just a few milliseconds. It probably wouldn't be worth the effort to speed up the procedure if it is part of a tool that will only be used a few times, but the optimized procedure could be used in completely different ways.
 
-The following properties are borrowed from [the first chapter of _Procedural Content Generation in Games_](http://pcgbook.com/wp-content/uploads/chapter01.pdf), a great textbook on procedural generation which is available free online and [in print](https://www.amazon.com/Procedural-Generation-Computational-Synthesis-Creative/dp/3319427148/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=pcgbook-20&linkId=cf064284f4aa7d2b4c8585fa20b2b07e).
+The following properties are borrowed from [the first chapter of _Procedural Content Generation in Games_](http://pcgbook.com/wp-content/uploads/chapter01.pdf), a great textbook on procedural generation that is available free online and [in print](https://www.amazon.com/Procedural-Generation-Computational-Synthesis-Creative/dp/3319427148/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=pcgbook-20&linkId=cf064284f4aa7d2b4c8585fa20b2b07e).
 
 ### Speed
 
@@ -149,7 +149,7 @@ The following properties are borrowed from [the first chapter of _Procedural Con
 ### Controllability
 
 - Does your program expose any user parameters?
-- Do you want explore the parameter space manually?
+- Do you want to explore the parameter space manually?
 - Do you want to have tight control over the results or should everything work automatically?
 
 ### Expressivity and Diversity
@@ -175,7 +175,7 @@ The following properties are borrowed from [the first chapter of _Procedural Con
 
 ### Watch
 
-[Game Maker's Toolkit](https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw) is a Youtube channel that features high-quality video essays on game design. His video on the level-generation in Spelunky is great.
+[Game Maker's Toolkit](https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw) is a Youtube channel that features high-quality video essays on game design. His video on the level generation in Spelunky is great.
 
 <div class="link-box">
 
