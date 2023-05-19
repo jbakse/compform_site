@@ -68,7 +68,7 @@ Where do those values come from? They could come from a few places.
 | random()   | You want random variation.                                      |
 | noise(x)   | You want random—but controlled—variation.                       |
 
-Both `random()` and `noise()` provide a source of variation, but `noise()` provides much more control. The values from `random()` the sizes of the boxes won't be related at all. With `noise()` we can control how quickly the size changes horizontally, vertically, and over time. If we sample a small area of the noise function the variation will be subtle and gradual. If our samples are far apart the variation will be be drastic, unpredictable and look a lot like `random()`.
+Both `random()` and `noise()` provide a source of variation, but `noise()` provides much more control. The values from `random()` and the sizes of the boxes won't be related at all. With `noise()` we can control how quickly the size changes horizontally, vertically, and over time. If we sample a small area of the noise function the variation will be subtle and gradual. If our samples are far apart the variation will be drastic, unpredictable, and look a lot like `random()`.
 
 #### Random()
 
@@ -78,7 +78,7 @@ This example draws a big circle, and a line of smaller circles. Variation is cre
 
 #### Noise(x)
 
-This example uses the `noise()` function to create variation. It control over the amplitude, frequency, and character of the variation. It also provides independent (and robust) repeatability.
+This example uses the `noise()` function to create variation. It has control over the amplitude, frequency, and character of the variation. It also provides independent (and robust) repeatability.
 
 {% js-lab "sketches/sketch_noise/sketch.js" %}
 
@@ -97,7 +97,7 @@ Compare the code and results of the two examples above.
 
 The p5 `noise(x)` function returns values sampled from Perlin Noise. Perlin Noise provides random values with a particular aesthetic arrangement. The variation in Perlin Noise is band-limited: the frequency of values is predictable and even, without flat or noisy areas. The variation is also visually isotropic: it looks the same at different rotations. These characteristics make it a useful basis for many applications that require natural-feeling variation.
 
-Other noise functions—like Worely and Value Noise—offer different aesthetic qualities, and it is quite possible to create your own noise function that looks the way you want. Most of the time you don't _need_ to create your own noise function to get a particular look. You can tweak the aesthetics of a noise functional by manipulating its values with math. The [Terrain from Noise](https://www.redblobgames.com/maps/terrain-from-noise/) article on Red Blob Games is a good place to see some common techniques for shaping noise.
+Other noise functions—like Worely and Value Noise—offer different aesthetic qualities, and it is quite possible to create your own noise function that looks the way you want. Most of the time you don't _need_ to create your own noise function to get a particular look. You can tweak the aesthetics of a noise function by manipulating its values with math. The [Terrain from Noise](https://www.redblobgames.com/maps/terrain-from-noise/) article on Red Blob Games is a good place to see some common techniques for shaping noise.
 
 ### Noise is Repeatable
 
@@ -106,7 +106,7 @@ Noise functions take one or more coordinate arguments. These arguments specify a
 This makes getting repeated results easy: every time you call `noise(x)` with a particular argument, you get the same value back. This can be very useful. For example, in an animation you often need a value to stay the same from frame to frame.
 
 - `random()` _does not accept_ coordinate arguments and returns a different random value every time.
-- `noise(x)` _requires_ an coordinate argument and returns the same random value every time it is called _with that argument_.
+- `noise(x)` _requires_ a coordinate argument and returns the same random value every time it is called _with that argument_.
 
 <div class="callout">
 
@@ -139,10 +139,10 @@ Many noise functions are multidimensional. The noise function in most programmin
 
 The `noise()` function models an infinite cloud of predetermined random values. When you call `noise(x)`, you are asking for the value in the cloud at the coordinate `x`. To create a noise function you need to build two things:
 
-1. a way to associate a random values with each integer coordinate in the cloud
+1. a way to associate a random value with each integer coordinate in the cloud
 2. a way to interpolate between these values if fractional coordinates are requested.
 
-Different noise functions sove these problems in different ways.
+Different noise functions solve these problems in different ways.
 
 <div class="activity">
 
@@ -176,11 +176,11 @@ How does the `noise(x)` function work? Explore the underlying concepts by buildi
 
 ### Calling the Noise Function
 
-The `noise()` function takes up to three parameters: `noise(x,y,z)`. These parameters allow you to request values arranged in a three dimensional "cloud" of pseudo-random values.
+The `noise()` function takes up to three parameters: `noise(x,y,z)`. These parameters allow you to request values arranged in a three-dimensional "cloud" of pseudo-random values.
 
 When you call `noise(x)` you have to pass in at least one parameter. This parameter specifies the location in the cloud of the value to return. You can think about `noise(x)` as a lookup table: `noise(1)` provides one value in the table and `noise(2)` provides another.
 
-Choosing appropriate parameter values takes some getting used to. You can pass in `frameCount` or `millis()` to get values that change over time. You can pass in XYZ coordinates to get values that change over space. These are very common cases, but really you can pass values from any range into `noise()` and it will provide random values in return.
+Choosing appropriate parameter values takes some getting used to. You can pass in `frameCount` or `millis()` to get values that change over time. You can pass in XYZ coordinates to get values that change over space. These are very common cases, but you can pass values from any range into `noise()` and it will provide random values in return.
 
 ### Controlling the Frequency
 
@@ -199,7 +199,7 @@ n = noise(seconds * 10);
 
 ### Controlling the Amplitude and Range
 
-Noise functions typically return values in the range of 0 to 1. Use multiplication and addition to shift values to the range you need. Be aware that while `random()` provides evenly-distributed values, noise values are biased towards the middle. Also check the documenation for your noise function to understand the range it provides. In p5.js the range will differ depending on how you have configured it with `noiseDetail()`.
+Noise functions typically return values in the range of 0 to 1. Use multiplication and addition to shift values to the range you need. Be aware that while `random()` provides evenly-distributed values, noise values are biased towards the middle. Also check the documentation for your noise function to understand the range it provides. In p5.js the range will differ depending on how you have configured it with `noiseDetail()`.
 
 ```javascript
 // scale values to sit between 10 and 20;
@@ -209,7 +209,7 @@ n = noise(frameCount) * 10 + 10;
 You could also use `map()`:
 
 ```javascript
-// map noise(frameCount) fromt he range [0,1) to the range [10 to 20)
+// map noise(frameCount) from the range [0,1) to the range [10 to 20)
 n = map(noise(frameCount), 0, 1, 10, 20);
 ```
 
@@ -219,7 +219,7 @@ The [noiseDetail()](https://p5js.org/reference/#/p5/noiseDetail) function allows
 
 ![noise detail](figures/noise_detail.jpg)
 
-Typically, each layer of noise is twice as detailed (higher frequency) and half as prominent (lower amplitude). These layers are sometimes refered to as "octaves" because their frequncies double each time, like musical octives.
+Typically, each layer of noise is twice as detailed (higher frequency) and half as prominent (lower amplitude). These layers are sometimes referred to as "octaves" because their frequencies double each time, like musical octaves.
 
 ### Controlling the Seed
 
@@ -281,7 +281,7 @@ Explore the study examples above by completing the following challenges.{intro}
 
 ### Sketch
 
-This week, focus on using the `noise()` function. Use `noise()` in a variety of ways. Use 1D, 2D, and 3D noise. Try using high, mid, and low frequency noise. Try using noise to control different things: position, size, color, rotation, etc. Think about tile graphics, `random()`, and parameters while you work. Consider combining these concepts with `noise()`.
+This week, focus on using the `noise()` function. Use `noise()` in a variety of ways. Use 1D, 2D, and 3D noise. Try using high-, mid-, and low-frequency noise. Try using noise to control different things: position, size, color, rotation, etc. Think about tile graphics, `random()`, and parameters while you work. Consider combining these concepts with `noise()`.
 
 ### Challenge: Treasure Map
 
@@ -299,7 +299,7 @@ Make a program that generates treasure maps.
 - Where is your treasure? On a tropical island? On a farm? In a warehouse?
 - What style is your map? Is it old and beaten? Sci-fi?
 - Does your map include labels? What do they say?
-- Can you make a believable natural geography? Should you?
+- Can you make believable natural geography? Should you?
 - What terrain features might you include? Rivers? Mountains? Hills? Boxes?
 - It is okay if your map takes seconds or even minutes to generate.
 - A map can represent many things—it doesn't necessarily need to represent geography.
@@ -350,7 +350,7 @@ GDC talk on making cameras cooler. At 11:40 he discusses the benefits of using P
 [**Noise in Creative Coding** Vuran Vachhar](https://varun.ca/noise/)
 A full discussion of noise with interactive demos.
 
-[**The Renderig of INSIDE** Playdead Devs](https://www.youtube.com/watch?v=RdN06E6Xn9E)
+[**The Rendering of INSIDE** Playdead Devs](https://www.youtube.com/watch?v=RdN06E6Xn9E)
 A great developer talk covering the graphics techniques in INSIDE.
 
 </div>
