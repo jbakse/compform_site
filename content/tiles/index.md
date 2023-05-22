@@ -16,7 +16,7 @@ software: pencil + paper
 
 From masonry and tile to fabrics to movable type: artists and designers have been arranging modular motifs on grids for centuries. This approach affords a variety of aesthetic and practical benefits. It leads to designs with natural visual rhythm and concord while allowing for variety and complexity. It combines the benefits of mass production and manual customization. It also allows the creative work to be split up: a single designer creates the system and local craftsmen apply it.
 
-In digital media, tile maps and sets are used frequently and commonly associated with the 8-bit and 16-bit video game era. Hardware limitations imposed strict limits on designers. Designers pushed these limits to creative extreems, creating enduring visual styles. Today's games do not face the same hardware restrictions, but modular graphic systems are still an important tool for artists. Support for tile maps is built into many contemporary game engines, including [Unity](https://docs.unity3d.com/Manual/class-Tilemap.html) and [GameMaker Studio](https://www.yoyogames.com/en/gamemaker).
+In digital media, tile maps and sets are used frequently and commonly associated with the 8-bit and 16-bit video game era. Hardware limitations imposed strict limits on designers. Designers pushed these limits to creative extremes, creating enduring visual styles. Today's games do not face the same hardware restrictions, but modular graphic systems are still an important tool for artists. Support for tile maps is built into many contemporary game engines, including [Unity](https://docs.unity3d.com/Manual/class-Tilemap.html) and [GameMaker Studio](https://www.yoyogames.com/en/gamemaker).
 
 {% slides %}
 {% include slides.yaml %}
@@ -36,7 +36,7 @@ The basic repeating tile: top matches bottom, left matches right. Below, simple 
 
 ### Repeating Tiles with Alternates
 
-Top matches bottom, left matches right. Alternate tiles used to break up the repetion and add visual interest.
+Top matches bottom, left matches right. Alternate tiles used to break up the repetition and add visual interest.
 
 ![patterns](./figures/patterns_alt.png){scale}
 
@@ -60,7 +60,7 @@ Depending on the design, some of these tiles may be rotations of other tiles.
 
 ![edge_full](./figures/edge_full.png){scale}
 
-In those cases a smaller set can be used.
+In those cases, a smaller set can be used.
 
 ![edge_5](./figures/edge_5.png){scale}
 
@@ -92,7 +92,7 @@ Discuss the aesthetic and practical features of tile sets and maps.
 - How are tile maps different from and similar to patterns?
 - What kinds of forms does this method lead to naturally? How can these be embraced or avoided?
 - What are the essential elements of this method?
-- How does a tile kit like this compare to building kits like lego blocks?
+- How does a tile kit like this compare to building kits like Lego blocks?
 - How does a tile kit compare to a font?
 - How could these tiles work in 3 dimensions?
 
@@ -132,7 +132,7 @@ At the end of class, trade your tiles with another student in the class. This we
 
 Early computer games were often severely constrained by available storage, memory, and processing power. Super Mario Bros for the NES had only 40 kilobytes of storage for everything: the game code, character and world art, and music.
 
-This single screenshot of Mario dying in world 1_1 is 8 kilobytes alone.
+This single screenshot of Mario dying in World 1-1 is 8 kilobytes alone.
 ![Super Mario Bros 1-1](./figures/smb_1_1.png){scale pixel}
 
 This is possible because SMB builds the world from a small set of reusable tiles that can be re-colored and re-used in multiple ways. For example, the bush and the cloud in the screenshot above use the same tiles with different palettes. Below is a dump of the tiles and palettes used in SMB.
@@ -190,7 +190,7 @@ Daily exercise:
 2. Use the tile set to create a design.
 <!-- 3. Screengrab or photograph your work and post to the class sketch blog. -->
 
-Explore a different idea everyday. If you need some ideas, consider using one of the following prompts.
+Explore a different idea every day. If you need some ideas, consider using one of the following prompts.
 
 <!-- If you use one of these prompts, mention it in your blog post. -->
 
@@ -198,7 +198,7 @@ Explore a different idea everyday. If you need some ideas, consider using one of
 
 ### Challenge: Alphabet
 
-Design a full alphabet using a single tile set. Create a compostion that shows your alphabet in use.
+Design a full alphabet using a single tile set. Create a composition that shows your alphabet in use.
 
 <!-- Post an image of your tileset and your composition to the sketch blog. -->
 
@@ -218,9 +218,9 @@ Partner with another person. Create a tile set and trade it with your partner. U
 
 [**Maze Algorithms** Jamis Buck](http://www.jamisbuck.org/mazes/) Many, _many_ maze generator algorithms complete with step-by-step visualizations from the author of _Mazes for Programmers_.
 
-[**Tile Map Links** Redblob Games](http://www-cs-students.stanford.edu/~amitp/gameprog.html#tiles) Amit Patel at Red Blob writes great essays on game-programming concepts. Here are his links to tile-map related articles.
+[**Tile Map Links** Redblob Games](http://www-cs-students.stanford.edu/~amitp/gameprog.html#tiles) Amit Patel at Red Blob writes great essays on game-programming concepts. Here are his links to tile-map-related articles.
 
-[**Breaking the NES for Shovel Knight** Tech + Art Paper](https://www.gamasutra.com/blogs/DavidDAngelo/20140625/219383/Breaking_the_NES_for_Shovel_Knight.php) Shovel Knight is an amazing retro platformer from [Yacht Club Games](http://yachtclubgames.com/). Developer David D'Angelo discusses how the Nintendo's specific technical limitations and abilities influenced Shovel Knight's design.
+[**Breaking the NES for Shovel Knight** Tech + Art Paper](https://www.gamasutra.com/blogs/DavidDAngelo/20140625/219383/Breaking_the_NES_for_Shovel_Knight.php) Shovel Knight is an amazing retro platformer from [Yacht Club Games](http://yachtclubgames.com/). Developer David D'Angelo discusses how Nintendo's specific technical limitations and abilities influenced Shovel Knight's design.
 
 [**How "oldschool" Graphics Worked** Video](https://www.youtube.com/watch?v=Tfh0ytz8S0k) Overview of the hardware limitations and creative solutions in early pixel graphics.
 
