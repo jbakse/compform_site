@@ -4,7 +4,7 @@ layout: compform_chapter.pug
 
 image: /p5/images/og_image.png
 hero_title: Hello, p5!
-description: Many of the examples on this site use p5.js, a Javascript creative coding library.
+description: Many of the examples on this site use p5.js, a JavaScript creative coding library.
 software: p5.js + github
 ---
 
@@ -14,7 +14,7 @@ software: p5.js + github
 
 ## Processing and p5.js
 
-This book explores a wide range of media and provides examples in a variety of languages and libraries. The most commonly used library is [p5.js](https://p5js.org/), a very popular Javascript creative coding library. The p5.js is a javascript version of the [Processing](<(https://processing.org/)>) creative coding language and library.
+This book explores a wide range of media and provides examples in a variety of languages and libraries. The most commonly used library is [p5.js](https://p5js.org/), a very popular JavaScript creative coding library. The p5.js is a JavaScript version of the [Processing](<(https://processing.org/)>) creative coding language and library.
 
 Both Processing and p5.js were created to support students learning computer programming within a creative art and design context. Because p5.js has a contained scope and a strong community, it is a great library for teaching, learning, sketching, and experimenting.
 
@@ -24,11 +24,11 @@ A full introduction to p5.js is outside of the scope of this book, but this chap
 
 [Processing](https://processing.org/) is a programming language created for visual artists learning to make creative coding projects. It was released in 2001 by MIT Media Lab alumni and creative coders [Casey Reas](http://reas.com/) and [Benjamin Fry](http://benfry.com/). The project is now also led by [Daniel Shiffman](http://shiffman.net/), who has published a number of popular books and video tutorials on creating art with Processing.
 
-Processing combines a simple programming environment, a programming language built on top of Java, and a drawing library to create an low friction entry point for creative computing. In addition to the basic but powerful [drawing API](https://processing.org/reference/), and has libraries for other common applications like sound and networking.
+Processing combines a simple programming environment, a programming language built on top of Java, and a drawing library to create a low friction entry point for creative computing. In addition to the basic but powerful [drawing API](https://processing.org/reference/), and has libraries for other common applications like sound and networking.
 
 ### p5.js
 
-The p5.js library was created by artist [Lauren McCarthy](http://lauren-mccarthy.com/) to brings the Processing API and spirit to Javascript and the web. Programming with p5.js is very similar to working in Processing, with the benefit that p5.js sketches work in any modern browser.
+The p5.js library was created by artist [Lauren McCarthy](http://lauren-mccarthy.com/) to bring the Processing API and spirit to JavaScript and the web. Programming with p5.js is very similar to working in Processing, with the benefit that p5.js sketches work in any modern browser.
 
 <!-- ## Gallery -->
 
@@ -72,13 +72,13 @@ To edit your sketches, you'll need a code editor. I use [VS Code](https://code.v
 
 | Package     | Purpose                                                                                                                          |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Live Server | The Live Server extension makes it very simple to properly serve you sketches to your browser                                    |
+| Live Server | The Live Server extension makes it very simple to properly serve your sketches to your browser                                    |
 | Prettier    | Prettier is a code formatter. It makes sure that your spaces and indents are consistent, improving the readability of your code. |
 | ESLint      | ESLint will audit your code to find potential problems.                                                                          |
 
 #### Web Browser
 
-To view your sketches, you'll load them in a web browser. I tend to use [Google Chrome](https://www.google.com/chrome/browser/desktop/) because I like its developer tools. In Chrome, be sure to open the Javascript console with `command-option-j`. If you have problems in your code, chrome will report errors in the console.
+To view your sketches, you'll load them in a web browser. I tend to use [Google Chrome](https://www.google.com/chrome/browser/desktop/) because I like its developer tools. In Chrome, be sure to open the JavaScript console with `command-option-j`. If you have problems in your code, Chrome will report errors in the console.
 
 ### Creating a p5.js Project
 
@@ -87,7 +87,7 @@ To create a p5.js Project from scratch you need to do a few things.
 1. Install a text editor and browser.
 2. Download the p5.js library.
 3. Create an `.html` file that includes the p5.js library.
-4. Write a sketch in Javascript. The script will be included either in `<script>` tags with your `.html` file or in a seperate `.js` file.
+4. Write a sketch in JavaScript. The script will be included either in `<script>` tags with your `.html` file or in a separate `.js` file.
 5. Load the `.html` file in a browser to see it run.
 
 This process is detailed in the [p5.js Get Started guide](https://p5js.org/get-started/).
@@ -96,7 +96,7 @@ This process is detailed in the [p5.js Get Started guide](https://p5js.org/get-s
 
 1. Always Read your Error Messages
 
-   Once you are up and running be sure to open the Javascript console to see error messages and debugging information. In Chrome you can open the console with the `View » Developer » JavaScript Console` menu or by pressing `command-option-j`. When something goes wrong with your code, Chrome tries to help by providing error messages in the console. Sometimes these messages are not very clear, but they are always more helpful than nothing.
+   Once you are up and running be sure to open the JavaScript console to see error messages and debugging information. In Chrome you can open the console with the `View » Developer » JavaScript Console` menu or by pressing `command-option-j`. When something goes wrong with your code, Chrome tries to help by providing error messages in the console. Sometimes these messages are not very clear, but they are always more helpful than nothing.
 
    Keep the console open all of the time.
 
@@ -110,7 +110,7 @@ This process is detailed in the [p5.js Get Started guide](https://p5js.org/get-s
 
 4. Use a Code Formatter
 
-   When your code is well formatted it is easier to read and it is easier to spot mistakes. A code formatter will keep your code consistently formated completely automatically, giving you this benefit without any extra effort.
+   When your code is well formatted it is easier to read and it is easier to spot mistakes. A code formatter will keep your code consistently formatted completely automatically, giving you this benefit without any extra effort.
 
 <!--
 ### The Comp Form p5.js Template Project
