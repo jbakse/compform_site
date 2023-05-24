@@ -13,7 +13,7 @@
 - artist: Roni Cantor
   title: Programmed Plotter Drawings, 2020
   image: https://p5js.org/assets/img/showcase/roni-cantor/roni-cantor_plotter-turquoise.jpg
-  comments: Roni used the p5.js <code>sin()</code> and <code>lerp()</code> functions to create wave forms that were then drawn with a plotter and pens.
+  comments: Roni used the p5.js <code>sin()</code> and <code>lerp()</code> functions to create waveforms that were then drawn with a plotter and pens.
   links:
     - label: Programmed Plotter Drawings
       href: https://p5js.org/showcase/featuring/roni-cantor.html
