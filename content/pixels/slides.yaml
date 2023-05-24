@@ -17,7 +17,7 @@
 - artist: Camille Utterback
   title: Visual Resolve, 2000
   image: ./slides/camille_utterback.jpg
-  comments: Visual Resolve creates a mosiac rendering of an incoming video feed.
+  comments: Visual Resolve creates a mosaic rendering of an incoming video feed.
   links:
     - label: Visual Resolve
       href: http://camilleutterback.com/projects/visual-resolve/
