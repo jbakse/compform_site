@@ -73,6 +73,21 @@ Independent chapters exploring specific procedural generation tools, languages, 
 
 </div>
 
+## More Resources
+
+<div class="nav-wrap">
+
+Additional resources for learning about computational form.
+
+<nav>
+
+[**Comp Form Videos** Code Reviews and Tutorials](https://www.youtube.com/channel/UCvUZXTGGAmIwb9sek1oP0RA)
+
+[**External Links** Books, Videos, More](./resources)
+
+</nav>
+</div>
+
 ## Class Resources
 
 <div class="nav-wrap">
@@ -127,21 +142,6 @@ Spring 2017
 Spring 2016
 : [Class Notes](http://psam3060-d-s16.github.io/class_notes/)
 : [Sketch Book](http://compform.tumblr.com/)
-
-</nav>
-</div>
-
-## More Resources
-
-<div class="nav-wrap">
-
-Additional resources for learning about computational form.
-
-<nav>
-
-[**Comp Form Videos** Code Reviews and Tutorials](https://www.youtube.com/channel/UCvUZXTGGAmIwb9sek1oP0RA)
-
-[**External Links** Books, Videos, More](./resources)
 
 </nav>
 </div>
