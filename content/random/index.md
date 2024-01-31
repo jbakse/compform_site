@@ -590,7 +590,7 @@ Kasimir Malevich, Mark Rothko, Piet Modrian, and Anni Albers all worked with bas
 
 ### Pair Challenge: Deck
 
-Working with a partner, create a sketch that generates random images. ALL random images should be generated using the deck tactic discussed above. Work together in the same (real or virtual) place and time on the same code.
+Working with a partner, create a sketch that generates random drawings. ALL random values should be generated using the deck tactic discussed above. You can copy the deck code right from the example. Work together in the same (real or virtual) place and time on the same code.
 
 </div>
 
