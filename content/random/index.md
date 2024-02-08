@@ -62,10 +62,10 @@ Plain Javascript provides `Math.random()` to generate a random number.
 `Math.random()` always gives you a value between 0 and 1. If you want a different range, you can scale and offset the value yourself:
 
 ```javascript
-random() * range + start;
+Math.random() * range + start;
 
 // e.g. even distribution between [10 and 15)
-random() * 5 + 10;
+Math.random() * 5 + 10;
 ```
 
 ### Random Integers
