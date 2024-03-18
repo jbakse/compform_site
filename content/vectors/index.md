@@ -33,7 +33,7 @@ The Pixel Data chapter discusses working directly with **pixels**, the fundament
 
 </div>
 
-SVG files are fairly easy to read and write. One way to get started with vector drawing and code is to write SVG directly by hand and then view them in software like Illustrator or Figma. While this works, SVG is more of an interchange format and isn't really intended for hand coding. In particular, SVG is declarative and doesn't have the imperative control structures—like `if` conditionals and `for` loops—you would may be used to from languages like Javascript.
+SVG files are fairly easy to read and write. One way to get started with vector drawing and code is to write SVG directly by hand and then view them in software like Illustrator or Figma. While this works, SVG is more of an interchange format and isn't really intended for hand coding. In particular, SVG is declarative and doesn't have the imperative control structures—like `if` conditionals and `for` loops—you may be used to using in languages like Javascript.
 
 In this chapter the code examples will use Paper.js, a library for working with vector drawing in Javascript. With Paper.js, you have the full power of Javascript running in a browser and can export SVG files to work with them in other programs.
 
