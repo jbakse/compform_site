@@ -175,7 +175,7 @@ The modulo operator—`%`—is great for breaking time into repeated chunks or m
 
 {% js-lab "sketches/metronome_modulo.js" %}
 
-The interesting work is done on line 20:
+The interesting work is done on line 19:
 
 ```javascript
 const red = map(millis() % 500, 0, 300, 255, 0, true);
