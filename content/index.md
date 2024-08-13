@@ -98,6 +98,10 @@ Syllabi, schedules, and lesson plans for the Computational Form class.
 
 [**Introduction** About the Course](./introduction)
 
+Fall 2024
+: [Class Notes](https://www.notion.so/Comp-Form-F24-d4cc3204a2674dba902b30c1b8f76b6d)
+: [Sketch Book](https://sketches2024fall.compform.net/)
+
 Spring 2024
 : [Class Notes](https://www.notion.so/Comp-Form-S24-a82d9c7b3ae74d52a0a6f9bc80de367a)
 : [Sketch Book](https://sketches2024spring.compform.net/)
