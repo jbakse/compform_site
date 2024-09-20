@@ -14,7 +14,7 @@ software: p5.js
 
 ## Computational Form + Strategies + Tactics
 
-> Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.
+> Strategy without tactics is the slowest route to victory. Tactics without strategy are the noise before defeat.
 >
 > [Probably not Sun Tzu](https://en.wikiquote.org/wiki/Sun_Tzu){attrib}
 
@@ -24,7 +24,7 @@ canvas {
 }
 </style>
 
-So far we've been looking at low-level topics like how to use—and get the most from—`random()` and `noise()`. In the chapter, the focus is on the high-level structure of a program. To create more complex systems you must develop a clear understanding of your goal and create a plan to achieve that goal, divide that plan into sub-problems ([decomposition](<https://en.wikipedia.org/wiki/Decomposition_(computer_science)>)) and create code to solve those sub-problems ([implementation](https://en.wikipedia.org/wiki/Implementation)).
+So far we've been looking at low-level topics like how to use—and get the most from—`random()` and `noise()`. In the chapter, the focus is on the high-level structure of a program. To create more complex systems you must develop a clear understanding of your goal and create a plan to achieve that goal, divide that plan into sub-problems ([decomposition](<https://en.wikipedia.org/wiki/Decomposition_(computer_science)>)), and create code to solve those sub-problems ([implementation](https://en.wikipedia.org/wiki/Implementation)).
 
 When planning and coding a project, I tend to think in terms of _strategies_ and _tactics_.
 
@@ -48,9 +48,9 @@ _Primitives are atomic: they are the smallest units of composition and are not f
 
 <div class="callout">
 
-If you are already familiar with the idea of _design patterns_, my use of the term _tactics_ will sound familiar. The book [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.oreilly.com/library/view/design-patterns-elements/0201633612/) largely popularized design patterns, and describes them as "descriptions of simple and elegant solutions to specific problems in object oriented software design" and notes that that "point of view affects one's interpretation of what is and isn't a pattern."
+If you are already familiar with the idea of _design patterns_, my use of the term _tactics_ will sound familiar. The book [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.oreilly.com/library/view/design-patterns-elements/0201633612/) largely popularized design patterns, and describes them as "descriptions of simple and elegant solutions to specific problems in object-oriented software design" and notes that that "point of view affects one's interpretation of what is and isn't a pattern."
 
-I am using the term _tactics_ to talk broadly about reusable approaches to solving reoccuring coding problems and tasks. Design patterns would fall into this category, as would smaller and larger ideas that others may not think of as patterns.
+I am using the term _tactics_ to talk broadly about reusable approaches to solving recurring coding problems and tasks. Design patterns would fall into this category, as would smaller and larger ideas that others may not think of as patterns.
 
 </div>
 
@@ -86,7 +86,7 @@ These tactics are all common in physics simulation and they all have established
 
 Tactics can range from very simple—like using the average of two `random()` calls to center bias the result—to complex—linear congruential generators, noise generation, Brownian motion, L-systems, neural nets, turtles, Markov chains, Poisson-disc sampling, particle systems, fractals, meta-balls. We've seen some of these already and will explore others in the course of this class.
 
-In this chapter we'll examine some tactics for a very common problem in procedural generation: arranging points on a square.
+In this chapter, we'll examine some tactics for a very common problem in procedural generation: arranging points on a square.
 
 <!--
 [[Compostion]]
@@ -179,7 +179,7 @@ Analyze each of the examples below. Carefully consider their similarities and di
 - What characteristics could be used to group similar examples?
 - What applications might each placement pattern have?
 - How could you group the examples?
-- Are there multiple grouping that would make sense?
+- Are there multiple groupings that would make sense?
 
 ![overview](figures/pp_tall.png){scale wide}
 
@@ -248,9 +248,9 @@ y = noise(i * frequency, 1000) * h;
 
 <div class="three-up">
 
-![noise placement](figures/noise_low.png)low frequency sampling
+![noise placement](figures/noise_low.png)low-frequency sampling
 
-![noise placement](figures/noise_high.png)high frequency sampling
+![noise placement](figures/noise_high.png)high-frequency sampling
 
 </div>
 
@@ -302,7 +302,7 @@ This technique allows mixing of handmade and procedural design.
 
 </div>
 
-This tactic is used for map generation in many rogue-lite videogames, which create random layouts of hand-designed rooms.
+This tactic is used for map generation in many rogue-lite video games, which create random layouts of hand-designed rooms.
 
 ### Moving the Points
 
@@ -328,7 +328,7 @@ y = y + random() * height;
 Displace each point by an amount determined by a noise lookup.
 
 - This technique allows for more control over displacement.
-- This is also a good way to "roughen" up grid placement, but creates more a natural effect.
+- This is also a good way to "roughen" up grid placement, but creates more of a natural effect.
 
 ```javascript
 x = x + noise(i * frequency, 0) * amount;
@@ -389,7 +389,7 @@ What tactics might have been used to get each result below?
 | Noise Placment  | Noise Displacement      |
 | Grid Placment   | Relaxation Displacement |
 | Proximity Cull  | Noise Cull              |
-| Stamp Placment  | &nbsp;                  |
+| Stamp Placement | &nbsp;                  |
 
 ![overview](figures/pp_tall.png){scale}
 
@@ -415,7 +415,7 @@ This code implements the tactics described above, and demonstrates the effect of
 
 ### Basic Grid Placement
 
-This example places dots on a grid using a nested loops. This is a very common and reusable tactic in generative coding, and well worth studying until you understand it completely.
+This example places dots on a grid using a nested loop. This is a very common and reusable tactic in generative coding, and is well worth studying until you understand it completely.
 
 {% js-lab "sketches/grid_basic.js" %}
 
@@ -427,7 +427,7 @@ This example places 100 dots at random positions. This is a simple starting poin
 
 ### Stored Grid Placement
 
-Like the _Basic Grid Placement_ example above, this example places dots on a grid. Rather than drawing immediately, this example stores the locations as an array of simple data objects `[{x: ?, y: ?}, {x: ?, y: ?}, ...]` and draws them seperately. This allows the code to seperate concerns—placing and drawing—and is a better foundation for multistep, iterative, and interactive effects.
+Like the _Basic Grid Placement_ example above, this example places dots on a grid. Rather than drawing immediately, this example stores the locations as an array of simple data objects `[{x: ?, y: ?}, {x: ?, y: ?}, ...]` and draws them separately. This allows the code to separate concerns—placing and drawing—and is a better foundation for multistep, iterative, and interactive effects.
 
 {% js-lab "sketches/grid_stored.js" %}
 
@@ -455,7 +455,7 @@ Explore this chapter's example code by completing the following challenges.{intr
 ### Modify the Stored Grid Placement Example
 
 1. Add a random offset to the position of each circle. `•`
-1. Change setup code to use random placement to place 100 points. `•`
+1. Change the setup code to use random placement to place 100 points. `•`
 1. This example doesn't need `noLoop()`. Why? `••`
 1. Draw about 75% of the points as trees and 25% as snowmen. `••`
 1. For each `draw()` frame, move the snowmen a random step left, up, right, or down. `•••`
@@ -482,7 +482,7 @@ When designing a procedural generation system there are several properties to co
 ### Controllability
 
 - Does your program expose any user parameters?
-- Do you want explore the parameter space manually?
+- Do you want to explore the parameter space manually?
 - Do you want to have tight control over the results or should everything work automatically?
 
 ### Expressivity and Diversity
@@ -506,9 +506,9 @@ When designing a procedural generation system there are several properties to co
 
 ## Take Home Challenge
 
-This is the last chapter of the "Foundation" section. The challenges in the chapters so far—random, noise, parameters—have been open ended. They suggested general themes, but left the specifics up to you.
+This is the last chapter of the "Foundation" section. The challenges in the chapters so far—random, noise, parameters—have been open-ended. They suggested general themes, but left the specifics up to you.
 
-The challenges this week are much more specific, challenging you to recreate a specific effect. Recreating existing effects presents different challenges than open ended sketching, and forces you to contend directly with any problems you run into. Both this type of work and open ended exploration are good ways to study creative coding and mixing them is particulary effective.
+The challenges this week are much more specific, challenging you to recreate a specific effect. Recreating existing effects presents different challenges than open-ended sketching, and forces you to contend directly with any problems you run into. Both this type of work and open-ended exploration are good ways to study creative coding and mixing them is particularly effective.
 
 Solving these two challenges will require strategic planning:
 
