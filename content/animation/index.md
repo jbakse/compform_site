@@ -4,15 +4,15 @@ layout: compform_chapter.pug
 
 image: /animation/images/og_image.png
 hero_title: Animation
-description: Procedural methods are often used to describe motion in animations. In both pre-rendered and real-time animations, an understanding of frame rate and timing are crucial for generating moving images.
+description: Procedural methods are often used to describe motion in animations. In both pre-rendered and real-time animations, an understanding of frame rate and timing is crucial for generating moving images.
 software: p5.js
 ---
 
 ## Animation
 
-Animation introduces intereresting creative potential because it includes the dimension of time. Because animations live in time, they excel at depicting actions, showing cause and effect, expressing narrative arcs, and telling stories.
+Animation introduces interesting creative potential because it includes the dimension of time. Because animations live in time, they excel at depicting actions, showing cause and effect, expressing narrative arcs, and telling stories.
 
-An animation is a series of still frames be shown in very quick succession; a few seconds of animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. At its heart, a procedurally-generated animation is just a series of procedurally-generated images. Creating an animation with code is similar to coding a still image, but with additional instructions to express how the image will change over time.
+An animation is a series of still frames shown in very quick succession; a few seconds of animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. At its heart, a procedurally-generated animation is just a series of procedurally-generated images. Creating an animation with code is similar to coding a still image, but with additional instructions to express how the image will change over time.
 
 {% slides %}
 {% include slides.yaml %}
@@ -20,25 +20,25 @@ An animation is a series of still frames be shown in very quick succession; a fe
 
 ## Real-time vs. Pre-rendered
 
-In **pre-rendered** animations, all the frames in an animation are created ahead of time and then played back seperately. In **real-time** animations, the frames are created as they are shown.
+In **pre-rendered** animations, all the frames in an animation are created ahead of time and then played back separately. In **real-time** animations, the frames are created as they are shown.
 
 Real-time rendering for animation needs to be done quickly. To render an animation at 30 frames per second, each frame must be generated in 33 milliseconds or less. In exchange for limiting how much time can be spent rendering each frame, we gain a huge benefit. Real-time animation can react to information—including user input—that is not known ahead of time. This allows real-time animation to be _interactive_.
 
-But pre-rendering provides its own huge benefit. Limiting the time spent rendering each frame often means compromising on the quality or complexity of the animation. When creating a pre-rendered animation, one can take as long as necessary to create each frame, allowing for high complexity and quality. Individual frames in high-end animated films often take hours or even days to render, but they look better as a result.
+But pre-rendering provides its own huge benefit. Limiting the time spent rendering each frame often means compromising the quality or complexity of the animation. When creating a pre-rendered animation, one can take as long as necessary to create each frame, allowing for high complexity and quality. Individual frames in high-end animated films often take hours or even days to render, but they look better as a result.
 
 ### Frames Per Second
 
-Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of frames as independent images. Above 10, we begin to perceive a series of frames as a single image in motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are helpful in some cases like e-sports and virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second. VR scenes must be rendered twice—once for each eye—and in realtime, so each frame must be rendered in about 5 milliseconds.
+Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of frames as independent images. Above 10, we begin to perceive a series of frames as a single image in motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are helpful in some cases like e-sports and virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second. VR scenes must be rendered twice—once for each eye—and in real time, so each frame must be rendered in about 5 milliseconds.
 
-Take a look at the metronomes below to get a feel for how framerate coresponds to smoothness. They are are animated at 5, 15, 30, and 60 frames per second.
+Take a look at the metronomes below to get a feel for how framerate corresponds to smoothness. They are animated at 5, 15, 30, and 60 frames per second.
 
 {% js-lab "sketches/metronome_fps.js" %}
 
-### Time Keeping
+### Timekeeping
 
-Time keeping is essential to generating animation. Time is the foundation for sequencing, pace, rhythm, and speed. Choosing an appropriate method for keeping time is an important step to getting the results you want.
+Timekeeping is essential to generating animation. Time is the foundation for sequencing, pace, rhythm, and speed. Choosing an appropriate method for keeping time is an important step to getting the results you want.
 
-Real-time animation is computed at the same rate it is shown. In real-time rendering the render time and display time are linked. Something drawn four seconds after rendering begins is seen four seconds after the animation begins. Rendering a frame faster than needed is fine: the application can simply wait to display it. If rendering the frame takes too long, however, frames will be dropped. The frame rate will dip and animation will become choppy.
+Real-time animation is computed at the same rate it is shown. In real-time rendering the render time and display time are linked. Something drawn four seconds after rendering begins is seen four seconds after the animation begins. Rendering a frame faster than needed is fine: the application can simply wait to display it. If rendering the frame takes too long, however, frames will be dropped. The frame rate will dip and the animation will become choppy.
 
 Pre-rendered animation is computed at a different rate—probably much slower, but maybe faster—than it is displayed. The render time and display time are not linked. A frame seen four seconds into an animation may have been drawn several hours into the rendering job that created it.
 
@@ -95,7 +95,7 @@ The example below swings the pendulum **once per second** using `millis()` as th
 
 For pre-rendered animation, we want to base our animation on the current frame, regardless of the time elapsed. We don't care how long the frames take to render because we know we will play them back at the correct rate.
 
-The example below swings the pendulum **once per 30 frames** using `frameCount` as the time base. It is rendering _faster_ than the intended playback rate. If you slow the frame rate down with the slider, the rendering slows down. But when you export the frames and playe them back at 30fps the pendulum will swing at a steady one swing per second.
+The example below swings the pendulum **once per 30 frames** using `frameCount` as the time base. It is rendering _faster_ than the intended playback rate. If you slow the frame rate down with the slider, the rendering slows down. But when you export the frames and play them back at 30fps the pendulum will swing at a steady one swing per second.
 
 {% js-lab "sketches/metronome_pre_rendered.js" %}
 
@@ -103,7 +103,7 @@ The example below swings the pendulum **once per 30 frames** using `frameCount` 
 
 ### Timed Events
 
-Imagine you want something to happen in your animation 10 seconds after it starts in your realtime animation. It is pretty likely that your event will happen between frames, so a simple equality check won't work.
+Imagine you want something to happen in your animation 10 seconds after it starts in your real-time animation. Your event will likely happen between frames, so a simple equality check won't work.
 
 <div class="bad">
 
@@ -240,7 +240,7 @@ function saveFrame(name, frameNumber, extension, maxFrame) {
 If you are exporting frames, keep in mind that p5.js automatically uses a higher resolution on retina displays, and this is the resolution at which `save()` will export. You can use `pixelDensity(1);` before your `createCanvas()` call to disable this.
 </div>
 
-There are many applications that can take a sequence of frames and stitch them into a video. [FFmpeg](https://www.ffmpeg.org/) is a powerful command line utility for this and other video tasks. FFmpeg is a good choice for automated/back-end workflows. [After Effects](https://www.adobe.com/products/aftereffects.html) is a good choice if you are going to use the animation as part of a larger animated composition.
+Many applications can take a sequence of frames and stitch them into a video. [FFmpeg](https://www.ffmpeg.org/) is a powerful command line utility for this and other video tasks. FFmpeg is a good choice for automated/back-end workflows. [After Effects](https://www.adobe.com/products/aftereffects.html) is a good choice if you are going to use the animation as part of a larger animated composition.
 
 You can even stitch images in [Photoshop](https://www.adobe.com/products/photoshop.html):
 
@@ -254,11 +254,11 @@ You can even stitch images in [Photoshop](https://www.adobe.com/products/photosh
 
 ### Clouds
 
-This example uses a particle effect to generate an animation of a cloud forming and dissipating. It animates 5000 particles, and can't run in realtime (at least not on my computer).
+This example uses a particle effect to generate an animation of a cloud forming and dissipating. It animates 5000 particles, and can't run in real time (at least not on my computer).
 
 {% js-lab "sketches/save_frames.js" %}
 
-Here is a video created from the frames exported by the example above. The frames were stiched in Photoshop.
+Here is a video created from the frames exported by the example above. The frames were stitched in Photoshop.
 
 <div class="wide">
 
@@ -331,10 +331,10 @@ Explore this chapter's example code by completing the following challenges.{intr
 
 1. Drawing a lot of transparent ellipses can be processor intensive.\
    What framerate does the fuzz example run at on your computer? `•`
-1. Increase the the loop count from 100 to 1000.\
+1. Increase the loop count from 100 to 1000.\
    How does that impact the drawing?\
    How does that impact the framerate? `•`
-1. Increase the the loop count (again) from 1000 to 10000.\
+1. Increase the loop count (again) from 1000 to 10000.\
    How does that impact the drawing?\
    How does that impact the framerate? `•`
 1. Export 60 frames of this animation and turn them into a 30 fps video.\
@@ -364,7 +364,7 @@ Create a three-second bumper for this site, Computational Form. The bumper shoul
 - have a clear progression: beginning, middle, end.
 - feature either the text “Compform” or “Computational Form”.
 - consider including the five-triangle "Sierpinski" icon.
-- consider adding music or sound in post production.
+- consider adding music or sound in post-production.
 <!-- - Consider submitting multiple takes on this challenge -->
 
 Bumper Examples:
