@@ -1,14 +1,14 @@
-- artist: zzyw (Yang Wang and Zhenzhen Qi)
-  title: LENNA, 2017
-  image: https://www.zzyw.org/wp-content/uploads/2020/04/yw_tcm_36-scaled.jpg
-  comments: This algorithmic system creates designs that follow the visual principles of Swiss Style.
-  links:
-    - label: LENNA
-      href: https://www.zzyw.org/lenna/
-      subtitle: Project Page
-    - label: zzyw.org
-      href: https://zzyw.org
-      subtitle: Artist Site
+# - artist: zzyw (Yang Wang and Zhenzhen Qi)
+#   title: LENNA, 2017
+#   image: https://www.zzyw.org/wp-content/uploads/2020/04/yw_tcm_36-scaled.jpg
+#   comments: This algorithmic system creates designs that follow the visual principles of Swiss Style.
+#   links:
+#     - label: LENNA
+#       href: https://www.zzyw.org/lenna/
+#       subtitle: Project Page
+#     - label: zzyw.org
+#       href: https://zzyw.org
+#       subtitle: Artist Site
 
 - artist: Talia Cotton (with Pentagram)
   title: Central Park Typestester, 2021

@@ -18,7 +18,7 @@ We use the word _random_ to mean an hodgepodge of related ideas. Depending on co
 
 <div class="sidebar link-box">
 
-[**_Instructions..._** Interactive Demo](http://www.buschs.de/Mozart/Mozart.html)
+[**_Instructions..._** Interactive Demo](http://www.buschs.de/Mozart/)
 
 [**_Instructions..._** Original Score](<https://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)#IMSLP20432>)
 
@@ -62,10 +62,10 @@ Plain Javascript provides `Math.random()` to generate a random number.
 `Math.random()` always gives you a value between 0 and 1. If you want a different range, you can scale and offset the value yourself:
 
 ```javascript
-random() * range + start;
+Math.random() * range + start;
 
 // e.g. even distribution between [10 and 15)
-random() * 5 + 10;
+Math.random() * 5 + 10;
 ```
 
 ### Random Integers
@@ -590,7 +590,7 @@ Kasimir Malevich, Mark Rothko, Piet Modrian, and Anni Albers all worked with bas
 
 ### Pair Challenge: Deck
 
-Working with a partner, create a sketch that generates random images. ALL random images should be generated using the deck tactic discussed above. Work together in the same (real or virtual) place and time on the same code.
+Working with a partner, create a sketch that generates random drawings. ALL random values should be generated using the deck tactic discussed above. You can copy the deck code right from the example. Work together in the same (real or virtual) place and time on the same code.
 
 </div>
 

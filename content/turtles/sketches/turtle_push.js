@@ -9,7 +9,7 @@ function setup() {
   stroke(255);
   background(50);
   noLoop();
-
+  angleMode(DEGREES);
   myTurtle = new Turtle();
 }
 

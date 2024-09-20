@@ -10,6 +10,7 @@ function preload() {
 
 function setup() {
   createCanvas(500, 500);
+  angleMode(DEGREES);
   myTurtle = new Turtle();
 }
 

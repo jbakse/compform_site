@@ -74,7 +74,7 @@ Both `random()` and `noise()` provide a source of variation, but `noise()` provi
 
 This example draws a big circle, and a line of smaller circles. Variation is created with the `random()` function, which allows control over the amount of variation, and global (and fragile) repeatability via the random seed.
 
-{% js-lab "sketchesÆ/sketch_random/sketch.js" %}
+{% js-lab "sketches/sketch_random/sketch.js" %}
 
 #### Noise(x)
 
@@ -139,10 +139,10 @@ Many noise functions are multidimensional. The noise function in most programmin
 
 The `noise()` function models an infinite cloud of predetermined random values. When you call `noise(x)`, you are asking for the value in the cloud at the coordinate `x`. To create a noise function you need to build two things:
 
-1. a way to associate a random values with each integer coordinate in the cloud
+1. a way to associate random values with each integer coordinate in the cloud
 2. a way to interpolate between these values if fractional coordinates are requested.
 
-Different noise functions sove these problems in different ways.
+Different noise functions solve these problems in different ways.
 
 <div class="activity">
 
@@ -209,7 +209,7 @@ n = noise(frameCount) * 10 + 10;
 You could also use `map()`:
 
 ```javascript
-// map noise(frameCount) fromt he range [0,1) to the range [10 to 20)
+// map noise(frameCount) from the range [0,1) to the range [10 to 20)
 n = map(noise(frameCount), 0, 1, 10, 20);
 ```
 
