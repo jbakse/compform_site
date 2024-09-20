@@ -21,8 +21,3 @@ npm run start
 | build:mkdir   | recreates the `_site` directory                    |
 | build:sass    | compiles sass to css                               |
 | build:11ty    | uses eleventy to build site content                |
-
-### Staging
-
-Staging on Netlify
-[newcompform.netlify.app](https://newcompform.netlify.app/)
