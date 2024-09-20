@@ -15,9 +15,9 @@ software: p5.js + p5.dom
 >
 > Charles Eames, Design Q&A [Transcript](http://www.markwunsch.com/eames.html) [Video](https://www.youtube.com/watch?v=bmgxDCujTUw&feature=emb_logo){attrib}
 
-This is a class about computational form, algorithmic images, generative art, parametric design, and procedural generation. In this class, we will explore a creative process in which form is made indirectly, by creating and then following a defined processes. We will write instructions that a computer will follow to create images, animations, sounds, and sculptures.
+This is a class about computational form, algorithmic images, generative art, parametric design, and procedural generation. In this class, you will explore a creative process in which forms are created indirectly, by first creating and then following specific processes. You will write instructions that a computer will follow to create images, animations, sounds, and sculptures.
 
-We will make things that make things.
+You will make things that make things.
 
 There are many reasons artists and designers employ algorithmic methods. Some important ones include:
 
@@ -39,7 +39,7 @@ include('./compform_slides.yaml')
 
 ### What Computational Form is Not
 
-While we use computer programming throughout this class, it is important to understand that procedural generation doesn't require a computer. Procedural generation is about defining instructions, systems, and processes that create form. Computers are very useful tools for carrying out these instructions, but artists have also built systems that rely on humans or purpose-built machines instead.
+While we use computer programming throughout this class, it is important to understand that procedural generation doesn't require a computer. Procedural generation is about defining instructions, systems, and processes that create form. Computers are very useful tools for carrying out such instructions, but artists have also created systems that rely on humans or purpose-built machines instead.
 
 <!-- Many of the works included in the slideshow above embody principles of computation and instruction without using computers. -->
 
@@ -69,7 +69,7 @@ Yes, these instructions will go on forever. I'll interrupt you in a minute.
 
 ## About this Class
 
-In this class, we will make things that make things. We will **explore** a variety of programming languages, tools, and methods. We will **create** a variety of forms: graphics, sounds, videos, animations, even 3D-printed objects. The primary goals of this class are to introduce **new ways of making** and to encourage **aesthetic investigation**.
+In this class, you will make things that make things. You will **explore** a variety of programming languages, tools, and methods. You will **create** a variety of forms: graphics, sounds, videos, animations, even 3D-printed objects. The primary goals of this class are to introduce **new ways of making** and to encourage **aesthetic investigation**.
 
 ![Make Things that Make Things](./figures/make_things.png){wide}
 
@@ -101,9 +101,9 @@ That said, this class offers a good deal of flexibility. If you are not sure if 
 
 ### Class Format + Homework
 
-This semester the class will be held online. We will meet every week for the full class time, and each class will be packed. Zoom lectures are boring and tiring. To maximize our time together, most class time will be used for hands-on activities, group breakouts, and interactive Q+A and livecoding.
+This semester the class will be held online. We will meet every week for the full class time, and each class will be packed. Long Zoom lectures are boring and tiring. To maximize our time together, most class time will be used for hands-on activities, group breakouts, and interactive Q+A and livecoding.
 
-Each class introduces a new topic or tool. You will prepare with an advanced reading and coding challenge. In class we will review sketches, discuss the reading and challenges, and complete hands-on activities in groups. After each meeting you will create daily sketches exploring the weeks themes.
+Each week will focus on a new topic or tool. Before the class meeting, you will prepare by studying a chapter from this website and completing small coding challenges. In class, we will discuss the reading and challenges and complete hands-on activities in groups. After each meeting you will create a series of four "code sketches" exploring the week's themes, which we will review in the next class.
 
 This sketching process is central to the approach of the class. There are NO long term projects in this class. No midterm project, no final project. Just sketching.
 
@@ -111,9 +111,9 @@ This sketching process is central to the approach of the class. There are NO lon
 
 ![This not That](figures/this_not_that.png){wide}
 
-## Notes on Daily Sketching
+## Notes on Sketching
 
-Your goal **each day** should be to explore a different aspect of the weekly theme. Ideally, you will spend **1 to 2 hours on an idea**, resulting in an image or other artifact. Each day you will work on **a new idea**, possibly informed by something you did earlier in the week or class. This is an unusual homework format. You probably have some questions.
+Each week you will create 4 "sketches" in code. These are small computer programs that generate form. Your goal for **each sketch** should be to explore a different aspect of the weekly theme. Ideally, you will spend **1 to 2 hours on a sketch**, resulting in an image or other artifact. One to two hours isn't enough time for a full project. You don't need to do any formal research or ideation. Your scope can be very small. Your progams don't even need to always work. Try something out, post your results, rest, repeat. This is an unusual homework format. You probably have some questions...
 
 ### Frequently Asked Questions
 
@@ -124,17 +124,17 @@ Your goal **each day** should be to explore a different aspect of the weekly the
 
 Do I have to post something _every single day_? {q}
 
-Not quite. In spirit this assignment format combines daily practice with flexibility. Each week you should post ~~five~~ four sketches exploring the weekly theme in a variety of ways. This is considered `A` work.
+Not quite. In spirit this assignment format combines daily practice with flexibility. Each week you should post four sketches exploring the weekly theme in a variety of ways. Ideally you will complete each sketch on a different day, spacing them out over the week.
 
 <!-- Normally I require 5 skeches each week. I'm reducing this to four because I'm going to be assigning a weekly advanced reading and coding challenge to fit the online class format.{callout} -->
 
-What if I miss a day? {q}
+What if I miss a few days? {q}
 
-That is fine, spend more time on another day and post twice.
+That is fine, you can post two in a row to catch up.
 
-Can I spend, say, 8 hours all in one day? Maybe I'll pull an all-nighter. {q}
+Can I spend 6 hours all in one day and do them all at once? Maybe I'll pull an all-nighter. {q}
 
-Don't do that. This process is about exploring different ideas. Spacing out your work gives you time to think and reflect. Creativity often comes in the space between actions.
+Don't do that. It won't work as well; you won't learn as much. This process is about exploring different ideas. Spacing out your work gives you time to think and reflect. Creativity often comes in the space between actions.
 
 How long should I spend on a sketch? {?}
 
@@ -142,11 +142,15 @@ Between 1 and 2 hours. Ideally 90 minutes.
 
 What if I make something I like in 15 minutes? {q}
 
-Post it! We want to see it. Then keep working, use the full time. Post again. One sketch; two posts.
+Post it! We want to see it. Then keep working, use the full time, and then add your final result to the post also.
 
 What if I work for two hours and I'm not done or I don't really like what I've made? {q}
 
-Post it! Then stop working. Part of the value of sketching is that you can stop before you get stuck of frustrated. Try something different tomorrow.
+Post it! Then stop working. Part of the value of sketching is that you can stop. You can stop before you burn a lot of time stuck or frustrated. Just set it aside. Try something different tomorrow.
+
+What if I'm _never_ able to finish? {q}
+
+Then you are probably trying to make things that are too complex. Try to make something very simple, get a few working sketches under your belt, and then gradually increase the complexity of your ideas.
 
 1 to 2 hours is too short. Can I work longer? {q}
 
@@ -170,11 +174,11 @@ If you have no ideas, review the class notes, look at the sketch site, do some G
 
 I can't get whatever technology we are working on this week to work; my computer is broken; I missed class and I don't know whats going on; I'm just lost this week. What should I do? {q}
 
-Post anyway. Focus on the themes rather than the technology. If the tech isn't working use something else. Most weeks you could make interesting sketches, related to the weekly themes, without even using a computer.
+Sketch anyway. Post anyway. Focus on the themes rather than the technology. If the tech isn't working use something else. Most weeks you can make interesting sketches, related to the weekly themes, without even using a computer.
 
 What about the challenges? Do they count as sketches? {q}
 
-Yes, they do. Each week I'll include an individual and a pair challenge. The challenges are _required_, and each challenge counts towards your weekly sketches and follows the sketching guidelines: spend 1 to 2 hours, its okay if it doesn't work.
+Yes, they do. Each week I'll include an individual and a pair challenge. Trying the challenges is _required_, succeeding is not. Each challenge counts towards your weekly sketches and follows the sketching guidelines: spend 1 to 2 hours, its okay if it doesn't work.
 
 I'm tired of looking at the computer screen. Can I do a couple of posts with paper/paint/glue/wood/whatever? {q}
 
@@ -182,7 +186,7 @@ Absolutely. **I highly recommend that you do!** The more variety between your po
 
 I'm a data vis major. I'm a game design major. I like making websites. I'm interested in dance. Can I make data visualizations/games/websites/dances in this class? {q}
 
-Yes, absolutely! I encourage you to think about how each weekly theme relates to your own interests and practice. It is a great idea to make a sketches that explore those relationships.
+Yes, absolutely! I encourage you to think about how each weekly theme relates to your own interests and practice. It is a great idea to make sketches that explore those relationships.
 
 What about in-class work? Does that count? {q}
 
@@ -192,11 +196,15 @@ Bottom line, how much time do I have to spend on these sketches? {q}
 
 Four sketches per week. 90 minutes per sketch.
 
-Don't put more than 2 hours in on a sketch. If your sketch takes that long it is too complex or too difficult for your current skill level. It is okay to stop at 2 hours even if your sketch is incomplete or broken. Post whatever you have. If you put in the time, you'll get full marks for the sketch.
+Don't put more than 2 hours into a sketch. If your sketch takes that long it is too complex or too difficult for your current skill level. It is okay to stop at 2 hours even if your sketch is incomplete or broken. Post whatever you have. If you put in the time, you'll get full marks for the sketch.
 
 Don't put in less than an hour. Sometimes, you'll make a really nice sketch pretty quickly. If that happens, post it! But keep exploring variations on your idea. If you often get done very quickly, you probably need to work on more challenging sketches.
 
 Four sketches at 90 minutes each is 6 hours. The weekly chapter reading and coding challenges will take one to two hours. Expect to spend about 7 to 8 hours each week on homework for this class.
+
+I'm still worried about this. {q}
+
+That isn't a exactly a question, but it is a very common feeling, especially in the first couple of weeks. After the first too weeks, the structure of the class will feel familiar.
 
 ## Syllabus Notes
 
@@ -204,13 +212,15 @@ Four sketches at 90 minutes each is 6 hours. The weekly chapter reading and codi
 
 Attend every class. This class moves fast. New content is introduced in every meeting. We will have individual or group activities in most if not all meetings. Try not to miss any. Per school policy, you are allowed two absences but you should avoid taking them if you can.
 
-Arrive early. Get to the room early, review the sketches of your fellow students, make sure your av is working. Get yourself mentally settled and ready for class.
+Arrive early. Use a few mintues before class to review the sketches of your fellow students, review the questions on the notion, and make sure your av is working. Get yourself mentally settled and ready for class.
 
 Stay late. After class, take some time to summarize the week's key content in your sketchbook, make note of ideas you'd like to explore in your sketches.
 
-### Be Prepared
+**Arriving early and staying late is advise, not a formal requirement. You are busy and have things to do. But its good advice so adapt it to your schedule as you can.**
 
-Bring your computer + a Comp Form sketchbook + red pen + black pen + pencil + camera/phone to every class.
+<!-- ### Be Prepared
+
+Bring your computer + a Comp Form sketchbook + red pen + black pen + pencil + camera/phone to every class. -->
 
 ### Original Work
 
@@ -220,7 +230,7 @@ All the work you submit for this class should be your own. For the most part you
 
 ## Who I am
 
-I am Justin Bakse. I am an assistant professor of interaction design at Parsons. I am personally very interested in computational form and have used computational methods in a great deal of my work. You can see some of my work below or [on my website](http://justinbakse.com/).
+I am Justin Bakse. I am an associate professor of interaction design at Parsons. I am personally very interested in computational form and have used computational methods in a great deal of my work. You can see some of my work below or [on my website](http://justinbakse.com/).
 
 {% slides %}
 {% include ./justin_slides.yaml %}

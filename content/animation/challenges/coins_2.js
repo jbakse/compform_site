@@ -11,10 +11,10 @@ function draw() {
 
   for (let row = 0; row < 9; row++) {
     for (let col = 0; col < 9; col++) {
-      let x = map(col, 0, 8, 50, 350);
-      let y = map(row, 0, 8, 50, 350);
-      let seconds = millis() / 1000.0;
-      let s = sin(seconds * TWO_PI * (row + 10) * 0.1);
+      const x = map(col, 0, 8, 50, 350);
+      const y = map(row, 0, 8, 50, 350);
+      const seconds = millis() / 1000.0;
+      const s = sin(seconds * TWO_PI * ((row + 10) * 0.1));
       coin(x, y, 30, 30, s);
     }
   }

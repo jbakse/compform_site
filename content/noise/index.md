@@ -26,7 +26,7 @@ What if the `random()` function didn't exist? How could you modify this example 
 
 </div>
 
-Noise functions are an alternative source of random values. Unlike the `random()` function however, noise functions provide related, repeatable, and "good looking" random variation.
+Noise functions are an alternative source of random values. Unlike the `random()` function, however, noise functions provide related, repeatable, and "good-looking" random variation.
 
 There are several common noise functions, each with different characteristics. The most widely known noise function is probably [Perlin Noise](https://en.wikipedia.org/wiki/Perlin_noise), developed by Ken Perlin while working on visual effects for the amazing 1982 motion picture [_Tron_](http://www.imdb.com/title/tt0084827/). Ken later developed a similar but faster version called [simplex noise](https://en.wikipedia.org/wiki/Simplex_noise). Other noise functions include [Worley noise](https://en.wikipedia.org/wiki/Worley_noise), developed by Steven Worley, and the simpler [value noise](https://en.wikipedia.org/wiki/Value_noise).
 
@@ -36,14 +36,14 @@ There are several common noise functions, each with different characteristics. T
 Perlin Noise{scale}
 
 ![Worley Noise](https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Worley.jpg/400px-Worley.jpg)
-Worely Noise{scale}
+Worley Noise{scale}
 
 ![Value Noise](https://upload.wikimedia.org/wikipedia/commons/b/bc/Value_noise_2D.png)
 Value Noise{scale}
 
 </div>
 
-Noise functions provide a "cloud" of random values that can be used in a wide variety of ways. Noise functions are frequently used in procedural texture generation and terrain generation, but their applications are not at all limited to those areas. Noise functions can be thought of as a lookup table of pre-generated random values that can be used in place of `random()` in many cases. Noise functions are particularly well suited to adding small variations to create more natural feeling output.
+Noise functions provide a "cloud" of random values that can be used in a wide variety of ways. Noise functions are frequently used in procedural texture generation and terrain generation, but their applications are not at all limited to those areas. Noise functions can be thought of as a lookup table of pre-generated random values that can be used in place of `random()` in many cases. Noise functions are particularly well suited to adding small variations to create a more natural feeling output.
 
 {% slides %}
 {% include slides.yaml %}
@@ -74,7 +74,7 @@ Both `random()` and `noise()` provide a source of variation, but `noise()` provi
 
 This example draws a big circle, and a line of smaller circles. Variation is created with the `random()` function, which allows control over the amount of variation, and global (and fragile) repeatability via the random seed.
 
-{% js-lab "sketchesÆ/sketch_random/sketch.js" %}
+{% js-lab "sketches/sketch_random/sketch.js" %}
 
 #### Noise(x)
 
@@ -139,7 +139,9 @@ Many noise functions are multidimensional. The noise function in most programmin
 
 The `noise()` function models an infinite cloud of predetermined random values. When you call `noise(x)`, you are asking for the value in the cloud at the coordinate `x`. To create a noise function you need to build two things:
 
+
 1. a way to associate a random value with each integer coordinate in the cloud
+
 2. a way to interpolate between these values if fractional coordinates are requested.
 
 Different noise functions solve these problems in different ways.

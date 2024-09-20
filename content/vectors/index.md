@@ -33,9 +33,11 @@ The Pixel Data chapter discusses working directly with **pixels**, the fundament
 
 </div>
 
-SVG files are fairly easy to read and write. One way to get started with vector drawing and code is to write SVG directly by hand and then view them in software like Illustrator or Figma. While this works, SVG is more of an interchange format and isn't really intended for hand coding. In particular, SVG is declarative and doesn't have the imperative control structures—like `if` conditionals and `for` loops—you would may be used to from languages like Javascript.
 
-In this chapter the code examples will use Paper.js, a library for working with vector drawing in Javascript. With Paper.js, you have the full power of Javascript running in a browser and can export SVG files to work with them in other programs.
+SVG files are fairly easy to read and write. One way to get started with vector drawing and code is to write SVG directly by hand and then view them in software like Illustrator or Figma. While this works, SVG is more of an interchange format and isn't really intended for hand coding. In particular, SVG is declarative and doesn't have the imperative control structures—like `if` conditionals and `for` loops—you may be used to using in languages like Javascript.
+
+
+In this chapter, the code examples will use Paper.js, a library for working with vector drawing in JavaScript. With Paper.js, you have the full power of JavaScript running in a browser and can export SVG files to work with them in other programs.
 
 <!-- [[ recipe vs finished dish? you can go one way, not the other. you can easily remove salt from a recipe, you can't easily remove salt from a dish]] -->
 
@@ -51,7 +53,7 @@ Compare creating scenes using direct mark making vs. cut-out shapes.
 
 ### Setup
 
-Divide class into groups. Give some groups felt and scissors and the other group paper and makers.
+Divide the class into groups. Give some groups felt and scissors and the other group paper and makers.
 
 ### Create
 
@@ -73,8 +75,8 @@ _Groups, 5 minutes_
 
 _Class, 5 minutes_
 
-- What are the benefits to creating the scene from felt?
-- What are the benefits to creating the scene with paper and markers?
+- What are the benefits of creating the scene from felt?
+- What are the benefits of creating the scene with paper and markers?
 - What are the drawbacks to each?
 - What qualities emerge from the two approaches?
 - How would you approach animating this scene using the tools you were given?
@@ -145,9 +147,9 @@ Building a workflow like this, that combines custom coding with manual manipulat
 
 ## Paper.js
 
-This section introduces [Paper.js](http://paperjs.org/), a Javascript vector library developed by [Jürg Lehni](http://lehni.org) and [Jonathan Puckey](http://jonathanpuckey.com).
+This section introduces [Paper.js](http://paperjs.org/), a JavaScript vector library developed by [Jürg Lehni](http://lehni.org) and [Jonathan Puckey](http://jonathanpuckey.com).
 
-> Paper.js is an open source vector graphics scripting framework that runs on top of the HTML5 Canvas. It offers a clean Scene Graph / Document Object Model and a lot of powerful functionality to create and work with vector graphics and bezier curves, all neatly wrapped up in a well designed, consistent and clean programming interface.
+> Paper.js is an open-source vector graphics scripting framework that runs on top of the HTML5 Canvas. It offers a clean Scene Graph / Document Object Model and a lot of powerful functionality to create and work with vector graphics and bezier curves, all neatly wrapped up in a well-designed, consistent, and clean programming interface.
 >
 > [About Paper.js](http://paperjs.org/about/){attrib}
 
@@ -155,7 +157,7 @@ You can find an overview of Paper.js [features](http://paperjs.org/features/), a
 
 ### PaperScript vs. JavaScript
 
-Paper.js is a JavaScript library, and can be used with JavaScript directly or with a special version of Javascript called PaperScript. Paper.js is easier to use with PaperScript, at least for small projects. You can find info on setting up your workspace here: [Working with Paper.js](http://paperjs.org/tutorials/getting-started/working-with-paper-js/)
+Paper.js is a JavaScript library, and can be used with JavaScript directly or with a special version of JavaScript called PaperScript. Paper.js is easier to use with PaperScript, at least for small projects. You can find info on setting up your workspace here: [Working with Paper.js](http://paperjs.org/tutorials/getting-started/working-with-paper-js/)
 
 You can also use PaperScript with this site's code example editor. You can tell the editor you are using PaperScript with a special comment: `// language paperscript`.
 
@@ -165,7 +167,7 @@ Here is an example of a Paper.js program written in PaperScript:
 
 #### Library Exports
 
-In PaperScript, the library contents are exported to the scope of the program and can be accessed directly. If you use Paper.js with Javascript, you will access the library through the `paper` object.
+In PaperScript, the library contents are exported to the scope of the program and can be accessed directly. If you use Paper.js with JavaScript, you will access the library through the `paper` object.
 
 PaperScript:
 
@@ -173,7 +175,7 @@ PaperScript:
 var path = new Path();
 ```
 
-Javascript:
+JavaScript:
 
 ```javascript
 let path = new paper.Path();
@@ -181,7 +183,7 @@ let path = new paper.Path();
 
 #### Operator Overloads
 
-PaperScript lets you use mathematical operators to work with Point and Size objects. You can see this on line 12 in the example above. `circle1Location + new Point(100, 0)` adds two points together by adding their components. `{x: 10, y:10} + {x:5, y:5} = {x: 15, y:15}`. Allowing custom addition procedures for specific types of perators is called _operator overloading_. JavaScript doesn't have operator overloading so you'll have to add each component seperately or use Paper.Point's `add` method.
+PaperScript lets you use mathematical operators to work with Point and Size objects. You can see this on line 12 in the example above. `circle1Location + new Point(100, 0)` adds two points together by adding their components. `{x: 10, y:10} + {x:5, y:5} = {x: 15, y:15}`. Allowing custom addition procedures for specific types of operators is called _operator overloading_. JavaScript doesn't have operator overloading so you'll have to add each component separately or use Paper.Point's `add` method.
 
 PaperScript:
 
@@ -191,7 +193,7 @@ var point2 = new Point(10, 20);
 var result = point1 + point2;
 ```
 
-Javascript:
+JavaScript:
 
 ```javascript
 const point1 = new paper.Point(5, 10);
@@ -201,7 +203,7 @@ const result = point1.add(point2);
 
 #### `Let` and `Const` Do Not Work in PaperScript
 
-Modern Javascript allows you to declare variables with `let` and `const`. PaperScript is based on an older version of Javascript and supports only `var`.
+Modern Javascript allows you to declare variables with `let` and `const`. PaperScript is based on an older version of JavaScript and supports only `var`.
 
 PaperScript:
 
@@ -209,7 +211,7 @@ PaperScript:
 var point1 = new Point(5, 10);
 ```
 
-Javascript:
+JavaScript:
 
 ```javascript
 let point1 = new paper.Point(5, 10);
@@ -217,7 +219,7 @@ let point1 = new paper.Point(5, 10);
 
 ## Retained Mode vs. Immediate Mode
 
-The p5.js library is an _immediate mode_ graphics library. When you call `rect()` or `ellipse()`, p5.js immediately draws the shape to the canvas.
+The p5.js library is an _immediate-mode_ graphics library. When you call `rect()` or `ellipse()`, p5.js immediately draws the shape to the canvas.
 
 Paper.js is a _retained mode_ graphics library. When you call `Path.Rectangle()` or `Path.Ellipse()`, Paper.js creates object instances to represent those shapes and adds them to a _scene graph_. The scene graph is editable: you can add, remove, and reorder shapes in the graph and you change their properties. The shapes in the scene graph are all drawn to the canvas at once, when you are done making changes to it.
 
@@ -287,7 +289,7 @@ Explore this chapter's example code by completing the following challenges.{intr
 
 ![paper_garden](./paper_garden/images/1500.png)
 
-Paper Garden is a program that generates stylized drawings of plants arranged in a wall garden. It is writen in about 300 lines of PaperScript using [Paper.js](http://paperjs.org/). Read the case study to learn about how this program works and explore the code.
+Paper Garden is a program that generates stylized drawings of plants arranged in a wall garden. It is written in about 300 lines of PaperScript using [Paper.js](http://paperjs.org/). Read the case study to learn about how this program works and explore the code.
 
 <div class="link-box">
 
@@ -305,7 +307,7 @@ Explore using Paper.js. Consider using a hybrid workflow: start with code and Pa
 
 ### Challenge: Laser Cut or Pen Plot
 
-Displaying vector art on a pixel-based display, inkjet printer, or laser printer requires rasterization. It is possible, however, to display vector art without rasterizing using a laser cutter or pen plotter. Explore these tools in combination with creative coding by creating a laser cut or pen plotted design in paper.js.
+Displaying vector art on a pixel-based display, inkjet printer, or laser printer requires rasterization. It is possible, however, to display vector art without rasterizing using a laser cutter or pen plotter. Explore these tools in combination with creative coding by creating a laser cut or pen-plotted design in paper.js.
 
 ### Pair Challenge: Vector Swap
 
@@ -342,7 +344,7 @@ A Google AI experiment that interprets sketches, using Paper.js for the draw are
 
 <!-- Currently goes to a gambling site
 [Plumin.js](http://www.pluminjs.com/)
-: Javascript typeface editing using Paper.js.
+: JavaScript typeface editing using Paper.js.
 -->
 
 [**Variable Fonts** Collection](https://v-fonts.com/)
