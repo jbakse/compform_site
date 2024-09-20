@@ -47,7 +47,7 @@ Consider the selected works above.
 
 ## Random Numbers and Dice
 
-Most programming languages provide a function for generating random numbers. Usually the values provided are evenly distributed over the range 0 to 1. Mapping these values to your desired ranges and baising their distribution are fundemental skills.
+Most programming languages provide a function for generating random numbers. Usually, the values provided are evenly distributed over the range 0 to 1. Mapping these values to your desired ranges and biasing their distribution are fundamental skills.
 
 ### Generating Random Numbers
 
@@ -160,9 +160,9 @@ floor(random(1, 6));
 
 ### Biasing the Distribution
 
-The `random()` function produces results that are appoximately [uniformly distributed](https://en.wikipedia.org/wiki/Continuous_uniform_distribution): all values are equally likely.
+The `random()` function produces results that are approximately [uniformly distributed](https://en.wikipedia.org/wiki/Continuous_uniform_distribution): all values are equally likely.
 
-Sometimes, uniform distribution is exactly what you want. If you are randomly choosing who gets go first in a game, all the players should have an equal chance.
+Sometimes, uniform distribution is exactly what you want. If you are randomly choosing who gets to go first in a game, all the players should have an equal chance.
 
 Other times, uniform distribution isn’t what you really want. If you are drawing a forest scene, you might want mostly short trees, some middle-height trees, and only a few very tall trees.
 
@@ -172,7 +172,7 @@ Other times, uniform distribution isn’t what you really want. If you are drawi
 
 </div>
 
-With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results towards the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions is easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in table top rollplaying games without the need for a computer.
+With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results toward the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions is easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in tabletop role-playing games without the need for a computer.
 
 <div class ="activity">
 
@@ -200,7 +200,7 @@ Compare the outcomes of rolling 2 6-sided dice to rolling 1 12-sided die.
 
 #### Uniform Distribution
 
-Generally random functions provide uniform distribution. You don't need to do anything if that is what you want.
+Generally, random functions provide uniform distribution. You don't need to do anything if that is what you want.
 
 ```javascript
 randomInt(1, 10);
@@ -268,7 +268,7 @@ Try `3d10` on [anydice.com](https://anydice.com/program/1437)
 
 <div class="callout">
 
-P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5/randomGaussian) for generating numbers fitting a specific normal distrution with a given mean and deviation. With `randomGaussian()` the possible values have a infinite range but extreme outliers are very rare.
+P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5/randomGaussian) for generating numbers fitting a specific normal distribution with a given mean and deviation. With `randomGaussian()` the possible values have an infinite range but extreme outliers are very rare.
 
 </div>
 
@@ -290,11 +290,11 @@ If you roll the die multiple times, you **might get the same value more than onc
 
 </div>
 
-These types of effects can be counter-intuitive and sometimes aesthetcially undesireable.
+These types of effects can be counter-intuitive and sometimes aesthetically undesirable.
 
 If you roll a normal die six times, it is unlikely—_about a 1.5% chance_—that you’ll get all six values without repeats. You have a pretty good chance—_about 33%_–of not rolling any 1s. You can be pretty sure—_98.5% sure_—that at least one number won’t have appeared after six rolls.
 
-A deck of cards works differently. When you pull cards from a deck, you don't get _random values_ you get _values in a random order_. You avoid duplicates, and you know you will have toured all the values when you reach the end of the deck.
+A deck of cards works differently. When you pull cards from a deck, you don't get _random values_. You get _values in a random order_. You avoid duplicates, and you know you will have toured all the values when you reach the end of the deck.
 
 ### Modeling a Deck with an Array
 
@@ -337,7 +337,7 @@ function valueFromDeck() {
 
 ### Dice Visualizer
 
-This visualizer simulates rolling a 10-sided die. It chooses a random value every time you click and plots a histogram of the results. The expected distribution is uniform. In practice if you roll a few dozen times, you are likely to see some numbers come up much more often than other numbers. After hundreds or thousands of rolls the results should even out.
+This visualizer simulates rolling a 10-sided die. It chooses a random value every time you click and plots a histogram of the results. The expected distribution is uniform. In practice, if you roll a few dozen times, you are likely to see some numbers come up much more often than other numbers. After hundreds or thousands of rolls, the results should even out.
 
 {% js-lab "sketches/dice.js" %}
 
@@ -491,7 +491,7 @@ The following code example sets the random seed to `12` and then generates 3 ran
 
 {% js-lab "sketches/seed.js" %}
 
-If you set a seed you can use random values in your code but get the same results each time you run your program. This can be a useful feature in some programs and can help with debugging problems. For example, Minecraft creates its worlds procedurally. You can provide a seed for the algorithm to use when making random decisions. If start two games with the same seed, you'll get the same world both times.
+If you set a seed you can use random values in your code but get the same results each time you run your program. This can be a useful feature in some programs and can help with debugging problems. For example, Minecraft creates its worlds procedurally. You can provide a seed for the algorithm to use when making random decisions. If you start two games with the same seed, you'll get the same world both times.
 
 Be careful when using a seed with `random()` to get a repeatable sequence. There are at least two common ways for things to get messed up.
 
@@ -523,13 +523,13 @@ This example draws a grid of randomly-sized circles. Try commenting in the diffe
 
 ### Grass
 
-This example draws a row of lines. The height and lean of each line is chosent at random to create a natural, grass-like appearance.
+This example draws a row of lines. The height and lean of each line is chosen at random to create a natural, grass-like appearance.
 
 {% js-lab "sketches/grass.js" %}
 
 ### Brownian Motion
 
-This example simulates [brownian motion](https://en.wikipedia.org/wiki/Brownian_motion), which describes the random paths of particles in a liquid or gas. Brownian motion is a [common](https://www.youtube.com/watch?v=XUA8UREROYE) [theme](https://pbat.ch/proj/monolith/wiki/fbm/) in creative coding.
+This example simulates [Brownian motion](https://en.wikipedia.org/wiki/Brownian_motion), which describes the random paths of particles in a liquid or gas. Brownian motion is a [common](https://www.youtube.com/watch?v=XUA8UREROYE) [theme](https://pbat.ch/proj/monolith/wiki/fbm/) in creative coding.
 
 {% js-lab "sketches/brownian.js" %}
 
@@ -568,7 +568,7 @@ Explore the study examples above by completing the following challenges.{intro}
 
 ![conspiracy board](conspiracy_board/seed_1098_HD.png)
 
-Conspiracy Board is a program that generates pixel-art style collage of documments, portraits, and strings. It is written in Javascript using the p5.js library. Visit the case study to learn how it works.
+Conspiracy Board is a program that generates pixel-art-style collages of documents, portraits, and strings. It is written in Javascript using the p5.js library. Visit the case study to learn how it works.
 
 <div class="link-box">
 
@@ -586,7 +586,7 @@ Experiment with procedurally generating images using `random()`. Explore each of
 
 ### Challenge: Master Study
 
-Kasimir Malevich, Mark Rothko, Piet Modrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
+Kasimir Malevich, Mark Rothko, Piet Mondrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
 
 ### Pair Challenge: Deck
 
