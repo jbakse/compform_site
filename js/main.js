@@ -1,6 +1,6 @@
 console.log(
   "%cHello, Comp Form!",
-  "color: white; background: black; padding:5px; border-radius: 3px;"
+  "color: white; background: black; padding:5px; border-radius: 3px;",
 );
 
 function ready(cb) {
@@ -20,7 +20,7 @@ function main() {
     spoiler.addEventListener("click", () => spoiler.classList.add("reveal"));
   }
 
-  // glider slides
+  // glider.js slide shows
   var gliders = document.querySelectorAll(".glider");
   gliders.forEach((item) => {
     new Glider(item, {
