@@ -1,4 +1,8 @@
 node_modules
+
+# Build Folder
 _site
+
+# System Stuff
 .sass-cache
 .DS_Store

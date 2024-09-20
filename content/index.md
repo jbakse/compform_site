@@ -73,6 +73,21 @@ Independent chapters exploring specific procedural generation tools, languages, 
 
 </div>
 
+## More Resources
+
+<div class="nav-wrap">
+
+Additional resources for learning about computational form.
+
+<nav>
+
+[**Comp Form Videos** Code Reviews and Tutorials](https://www.youtube.com/channel/UCvUZXTGGAmIwb9sek1oP0RA)
+
+[**External Links** Books, Videos, More](./resources)
+
+</nav>
+</div>
+
 ## Class Resources
 
 <div class="nav-wrap">
@@ -82,6 +97,14 @@ Syllabi, schedules, and lesson plans for the Computational Form class.
 <nav>
 
 [**Introduction** About the Course](./introduction)
+
+Fall 2024
+: [Class Notes](https://www.notion.so/Comp-Form-F24-d4cc3204a2674dba902b30c1b8f76b6d)
+: [Sketch Book](https://sketches2024fall.compform.net/)
+
+Spring 2024
+: [Class Notes](https://www.notion.so/Comp-Form-S24-a82d9c7b3ae74d52a0a6f9bc80de367a)
+: [Sketch Book](https://sketches2024spring.compform.net/)
 
 Spring 2023
 : [Class Notes](https://www.notion.so/Comp-Form-S23-84a4cb6158674b01afa8a2b6866f1fde)
@@ -122,21 +145,6 @@ Spring 2017
 Spring 2016
 : [Class Notes](http://psam3060-d-s16.github.io/class_notes/)
 : [Sketch Book](http://compform.tumblr.com/)
-
-</nav>
-</div>
-
-## More Resources
-
-<div class="nav-wrap">
-
-Additional resources for learning about computational form.
-
-<nav>
-
-[**Comp Form Videos** Code Reviews and Tutorials](https://www.youtube.com/channel/UCvUZXTGGAmIwb9sek1oP0RA)
-
-[**External Links** Books, Videos, More](./resources)
 
 </nav>
 </div>

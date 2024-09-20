@@ -69,7 +69,7 @@ Explore body-syntonic reasoning by acting out a logo-like program.
 
 - Draw an image from the deck and keep it secret.
 - Think about the path someone would need to take to trace that image as they walked.
-- Write a series of instructions for tracing the image using `turn(degrees)` and `forward(steps)`.
+- Write a series of instructions for tracing the image using `turn(angle)` and `forward(steps)`.
 
 ### Run a Program
 
@@ -225,14 +225,14 @@ Grab [the code here](turtle/turtle.html).
 `myTurtle.moveTo(x, y)`
 : Instantly transports the turtle to the provided `x`,`y` location, drawing a line if pen is down.
 
-`myTurtle.turnRight(angleDegrees)`
-: Rotates the turtle's bearing clockwise by `angleDegrees`.
+`myTurtle.turnRight(angle)`
+: Rotates the turtle's bearing clockwise by `angle`.
 
-`myTurtle.turnLeft(angleDegrees)`
-: Rotates the turtle's bearing counter-clockwise by `angleDegrees`.
+`myTurtle.turnLeft(angle)`
+: Rotates the turtle's bearing counter-clockwise by `angle`.
 
-`myTurtle.turnTo(angleDegrees)`
-: Changes the turtle's bearing to the provided `angleDegrees`. The angle is measured in clockwise degrees from straight right.
+`myTurtle.turnTo(angle)`
+: Changes the turtle's bearing to the provided `angle`. The angle is measured in clockwise from straight right.
 
 `myTurtle.penUp()`
 : Tells the turtle to stop drawing lines while it moves.
