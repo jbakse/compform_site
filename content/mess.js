@@ -2,12 +2,12 @@
 
 // eslint-disable-next-line
 function mess(c, wait_ms = 2000) {
+  createToggle();
   c.canvas.classList.add("mess");
   c.canvas.classList.add("hide");
   setTimeout(show, 1);
-  setTimeout(getSwitch, 1); //gives document time to load
 
-  const toggleSwitch = getSwitch();
+  const toggleSwitch = document.getElementById("checkbox");
   toggleSwitch.setAttribute("checked", true); 
 
   toggleSwitch.addEventListener("change", function(){
@@ -46,9 +46,14 @@ function mess(c, wait_ms = 2000) {
     if (window.mess_resize) mess_resize();
   });
 
-  
-  function getSwitch(){
-    return  document.getElementById("checkbox");
+  function createToggle(){
+    const toggleCont = document.createElement('div');
+    toggleCont.classList.add("comp-form-toggle");
+    toggleCont.insertAdjacentHTML('beforeend', `
+                  <label class="switch" for="checkbox">
+                      <input type="checkbox" id="checkbox" />
+                      <div class="slider round"></div>
+                  </label>`)
+      document.body.appendChild(toggleCont);
+    }
   }
-
-}

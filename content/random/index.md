@@ -12,9 +12,6 @@ software: p5.js
 <script src="/mess.js"></script>
 <script src="./faces_mess.js"></script>
 
-
-{% toggle %} 
-
 ## The Methodical Application of Chance
 
 We use the word _random_ to mean an hodgepodge of related ideas. Depending on context, we might mean unplanned, unexpected, unpatterned, uncontrolled, unbiased, or unpredictable. Each of these are important characteristics in many procedural systems. Randomness is a staple of procedural generation systems, and careful control of randomness is important to balancing chance and control.
