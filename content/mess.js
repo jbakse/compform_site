@@ -47,13 +47,12 @@ function mess(c, wait_ms = 2000) {
   });
 
   function createToggle(){
-    const toggleCont = document.createElement('div');
-    toggleCont.classList.add("comp-form-toggle");
-    toggleCont.insertAdjacentHTML('beforeend', `
-                  <label class="switch" for="checkbox">
-                      <input type="checkbox" id="checkbox" />
-                      <div class="slider round"></div>
-                  </label>`)
-      document.body.appendChild(toggleCont);
+    document.body.insertAdjacentHTML('beforeend', `
+      <div class="mess-toggle">
+          <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+          </label>
+      </div>`);
     }
   }
