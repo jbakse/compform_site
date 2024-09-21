@@ -12,9 +12,7 @@ function mess(c, wait_ms = 2000) {
 
   toggleSwitch.addEventListener("change", function(){
     c.canvas.classList.add("off"); //independent from show() and hide()
-    if(toggleSwitch.checked){
-      c.canvas.classList.remove("off");
-    }
+    if(toggleSwitch.checked) c.canvas.classList.remove("off");
   })
  
   c.canvas.setAttribute("style", "");
