@@ -1,0 +1,75 @@
+//css based on https://codepen.io/AllThingsSmitty/pen/MmxxOz/
+
+.comp-form-toggle {
+  position: fixed;
+  left: 10px;
+  bottom: 0px;
+  
+  .switch {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 40px;
+  }
+  
+  .switch input {
+    display:none;
+  }
+  
+  .slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    cursor: pointer;
+    background-color: $dark-grey;
+    border: solid 1px $dark-grey;
+  }
+  
+  .slider:before {
+    background-color: white;
+    bottom: 1px;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    position: absolute;
+    transition: .4s;
+  }
+
+  .slider:after {
+    content: "hide background";
+    position: absolute;
+    width: 150px;
+    left: 45px;
+    font-family: "Miriam Libre";
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    font-size: 12px;
+    color: $dark-grey;
+  }
+  
+  input:checked + .slider {
+    background-color: transparent;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+    background-color: $dark-grey;
+  }
+
+  input:checked + .slider:after {
+    content: "show background";
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
