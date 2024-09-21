@@ -22,3 +22,7 @@ canvas.hide {
   opacity: 0;
   transition: opacity 1s;
 }
+
+canvas.off{
+  display: none;
+}
