@@ -5,6 +5,18 @@ function mess(c, wait_ms = 2000) {
   c.canvas.classList.add("mess");
   c.canvas.classList.add("hide");
   setTimeout(show, 1);
+  setTimeout(getSwitch, 1); //gives document time to load
+
+  const toggleSwitch = getSwitch();
+  toggleSwitch.setAttribute("checked", true); 
+
+  toggleSwitch.addEventListener("change", function(){
+    c.canvas.classList.add("off"); //independent from show() and hide()
+    if(toggleSwitch.checked){
+      c.canvas.classList.remove("off");
+    }
+  })
+ 
   c.canvas.setAttribute("style", "");
 
   // fade the canvas out when mouse is still
@@ -35,4 +47,10 @@ function mess(c, wait_ms = 2000) {
 
     if (window.mess_resize) mess_resize();
   });
+
+  
+  function getSwitch(){
+    return  document.getElementById("checkbox");
+  }
+
 }
