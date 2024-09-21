@@ -40,11 +40,6 @@ module.exports = function (eleventyConfig) {
     require("./components/jsshow_builder.js")
   );
 
-  eleventyConfig.addShortcode(
-    "toggle",
-    require("./components/toggle_builder.js")
-  );
-
   eleventyConfig.addPairedShortcode(
     "slides",
     require("./components/slides_builder.js")
