@@ -230,7 +230,7 @@ A quick-and-dirty way to make your comp form sketches “tweakable” is to use 
 
 - Choose clear variable names that explain the purpose of each parameter.
 - Use comments to explain the parameter in more detail, document legal value ranges, and suggest good values.
-- Keep in mind that [global variables are evil](https://stackoverflow.com/questions/19158339/why-are-global-variables-evil). Use constants instead of variables, if your language supports them. If your language doesn't support true constants use a naming convention, such as all caps, to indicate that a value shouldn't be changed.
+- Keep in mind that [global variables are evil](https://stackoverflow.com/questions/19158339/why-are-global-variables-evil). Use constants instead of variables, if your language supports them. If your language doesn't support true constants, use a naming convention, such as all caps, to indicate that a value shouldn't be changed.
 
 {% js-lab "sketches/square.js" %}
 
@@ -250,7 +250,7 @@ These next two examples both have a function named `stipleRect()` that fills a r
 
 ### HTML Interfaces
 
-The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions that allows you create HTML elements and use them as interface controls. This is a little more complicated to set up but still pretty quick. GUI interfaces are usually better than global variables if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload and restart your sketch.
+The [p5 DOM functions](https://p5js.org/reference/#DOM) provide functions that allows you create HTML elements and use them as interface controls. This is a little more complicated to set up but still pretty quick. GUI interfaces are usually better than global variables if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload and restart your sketch.
 
 <!-- - Label your inputs clearly.
 - Consider your interface carefully.

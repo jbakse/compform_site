@@ -139,7 +139,7 @@ Many noise functions are multidimensional. The noise function in most programmin
 
 The `noise()` function models an infinite cloud of predetermined random values. When you call `noise(x)`, you are asking for the value in the cloud at the coordinate `x`. To create a noise function you need to build two things:
 
-1. a way to associate random values with each integer coordinate in the cloud
+1. a way to associate random values with each integer coordinate in the cloud.
 2. a way to interpolate between these values if fractional coordinates are requested.
 
 Different noise functions solve these problems in different ways.
@@ -215,7 +215,7 @@ n = map(noise(frameCount), 0, 1, 10, 20);
 
 ### Controlling the Detail
 
-The [noiseDetail()](https://p5js.org/reference/#/p5/noiseDetail) function allows you to control the "roughness" or "detail" of the noise returned. Detailed noise is achieved by adding layers of noise together.
+The [noiseDetail()](https://p5js.org/reference/p5/noiseDetail/) function allows you to control the "roughness" or "detail" of the noise returned. Detailed noise is achieved by adding layers of noise together.
 
 ![noise detail](figures/noise_detail.jpg)
 
@@ -223,7 +223,7 @@ Typically, each layer of noise is twice as detailed (higher frequency) and half 
 
 ### Controlling the Seed
 
-By default, every time you restart your sketch the noise cloud is regenerated with a randomized seed. The [noiseSeed()](https://p5js.org/reference/#/p5/noiseSeed) allows you to manually set the seed used for the noise cloud. This allows you to get the same values from `noise()` after restarting your sketch.
+By default, every time you restart your sketch the noise cloud is regenerated with a randomized seed. The [noiseSeed()](https://p5js.org/reference/p5/noiseSeed/) allows you to manually set the seed used for the noise cloud. This allows you to get the same values from `noise()` after restarting your sketch.
 
 ## Study Examples
 
