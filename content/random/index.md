@@ -172,11 +172,7 @@ Other times, uniform distribution isn’t what you really want. If you are drawi
 
 </div>
 
-<<<<<<< HEAD
 With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results towards the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions are easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in table top rollplaying games without the need for a computer.
-=======
-With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results toward the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions is easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in tabletop role-playing games without the need for a computer.
->>>>>>> c4f11cfe3fb702f8a4f162fe5ffb9db54e442488
 
 <div class ="activity">
 
@@ -272,11 +268,7 @@ Try `3d10` on [anydice.com](https://anydice.com/program/1437)
 
 <div class="callout">
 
-<<<<<<< HEAD
 p5 provides a function called [randomGaussian()](https://p5js.org/reference/p5/randomGaussian/) for generating numbers fitting a specific normal distrution with a given mean and deviation. With `randomGaussian()` the possible values have a infinite range but extreme outliers are very rare.
-=======
-P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5/randomGaussian) for generating numbers fitting a specific normal distribution with a given mean and deviation. With `randomGaussian()` the possible values have an infinite range but extreme outliers are very rare.
->>>>>>> c4f11cfe3fb702f8a4f162fe5ffb9db54e442488
 
 </div>
 
@@ -594,11 +586,7 @@ Experiment with procedurally generating images using `random()`. Explore each of
 
 ### Challenge: Master Study
 
-<<<<<<< HEAD
 Kazimir Malevich, Mark Rothko, Piet Modrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
-=======
-Kasimir Malevich, Mark Rothko, Piet Mondrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
->>>>>>> c4f11cfe3fb702f8a4f162fe5ffb9db54e442488
 
 ### Pair Challenge: Deck
 
