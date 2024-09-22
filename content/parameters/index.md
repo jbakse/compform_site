@@ -261,7 +261,7 @@ The [p5 DOM functions](https://p5js.org/reference/#group-DOM) provide functions 
 
 ### Tweakpane
 
-[Tweakpane](https://cocopon.github.io/tweakpane/) is a javascript library that lets you quickly setup and display a interactive pane for adjusting parameters.
+[Tweakpane](https://tweakpane.github.io/docs/) is a javascript library that lets you quickly setup and display a interactive pane for adjusting parameters.
 
 {% js-lab "sketches/square_tweakpane.js" %}
 
