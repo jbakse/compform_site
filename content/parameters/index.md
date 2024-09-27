@@ -250,7 +250,7 @@ These next two examples both have a function named `stipleRect()` that fills a r
 
 ### HTML Interfaces
 
-The [p5 DOM functions](https://p5js.org/reference/#DOM) provide functions that allows you create HTML elements and use them as interface controls. This is a little more complicated to set up but still pretty quick. GUI interfaces are usually better than global variables if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload and restart your sketch.
+The [p5 DOM functions](https://p5js.org/reference/#DOM) provide functions that allow you to create HTML elements and use them as interface controls. This is a little more complicated to set up but still pretty quick. GUI interfaces are usually better than global variables if you want anyone else to adjust your parameters. You should consider this approach even for projects only you will use; it allows you to explore your parameter space without having to reload and restart your sketch.
 
 <!-- - Label your inputs clearly.
 - Consider your interface carefully.
@@ -261,7 +261,7 @@ The [p5 DOM functions](https://p5js.org/reference/#DOM) provide functions that a
 
 ### Tweakpane
 
-[Tweakpane](https://tweakpane.github.io/docs/) is a javascript library that lets you quickly setup and display a interactive pane for adjusting parameters.
+[Tweakpane](https://tweakpane.github.io/docs/) is a JavaScript library that lets you quickly set up and display an interactive pane for adjusting parameters.
 
 {% js-lab "sketches/square_tweakpane.js" %}
 
