@@ -313,8 +313,8 @@ These tactics can be used to move existing points. Many effects can be created b
 Given a set of points, offset the location of each point by a random amount. This is often used to "roughen up" a rigid arrangement like grid placement produces.
 
 ```javascript
-x = x + random() * width;
-y = y + random() * height;
+x = x + random();
+y = y + random();
 ```
 
 <div class="three-up">
@@ -331,8 +331,8 @@ Displace each point by an amount determined by a noise lookup.
 - This is also a good way to "roughen" up grid placement, but creates more of a natural effect.
 
 ```javascript
-x = x + noise(i * frequency, 0) * amount;
-y = x + noise(i * frequency, 1000) * amount;
+x = x + noise(x * scale, y * scale) * amount;
+y = x + noise(x * scale, y * scale, 1000) * amount;
 ```
 
 <div class="three-up">
