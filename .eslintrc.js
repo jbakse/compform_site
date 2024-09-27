@@ -8,7 +8,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
-  globals: { mess: true },
+  globals: {},
   rules: {
     "no-var": "error",
     "prefer-const": "error",
