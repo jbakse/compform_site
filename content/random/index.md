@@ -8,7 +8,7 @@ description: Procedural generation systems often employ random values as their m
 software: p5.js
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.js"></script>
 <script src="/mess.js"></script>
 <script src="./faces_mess.js"></script>
 

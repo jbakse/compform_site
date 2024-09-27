@@ -18,88 +18,91 @@ canvas.mess {
   /* border: 1px solid red; */
 }
 
-canvas.hide {
+canvas.mess.hide {
   opacity: 0;
   transition: opacity 1s;
 }
 
-canvas.off{
+canvas.mess.off {
   display: none;
 }
 
-// styles for mess toggle
-// based on https://codepen.io/AllThingsSmitty/pen/MmxxOz/
-
-.mess-toggle {
+// styles for mess ui
+// checkbox slider based on https://codepen.io/AllThingsSmitty/pen/MmxxOz/
+.mess-UI {
   position: fixed;
-  left: 10px;
+  left: 0px;
   bottom: 0px;
-  
+  height: 20px;
+
+  display: flex;
+
+  padding: 5px 10px;
+
+  /// toggle switch
   .switch {
-    display: inline-block;
-    height: 20px;
+    display: flex;
+  }
+
+  * + .switch {
+    margin-left: 10px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  /// toggle-switch track style
+  .switch .slider {
     position: relative;
     width: 40px;
-  }
-  
-  .switch input {
-    display:none;
-  }
-  
-  .slider {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    left: 0;
-    transition: .4s;
-    cursor: pointer;
+    height: 20px;
+
     background-color: $dark-grey;
     border: solid 1px $dark-grey;
-  }
-  
-  .slider:before {
-    background-color: white;
-    bottom: 1px;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 2px;
-    position: absolute;
-    transition: .4s;
+    cursor: pointer;
+    transition: 0.4s;
   }
 
-  .slider:after {
-    content: "hide background";
-    position: absolute;
-    width: 150px;
-    left: 45px;
-    font-family: "Miriam Libre";
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.3px;
-    font-size: 12px;
-    color: $dark-grey;
-  }
-  
-  input:checked + .slider {
+  .switch input:checked + .slider {
     background-color: transparent;
   }
-  
-  input:checked + .slider:before {
-    transform: translateX(18px);
+
+  .switch .slider.round {
+    border-radius: 100px;
+  }
+
+  /// toggle-switch handle style
+  .switch .slider:before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    bottom: 2.25px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    transition: 0.4s;
+  }
+
+  .switch input:checked + .slider:before {
+    transform: translateX(20px);
     background-color: $dark-grey;
   }
 
-  input:checked + .slider:after {
-    content: "show background";
+  .switch .slider.round:before {
+    border-radius: 100px;
   }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
+
+  /// toggle-switch label style
+  .switch .label {
+    margin-top: 1.5px;
+    margin-left: 5px;
+
+    font-family: "Miriam Libre";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: $dark-grey;
   }
 }

@@ -1,58 +1,61 @@
-/* globals mess_resize mess_hide mess_show */
+/* exported mess */
 
-// eslint-disable-next-line
+// rename or document hide off class names
+
 function mess(c, wait_ms = 2000) {
-  createToggle();
+  /// set up canvas
+  c.canvas.setAttribute("style", ""); // remove p5.js default styles
   c.canvas.classList.add("mess");
-  c.canvas.classList.add("hide");
-  setTimeout(show, 1);
+  c.canvas.classList.add("hide"); // start hidden
+  setTimeout(showMess, 1); // show immediately after init
 
-  const toggleSwitch = document.getElementById("checkbox");
-  toggleSwitch.setAttribute("checked", true); 
+  /// set up mess UI
+  createMessUI();
+  const showMessCheckbox = document.getElementById("show-mess-checkbox");
+  showMessCheckbox.setAttribute("checked", true);
+  showMessCheckbox.addEventListener("change", function () {
+    c.canvas.classList.toggle("off", !this.checked);
+  });
 
-  toggleSwitch.addEventListener("change", function(){
-    c.canvas.classList.add("off"); //independent from show() and hide()
-    if(toggleSwitch.checked) c.canvas.classList.remove("off");
-  })
- 
-  c.canvas.setAttribute("style", "");
-
-  // fade the canvas out when mouse is still
-  let hide_timeout = null;
-
-  function show() {
+  /// manange fading the canvas in and out based on mouse movement
+  let hideTimeout = null;
+  function showMess() {
     c.canvas.classList.remove("hide");
-    hide_timeout && clearTimeout(hide_timeout);
-    hide_timeout = setTimeout(hide, wait_ms);
+    hideTimeout && clearTimeout(hideTimeout);
+    hideTimeout = setTimeout(hideMess, wait_ms);
 
-    if (window.mess_show) mess_show();
+    window.messShow?.(); // call messShow if mess defines it
   }
 
-  function hide() {
+  function hideMess() {
     c.canvas.classList.add("hide");
 
-    if (window.mess_hide) mess_hide();
+    window.messHide?.(); // call messHide if mess defines it
   }
 
   window.addEventListener("mousemove", () => {
-    show();
+    showMess();
   });
 
-  // resize canvas
+  /// handle canvas resizing
   window.addEventListener("resize", () => {
     resizeCanvas(windowWidth, windowHeight);
-    c.canvas.setAttribute("style", "");
+    c.canvas.setAttribute("style", ""); // remove p5.js default styles
 
-    if (window.mess_resize) mess_resize();
+    window.messResize?.(); // call messResize if mess defines it
   });
 
-  function createToggle(){
-    document.body.insertAdjacentHTML('beforeend', `
-      <div class="mess-toggle">
-          <label class="switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-          </label>
-      </div>`);
-    }
+  function createMessUI() {
+    document.body.insertAdjacentHTML(
+      "beforeend",
+      `
+      <div class="mess-UI">
+        <label class="switch" for="show-mess-checkbox">
+          <input type="checkbox" id="show-mess-checkbox" />
+          <div class="slider round"></div>
+          <div class="label">background</div>
+        </label>
+      </div>`,
+    );
   }
+}
