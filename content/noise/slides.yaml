@@ -12,11 +12,11 @@
 
 - artist: Emily Xie
   title: Dunes, 2016
-  image: https://xie-emily.com/projects/images/dunes_2.jpg
+  image: https://emilyxie.art/projects/older_and_experiments/images/dunes_2.jpg
   comments: Creative coding project in p5.js that explores "behavior that is at once organic yet systematic".
   links:
     - label: Dunes
-      href: https://xie-emily.com/projects/dunes.html
+      href: https://emilyxie.art/projects/older_and_experiments/dunes
       subtitle: Project Page
     - label: xie-emily.com
       href: https://xie-emily.com/

@@ -102,7 +102,7 @@ The expressions above are already getting complicated enough to negatively impac
 let strength = Math.floor(Math.random() * 6) + 10;
 ```
 
-One way to improve the readability of this code is to create and use utility function.
+One way to improve the readability of this code is to create and use a utility function.
 
 ```javascript
 let strength = randomInt(10, 15);
@@ -172,7 +172,7 @@ Other times, uniform distribution isn’t what you really want. If you are drawi
 
 </div>
 
-With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results toward the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions is easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in tabletop role-playing games without the need for a computer.
+With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results towards the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions are easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in table top rollplaying games without the need for a computer.
 
 <div class ="activity">
 
@@ -220,7 +220,7 @@ min(randomInt(10), randomInt(10));
 
 ![low bias distribution](./figures/low_bias.svg){callout scale}
 
-The more random numbers you compare, the stronger the bias. Both the p5 and JavaScript `min()` function can accept as many arguments as you want.
+The more random numbers you compare, the stronger the bias. Both the p5 and JavaScript `min()` functions can accept as many arguments as you want.
 
 ```javascript
 min(randomInt(10), randomInt(10), randomInt(10), randomInt(10));
@@ -268,7 +268,7 @@ Try `3d10` on [anydice.com](https://anydice.com/program/1437)
 
 <div class="callout">
 
-P5 provides a function called [randomGaussian()](https://p5js.org/reference/#/p5/randomGaussian) for generating numbers fitting a specific normal distribution with a given mean and deviation. With `randomGaussian()` the possible values have an infinite range but extreme outliers are very rare.
+p5 provides a function called [randomGaussian()](https://p5js.org/reference/p5/randomGaussian/) for generating numbers fitting a specific normal distrution with a given mean and deviation. With `randomGaussian()` the possible values have a infinite range but extreme outliers are very rare.
 
 </div>
 
@@ -298,7 +298,7 @@ A deck of cards works differently. When you pull cards from a deck, you don't ge
 
 ### Modeling a Deck with an Array
 
-p5 provides the [shuffle()](https://p5js.org/reference/#/p5/shuffle) function to randomly reorder the elements in an array. By using `shuffle()` we can simulate shuffling a deck, pulling values from it, and reshuffling when we run out.
+p5 provides the [shuffle()](https://p5js.org/reference/p5/shuffle) function to randomly reorder the elements in an array. By using `shuffle()` we can simulate shuffling a deck, pulling values from it, and reshuffling when we run out.
 
 ```javascript
 // create an array to hold the possible values
@@ -448,7 +448,7 @@ if (random(100) < 20) {
 
 </div>
 
-## Pseudo-random vs. Random
+## Pseudorandom vs. Random
 
 Computers are deterministic systems. When a computer is in a particular state and performs a specific instruction, the resulting state should always be the same. The results are never random.
 
@@ -460,7 +460,7 @@ A common method to create pseudorandom values is a [Linear Congruential Generato
 
 ## Pencil + Paper LCG
 
-Generate pseudo-random values by hand.
+Generate pseudorandom values by hand.
 
 The Linear Congruential Generator Algorithm is simple enough that you can execute it by hand. This is a good way to get a feel for how an LCG works, and how simple arithmetic can be used to create a pseudorandom sequence.
 
@@ -485,7 +485,7 @@ Below is a very basic implementation of an LCG, using small numbers that are eas
 
 ### Setting the Random Seed
 
-P5 provides [randomSeed()](https://p5js.org/reference/#/p5/randomSeed) to set the **seed** used by `random()`. Once you have set the seed, the sequence of values produced by random will always be the same.
+p5 provides [randomSeed()](https://p5js.org/reference/p5/randomSeed) to set the **seed** used by `random()`. Once you have set the seed, the sequence of values produced by random will always be the same.
 
 The following code example sets the random seed to `12` and then generates 3 random numbers. The results are predictable, and the expected values are shown in the comments. If you change the seed to any other value, you'll get a different series.
 
@@ -586,7 +586,7 @@ Experiment with procedurally generating images using `random()`. Explore each of
 
 ### Challenge: Master Study
 
-Kasimir Malevich, Mark Rothko, Piet Mondrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
+Kazimir Malevich, Mark Rothko, Piet Modrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
 
 ### Pair Challenge: Deck
 
