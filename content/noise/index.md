@@ -139,7 +139,7 @@ Many noise functions are multidimensional. The noise function in most programmin
 
 The `noise()` function models an infinite cloud of predetermined random values. When you call `noise(x)`, you are asking for the value in the cloud at the coordinate `x`. To create a noise function you need to build two things:
 
-1. a way to associate random values with each integer coordinate in the cloud.
+1. a way to associate a random value with each integer coordinate in the cloud.
 2. a way to interpolate between these values if fractional coordinates are requested.
 
 Different noise functions solve these problems in different ways.

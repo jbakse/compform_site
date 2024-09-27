@@ -51,7 +51,7 @@ Most programming languages provide a function for generating random numbers. Usu
 
 ### Generating Random Numbers
 
-Plain Javascript provides `Math.random()` to generate a random number.
+Plain JavaScript provides `Math.random()` to generate a random number.
 
 > The Math.random() function returns a floating-point, pseudo-random number in the range [0, 1); that is, from 0 (inclusive) up to but not including 1 (exclusive), which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 >
@@ -126,7 +126,7 @@ console.log(random()); // 0.12...
 console.log(random()); // 0.37...
 ```
 
-P5's `random()` function accepts optional parameters to control the range of the number, so you don't have to do it yourself.
+p5's `random()` function accepts optional parameters to control the range of the number, so you don't have to do it yourself.
 
 ```javascript
 console.log("random(10)"); // random(10) -> range [0, 10)
@@ -140,7 +140,7 @@ console.log(random(20, 30)); // 20.56...
 console.log(random(20, 30)); // 22.36...
 ```
 
-P5 provides `floor()` which you can use to generate random integers.
+p5 provides `floor()` which you can use to generate random integers.
 
 ```javascript
 // roll a standard die
@@ -172,7 +172,7 @@ Other times, uniform distribution isn’t what you really want. If you are drawi
 
 </div>
 
-With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results towards the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions are easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in table top rollplaying games without the need for a computer.
+With some math, you can reshape the values returned by `random()` to just about any distribution you can think of. Often, you won't need anything very complicated. Just biasing the results toward the low end, high end, or middle is often enough to achieve appealing effects. The calculations for creating these types of distributions are easy enough that you'll often see them used as [mechanics](https://roleplayersrespite.com/5e-advantage-disadvantag) in tabletop role-playing games without the need for a computer.
 
 <div class ="activity">
 
@@ -268,7 +268,7 @@ Try `3d10` on [anydice.com](https://anydice.com/program/1437)
 
 <div class="callout">
 
-p5 provides a function called [randomGaussian()](https://p5js.org/reference/p5/randomGaussian/) for generating numbers fitting a specific normal distrution with a given mean and deviation. With `randomGaussian()` the possible values have a infinite range but extreme outliers are very rare.
+p5 provides a function called [randomGaussian()](https://p5js.org/reference/p5/randomGaussian/) for generating numbers fitting a specific normal distribution with a given mean and deviation. With `randomGaussian()` the possible values have a infinite range but extreme outliers are very rare.
 
 </div>
 
@@ -501,7 +501,7 @@ Be careful when using a seed with `random()` to get a repeatable sequence. There
 
 <div class="callout">
 
-The Javascript does not provide any way for you to set the seed used by `Math.random()`, so if you need to set the seed and are not using p5, you'll need to find and use another Javascript library for generating random numbers.
+The JavaScript does not provide any way for you to set the seed used by `Math.random()`, so if you need to set the seed and are not using p5, you'll need to find and use another JavaScript library for generating random numbers.
 
 </div>
 
@@ -568,7 +568,7 @@ Explore the study examples above by completing the following challenges.{intro}
 
 ![conspiracy board](conspiracy_board/seed_1098_HD.png)
 
-Conspiracy Board is a program that generates pixel-art-style collages of documents, portraits, and strings. It is written in Javascript using the p5.js library. Visit the case study to learn how it works.
+Conspiracy Board is a program that generates pixel-art-style collages of documents, portraits, and strings. It is written in JavaScript using the p5.js library. Visit the case study to learn how it works.
 
 <div class="link-box">
 
@@ -586,7 +586,7 @@ Experiment with procedurally generating images using `random()`. Explore each of
 
 ### Challenge: Master Study
 
-Kazimir Malevich, Mark Rothko, Piet Modrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
+Kazimir Malevich, Mark Rothko, Piet Mondrian, and Anni Albers all worked with basic shapes, color, and natural media. Create a sketch that generates new works in the style of one of these artists. Pay particular attention to the subtleties and textures of your chosen artist's work. How closely can you recreate these subtleties?
 
 ### Pair Challenge: Deck
 
