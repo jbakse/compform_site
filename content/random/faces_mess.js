@@ -1,6 +1,8 @@
 // draws random composite face
 
+/* hints for eslint */
 /* exported preload setup draw mousePressed windowResized */
+/* globals mess */
 
 const bases = 0;
 const eyes = 1;
@@ -38,7 +40,7 @@ function preload() {
 
 function setup() {
   pixelDensity(1);
-  let p5_canvas = createCanvas(windowWidth, windowHeight);
+  const p5_canvas = createCanvas(windowWidth, windowHeight);
   mess(p5_canvas);
 
   face_colors.push(color(250, 220, 180));
