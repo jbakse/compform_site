@@ -29,3 +29,6 @@ git push --force-with-lease origin feature-branch
 see also:
 https://gist.github.com/CristinaSolana/1885435
 https://medium.com/swlh/forks-and-pull-requests-how-to-contribute-to-github-repos-8843fac34ce8
+
+git remote -v
+git branch -a
