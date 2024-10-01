@@ -7,6 +7,9 @@ hero_title: 3D Forms
 description: Explore building three-dimensional forms with OpenSCAD, a functional programming language for constructive solid geometry modeling.
 software: OpenSCAD
 ---
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="../mess.js"></script>
+<script src="./box_mess.js"></script>
 
 ## 3D Forms
 
