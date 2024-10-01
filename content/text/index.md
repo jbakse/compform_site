@@ -10,6 +10,11 @@ software: javascript + html
 
 <!-- [[ leah, want to take a crack at the hero desc? again? ]] -->
 
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://unpkg.com/rita"></script>
+<script src="../mess.js"></script>
+<script src="./text_mess.js"></script>
+
 ## Computational Text
 
 Procedural generation can be used to create form in almost any media: image, video, animation, sound, sculpture. This chapter introduces some tactics for procedurally generating text, which may be the media most often computationally generated. Web pages are built out of text, and most of the time this text is computationally generated at least to some degree.
