@@ -10,7 +10,7 @@ const TEST_SIZE = 200;
 let testImage;
 
 function preload() {
-  testImage = loadImage(`https://placekitten.com/g/${TEST_SIZE}/${TEST_SIZE}`);
+  testImage = loadImage(`/pixels/sketches/world_200.png`);
 }
 
 function setup() {
@@ -39,7 +39,7 @@ function draw() {
     0,
     0,
     TEST_SIZE,
-    TEST_SIZE
+    TEST_SIZE,
   );
 
   startTime = performance.now();
@@ -60,7 +60,7 @@ function draw() {
     0,
     0,
     TEST_SIZE,
-    TEST_SIZE
+    TEST_SIZE,
   );
 
   startTime = performance.now();
