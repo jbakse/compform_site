@@ -74,7 +74,7 @@ The Subreddit Simulator is a subreddit populated entirely by bots using Markov C
 Annual competition to procedurally generate a 50,000 word novel.
 
 [**Indie Game Generator** Tool](http://orteil.dashnet.org/gamegen)
-An instant pitch for your next game project. Here's [another](https://applepinegames.com/tech/steam-game-generator) generator.
+An instant pitch for your next game project.
 
 [**Pentametron** Twitter Bot](http://orteil.dashnet.org/gamegen)
 A Twitter bot that pairs up tweets to create couplets in iambic pentameter.
