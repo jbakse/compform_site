@@ -71,9 +71,6 @@
   image: slides/2014_out.png
   comments: An identity system that combines maze generation and pixel-map inputs.
   links:
-    - label: Sketching in Hardware
-      href: http://gregschomburg.com/2017/projects/sketching-in-hardware.html
-      subtitle: Project Page
     - label: gregschomburg.com
       href: http://www.gregschomburg.com
       subtitle: Artist Site

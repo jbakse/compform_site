@@ -38,7 +38,7 @@ When you work with a graphics library like p5.js or the Javascript [Canvas API](
 
 ### Vector Monitors
 
-Computer displays don't have to use pixels at all. One of the earliest video games, [Tennis for Two](https://en.wikipedia.org/wiki/Tennis_for_Two), used a cathode ray oscilloscope as its display. In a cathode ray oscilloscope, signals are drawn by magnetically deflecting a beam of electrons as they race from an emitter—the cathode—toward a phosphor-coated glass screen. The phosphor glows where the electrons strike it, creating an image. This type of display can show smooth lines without any of the aliasing artifacts of a pixel display.
+Computer displays don't have to use pixels at all. One of the earliest video games, [Tennis for Two](https://en.wikipedia.org/wiki/Tennis_for_Two), used a cathode-ray oscilloscope as its display. In a cathode-ray oscilloscope, signals are drawn by magnetically deflecting a beam of electrons as they race from an emitter—the cathode—toward a phosphor-coated glass screen. The phosphor glows where the electrons strike it, creating an image. This type of display can show smooth lines without any of the aliasing artifacts of a pixel display.
 
 [Vector Monitors](https://en.wikipedia.org/wiki/Vector_monitor) were used in later video games as well, including the [Tempest](<https://en.wikipedia.org/wiki/Tempest_(video_game)>) arcade game and several games for the [Vectrex](https://en.wikipedia.org/wiki/Vectrex) home console.
 
@@ -48,7 +48,7 @@ Computer displays don't have to use pixels at all. One of the earliest video gam
 
 <!-- ## Gallery -->
 
-This [high/low-level](https://en.wikipedia.org/wiki/High-_and_low-level) tradeoff has some important implications for the creative coder. When you work at a high level you are not responsible for the details. Because you are not responsible for the details you tend to think about them less. Working directly with the pixels leads to thinking about drawing with code differently.
+This [high/low-level](https://en.wikipedia.org/wiki/High-_and_low-level) tradeoff has some important implications for the creative coder. When you work at a high level, you are not responsible for the details. Because you are not responsible for the details, you tend to think about them less. Working directly with the pixels leads to thinking about drawing with code differently.
 
 {% slides %}
 {% include slides.yaml %}
@@ -56,9 +56,9 @@ This [high/low-level](https://en.wikipedia.org/wiki/High-_and_low-level) tradeof
 
 ### Video Memory
 
-Modern video pipelines are complicated, but at a basic level, they work something like this: The red, green, and blue brightness values of every pixel on a display are stored in the computer's RAM. In computers with a dedicated video card, this data is usually stored on the video card's VRAM. Once per display refresh, the video hardware reads this data from memory, pixel by pixel, and sends it to the display over a display interface like DVI or HDMI. Hardware in the display receives this data and updates the brightness of each pixel as needed. If you change the values in the RAM, you will see the changes reflected on the screen.
+Modern video pipelines are complicated, but at a basic level, they work something like this: the red, green, and blue brightness values of every pixel on a display are stored in the computer's RAM. In computers with a dedicated video card, this data is usually stored on the video card's VRAM. Once per display refresh, the video hardware reads this data from memory, pixel by pixel, and sends it to the display over a display interface like DVI or HDMI. Hardware in the display receives this data and updates the brightness of each pixel as needed. If you change the values in the RAM, you will see the changes reflected on the screen.
 
-The memory used to store the screen's image is called the video buffer or framebuffer. Direct access to the screen's framebuffer is pretty unusual on modern computers, and high-level libraries like p5.js don't (and can't) provide it. But P5.js does give you access to a pixel buffer storing the image shown on your sketch's canvas. When you call drawing functions like `rect()` and `ellipse()`, p5.js updates the appropriate values in this buffer. The buffer is then composited into the rendered webpage by the browser. The browser window is composited onto the display's framebuffer by the operating system and video hardware. The p5.js library provides two ways to directly read and set the color of a single pixel: `get()/set()` and the `pixels[]` array. Using `get()` and `set()` is easier, but using the `pixels[]` array is faster. This chapter has examples for using both.
+The memory used to store the screen's image is called the video buffer or framebuffer. Direct access to the screen's framebuffer is pretty unusual on modern computers, and high-level libraries like p5.js don't (and can't) provide it. But p5.js does give you access to a pixel buffer storing the image shown on your sketch's canvas. When you call drawing functions like `rect()` and `ellipse()`, p5.js updates the appropriate values in this buffer. The buffer is then composited into the rendered webpage by the browser. The browser window is composited onto the display's framebuffer by the operating system and video hardware. The p5.js library provides two ways to directly read and set the color of a single pixel: `get()/set()` and the `pixels[]` array. Using `get()` and `set()` is easier, but using the `pixels[]` array is faster. This chapter has examples for using both.
 
 <div class="callout">
 
@@ -90,7 +90,7 @@ Beginning in this chapter we will look at different approaches to making form th
 
 ### Random Pixels Example
 
-This example uses `set()` to set each pixel in a 10x10 image to a random color. This example doesn't write to the canvas pixels directly. Instead, it creates an empty image, writes to its pixels, and then draws the image to the canvas. This approach is more flexible and avoids the complexities of [pixelDensity](https://p5js.org/reference/#/p5/pixelDensity). This also lets us draw the image scaled-up so you can see the pixels easier.
+This example uses `set()` to set each pixel in a 10x10 image to a random color. This example doesn't write to the canvas pixels directly. Instead, it creates an empty image, writes to its pixels, and then draws the image to the canvas. This approach is more flexible and avoids the complexities of [pixelDensity](https://p5js.org/reference/p5/pixelDensity). This also lets us draw the image scaled-up so you can see the pixels easier.
 
 {% js-lab "sketches/basic_pixels.js" %}
 
@@ -175,7 +175,7 @@ The p5.js library also allows you to read pixel data, so you can process images 
 
 ### Read Pixels Example 1
 
-This example loads the image of Earth, loops over its pixels, and white pixels to red and black pixels to blue.
+This example loads the image of Earth, loops over its pixels, and turns the white pixels red and the black pixels blue.
 
 {% js-lab "sketches/read_pixels_alt.js" %}
 
@@ -189,9 +189,9 @@ This example loads the image of Earth, loops over its pixels, and white pixels t
 
 #### With our image loaded we can process the pixels.
 
-**Line 16:** Set up a nested loop to cover every pixel.
+**Line 18:** Set up a nested loop to cover every pixel.
 
-**Line 18:** Use `get()` to load the color data of the current pixel. `get()` returns an array like `[255, 0, 0, 255]` with components for red, green, blue, and alpha.
+**Line 20:** Use `get()` to load the color data of the current pixel. `get()` returns an array like `[255, 0, 0, 255]` with components for red, green, blue, and alpha.
 
 **Lines 22:** Read the red component of the color. We could also access it directly like this: `in_color[0]`
 
@@ -242,7 +242,7 @@ Explore this chapter's example code by completing the following challenges.{intr
 1. Make the program turn white pixels green. `•`
 1. Turn the black pixels to a random shade of red. `•`
 1. Turn the black pixels into a vertical, black-to-red gradient. `••`
-1. Comment out line 34 which calls `updatePixels()`. What happens? `••`
+1. Comment out line 35 which calls `updatePixels()`. What happens? `••`
 
 <!-- <img src="sketches/world_100.png" style="image-rendering: pixelated;"> -->
 
@@ -261,7 +261,7 @@ var blended_color = lerpColor(color_a, color_b, 0.5);
 ```
 
 1. Change `worldImage.set(x, y, out_color);` to `worldImage.set(x, y+1, out_color);`. `•••`
-1. Remove the `if` statement (but not its contents) so that its content always runs. `•••`
+1. Remove the `if` statement (but not its content) so that its content always runs. `•••`
    {continue}
 
 ### Modify Read Pixels Example 3
@@ -276,7 +276,7 @@ var blended_color = lerpColor(color_a, color_b, 0.5);
 
 ## Working Directly with the `pixels[]` Array
 
-You can read and write individual pixel values with the `get()` and `set()` methods. These methods are easy to use, but they are really slow. A faster approach is to use `loadPixels()` and `updatePixels()` to copy the canvas or image data to and from the [pixels[]](https://p5js.org/reference/#/p5/pixels) array. Then, with a little bit of math, you can work directly with the `pixels[]` array data. This is a little more work but can run **hundreds of times faster**.
+You can read and write individual pixel values with the `get()` and `set()` methods. These methods are easy to use, but they are really slow. A faster approach is to use `loadPixels()` and `updatePixels()` to copy the canvas or image data to and from the [pixels[ ]](https://p5js.org/reference/p5/pixels) array. Then, with a little bit of math, you can work directly with the `pixels[]` array data. This is a little more work but can run **hundreds of times faster**.
 
 <!--
 ### Performance
@@ -365,9 +365,9 @@ The following example compares the performance of using `get() and set()` with `
 ### The Canvas + Pixel Density
 
 You can work with the pixels in an image using `image.pixels[]` or the pixels of the canvas with just `pixels[]`.
-When accessing the pixel data of the canvas itself, you need to consider the pixel density p5 is using. By default, p5 will create a high-dpi canvas when running on a high-dpi (retina) display. You can call `pixelDensity(1)` before creating your canvas to disable this feature. Otherwise, you'll need to take into account the density when calculating a position in the `pixels[]` array.
+When accessing the pixel data of the canvas itself, you need to consider the pixel density p5 is using. By default, p5 will create a high-DPI canvas when running on a high-DPI (retina) display. You can call `pixelDensity(1)` before creating your canvas to disable this feature. Otherwise, you'll need to take into account the density when calculating a position in the `pixels[]` array.
 
-The examples on this page work with the pixels of images instead of the canvas to avoid this issue altogether. If you need to work with the canvas, the [pixels](https://p5js.org/reference/#/p5/pixels) documentation has info on working with higher pixel densities.
+The examples on this page work with the pixels of images instead of the canvas to avoid this issue altogether. If you need to work with the canvas, the [pixels](https://p5js.org/reference/p5/pixels) documentation has info on working with higher pixel densities.
 
 <!--
 ### Using the `pixels` array
