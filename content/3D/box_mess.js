@@ -53,18 +53,18 @@ function draw() {
     let nx =
       (noise(i * 0.2, frameCount * 0.001) -
         noise(0 * 0.2, frameCount * 0.001)) *
-      10;
+      80;
     let ny =
       (noise(i * 0.02, 1, frameCount * 0.002) -
         noise(0, 1, frameCount * 0.002)) *
-      70;
+      100;
 
     push();
     ambientMaterial(hues[i], 1000, 1000);
     //set delay for each box
     translate(delays_x[i], delays_y[i]);
     //rotate boxes horizontally
-    rotateY(240);
+    // rotateY(240);
     //position each box according to noise. each box is positioned behind the previous box
     translate(boxSize * nx, boxSize * ny, -boxSize * i);
 
