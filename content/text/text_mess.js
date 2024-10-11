@@ -1,149 +1,59 @@
-//created with RiTa markov
+/**
+ * Displays a Markov chain generated sentence in the margin of the page.
+ *
+ * written by Ana Konzen
+ * edited by Justin Bakse
+ *
+ * @requires RiTa.js - https://unpkg.com/rita
+ */
 
-const container = document.querySelector(".comp-form-copy");
+/* exported setup draw*/
+/* global mess RiTa*/
 
-let randomSentence = false;
+const contentContainer = document.querySelector(".comp-form-copy");
 
+let lerpedMouseY = 0;
 let textHue;
-
-let x = 0;
-let y = 0;
-
-let randomx = [];
-let randomy = [];
-let randomang = [];
-
-let currentChild;
+let wordsData = [];
 
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight);
   mess(p5_canvas);
+
+  textSize(18);
   colorMode(HSB, 100);
   angleMode(DEGREES);
   noStroke();
 
-  const children = container.children;
-
-  //generate new sentence from the text of each paragraph
-  for (let i = 0; i < children.length; i++) {
-    currentChild = children[i];
-    let prevText = false;
-    let nextText = false;
-    if (i > 0) prevText = children[i - 1].innerText;
-
-    let currentText = currentChild.innerText;
-
-    if (i < children.length - 1) nextText = children[i + 1].innerText;
-
-
-    currentChild.addEventListener("mouseover", function () {
-      randomSentence = generateSentence(prevText, currentText, nextText);
-      textHue = random(100);
-      randomx = [];
-      randomy = [];
-      randomang = [];
-      for (let i = 0; i < randomSentence.length; i++) {
-        randomx.push(random(-5, 5));
-        randomy.push(random(-5, 5));
-        randomang.push(random(-5, 5));
-      }
-    });
-
-    currentChild.addEventListener("click", function () {
-      randomSentence = generateSentence(prevText, currentText, nextText);
-      textHue = random(100);
-      randomx = [];
-      randomy = [];
-      randomang = [];
-      for (let i = 0; i < randomSentence.length; i++) {
-        randomx.push(random(-5, 5));
-        randomy.push(random(-5, 5));
-        randomang.push(random(-5, 5));
-      }
-    });
+  // Update markov sentence effect on hover and click
+  for (const child of contentContainer.children) {
+    child.addEventListener("mouseover", updateSentence);
+    child.addEventListener("click", updateSentence);
   }
 }
 
-function draw() {
-  clear();
+function updateSentence() {
+  const text = [
+    this.previousElementSibling?.innerText,
+    this.innerText,
+    this.nextElementSibling?.innerText,
+  ].join(" ");
 
-  textSize(18);
+  textHue = random(100);
 
-  //check if randomSentence exists and is long enough
-  y = lerp(y, mouseY, 0.1);
+  const words = generateSentenceWords(text);
 
-  if (randomSentence && randomSentence.length > 1) {
-    let wordSpacing = 17;
-    let columnWidth = (windowWidth - currentChild.clientWidth - 20) / 2;
-    let maxWidth = columnWidth - 30;
-
-    // calculate the total width of the line and add breakpoints
-    let breakpoints = [];
-    let lineWidth = 0;
-    for (let i = 0; i < randomSentence.length; i++) {
-      lineWidth += textWidth(randomSentence[i]) + wordSpacing + randomx[i];
-      if (lineWidth > maxWidth) {
-        breakpoints.push(i);
-        lineWidth = textWidth(randomSentence[i]) + wordSpacing + randomx[i];
-      }
-    }
-
-
-    if (mouseX > width / 2) x = windowWidth - columnWidth + 10;
-    else x = columnWidth - 10;
-
-    let xOffset = 0;
-    let lineCount = 0;
-    let lineHeight = 40;
-
-    if (mouseX > width / 2) {
-      for (let i = 0; i < randomSentence.length; i++) {
-
-        const word = randomSentence[i];
-
-        if (i === breakpoints[lineCount]) {
-          xOffset = 0;
-          lineCount++;
-        }
-
-        let wordX = x + xOffset + randomx[i];
-        let wordY = y + randomy[i] + lineCount * lineHeight;
-        let wordAngle = randomang[i];
-
-        drawSentence(textHue, word, wordX, wordY, wordAngle);
-
-        xOffset += textWidth(word) + wordSpacing + randomx[i];
-      }
-    } else {
-      lineCount = breakpoints.length;
-      for (let i = randomSentence.length - 1; i >= 0; i--) {
-
-        const word = randomSentence[i];
-
-        if (i + 1 === breakpoints[lineCount - 1]) {
-          xOffset = 0;
-          lineCount--;
-        }
-
-        let wordX = x - textWidth(word) - xOffset - randomx[i];
-        let wordY = y + randomy[i] + lineCount * lineHeight;
-        let wordAngle = randomang[i];
-
-        drawSentence(textHue, word, wordX, wordY, wordAngle);
-
-        xOffset += textWidth(word) + wordSpacing + randomx[i];
-
-      }
-    }
-  }
+  wordsData = words.map((word) => ({
+    word: word,
+    jitterX: random(-5, 5),
+    jitterY: random(-5, 5),
+    jitterA: random(-5, 5),
+  }));
 }
 
-function generateSentence(prevText, currentText, nextText) {
-
-  const rm = new RiTa.RiMarkov(2, { temperature: 5 });
-  if (prevText) rm.addText(prevText);
-  rm.addText(currentText);
-  if (nextText) rm.addText(nextText);
+function generateSentenceWords(text = "") {
+  const rm = new RiTa.RiMarkov(2, { temperature: 5, disableInputChecks: true });
+  rm.addText(text);
 
   const sentence = rm.generate({
     minLength: 2,
@@ -155,21 +65,106 @@ function generateSentence(prevText, currentText, nextText) {
   return sentence.split(/\s+/g);
 }
 
-function drawSentence(textHue, word, wordX, wordY, wordAngle) {
+function draw() {
+  lerpedMouseY = lerp(lerpedMouseY, mouseY, 0.1);
+  clear();
+  if (wordsData.length < 1) return;
 
-  //draw rectangle
-  push();
-  fill(textHue, 100, 80);
-  translate(wordX - 5, wordY - 20);
-  rotate(wordAngle);
-  rect(0, 0, textWidth(word) + 10, 30);
-  pop();
+  /// settings
+  const lineHeight = 40;
+  const wordSpacing = 17;
+  const innerMargin = 20;
+  const outerMargin = 30;
 
-  // draw text
+  const contentWidth = contentContainer.querySelector("p").clientWidth;
+  const columnWidth = (windowWidth - contentWidth) / 2 - innerMargin;
+
+  /// calculate linebreaks
+  // linebreaks is array of indexes of words before linebreaks occur
+  const linebreaks = [];
+  let currentWidth = 0;
+  for (let i = 0; i < wordsData.length; i++) {
+    currentWidth += textWidth(wordsData[i].word) + wordSpacing;
+    if (currentWidth > columnWidth - outerMargin) {
+      linebreaks.push(i);
+      currentWidth = textWidth(wordsData[i].word) + wordSpacing;
+    }
+  }
+
+  /// determine sentence position
+  const sentenceY = lerpedMouseY;
+
+  if (mouseX > width / 2) {
+    /// left side, left justified
+    const sentenceX = windowWidth - columnWidth + innerMargin;
+    let currentLine = 0;
+    let currentX = 0;
+    let currentY = 0;
+    for (let i = 0; i < wordsData.length; i++) {
+      // draw the word
+      const word = wordsData[i].word;
+      const wordX = sentenceX + currentX + wordsData[i].jitterX;
+      const wordY = sentenceY + currentY + wordsData[i].jitterY;
+      const wordAngle = wordsData[i].jitterA;
+      drawWord(textHue, word, wordX, wordY, wordAngle);
+
+      // update carriage position
+      currentX += textWidth(wordsData[i].word) + wordSpacing;
+
+      // wrap if break
+      if (i + 1 === linebreaks[currentLine]) {
+        currentLine++;
+        currentX = 0;
+        currentY += lineHeight;
+      }
+    }
+  } else {
+    /// right side, right justified
+    // render backwards, bottom to top, right to left
+    const sentenceX = 0 + columnWidth - innerMargin;
+    let currentLine = linebreaks.length - 1;
+    let currentX = 0;
+    let currentY = linebreaks.length * lineHeight;
+    for (let i = wordsData.length - 1; i >= 0; i--) {
+      // draw the word
+      const word = wordsData[i].word;
+      const wordX = sentenceX + currentX + wordsData[i].jitterX;
+      const wordY = sentenceY + currentY + wordsData[i].jitterY;
+      const wordAngle = wordsData[i].jitterA;
+      drawWord(
+        textHue,
+        word,
+        wordX - textWidth(wordsData[i].word),
+        wordY,
+        wordAngle
+      );
+
+      // update carriage position
+      currentX -= textWidth(wordsData[i].word) + wordSpacing;
+
+      // wrap if break
+      if (i === linebreaks[currentLine]) {
+        currentLine--;
+        currentX = 0;
+        currentY -= lineHeight;
+      }
+    }
+  }
+}
+
+function drawWord(textHue, word, wordX, wordY, wordAngle) {
   push();
-  fill(100);
+  // Position the word
   translate(wordX, wordY);
   rotate(wordAngle);
+
+  // Draw backing rectangle
+  fill(textHue, 100, 80);
+  rect(-5, -5, textWidth(word) + 10, 30);
+
+  // Draw the word text
+  fill(100);
+  textAlign(LEFT, TOP);
   text(word, 0, 0);
   pop();
 }
