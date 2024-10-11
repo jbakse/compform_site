@@ -13,6 +13,8 @@ let randomx = [];
 let randomy = [];
 let randomang = [];
 
+let currentChild;
+
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight);
   mess(p5_canvas);
@@ -20,30 +22,42 @@ function setup() {
   angleMode(DEGREES);
   noStroke();
 
+  const children = container.children;
+
   //generate new sentence from the text of each paragraph
-  for (const child of container.children) {
-    child.addEventListener("mouseover", function () {
-      randomSentence = generateSentence(child);
+  for (let i = 0; i < children.length; i++) {
+    currentChild = children[i];
+    let prevText = false;
+    let nextText = false;
+    if (i > 0) prevText = children[i - 1].innerText;
+
+    let currentText = currentChild.innerText;
+
+    if (i < children.length - 1) nextText = children[i + 1].innerText;
+
+
+    currentChild.addEventListener("mouseover", function () {
+      randomSentence = generateSentence(prevText, currentText, nextText);
       textHue = random(100);
       randomx = [];
       randomy = [];
       randomang = [];
       for (let i = 0; i < randomSentence.length; i++) {
         randomx.push(random(-5, 5));
-        randomy.push(random(-10, 10));
+        randomy.push(random(-5, 5));
         randomang.push(random(-5, 5));
       }
     });
 
-    child.addEventListener("click", function () {
-      randomSentence = generateSentence(child);
+    currentChild.addEventListener("click", function () {
+      randomSentence = generateSentence(prevText, currentText, nextText);
       textHue = random(100);
       randomx = [];
       randomy = [];
       randomang = [];
       for (let i = 0; i < randomSentence.length; i++) {
         randomx.push(random(-5, 5));
-        randomy.push(random(-10, 10));
+        randomy.push(random(-5, 5));
         randomang.push(random(-5, 5));
       }
     });
@@ -53,68 +67,109 @@ function setup() {
 function draw() {
   clear();
 
-  //maybe do a spinner with text glitching?
-  x = lerp(x, mouseX, 0.1);
+  textSize(18);
+
+  //check if randomSentence exists and is long enough
   y = lerp(y, mouseY, 0.1);
 
-
-  //check if randomSentenceExists
   if (randomSentence && randomSentence.length > 1) {
-  let xoffset = 0;
-    //calculate sentenceWidth
-    let sentenceWidth = 0;
+    let wordSpacing = 17;
+    let columnWidth = (windowWidth - currentChild.clientWidth - 20) / 2;
+    let maxWidth = columnWidth - 30;
+
+    // calculate the total width of the line and add breakpoints
+    let breakpoints = [];
+    let lineWidth = 0;
     for (let i = 0; i < randomSentence.length; i++) {
-      sentenceWidth += textWidth(randomSentence[i]) + 12;
+      lineWidth += textWidth(randomSentence[i]) + wordSpacing + randomx[i];
+      if (lineWidth > maxWidth) {
+        breakpoints.push(i);
+        lineWidth = textWidth(randomSentence[i]) + wordSpacing + randomx[i];
+      }
     }
-    sentenceWidth -= 12;
-
-    //draw
-    for (let i = 0; i < randomSentence.length; i++) {
-      const word = randomSentence[i];
-      let wordW = textWidth(word);
-      textSize(18);
 
 
-      push();
-      fill(textHue, 100, 80);
-      if (mouseX > width / 2) {
-        translate(x + xoffset + randomx[i] - 5, y + randomy[i] - 20);
-      } else {
-        translate(
-          x + xoffset + randomx[i] - sentenceWidth - 5,
-          y + randomy[i] - 20
-        );
+    if (mouseX > width / 2) x = windowWidth - columnWidth + 10;
+    else x = columnWidth - 10;
+
+    let xOffset = 0;
+    let lineCount = 0;
+    let lineHeight = 40;
+
+    if (mouseX > width / 2) {
+      for (let i = 0; i < randomSentence.length; i++) {
+
+        const word = randomSentence[i];
+
+        if (i === breakpoints[lineCount]) {
+          xOffset = 0;
+          lineCount++;
+        }
+
+        let wordX = x + xOffset + randomx[i];
+        let wordY = y + randomy[i] + lineCount * lineHeight;
+        let wordAngle = randomang[i];
+
+        drawSentence(textHue, word, wordX, wordY, wordAngle);
+
+        xOffset += textWidth(word) + wordSpacing + randomx[i];
       }
-      rotate(randomang[i]);
-      rect(0, 0, wordW + 10, 30);
-      pop();
+    } else {
+      lineCount = breakpoints.length;
+      for (let i = randomSentence.length - 1; i >= 0; i--) {
 
-      push();
-      fill(100);
-      if (mouseX > width / 2) {
-        translate(x + xoffset + randomx[i], y + randomy[i]);
-      } else {
-        translate(x + xoffset + randomx[i] - sentenceWidth, y + randomy[i]);
+        const word = randomSentence[i];
+
+        if (i + 1 === breakpoints[lineCount - 1]) {
+          xOffset = 0;
+          lineCount--;
+        }
+
+        let wordX = x - textWidth(word) - xOffset - randomx[i];
+        let wordY = y + randomy[i] + lineCount * lineHeight;
+        let wordAngle = randomang[i];
+
+        drawSentence(textHue, word, wordX, wordY, wordAngle);
+
+        xOffset += textWidth(word) + wordSpacing + randomx[i];
+
       }
-
-      rotate(randomang[i]);
-      text(word, 0, 0);
-      pop();
-      xoffset += wordW + 10;
     }
   }
 }
 
-function generateSentence(child) {
-  const rm = new RiTa.RiMarkov(2, { temperature: 20 });
-  rm.addText(child.innerText);
+function generateSentence(prevText, currentText, nextText) {
+
+  const rm = new RiTa.RiMarkov(2, { temperature: 5 });
+  if (prevText) rm.addText(prevText);
+  rm.addText(currentText);
+  if (nextText) rm.addText(nextText);
 
   const sentence = rm.generate({
     minLength: 2,
-    temperature: 20,
-    maxLength: 12,
+    temperature: 5,
+    maxLength: 15,
     allowDuplicates: true,
   });
 
   return sentence.split(/\s+/g);
+}
+
+function drawSentence(textHue, word, wordX, wordY, wordAngle) {
+
+  //draw rectangle
+  push();
+  fill(textHue, 100, 80);
+  translate(wordX - 5, wordY - 20);
+  rotate(wordAngle);
+  rect(0, 0, textWidth(word) + 10, 30);
+  pop();
+
+  // draw text
+  push();
+  fill(100);
+  translate(wordX, wordY);
+  rotate(wordAngle);
+  text(word, 0, 0);
+  pop();
 }
