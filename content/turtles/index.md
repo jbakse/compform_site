@@ -30,7 +30,7 @@ One of the key ideas introduced in Logo was [turtle graphics](https://en.wikiped
 
 </div>
 
-Turtles make it possible to change how you think about drawing and give you a new set of tools for expressing an image in code. They don't change _what you can do_: the turtle class provided in this chapter uses the standard p5.js drawing API under the hood. Instead, using a turtle changes _how you do it_.
+Turtles provide a new set of tools for expressing an image in code. They don't change _what you can do_: the turtle class provided in this chapter uses the standard p5.js drawing API under the hood. Instead, using a turtle changes _how you do it_.
 
 Logo's use of turtles allows students to make a strong association between what happens in the program and how they move their own bodies in the real world. Papert called this _body-syntonic_ learning. Body-syntonic learning supports the understanding of abstract ideas through sensory experience. Papert often discussed these ideas in his writing and videos.
 
@@ -249,6 +249,12 @@ Grab [the code here](turtle/turtle.html).
 `myTurtle.popState()`
 : Restores the turtle’s state to the top recorded state on the stack.
 
+`myTurtle.show()`
+: Show the a small triangle representing the turtle.
+
+`myTurtle.hide()`
+: Hide the turtle.
+
 ## Turtle Examples
 
 <!-- ### Turtle Square Example
@@ -285,6 +291,26 @@ You can use `push()` and `pop()` together to take a break from drawing one shape
 A common application of turtle graphics is drawing organic branching shapes, like trees.
 
 {% js-lab "sketches/turtle_tree_2.js" %}
+
+### Showing The Turtle
+
+The turtle objects show() and hide() methods can be used to display a small triangle representing the turtle's current position and bearing.
+
+{% js-lab "sketches/turtle_show.js" %}
+
+It can be helpful while your working to see where the turtle ends up.
+
+### Showing The Turtle in Action
+
+<div class="sidebar link-box">
+
+[**Generator Functions** MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+
+</div>
+
+Sometimes it can be useful—or just fun—to see the turtle moving as it makes the drawing. Normally p5.js waits until the end of the draw loop to show the results of your drawing. But you can use [generator functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) to see your drawing get made step by step. Generator functions are an advanced feature of JavaScript that allows you to create functions that can be exited and re-entered.
+
+{% js-lab "sketches/turtle_show_yield.js" %}
 
 <div class="activity challenges">
 
@@ -359,3 +385,8 @@ A turtle library for Processing from Leah Buechley.
 Draw with turtles on this web editor, iLogo.
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/mess.js"></script>
+<script src="./turtle/turtle.js"></script>
+<script src="./turtle_mess.js"></script>
