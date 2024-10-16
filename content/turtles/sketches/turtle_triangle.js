@@ -29,5 +29,9 @@ function draw() {
     myTurtle.turnRight(120);
   }
 
+  console.log("Turtle State:");
+  console.log("x:", myTurtle.x, "y:", myTurtle.y);
+  console.log("bearing:", myTurtle.bearing);
+  console.log("penIsDown:", myTurtle.penIsDown);
   noLoop();
 }

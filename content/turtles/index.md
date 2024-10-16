@@ -216,6 +216,12 @@ Grab [the code here](turtle/turtle.html).
 `myTurtle = new Turtle(x, y)`
 : The turtle constructor: it creates a turtle object. It takes optional `x`, `y` starting coordinates or defaults to the center of the sketch.
 
+`myTurtle.x`
+`myTurtle.y`
+`myTurtle.bearing`
+`myTurtle.isPenDown`
+: Get info about the turtle's current state.
+
 `myTurtle.moveForward(distance)`
 : Moves the turtle forward `distance` pixels along its current bearing, drawing a line if pen is down.
 
