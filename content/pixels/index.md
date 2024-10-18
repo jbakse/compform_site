@@ -281,7 +281,7 @@ You can read and write individual pixel values with the `get()` and `set()` meth
 <!--
 ### Performance
 
-The built-in p5 `get()` function gets the RGBA values of a pixel in an image. Internally `get()` calls `loadPixels()` to make sure it is working with up-to-date information. This means that even when getting the values for a single pixel, _every_ pixel is read _every_ time you call `get()`. As noted in the [reference](https://p5js.org/reference/#/p5/get), this makes `get()` slower than accessing the values in the `pixels[]` array directly. In fact, `get()` can easily be 1000s of times slower.
+The built-in p5 `get()` function gets the RGBA values of a pixel in an image. Internally `get()` calls `loadPixels()` to make sure it is working with up-to-date information. This means that even when getting the values for a single pixel, _every_ pixel is read _every_ time you call `get()`. As noted in the [reference](https://p5js.org/reference/p5/get), this makes `get()` slower than accessing the values in the `pixels[]` array directly. In fact, `get()` can easily be 1000s of times slower.
 
 <div class="callout">
 
