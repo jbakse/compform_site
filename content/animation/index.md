@@ -20,15 +20,15 @@ An animation is a series of still frames shown in very quick succession; a few s
 
 ## Real-time vs. Pre-rendered
 
-In **pre-rendered** animations, all the frames in an animation are created ahead of time and then played back separately. In **real-time** animations, the frames are created as they are shown.
+In **pre-rendered** animations, all the frames in an animation are created ahead of time and then played back later. In **real-time** animations, the frames are created as they are shown.
 
-Real-time rendering for animation needs to be done quickly. To render an animation at 30 frames per second, each frame must be generated in 33 milliseconds or less. In exchange for limiting how much time can be spent rendering each frame, we gain a huge benefit. Real-time animation can react to information—including user input—that is not known ahead of time. This allows real-time animation to be _interactive_.
+Real-time rendering for animation needs to be done quickly. To render an animation at 30 frames per second, each frame must be generated in 33 milliseconds or less. In exchange for limiting how much time can be spent rendering each frame, we gain a huge benefit. Real-time animation can react to information—like user input—that is not known ahead of time. This allows real-time animation to be _interactive_.
 
-But pre-rendering provides its own huge benefit. Limiting the time spent rendering each frame often means compromising the quality or complexity of the animation. When creating a pre-rendered animation, one can take as long as necessary to create each frame, allowing for high complexity and quality. Individual frames in high-end animated films often take hours or even days to render, but they look better as a result.
+But pre-rendering provides its own huge benefit. Limiting the time spent rendering each frame often means compromising the quality or complexity of the animation. When creating a pre-rendered animation, rendering can take as long as necessary to create each frame, allowing for high complexity and quality. Individual frames in high-end animated films often take hours or even days to render, but they look better as a result.
 
 ### Frames Per Second
 
-Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of frames as independent images. Above 10, we begin to perceive a series of frames as a single image in motion. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are helpful in some cases like e-sports and virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second. VR scenes must be rendered twice—once for each eye—and in real time, so each frame must be rendered in about 5 milliseconds.
+Generally, faster frame rates produce smoother motion. At rates below about 10 frames per second, we tend to perceive a series of frames as independent images. Above 10, we begin to perceive a series of frames as a single, moving image. Hand-drawn animation is often shown at 12 or 24 frames per second. Films are traditionally shot at 24 frames per second. Modern video games usually target 30 or 60 frames per second. Frame rates higher than 60 frames per second don't improve animation very much, but they are helpful in some cases like e-sports and virtual reality. Virtual reality is more demanding than flat animation partly because it is trying to create an illusion of _presence_, not just motion. Current VR systems run at 90+ frames per second. VR scenes must be rendered twice—once for each eye—and in real time, so each frame must be rendered in about 5 milliseconds.
 
 Take a look at the metronomes below to get a feel for how framerate corresponds to smoothness. They are animated at 5, 15, 30, and 60 frames per second.
 
@@ -38,13 +38,13 @@ Take a look at the metronomes below to get a feel for how framerate corresponds 
 
 Timekeeping is essential to generating animation. Time is the foundation for sequencing, pace, rhythm, and speed. Choosing an appropriate method for keeping time is an important step to getting the results you want.
 
-Real-time animation is computed at the same rate it is shown. In real-time rendering the render time and display time are linked. Something drawn four seconds after rendering begins is seen four seconds after the animation begins. Rendering a frame faster than needed is fine: the application can simply wait to display it. If rendering the frame takes too long, however, frames will be dropped. The frame rate will dip and the animation will become choppy.
+Real-time animation is computed at the same rate it is shown. In real-time rendering the render time and display time are linked. Something drawn four seconds after rendering begins is seen four seconds after the animation begins. Rendering a frame faster than needed is fine: the application can simply wait to display it. If rendering the frame takes too long, however, frames will be dropped, the frame rate will dip, and the animation will become choppy.
 
-Pre-rendered animation is computed at a different rate—probably much slower, but maybe faster—than it is displayed. The render time and display time are not linked. A frame seen four seconds into an animation may have been drawn several hours into the rendering job that created it.
+Pre-rendered animation is computed at a different rate—probably much slower, but in some cases faster—than it is displayed. The render time and display time are not linked. A frame seen four seconds into an animation may have been drawn several hours into the rendering job that created it.
 
 ### The Simple Approach
 
-A common and simple approach to keeping time is to first set the frame rate, and then count the frames. In p5.js you can set the framerate with `frameRate(fps)` and get the current frame number from `frameCount`.
+A common and simple (but imperfect) approach to keeping time is to first set the frame rate, and then count the frames. In p5.js you can set the framerate with `frameRate(fps)` and get the current frame number from `frameCount`.
 
 {% js-lab "sketches/metronome_simple.js" %}
 
@@ -77,15 +77,17 @@ In a 60fps animation, each frame should be shown for 16.6 milliseconds. If drawi
 
 On the other hand, consider what happens if drawing a frame takes too long, let's say 20 milliseconds. The draw loop might show the frame as soon as possible, but it will still be a few milliseconds late. Alternatively, the draw loop might wait an additional 13.2 milliseconds, a longer delay but in sync with the global framerate. In either case, the frame count is now behind the actual elapsed time. These delays are cumulative: slow frames set things back but fast frames don't recover the lost time. Over time, the frame count will lag more and more.
 
-Another way your frame count can fall out of sync with time is if your requested frame rate just isn't possible. Many environments, including p5.js in the browser, synchronize drawing to the screen's refresh rate, commonly 60hz. In p5.js your framerate will effectively get rounded to a factor of 60.
+Another way your frame count can fall out of sync with time is if your requested frame rate is adjusted by your environment. Many environments, including p5.js in the browser, synchronize drawing to the screen's refresh rate. In p5.js running on a 60hz monitor your requested framerate will effectively get rounded to a factor of 60.
+
+In the example below, the `frameRate` is set to 50. Depending on your monitor's refresh rate, the actual frame rate may be 60fps. The example shows the expected frame rate, the actual frame rate, and the difference between them.
 
 {% js-lab "sketches/frame_rate_test.js" %}
 
-In simple games, apps, and prototypes these problems may not matter. When syncing animation to real time _does_ matter—e.g. if your animation should sync with sound playback—the simple approach above will cause problems.
+In simple games, apps, and prototypes these problems may not matter. When syncing animation to pre-determined real time event this _does_ matter—e.g. if your animation should sync with sound playback—the simple approach above will cause syncing problems.
 
 ### Real-time Clocks for Real-time Animation
 
-For real-time animation, we want to base our animation on how much real time has elapsed.
+For real-time animation, we want to base our timing on how much real time (wall clock time) has elapsed.
 
 The example below swings the pendulum **once per second** using `millis()` as the time base. If you slow the frame rate down with the slider, the animation becomes choppy, but the pendulum still swings at the same rate.
 
@@ -110,7 +112,8 @@ Imagine you want something to happen in your animation 10 seconds after it start
 ```javascript
 const eventTime = 10;
 if (currentTime === eventTime) {
-  doThing(); // probably never happens
+  // current time might jump from ~9.9 to ~10.1
+  doThing(); // so this might get skipped
 }
 ```
 
@@ -160,18 +163,17 @@ if (frameCount === Math.floor(eventFrame)) {
 
 The `map()` function can be useful for mapping time to other things, like position.
 
-```javascript
-// move an ellipse from 100 to 400
-// starting at 1 second and ending at 2.5 seconds
-let x = map(millis(), 1000, 2500, 100, 400, true);
-ellipse(x, 100, 10, 10);
-```
+{% js-lab "sketches/dot_slide.js" %}
+
+### Easing Functions
+
+An [easing function](https://easings.net/) can be used to create more natural animation with movement. In real life things need to accelerate into motion. An easing function takes a linear input and produces a non-linear output that "eases" in or out.
+
+{% js-lab "sketches/dot_slide_ease.js" %}
 
 ### Modulo Beats
 
 The modulo operator—`%`—is great for breaking time into repeated chunks or measures. The example below uses `%` and `map()` together to add a red blinking light to the metronome.
-
-<!-- should be js-show -->
 
 {% js-lab "sketches/metronome_modulo.js" %}
 
@@ -208,7 +210,7 @@ pre-rendere with recording -->
 
 ## Exporting + Stitching Frames
 
-Some environments support exporting frames as video, but neither JavaScript nor p5.js has this feature. However, p5.js does make it easy to export individual frames. You can create an image sequence by including the frame number in the name of each exported frame. Then the sequence can be stitched into a video using separate software. The following utility function wraps p5.js's `save()` function to make exporting image sequences easier.
+p5.js does not have a built in way to export your sketch as a video. However, p5.js does make it easy to export individual frames. You can create an image sequence by exporting each frame and including the frame number in the name. Then the sequence can be stitched into a video using separate software. The following utility function wraps p5.js's `save()` function to make exporting image sequences easier.
 
 ```javascript
 // saveFrame - a utility function to save the current frame out with a nicely formatted name
@@ -242,7 +244,8 @@ If you are exporting frames, keep in mind that p5.js automatically uses a higher
 
 Many applications can take a sequence of frames and stitch them into a video. [FFmpeg](https://www.ffmpeg.org/) is a powerful command line utility for this and other video tasks. FFmpeg is a good choice for automated/back-end workflows. [After Effects](https://www.adobe.com/products/aftereffects.html) is a good choice if you are going to use the animation as part of a larger animated composition.
 
-You can even stitch images in [Photoshop](https://www.adobe.com/products/photoshop.html):
+Many GUI video and animation packages can work with image sequences.
+You can even stitch images into video in [Photoshop](https://www.adobe.com/products/photoshop.html):
 
 1. Open Photoshop.
 2. Choose `File` > `Open`.
@@ -252,27 +255,35 @@ You can even stitch images in [Photoshop](https://www.adobe.com/products/photosh
 6. Adjust export settings.
 7. Click `Render`
 
+Exporting individual frames provides the highest quality output—each image can be a losslessly compressed PNG. Because of this, exporing image sequences is common in professional video and effects workflows. Browsers don't allways handle downloading hundreds of files quickly and stiching them manually is not convient. In cases where the highest quality output isn't required, it can be nicer to output a single video file.
+
+## Exporting Video
+
+Modern JavaScript APIs offer ways to capture the canvas as a video. I'm working on a utility library that works with p5 and provides a GUI for capturing video from your sketches. You can try it here: [editor.p5.js: Grabber Test](https://editor.p5js.org/jbakse/sketches/7C7seHJYX)
+
 ### Clouds
 
 This example uses a particle effect to generate an animation of a cloud forming and dissipating. It animates 5000 particles, and can't run in real time (at least not on my computer).
 
-{% js-lab "sketches/save_frames.js" %}
+{% js-lab "sketches/clouds.js" %}
 
 Here is a video created from the frames exported by the example above. The frames were stitched in Photoshop.
 
 <div class="wide">
 
-<video src="videos/render.mp4" poster="videos/render_0030.jpg" controls></video>
+<video controls poster="videos/render_0030.jpg">
+  <source src="videos/clouds_render.webm" type="video/webm"/>
+</video>
 
 </div>
 
-This video was also created in Photoshop with a gradient map effect added.
+<!-- This video was also created in Photoshop with a gradient map effect added.
 
 <div class="wide">
 
 <video src="videos/render_color.mp4" poster="videos/render_color_0030.jpg" controls></video>
 
-</div>
+</div> -->
 
 ## Study Examples
 
@@ -291,9 +302,10 @@ Take some time to study `fuzzy_ellipse()` in detail. Try to build an understandi
 1. How many parameters does it take? Are they all required?
 1. What does `if (dist(0, 0, xx, yy) > fuzz) continue;` do?
 1. What happens without this line?
-1. How many ellipses are drawn on each call of fuzzy_ellipse?
+1. How many ellipses are drawn on each call of fuzzy_ellipse? Are you sure?
+1. Does the answer to the previous question suggest avenues for improving `fuzzy_ellipse()`?
 
-{% js-lab "challenges/fuzzy_01.js" %}
+   {% js-lab "challenges/fuzzy_01.js" %}
 
 ### Fuzzy Ellipse II
 
