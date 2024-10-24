@@ -373,6 +373,7 @@ This week focuses on creating smooth pre-rendered animations.
 Create a three-second bumper for this site, Computational Form. The bumper should:
 
 - be exactly 90 frames: 3 seconds @ 30fps.
+- be 1920x1080 pixels.
 - have a clear progression: beginning, middle, end.
 - feature either the text “Compform” or “Computational Form”.
 - consider including the five-triangle "Sierpinski" icon.
