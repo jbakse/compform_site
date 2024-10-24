@@ -97,12 +97,26 @@ canvas.mess.off {
   .switch .label {
     margin-top: 1.5px;
     margin-left: 5px;
-
     font-family: "Miriam Libre";
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 20px;
     letter-spacing: 0.3px;
     color: $dark-grey;
   }
+  .switch .label a {
+    text-decoration: none;
+    color: $accent-color;
+    font-size: 11px;
+  }
+  .switch .label a:hover {
+    border-bottom: 1px solid $accent-color;
+  }
+  .switch input:checked ~ .label::before {
+    content: "background on";
+  }
+  .switch .label::before {
+    content: "background off";
+  }
+
 }

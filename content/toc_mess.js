@@ -23,7 +23,7 @@ let current_cell = {
 
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight);
-  mess(p5_canvas, 60000);
+  mess(p5_canvas, {}, 60000);
 
   colorMode(HSB, color_steps);
   noStroke();
