@@ -7,44 +7,53 @@
  *
  */
 
-/* exported setup draw preload mousePressed*/
-/* global mess*/
+/* exported setup draw preload mousePressed windowResized pauseMess resumeMess */
+/* global mess p5*/
 
-const sprites = [];
-const boomFrames = [];
+// require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js
+// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/addons/p5.sound.min.js
 
-const numSprites = 8;
-const spriteMargin = 60;
-const spriteSpeed = 2;
+const fishies = [];
+
+// game settings
+const fishNum = 8;
+const fishMargin = 60;
+const fishSpeed = 2;
 const stepSize = 5;
+const hueShiftInterval = 200; // interval for shifting fish hue
+const explosionDuration = 60; // how long to show explosion effect
+const winDuration = 80; // how long to show the win message
 
-let hueTimer = 0;
-let score = 0;
+let scoreOscillator;
+let scoreEnvelope;
 
-let fish1 = {};
-let fish2 = {};
-let winMessage = {};
+let resetInterval;
+let fishiesHue;
 
-let spriteHue;
+let currentScore = 0;
+
+let images = {};
 
 function preload() {
-  // load fish drawings and explosion frames
-  fish1 = {
-    main: loadImage("./sprites/fishy1.png"),
-    highlight: loadImage("./sprites/fishy1_highlight.png"),
-  };
-  fish2 = {
-    main: loadImage("./sprites/fishy2.png"),
-    highlight: loadImage("./sprites/fishy2_highlight.png"),
-  };
-
-  boomFrames[0] = loadImage("./sprites/boom1.png");
-  boomFrames[1] = loadImage("./sprites/boom2.png");
-  boomFrames[2] = loadImage("./sprites/boom3.png");
-
-  winMessage = {
-    main: loadImage("./sprites/win.png"),
-    highlight: loadImage("./sprites/win_highlight.png"),
+  // load fish, explosion, and win sprites
+  images = {
+    fish1: {
+      main: loadImage("./sprites/fishy1.png"),
+      highlight: loadImage("./sprites/fishy1_highlight.png"),
+    },
+    fish2: {
+      main: loadImage("./sprites/fishy2.png"),
+      highlight: loadImage("./sprites/fishy2_highlight.png"),
+    },
+    explosionFrames: [
+      loadImage("./sprites/boom1.png"),
+      loadImage("./sprites/boom2.png"),
+      loadImage("./sprites/boom3.png"),
+    ],
+    winMessage: {
+      main: loadImage("./sprites/win.png"),
+      highlight: loadImage("./sprites/win_highlight.png"),
+    },
   };
 }
 
@@ -58,139 +67,208 @@ function setup() {
     authorLink: "https://anakonzen.com",
   });
 
-  colorMode(HSB, 100);
-
-  for (let i = 0; i < numSprites; i++) {
-    sprites.push({
-      img: random() > 0.5 ? fish1 : fish2,
-      width: fish1.main.width,
-      baseX: i * (fish1.main.width + spriteMargin) + width,
-      baseY: height / 2,
-      snappedY: 0,
-      snappedX: 0,
-      speed: 0.04,
-      amplitude: random(8, 12),
-      phase: random(TWO_PI),
-      exploded: false,
-      win: false,
-      timer: 0,
-    });
+  for (let i = 0; i < fishNum; i++) {
+    fishies.push(new Fish(i));
   }
+
+  fishiesHue = random(1);
+
+  //calculate the time it takes for all fish to cross the screen + a small delay
+  resetInterval = (width + (images.fish1.main.width + fishMargin) * fishNum) / fishSpeed + 50;
+
+  // initialize envelope and oscillator for score sound
+  scoreEnvelope = new p5.Envelope();
+  scoreEnvelope.setADSR(0.02, 0.25, 0, 0.05); // quick attack and decay
+  scoreEnvelope.setRange(0.5, 0); // start loud and fade quickly
+
+  scoreOscillator = new p5.Oscillator("square");
+  scoreOscillator.amp(scoreEnvelope);
+  scoreOscillator.start();
+
+  colorMode(HSB, 1);
   imageMode(CENTER);
-  spriteHue = random(100);
+  noStroke();
 }
 
 function draw() {
-  background(100);
+  //set state
 
-  noStroke();
-  hueTimer++;
-  if (hueTimer > 200) {
-    hueTimer = 0;
-    spriteHue = random(100);
+  //change hue every few frames
+  if (frameCount % hueShiftInterval === 0) {
+    fishiesHue = random(1);
   }
-  for (const sprite of sprites) {
-    // calculate the fish's sway (up and down motion) on a sine curve based on time and phase
-    const sway =
-      sin(frameCount * sprite.speed + sprite.phase) * sprite.amplitude;
-    // snap the fish's y position to a pixel grid
-    sprite.snappedY = floor((sprite.baseY + sway) / stepSize) * stepSize;
 
-    tint(spriteHue, 75, 100);
+  for (const fish of fishies) {
+    fish.update();
+  }
 
-    push();
+  if (frameCount % resetInterval === 0) resetGame();
 
-    // if the fish has moved off-screen, reset it
-    if (sprite.baseX < -sprite.width) resetSprite(sprite);
-
-    // snap the fish's x position to a pixel grid
-    sprite.snappedX = floor(sprite.baseX / stepSize) * stepSize;
-
-    translate(sprite.snappedX, sprite.snappedY);
-
-    if (!sprite.exploded) {
-      displayFish(sprite);
-    } else {
-      sprite.timer++;
-      if (sprite.win) {
-        displayWinningSprite(sprite);
-      } else {
-        displayExplodingSprite(sprite);
-      }
-    }
-
-    pop();
+  //draw
+  background(1);
+  for (const fish of fishies) {
+    fish.draw();
   }
 }
 
 function mousePressed() {
-  for (const sprite of sprites) {
-    if (isMouseOnSprite(sprite, 20)) {
-      if (!sprite.exploded) score++; //only increase score if sprite wasn't clicked before
+  if (getAudioContext().state !== "running") getAudioContext().resume(); // resume audio if blocked by browser
 
-      // check if all sprites were clicked (score is a multiple of numSprites)
-      if (score % numSprites === 0) {
-        sprite.win = true;
+  for (const fish of fishies) {
+    if (fish.isCloseToMouse(20)) {
+      if (fish.state === "swimming") currentScore++; //only increase score if fish wasn't clicked before
+
+      // check if all fishies were clicked
+      if (currentScore === fishNum) {
+        fish.state = "win";
+        playWinSound();
       } else {
-        sprite.win = false;
+        fish.state = "exploded";
+        playScoreSound();
       }
-      sprite.exploded = true;
     }
   }
 }
 
-function displayExplodingSprite(sprite) {
-  if (sprite.timer < 20) {
-    image(boomFrames[0], 0, 0);
-  } else if (sprite.timer < 40) {
-    image(boomFrames[1], 0, 0);
-  } else if (sprite.timer < 60) {
-    image(boomFrames[2], 0, 0);
-  } else if (sprite.timer > 80) {
-    sprite.baseX -= spriteSpeed;
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  for (const fish of fishies) {
+    fish.reset();
+  }
+  resetInterval = (width + (images.fish1.main.width + fishMargin) * fishNum) / fishSpeed;
+}
+
+function resetGame() {
+  //reset score and fish states
+  currentScore = 0;
+  for (const fish of fishies) {
+    fish.reset();
   }
 }
 
-function displayWinningSprite(sprite) {
-  if (sprite.timer < 80) {
-    image(winMessage.main, 0, 0);
+function playScoreSound() {
+  scoreOscillator.freq(150 * pow(1.3, currentScore)); // increase pitch with each successful click
+  scoreEnvelope.play();
+}
+
+function playWinSound() {
+  const winOscillator = new p5.Oscillator("square");
+  winOscillator.start();
+  winOscillator.amp(0.5);
+
+  // sequence of frequencies to create the melody
+  const frequencies = [440, 494, 523, 587, 659, 698, 784]; // a simple scale (A, B, C, D, E, F, G)
+  const delay = 100; // time between each note in milliseconds
+
+  //schedule each note to play after a delay
+  frequencies.forEach((freq, i) => {
+    setTimeout(() => {
+      winOscillator.freq(freq);
+      if (i === frequencies.length - 1) {
+        // stop the oscillator after the last note
+        winOscillator.stop();
+      }
+    }, i * delay);
+  });
+}
+
+class Fish {
+  constructor(index) {
+    this.index = index;
+    this.width = images.fish1.main.width;
+    this.height = images.fish1.main.height;
+    this.swaySpeed = 0.04;
+    this.swayAmplitude = random(8, 12);
+    this.swayPhase = random(TWO_PI);
+
+    this.reset();
+  }
+
+  reset() {
+    // randomly choose fish sprite and reset position and state
+    this.fishImages = random() > 0.5 ? images.fish1 : images.fish2;
+    this.state = "swimming";
+    this.timer = 0;
+    this.x = (this.width + fishMargin) * this.index + width; // start off-screen
+    this.y = height / 2;
+  }
+
+  drawFish() {
+    image(this.fishImages.main, 0, 0);
     push();
-    tint(spriteHue - 10, 30, 100);
-    image(winMessage.highlight, 0, 0);
+    tint(fishiesHue - 0.1, 0.3, 1);
+    image(this.fishImages.highlight, 0, 0);
     pop();
-  } else {
-    sprite.baseX -= spriteSpeed;
+  }
+
+  drawWinMessage() {
+    if (this.timer < winDuration) {
+      image(images.winMessage.main, 0, 0);
+      push();
+      tint(fishiesHue - 0.1, 0.3, 1);
+      image(images.winMessage.highlight, 0, 0);
+      pop();
+    }
+  }
+
+  drawExplosion() {
+    if (this.timer < explosionDuration) {
+      image(images.explosionFrames[floor(this.timer / 20) % images.explosionFrames.length], 0, 0);
+    }
+  }
+
+  snapTo(num, multiple) {
+    return floor(num / multiple) * multiple;
+  }
+
+  getSway() {
+    // calculate the fish's sway (up and down motion) on a sine curve based on time and phase
+    return sin(frameCount * this.swaySpeed + this.swayPhase) * this.swayAmplitude;
+  }
+
+  getY() {
+    // snap the sprite's y position to a pixel grid
+    return this.snapTo(this.y + this.getSway(), stepSize);
+  }
+
+  getX() {
+    // snap the sprite's x position to a pixel grid
+    return this.snapTo(this.x, stepSize);
+  }
+
+  isCloseToMouse(threshold) {
+    return (
+      mouseX > this.getX() - threshold &&
+      mouseX < this.getX() + this.width + threshold &&
+      mouseY > this.getY() - threshold &&
+      mouseY < this.getY() + this.height + threshold
+    );
+  }
+
+  update() {
+    if (this.state === "swimming") {
+      this.x -= fishSpeed;
+    } else {
+      this.timer++;
+    }
+  }
+
+  draw() {
+    push();
+    tint(fishiesHue, 0.75, 1);
+    translate(this.getX(), this.getY());
+    if (this.state === "swimming") {
+      this.drawFish();
+    } else if (this.state === "win") {
+      this.drawWinMessage();
+    } else if (this.state === "exploded") {
+      this.drawExplosion();
+    }
+    pop();
   }
 }
 
-function displayFish(sprite) {
-  sprite.baseX -= spriteSpeed;
-  image(sprite.img.main, 0, 0);
-  push();
-  tint(spriteHue - 10, 30, 100);
-  image(sprite.img.highlight, 0, 0);
-  pop();
-}
-
-function resetSprite(sprite) {
-  if (!sprite.exploded) score = 0; //reset score if sprite wasn't clicked
-  sprite.img = random() > 0.5 ? fish1 : fish2;
-  sprite.exploded = false;
-  sprite.timer = 0;
-  sprite.baseX = width + sprite.width;
-}
-
-// check if mouse is close to sprite
-function isMouseOnSprite(sprite, proximity) {
-  return (
-    mouseX > sprite.snappedX - proximity &&
-    mouseX < sprite.snappedX + fish1.main.width + proximity &&
-    mouseY > sprite.snappedY - proximity &&
-    mouseY < sprite.snappedY + fish1.main.height + proximity
-  );
-}
-
-//util mess functions
+//mess util functions
 function pauseMess() {
   noLoop();
 }
