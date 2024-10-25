@@ -1,6 +1,8 @@
 // draws a rainbow maze
 
-/* exported preload setup draw mousePressed windowResized */
+/* exported preload setup draw mousePressed windowResized pauseMess resumeMess */
+
+/* global mess */
 
 // config
 const color_steps = 1000;
@@ -13,8 +15,8 @@ let grid_cols = 0;
 let grid_rows = 0;
 let grid_width = 0;
 let grid_height = 0;
-let grid = [];
-let cell_history = [];
+const grid = [];
+const cell_history = [];
 let current_cell = {
   x: 0,
   y: 0,
@@ -23,7 +25,7 @@ let current_cell = {
 
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight);
-  mess(p5_canvas, {}, resumeMess, pauseMess, 60000);
+  mess(p5_canvas, 60000);
 
   colorMode(HSB, color_steps);
   noStroke();
@@ -43,7 +45,7 @@ function mess_resize() {
   current_cell.y = grid_rows - 1;
 
   // initialize 2d array
-  for (var i = 0; i < grid_cols; i++) {
+  for (let i = 0; i < grid_cols; i++) {
     grid[i] = [];
   }
 }
@@ -59,7 +61,7 @@ function step() {
 
   // look at adjacent cells in random order, try to find open cell
   // direction is biased right
-  let directions = shuffle(["up", "right", "down", "left", "right"]);
+  const directions = shuffle(["up", "right", "down", "left", "right"]);
   for (const dir of directions) {
     x = current_cell.x;
     y = current_cell.y;
@@ -101,12 +103,7 @@ function step() {
 
     // draw new cell
     fill(current_cell.c, color_steps * color_s, color_steps * color_b);
-    rect(
-      current_cell.x * grid_width,
-      current_cell.y * grid_height,
-      grid_width + 1,
-      grid_height + 1
-    );
+    rect(current_cell.x * grid_width, current_cell.y * grid_height, grid_width + 1, grid_height + 1);
   } else {
     // hit a dead end
     if (cell_history.length) {
