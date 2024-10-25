@@ -18,7 +18,12 @@ let wordsData = [];
 
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight);
-  mess(p5_canvas, {messName: "markov", messLink: "", authorName: "ana konzen", authorLink: "https://anakonzen.com"});
+  mess(p5_canvas, {
+    messName: "markov",
+    messLink: "https://editor.p5js.org/ana-konzen/sketches/i-QY-3BEY",
+    authorName: "ana konzen",
+    authorLink: "https://anakonzen.com",
+  });
 
   textSize(18);
   colorMode(HSB, 100);
@@ -131,13 +136,7 @@ function draw() {
       const wordX = sentenceX + currentX + wordsData[i].jitterX;
       const wordY = sentenceY + currentY + wordsData[i].jitterY;
       const wordAngle = wordsData[i].jitterA;
-      drawWord(
-        textHue,
-        word,
-        wordX - textWidth(wordsData[i].word),
-        wordY,
-        wordAngle
-      );
+      drawWord(textHue, word, wordX - textWidth(wordsData[i].word), wordY, wordAngle);
 
       // update carriage position
       currentX -= textWidth(wordsData[i].word) + wordSpacing;
