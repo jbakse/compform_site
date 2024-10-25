@@ -1,5 +1,7 @@
 @use "sass:color";
-@use "variables";
+@use "layout_mixins" as *;
+@use "copy_mixins" as *;
+@use "variables" as *;
 
 .comp-form .comp-form-copy {
   /* boxed-links */
@@ -32,9 +34,9 @@
 
   // layout
   .sidebar {
-    @include sidebar;
     display: flex;
     flex-direction: column;
+    @include sidebar;
   }
 
   .sidebar > * {

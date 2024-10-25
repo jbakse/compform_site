@@ -1,4 +1,6 @@
-@use "variables";
+@use "layout_mixins" as *;
+@use "copy_mixins" as *;
+@use "variables" as *;
 
 body.toc {
   background-color: $light-grey;
