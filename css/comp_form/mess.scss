@@ -1,3 +1,4 @@
+@use "variables";
 canvas.mess {
   position: fixed;
   margin: 0;
@@ -117,5 +118,4 @@ canvas.mess.off {
   .switch .label::before {
     content: "background off";
   }
-
 }

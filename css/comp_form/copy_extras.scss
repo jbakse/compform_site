@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 .comp-form .comp-form-copy {
   /* boxed-links */
 
@@ -65,9 +68,9 @@
     width: 0px;
     bottom: 3px;
     border: 3px solid
-      adjust-color($accent-color, $saturation: -50%, $lightness: 30%);
+      color.adjust($accent-color, $saturation: -50%, $lightness: 30%);
     border-radius: 3px;
-    background-color: adjust-color(
+    background-color: color.adjust(
       $accent-color,
       $saturation: -50%,
       $lightness: 30%
