@@ -1,12 +1,12 @@
 /**
- * Displays 3D boxes that rotate and move with the mouse.
+ * Displays 3D boxes that rotate and move with the cursor.
  *
  * written by Ana Konzen
  * edited by Justin Bakse
  *
  */
 
-/* exported setup draw*/
+/* exported setup draw pauseMess resumeMess */
 /* global mess*/
 
 const boxSize = 30;
@@ -27,7 +27,12 @@ let lerpedMouseY = 0;
 
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight, WEBGL);
-  mess(p5_canvas);
+  mess(p5_canvas, 2000, {
+    messName: "cubes",
+    messLink: "https://editor.p5js.org/ana-konzen/sketches/hwLc6kgPV",
+    authorName: "ana konzen",
+    authorLink: "https://anakonzen.com",
+  });
 
   colorMode(HSB, 1000);
   noStroke();
@@ -42,7 +47,7 @@ function setup() {
       z: random(360),
       y: random(0.1, 1),
       x: random(0.1, 1),
-    })
+    });
   }
 }
 
@@ -61,9 +66,9 @@ function draw() {
 
   //change angle shift over time and increase speed when mouse is pressed
   angleShift += 0.02;
-  if(mouseIsPressed) angleShift += 0.1;
+  if (mouseIsPressed) angleShift += 0.1;
 
-  const baseNoiseX = noise(0, frameCount * boxSpeed); 
+  const baseNoiseX = noise(0, frameCount * boxSpeed);
   const baseNoiseY = noise(0, 1, frameCount * boxSpeed);
 
   //draw
@@ -79,13 +84,8 @@ function draw() {
 
   //draw boxes
   for (let i = 0; i < numBoxes; i++) {
- 
-    const noiseX =
-      (noise(i  * noiseFreqX, frameCount * boxSpeed) -
-        baseNoiseX) * (i + noiseScaleX);
-    const noiseY =
-      (noise(i * noiseFreqY, 1, frameCount * boxSpeed) -
-        baseNoiseY) * (i + noiseScaleY);
+    const noiseX = (noise(i * noiseFreqX, frameCount * boxSpeed) - baseNoiseX) * (i + noiseScaleX);
+    const noiseY = (noise(i * noiseFreqY, 1, frameCount * boxSpeed) - baseNoiseY) * (i + noiseScaleY);
 
     ambientMaterial((i * 20) % 1000, 1000, 1000);
 
@@ -93,13 +93,22 @@ function draw() {
 
     //position each box according to noise and delays for staggered effect. each box is positioned behind the previous box
     translate(delaysX[i] + boxSize * noiseX, delaysY[i] + boxSize * noiseY, -boxSize * (i + 2));
-    
-    rotateX(boxAngles[i].x + angleShift);   
+
+    rotateX(boxAngles[i].x + angleShift);
     rotateY(boxAngles[i].y + angleShift);
     rotateZ(boxAngles[i].z + angleShift);
-    
+
     box(boxSize);
 
     pop();
   }
+}
+
+//mess util functions
+function pauseMess() {
+  noLoop();
+}
+
+function resumeMess() {
+  loop();
 }
