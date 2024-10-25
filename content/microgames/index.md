@@ -16,7 +16,7 @@ TogetherJSConfig_hubBase = "https://clover-grateful-source.glitch.me/";
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 
 <div style="cursor: pointer; margin-top: 1em; padding: 5px; border: 1px solid black; display: inline-block" onclick="TogetherJS(this); return false;">Collaborate!</div> -->
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
 <script src="../mess.js"></script>
 <script src="./fish_mess.js"></script>
 

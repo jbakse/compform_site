@@ -29,25 +29,34 @@ let spriteHue;
 
 function preload() {
   // load fish drawings and explosion frames
-  fish1 = { main: loadImage("./sprites/fishy1.png"), highlight: loadImage("./sprites/fishy1_highlight.png") };
-  fish2 = { main: loadImage("./sprites/fishy2.png"), highlight: loadImage("./sprites/fishy2_highlight.png") };
+  fish1 = {
+    main: loadImage("./sprites/fishy1.png"),
+    highlight: loadImage("./sprites/fishy1_highlight.png"),
+  };
+  fish2 = {
+    main: loadImage("./sprites/fishy2.png"),
+    highlight: loadImage("./sprites/fishy2_highlight.png"),
+  };
 
   boomFrames[0] = loadImage("./sprites/boom1.png");
   boomFrames[1] = loadImage("./sprites/boom2.png");
   boomFrames[2] = loadImage("./sprites/boom3.png");
 
-  winMessage = { main: loadImage("./sprites/win.png"), highlight: loadImage("./sprites/win_highlight.png") };
+  winMessage = {
+    main: loadImage("./sprites/win.png"),
+    highlight: loadImage("./sprites/win_highlight.png"),
+  };
 }
 
 function setup() {
   // initialize canvas and mess info
   const p5_canvas = createCanvas(windowWidth, windowHeight);
-  mess(p5_canvas, {
-    messName: "fishes",
+  mess(p5_canvas, 2000, {
+    messName: "fishies",
     messLink: "https://editor.p5js.org/ana-konzen/sketches/pWXNXXJRx",
     authorName: "ana konzen",
     authorLink: "https://anakonzen.com",
-  }, resumeMess, pauseMess);
+  });
 
   colorMode(HSB, 100);
 
@@ -82,7 +91,8 @@ function draw() {
   }
   for (const sprite of sprites) {
     // calculate the fish's sway (up and down motion) on a sine curve based on time and phase
-    const sway = sin(frameCount * sprite.speed + sprite.phase) * sprite.amplitude;
+    const sway =
+      sin(frameCount * sprite.speed + sprite.phase) * sprite.amplitude;
     // snap the fish's y position to a pixel grid
     sprite.snappedY = floor((sprite.baseY + sway) / stepSize) * stepSize;
 
@@ -116,7 +126,6 @@ function draw() {
 function mousePressed() {
   for (const sprite of sprites) {
     if (isMouseOnSprite(sprite, 20)) {
-      
       if (!sprite.exploded) score++; //only increase score if sprite wasn't clicked before
 
       // check if all sprites were clicked (score is a multiple of numSprites)
@@ -180,8 +189,6 @@ function isMouseOnSprite(sprite, proximity) {
     mouseY < sprite.snappedY + fish1.main.height + proximity
   );
 }
-
-
 
 //util mess functions
 function pauseMess() {
