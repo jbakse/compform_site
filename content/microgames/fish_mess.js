@@ -24,6 +24,7 @@ let score = 0;
 let fish1 = {};
 let fish2 = {};
 let winMessage = {};
+
 let spriteHue;
 
 function preload() {
@@ -46,7 +47,7 @@ function setup() {
     messLink: "https://editor.p5js.org/ana-konzen/sketches/pWXNXXJRx",
     authorName: "ana konzen",
     authorLink: "https://anakonzen.com",
-  });
+  }, resumeMess, pauseMess);
 
   colorMode(HSB, 100);
 
@@ -178,4 +179,15 @@ function isMouseOnSprite(sprite, proximity) {
     mouseY > sprite.snappedY - proximity &&
     mouseY < sprite.snappedY + fish1.main.height + proximity
   );
+}
+
+
+
+//util mess functions
+function pauseMess() {
+  noLoop();
+}
+
+function resumeMess() {
+  loop();
 }
