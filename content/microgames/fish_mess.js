@@ -10,9 +10,6 @@
 /* exported setup draw preload mousePressed windowResized pauseMess resumeMess */
 /* global mess p5*/
 
-// require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js
-// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/addons/p5.sound.min.js
-
 const fishies = [];
 
 // game settings
