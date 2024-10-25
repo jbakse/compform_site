@@ -1,12 +1,29 @@
-const boxSize = 25;
+/**
+ * Displays 3D boxes that rotate and move with the mouse.
+ *
+ * written by Ana Konzen
+ * edited by Justin Bakse
+ *
+ */
+
+/* exported setup draw*/
+/* global mess*/
+
+const boxSize = 30;
 const numBoxes = 100;
-const hues = [];
-const randomAngles = [];
-const delays_x = [];
-const delays_y = [];
+const boxSpeed = 0.001;
+const noiseFreqY = 0.03;
+const noiseFreqX = 0.01;
+const noiseScaleX = 50;
+const noiseScaleY = 40;
+
+const boxAngles = [];
+const delaysX = [];
+const delaysY = [];
+
 let angleShift = 0;
-let x = 0;
-let y = 0;
+let lerpedMouseX = 0;
+let lerpedMouseY = 0;
 
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight, WEBGL);
@@ -16,65 +33,73 @@ function setup() {
   noStroke();
 
   //position boxes in the center
-  x = mouseX = width * 0.5;
-  y = mouseY = width * 0.5;
+  lerpedMouseX = mouseX = width * 0.5;
+  lerpedMouseY = mouseY = height * 0.5;
 
-  //set color and angle for each box
+  //set initial angle for each box
   for (let i = 0; i < numBoxes; i++) {
-    hues.push((i * 20) % 1000);
-    randomAngles.push(random(0.1, 1));
+    boxAngles.push({
+      z: random(360),
+      y: random(0.1, 1),
+      x: random(0.1, 1),
+    })
   }
 }
 
 function draw() {
   clear();
 
+  lerpedMouseX = lerp(lerpedMouseX, mouseX, 0.1);
+  lerpedMouseY = lerp(lerpedMouseY, mouseY, 0.1);
+
+  //set delay for each box
+  delaysX.unshift(lerpedMouseX); //add the current position to the beginning of the array
+  if (delaysX.length > numBoxes) delaysX.pop(); //remove the last element if the array is longer than the number of boxes
+
+  delaysY.unshift(lerpedMouseY);
+  if (delaysY.length > numBoxes) delaysY.pop();
+
+  //change angle shift over time and increase speed when mouse is pressed
+  angleShift += 0.02;
+  if(mouseIsPressed) angleShift += 0.1;
+
+  const baseNoiseX = noise(0, frameCount * boxSpeed); 
+  const baseNoiseY = noise(0, 1, frameCount * boxSpeed);
+
+  //draw
+
   //change coordinate system
   translate(-width / 2, -height / 2);
 
-  x = lerp(x, mouseX, 0.2);
-  y = lerp(y, mouseY, 0.2);
-
-  //set delay for each box
-  delays_x.unshift(x);
-  if (delays_x.length > numBoxes) delays_x.pop();
-
-  delays_y.unshift(y);
-  if (delays_y.length > numBoxes) delays_y.pop();
-
   //set lights
-  ambientLight(0, 0, 700);
-  directionalLight(1000, 0, 400, 0, 0, -1);
+  ambientLight(0, 0, 400);
+  directionalLight(1000, 0, 800, 0, 0, -1);
   directionalLight(1000, 0, 300, 0, 1, 0);
-  directionalLight(1000, 0, 700, 1, 0, 0);
+  directionalLight(1000, 0, 800, 1, 0, 0);
 
   //draw boxes
   for (let i = 0; i < numBoxes; i++) {
-    let nx =
-      (noise(i * 0.2, frameCount * 0.001) -
-        noise(0 * 0.2, frameCount * 0.001)) *
-      80;
-    let ny =
-      (noise(i * 0.02, 1, frameCount * 0.002) -
-        noise(0, 1, frameCount * 0.002)) *
-      100;
+ 
+    const noiseX =
+      (noise(i  * noiseFreqX, frameCount * boxSpeed) -
+        baseNoiseX) * (i + noiseScaleX);
+    const noiseY =
+      (noise(i * noiseFreqY, 1, frameCount * boxSpeed) -
+        baseNoiseY) * (i + noiseScaleY);
+
+    ambientMaterial((i * 20) % 1000, 1000, 1000);
 
     push();
-    ambientMaterial(hues[i], 1000, 1000);
-    //set delay for each box
-    translate(delays_x[i], delays_y[i]);
-    //rotate boxes horizontally
-    // rotateY(240);
-    //position each box according to noise. each box is positioned behind the previous box
-    translate(boxSize * nx, boxSize * ny, -boxSize * i);
 
-    //rotate each box when mouse is pressed
-    if (mouseIsPressed) {
-      angleShift += 0.002;
-    }
-    rotateZ(angleShift * randomAngles[i]);
-
+    //position each box according to noise and delays for staggered effect. each box is positioned behind the previous box
+    translate(delaysX[i] + boxSize * noiseX, delaysY[i] + boxSize * noiseY, -boxSize * (i + 2));
+    
+    rotateX(boxAngles[i].x + angleShift);   
+    rotateY(boxAngles[i].y + angleShift);
+    rotateZ(boxAngles[i].z + angleShift);
+    
     box(boxSize);
+
     pop();
   }
 }

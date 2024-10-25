@@ -57,7 +57,6 @@ canvas.mess.off {
     position: relative;
     width: 40px;
     height: 20px;
-
     background-color: $dark-grey;
     border: solid 1px $dark-grey;
     cursor: pointer;
@@ -76,8 +75,8 @@ canvas.mess.off {
   .switch .slider:before {
     content: "";
     position: absolute;
-    left: 2px;
-    bottom: 2.25px;
+    left: 2.5px;
+    bottom: 2.5px;
     height: 15px;
     width: 15px;
     background-color: white;
@@ -97,12 +96,26 @@ canvas.mess.off {
   .switch .label {
     margin-top: 1.5px;
     margin-left: 5px;
-
     font-family: "Miriam Libre";
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 20px;
     letter-spacing: 0.3px;
     color: $dark-grey;
   }
+  .switch .label a {
+    text-decoration: none;
+    color: $accent-color;
+    font-size: 11px;
+  }
+  .switch .label a:hover {
+    border-bottom: 1px solid $accent-color;
+  }
+  .switch input:checked ~ .label::before {
+    content: "background on";
+  }
+  .switch .label::before {
+    content: "background off";
+  }
+
 }

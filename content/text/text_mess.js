@@ -18,7 +18,7 @@ let wordsData = [];
 
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight);
-  mess(p5_canvas);
+  mess(p5_canvas, {messName: "markov", messLink: "", authorName: "ana konzen", authorLink: "https://anakonzen.com"});
 
   textSize(18);
   colorMode(HSB, 100);

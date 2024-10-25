@@ -2,7 +2,7 @@
 
 // rename or document hide off class names
 
-function mess(c, wait_ms = 2000) {
+function mess(c, creditInfo = {}, resumeMess = () => {}, pauseMess = () => {}, wait_ms = 2000) {
   /// set up canvas
   c.canvas.setAttribute("style", ""); // remove p5.js default styles
   c.canvas.classList.add("mess");
@@ -10,11 +10,16 @@ function mess(c, wait_ms = 2000) {
   setTimeout(showMess, 1); // show immediately after init
 
   /// set up mess UI
-  createMessUI();
+  createMessUI(creditInfo);
   const showMessCheckbox = document.getElementById("show-mess-checkbox");
   showMessCheckbox.setAttribute("checked", true);
   showMessCheckbox.addEventListener("change", function () {
     c.canvas.classList.toggle("off", !this.checked);
+    if (this.checked) {
+      resumeMess();
+    } else {
+      pauseMess();
+    }
   });
 
   /// manange fading the canvas in and out based on mouse movement
@@ -45,7 +50,10 @@ function mess(c, wait_ms = 2000) {
     window.messResize?.(); // call messResize if mess defines it
   });
 
-  function createMessUI() {
+  function createMessUI(creditInfo) {
+    let creditLine = ` — <a href=${creditInfo.messLink}>${creditInfo.messName}</a> by <a href=${creditInfo.authorLink}>${creditInfo.authorName}</a>`;
+    if (Object.keys(creditInfo).length === 0) creditLine = "";
+
     document.body.insertAdjacentHTML(
       "beforeend",
       `
@@ -53,9 +61,9 @@ function mess(c, wait_ms = 2000) {
         <label class="switch" for="show-mess-checkbox">
           <input type="checkbox" id="show-mess-checkbox" />
           <div class="slider round"></div>
-          <div class="label">background</div>
+          <div class="label">${creditLine}</div>
         </label>
-      </div>`,
+      </div>`
     );
   }
 }

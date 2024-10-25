@@ -8,6 +8,9 @@ description: Procedures are powerful creative tools. Defining procedures for cre
 
 software: p5.js
 ---
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="../mess.js"></script>
+<script src="./dots_mess.js"></script>
 
 ## Procedures
 
