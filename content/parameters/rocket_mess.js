@@ -9,8 +9,8 @@
 // require /mess.js
 
 /// configure eslint
-/* exported preload setup draw mousePressed windowResized */
-/* globals mess */
+/* exported preload, setup, draw, mousePressed, messHide, messShow */
+/* globals mess*/
 
 // references the control DOM elements
 let controlsDiv;

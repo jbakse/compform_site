@@ -9,7 +9,7 @@
 // require /mess.js
 
 /// configure eslint
-/* exported preload setup draw mousePressed windowResized */
+/* exported preload, setup, draw, mousePressed */
 /* globals mess */
 
 // A single image sprite atlas containing all the face parts
