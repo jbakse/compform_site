@@ -8,40 +8,9 @@ description: Expose parameters to make your procedural systems easier to control
 software: p5.js + tweakpane
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
 <script src="/mess.js"></script>
 <script src="./rocket_mess.js"></script>
-
-<style>
-
-.mess-controls {
-            font-family: Monaco;
-            font-size: 10px;
-            position: fixed;
-            top: 100px;
-            padding: 10px;
-            z-index: 1000;
-            background-color: #FF0;
-            mix-blend-mode: multiply;
-        }
-
-        .mess-controls p {
-            margin-top: 2em;
-            margin-bottom: 0;
-        }
-
-        .mess-controls {
-            opacity: 1;
-            transition: opacity .25s;
-        }
-
-        .mess-controls.hide {
-            opacity: 0;
-            transition: opacity 1s;
-        }
-
-
-</style>
 
 ## Parameters
 

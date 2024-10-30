@@ -3,11 +3,11 @@
  *
  * written by Ana Konzen
  * edited by Justin Bakse
- *
  */
 
-/* exported setup draw*/
-/* global mess*/
+/// configure eslint
+/* exported setup draw */
+/* global mess */
 
 const boxSize = 30;
 const numBoxes = 100;
@@ -42,7 +42,7 @@ function setup() {
       z: random(360),
       y: random(0.1, 1),
       x: random(0.1, 1),
-    })
+    });
   }
 }
 
@@ -61,9 +61,9 @@ function draw() {
 
   //change angle shift over time and increase speed when mouse is pressed
   angleShift += 0.02;
-  if(mouseIsPressed) angleShift += 0.1;
+  if (mouseIsPressed) angleShift += 0.1;
 
-  const baseNoiseX = noise(0, frameCount * boxSpeed); 
+  const baseNoiseX = noise(0, frameCount * boxSpeed);
   const baseNoiseY = noise(0, 1, frameCount * boxSpeed);
 
   //draw
@@ -79,25 +79,28 @@ function draw() {
 
   //draw boxes
   for (let i = 0; i < numBoxes; i++) {
- 
     const noiseX =
-      (noise(i  * noiseFreqX, frameCount * boxSpeed) -
-        baseNoiseX) * (i + noiseScaleX);
+      (noise(i * noiseFreqX, frameCount * boxSpeed) - baseNoiseX) *
+      (i + noiseScaleX);
     const noiseY =
-      (noise(i * noiseFreqY, 1, frameCount * boxSpeed) -
-        baseNoiseY) * (i + noiseScaleY);
+      (noise(i * noiseFreqY, 1, frameCount * boxSpeed) - baseNoiseY) *
+      (i + noiseScaleY);
 
     ambientMaterial((i * 20) % 1000, 1000, 1000);
 
     push();
 
     //position each box according to noise and delays for staggered effect. each box is positioned behind the previous box
-    translate(delaysX[i] + boxSize * noiseX, delaysY[i] + boxSize * noiseY, -boxSize * (i + 2));
-    
-    rotateX(boxAngles[i].x + angleShift);   
+    translate(
+      delaysX[i] + boxSize * noiseX,
+      delaysY[i] + boxSize * noiseY,
+      -boxSize * (i + 2)
+    );
+
+    rotateX(boxAngles[i].x + angleShift);
     rotateY(boxAngles[i].y + angleShift);
     rotateZ(boxAngles[i].z + angleShift);
-    
+
     box(boxSize);
 
     pop();
