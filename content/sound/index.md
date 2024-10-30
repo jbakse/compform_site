@@ -25,7 +25,7 @@ In addition to the basic drawing API, p5.js includes add-on [libraries](https://
 This chapter will focus on playing and visualizing pre-recorded sound assets. The [Comp Music](../music) chapter talks more about sound synthesis.
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 <div class="discussion">

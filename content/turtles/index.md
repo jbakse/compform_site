@@ -56,7 +56,7 @@ A short excerpt where Papert touches on learning, play, and programming.
 </div>
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 <div class="activity">

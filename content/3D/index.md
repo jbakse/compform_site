@@ -7,6 +7,7 @@ hero_title: 3D Forms
 description: Explore building three-dimensional forms with OpenSCAD, a functional programming language for constructive solid geometry modeling.
 software: OpenSCAD
 ---
+
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 <script src="../mess.js"></script>
 <script src="./box_mess.js"></script>
@@ -22,7 +23,7 @@ Most of the favorite subjects of representational art—human figures, landscape
 Onscreen, 3D graphics exist between painting and sculpture. You can rotate computer-generated 3D shapes, but you are still seeing a 2D projection. 3D Printing brings these shapes into the physical world. Getting "real" results from procedural generation can be very gratifying, providing physical evidence of your efforts. While not physical, VR is also a compelling medium for computational form. I especially enjoy combining the rapid iteration enabled by working procedurally with the sense of presence and scale afforded by virtual reality. It is an intensely creative experience to procedurally generate a tree and immediately stand in its shadow looking up at the sky through its branches.
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 ## OpenSCAD
@@ -87,14 +88,14 @@ The [OpenSCAD Manual](https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/The_Ope
 
 Classifying programming languages by [paradigm](https://en.wikipedia.org/wiki/Programming_paradigm) is tricky in practice. The boundaries of paradigms are not always clear. Different paradigms have different primary concerns and may be orthogonal to each other, and many languages support multiple paradigms.
 
-| paradigm                    | description                                                                                                        |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| imperative                  | focuses on the steps needed to achieve a goal; ordered commands, mutable program state                             |
-| ↳&nbsp;procedural           | an imperative approach that primarily organizes commands using procedures                                          |
-| ↳&nbsp;object-oriented      | an imperative approach that groups related data and procedures using objects                                       |
-| declarative                 | focuses on what you want to achieve rather than the steps to achieve it; unordered                                 |
-| ↳&nbsp;functional           | a declarative approach that organizes logic using pure functions with immutable states and no side effects         |
-| ↳&nbsp;logic                | a declarative approach in which a program is a collection of logical declarations from which facts can be inferred |
+| paradigm               | description                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| imperative             | focuses on the steps needed to achieve a goal; ordered commands, mutable program state                             |
+| ↳&nbsp;procedural      | an imperative approach that primarily organizes commands using procedures                                          |
+| ↳&nbsp;object-oriented | an imperative approach that groups related data and procedures using objects                                       |
+| declarative            | focuses on what you want to achieve rather than the steps to achieve it; unordered                                 |
+| ↳&nbsp;functional      | a declarative approach that organizes logic using pure functions with immutable states and no side effects         |
+| ↳&nbsp;logic           | a declarative approach in which a program is a collection of logical declarations from which facts can be inferred |
 
 ### Immutable vs. Mutable Data
 

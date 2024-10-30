@@ -46,7 +46,7 @@ Value Noise{scale}
 Noise functions provide a "cloud" of random values that can be used in a wide variety of ways. Noise functions are frequently used in procedural texture generation and terrain generation, but their applications are not at all limited to those areas. Noise functions can be thought of as a lookup table of pre-generated random values that can be used in place of `random()` in many cases. Noise functions are particularly well suited to adding small variations to create a more natural feeling output.
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 ## Noise vs. Random

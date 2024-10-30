@@ -19,7 +19,7 @@ From masonry and tile to fabrics to movable type: artists and designers have bee
 In digital media, tile maps and sets are used frequently and commonly associated with the 8-bit and 16-bit video game era. Hardware limitations imposed strict limits on designers. Designers pushed these limits to creative extremes, creating enduring visual styles. Today's games do not face the same hardware restrictions, but modular graphic systems are still an important tool for artists. Support for tile maps is built into many contemporary game engines, including [Unity](https://docs.unity3d.com/Manual/class-Tilemap.html) and [GameMaker Studio](https://www.yoyogames.com/en/gamemaker).
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 ## Designing Tile Sets

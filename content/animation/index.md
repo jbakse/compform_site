@@ -15,7 +15,7 @@ Animation introduces interesting creative potential because it includes the dime
 An animation is a series of still frames shown in very quick succession; a few seconds of animation will have hundreds of frames. Creating animations by hand can lead to [beautiful results](https://www.theguardian.com/artanddesign/2013/jan/09/oskar-fischinger-animation-disney-nazis) but is very laborious. This makes animation a great medium to explore with procedural methods. At its heart, a procedurally-generated animation is just a series of procedurally-generated images. Creating an animation with code is similar to coding a still image, but with additional instructions to express how the image will change over time.
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 ## Real-time vs. Pre-rendered

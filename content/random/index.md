@@ -31,7 +31,7 @@ As an example consider the 18th-century composition _Instructions for the compos
 Using random values in your procedural system doesn't mean your results must be haphazard, uncontrolled, or unorganized. While individual random values are unpredictable, with planning you can use these values to create a coherent cumulative effect.
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 <div class ="discussion">

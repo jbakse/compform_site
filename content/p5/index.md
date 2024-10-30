@@ -35,7 +35,7 @@ The p5.js library was created by artist [Lauren McCarthy](http://lauren-mccarthy
 Here are a few examples to give you an idea of what kinds of things people make with p5.js
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %} |
 
 ## A p5.js Example Sketch

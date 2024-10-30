@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
   markdownLib.enable("smartquotes");
   markdownLib.enable("strikethrough");
   markdownLib.use(require("markdown-it-anchor"));
-  markdownLib.use(require("markdown-it-classy"));
+  // markdownLib.use(require("markdown-it-classy"));
   markdownLib.use(require("markdown-it-deflist"));
   eleventyConfig.setLibrary("md", markdownLib);
 
@@ -49,10 +49,17 @@ module.exports = function (eleventyConfig) {
   // syntax highlight
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
 
+  // eleventyConfig.addPlugin(require("@11ty/eleventy-upgrade-help"));
+
   // have --serve watch for sass -> css recompile
   // see: https://jkc.codes/blog/using-sass-with-eleventy/
   eleventyConfig.setBrowserSyncConfig({
     files: "./_site/css/**/*.css",
+  });
+
+  eleventyConfig.setLiquidOptions({
+    dynamicPartials: false,
+    strict_filters: false,
   });
 
   // settings

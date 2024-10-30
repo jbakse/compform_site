@@ -23,6 +23,6 @@ or
 
 ```javascript
 
-{% include turtle.js %}
+{% include ./turtle.js %}
 
 ```

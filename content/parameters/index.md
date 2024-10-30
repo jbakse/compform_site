@@ -19,7 +19,7 @@ One of the most rewarding aspects of creating a procedural generation system is 
 Procedural generators can provide enormous creative leverage. They allow expressive artistic control while automating much of the work. This control is afforded by exposing parameters. Parameters are adjustable values that influence the internal behavior of a system.
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 ### Parameter Space
