@@ -170,13 +170,13 @@ Explore this chapter's example code by completing the following challenges.{intr
 
 ### Modify the Drum Kit Example
 
-1. Switch around the samples used to play the beat. `•`
-1. Change the timing to create a more complex beat. `••`
+1. Make kick play twice per second. `•`
+1. Create your own beat. `••`
 
 ### Modify the Bounce Example
 
 1. Add a drum sound when the ball bounces. `••`
-1. Add a little randomness to the playback rate of the sound each time the ball bounces. This little trick can add some realism to sound effects. `•••`
+1. Add a little randomness to the playback rate of the sound each time the ball bounces. This little trick can add some texture to sound effects. `•••`
    {continue}
 
 </div>
@@ -217,6 +217,27 @@ Display a little melody.
 
 </div> -->
 
+<div class="activity challenges">
+
+## Coding Challenges
+
+Explore this chapter's example code by completing the following challenges.{intro}
+
+### Modify the Cuepoints Example
+
+1. Move the cuepoint time so the flash aligns with the word "computers". `•`
+2. Show the text "Big Trouble" and "Computers". Sync it to the sound. `••`
+
+### Create a p5.sound project from scratch.
+
+1. Create a new project on the p5 web editor.
+2. Verify that the html file includes the p5.sound library.
+3. Find a sound file and add it to your project.
+4. Use p5.sound to play the sound file.
+   {continue}
+
+</div>
+
 ## Making Sounds from Scratch
 
 You can create an empty soundFile object with `new p5.SoundFile()` and generate the sound data yourself with Javascript. To do so you will create and fill a [Float32Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array) and then attach it to the SoundFile object with `setBuffer()`.
@@ -226,6 +247,20 @@ You can create an empty soundFile object with `new p5.SoundFile()` and generate 
 Creating sounds this way lets you work at the lowest possible level: individual samples. This can be fun, and it gives you complete control, but you will probably need to reinvent some basics.
 
 P5.js has functions for working with oscillators, envelopes, and effects if you want to work at a little higher level. You might also consider using a dedicated Javascript sound synthesis library like [Tone.js](https://tonejs.github.io), which is a little more powerful and better documented.
+
+<div class="activity challenges">
+
+## Coding Challenges
+
+Explore this chapter's example code by completing the following challenges.{intro}
+
+### Modify the Making Sounds from Scratch Example
+
+1. The example has several examples of generating sounds commented out. Comment in each sound generator and try them out. `•`
+1. Create a sound that is static for .5 seconds followed by a low-pitched tone for .5 seconds. `••`
+   {continue}
+
+</div>
 
 <div class="assignment">
 
