@@ -1,119 +1,122 @@
-// draws well placed dot trail
+/**
+ * Draws a well-placed dot trail.
+ *
+ * written by [Your Name]
+ */
 
-/* exported preload setup draw mousePressed windowResized */
+/// configure compform editor
+// require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js
+// require /mess.js
+
+/// configure eslint
+/* exported preload, setup, draw, mousePressed */
+/* globals mess */
 
 let dots = [];
 
-function preload() {}
-
 function setup() {
+  /// set up canvas
   pixelDensity(1);
   const p5_canvas = createCanvas(windowWidth, windowHeight);
 
-  mess(p5_canvas);
+  /// register this sketch as a Comp Form background "mess"
+  mess(p5_canvas, 2000, {
+    messName: "dots",
+    messLink: "/js_lab/js_lab.html?/strategy/strategy_mess.js",
+  });
 
+  /// configure p5
   frameRate(60);
   fill(255, 0, 0);
   noStroke();
-  colorMode(HSB, 1000);
+  colorMode(HSB, 1);
 }
 
 function draw() {
-  clear();
   if (mouseX === 0 && mouseY === 0) return;
 
-  //   scale(0.25);
-  //   mouseX *= 4;
-  //   mouseY *= 4;
-
+  /// step
   dots.push(new Dot(mouseX, mouseY));
 
-  var index;
-  index = dots.length - 1;
-  while (index >= 0) {
-    dots[index].step();
-    index--;
+  // shrink oldest dot; shrink faster when there are more dots
+  dots[0].radius -= 1 + dots.length / 50;
+
+  for (const dot of dots) {
+    dot.step();
   }
 
-  index = dots.length - 1;
-  while (index >= 0) {
-    dots[index].draw();
-    index--;
+  // filter out dots that should be removed
+  dots = dots.filter((dot) => !dot.shouldBeRemoved());
+
+  /// draw
+  clear();
+  for (const dot of dots) {
+    dot.draw();
+  }
+
+  if (frameCount === 100) {
+    noLoop();
   }
 }
 
 class Dot {
   constructor(x, y) {
-    this.x = x;
-    this.y = y;
-    this.r = 15;
+    // add a little randomness to the starting position
+    // so that dots don't start exactly on top of each other
+    // when the mouse isn't moving
+    this.x = x + random(-0.1, 1);
+    this.y = y + random(-0.1, 1);
+    this.radius = 15;
     this.seeking = true;
-    this.hue = map(this.x + this.y, 0, width + height, 1, 1000);
+    this.hue = map(this.x + this.y, 0, width + height, 0, 1);
   }
 
   step() {
-    // shrink old dot
-    dots[0].r -= 0.02;
-    // if we have a long tail, start shrinking more old dots to clean up quicker
-    if (dots.length > 100) {
-      dots[1].r -= 0.02;
-      dots[2].r -= 0.02;
-      dots[3].r -= 0.02;
-    }
-
-    // remove dots that get shrunk to 1
-    if (this.r < 1) {
-      _removeItem(dots, this);
-    }
-
-    // remove dots that don't find a spot to land in time
-    if (this.r < 3 && this.seeking) {
-      _removeItem(dots, this);
-    }
-
-    // seek
+    // Dots that are done seeking don't need to do anything
     if (!this.seeking) return;
 
     // assume we'll find a spot to land and will stop seeking
     // this assumption will be reversed if we don't
     this.seeking = false;
 
-    // loop through all the other dots
-    let index = dots.length - 1;
-    while (--index >= 0) {
-      let that = dots[index];
-
+    // loop through all the dots
+    for (const otherDot of dots) {
       // don't compare this dot to itself
-      if (this === that) {
-        continue;
-      }
+      if (this === otherDot) continue;
 
       // if dots are close to each other
-      let d = dist(this.x, this.y, that.x, that.y);
-      if (d < this.r + that.r + 5) {
+      const d = dist(this.x, this.y, otherDot.x, otherDot.y);
+      const minDist = this.radius + otherDot.radius + 5;
+      if (d < minDist) {
         // move the seeking dot away from the existing dot
-        let dX = (this.x - that.x) / d;
-        let dY = (this.y - that.y) / d;
+        const dX = (this.x - otherDot.x) / d;
+        const dY = (this.y - otherDot.y) / d;
         this.x += dX;
         this.y += dY;
-        this.r -= 0.1;
+        // shrink it
+        this.radius -= 0.1;
+        // and remember that we need to keep seeking
         this.seeking = true;
       }
     }
   }
 
+  shouldBeRemoved() {
+    // remove dots that get shrunk to 1
+    if (this.radius < 1) return true;
+
+    // remove dots that don't find a spot to land in time
+    if (this.radius < 3 && this.seeking) return true;
+
+    return false;
+  }
+
   draw() {
     push();
-    translate(this.x, this.y);
-    fill(this.hue, 1000, 1000);
+    fill(this.hue, 1, 1);
     noStroke();
-    ellipse(0, 0, this.r * 2, this.r * 2);
+    translate(this.x, this.y);
+    ellipse(0, 0, this.radius * 2, this.radius * 2);
     pop();
   }
-}
-
-function _removeItem(array, element) {
-  const index = array.indexOf(element);
-  if (index == -1) return;
-  array.splice(index, 1);
 }
