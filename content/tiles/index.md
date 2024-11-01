@@ -8,9 +8,9 @@ description: Tile mapping—creating images by arranging small graphic tiles—i
 software: pencil + paper
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
 <script src="/mess.js"></script>
-<script src="./truchent_mess.js"></script>
+<script src="./truchet_mess.js"></script>
 
 ## Tile Sets and Maps
 
