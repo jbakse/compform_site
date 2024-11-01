@@ -137,7 +137,7 @@ This single screenshot of Mario dying in World 1-1 is 8 kilobytes alone.
 
 This is possible because SMB builds the world from a small set of reusable tiles that can be re-colored and re-used in multiple ways. For example, the bush and the cloud in the screenshot above use the same tiles with different palettes. Below is a dump of the tiles and palettes used in SMB.
 
-![SMB Tiles](https://gamasutra.com/db_area/images/news/253377/fig03.png){scale pixel}
+![SMB Tiles](./figures/smb_sprites.png){scale pixel}
 
 ### 1-bit per Tile
 
