@@ -1,7 +1,7 @@
 /**
  * Draws an interactive Truchet tile pattern with color cycling.
  *
- * written by [Your Name]
+ * written by Justin Bakse
  */
 
 /// configure compform editor
@@ -63,7 +63,7 @@ function draw() {
   colorCycle = (colorCycle + 0.001) % 1;
   const tinted1 = tintImage(images.tile1, colorCycle, 1, 1);
   const tinted2 = tintImage(images.tile2, colorCycle, 1, 1);
-  drawTiles({ tinted1, tinted2 });
+  drawTiles(tinted1, tinted2);
 }
 
 /**
@@ -84,17 +84,17 @@ function setTile(x, y) {
 /**
  * Draws all tiles in the grid using the provided tinted images.
  */
-function drawTiles(tinted1, tinted2) {
+function drawTiles(tile1, tile2) {
   for (let y = 0; y < height - GRID_SIZE; y += GRID_SIZE) {
     for (let x = 0; x < width - GRID_SIZE; x += GRID_SIZE) {
       const gridX = floor(x / GRID_SIZE);
       const gridY = floor(y / GRID_SIZE);
 
       if (grid[gridX][gridY] == 1) {
-        image(tinted1, x, y, GRID_SIZE * 2, GRID_SIZE * 2);
+        image(tile1, x, y, GRID_SIZE * 2, GRID_SIZE * 2);
       }
       if (grid[gridX][gridY] == 2) {
-        image(tinted2, x, y, GRID_SIZE * 2, GRID_SIZE * 2);
+        image(tile2, x, y, GRID_SIZE * 2, GRID_SIZE * 2);
       }
     }
   }
