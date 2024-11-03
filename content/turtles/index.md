@@ -392,7 +392,7 @@ Draw with turtles on this web editor, iLogo.
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
 <script src="/mess.js"></script>
 <script src="./turtle/turtle.js"></script>
 <script src="./turtle_mess.js"></script>

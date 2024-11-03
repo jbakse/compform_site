@@ -31,7 +31,7 @@ function setup() {
     messLink: "/js_lab/js_lab.html?/pixels/pixel_mess.js",
   });
 
-  /// create the buffer image
+  // create the inital buffer image
   messResize();
 }
 
