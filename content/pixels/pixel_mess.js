@@ -14,7 +14,7 @@
 
 // the image that we will do the pixel work on
 let bufferImge;
-let colorCycle = 0;
+let currentHue = 0;
 
 function setup() {
   /// set up canvas
@@ -54,8 +54,8 @@ function draw() {
 
   push();
   blendMode(ADD);
-  colorCycle = (colorCycle + 0.003) % 1;
-  fill(colorCycle, 1, 1);
+  currentHue = (currentHue + 0.003) % 1;
+  fill(currentHue, 1, 1);
   noStroke();
   rect(0, 0, width, height);
   pop();
