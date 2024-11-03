@@ -5,8 +5,12 @@
  * edited by Justin Bakse
  */
 
+/// configure compform editor
+// require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js
+// require /mess.js
+
 /// configure eslint
-/* exported setup draw */
+/* exported preload, setup, draw, mousePressed */
 /* global mess */
 
 const boxSize = 30;
@@ -26,17 +30,26 @@ let lerpedMouseX = 0;
 let lerpedMouseY = 0;
 
 function setup() {
+  /// set up canvas
   const p5_canvas = createCanvas(windowWidth, windowHeight, WEBGL);
-  mess(p5_canvas);
 
+  /// register this sketch as a Comp Form background "mess"
+  mess(p5_canvas, 2000, {
+    messName: "box",
+    messLink: "/js_lab/js_lab.html?/3D/box_mess.js",
+    authorName: "ana konzen",
+    authorLink: "https://anakonzen.com",
+  });
+
+  /// configure p5
   colorMode(HSB, 1000);
   noStroke();
 
-  //position boxes in the center
+  // position boxes in the center
   lerpedMouseX = mouseX = width * 0.5;
   lerpedMouseY = mouseY = height * 0.5;
 
-  //set initial angle for each box
+  // set initial angle for each box
   for (let i = 0; i < numBoxes; i++) {
     boxAngles.push({
       z: random(360),
