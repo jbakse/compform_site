@@ -1,4 +1,4 @@
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
   // markdown-it
   const markdownIt = require("markdown-it");
   const markdownLib = markdownIt("commonmark", {
@@ -48,6 +48,9 @@ module.exports = function (eleventyConfig) {
 
   // syntax highlight
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
+
+  const pugPlugin = await import("@11ty/eleventy-plugin-pug");
+  eleventyConfig.addPlugin(pugPlugin.default);
 
   // have --serve watch for sass -> css recompile
   // see: https://jkc.codes/blog/using-sass-with-eleventy/
