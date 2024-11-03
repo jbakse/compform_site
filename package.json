@@ -21,8 +21,8 @@
   "license": "unlicensed",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/eleventy-plugin-pug": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "concurrently": "^9.0.1",
     "eslint": "^9.13.0",
     "eslint-config-p5js": "^1.1.0",
@@ -33,6 +33,5 @@
     "markdown-it-classy": "^0.2.0",
     "markdown-it-deflist": "^3.0.0",
     "sass": "^1.80.4"
-  },
-  "dependencies": {}
+  }
 }
