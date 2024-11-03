@@ -49,8 +49,6 @@ module.exports = function (eleventyConfig) {
   // syntax highlight
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
 
-  // eleventyConfig.addPlugin(require("@11ty/eleventy-upgrade-help"));
-
   // have --serve watch for sass -> css recompile
   // see: https://jkc.codes/blog/using-sass-with-eleventy/
   eleventyConfig.setBrowserSyncConfig({
