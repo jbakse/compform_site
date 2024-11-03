@@ -13,7 +13,7 @@ module.exports = async function (eleventyConfig) {
   markdownLib.enable("smartquotes");
   markdownLib.enable("strikethrough");
   markdownLib.use(require("markdown-it-anchor"));
-  // markdownLib.use(require("markdown-it-classy"));
+  markdownLib.use(require("markdown-it-classy"));
   markdownLib.use(require("markdown-it-deflist"));
   eleventyConfig.setLibrary("md", markdownLib);
 
