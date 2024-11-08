@@ -250,11 +250,11 @@ class Fish {
 
       // if all fishies were clicked
       if (currentScore === fishNum) {
+        if (this.state === "swimming") playWinSound();
         this.state = "win";
-        playWinSound();
       } else {
+        if (this.state === "swimming") playScoreSound();
         this.state = "exploded";
-        playScoreSound();
       }
     }
   }
