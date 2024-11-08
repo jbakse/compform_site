@@ -104,7 +104,6 @@ function setup() {
 
 function draw() {
   /// step
-
   if (frameCount % resetInterval === 0) resetGame();
   if (frameCount % hueShiftInterval === 0) fishiesHue = random(1);
 
@@ -290,13 +289,4 @@ class Fish {
     }
     pop();
   }
-}
-
-/// mess callback functions
-function pauseMess() {
-  noLoop();
-}
-
-function resumeMess() {
-  loop();
 }

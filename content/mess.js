@@ -15,9 +15,9 @@ function mess(c, wait_ms = 2000, creditInfo = {}) {
   showMessCheckbox.addEventListener("change", function () {
     c.canvas.classList.toggle("off", !this.checked);
     if (this.checked) {
-      window.resumeMess?.();
+      window.resumeMess ? window.resumeMess() : loop();
     } else {
-      window.pauseMess?.();
+      window.pauseMess ? window.pauseMess() : noLoop();
     }
   });
 
