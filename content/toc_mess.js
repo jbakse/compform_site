@@ -1,8 +1,16 @@
-// draws a rainbow maze
+/**
+ * Generates rainbow effect using a maze algorithm.
+ *
+ * written by Justin Bakse
+ */
 
-/* exported preload setup draw mousePressed windowResized pauseMess resumeMess */
+/// configure compform editor
+// require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js
+// require /mess.js
 
-/* global mess */
+/// configure eslint
+/* exported preload, setup, draw, mousePressed, pauseMess, resumeMess */
+/* globals mess, */
 
 // config
 const color_steps = 1000;
@@ -25,7 +33,11 @@ let current_cell = {
 
 function setup() {
   const p5_canvas = createCanvas(windowWidth, windowHeight);
-  mess(p5_canvas, 60000);
+
+  mess(p5_canvas, 60000, {
+    messName: "maze",
+    messLink: "/js_lab/js_lab.html?/toc_mess.js",
+  });
 
   colorMode(HSB, color_steps);
   noStroke();
@@ -103,7 +115,12 @@ function step() {
 
     // draw new cell
     fill(current_cell.c, color_steps * color_s, color_steps * color_b);
-    rect(current_cell.x * grid_width, current_cell.y * grid_height, grid_width + 1, grid_height + 1);
+    rect(
+      current_cell.x * grid_width,
+      current_cell.y * grid_height,
+      grid_width + 1,
+      grid_height + 1
+    );
   } else {
     // hit a dead end
     if (cell_history.length) {
