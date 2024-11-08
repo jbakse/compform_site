@@ -7,144 +7,144 @@
  *
  */
 
-/* exported setup draw preload mousePressed windowResized pauseMess resumeMess */
+/// configure compform editor
+// require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js
+// require https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/addons/p5.sound.min.js
+// require /mess.js
+
+/// configure eslint
+/* exported setup, draw, preload, mousePressed, windowResized */
+/* exported pauseMess, resumeMess */
 /* global mess p5*/
 
+// holds the fish sprites
 const fishies = [];
 
 // game settings
 const fishNum = 8;
 const fishMargin = 60;
 const fishSpeed = 2;
-const stepSize = 5;
-const hueShiftInterval = 200; // interval for shifting fish hue
-const explosionDuration = 60; // how long to show explosion effect
-const winDuration = 80; // how long to show the win message
+const snapGridSize = 5;
+const hueShiftInterval = 200; // how often fish color changes, in frames
+const explosionDuration = 60; // how long to show explosion effect, inframes
+const winDuration = 80; // how long to show the win message, inframes
 
+let resetInterval;
+
+// sound components
 let scoreOscillator;
 let scoreEnvelope;
 
-let resetInterval;
-let fishiesHue;
-
+// game state
+let fishiesHue = 0;
 let currentScore = 0;
 
+// object to hold loaded images
 let images = {};
 
 function preload() {
   // load fish, explosion, and win sprites
   images = {
     fish1: {
-      main: loadImage("./sprites/fishy1.png"),
-      highlight: loadImage("./sprites/fishy1_highlight.png"),
+      main: loadImage("/microgames/sprites/fishy1.png"),
+      highlight: loadImage("/microgames/sprites/fishy1_highlight.png"),
     },
     fish2: {
-      main: loadImage("./sprites/fishy2.png"),
-      highlight: loadImage("./sprites/fishy2_highlight.png"),
+      main: loadImage("/microgames/sprites/fishy2.png"),
+      highlight: loadImage("/microgames/sprites/fishy2_highlight.png"),
+    },
+    winMessage: {
+      main: loadImage("/microgames/sprites/win.png"),
+      highlight: loadImage("/microgames/sprites/win_highlight.png"),
     },
     explosionFrames: [
-      loadImage("./sprites/boom1.png"),
-      loadImage("./sprites/boom2.png"),
-      loadImage("./sprites/boom3.png"),
+      loadImage("/microgames/sprites/boom1.png"),
+      loadImage("/microgames/sprites/boom2.png"),
+      loadImage("/microgames/sprites/boom3.png"),
     ],
-    winMessage: {
-      main: loadImage("./sprites/win.png"),
-      highlight: loadImage("./sprites/win_highlight.png"),
-    },
   };
 }
 
 function setup() {
-  // initialize canvas and mess info
+  /// set up canvas
   const p5_canvas = createCanvas(windowWidth, windowHeight);
+
+  /// register this sketch as a Comp Form background "mess"
   mess(p5_canvas, 2000, {
     messName: "fishies",
-    messLink: "https://editor.p5js.org/ana-konzen/sketches/pWXNXXJRx",
+    messLink: "/js_lab/js_lab.html?/microgames/fish_mess.js",
     authorName: "ana konzen",
     authorLink: "https://anakonzen.com",
   });
 
+  /// configure p5
+  colorMode(HSB, 1);
+  imageMode(CENTER);
+  noStroke();
+
+  /// init game state
+  fishiesHue = random(1);
+
+  /// create the fish objects, these will be reused across resets
   for (let i = 0; i < fishNum; i++) {
     fishies.push(new Fish(i));
   }
 
-  fishiesHue = random(1);
-
-  //calculate the time it takes for all fish to cross the screen + a small delay
-  resetInterval = (width + (images.fish1.main.width + fishMargin) * fishNum) / fishSpeed + 50;
-
-  // initialize envelope and oscillator for score sound
+  /// initialize sound components
   scoreEnvelope = new p5.Envelope();
   scoreEnvelope.setADSR(0.02, 0.25, 0, 0.05); // quick attack and decay
-  scoreEnvelope.setRange(0.5, 0); // start loud and fade quickly
+  scoreEnvelope.setRange(0.5, 0); // attack and release level
 
   scoreOscillator = new p5.Oscillator("square");
   scoreOscillator.amp(scoreEnvelope);
   scoreOscillator.start();
 
-  colorMode(HSB, 1);
-  imageMode(CENTER);
-  noStroke();
+  resetGame();
 }
 
 function draw() {
-  //set state
+  /// step
 
-  //change hue every few frames
-  if (frameCount % hueShiftInterval === 0) {
-    fishiesHue = random(1);
-  }
+  if (frameCount % resetInterval === 0) resetGame();
+  if (frameCount % hueShiftInterval === 0) fishiesHue = random(1);
 
   for (const fish of fishies) {
     fish.update();
   }
 
-  if (frameCount % resetInterval === 0) resetGame();
-
-  //draw
-  background(1);
+  /// draw
+  clear();
   for (const fish of fishies) {
     fish.draw();
   }
 }
 
 function mousePressed() {
-  if (getAudioContext().state !== "running") getAudioContext().resume(); // resume audio if blocked by browser
+  // resume audio if blocked by browser
+  if (getAudioContext().state !== "running") getAudioContext().resume();
 
   for (const fish of fishies) {
-    if (fish.isCloseToMouse(20)) {
-      if (fish.state === "swimming") currentScore++; //only increase score if fish wasn't clicked before
-
-      // check if all fishies were clicked
-      if (currentScore === fishNum) {
-        fish.state = "win";
-        playWinSound();
-      } else {
-        fish.state = "exploded";
-        playScoreSound();
-      }
-    }
+    fish.mousePressed();
   }
 }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  for (const fish of fishies) {
-    fish.reset();
-  }
-  resetInterval = (width + (images.fish1.main.width + fishMargin) * fishNum) / fishSpeed;
+  resetGame();
 }
 
 function resetGame() {
-  //reset score and fish states
   currentScore = 0;
   for (const fish of fishies) {
     fish.reset();
   }
+  resetInterval =
+    (width + (images.fish1.main.width + fishMargin) * fishNum) / fishSpeed + 50;
 }
 
 function playScoreSound() {
-  scoreOscillator.freq(150 * pow(1.3, currentScore)); // increase pitch with each successful click
+  // increase pitch with each successful click
+  scoreOscillator.freq(150 * pow(1.3, currentScore));
   scoreEnvelope.play();
 }
 
@@ -154,19 +154,18 @@ function playWinSound() {
   winOscillator.amp(0.5);
 
   // sequence of frequencies to create the melody
-  const frequencies = [440, 494, 523, 587, 659, 698, 784]; // a simple scale (A, B, C, D, E, F, G)
-  const delay = 100; // time between each note in milliseconds
+  // a simple scale (A, B, C, D, E, F, G)
+  const frequencies = [440, 494, 523, 587, 659, 698, 784];
+  // time between each note in milliseconds
+  const delay = 100;
 
   //schedule each note to play after a delay
   frequencies.forEach((freq, i) => {
-    setTimeout(() => {
-      winOscillator.freq(freq);
-      if (i === frequencies.length - 1) {
-        // stop the oscillator after the last note
-        winOscillator.stop();
-      }
-    }, i * delay);
+    setTimeout(() => winOscillator.freq(freq), i * delay);
   });
+
+  // stop when done
+  setTimeout(() => winOscillator.stop(), frequencies.length * delay);
 }
 
 class Fish {
@@ -183,10 +182,12 @@ class Fish {
 
   reset() {
     // randomly choose fish sprite and reset position and state
-    this.fishImages = random() > 0.5 ? images.fish1 : images.fish2;
+    this.fishImages = random() < 0.5 ? images.fish1 : images.fish2;
     this.state = "swimming";
     this.timer = 0;
-    this.x = (this.width + fishMargin) * this.index + width; // start off-screen
+
+    // start x off-screen
+    this.x = (this.width + fishMargin) * this.index + width;
     this.y = height / 2;
   }
 
@@ -210,27 +211,53 @@ class Fish {
 
   drawExplosion() {
     if (this.timer < explosionDuration) {
-      image(images.explosionFrames[floor(this.timer / 20) % images.explosionFrames.length], 0, 0);
+      const frame = map(
+        this.timer,
+        0,
+        explosionDuration,
+        0,
+        images.explosionFrames.length
+      );
+      image(images.explosionFrames[floor(frame)], 0, 0);
     }
   }
 
-  snapTo(num, multiple) {
+  snapDownTo(num, multiple) {
     return floor(num / multiple) * multiple;
   }
 
   getSway() {
-    // calculate the fish's sway (up and down motion) on a sine curve based on time and phase
-    return sin(frameCount * this.swaySpeed + this.swayPhase) * this.swayAmplitude;
+    // calculate the fish's sway (up and down motion) on a sine
+    // curve based on time and phase
+    return (
+      sin(frameCount * this.swaySpeed + this.swayPhase) * this.swayAmplitude
+    );
   }
 
   getY() {
     // snap the sprite's y position to a pixel grid
-    return this.snapTo(this.y + this.getSway(), stepSize);
+    return this.snapDownTo(this.y + this.getSway(), snapGridSize);
   }
 
   getX() {
     // snap the sprite's x position to a pixel grid
-    return this.snapTo(this.x, stepSize);
+    return this.snapDownTo(this.x, snapGridSize);
+  }
+
+  mousePressed() {
+    if (this.isCloseToMouse(20)) {
+      // increase score if fish wasn't clicked before
+      if (this.state === "swimming") currentScore++;
+
+      // if all fishies were clicked
+      if (currentScore === fishNum) {
+        this.state = "win";
+        playWinSound();
+      } else {
+        this.state = "exploded";
+        playScoreSound();
+      }
+    }
   }
 
   isCloseToMouse(threshold) {
@@ -265,7 +292,7 @@ class Fish {
   }
 }
 
-//mess util functions
+/// mess callback functions
 function pauseMess() {
   noLoop();
 }
