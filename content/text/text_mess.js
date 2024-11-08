@@ -26,6 +26,7 @@ function setup() {
   /// set up canvas
   const p5_canvas = createCanvas(windowWidth, windowHeight);
 
+
   /// register this sketch as a Comp Form background "mess"
   mess(p5_canvas, 2000, {
     messName: "markov",
@@ -146,13 +147,7 @@ function draw() {
       const wordX = sentenceX + currentX + wordsData[i].jitterX;
       const wordY = sentenceY + currentY + wordsData[i].jitterY;
       const wordAngle = wordsData[i].jitterA;
-      drawWord(
-        textHue,
-        word,
-        wordX - textWidth(wordsData[i].word),
-        wordY,
-        wordAngle
-      );
+      drawWord(textHue, word, wordX - textWidth(wordsData[i].word), wordY, wordAngle);
 
       // update carriage position
       currentX -= textWidth(wordsData[i].word) + wordSpacing;

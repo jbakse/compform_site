@@ -1,9 +1,10 @@
 /**
- * Displays 3D boxes that rotate and move with the mouse.
+ * Displays 3D boxes that rotate and move with the cursor.
  *
  * written by Ana Konzen
  * edited by Justin Bakse
  */
+
 
 /// configure compform editor
 // require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js
@@ -12,6 +13,7 @@
 /// configure eslint
 /* exported preload, setup, draw, mousePressed */
 /* global mess */
+
 
 const boxSize = 30;
 const numBoxes = 100;
@@ -32,6 +34,7 @@ let lerpedMouseY = 0;
 function setup() {
   /// set up canvas
   const p5_canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+
 
   /// register this sketch as a Comp Form background "mess"
   mess(p5_canvas, 2000, {
@@ -92,12 +95,14 @@ function draw() {
 
   //draw boxes
   for (let i = 0; i < numBoxes; i++) {
+
     const noiseX =
       (noise(i * noiseFreqX, frameCount * boxSpeed) - baseNoiseX) *
       (i + noiseScaleX);
     const noiseY =
       (noise(i * noiseFreqY, 1, frameCount * boxSpeed) - baseNoiseY) *
       (i + noiseScaleY);
+
 
     ambientMaterial((i * 20) % 1000, 1000, 1000);
 
@@ -118,4 +123,13 @@ function draw() {
 
     pop();
   }
+}
+
+//mess util functions
+function pauseMess() {
+  noLoop();
+}
+
+function resumeMess() {
+  loop();
 }
