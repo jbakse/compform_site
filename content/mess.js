@@ -14,7 +14,7 @@ function mess(c, wait_ms = 2000, creditInfo = {}) {
   const showMessCheckbox = document.getElementById("show-mess-checkbox");
 
   //check local storage for user preference
-  showMessCheckbox.checked = localStorage.getItem("messState") === "show";
+  showMessCheckbox.checked = localStorage.getItem("messState") !== "hide";
 
   toggleMess();
 
