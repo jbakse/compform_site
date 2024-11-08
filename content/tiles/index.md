@@ -8,9 +8,9 @@ description: Tile mapping—creating images by arranging small graphic tiles—i
 software: pencil + paper
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
 <script src="/mess.js"></script>
-<script src="./truchent_mess.js"></script>
+<script src="./truchet_mess.js"></script>
 
 ## Tile Sets and Maps
 
@@ -19,7 +19,7 @@ From masonry and tile to fabrics to movable type: artists and designers have bee
 In digital media, tile maps and sets are used frequently and commonly associated with the 8-bit and 16-bit video game era. Hardware limitations imposed strict limits on designers. Designers pushed these limits to creative extremes, creating enduring visual styles. Today's games do not face the same hardware restrictions, but modular graphic systems are still an important tool for artists. Support for tile maps is built into many contemporary game engines, including [Unity](https://docs.unity3d.com/Manual/class-Tilemap.html) and [GameMaker Studio](https://www.yoyogames.com/en/gamemaker).
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 ## Designing Tile Sets
@@ -137,7 +137,7 @@ This single screenshot of Mario dying in World 1-1 is 8 kilobytes alone.
 
 This is possible because SMB builds the world from a small set of reusable tiles that can be re-colored and re-used in multiple ways. For example, the bush and the cloud in the screenshot above use the same tiles with different palettes. Below is a dump of the tiles and palettes used in SMB.
 
-![SMB Tiles](https://gamasutra.com/db_area/images/news/253377/fig03.png){scale pixel}
+![SMB Tiles](./figures/smb_sprites.png){scale pixel}
 
 ### 1-bit per Tile
 

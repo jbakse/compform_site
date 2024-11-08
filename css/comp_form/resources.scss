@@ -1,3 +1,7 @@
+@use "layout_mixins" as *;
+@use "copy_mixins" as *;
+@use "variables" as *;
+
 .comp-form.resources {
   // LAYOUT
   .container > * {

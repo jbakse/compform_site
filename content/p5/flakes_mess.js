@@ -1,44 +1,65 @@
-// draws colorflow confetti
+/**
+ * Draws colorful falling confetti with mouse interaction.
+ *
+ * written by Justin Bakse
+ */
 
-/* exported preload setup draw mousePressed windowResized */
+/// configure compform editor
+// require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js
+// require /mess.js
 
+/// configure eslint
+/* exported preload, setup, draw, mousePressed */
+/* globals mess */
+
+// settings
+const SPAWN_RATE = 10;
+const GRAVITY = 0.8;
+const DRAG = 0.9;
+const AIR_FORCE = 1;
+
+// state
 let flakes = [];
-
-let c = 0;
-
-function preload() {}
+let colorIndex = 0;
 
 function setup() {
+  /// set up canvas
   pixelDensity(1);
   const p5_canvas = createCanvas(windowWidth, windowHeight);
 
-  mess(p5_canvas);
+  /// configure p5
+  colorMode(HSB, 1);
 
-  colorMode(HSB, 1000);
+  /// register this sketch as a Comp Form background "mess"
+  mess(p5_canvas, 2000, {
+    messName: "flakes",
+    messLink: "/js_lab/js_lab.html?/p5/flakes_mess.js",
+  });
 }
 
 function draw() {
-  clear();
-
-  // spawn
-  if (frameCount % 10 === 0) {
+  /// update
+  if (frameCount % SPAWN_RATE === 0) {
     flakes.push(new Flake(mouseX, mouseY));
   }
 
-  // draw flakes
-  var index = flakes.length - 1;
-  while (index >= 0) {
-    flakes[index].draw();
-    index--;
+  for (const flake of flakes) {
+    flake.step();
+  }
+
+  // filter out flakes that should be removed
+  flakes = flakes.filter((flake) => !flake.shouldBeRemoved());
+
+  /// draw
+  clear();
+  for (const flake of flakes) {
+    flake.draw();
   }
 }
 
-function _removeItem(array, element) {
-  const index = array.indexOf(element);
-  if (index == -1) return;
-  array.splice(index, 1);
-}
-
+/**
+ * Represents a single confetti flake with position, movement, and color.
+ */
 class Flake {
   constructor(x, y) {
     this.x = x;
@@ -47,43 +68,45 @@ class Flake {
     this.deltaY = random(-1, -5);
     this.air = random(0, 2 * PI);
     this.deltaAir = random(0.05, 0.1);
-    this.c = c;
+    this.color = colorIndex;
     this.scale = 0;
-    c = (c + 50) % 1000;
+    colorIndex = (colorIndex + 0.05) % 1;
   }
-  draw() {
-    // drag
-    this.deltaX *= 0.9;
-    this.deltaY *= 0.9;
 
+  step() {
     // gravity
-    this.deltaY += 0.8;
+    this.deltaY += GRAVITY;
 
-    // air
+    // drag
+    this.deltaX *= DRAG;
+    this.deltaY *= DRAG;
+
+    // add a little side to side motion
+    // this isn't really simulating air in any principled way
+    // but it looks nice
     this.air += this.deltaAir;
-    let air = sin(this.air);
-    air = pow(air, 1) * 1;
-    this.deltaX += air;
+    const airForce = sin(this.air);
+    this.deltaX += airForce * AIR_FORCE;
 
-    // integrate
+    // position
     this.x += this.deltaX;
     this.y += this.deltaY;
 
-    // kill
-    if (this.y > height * 1.1) {
-      _removeItem(flakes, this);
-    }
-
+    // ease the scale toward 200
     this.scale = lerp(this.scale, 200, 0.2);
+  }
 
+  shouldBeRemoved() {
+    return this.y > height * 1.1;
+  }
+
+  draw() {
     push();
     noStroke();
-    fill(this.c, 1000, 1000);
-
+    fill(this.color, 1, 1);
     translate(this.x, this.y);
     shearX(0.2);
     rotate(this.deltaX * 0.04);
-
     rect(0, 0, this.scale, this.scale);
     pop();
   }

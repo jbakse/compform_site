@@ -1,25 +1,16 @@
+@use "./layout";
+@use "./copy";
+@use "./images";
+@use "./copy_extras";
+@use "./syntax_highlight";
+
+@use "./toc";
+@use "./chapter";
+@use "./slides";
+@use "./js_lab";
+
+@use "./mess";
+
+@use "./resources";
+
 @import url("https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Roboto:300,500|Overpass+Mono:300");
-
-$black: #000;
-$light-grey: #eee;
-$middle-grey: #ccc;
-$dark-grey: #111;
-$accent-color: #04b;
-
-@import "./layout";
-@import "./copy";
-@import "./images";
-@import "./copy_extras";
-@import "./syntax_highlight";
-
-@import "./toc";
-@import "./chapter";
-@import "./slides";
-@import "./js_lab";
-
-@import "./mess";
-
-@import "./resources";
-
-
-

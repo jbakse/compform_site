@@ -24,7 +24,7 @@ Generative Music
 ### Examples
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 <!-- commenting out the links because it's getting replaced with a gallery -->

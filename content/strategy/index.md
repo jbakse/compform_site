@@ -8,7 +8,7 @@ description: Building a complex procedural generation system requires analyzing 
 software: p5.js
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
 <script src="/mess.js"></script>
 <script src="./strategy_mess.js"></script>
 
@@ -88,65 +88,6 @@ Tactics can range from very simple—like using the average of two `random()` ca
 
 In this chapter, we'll examine some tactics for a very common problem in procedural generation: arranging points on a square.
 
-<!--
-[[Compostion]]
-[[Factoring]]
-
- to get specific results. As our goals grow **more complex**, we need to approach problems from a much **higher level**. To create more complex systems you must develop a clear understanding of the result you would like to achieve, break the task down into smaller sub-tasks, and then implement the sub-tasks in code. In short you need to have a plan—a strategy—before you start coding.
-
-
-[[ strategies composed of tactics ]]
-[[ In the next section create an explicit bridge saything that "this [points on square] is an example of that [composing strategies of tactics]"
-
-
-[[ task < tactic < strategy ]]
-[[ understanding API Calls + syntax ]]
-[[ micro tactics like biasing ]]
-[[ bigger tactics like algorithms + data structures]]
-[[ design patterns algo + data]]
-[[ named things like markov chains and l systems]]
-
-[[methods \ systems : markov chain l system ]]
-
-[[ problem ((randomly generate a musical phrase) ]]
-[[ strategy is a high level approach to solving your specific problem]
-[[ tactics are a mid or low level approach to solving a small, common sub-problem (animate a value over time, find the highest value in an array)]]
-[[ tasks are often provided by api and syntax (draw a square, loop) ]]
-
-
-[[ design pattern ]]
-[[ a template for solving a common problem, usually a software architecture problem, but sometimes applied to other problems ]]
-[[ Gang of 4 ]]
-[[http://www.gameprogrammingpatterns.com/]]
- -->
-
-<!-- [[above section feels awkwardly positioned, especially after the preceding aside. Maybe this should talk more about "design patterns", composition? -->
-
-<!-- [[I agree. The following discussion section feels awkward too. Knowing that these named strategies are actually tools for solving specific problems is important--I hadn't though of them like that before. But the language in the first paragraph here is pretty vague. Discussing design patterns and composition might clarify it.]]-->
-
-<!--
-<div class="callout">
-**Tackling Complexity**
-
-When beginner and intermediate programmers run into trouble building more complex projects, they often hear this advice:
-
-> Break your problem into smaller parts, and solve those parts.
-
-[[process vs. structure]]
-[[this confuses the process of developing a program with the structure of that program]]
-[[a well factored/composed program breaks problems down into sub-problems ]]
-[[as a process this is necessary but not sufficient ]]
-
-This advice falls short because it describes how the final program should be structured rather than the process of developing it. It is hard to understand a complex problem and it is hard to break complex problems down into parts. How big should the parts be? How do you build an individual part without the other parts it depends on? Once you have a few working parts, how do you put them together?  With experience, these questions get easier to answer, but advanced programmers still frequently encounter problems they can't initially understand well enough to break down. When this happens to you, you still have an option for getting started: **make a simpler program**.
-
-Imagine you want to make a game like [pong](https://www.youtube.com/watch?v=1LsRGUODHlQ). You could begin by trying to break it down into sub-tasks—keyboard controlled paddles, an animated ball, a scoreboard—but it is hard to plan all those pieces all at once. At the planning stage, you will have a rough idea of how each piece should work. But before you start implementing each piece, you won't know the details. Without understanding the details, the pieces you make probably won't fit together. You might end up with a lot of code that doesn't work and you don't understand. It is much better to have a little bit of code that does work and that you do understand.
-
-Instead, you could start with a very simple program: just draw a little square—the ball—on the screen. Build and run this program to make sure it works. Then start adding on. Make the ball move to the right. Don't worry about the paddles or the score yet: focus on the ball. Make the square bounce when it hits the side. Then make it move diagonally. Make the ball bounce off all the sides. You might make dozens of incremental working programs as you get the basic ball working. As you do, take the time to review the code and make sure you understand how everything works.
-
-Working this way will let you discover the details of how your ball—an important piece of your program—works. These details will help you see how that piece will work with the others. As you start to build other elements—like the paddles or scoreboard—you might find out that you need to go back and change how the ball works. Expect to run into some dead ends, and expect the need to back track. This might have been avoided if you had made a complete plan in the beginning, but _in the beginning, you didn't know enough to make a complete plan_. This reason this strategy works is simple: **instead of trying to do something you can't, you are trying to do something you can.**
-
-</div> -->
-
 <div class="discussion">
 
 ## Points on a Square
@@ -166,7 +107,7 @@ This problem shows up all the time: putting trees on an island, putting beads of
 The problems above are all specific instances of the general problem of arranging points. Below we'll look at several tactics for placing and moving points on a square. These tactics can be combined in different ways to generate a wide variety of arrangements. These tactics can help with planting trees, beading water, or scratching up a spaceship. They could be adapted to arranging points on lines, filling cubes, or arranging events in time. You can find applications for these tactics in all areas of procedural generation any time you have things that need to be arranged.
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 <div class="activity">
@@ -409,8 +350,6 @@ This code implements the tactics described above, and demonstrates the effect of
 
 {% js-lab "sketches/point_place.js" %}
 
-<!-- [Point Placing Demo](https://jsbin.com/telipu/edit?js,output) -->
-
 ## Study Examples
 
 ### Basic Grid Placement
@@ -542,65 +481,7 @@ Solving these two challenges will require strategic planning:
 
 </div>
 
-<!--
-
-<div class="assignment">
-
-## Special Assignments
-
-### Read
-
-[Procedural Content Generation in Games](http://pcgbook.com/) is a collection of research in the field of procedural game content. It covers many interesting topics including dungeon+maze generation, fractals, L-systems, generating rules/mechanics, and mixing proc-gen and human-authored content.
-
-[PCG Book, Chapter 1](http://pcgbook.com/wp-content/uploads/chapter01.pdf){boxed right}
-
-### Prepare
-
-Later in this class I will ask you to create special sketches using equipment available to you through The New School. If you haven’t used the following equipment before, you should sign up for orientations. Be ready to use the following equipment by week 8.
-
-- Laser Cutters
-- 3D Printers
-- Large Format Printers/Plotters
-- CNC Mills (optional)
-
-</div>
-
--->
-
-<!--
-<div class="assignment">
-
-## Read + Watch + Play
-
-### Read
-
-[Procedural Content Generation in Games](http://pcgbook.com/) is a collection of research in the field of procedural game content. It covers many interesting topics including dungeon+maze generation, fractals, L-systems, generating rules/mechanics, and mixing proc-gen and human-authored content.
-
-[PCG Book, Chapter 1](http://pcgbook.com/wp-content/uploads/chapter01.pdf){boxed right}
-
-### Watch
-
-[Game Maker's Toolkit](https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw) is a Youtube channel that features high-quality video essays on game design.
-
-[GMT: Spelunky](https://www.youtube.com/watch?v=Uqk5Zf0tw3o){boxed right}
-
-### Play
-
-If you want to play Spelunky—optional but highly recommended—original version (not the HD Remake) is free.
-
-[For PC](http://spelunkyworld.com/original.html){boxed right}
-[For Mac](https://forums.tigsource.com/index.php?topic=28467.0){boxed right}
-
-</div> -->
-
 ## Explore
-
-<!--
-[Game Maker's Toolkit: How (and Why) Spelunky Makes its Own Levels](https://www.youtube.com/watch?v=Uqk5Zf0tw3o)
-: Overview of the Spelunky level generator from a technical and critical perspective.
-
-[Darius Kazemi: Spelunky Mod](http://tinysubversions.com/spelunkyGen/)
-: Darius Kazemi has created a mod of the original Spelunky that runs in the browser and visualizes level generation. -->
 
 <div class="link-box">
 
@@ -611,5 +492,11 @@ A description of the strategy used to create the main map in Lenna's Inception, 
 
 [**Game Programming Patterns** Online Book](http://www.gameprogrammingpatterns.com/)
 An online book that looks at many of the most common design patterns (_tactics!_) used in game programming.
+
+[**Game Maker's Toolkit** How (and Why) Spelunky Makes its Own Levels](https://www.youtube.com/watch?v=Uqk5Zf0tw3o)
+Overview of the Spelunky level generator from a technical and critical perspective.
+
+[**Darius Kazemi** Spelunky Mod](http://tinysubversions.com/spelunkyGen/)
+Darius Kazemi has created a mod of the original Spelunky that runs in the browser and visualizes level generation.
 
 </div>

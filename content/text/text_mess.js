@@ -7,8 +7,14 @@
  * @requires RiTa.js - https://unpkg.com/rita
  */
 
-/* exported setup draw*/
-/* global mess RiTa*/
+/// configure compform editor
+// require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js
+// require https://unpkg.com/rita
+// require /mess.js
+
+/// configure eslint
+/* exported preload, setup, draw, mousePressed */
+/* globals mess RiTa*/
 
 const contentContainer = document.querySelector(".comp-form-copy");
 
@@ -17,20 +23,25 @@ let textHue;
 let wordsData = [];
 
 function setup() {
+  /// set up canvas
   const p5_canvas = createCanvas(windowWidth, windowHeight);
-  mess(p5_canvas, {
+
+
+  /// register this sketch as a Comp Form background "mess"
+  mess(p5_canvas, 2000, {
     messName: "markov",
-    messLink: "https://editor.p5js.org/ana-konzen/sketches/i-QY-3BEY",
+    messLink: "/js_lab/js_lab.html?/text/text_mess.js",
     authorName: "ana konzen",
     authorLink: "https://anakonzen.com",
   });
 
+  /// configure p5
   textSize(18);
   colorMode(HSB, 100);
   angleMode(DEGREES);
   noStroke();
 
-  // Update markov sentence effect on hover and click
+  /// add listeners to update markov sentence effect on hover and click
   for (const child of contentContainer.children) {
     child.addEventListener("mouseover", updateSentence);
     child.addEventListener("click", updateSentence);

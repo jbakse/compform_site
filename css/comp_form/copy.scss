@@ -1,27 +1,6 @@
-@mixin font-title() {
-  font-family: "Miriam Libre";
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.3px;
-  color: $dark-grey;
-}
-
-@mixin font-copy() {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 20px;
-  letter-spacing: 0.31px;
-  line-height: 1.75;
-  color: $dark-grey;
-}
-
-@mixin font-code() {
-  font-family: "Overpass Mono", monospace;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.6;
-  color: $black;
-}
+@use "layout_mixins" as *;
+@use "copy_mixins" as *;
+@use "variables" as *;
 
 .comp-form .comp-form-copy {
   @include font-copy;

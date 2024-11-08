@@ -1,5 +1,6 @@
 {
   "name": "compform_site",
+  "type": "commonjs",
   "version": "2.0.0",
   "description": "This is the content for compform.net.",
   "main": "index.js",
@@ -19,19 +20,18 @@
   "author": "Justin Bakse",
   "license": "unlicensed",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-pug": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "concurrently": "^9.0.1",
     "eslint": "^9.13.0",
     "eslint-config-p5js": "^1.1.0",
     "eslint-plugin-node": "^11.1.0",
+    "globals": "^15.11.0",
     "js-yaml": "^4.1.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-deflist": "^3.0.0",
     "sass": "^1.80.4"
-  },
-  "dependencies": {
-    "sass-migrator": "^2.2.1"
   }
 }

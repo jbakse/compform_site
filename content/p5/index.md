@@ -8,7 +8,7 @@ description: Many of the examples on this site use p5.js, a JavaScript creative 
 software: p5.js + github
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
 <script src="/mess.js"></script>
 <script src="./flakes_mess.js"></script>
 
@@ -35,7 +35,7 @@ The p5.js library was created by artist [Lauren McCarthy](http://lauren-mccarthy
 Here are a few examples to give you an idea of what kinds of things people make with p5.js
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %} |
 
 ## A p5.js Example Sketch
@@ -72,7 +72,7 @@ To edit your sketches, you'll need a code editor. I use [VS Code](https://code.v
 
 | Package     | Purpose                                                                                                                          |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Live Server | The Live Server extension makes it very simple to properly serve your sketches to your browser                                    |
+| Live Server | The Live Server extension makes it very simple to properly serve your sketches to your browser                                   |
 | Prettier    | Prettier is a code formatter. It makes sure that your spaces and indents are consistent, improving the readability of your code. |
 | ESLint      | ESLint will audit your code to find potential problems.                                                                          |
 

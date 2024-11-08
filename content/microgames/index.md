@@ -30,7 +30,7 @@ Some games are made up almost entirely of minigames. Party games like Mario Part
 Minigames provide many benefits in game design. They offer a change of pace from the main game, reducing player fatigue. They are usually low stakes, reducing player stress. A well-placed minigame can improve the pacing of the main game significantly. Offering a break before a spike in the action will increase the apparent contrast in the intensity.
 
 {% slides %}
-{% include slides.yaml %}
+{% include ./slides.yaml %}
 {% endslides %}
 
 Minigames don't have the weight of a full game. They don't have advance a story or provide the amount of mechanics, levels, and content expected of full games. They are free to focus on a small set of ideas, deliver some fun gameplay, and move on.

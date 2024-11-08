@@ -1,3 +1,8 @@
+@use "sass:color";
+@use "layout_mixins" as *;
+@use "copy_mixins" as *;
+@use "variables" as *;
+
 .comp-form-copy .slides-component {
   @include block-wide;
   margin-top: 30px;
@@ -87,7 +92,7 @@
     @include font-title;
     font-size: 20px;
     font-weight: normal;
-    color: lighten($dark-grey, 30);
+    color: color.adjust($dark-grey, $lightness: 30%);
   }
 
   .slide-info .comments {

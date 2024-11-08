@@ -10,7 +10,7 @@ software: javascript + html
 
 <!-- [[ leah, want to take a crack at the hero desc? again? ]] -->
 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
 <script src="https://unpkg.com/rita"></script>
 <script src="../mess.js"></script>
 <script src="./text_mess.js"></script>
