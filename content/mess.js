@@ -12,14 +12,13 @@ function mess(c, wait_ms = 2000, creditInfo = {}) {
   /// set up mess UI
   createMessUI();
   const showMessCheckbox = document.getElementById("show-mess-checkbox");
-  showMessCheckbox.addEventListener("change", function () {
-    c.canvas.classList.toggle("off", !this.checked);
-    if (this.checked) {
-      window.resumeMess ? window.resumeMess() : loop();
-    } else {
-      window.pauseMess ? window.pauseMess() : noLoop();
-    }
-  });
+
+  //check local storage for user preference
+  showMessCheckbox.checked = localStorage.getItem("messState") === "show";
+
+  toggleMess();
+
+  showMessCheckbox.addEventListener("change", toggleMess);
 
   /// manange fading the canvas in and out based on mouse movement
   let hideTimeout = null;
@@ -48,6 +47,19 @@ function mess(c, wait_ms = 2000, creditInfo = {}) {
 
     window.messResize?.(); // call messResize if mess defines it
   });
+
+  function toggleMess() {
+    // hide or show the canvas based on the checkbox
+    c.canvas.classList.toggle("off", !showMessCheckbox.checked);
+    // start or stop the mess and save the user preference
+    if (showMessCheckbox.checked) {
+      window.resumeMess ? window.resumeMess() : loop();
+      localStorage.setItem("messState", "show");
+    } else {
+      window.pauseMess ? window.pauseMess() : noLoop();
+      localStorage.setItem("messState", "hide");
+    }
+  }
 
   function createMessUI() {
     let creditLine = "";
