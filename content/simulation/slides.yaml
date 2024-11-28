@@ -1,0 +1,13 @@
+- artist: Will Wright
+  title: SimCity, Maxis, 1989
+  image: https://gamehistory.org/wp-content/uploads/2018/12/monstercomparison_06.png
+  comments: One of the most well known simulation games, SimCity allows players to build and manage a city without a predefined goal.
+
+- artist: Dwarf Fortress
+  title: Tarn and Zach Adams
+  image: https://www.bay12games.com/dwarves/screens/dwf5.png
+  comments: A deeply complex simulation game challenging players to manage a group of dwarves in a procedurally generated world.
+  links:
+    - label: Dwarf Fortress
+      subtitle: Offical Website
+      href: https://www.bay12games.com/dwarves/screens/dwf5.html

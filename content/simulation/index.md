@@ -29,6 +29,10 @@ Gallery
 - Conway's Life
 - Monte Carlo Simulation
 
+{% slides %}
+{% include ./slides.yaml %}
+{% endslides %}
+
 ## Physics
 
 <div class="sidebar link-box">
@@ -136,7 +140,7 @@ This example shows a pretty minimal bouncing ball. It simulates the effect of gr
 
 ### Some Bouncing Balls
 
-This example increases the complexity of the simulation. It simulates multiple balls in two dimesions. It simulates gravity, air resistance, and collisions with the left, right, and bottom of the canvas. It doesn't simulate collisions between balls.
+This example increases the complexity of the simulation. It simulates multiple balls in two dimesions. It simulates gravity, air resistance, and inelastic collisions with the left, right, and bottom of the canvas. It doesn't simulate collisions between balls.
 
 {% js-lab "sketches/bounce_balls.js" %}
 
@@ -159,6 +163,35 @@ This example simulates gravity and spring forces on a chain of beads.
 This example simulates the path of a ball using numerical integration and analytic integration visualizing the estimation error.
 
 {% js-lab "sketches/bounce_error.js" %}
+
+<div class="activity challenges">
+
+## Coding Challenges
+
+Explore the examples above by completing the following challenges.{intro}
+
+### A Bouncing Ball
+
+1. Change the starting height of the ball. `•`
+1. Change gravity. `•`
+1. When the ball bounces it keeps 100% of its velocity. Change it so that it keeps only half. `••`
+
+### Some Bouncing Balls
+
+1. what happens when you change the constant used for air resistance? try .1, .5, .8, .9, 1, 1.5, 2. `•`
+1. what happens if kRestituion is close to 0? above 1? `•`
+
+### Particles
+
+1. Add some wind that blows left to right. `•`
+1. Change the emission speed, gravity, wind, etc to make a particle effect that looks a little like smoke or sparks or confetti? `•••`
+
+### Simulation Error
+
+1. Change the step size passed to numericallyStepBall. How does the error change with values like .1, .5, 1, 2, 5? `•`
+1. Instead of calling numericallyStepBall(), try calling numericallyStepBallImproved(). Compare the accuracy of both functions at different step sizes. `••`
+
+</div>
 
 ## Cellular Automata
 
