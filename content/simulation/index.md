@@ -214,7 +214,7 @@ Most of the time, using an image works fine and sometimes you get some nice perf
 
 ### Cellular Automata Starter
 
-This first example is models a simple growth. Cells can be in one of two states: off (represented by red value 0) and on (represented by red value > 0). The green and blue channel values are not considered.
+This first example is models a simple growth. Cells can be in one of two states: off (represented by red value 0) and on (represented by red value > 0). The green and blue c_hannel values are not considered.
 
 It starts out by creating a graphics object to hold the current state (`g1`) and draws a few white squares in it. It also creates a graphics object to hold the result of applying the rules (`g2`). You generally need to have two buffers like this so that you aren't changing the values while you are reading them.
 
@@ -233,7 +233,7 @@ This example uses the same structure as the others. It starts by setting each pi
 Click the canvas to pause the simulation. I really like the images this once creates and the simplicity of the rule. I found this one by just playing around.
 Its similar to the [Color War tweet-cart](https://munrohoberman.com/tweetcarts.html) by Munro Hoberman.
 
-{% js-lab "sketches/cellular_color.js" %}
+{% js-lab "sketches/cellular_color_copy.js" %}
 
 ### Lines
 
