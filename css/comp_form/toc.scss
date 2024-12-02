@@ -91,6 +91,14 @@ body.toc {
       font-size: 11px;
     }
 
+    nav a em {
+      font-style: normal;
+      background: #666;
+      color: white;
+      border-radius: 3px;
+      padding: 1px 3px 0px 3px;
+    }
+
     nav a:hover strong {
       border-bottom: 1px solid $accent-color;
     }

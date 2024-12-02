@@ -27,24 +27,29 @@ function draw() {
   g1.loadPixels();
   g2.loadPixels();
 
-  // copy each pixel from g1 to g2
+  // visit each pixel
   for (let y = 0; y < 128; y++) {
     for (let x = 0; x < 128; x++) {
+      // get the state color of this pixel and its neighbors
       const c = getC(g1, x, y);
       const cUp = getC(g1, x, y - 1);
       const cRight = getC(g1, x + 1, y);
       const cDown = getC(g1, x, y + 1);
       const cLeft = getC(g1, x - 1, y);
 
-      // if this pixel is black (in red channel)
+      // if this pixel is "off" (red channel === 0)...
       if (!c[0]) {
-        // if any neighbor is non-black (in red channel), make this one white
+        // and if any neighbor is "on" (red channel !== 0)...
         if (cUp[0] || cRight[0] || cDown[0] || cLeft[0]) {
+          // turn this pixel on
           setC(g2, x, y, [255, 0, 0, 255]);
+
+          // go to next pixel
           continue;
         }
       }
 
+      // otherwise just copy the current pixel value
       setC(g2, x, y, c);
     }
   }
@@ -52,7 +57,7 @@ function draw() {
   // update g2 after writing
   g2.updatePixels();
 
-  // blit g2 to g1
+  // blit (copy) g2 to g1
   g1.copy(g2, 0, 0, 128, 128, 0, 0, 128, 128);
 
   // show g1

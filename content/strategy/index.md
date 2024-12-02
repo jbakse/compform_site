@@ -499,4 +499,7 @@ Overview of the Spelunky level generator from a technical and critical perspecti
 [**Darius Kazemi** Spelunky Mod](http://tinysubversions.com/spelunkyGen/)
 Darius Kazemi has created a mod of the original Spelunky that runs in the browser and visualizes level generation.
 
+[**Casey Muratori**The Color of Noise](https://caseymuratori.com/blog_0010)
+A discussion of placing plants that touches on "white noise", "blue noise", Poisson Disk sampling, performance + complexity, recognizing reusuable patterns,and the real, messy development process.
+
 </div>

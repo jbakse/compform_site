@@ -69,6 +69,8 @@ Independent chapters exploring specific procedural generation tools, languages, 
 
 [**Microgames** p5.js + p5.play](./microgames)
 
+[**Simulation** p5.js _draft_](./simulation)
+
 </nav>
 
 </div>

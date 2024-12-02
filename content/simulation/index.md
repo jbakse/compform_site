@@ -10,30 +10,31 @@ software: p5.js
 
 ## Simulation
 
-Simulation is a broad idea, and is used in many kinds of apps, games, and creative coding projects.
+Computer simulations are useful. Scientists use them for climate modeling and protien folding. Engineers simulate materials, and bridges, and areodynamics. Video games simulate physics, enemy behaviors, or even entire cities. Simulations are used to model the stock market, assess risks, and optimize supply chains, and predict epidemics.
 
-The examples in this chapter are varied but they all handle simulation in a similar way:
+More importantly, computer simulations are fun. Video games are largely simulation and coding small, personal videogames is one of the most fun things you can do on a computer. I particularly value coding simulations to explore ideas. What better way is there to gain an understanding of how something works than to make it work yourself.
 
-- represent simulation current state with objects, arrays, variables
-- in a loop apply rules to change the state
-
-Gallery
-
-- SimCity, SimLife
-- Boids
-- Ants
-- Emersive Sim
-- Dwarf Fortress
-- Physics Sim
-- Falling Sand
-- Conway's Life
-- Monte Carlo Simulation
+Computer simulation is a broad term, and lots of things with different structures fall into it. In this chapter we explore a three different types: physics simulation, cellular automata, artifical life. As different as these are, they all share a common core idea: represent a system with data, and iteratively update the system by applying rules.
 
 {% slides %}
 {% include ./slides.yaml %}
 {% endslides %}
 
 ## Physics
+
+Perhaps the most commonly simulated system in video games is physics: how things move and collide. Some games, like racing sims, use principled, realistic physics. Some games, like Mario Brothers, use stylized phyiscs.
+
+If you want to use physics in your own sketches, designs, games, and simulations you can use an [existing](https://github.com/liabru/matter-js) [physics](https://github.com/schteppe/p2.js) [library](https://box2d.org/). There are lots of stand-alone 2D and 3D physics engines for most popular languages, and game engines like Unity and [Godot](https://godotengine.org/) usually include their own physics engine.
+
+If you are making a medium- or large-scoped game, its probably a good idea to learn and use an full-featured, battle-tested physics engine. But for some projects and effects, you can code your own physics with just a few lines of code.
+
+### Position, Velocity, Acceleration
+
+Three very important things in a physics simulation are position, velocity and acceleration.
+
+**Position** Where it is.
+**Velocity** Direction and rate of change in position.
+**Acceleration** Direction and rate of change in velocity.
 
 <div class="sidebar link-box">
 
@@ -42,23 +43,23 @@ A high precision scientific calculator with full support for physical units.
 
 </div>
 
-A blue bus travels down the road at 30 miles per hour. At 1 hour, it has traveled 30 miles. At 2 hours, it has traveled [60 miles](https://numbat.dev/?q=30+m%2Fh+*+2+h%E2%8F%8E).
-
 `rate * time = distance`
 
-A red bus [falls](https://en.wikipedia.org/wiki/Equations_for_a_falling_body?useskin=vector) from a great height. Gravity accelerates the bus at 9.8m/s^2. The velocity increases linearly over time due to the const acceleration of gravity. After 1 second the bus is moving at 9.8m/s. After 2 seconds the bus is moving [19.6m/s](https://numbat.dev/?q=9.8m%2Fs%5E2+*+2s%E2%8F%8E).
+A blue bus travels down the road at 30 miles per hour. At 1 hour, it has traveled 30 miles. At 2 hours, it has traveled [60 miles](https://numbat.dev/?q=30+m%2Fh+*+2+h%E2%8F%8E).
 
 `acceleration * time = velocity`
+
+A red bus [falls](https://en.wikipedia.org/wiki/Equations_for_a_falling_body?useskin=vector) from a great height. The velocity increases linearly over time due to the const acceleration of gravity (9.8m/s^2). After 1 second the bus is moving at 9.8m/s. After 2 seconds the bus is moving [19.6m/s](https://numbat.dev/?q=9.8m%2Fs%5E2+*+2s%E2%8F%8E).
 
 But how far does the red bus fall in 1 second? 2 seconds?
 
 ### Analytical Integration
 
-To find that out, we need to use integration. Integration finds an accumulated value when we know how it changes over time. For example, we can find distance by integrating velocity and we can find velocity by integrating acceleration. Calculus provides the tools to _analytically_ integrate. We can use it to derive [equations for falling bodies](https://en.wikipedia.org/wiki/Equations_for_a_falling_body?useskin=vector)
+To find that out, we can use integration. Integration finds an accumulated value when we know how it changes over time. For example, we can find distance by integrating velocity and we can find velocity by integrating acceleration. Calculus provides the tools to _analytically_ integrate. We can use it to derive [equations for falling bodies](https://en.wikipedia.org/wiki/Equations_for_a_falling_body?useskin=vector). The folowing formula tells us how far an object falls for a given gravity and time.
+
+`.5 * gravity * time^2 = distance`
 
 At 1 second the bus has fallen 4.9 meters. At 2 seconds the bus has fallen [19.6 meters](https://numbat.dev/?q=.5+*+gravity+*+%282+seconds%29%5E2%E2%8F%8E).
-
-`distance = .5 * gravity * time^2`
 
 We're gonna skip over how to use calculus to analytically integrate because 1) calculus is out of the scope of this chapter and 2) our simulations aren't going to _analytically_ integrate things anyway!
 
@@ -66,7 +67,7 @@ We're gonna skip over how to use calculus to analytically integrate because 1) c
 
 Above, we use a formula that tells us the distance an object will fall in a given amount of time. This formula was derived using calculus and analytical integration. It gives us an _exact_ answer.
 
-We can *estimate* the answer using another approach: numerical integration.To perform numerical integration we break up time into small intervals, plug in the numbers for each interval, and calculate each change bit by bit.
+There is another approach we can use to _estimate_ the answer instead: numerical integration. To perform numerical integration we break up time into small intervals, plug in the numbers for each interval, and calculate each change bit by bit.
 
 Let's use numerical integration to determine how far our bus falls in 2 seconds, using two 1 second intervals:
 
@@ -87,6 +88,7 @@ distance += velocity; // 29.4
 
 Our _estimate_ ends up being 29.4 meters, which is pretty far off from the _exact_ value of 19.6 meters. It is pretty far off because it assumes that velocity is constant over each interval but actually the velocity continuously increases. With larger time intervals this error will be larger and the error accumulates over each step. 1 second intervals are too big.
 
+<!--
 Let's try with a smaller interval of .5 seconds:
 
 ```js
@@ -107,6 +109,7 @@ distance += velocity * 0.5; // 24.5
 ```
 
 Now our _estimate_ is 24.5 meters, which is closer.
+-->
 
 Let's try with .01 second intervals:
 
@@ -126,11 +129,11 @@ console.log(distance); // 19.7
 
 With .01 second intervals our _estimate_ is 19.7, which is very close!
 
-The numerical integration above uses the first-order [Euler Method](https://en.wikipedia.org/wiki/Euler_method). This is a simple, but not very accurate, way to do numerical integration. You can increase accuracy by using small step sizes or by using [more complex methods](https://en.wikipedia.org/w/index.php?title=Runge%E2%80%93Kutta_methods).
+The numerical integration above uses the first-order [Euler Method](https://en.wikipedia.org/wiki/Euler_method). This is a simple, but not very accurate, way to do numerical integration. You can increase accuracy by using [more complex methods](https://en.wikipedia.org/w/index.php?title=Runge%E2%80%93Kutta_methods), but you don't necessarily need to. Since the error is proportional to the step size, even the simple method above works well for small step sizes. Its "good enough" for a lot of simple simulations.
 
 ### Simulation and Numerical Integration
 
-Numerical integration is not as accurate as analytic integration in a simulation with multiple forces finding an analytic solution [quickly becomes impossible](https://en.wikipedia.org/wiki/Three-body_problem?useskin=vector). Numerical integration can handle this complexity and even account for real-time user input naturally.
+Numerical integration is not as accurate as analytic integration in a simulation with multiple forces finding an analytic solution [quickly becomes impossible](https://en.wikipedia.org/wiki/Three-body_problem?useskin=vector). Numerical integration can handle this complexity and even account for real-time user input naturally. Let's try it out with a few simple sims!
 
 ### A Bouncing Ball
 
@@ -195,26 +198,42 @@ Explore the examples above by completing the following challenges.{intro}
 
 ## Cellular Automata
 
-— Invented by Stanislaw Ulam (Monte Carlo Method, Manhattan Project) and John von Neumann (Game Theory, modern computer artchitecture, Manhattan Project)
+Cellular automata are mathematical models comprising a grid of cells and a set of simple rules. In a cellular automata, cells are set to one of a finite set of states (e.g. on or off). A set of rules is then iteratively applied to every cell changing it's state based on its current state and the states of its neighbors. They can be used to model things like crystal growth, fire spreading, and fluid dynamics.
 
-- Conway's Game of Life
-- Wolfram's A New Kind of Science
+Cellular automata were invented in the 1940's by Stanislaw Ulam (Monte Carlo Method, Manhattan Project) and John von Neumann (Game Theory, modern computer artchitecture, Manhattan Project). [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) (1970) is likely the most famous cellular automata model. It is a simple system with just 2 states and 4 rules from which emerge rich and complex systems. The Game of Life is even [Turing Complete](https://en.wikipedia.org/w/index.php?title=Turing_completeness) meaning it can can follow instructions and compute.
 
-The examples below keep track of the state using color values in a pixel array. This makes it easy to show the final result: its an image, just draw it.
+### Representing State in Images
 
-You could also keep track of the state of each cell with an array of objects containing specific properties needed in your simulation.
+The following examples keep track of the CA state as color values in a p5 graphics object's pixel array. Representing CA state as an image is a pretty common technique, with some pros and cons.
 
-### Cell Starter
+The main disadvantage is that images are designed to store pixel color values not cell states. For a lot of cellular automata the state is a simple bit: on or off. Using a 24-bit RGB value to represent a single bit isn't efficient. Depending on the kind of data you need to represent your states using an image might be awkward or simply not work.
+
+The main advantage is that most programming environments have support for working with images built in. If you represent your state as an image it is easy to display: its an image, just draw it.
+
+Most of the time, using an image works fine and sometimes you get some nice performance benefits since working with images is often optomized.
+
+### Cellular Automata Starter
+
+This first example is models a simple growth. Cells can be in one of two states: off (represented by red value 0) and on (represented by red value > 0). The green and blue channel values are not considered.
+
+It starts out by creating a graphics object to hold the current state (`g1`) and draws a few white squares in it. It also creates a graphics object to hold the result of applying the rules (`g2`). You generally need to have two buffers like this so that you aren't changing the values while you are reading them.
 
 {% js-lab "sketches/cellular_starter.js" %}
 
-### Cell Messy Growth
+### Cellular Automata Messy Growth
+
+This example builds on Starter. It adds some randomness (cells don't always turn on). It changes the on/off test to see if the pixel is black (off) or not (on). It sets the activated pixels to rainbow colors (any non=black color is "on").
 
 {% js-lab "sketches/cellular_messy_growth.js" %}
 
-### Cell Color
+### Cellular Color Copy
 
-{% js-lab "sketches/cellular_04.js" %}
+This example uses the same structure as the others. It starts by setting each pixel to a random color, then it follows a simple rule. Set each pixel to the color of one of its 4 neighbors, chosen at random.
+
+Click the canvas to pause the simulation. I really like the images this once creates and the simplicity of the rule. I found this one by just playing around.
+Its similar to the [Color War tweet-cart](https://munrohoberman.com/tweetcarts.html) by Munro Hoberman.
+
+{% js-lab "sketches/cellular_color.js" %}
 
 ### Lines
 
