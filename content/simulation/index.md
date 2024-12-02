@@ -237,11 +237,37 @@ Its similar to the [Color War tweet-cart](https://munrohoberman.com/tweetcarts.h
 
 ### Lines
 
+This one looks for vertical and horizontal lines and extends them.
+
 {% js-lab "sketches/cellular_08.js" %}
 
 ### Game of Life
 
+And finally, an implementation of Conway's Game of Life. This example uses the same basic structure of all the others and implements the 4 simple Game of Life rules.
+
 {% js-lab "sketches/cellular_07.js" %}
+
+<div class="activity challenges">
+
+## Coding Challenges
+
+Explore the examples above by completing the following challenges.{intro}
+
+### Starter
+
+1. Change the color of activated cells to white. `•`
+1. Change the color of activated cells to pure green. Why does this 'break' it?`•`
+
+### Messy Growth
+
+1. Remove the random() check so that cells always grow if the neighbor condition is met. `•`
+1. Change the neighbor condition so that cells activate if exactly one neighbor is not black. `••`
+
+### Lines
+
+1. Comment in lines 72-74. What does this code do? How does that impact the simulation? `•`
+
+</div>
 
 ## Microworlds
 
