@@ -30,6 +30,9 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("content/**/*.mp4");
   eleventyConfig.addPassthroughCopy("content/**/*.webm");
 
+  // favicon
+  eleventyConfig.addPassthroughCopy("favicon");
+
   // shortcodes
   eleventyConfig.addShortcode(
     "js-lab",
