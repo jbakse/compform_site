@@ -3,6 +3,9 @@
 // rename or document hide off class names
 
 function mess(c, wait_ms = 2000, creditInfo = {}) {
+  /// if url contains "js_lab"
+  if (window.location.href.includes("js_lab")) return;
+
   /// set up canvas
   c.canvas.setAttribute("style", ""); // remove p5.js default styles
   c.canvas.classList.add("mess");
