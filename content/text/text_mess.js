@@ -16,7 +16,9 @@
 /* exported preload, setup, draw, mousePressed */
 /* globals mess RiTa*/
 
-const contentContainer = document.querySelector(".comp-form-copy");
+//insert content container in body if it doesn't exist
+const contentContainer =
+  document.querySelector(".comp-form-copy") || createContentContainer();
 
 let lerpedMouseY = 0;
 let textHue;
@@ -25,7 +27,6 @@ let wordsData = [];
 function setup() {
   /// set up canvas
   const p5_canvas = createCanvas(windowWidth, windowHeight);
-
 
   /// register this sketch as a Comp Form background "mess"
   mess(p5_canvas, 2000, {
@@ -147,7 +148,13 @@ function draw() {
       const wordX = sentenceX + currentX + wordsData[i].jitterX;
       const wordY = sentenceY + currentY + wordsData[i].jitterY;
       const wordAngle = wordsData[i].jitterA;
-      drawWord(textHue, word, wordX - textWidth(wordsData[i].word), wordY, wordAngle);
+      drawWord(
+        textHue,
+        word,
+        wordX - textWidth(wordsData[i].word),
+        wordY,
+        wordAngle
+      );
 
       // update carriage position
       currentX -= textWidth(wordsData[i].word) + wordSpacing;
@@ -177,4 +184,36 @@ function drawWord(textHue, word, wordX, wordY, wordAngle) {
   textAlign(LEFT, TOP);
   text(word, 0, 0);
   pop();
+}
+
+function createContentContainer() {
+  //should I style this more?
+  const contentContainerHTML = `
+  <style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+		.comp-form-copy {
+    	font-family: 'Roboto', sans-serif;
+      overflow: auto;
+			font-size: 1em;
+      line-height: 1.5em;
+      width: 25%;
+      position: fixed;
+      top: 0;
+      left: 37.5%;
+      height: 100vh;
+		}
+	</style>
+  <div class="comp-form-copy">
+    <p>
+     Creativity can be expressed in many mediums, but—perhaps as a consequence of the Turing Test using verbal communication—artificial creativity is often explored in the context of natural-language text generation. This chapter introduces three common and accessible text generation tactics: string templating, Markov chains, and context-free grammars.
+    </p>
+    <p>
+      These techniques focus on syntax—the patterns and structure of language—without much concern for semantics—the underlying meaning expressed. They tend to result in text that is somewhat grammatical but mostly nonsensical. Natural-language processing and natural-language generation are areas of active research with numerous sub-fields including automatic summarization, translation, question answering, and sentiment analysis. Much of this research is focused on semantics, knowledge, and understanding and often approaches these problems with machine learning.
+      </p>
+    <p>
+    Generating text can be a step in the process for generating form in other media. The structure of a webpage is defined in HTML. The layout and style is defined in CSS. SVG is a popular format for defining vector images. The ABC and JAM formats represent music. Three-dimensional objects can be represented in OBJ files. All of these formats are plain text files.
+    </p>
+    </div>`;
+  document.body.insertAdjacentHTML("beforeend", contentContainerHTML);
+  return document.querySelector(".comp-form-copy");
 }
