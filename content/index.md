@@ -9,6 +9,10 @@ image: /images/og_image.png
 <script src="./mess.js"></script>
 <script src="./toc_mess.js"></script>
 
+
+
+
+
 # Comp Form
 
 <div class="intro">
@@ -68,6 +72,8 @@ Independent chapters exploring specific procedural generation tools, languages, 
 [**3D Forms** OpenSCAD](./3D)
 
 [**Microgames** p5.js + p5.play](./microgames)
+
+[**Simulation** p5.js _draft_](./simulation)
 
 </nav>
 

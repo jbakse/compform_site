@@ -1,0 +1,40 @@
+- artist: Will Wright
+  title: SimCity, Maxis, 1989
+  image: https://gamehistory.org/wp-content/uploads/2018/12/monstercomparison_06.png
+  comments: One of the most well known simulation games, SimCity allows players to build and manage a city without a predefined goal.
+
+- artist: Vi Hart and Nicky Case
+  title: Parable of the Polygons
+  image: /simulation/images/parable.png
+  comments: An _explorable_ essay that uses interactive simulations to explore how small biases can lead to large scale segregation.
+  links:
+    - label: Parable of the Polygons
+      subtitle: Project Website
+      href: https://ncase.me/polygons/
+
+- artist: Dwarf Fortress
+  title: Tarn and Zach Adams
+  image: https://www.bay12games.com/dwarves/screens/dwf5.png
+  comments: A deeply complex simulation game challenging players to manage a group of dwarves in a procedurally generated world.
+  links:
+    - label: Dwarf Fortress
+      subtitle: Offical Website
+      href: https://www.bay12games.com/dwarves/screens/dwf5.html
+
+- artist: Liam
+  title: Matter.js
+  image: /simulation/images/matter_js.png
+  comments: Matter.js is a 2D physics engine for the web.
+  links:
+    - label: Matter.js
+      subtitle: Official Website
+      href: https://brm.io/matter-js/
+
+- artist: John Conway
+  title: The Game of Life
+  image: /simulation/images/conway.png
+  comments: A cellular automaton originally presented as recreational mathematics that has had long lasting impacts across various fields.
+  links:
+    - label: Mathematical Games
+      subtitle: Scientific American 1970
+      href: https://web.stanford.edu/class/sts145/Library/life.pdf

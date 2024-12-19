@@ -1,7 +1,7 @@
 //////////////////////////////////////////
 /// Lab
 
-let lab = {};
+const lab = {};
 
 lab.settings = {
   autorefresh: false,
@@ -15,10 +15,10 @@ lab.debounce = function (func, ms) {
   ms = ms || 200;
 
   return function () {
-    let context = this;
-    let args = arguments;
+    const context = this;
+    const args = arguments;
 
-    let later = function () {
+    const later = function () {
       timeout = null;
       func.apply(context, args);
     };
@@ -30,7 +30,7 @@ lab.debounce = function (func, ms) {
 
 lab.main = function main() {
   // set up ace editor
-  let editor = ace.edit("editor");
+  const editor = ace.edit("editor");
   editor.setTheme("ace/theme/tomorrow");
   editor.getSession().setMode("ace/mode/javascript");
   editor.$blockScrolling = Infinity;
@@ -47,7 +47,7 @@ lab.main = function main() {
   });
 
   // pull script name from url get string
-  let script_name = window.location.search.substr(1) || "example.js";
+  const script_name = window.location.search.substr(1) || "example.js";
 
   // create the "maxamize" link to open the lab as its own page
   $("#maxamize").attr("href", window.location);
@@ -57,7 +57,7 @@ lab.main = function main() {
   }
 
   // load content of script, inject into editor
-  let jqxhr = $.ajax({
+  const jqxhr = $.ajax({
     url: script_name,
     success: function (source) {
       editor.setValue(source);
@@ -68,15 +68,15 @@ lab.main = function main() {
 
   // install iframe:onload listener that injects new code into preview after it is reloaded by lab.inject
   $("#preview").on("load", function () {
-    let frame = $("#preview")[0];
+    const frame = $("#preview")[0];
     if (frame.contentWindow.lab_view) {
-      let source = editor.getValue();
+      const source = editor.getValue();
 
       // regex matches "// require (url)"
-      let require_regex = /^\/\/ ?require (.*?)$/gm;
+      const require_regex = /^\/\/ ?require (.*?)$/gm;
 
       // collect requested libs
-      let lib_hrefs = [];
+      const lib_hrefs = [];
       while ((match_info = require_regex.exec(source))) {
         lib_hrefs.push(match_info[1]);
       }
@@ -85,7 +85,7 @@ lab.main = function main() {
       frame.contentWindow.lab_view.takeLibs(lib_hrefs, () => {
         frame.contentWindow.lab_view.takeSource(source);
 
-        let bootstrap = `\nif (typeof p5 !== 'undefined') {new p5();}`;
+        const bootstrap = `\nif (typeof p5 !== 'undefined') {new p5();}`;
         frame.contentWindow.lab_view.takeSource(bootstrap);
 
         frame.contentWindow.lab_view.show();
@@ -109,8 +109,8 @@ lab.main = function main() {
 // inject triggers a reload of the preview iframe, clearing state
 // onload listener will inject code
 lab.inject = function inject() {
-  let frame = $("#preview")[0];
-  let f_visible = check_frame_visible();
+  const frame = $("#preview")[0];
+  const f_visible = check_frame_visible();
   if (f_visible) {
     // console.log("inject");
     frame.contentWindow.location.replace("/js_lab/js_lab_view.html");
@@ -120,7 +120,7 @@ lab.inject = function inject() {
 lab.was_frame_visible = false;
 lab.scroll = function scroll() {
   // console.log("scroll");
-  let is_frame_visible = check_frame_visible();
+  const is_frame_visible = check_frame_visible();
   if (!lab.was_frame_visible && is_frame_visible) {
     lab.show();
   }
@@ -135,7 +135,7 @@ lab.scroll = function scroll() {
 
 lab.hide = function hide() {
   // console.log("hide");
-  let frame = $("#preview")[0];
+  const frame = $("#preview")[0];
   frame.contentWindow.location.replace("about:blank");
 };
 
@@ -148,23 +148,23 @@ lab.show = function show() {
 lab.debounced_inject = lab.debounce(lab.inject, 500);
 
 function check_frame_visible() {
-  let w = $(window.parent);
-  let f = $(window.frameElement);
+  const w = $(window.parent);
+  const f = $(window.frameElement);
 
   // if we are not in a frame, then we are visible
   if (f.length === 0) {
     return true;
   }
 
-  let window_top = w.scrollTop();
-  let window_bottom = window_top + w.height();
+  const window_top = w.scrollTop();
+  const window_bottom = window_top + w.height();
 
-  let frame_top = f.offset().top;
-  let frame_bottom = frame_top + f.height();
+  const frame_top = f.offset().top;
+  const frame_bottom = frame_top + f.height();
 
-  let is_frame_partially_visible =
+  const is_frame_partially_visible =
     frame_bottom > window_top && frame_top < window_bottom;
-  let is_frame_fully_visible =
+  const is_frame_fully_visible =
     frame_top > window_top && frame_bottom < window_bottom;
   return is_frame_partially_visible;
 }
@@ -195,7 +195,7 @@ lab_view.takeLibs = function (hrefs, cb) {
     }
   }
   hrefs.forEach((href) => {
-    var script = document.createElement("script");
+    const script = document.createElement("script");
     script.src = href;
     script.async = false;
     script.onload = () => {
@@ -231,6 +231,7 @@ lab_view.takeSource = function takeSource(source) {
 lab_view.setupConsole = function setupConsole() {
   let console_log = null;
   lab_view.console_div = null;
+
   if (console.log) {
     // create a div to hold the onscreen log
     lab_view.console_div = $("<div class='lab-console'>");
@@ -251,8 +252,8 @@ lab_view.setupConsole = function setupConsole() {
 };
 
 lab_view.appendConsole = function appendConsole() {
-  let line = $("<div>");
-  let args = [].slice.call(arguments);
+  const line = $("<div>");
+  const args = [].slice.call(arguments);
   line.append(args.join(" "));
   lab_view.console_div.append(line);
 };
@@ -272,12 +273,12 @@ function inIframe() {
 //////////////////////////////////////////
 /// Show - Code for a view that just shows the sketch with no code/editing
 
-let show = {};
+const show = {};
 
 show.main = function main() {
-  let script_name = window.location.search.substr(1) || "example.js";
+  const script_name = window.location.search.substr(1) || "example.js";
 
-  let jqxhr = $.ajax({
+  const jqxhr = $.ajax({
     url: script_name,
     success: function (source) {
       show.inject(source);
@@ -288,10 +289,10 @@ show.main = function main() {
 
 show.inject = function (source) {
   // regex matches "// require (url)"
-  let require_regex = /^\/\/ ?require (.*?)$/gm;
+  const require_regex = /^\/\/ ?require (.*?)$/gm;
 
   // collect requested libs
-  let lib_hrefs = [];
+  const lib_hrefs = [];
   while ((match_info = require_regex.exec(source))) {
     lib_hrefs.push(match_info[1]);
   }
@@ -300,7 +301,7 @@ show.inject = function (source) {
   lab_view.takeLibs(lib_hrefs, () => {
     lab_view.takeSource(source);
 
-    let bootstrap = `\nif (typeof p5 !== 'undefined') {new p5();}`;
+    const bootstrap = `\nif (typeof p5 !== 'undefined') {new p5();}`;
     lab_view.takeSource(bootstrap);
 
     // lab_view.show();
