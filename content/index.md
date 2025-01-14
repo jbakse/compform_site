@@ -9,10 +9,6 @@ image: /images/og_image.png
 <script src="./mess.js"></script>
 <script src="./toc_mess.js"></script>
 
-
-
-
-
 # Comp Form
 
 <div class="intro">
@@ -103,6 +99,10 @@ Syllabi, schedules, and lesson plans for the Computational Form class.
 <nav>
 
 [**Introduction** About the Course](./introduction)
+
+Spring 2025
+: [Class Notes](https://www.notion.so/justinbakse/Comp-Form-S25-175b1bb21cec80f6886ed4cb9ecab3dc)
+: [Sketch Book](https://sketches2025spring.compform.net/)
 
 Fall 2024
 : [Class Notes](https://www.notion.so/Comp-Form-F24-d4cc3204a2674dba902b30c1b8f76b6d)
