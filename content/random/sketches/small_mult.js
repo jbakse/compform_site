@@ -13,17 +13,17 @@ function draw() {
 
   fill(90, 50, 80);
 
-  let rows = height / 50;
-  let cols = width / 50;
+  const rows = height / 50;
+  const cols = width / 50;
 
-  for (row = 0; row < rows; row++) {
-    for (col = 0; col < rows; col++) {
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
       drawThing(col * 50 + 25, row * 50 + 25);
     }
   }
 }
 
-let brownianRadius = 25;
+const brownianRadius = 25;
 
 function drawThing(x, y) {
   let radius;
