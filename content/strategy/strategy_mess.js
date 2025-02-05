@@ -1,7 +1,7 @@
 /**
  * Draws a well-placed dot trail.
  *
- * written by [Your Name]
+ * written by Justin Bakse
  */
 
 /// configure compform editor
