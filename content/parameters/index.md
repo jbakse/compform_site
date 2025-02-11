@@ -245,8 +245,8 @@ Explore the study examples above by completing the following challenges.{intro}
 1. Make each square a different randomly-chosen size. `•`
 1. Add a white stroke to the squares. `•`
 1. Add a global variable parameter to control the width of the stroke. `••`
-1. \*\*Add global variable parameters to control the minimum and maximum size of the square. `••`
-1. Draw the square in two sizes: small and large. Randomly generate which of the two sizes the square will be. `•••`
+1. Add global variable parameters to control the minimum and maximum size of the squares. `••`
+1. Draw the squares in two sizes: small and large. Randomly decide which of the two sizes the square will be. `•••`
 1. Add parameters to control the small size, large size, and percentage chance of drawing a large or small square. `•••`
 
 ### Modify the Tweakpane Example
