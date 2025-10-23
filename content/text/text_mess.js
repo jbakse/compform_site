@@ -4,12 +4,12 @@
  * written by Ana Konzen
  * edited by Justin Bakse
  *
- * @requires RiTa.js - https://unpkg.com/rita
+ * @requires RiTa.js - https://cdn.jsdelivr.net/npm/rita
  */
 
 /// configure compform editor
 // require https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js
-// require https://unpkg.com/rita
+// require https://cdn.jsdelivr.net/npm/rita
 // require /mess.js
 
 /// configure eslint
